@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 
+html {
+  scroll-behavior: smooth;
+} */
+
+ #banner {
+  background-size: 110% 110%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* ===menu1== */
+.menu1Lis{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.menu1item{
+    height: 100%;
+    cursor: pointer;
+    
+}
+.menu1LinkWrapper{
+    display: flex;
+    flex-direction: column;
+    transition: .2s all linear;
+}
+.menu1item:hover .menu1LinkWrapper{
+    transform: translateY(-24px);
+}
+
+.menu_item {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s all linear;
+}
+.menu_item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background: linear-gradient(45deg, aqua, tan);
+  transition: 0.5s all linear;
+}
+
+.menu_item:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.menu_item:hover::after {
+  width: 110%;
+}
