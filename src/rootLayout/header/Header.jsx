@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import "../../app.css";
+import "../../App.css";
 import "../../index.css";
 import { CiLinkedin } from "react-icons/ci";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
