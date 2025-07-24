@@ -3,6 +3,7 @@ import Banner from "../components/homeComponents/Banner";
 import WhyPartner from "../components/homeComponents/WhyPartner";
 import Banner2 from "../components/homeComponents/Banner2";
 import ContructorComponent from "../components/homeComponents/ContructorComponent";
+import ContructorComponent2 from "../components/homeComponents/ContructorComponent2";
 
 const HomePage = () => {
   
@@ -11,7 +12,9 @@ const HomePage = () => {
       {/* <Banner /> */}
       <Banner2/>
       <WhyPartner />
-      <ContructorComponent/>
+      {/* <ContructorComponent/> */}
+      <ContructorComponent2/>
+      
     </div>
   );
 };

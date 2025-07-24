@@ -175,7 +175,7 @@ const ContructorComponent = () => {
 
   return (
     <>
-      <div id="contuctor " className="w-full h-screen px-2 py-12 font-myFont">
+      <div id="contuctor " className="w-full h-screen px-2 py-12 ">
         <div className="contuctorWrapper w-full h-full flex flex-col lg:flex-row gap-8">
           {/* ===content section=== */}
           <div className="w-full lg:w-1/2 h-full order-2 lg:order-1 p-12 bg-[#E1DBCB]">
@@ -207,8 +207,8 @@ const ContructorComponent = () => {
               <div className="w-full">
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl opacity-40">Architects</h3>
-                    <span className="text-4xl opacity-50">+</span>
+                    <h3 className="text-3xl text-neutral-600">Architects</h3>
+                    <span className="text-4xl text-neutral-600">+</span>
                   </div>
                   <div className="proggressbar w-full h-[1px] bg-slate-200">
                     <div
@@ -219,37 +219,37 @@ const ContructorComponent = () => {
                 </div>
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl">Custom Home Builders</h3>
-                    <span className="text-4xl">+</span>
+                    <h3 className="text-3xl text-neutral-600">Custom Home Builders</h3>
+                    <span className="text-4xl text-neutral-600">+</span>
                   </div>
-                  <div className="proggressbar w-full h-[2px] bg-slate-300">
+                  <div className="proggressbar w-full h-[1px] bg-slate-200">
                     <div
                       className="proggress2 h-full bg-black"
-                      style={{ width: "5%" }}
+                      style={{ width: "0%" }}
                     ></div>
                   </div>
                 </div>
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl">Interior Designers</h3>
-                    <span className="text-4xl">+</span>
+                    <h3 className="text-3xl text-neutral-600">Interior Designers</h3>
+                    <span className="text-4xl text-neutral-600">+</span>
                   </div>
-                  <div className="proggressbar w-full h-[2px] bg-slate-300">
+                  <div className="proggressbar w-full h-[1px] bg-slate-300">
                     <div
                       className="proggress3 h-full bg-black"
-                      style={{ width: "5%" }}
+                      style={{ width: "0%" }}
                     ></div>
                   </div>
                 </div>
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl">Contractors & Installers</h3>
-                    <span className="text-4xl">+</span>
+                    <h3 className="text-3xl text-neutral-600">Contractors & Installers</h3>
+                    <span className="text-4xl text-neutral-600">+</span>
                   </div>
-                  <div className="proggressbar w-full h-[2px] bg-slate-300">
+                  <div className="proggressbar w-full h-[1px] bg-slate-300">
                     <div
                       className="proggress4 h-full bg-black"
-                      style={{ width: "5%" }}
+                      style={{ width: "0%" }}
                     ></div>
                   </div>
                 </div>

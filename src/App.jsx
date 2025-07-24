@@ -8,7 +8,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import RootLayout from "./rootLayout/RootLayout";
-import LoaderComponent from "./components/homeComponents/utils/LoaderComponent";
+import TestPage from "./pages/TestPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -16,7 +16,7 @@ function App() {
       <>
         <Route element={<RootLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/loader" element={<LoaderComponent />} />
+          <Route path="/test" element={<TestPage />} />
         </Route>
       </>
     )
