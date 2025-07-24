@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'myFont';
+  src: url('/fonts/myfont.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 /* 
 html {
   scroll-behavior: smooth;

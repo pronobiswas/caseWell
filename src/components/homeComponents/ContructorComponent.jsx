@@ -171,45 +171,14 @@ const ContructorComponent = () => {
       });
   }, []);
 
-  // useEffect(() => {
-  //   const animateProgress = (progressClass, imageSrc, duration = 2) => {
-  //     return gsap.timeline()
-  //       .to(`.${progressClass}`, {
-  //         width: '100%',
-  //         duration: duration,
-  //       })
-  //       .to(`.${progressClass}`, {
-  //         width: 0,
-  //         duration: 0.1,
-  //       })
-  //       .to(imgRef.current, {
-  //         scale: 0.6,
-  //         duration: 0.2,
-  //         onComplete: () => {
-  //           imgRef.current.src = imageSrc;
-  //         }
-  //       })
-  //       .to(imgRef.current, {
-  //         scale: 1,
-  //         duration: 0.5,
-  //       });
-  //   };
 
-  //   const tl = gsap.timeline({ repeat: -1, repeatDelay: 0 });
-
-  //   tl.add(animateProgress('proggress1', '/images/img2.png'))
-  //     .add(animateProgress('proggress2', '/images/img3.png', 2).delay(2))
-  //     .add(animateProgress('proggress3', '/images/img4.png'))
-  //     .add(animateProgress('proggress4', '/images/img1.png'));
-
-  // }, []);
 
   return (
     <>
-      <div id="contuctor " className="w-full h-screen px-2 py-12">
-        <div className="contuctorWrapper w-full h-full flex gap-8">
+      <div id="contuctor " className="w-full h-screen px-2 py-12 font-myFont">
+        <div className="contuctorWrapper w-full h-full flex flex-col lg:flex-row gap-8">
           {/* ===content section=== */}
-          <div className="w-1/2 h-full  p-12">
+          <div className="w-full lg:w-1/2 h-full order-2 lg:order-1 p-12 bg-[#E1DBCB]">
             <div className="w-full h-full flex flex-col justify-between">
               {/* ==heading container== */}
               <div id="constructorHeadingContainer" className="box1">
@@ -238,13 +207,13 @@ const ContructorComponent = () => {
               <div className="w-full">
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl">Architects</h3>
-                    <span className="text-4xl">+</span>
+                    <h3 className="text-3xl opacity-40">Architects</h3>
+                    <span className="text-4xl opacity-50">+</span>
                   </div>
-                  <div className="proggressbar w-full h-[2px] bg-slate-300">
+                  <div className="proggressbar w-full h-[1px] bg-slate-200">
                     <div
                       className="proggress1 h-full bg-black"
-                      style={{ width: "5%" }}
+                      style={{ width: "0%" }}
                     ></div>
                   </div>
                 </div>
@@ -288,7 +257,7 @@ const ContructorComponent = () => {
             </div>
           </div>
           {/* ==image section== */}
-          <div className="w-1/2 h-full rounded-[80px] overflow-hidden">
+          <div className="w-full lg:w-1/2 order-1 lg:order-2 h-full rounded-[80px] overflow-hidden">
             <img
               ref={imgRef}
               src="/images/img1.png"

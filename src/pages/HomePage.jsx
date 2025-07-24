@@ -7,7 +7,7 @@ import ContructorComponent from "../components/homeComponents/ContructorComponen
 const HomePage = () => {
   
   return (
-    <div>
+    <div className="w-full h-full bg-[#F2F0EA] font-myFont">
       {/* <Banner /> */}
       <Banner2/>
       <WhyPartner />
