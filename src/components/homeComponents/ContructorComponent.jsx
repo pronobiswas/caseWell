@@ -171,8 +171,6 @@ const ContructorComponent = () => {
       });
   }, []);
 
-
-
   return (
     <>
       <div id="contuctor " className="w-full h-screen px-2 py-12 ">
@@ -219,7 +217,9 @@ const ContructorComponent = () => {
                 </div>
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl text-neutral-600">Custom Home Builders</h3>
+                    <h3 className="text-3xl text-neutral-600">
+                      Custom Home Builders
+                    </h3>
                     <span className="text-4xl text-neutral-600">+</span>
                   </div>
                   <div className="proggressbar w-full h-[1px] bg-slate-200">
@@ -231,7 +231,9 @@ const ContructorComponent = () => {
                 </div>
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl text-neutral-600">Interior Designers</h3>
+                    <h3 className="text-3xl text-neutral-600">
+                      Interior Designers
+                    </h3>
                     <span className="text-4xl text-neutral-600">+</span>
                   </div>
                   <div className="proggressbar w-full h-[1px] bg-slate-300">
@@ -243,7 +245,9 @@ const ContructorComponent = () => {
                 </div>
                 <div className="proggressBox py-2">
                   <div className="w-full flex justify-between mb-2">
-                    <h3 className="text-3xl text-neutral-600">Contractors & Installers</h3>
+                    <h3 className="text-3xl text-neutral-600">
+                      Contractors & Installers
+                    </h3>
                     <span className="text-4xl text-neutral-600">+</span>
                   </div>
                   <div className="proggressbar w-full h-[1px] bg-slate-300">
