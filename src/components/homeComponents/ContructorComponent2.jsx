@@ -135,7 +135,7 @@ const ContructorComponent2 = () => {
     }, []);
     return (
         <>
-            <div id="constructor" className="w-full h-screen p-12 bg-[#F2F0EA] font-myFont">
+            <div id="constructor" className="w-full h-full lg:h-screen p-12 bg-[#F2F0EA] font-myFont">
                 <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-8">
                     {/* Left Content */}
                     <div className="w-full lg:w-1/2 order-2 lg:order-1 p-8 lg:p-12 bg-[#E1DBCB] rounded-3xl">
@@ -182,7 +182,7 @@ const ContructorComponent2 = () => {
                     </div>
 
                     {/* Right Image */}
-                    <div className="w-full lg:w-1/2 order-1 lg:order-2 h-full rounded-3xl lg:rounded-[80px] overflow-hidden">
+                    <div className="w-full lg:w-1/2 order-1 lg:order-2 h-full  rounded-3xl lg:rounded-[80px] overflow-hidden">
                         <img
                             ref={imgRef}
                             src={data[0].image}

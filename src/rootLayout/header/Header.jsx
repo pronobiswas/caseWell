@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -21,6 +22,8 @@ const Header = () => {
 
   const progressRef = useRef(null);
   const numberRef = useRef(null);
+
+  
 
   useEffect(() => {
     const menuItems = menuWrapperRef.current.querySelectorAll(".menu_item");
@@ -80,6 +83,19 @@ const Header = () => {
         duration: 1,
       });
     }
+    // ==clicked menu1 items==
+    menuItems.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        setIsClicked(false);
+        gsap.to(dropDownMenu.current, {
+          yPercent: 110,
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
+        });
+      });
+    });
+
   }, [isClicked]);
 
   function handleMenuBtn() {
@@ -111,6 +127,8 @@ const Header = () => {
       ease: "power2.out",
     });
   }, []);
+
+ 
 
   return (
     <>
@@ -235,7 +253,8 @@ const Header = () => {
           {/* Menu Items */}
           <div className="w-1/2 h-full px-12">
             <ul className="text-white text-[5vw] flex flex-col">
-              <li className="menu_item">Home</li>
+              <li className="menu_item"><Link to="/">Home</Link></li>
+              <li className="menu_item"><Link to="/architects">Architects</Link></li>
               <li className="menu_item">Services</li>
               <li className="menu_item">Work</li>
               <li className="menu_item">About</li>

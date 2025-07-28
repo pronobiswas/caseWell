@@ -110,17 +110,18 @@ const Stalen = () => {
     return (
         <>
             <section id="stalen" className="w-full h-full py-12 ">
-                <div className="stalenWrapper w-full h-full  bg-black p-12  text-white flex items-end gap-12">
-                    <div className="w-1/4 h-full bg-[#c4c3c325] shrink-0 min-h-[342px] p-8 flex justify-end items-end">
+                <div className="stalenWrapper w-full h-full  bg-black p-12  text-white flex flex-col lg:flex-row items-end gap-12">
+
+                    <div className="w-full lg:w-1/4 h-full bg-[#c4c3c325] shrink-0 min-h-[342px] p-8 flex justify-end items-end">
                         <div className="w-full h-fit flex flex-col items-end gap-6">
-                            <h2 className="max-w-56 text-2xl text-right">Type stalen deuren ment glas</h2>
+                            <h2 className=" md:max-w-56 text-2xl text-right">Type stalen deuren ment glas</h2>
                             <div className="w-fit border border-yellow-600 px-4 py-1">
                                 <span className="text-yellow-600">- CONFIGUREER DEUR</span>
                             </div>
                         </div>
                     </div>
-                    <div className="stalenCardWrapper 3/4 h-full">
-                        <div className="w-full h-full flex gap-0 cursor-pointer">
+                    <div className="stalenCardWrapper w-full lg:w-3/4 h-full">
+                        <div className="w-full h-full flex flex-wrap md:flex-nowrap gap-0 cursor-pointer">
                             {/* stalen card 1 */}
                             {/* ================== */}
                             <div
@@ -159,7 +160,7 @@ const Stalen = () => {
                             {/* ================== */}
                             <div
                                 ref={StalenCard2}
-                                className="stalen_card w-full h-full p-7 border border-yellow-900 border-x-0"
+                                className="stalen_card w-full h-full p-7 border border-yellow-900 lg:backdrop:border-x-0"
                             >
                                 <div className="anim w-full h-20  relative flex ">
                                     <div className="w-8 h-8 bg-gray-300"></div>
@@ -220,6 +221,7 @@ const Stalen = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </>
