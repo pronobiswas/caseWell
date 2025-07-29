@@ -1,5 +1,5 @@
 import React from 'react'
-import ArchitectsBanner from '../components/architectComponent/architectsBanner'
+import ArchitectsBanner from '../components/architectComponent/ArchitectsBanner'
 import PartnerSupport from '../components/architectComponent/PartnerSupport'
 import CasewellPartner from '../components/architectComponent/CasewellPartner'
 import Conversation from '../components/architectComponent/Conversation'
