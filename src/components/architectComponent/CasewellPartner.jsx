@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
@@ -7,17 +7,72 @@ import { PiChatCenteredThin } from 'react-icons/pi'
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 const CasewellPartner = () => {
-    const partnerCard = useRef(null);
+    const casewellPartner = useRef(null);
+    const partnerHeading = useRef(null);
+    const partnerDescription = useRef(null);
+    useEffect(() => {
+  const handleLoad = () => {
+    const heading = partnerHeading.current;
+    const split = new SplitText(partnerDescription.current, { type: "words" });
+    const words = split.words;
+    const cards = casewellPartner.current?.querySelectorAll(".casewellcoll");
+
+    if (!heading || !cards) return;
+
+    gsap.from(heading, {
+      y: 100,
+      opacity: 0,
+      ease: "power2.out",
+      duration: 1,
+      scrollTrigger: {
+        trigger: casewellPartner.current,
+        start: "top 80%",
+        end: "+=100",
+        scrub: true,
+        markers: true,
+      },
+    });
+    gsap.from(words, {
+    x: 30,
+    opacity: 0,
+    ease: "power2.out",
+    duration: 1,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: casewellPartner.current,
+      start: "top 60%",
+      end: "+=200",
+      scrub: true,
+    },
+  });
+
+    
+
+    ScrollTrigger.refresh();
+  };
+
+  if (document.readyState === "complete") {
+    handleLoad();
+  } else {
+    window.addEventListener("load", handleLoad);
+  }
+
+  return () => {
+    window.removeEventListener("load", handleLoad);
+  };
+}, []);
+
+
     return (
         <>
-            <section id="casewellPartner" className='w-full h-full bg-[#F2F0EA]'>
+            <section ref={casewellPartner} id="casewellPartner" className='w-full h-full bg-[#F2F0EA]'>
                 <div className="casewellPartnerWrapper p-14 font-myFont">
-                    <div className="casewellpartnerHeader flex mb-16">
+                    <div className="casewellpartnerHeader flex mb-24">
                         <div className='w-full md:w-1/2'>
-                            <h2 className='text-5xl'>What you get as a Casewell partner</h2>
+                            <h2 ref={partnerHeading} className='text-5xl'>What you get as a Casewell partner</h2>
                         </div>
                         <div className='w-full md:w-1/2 flex justify-end'>
-                            <p className='text-sm mb-8 w-full lg:max-w-72 text-right'>
+                            <p ref={partnerDescription} className='text-sm mb-8 w-full lg:max-w-72 text-right'>
                                 We built Casewell by starting with how you actually work, not how suppliers traditionally operate.
                             </p>
                         </div>
