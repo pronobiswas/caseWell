@@ -5,13 +5,11 @@ import CasewellPartner from '../components/architectComponent/CasewellPartner'
 import Conversation from '../components/architectComponent/Conversation'
 import WhyPartner from '../components/homeComponents/WhyPartner'
 
-const Architects = () => {
+const ArchitectPage = () => {
 
 
   return (
     <>
-      
-
         <ArchitectsBanner />
         <PartnerSupport />
         <CasewellPartner />
@@ -21,4 +19,4 @@ const Architects = () => {
   )
 }
 
-export default Architects
+export default ArchitectPage

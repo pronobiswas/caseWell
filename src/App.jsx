@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import RootLayout from "./rootLayout/RootLayout";
 import TestPage from "./pages/TestPage";
-import Architects from "./pages/Architects";
+import ArchitectPage from "./pages/ArchitectPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -18,7 +18,7 @@ function App() {
         <Route element={<RootLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/test" element={<TestPage />} />
-          <Route path="/architects" element={<Architects />} />
+          <Route path="/architects" element={<ArchitectPage />} />
         </Route>
       </>
     )
