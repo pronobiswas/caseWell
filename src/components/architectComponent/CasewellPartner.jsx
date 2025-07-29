@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { PiChatCenteredThin } from 'react-icons/pi'
 
+gsap.registerPlugin(ScrollTrigger, SplitText);
 const CasewellPartner = () => {
+    const partnerCard = useRef(null);
     return (
         <>
             <section id="casewellPartner" className='w-full h-full bg-[#F2F0EA]'>

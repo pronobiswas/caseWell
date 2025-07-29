@@ -1,19 +1,71 @@
-import React from 'react'
-import BtnComponent from '../homeComponents/utils/BtnComponent'
+import React, { useEffect } from 'react'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import BtnComponent from '../homeComponents/utils/BtnComponent';
+gsap.registerPlugin(ScrollTrigger,SplitText);
 
 const PartnerSupport = () => {
+    const partnerSupportRef = React.useRef(null);
+    const partnerHeading = React.useRef(null);
+    const partnerDes = React.useRef(null);
+    
+
+    
+  useEffect(() => {
+    const splitDesc = new SplitText(partnerDes.current, { type: "words" });
+    const ctx = gsap.context(() => {
+      // Heading animation
+      gsap.from(partnerHeading.current, {
+        y: 100,
+        opacity: 0,
+        ease: "power2.out",
+        duration: 1,
+        scrollTrigger: {
+          trigger: partnerSupportRef.current,
+          start: "top 80%",
+          end: "+=100",
+          scrub: true,
+        },
+      });
+
+      // Paragraph animation
+      if (partnerDes.current) {
+        const splitDesc = new SplitText(partnerDes.current, { type: "words" });
+
+        gsap.from(splitDesc.words, {
+          x: 30,
+          opacity: 0,
+          ease: "power2.out",
+          duration: 1,
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: partnerSupportRef.current,
+            start: "top 60%",
+            end: "+=200",
+            scrub: true,
+          },
+        });
+      }
+    }, partnerSupportRef);
+
+    return () => {
+      ctx.revert(); // Clean up animations and ScrollTriggers
+    };
+  }, []);
+
     return (
         <>
-            <section id="partnerSupport" className='w-full h-full bg-[#F2F0EA]'>
+            <section ref={partnerSupportRef} id="partnerSupport" className='w-full h-full bg-[#F2F0EA]'>
                 <div className="partnerSupportWrapper p-14 font-myFont">
 
                     <div className="partnerHeader w-full h-full flex pb-12">
                         <div className='w-full md:w-1/2'>
-                            <h2 className=' text-2xl'>Partner-First Support.</h2>
+                            <h2 ref={partnerHeading} className=' text-2xl'>Partner-First Support.</h2>
                         </div>
 
                         <div className='w-full md:w-1/2'>
-                            <p className='text-sm mb-8'>
+                            <p ref={partnerDes} className='text-sm mb-8'>
                                 We built Casewell because trade professionals deserve a supplier who champions their success, not competes for their clients. You keep relationships, earn the margins you deserve, and focus on what you do best.
                             </p>
                             <BtnComponent text='Partner with casewell' />
