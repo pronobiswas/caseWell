@@ -28,7 +28,7 @@ const BtnComponent = ({ text = "" }) => {
       }, []);
     return (
         <div>
-            <div ref={buttonRef} className='pro_btn w-fit flex items-center gap-2 border py-2 px-5 bg-white text-black cursor-pointer rounded-full'>
+            <div ref={buttonRef} className='pro_btn w-fit flex items-center gap-2 border py-3 px-5 bg-white text-black cursor-pointer rounded-full'>
                 <span>{text}</span>
                 <div className="icon w-[15px] h-[15px] overflow-hidden">
                     <div ref={iconListRef} className='pro_icon_wrapper relative'>

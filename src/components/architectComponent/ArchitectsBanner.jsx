@@ -47,8 +47,6 @@ const ArchitectsBanner = () => {
                 </div>
               </div> */}
               <BtnComponent text="join now" />
-              <BtnComponent text="join tomorrow" />
-              <BtnComponent text="join next day" />
 
             </div>
           </div>
