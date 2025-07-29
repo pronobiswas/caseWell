@@ -10,14 +10,13 @@ const Architects = () => {
 
   return (
     <>
-      <div className='w-full h-full bg-[#F2F0EA]'>
+      
 
         <ArchitectsBanner />
         <PartnerSupport />
         <CasewellPartner />
         <Conversation />
         <WhyPartner />
-      </div>
     </>
   )
 }
