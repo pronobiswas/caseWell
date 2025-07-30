@@ -10,6 +10,7 @@ import {
 import RootLayout from "./rootLayout/RootLayout";
 import TestPage from "./pages/TestPage";
 import ArchitectPage from "./pages/ArchitectPage";
+import InspirationInsight from "./components/homeComponents/InspirationInsight";
 
 function App() {
   const router = createBrowserRouter(
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/architects" element={<ArchitectPage />} />
+          <Route path="/inspiration" element={<InspirationInsight />} />
         </Route>
       </>
     )

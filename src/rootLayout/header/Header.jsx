@@ -12,6 +12,8 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 gsap.registerPlugin(SplitText, ScrollTrigger);
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false);
+  let [scrollTop, setScrollTop] = useState(0);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
   const dropDownMenu = useRef(null);
   const pro_line = useRef(null);
   const rotateDown = useRef(null);
@@ -22,8 +24,63 @@ const Header = () => {
 
   const progressRef = useRef(null);
   const numberRef = useRef(null);
+ 
+// =========scroll effect==========
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollTop(currentScrollY);
+
+      if (currentScrollY > lastScrollY) {
+        setIsScrollingDown(true);
+      } else {
+        setIsScrollingDown(false);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+// ======nav2 menu scrolling======
+//   useEffect(() => {
+//   if (!navmenu2.current) return;
 
   
+//   ScrollTrigger.create({
+//     trigger: navmenu2.current,
+//     start: "top top",
+//     end: () => document.body.scrollHeight, 
+//     pin: true,
+//     pinSpacing: true, 
+//   });
+
+//   if (scrollTop > 100 && isScrollingDown) {
+//     navmenu2.current.classList.remove("hidden");
+//     gsap.to(navmenu2.current, {
+//       y: 0,
+//       duration: 0.01,
+//     });
+//   } else {
+//     navmenu2.current.classList.add("hidden");
+//     gsap.to(navmenu2.current, {
+//       y: -80,
+//       duration: 0.05,
+//     });
+//   }
+//   return () => {
+//     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+//   };
+// }, [ scrollTop]);
+
+
+
 
   useEffect(() => {
     const menuItems = menuWrapperRef.current.querySelectorAll(".menu_item");
@@ -132,8 +189,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full z-40">
-        <nav id="nav1" className="hidden">
+      <header className="w-full z-40 ">
+        <nav id="nav1" className="py-5 bg-[#00000025] absolute top-0 left-0 w-full z-50">
           <div className="navwrapper flex items-center justify-between p-2">
             <div className="logo font-semibold text-2xl text-white">casewell</div>
             <div className="menu1">
@@ -171,7 +228,7 @@ const Header = () => {
         <nav
         id="navTwo"
           ref={navmenu2}
-          className={`w-full py-4 fixed top-0 left-0 z-40   ${isClicked ? "border-b border-gray-300" : ""
+          className={`w-full bg-blue-500 py-4 absolute top-0 z-50 ${isClicked ? "border-b border-gray-300" : ""
             }`}
         >
           <div className="container flex justify-between">

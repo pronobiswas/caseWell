@@ -6,19 +6,17 @@ import ContructorComponent from "../components/homeComponents/ContructorComponen
 import ContructorComponent2 from "../components/homeComponents/ContructorComponent2";
 import Millwork from "../components/homeComponents/Millwork";
 import Stalen from "../components/homeComponents/Stalen";
+import InspirationInsight from "../components/homeComponents/InspirationInsight";
 
 const HomePage = () => {
   
   return (
     <div className="w-full h-full bg-[#F2F0EA] font-myFont">
-      {/* <Banner /> */}
       <Banner2/>
       <WhyPartner />
-      {/* <ContructorComponent/> */}
       <ContructorComponent2/>
-      {/* <Millwork/> */}
       <Stalen/>
-      
+      <InspirationInsight/>
     </div>
   );
 };

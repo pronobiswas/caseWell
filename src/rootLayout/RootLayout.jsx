@@ -22,13 +22,15 @@ const RootLayout = () => {
   }, []);
 
   return (
-    <div id="smooth-wrapper" className="w-full h-full">
-      <div id="smooth-content">
-        <Header />
-        <Outlet />
-        <Footer />
+    <>
+      <div id="smooth-wrapper" className="w-full h-full">
+        <div id="smooth-content">
+          <Header />
+          <Outlet />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import gsap from "gsap";
+import InspirationInsight from "../components/homeComponents/InspirationInsight";
 
 const data = [
   {
@@ -135,6 +136,10 @@ const TestPage = () => {
   }, []);
 
   return (
+    <>
+    <div className="py-32 bg-[#F2F0EA]">
+      <InspirationInsight/>
+    </div>
     <div id="constructor" className="w-full h-screen p-12 bg-[#F2F0EA] font-myFont">
       <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-8">
         {/* Left Content */}
@@ -192,6 +197,7 @@ const TestPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
