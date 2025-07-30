@@ -64,8 +64,8 @@ const InspirationInsight = () => {
         <div className="inspirationWrapper p-12">
             <div className="inspirationHeader">
                 <h2 className='text-4xl'>Inspiration & Insights</h2>
-                <h3 className='text-2xl mt-4'>Crafted from the Finest Wood</h3>
-                <p className='w-full max-w-[500px]'>Wood is more than our material — it’s our passion. Every grain tells a story. Every finish is done with love.</p>
+                <h3 className='text-2xl mt-5 mb-1'>Crafted from the Finest Wood</h3>
+                <p className='w-full max-w-[500px] text-sm'>Wood is more than our material — it’s our passion. Every grain tells a story. Every finish is done with love.</p>
             </div>
             {/* ======inspirationSliderWrapper===== */}
             <div className="w-full h-full">

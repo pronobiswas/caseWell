@@ -201,9 +201,11 @@ const Header = () => {
                   </div>
                 </li>
                 <li className="menu1item ">
+                  <Link to="cabinetary">
                   <div className="menu1LinkWrapper">
                     <span>Cabinetary</span><span>Cabinetary</span>
                   </div>
+                  </Link>
                 </li>
                 <li className="menu1item ">
                   <div className="menu1LinkWrapper">
@@ -228,7 +230,7 @@ const Header = () => {
         <nav
         id="navTwo"
           ref={navmenu2}
-          className={`w-full bg-blue-500 py-4 absolute top-0 z-50 ${isClicked ? "border-b border-gray-300" : ""
+          className={`w-full bg-blue-500 py-4 absolute top-0 z-50 hidden ${isClicked ? "border-b border-gray-300" : ""
             }`}
         >
           <div className="container flex justify-between">
@@ -313,7 +315,7 @@ const Header = () => {
               <li className="menu_item"><Link to="/">Home</Link></li>
               <li className="menu_item"><Link to="/architects">Architects</Link></li>
               <li className="menu_item">Services</li>
-              <li className="menu_item">Work</li>
+              <li className="menu_item"><Link to="/cabinetary">Cabinetary</Link> </li>
               <li className="menu_item">About</li>
               <li className="menu_item">Contact</li>
             </ul>

@@ -4,7 +4,7 @@ import BtnComponent from '../../components/homeComponents/utils/BtnComponent'
 const Footer = () => {
   return (
     <>
-      <footer id="footer" className='w-full h-full p-4'>
+      <footer id="footer" className='w-full h-full p-4 bg-[#F2F0EA]'>
         <div className="footerWrapper pt-12 pb-0 px-12 rounded-[50px] bg-[#E1DBCB]">
           {/* ======footer row one===== */}
           <div className="footerRow flex flex-col md:flex-row justify-between gap-8">
