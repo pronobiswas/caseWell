@@ -208,14 +208,18 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="menu1item ">
+                  <Link to="inspiration">
                   <div className="menu1LinkWrapper">
                     <span>Inspiration</span><span>Inspiration</span>
                   </div>
+                  </Link>
                 </li>
                 <li className="menu1item ">
+                  <Link to="/architects">
                   <div className="menu1LinkWrapper">
-                    <span>Trade parterns</span><span>Trade parterns</span>
+                    <span>Architects</span><span>Architects</span>
                   </div>
+                  </Link>
                 </li>
                 <li className="menu1item ">
                   <div className="menu1LinkWrapper">

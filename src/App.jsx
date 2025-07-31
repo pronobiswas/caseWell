@@ -12,6 +12,7 @@ import TestPage from "./pages/TestPage";
 import ArchitectPage from "./pages/ArchitectPage";
 import InspirationInsight from "./components/homeComponents/InspirationInsight";
 import CabinetryPage from "./pages/CabinetryPage";
+import InspirationPage from "./pages/InspirationPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -21,7 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/architects" element={<ArchitectPage />} />
-          <Route path="/inspiration" element={<InspirationInsight />} />
+          <Route path="/inspiration" element={<InspirationPage />} />
           <Route path="/cabinetary" element={<CabinetryPage />} />
         </Route>
       </>

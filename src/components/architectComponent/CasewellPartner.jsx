@@ -29,7 +29,6 @@ const CasewellPartner = () => {
         start: "top 80%",
         end: "+=100",
         scrub: true,
-        markers: true,
       },
     });
     gsap.from(words, {
