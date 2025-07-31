@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         myFont: ['myFont', 'sans-serif'],
       },
+      colors:{
+        bgOne : 'var(--bgOne)',
+        bgTwo : 'var(--bgTwo)',
+      }
     },
     
     container: {

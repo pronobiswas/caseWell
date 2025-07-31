@@ -9,6 +9,10 @@
   font-weight: normal;
   font-style: normal;
 }
+:root{
+  --bgOne:#F2F0EA;
+  --bgTwo:#E1DBCB;
+}
 
 
 .millworkContent{
