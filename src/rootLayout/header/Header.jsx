@@ -222,6 +222,13 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="menu1item ">
+                  <Link to="/aboutus">
+                  <div className="menu1LinkWrapper">
+                    <span>About Us</span><span>About Us</span>
+                  </div>
+                  </Link>
+                </li>
+                <li className="menu1item ">
                   <div className="menu1LinkWrapper">
                     <span>Contact us</span><span>Contact us</span>
                   </div>

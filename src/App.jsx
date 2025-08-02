@@ -10,9 +10,10 @@ import {
 import RootLayout from "./rootLayout/RootLayout";
 import TestPage from "./pages/TestPage";
 import ArchitectPage from "./pages/ArchitectPage";
-import InspirationInsight from "./components/homeComponents/InspirationInsight";
 import CabinetryPage from "./pages/CabinetryPage";
 import InspirationPage from "./pages/InspirationPage";
+import AboutUsPage from "./pages/AboutUsPage";
+
 
 function App() {
   const router = createBrowserRouter(
@@ -24,6 +25,7 @@ function App() {
           <Route path="/architects" element={<ArchitectPage />} />
           <Route path="/inspiration" element={<InspirationPage />} />
           <Route path="/cabinetary" element={<CabinetryPage />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
         </Route>
       </>
     )
