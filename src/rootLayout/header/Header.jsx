@@ -190,7 +190,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full z-40 ">
-        <nav id="nav1" className="py-5 bg-[#00000025] absolute top-0 left-0 w-full z-50">
+        <nav id="nav1" className="py-5 bg-[#00000000] absolute top-0 left-0 w-full z-50">
           <div className="navwrapper flex items-center justify-between p-2">
             <div className="logo font-semibold text-2xl text-white">casewell</div>
             <div className="menu1">

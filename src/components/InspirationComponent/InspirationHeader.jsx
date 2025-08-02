@@ -27,15 +27,19 @@ const InspirationHeader = () => {
       });
 
       // Split subheading into lines (match heading)
-      const subheadingSplit = new SplitText(subheadingRef.current, {
+      const subheadingSplitLine = new SplitText(subheadingRef.current, {
         type: 'lines',
         linesClass: 'line overflow-hidden block',
       });
+      const subheadingSplitWord = new SplitText(subheadingRef.current, {
+        type: 'words',
+        wordsClass: 'line overflow-hidden block',
+      });
 
-      gsap.from(subheadingSplit.lines, {
-        yPercent: 100,
+      gsap.from(subheadingSplitWord.words, {
+        y: 100,
         opacity: 0,
-        duration: 3,
+        duration: 2,
         ease: 'power4.out',
         stagger: 0.05,
       });
@@ -65,6 +69,8 @@ const InspirationHeader = () => {
               just design buildings, <span className="text-white">we create experiences</span>. Explore
               our work and feel the emotion behind each construction.
             </h2>
+            
+
           </div>
 
           <div className="flex gap-5 w-full max-w-[400px] lg:order-1">

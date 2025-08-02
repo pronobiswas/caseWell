@@ -5,7 +5,7 @@ import InspirationGalary from '../components/InspirationComponent/InspirationGal
 const InspirationPage = () => {
   return (
     <>
-    <div id="inspirationPage" className='w-full h-full bg-[#202A30] py-36 px-12'>
+    <div id="inspirationPage" className='w-full h-full bg-[url("/images/inspirationImg/bg.png")] bg-cover p-5 pt-36 lg:py-36 lg:px-12'>
         <InspirationHeader/>
         <InspirationGalary/>
     </div>

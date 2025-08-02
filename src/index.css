@@ -13,16 +13,16 @@
   --bgOne:#F2F0EA;
   --bgTwo:#E1DBCB;
 }
-.line {
+/* .line {
   display: block;
   overflow: hidden;
   position: relative;
-  /* color: red; */
-}
+} */
 
 .millworkContent{
   @apply w-80 mt-16 flex flex-col gap-5;
 }
+
 /* 
 html {
   scroll-behavior: smooth;
@@ -108,3 +108,9 @@ html {
     transform-origin: left top;
   }
 }
+
+/* =========Inspiration======== */
+/* .photoWrapper{}
+.photoWrapper{}
+.textWrapper{}
+.inspirationSeeMore{} */
