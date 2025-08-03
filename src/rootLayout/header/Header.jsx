@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
@@ -11,6 +12,8 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 const Header = () => {
+  const location = useLocation();
+  const isBlack = location.pathname === '/terms';
   const [isClicked, setIsClicked] = useState(false);
   let [scrollTop, setScrollTop] = useState(0);
   const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -194,7 +197,7 @@ const Header = () => {
           <div className="navwrapper flex items-center justify-between p-2">
             <div className="logo font-semibold text-2xl text-white">casewell</div>
             <div className="menu1">
-              <ul ref={menuRef} className="menu1Lis text-white font-semibold">
+              <ul ref={menuRef} className={`menu1Lis ${isBlack?'text-black':'text-white'}  font-semibold `}>
                 <li className="menu1item ">
                   <div className="menu1LinkWrapper">
                     <span>How It Works</span><span>How It Works</span>

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import gsap from "gsap";
 import BtnComponent from '../../components/homeComponents/utils/BtnComponent'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const footerRef =useRef(null)
+
   return (
     <>
-      <footer id="footer" className='w-full h-full p-4 bg-[#F2F0EA]'>
+      <footer ref={footerRef} id="footer" className='w-full h-full p-4 bg-[#F2F0EA]'>
         <div className="footerWrapper pt-12 pb-0 px-12 rounded-[50px] bg-[#E1DBCB]">
           {/* ======footer row one===== */}
           <div className="footerRow flex flex-col md:flex-row justify-between gap-8">
@@ -21,7 +25,7 @@ const Footer = () => {
                 <li>Contact us</li>
               </ul>
               <ul className='flex flex-col gap-4 [&>li]:cursor-pointer'>
-                <li>Terms & Conditions</li>
+                <li><Link to='/terms'>Terms & Conditions</Link></li>
                 <li>Privacy Policy</li>
               </ul>
             </div>

@@ -65,9 +65,7 @@ const InspirationHeader = () => {
               ref={subheadingRef}
               className="text-[#698996] text-3xl md:text-5xl font-semibold w-full relative overflow-hidden "
             >
-              Each project tells a unique story, written in stone, glass, wood and light. We do not
-              just design buildings, <span className="text-white">we create experiences</span>. Explore
-              our work and feel the emotion behind each construction.
+              " Our Zebrano Studio doors are designed to elevate your space, offering the bespoke luxury usually reserved for architectural masterpieces. See how <b>we make exclusivity accessible.</b>"
             </h2>
             
 

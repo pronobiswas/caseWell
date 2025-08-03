@@ -13,6 +13,7 @@ import ArchitectPage from "./pages/ArchitectPage";
 import CabinetryPage from "./pages/CabinetryPage";
 import InspirationPage from "./pages/InspirationPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/inspiration" element={<InspirationPage />} />
           <Route path="/cabinetary" element={<CabinetryPage />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
         </Route>
       </>
     )
