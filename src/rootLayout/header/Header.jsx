@@ -15,6 +15,7 @@ const Header = () => {
   const location = useLocation();
   const isBlack = location.pathname === '/terms';
   const isBlack1 = location.pathname === '/privacy-Policy';
+  const isBlack2 = location.pathname === '/contact';
   const [isClicked, setIsClicked] = useState(false);
   let [scrollTop, setScrollTop] = useState(0);
   const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -28,8 +29,8 @@ const Header = () => {
 
   const progressRef = useRef(null);
   const numberRef = useRef(null);
- 
-// =========scroll effect==========
+
+  // =========scroll effect==========
   useEffect(() => {
     let lastScrollY = window.scrollY;
 
@@ -52,36 +53,36 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-// ======nav2 menu scrolling======
-//   useEffect(() => {
-//   if (!navmenu2.current) return;
+  // ======nav2 menu scrolling======
+  //   useEffect(() => {
+  //   if (!navmenu2.current) return;
 
-  
-//   ScrollTrigger.create({
-//     trigger: navmenu2.current,
-//     start: "top top",
-//     end: () => document.body.scrollHeight, 
-//     pin: true,
-//     pinSpacing: true, 
-//   });
 
-//   if (scrollTop > 100 && isScrollingDown) {
-//     navmenu2.current.classList.remove("hidden");
-//     gsap.to(navmenu2.current, {
-//       y: 0,
-//       duration: 0.01,
-//     });
-//   } else {
-//     navmenu2.current.classList.add("hidden");
-//     gsap.to(navmenu2.current, {
-//       y: -80,
-//       duration: 0.05,
-//     });
-//   }
-//   return () => {
-//     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-//   };
-// }, [ scrollTop]);
+  //   ScrollTrigger.create({
+  //     trigger: navmenu2.current,
+  //     start: "top top",
+  //     end: () => document.body.scrollHeight, 
+  //     pin: true,
+  //     pinSpacing: true, 
+  //   });
+
+  //   if (scrollTop > 100 && isScrollingDown) {
+  //     navmenu2.current.classList.remove("hidden");
+  //     gsap.to(navmenu2.current, {
+  //       y: 0,
+  //       duration: 0.01,
+  //     });
+  //   } else {
+  //     navmenu2.current.classList.add("hidden");
+  //     gsap.to(navmenu2.current, {
+  //       y: -80,
+  //       duration: 0.05,
+  //     });
+  //   }
+  //   return () => {
+  //     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+  //   };
+  // }, [ scrollTop]);
 
 
 
@@ -163,7 +164,7 @@ const Header = () => {
     setIsClicked((prev) => !prev);
   }
 
-   useEffect(() => {
+  useEffect(() => {
     let obj = { value: 0 };
 
     const tl = gsap.timeline();
@@ -189,16 +190,16 @@ const Header = () => {
     });
   }, []);
 
- 
+
 
   return (
     <>
-      <header className="w-full z-40 ">
-        <nav id="nav1" className="py-5 bg-[#00000000] absolute top-0 left-0 w-full z-50">
+      <header className="w-full z-40">
+        <nav id="nav1" className="p-5 bg-[#00000000] absolute top-0 left-0 w-full z-50">
           <div className="navwrapper flex items-center justify-between p-2">
             <div className="logo font-semibold text-3xl text-white"><Link to={'/'}>casewell</Link></div>
             <div className="menu1">
-              <ul ref={menuRef} className={`menu1Lis ${isBlack || isBlack1 ?'text-black':'text-white'}  font-semibold `}>
+              <ul ref={menuRef} className={`menu1Lis ${isBlack || isBlack1 || isBlack2 ? 'text-black' : 'text-white'}  font-semibold `}>
                 <li className="menu1item ">
                   <div className="menu1LinkWrapper">
                     <span>How It Works</span><span>How It Works</span>
@@ -206,36 +207,38 @@ const Header = () => {
                 </li>
                 <li className="menu1item ">
                   <Link to="cabinetary">
-                  <div className="menu1LinkWrapper">
-                    <span>Cabinetary</span><span>Cabinetary</span>
-                  </div>
+                    <div className="menu1LinkWrapper">
+                      <span>Cabinetary</span><span>Cabinetary</span>
+                    </div>
                   </Link>
                 </li>
                 <li className="menu1item ">
                   <Link to="inspiration">
-                  <div className="menu1LinkWrapper">
-                    <span>Inspiration</span><span>Inspiration</span>
-                  </div>
+                    <div className="menu1LinkWrapper">
+                      <span>Inspiration</span><span>Inspiration</span>
+                    </div>
                   </Link>
                 </li>
                 <li className="menu1item ">
                   <Link to="/architects">
-                  <div className="menu1LinkWrapper">
-                    <span>Architects</span><span>Architects</span>
-                  </div>
+                    <div className="menu1LinkWrapper">
+                      <span>Architects</span><span>Architects</span>
+                    </div>
                   </Link>
                 </li>
                 <li className="menu1item ">
                   <Link to="/aboutus">
-                  <div className="menu1LinkWrapper">
-                    <span>About Us</span><span>About Us</span>
-                  </div>
+                    <div className="menu1LinkWrapper">
+                      <span>About Us</span><span>About Us</span>
+                    </div>
                   </Link>
                 </li>
                 <li className="menu1item ">
-                  <div className="menu1LinkWrapper">
-                    <span>Contact us</span><span>Contact us</span>
-                  </div>
+                  <Link to="/contact">
+                    <div className="menu1LinkWrapper">
+                      <span>Contact us</span><span>Contact us</span>
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -243,7 +246,7 @@ const Header = () => {
         </nav>
         {/* ==nav2== */}
         <nav
-        id="navTwo"
+          id="navTwo"
           ref={navmenu2}
           className={`w-full bg-blue-500 py-4 absolute top-0 z-50 hidden ${isClicked ? "border-b border-gray-300" : ""
             }`}

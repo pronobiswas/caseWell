@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         myFont: ['myFont', 'sans-serif'],
+        workFont: ['workFont', 'sans-serif'],
       },
       colors:{
         bgOne : 'var(--bgOne)',
