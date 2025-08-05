@@ -14,6 +14,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 const Header = () => {
   const location = useLocation();
   const isBlack = location.pathname === '/terms';
+  const isBlack1 = location.pathname === '/privacy-Policy';
   const [isClicked, setIsClicked] = useState(false);
   let [scrollTop, setScrollTop] = useState(0);
   const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -195,9 +196,9 @@ const Header = () => {
       <header className="w-full z-40 ">
         <nav id="nav1" className="py-5 bg-[#00000000] absolute top-0 left-0 w-full z-50">
           <div className="navwrapper flex items-center justify-between p-2">
-            <div className="logo font-semibold text-2xl text-white">casewell</div>
+            <div className="logo font-semibold text-3xl text-white"><Link to={'/'}>casewell</Link></div>
             <div className="menu1">
-              <ul ref={menuRef} className={`menu1Lis ${isBlack?'text-black':'text-white'}  font-semibold `}>
+              <ul ref={menuRef} className={`menu1Lis ${isBlack || isBlack1 ?'text-black':'text-white'}  font-semibold `}>
                 <li className="menu1item ">
                   <div className="menu1LinkWrapper">
                     <span>How It Works</span><span>How It Works</span>

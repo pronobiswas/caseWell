@@ -26,7 +26,7 @@ const Footer = () => {
               </ul>
               <ul className='flex flex-col gap-4 [&>li]:cursor-pointer'>
                 <li><Link to='/terms'>Terms & Conditions</Link></li>
-                <li>Privacy Policy</li>
+                <li><Link to='/privacy-Policy'>Privacy Policy</Link></li>
               </ul>
             </div>
           </div>
