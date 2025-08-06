@@ -68,11 +68,11 @@ const CasewellPartner = () => {
                 <div className="casewellPartnerWrapper p-14 font-myFont">
                     <div className="casewellpartnerHeader flex mb-24">
                         <div className='w-full md:w-1/2'>
-                            <h2 ref={partnerHeading} className='text-5xl'>What you get as a Casewell partner</h2>
+                            <h2 ref={partnerHeading} className='text-5xl'>What you get as a Zebrano Partner:</h2>
                         </div>
                         <div className='w-full md:w-1/2 flex justify-end'>
                             <p ref={partnerDescription} className='text-sm mb-8 w-full lg:max-w-72 text-right'>
-                                We built Casewell by starting with how you actually work, not how suppliers traditionally operate.
+                                We built Zebrano by starting with how you actually work, not how suppliers traditionally operate.
                             </p>
                         </div>
                     </div>
@@ -88,8 +88,8 @@ const CasewellPartner = () => {
 
                                     </span>
                                 </div>
-                                <h3 className='text-3xl'>Full-Service Support</h3>
-                                <p>We’re not just a materials provider — we’re your backend support team. You get the benefits of design guidance, showroom access, and fulfillment coordination as if you had it all in-house, but without the overhead. That means less stress, fewer errors, and more time to focus on what you do best.</p>
+                                <h3 className='text-3xl'>True Wholesale Pricing</h3>
+                                <p>We provide genuine wholesale pricing to all our partners, empowering you to grow your business profitably and competitively. Because when you succeed, we succeed.</p>
                             </div>
                             <div className="casewellcoll w-full md:w-1/2 flex flex-col gap-7">
                                 <div className="iconWrapper text-8xl">
@@ -102,8 +102,8 @@ const CasewellPartner = () => {
                                         </svg>
                                     </span>
                                 </div>
-                                <h3 className='text-3xl'>Full-Service Support</h3>
-                                <p>We’re not just a materials provider — we’re your backend support team. You get the benefits of design guidance, showroom access, and fulfillment coordination as if you had it all in-house, but without the overhead. That means less stress, fewer errors, and more time to focus on what you do best.</p>
+                                <h3 className='text-3xl'>Unlimited Design Possibilities</h3>
+                                <p>Go wild with your ideas. Whether it’s unique shapes, mixed materials, or custom finishes, we don’t set limits — you dream it, we make it happen.</p>
                             </div>
 
                         </div>
@@ -117,8 +117,8 @@ const CasewellPartner = () => {
 
                                     </span>
                                 </div>
-                                <h3 className='text-3xl'>Full-Service Support</h3>
-                                <p>We’re not just a materials provider — we’re your backend support team. You get the benefits of design guidance, showroom access, and fulfillment coordination as if you had it all in-house, but without the overhead. That means less stress, fewer errors, and more time to focus on what you do best.</p>
+                                <h3 className='text-3xl'>Full In-House Design Support</h3>
+                                <p>Enjoy direct access to our expert design team who guide you every step of the way. We reduce your workload and stress, so you can focus on what you do best — designing amazing spaces.</p>
                             </div>
                             <div className="casewellcoll w-full md:w-1/2 flex flex-col gap-7">
                                 <div className="iconWrapper text-8xl">
@@ -131,8 +131,8 @@ const CasewellPartner = () => {
 
                                     </span>
                                 </div>
-                                <h3 className='text-3xl'>Full-Service Support</h3>
-                                <p>We’re not just a materials provider — we’re your backend support team. You get the benefits of design guidance, showroom access, and fulfillment coordination as if you had it all in-house, but without the overhead. That means less stress, fewer errors, and more time to focus on what you do best.</p>
+                                <h3 className='text-3xl'>Security & Reliability Through Open Communication</h3>
+                                <p>At Zebrano, communication is our foundation. We keep you informed, involved, and supported throughout the process, so you experience complete peace of mind on every project.</p>
                             </div>
 
                         </div>

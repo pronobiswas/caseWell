@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { SplitText } from "gsap/SplitText";
+import BtnComponent from '../homeComponents/utils/BtnComponent';
+gsap.registerPlugin(ScrollTrigger , SplitText);
 
 const AboutUsTimeline = () => {
   const timelineRef = useRef(null);
+  const bottomText = useRef(null);
 
   useEffect(() => {
     if (!timelineRef.current) return;
@@ -23,11 +26,39 @@ const AboutUsTimeline = () => {
             scrub: true,
             pin: true,
             pinSpacing: 0,
-            // markers: true,
           },
         }
         );
       });
+    }, timelineRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    if (!bottomText.current) return;
+
+    const ctx = gsap.context(() => {
+      const paragraph = bottomText.current.querySelector('p');
+      const splitParagraph = new SplitText(paragraph, {
+                type: 'lines , words , chars',
+                linesClass: 'line block overflow-hidden'
+            })
+
+      
+        gsap.from(splitParagraph.words, {
+          y:50,
+          duration:1,
+          stagger:1,
+
+          scrollTrigger: {
+            trigger: paragraph,
+            start: 'top 95%',
+            end: '+=200',
+            scrub: true,
+          },
+        })
+        
     }, timelineRef);
 
     return () => ctx.revert();
@@ -53,7 +84,7 @@ const AboutUsTimeline = () => {
                 </div>
               </div>
             </div>
-            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3">
+            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
                 <img src="/images/timelineImg1.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
               </div>
@@ -71,7 +102,7 @@ const AboutUsTimeline = () => {
                 </div>
               </div>
             </div>
-            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3">
+            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
                 <img src="/images/timelineImg2.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
               </div>
@@ -90,7 +121,7 @@ const AboutUsTimeline = () => {
                 </div>
               </div>
             </div>
-            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3">
+            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
                 <img src="/images/timelineImg3.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
               </div>
@@ -109,7 +140,7 @@ const AboutUsTimeline = () => {
                 </div>
               </div>
             </div>
-            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3">
+            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
                 <img src="/images/timelineImg4.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
               </div>
@@ -128,7 +159,7 @@ const AboutUsTimeline = () => {
                 </div>
               </div>
             </div>
-            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3">
+            <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
                 <img src="/images/timelineImg5.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
               </div>
@@ -139,8 +170,12 @@ const AboutUsTimeline = () => {
           
 
         </div>
-        <div className='w-full h-full text-xl font-myFont p-5 md:p-12 lg:p-20'>
-          <p>At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!</p>
+        <div ref={bottomText} className='w-full md:w-3/4 h-full  p-5 md:p-12 lg:p-20'>
+          <p className='text-xl text-stone-600 font-bold md:text-3xl lg:text-4xl xl:text-5xl'>At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!</p>
+        </div>
+        <div className='w-full flex justify-center gap-10 py-8'>
+          <BtnComponent text="Collection" bg="bgTwo"/>
+          <BtnComponent text="Configure your own" bg="bgTwo"/>
         </div>
       </section>
     </>

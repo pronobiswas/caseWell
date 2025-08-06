@@ -109,7 +109,7 @@ useEffect(() => {
 
   return (
     <>
-      <section id="whyPartner">
+      <section id="whyPartner" className="w-full h-full bg-bgOne">
         <div className="partnerWrapper w-full h-full min-h-screen p-16 pt-20 flex flex-col justify-between">
           <div className="partnerHeading flex justify-between">
             <h3 ref={partnerHeading} className="text-3xl">Why Partner with Casewell?</h3>

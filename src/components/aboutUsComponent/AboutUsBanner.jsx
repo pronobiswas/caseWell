@@ -49,8 +49,8 @@ const AboutUsBanner = () => {
             <section id="aboutUsBanner">
                 <div className="abooutUsBannerWrapper w-full h-screen bg-[url('/images/aboutUsBanner.png')] bg-cover bg-center flex items-end p-12">
                     <div className='w-full max-w-[700px] h-fit flex flex-col gap-6 text-white  '>
-                        <h1 ref={headingRef} className='font-myFont text-5xl'>Zebrano Studio - Exclusivity for Everyone (and a little different from the rest!)</h1>
-                        <p ref={paragraphRef} className='text-xl '>
+                        <h1 ref={headingRef} className='font-myFont text-2xl md:text-5xl'>Zebrano Studio - Exclusivity for Everyone (and a little different from the rest!)</h1>
+                        <p ref={paragraphRef} className='text-sm md:text-xl '>
                             Hey there! Welcome to Zebrano Studio. Our story is one of dreams, a good dose of passion for wood, and the conviction that luxury doors aren't just for architects and millionaires. We believe everyone deserves a piece of that exclusivity in their home. Curious how we went from a wild idea to Zebrano Studio? Read on, in 5 lighthearted steps!
                         </p>
                         <div ref={buttonRef} className='w-fit'>

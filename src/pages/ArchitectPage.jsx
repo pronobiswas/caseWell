@@ -12,9 +12,8 @@ const ArchitectPage = () => {
     <>
         <ArchitectsBanner />
         <PartnerSupport />
-        <CasewellPartner />
         <Conversation />
-        <WhyPartner />
+        <CasewellPartner />
     </>
   )
 }

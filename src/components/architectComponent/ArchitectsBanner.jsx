@@ -11,24 +11,18 @@ const ArchitectsBanner = () => {
 
   useEffect(() => {
     if (bannerHeadingRef.current) {
-      // Create split text
       const splitHeader = new SplitText(bannerHeadingRef.current, {
         type: "words, chars, lines"
       });
-
-      // Animate the lines
       gsap.from(splitHeader.lines, {
         duration: 1,
         y: 100,
         autoAlpha: 0,
-        delay: 3,
         stagger: 0.05,
         ease: "power4.out"
       });
-
-      // Optional cleanup
       return () => {
-        splitHeader.revert(); // revert DOM changes by SplitText
+        splitHeader.revert(); 
       };
     }
   }, []);
@@ -38,8 +32,8 @@ const ArchitectsBanner = () => {
       <section id="architects" className='w-full h-screen bg-[url("/images/architecBanner.jpg")] bg-cover font-myFont'>
         <div className="architectsWrapper w-full h-full flex items-end p-12 text-white">
           <div className="architectsContent">
-            <h2 ref={bannerHeadingRef} className='text-4xl mb-8'>
-              Join the Casewell <br /> Trade Program
+            <h2 ref={bannerHeadingRef} className='text-3xl md:text-5xl mb-8 leading-10'>
+              Join the story of <br /> Zebrano Studio
             </h2>
             <BtnComponent text="join now" />
           </div>

@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { FiArrowUpRight } from 'react-icons/fi'
 
-// gsap.registerPlugin(SplitText);
+gsap.registerPlugin(SplitText);
 
 const ContactUs = () => {
     const headingRef = useRef();
@@ -24,14 +24,14 @@ const ContactUs = () => {
 
         
         const textSplit = new SplitText(textRef.current, { 
-            type: "lines,words,chars" ,
+            type: "lines,words" ,
             linesClass: "split-line block overflow-hidden",
         });
         gsap.from(textSplit.words, {
             opacity: 0,
             y: 20,
-            stagger: 0.3,
-            duration: 1,
+            stagger: 0.03,
+            duration: 0.5,
             ease: "power3.out",
         });
     }, []);
