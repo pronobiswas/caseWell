@@ -278,7 +278,7 @@ const Header = () => {
           </div>
         </nav>
         {/* ====nav for mobile and small device===== */}
-        <nav id="mobileMenu" className="w-full  block p-5">
+        <nav id="mobileMenu" className="w-full  block p-5 relative">
           <div className="navWrapper flex justify-between">
             <div className="logo">
               <span><svg width="97" height="23" viewBox="0 0 97 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,6 +294,11 @@ const Header = () => {
               </div>
             </div>
           </div>
+
+          {/* =====sideMenu====== */}
+          <aside className="w-80 h-screen bg-black z-50 absolute top-[64px] right-0">
+            <h1>Hello world</h1>
+          </aside>
         </nav>
       </header>
 
@@ -358,6 +363,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+
       {/* ==loader== */}
       <div id="loader" className="fixed top-0 left-0 w-full h-screen bg-white z-40">
         <div className="loaderWrapper container w-full h-full flex justify-end items-end">
