@@ -23,9 +23,9 @@ const RootLayout = () => {
 
   return (
     <>
+      <Header />
       <div id="smooth-wrapper" className="w-full h-full">
         <div id="smooth-content">
-          <Header />
           <Outlet />
           <Footer />
         </div>
