@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import gsap from "gsap";
@@ -16,9 +16,11 @@ const Header = () => {
   const isBlack = location.pathname === '/terms';
   const isBlack1 = location.pathname === '/privacy-Policy';
   const isBlack2 = location.pathname === '/contact';
-  const [isClicked, setIsClicked] = useState(false);
-  let [scrollTop, setScrollTop] = useState(0);
+  const [scrollTop, setScrollTop] = useState(0);
   const [isScrollingDown, setIsScrollingDown] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const [isShowAsideMenu, setIsShowAsideMenu] = useState(true);
+  const [toggleMenu, setToggleMenu] = useState(false);
   const dropDownMenu = useRef(null);
   const pro_line = useRef(null);
   const rotateDown = useRef(null);
@@ -26,77 +28,76 @@ const Header = () => {
   const menuWrapperRef = useRef(null);
   const menuRef = useRef(null);
   const navmenu2 = useRef(null);
+  const asidemenuRef = useRef(null);
 
   const progressRef = useRef(null);
   const numberRef = useRef(null);
 
   // =========scroll effect==========
-  // useEffect(() => {
-  //   let lastScrollY = window.scrollY;
-
-  //   const handleScroll = () => {
-  //     const currentScrollY = window.scrollY;
-  //     setScrollTop(currentScrollY);
-
-  //     if (currentScrollY > lastScrollY) {
-  //       setIsScrollingDown(true);
-  //     } else {
-  //       setIsScrollingDown(false);
-  //     }
-
-  //     lastScrollY = currentScrollY;
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-  // ======nav2 menu scrolling======
-  //   useEffect(() => {
-  //   if (!navmenu2.current) return;
-
-
-  //   ScrollTrigger.create({
-  //     trigger: navmenu2.current,
-  //     start: "top top",
-  //     end: () => document.body.scrollHeight, 
-  //     pin: true,
-  //     pinSpacing: true, 
-  //   });
-
-  //   if (scrollTop > 100 && isScrollingDown) {
-  //     navmenu2.current.classList.remove("hidden");
-  //     gsap.to(navmenu2.current, {
-  //       y: 0,
-  //       duration: 0.01,
-  //     });
-  //   } else {
-  //     navmenu2.current.classList.add("hidden");
-  //     gsap.to(navmenu2.current, {
-  //       y: -80,
-  //       duration: 0.05,
-  //     });
-  //   }
-  //   return () => {
-  //     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-  //   };
-  // }, [ scrollTop]);
-
-
 
 
   useEffect(() => {
-    const menuItems = menuWrapperRef.current.querySelectorAll(".menu_item");
-    const addressTexts = menuWrapperRef.current.querySelectorAll(".menuWrapper p");
-    const menu1Item = menuRef.current.querySelectorAll('li');
-    gsap.to(dropDownMenu.current, {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollTop(currentScrollY);
+
+      if (currentScrollY > lastScrollY) {
+        setIsScrollingDown(true);
+      } else {
+        setIsScrollingDown(false);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // ======toogle menu betwen nav1 and nav2======
+  useEffect(() => {
+    if (isScrollingDown && scrollTop > 300) {
+
+      setToggleMenu(false)
+    } else {
+      setToggleMenu(true)
+    }
+  }, [isScrollingDown, scrollTop]);
+
+
+
+
+  // =======handle menu buttton=====
+
+  function handleMenuBtn() {
+    setIsClicked((prev) => !prev);
+  }
+
+    useEffect(() => {
+    const menuWrapper = menuWrapperRef.current;
+    const dropDown = dropDownMenu.current;
+    const menuList = menuRef.current;
+    const line = pro_line.current;
+
+    if (!menuWrapper || !dropDown || !menuList || !line) return;
+
+    const menuItems = menuWrapper.querySelectorAll(".menu_item");
+    const addressTexts = menuWrapper.querySelectorAll(".menuWrapper p");
+
+
+    gsap.to(dropDown, {
       yPercent: isClicked ? 110 : 0,
-      opacity: 1,
+      opacity: isClicked ? 1 : 0,
       duration: 1,
       ease: "power2.out",
     });
+
+    let split;
 
     if (isClicked) {
       gsap.fromTo(
@@ -112,13 +113,13 @@ const Header = () => {
         }
       );
 
-      gsap.to(pro_line.current, {
+      gsap.to(line, {
         height: window.innerHeight - 80,
         duration: 1,
       });
 
-      // Clean up previous splits if any
-      const split = new SplitText(addressTexts, { type: "lines" });
+
+      split = new SplitText(addressTexts, { type: "lines" });
 
       gsap.from(split.lines, {
         y: 30,
@@ -135,7 +136,7 @@ const Header = () => {
         duration: 1,
       });
 
-      gsap.to(pro_line.current, {
+      gsap.to(line, {
         height: 20,
         duration: 1,
       });
@@ -145,25 +146,40 @@ const Header = () => {
         duration: 1,
       });
     }
-    // ==clicked menu1 items==
-    menuItems.forEach((item, index) => {
-      item.addEventListener("click", () => {
-        setIsClicked(false);
-        gsap.to(dropDownMenu.current, {
-          yPercent: 110,
-          opacity: 0,
-          duration: 1,
-          ease: "power2.out",
-        });
+
+    const handleItemClick = () => {
+      setIsClicked(false);
+      gsap.to(dropDown, {
+        yPercent: 110,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
       });
+    };
+
+    menuItems.forEach(item => {
+      item.addEventListener("click", handleItemClick);
     });
 
+    return () => {
+      menuItems.forEach(item => {
+        item.removeEventListener("click", handleItemClick);
+      });
+      if (split) {
+        split.revert(); 
+      }
+    };
   }, [isClicked]);
 
-  function handleMenuBtn() {
-    setIsClicked((prev) => !prev);
-  }
 
+
+
+
+  // =====handle aside menu=======
+  const handleAsideMenu = () => {
+    setIsShowAsideMenu(!isShowAsideMenu);
+  };
+  // =====starting loader=======
   useEffect(() => {
     let obj = { value: 0 };
 
@@ -194,91 +210,96 @@ const Header = () => {
 
   return (
     <>
-      <header id="header" className="w-full z-50 fixed top-0 left-0 bg-[#ffde8569]">
-        <nav id="nav1" className=" p-5 bg-[#00000000] ">
-          <div className="navwrapper flex items-center justify-between p-2">
-            <div className="logo font-semibold text-3xl text-white"><Link to={'/'}>casewell</Link></div>
-            <div className="menu1">
-              <ul ref={menuRef} className={`menu1Lis ${isBlack || isBlack1 || isBlack2 ? 'text-black' : 'text-white'}  font-semibold `}>
-                <li className="menu1item ">
-                  <div className="menu1LinkWrapper">
-                    <span>How It Works</span><span>How It Works</span>
-                  </div>
-                </li>
-                <li className="menu1item ">
-                  <Link to="cabinetary">
-                    <div className="menu1LinkWrapper">
-                      <span>Cabinetary</span><span>Cabinetary</span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="menu1item ">
-                  <Link to="inspiration">
-                    <div className="menu1LinkWrapper">
-                      <span>Inspiration</span><span>Inspiration</span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="menu1item ">
-                  <Link to="/architects">
-                    <div className="menu1LinkWrapper">
-                      <span>Architects</span><span>Architects</span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="menu1item ">
-                  <Link to="/aboutus">
-                    <div className="menu1LinkWrapper">
-                      <span>About Us</span><span>About Us</span>
-                    </div>
-                  </Link>
-                </li>
-                <li className="menu1item ">
-                  <Link to="/contact">
-                    <div className="menu1LinkWrapper">
-                      <span>Contact us</span><span>Contact us</span>
-                    </div>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        {/* ==nav2== */}
-        <nav
-          id="navTwo"
-          ref={navmenu2}
-          className={`w-full bg-blue-500 py-4  ${isClicked ? "border-b border-gray-300" : ""
-            }`}
-        >
-          <div className="container flex justify-between">
-            <div className="logo w-40 text-3xl font-bold text-white">CASEWELL</div>
-            <div className="menu">
-              <div
-                onClick={handleMenuBtn}
-                className="border py-2 px-4 rounded-full flex items-center gap-3 hover:cursor-pointer text-white"
-              >
-                <div className="w-12 h-6 overflow-hidden">
-                  {isClicked ? <span>Close</span> : <span>Menu</span>}
-                </div>
-                <div className="flex flex-col gap-3">
-                  <div
-                    ref={rotateDown}
-                    className={`w-5 h-[2px] bg-white ${isClicked ? "rotate-45 origin-top-left" : ""
-                      }`}
-                  ></div>
-                  <div
-                    ref={rotateUp}
-                    className={`w-5 h-[2px] bg-white ${isClicked ? "-rotate-45 origin-bottom-left" : ""
-                      }`}
-                  ></div>
+      <header id="header" className="w-full z-50 fixed top-0 left-0 ">
+        <div className="w-full hidden md:block">
+            <nav id="nav1" className= {`p-5 bg-transparent ${toggleMenu ? '': "hidden"} `}>
+              <div className="navwrapper flex items-center justify-between p-2">
+                <div className="logo font-semibold text-3xl text-white"><Link to={'/'}>casewell</Link></div>
+                <div className="menu1">
+                  <ul ref={menuRef} className={`menu1Lis ${isBlack || isBlack1 || isBlack2 ? 'text-black' : 'text-white'}  font-semibold `}>
+                    <li className="menu1item ">
+                      <div className="menu1LinkWrapper">
+                        <span>How It Works</span><span>How It Works</span>
+                      </div>
+                    </li>
+                    <li className="menu1item ">
+                      <Link to="cabinetary">
+                        <div className="menu1LinkWrapper">
+                          <span>Cabinetary</span><span>Cabinetary</span>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="menu1item ">
+                      <Link to="inspiration">
+                        <div className="menu1LinkWrapper">
+                          <span>Inspiration</span><span>Inspiration</span>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="menu1item ">
+                      <Link to="/architects">
+                        <div className="menu1LinkWrapper">
+                          <span>Architects</span><span>Architects</span>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="menu1item ">
+                      <Link to="/aboutus">
+                        <div className="menu1LinkWrapper">
+                          <span>About Us</span><span>About Us</span>
+                        </div>
+                      </Link>
+                    </li>
+                    <li className="menu1item ">
+                      <Link to="/contact">
+                        <div className="menu1LinkWrapper">
+                          <span>Contact us</span><span>Contact us</span>
+                        </div>
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </nav>
+            </nav>
+
+            <nav
+              id="navTwo"
+              ref={navmenu2}
+              className={`w-full bg-bgTwo py-4  ${isClicked ? "border-b border-gray-300" : ""
+                } ${toggleMenu ? 'hidden': ""} `}
+            >
+              <div className="container flex justify-between">
+                <div className="logo w-40 text-3xl font-bold text-white">CASEWELL</div>
+                <div className="menu">
+                  <div
+                    onClick={handleMenuBtn}
+                    className="border py-2 px-4 rounded-full flex items-center gap-3 hover:cursor-pointer text-white"
+                  >
+                    <div className="w-12 h-6 overflow-hidden">
+                      {isClicked ? <span>Close</span> : <span>Menu</span>}
+                    </div>
+                    <div className="flex flex-col gap-3">
+                      <div
+                        ref={rotateDown}
+                        className={`w-5 h-[2px] bg-white ${isClicked ? "rotate-45 origin-top-left" : ""
+                          }`}
+                      ></div>
+                      <div
+                        ref={rotateUp}
+                        className={`w-5 h-[2px] bg-white ${isClicked ? "-rotate-45 origin-bottom-left" : ""
+                          }`}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </div>
+        
+        
+
         {/* ====nav for mobile and small device===== */}
-        <nav id="mobileMenu" className="w-full  block p-5 relative">
+        <nav id="mobileMenu" className="w-full  block md:hidden p-5 relative">
           <div className="navWrapper flex justify-between">
             <div className="logo">
               <span><svg width="97" height="23" viewBox="0 0 97 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -286,18 +307,18 @@ const Header = () => {
               </svg>
               </span>
             </div>
-            <div className="menuIcon">
-              <div className="w-5 h-5 flex flex-col justify-between cursor-pointer">
+            <div onClick={handleAsideMenu} className="menuIcon w-fit h-fit bg-[#0000007e] p-1">
+              <div className="w-5 h-4 flex flex-col justify-between cursor-pointer group relative overflow-hidden ">
                 <div className="bar w-6 h-[2px] bg-white"></div>
-                <div className="bar w-6 h-[2px] bg-white"></div>
+                <div className="bar w-6 h-[2px] bg-white group-hover:absolute group-hover:right-[-20px]"></div>
                 <div className="bar w-6 h-[2px] bg-white"></div>
               </div>
             </div>
           </div>
 
           {/* =====sideMenu====== */}
-          <aside className="w-80 h-screen bg-black z-50 absolute top-[64px] right-0">
-            <h1>Hello world</h1>
+          <aside ref={asidemenuRef} className={`w-80 h-screen bg-black z-50 absolute top-[64px] ${isShowAsideMenu ? 'right-[-100%]' : 'right-0'} transition-all duration-500`}>
+            <h1 className="text-2xl font-myFont text-white">Hello world</h1>
           </aside>
         </nav>
       </header>
@@ -306,7 +327,7 @@ const Header = () => {
       <div
         ref={dropDownMenu}
 
-        className="w-full h-screen bg-gray-800 absolute left-0 top-100 py-20 z-30 opacity-0 translate-y-[-110%]"
+        className="w-full h-screen bg-gray-800 fixed left-0 top-100 py-20 z-40 opacity-0 translate-y-[-110%]"
       >
         <div ref={menuWrapperRef} className="menuWrapper flex">
           {/* Address Section */}
