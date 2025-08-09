@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./header/Header";
+// import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HeaderNew from "./header/HeaderNew";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
@@ -23,9 +24,11 @@ const RootLayout = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      
       <div id="smooth-wrapper" className="w-full h-full">
         <div id="smooth-content">
+          <HeaderNew/>
           <Outlet />
           <Footer />
         </div>
