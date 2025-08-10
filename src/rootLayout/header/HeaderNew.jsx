@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { gsap } from "gsap";
 import '../../index.css'
 
 const HeaderNew = () => {
@@ -8,10 +9,42 @@ const HeaderNew = () => {
     const isBlack = location.pathname === '/terms';
     const isBlack1 = location.pathname === '/privacy-Policy';
     const isBlack2 = location.pathname === '/contact';
+
+    const nav2Ref = useRef(null);
+    const dropdownRef = useRef(null);
+
+    const [isClicked, setIsClicked] = useState(false);
+
+    const expandDropdown = () => {
+        setIsClicked(prev => !prev);
+        const horizontalBar = nav2Ref.current.querySelectorAll('.horizontalBar');
+        const crossBar = nav2Ref.current.querySelectorAll('.crossBar');
+        gsap.to(horizontalBar,{
+            width: isClicked ? 0 : 30,
+            duration:0.5,
+            stagger:0.09
+        })
+        gsap.to(crossBar,{
+            width: isClicked ? 30 : 0,
+            duration:0.5,
+            stagger:0.09
+        })
+
+    }
+    useEffect(() => {
+        gsap.to(dropdownRef.current, {
+            height: isClicked ? "auto" : 0,
+            duration: 0.5,
+            ease: "power1.out"
+        });
+    }, [isClicked])
+    console.log(isClicked);
     return (
         <>
-            <header className='w-full p-5 absolute'>
-                <nav className={`w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 ? 'text-black' : 'text-white'}`}>
+            <header className='w-full  absolute'>
+                <nav className=" hidden lg:block p-5">
+                    <div className={`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 ? 'text-black' : 'text-white'}`}>
+
                     {/* ======logo====== */}
                     <div className="log w-fit">
                         <strong>Zebrano Studio</strong>
@@ -143,12 +176,40 @@ const HeaderNew = () => {
                         <div className="configaretor w-fit h-fit py-2 px-3 border bg-transparent text-white hover:bg-white hover:text-black  cursor-pointer rounded-full z-30">
                             configure now
                         </div>
-
-
                     </div>
+                    </div>
+                </nav>
+                {/* ===mobile menu=== */}
+                <nav ref={nav2Ref} className='block lg:hidden'>
+                    <div className="navWrapper w-full p-5  bg-[#0000006e] flex items-center justify-between relative z-50">
+                        <div className="logo text-3xl text-white">
+                            <Link to="/">
+                                <span>Zebrano Studio</span>
+                            </Link>
+                        </div>
+                        <div className="menuBar">
+                            <div onClick={expandDropdown} className="bar w-[30px] h-6 flex flex-col justify-between bg-slate-500 relative">
+                                <div className={`horizontalBar w-full h-1 bg-white origin-top-left `}></div>
+                                <div className={`horizontalBar w-full h-1 bg-white origin-bottom-left `}></div>
 
+                                <div className="crossBar absolute top-1 left-0 w-1 h-0 bg-white rotate-[-55deg] origin-top-left"></div>
+                                <div className="crossBar absolute top-1 right-0 w-1 h-0  bg-white rotate-[55deg] origin-top-right"></div>
+                            </div>
+                        </div>
 
-
+                        <div ref={dropdownRef} className="absolute top-20 right-0 w-60 h-0 overflow-hidden ">
+                            <div className='w-full h-full bg-black '>
+                                <ul className='w-full flex flex-col  gap-5 [&>li]:text-xl [&>li]:cursor-pointer [&>li]:text-white'>
+                                    <li>Products</li>
+                                    <li>Collection</li>
+                                    <li>Inspiration</li>
+                                    <li>Architects</li>
+                                    <li>About Us</li>
+                                    <li>Contact</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </header>
         </>
