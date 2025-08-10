@@ -1,15 +1,91 @@
-import React from 'react'
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
 
-const ButtomHeading = ({heading = "Heading Text" , paragraph1 = "this is some text", paragraph2 = "" }) => {
+gsap.registerPlugin(SplitText);
+
+const ButtomHeading = ({
+  heading = "Heading Text",
+  paragraph1 = "This is some text",
+  paragraph2 = "",
+  color = "white"
+}) => {
+  const textCon = useRef(null);
+  const headingRef = useRef(null);
+  const subheadingRef = useRef(null);
+  const subheadin2gRef = useRef(null);
+  console.log(color);
+
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Split heading into lines
+      const headingSplit = new SplitText(headingRef.current, {
+        type: 'lines',
+        linesClass: 'line overflow-hidden block',
+      });
+
+
+      gsap.from(headingSplit.lines, {
+        y: 100,
+        opacity: 0,
+        duration: 1.5,
+        ease: 'power4.out',
+        stagger: 0.05,
+      });
+
+      const subheadingSplitLine = new SplitText(subheadingRef.current, {
+        type: 'lines',
+        linesClass: 'line overflow-hidden block',
+      });
+      const subheadingSplitWord = new SplitText(subheadingRef.current, {
+        type: 'words',
+        wordsClass: 'line overflow-hidden block',
+      });
+
+
+
+      gsap.from(subheadingSplitWord.words, {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        ease: 'power4.out',
+        stagger: 0.05,
+      });
+      if (subheadin2gRef.current) {
+
+        const subheading2SplitLine = new SplitText(subheadin2gRef.current, {
+          type: 'lines',
+          linesClass: 'line overflow-hidden block',
+        });
+        const subheading2SplitWord = new SplitText(subheadin2gRef.current, {
+          type: 'words',
+          wordsClass: 'line overflow-hidden block',
+        });
+        gsap.from(subheading2SplitWord.words, {
+          y: 100,
+          opacity: 0,
+          duration: 2,
+          ease: 'power4.out',
+          stagger: 0.05,
+        });
+      }
+
+    });
+
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <>
-    <div>
-        <h1>{heading}</h1>
-        <p>{paragraph1}</p>
-        <p>{paragraph2}</p>
+    <div ref={textCon} className={`text-${color} w-full max-w-xl`}>
+      <h1 ref={headingRef} className="split text-3xl font-myFont md:text-5xl">{heading}</h1>
+      <p ref={subheadingRef} className="split text-xl font-myFont mt-5">{paragraph1}</p>
+      {paragraph2 && (
+        <p ref={subheadin2gRef} className="split text-base font-myFont">{paragraph2}</p>
+      )}
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default ButtomHeading
+export default ButtomHeading;

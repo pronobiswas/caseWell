@@ -1,15 +1,12 @@
 import React from 'react'
+import ButtomHeading from '../../components/commonComponent/ButtomHeading'
 
 const ThreeDCollection = () => {
   return (
     <>
     <section>
         <div className="wrapper w-full h-screen flex items-end justify-start p-5 md:p-12 bg-bgTwo">
-            <div className="text">
-                <h1 className='text-3xl md:text-5xl font-myFont'>3D Collection</h1>
-                <p className='font-myFont'>Textured doors with depth – sculptural surfaces that make a statement.</p>
-                <p className='font-myFont'>Our 3D panel doors combine bold patterns with refined materials. Ideal for feature walls and spaces that need artistic dimension.</p>
-            </div>
+            <ButtomHeading heading={"3D Collection"} paragraph1={"Textured doors with depth – sculptural surfaces that make a statement."} paragraph2={"Our 3D panel doors combine bold patterns with refined materials. Ideal for feature walls and spaces that need artistic dimension."}/>
         </div>
     </section>
     </>

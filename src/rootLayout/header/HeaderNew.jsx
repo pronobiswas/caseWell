@@ -11,7 +11,7 @@ const HeaderNew = () => {
     return (
         <>
             <header className='w-full p-5 absolute'>
-                <nav className={`w-full flex justify-between items-center ${isBlack || isBlack1 ||isBlack2 ? 'text-black' : 'text-white' }`}>
+                <nav className={`w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 ? 'text-black' : 'text-white'}`}>
                     {/* ======logo====== */}
                     <div className="log w-fit">
                         <strong>Zebrano Studio</strong>
@@ -31,18 +31,24 @@ const HeaderNew = () => {
                                 <div className="dropdownMenu w-52  bg-[#e1dbcb48] absolute top-8 right-0 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
 
                                     <div className="dropdounWrapper flex flex-col gap-3 shadow-md">
-                                        <div className='dropdownMenuItem '>
-                                            <span className='mt-0'>Pivot Doors</span>
-                                            <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                        </div>
-                                        <div className='dropdownMenuItem '>
-                                            <span>Sliding Doors</span>
-                                            <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                        </div>
-                                        <div className='dropdownMenuItem '>
-                                            <span>Hinged Doors</span>
-                                            <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                        </div>
+                                        <Link to="/products/PivotDoor" >
+                                            <div className='dropdownMenuItem '>
+                                                <span className='mt-0'>Pivot Doors</span>
+                                                <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                            </div>
+                                        </Link>
+                                        <Link to="/products/SlideDoor" >
+                                            <div className='dropdownMenuItem '>
+                                                <span>Sliding Doors</span>
+                                                <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                            </div>
+                                        </Link>
+                                        <Link to="/products/HingedDoors" >
+                                            <div className='dropdownMenuItem '>
+                                                <span>Hinged Doors</span>
+                                                <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                            </div>
+                                        </Link>
                                     </div>
 
                                 </div>
@@ -58,28 +64,28 @@ const HeaderNew = () => {
 
                                     <div className="dropdounWrapper flex flex-col gap-3 shadow-md">
                                         <Link to='/collections/GlassCollection'>
-                                        <div className='dropdownMenuItem '>
-                                            <span className='mt-0'>Glass Collection</span>
-                                            <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                        </div>
+                                            <div className='dropdownMenuItem '>
+                                                <span className='mt-0'>Glass Collection</span>
+                                                <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                            </div>
                                         </Link>
                                         <Link to='/collections/FineerCollection'>
-                                        <div className='dropdownMenuItem '>
-                                            <span>Veneer Collection</span>
-                                            <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                        </div>
+                                            <div className='dropdownMenuItem '>
+                                                <span>Veneer Collection</span>
+                                                <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                            </div>
                                         </Link>
                                         <Link to='/collections/ThreeDCollection'>
-                                        <div className='dropdownMenuItem '>
-                                            <span>3D Collection</span>
-                                            <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                        </div>
+                                            <div className='dropdownMenuItem '>
+                                                <span>3D Collection</span>
+                                                <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                            </div>
                                         </Link>
                                         <Link to="/collections/AtelierCollection" >
-                                        <div className='dropdownMenuItem '>
-                                            <span>Atelier Collection</span>
-                                            <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                        </div>
+                                            <div className='dropdownMenuItem '>
+                                                <span>Atelier Collection</span>
+                                                <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                            </div>
                                         </Link>
                                     </div>
 
