@@ -37,8 +37,40 @@ header#header{
 }
 
 /* ======nav bar======== */
-.menu ul .menuItem{} 
-/* .menu ul .menuItem .navLink{} */
+#menuIcon .horizontalLine{
+  stroke-dashoffset: 100 ;
+  stroke-dasharray: 100 ;
+}
+#menuIcon .crosLine{
+  stroke-dashoffset: 100 ;
+  stroke-dasharray: 100 ;
+}
+.gggg{
+  width: fit-content;
+  height: 30px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.red{
+  position: relative;
+  top: 0;
+  transform: rotateX(0);
+  transition: 0.4s all linear;
+}
+.blue{
+  position: relative;
+  top: -10px;
+  transform: rotateX(90deg);
+  transition: 0.4s all linear;
+}
+.gggg:hover .red{
+  top: -15px;
+  transform: rotateX(90deg);
+}
+.gggg:hover .blue{
+  top: -28px;
+  transform: rotateX(0deg);
+}
 
 
 .menu ul .menuItem .dropdownMenu{
