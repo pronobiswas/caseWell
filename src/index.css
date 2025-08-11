@@ -55,13 +55,13 @@ header#header{
   position: relative;
   top: 0;
   transform: rotateX(0);
-  transition: 0.4s all linear;
+  transition: 0.2s all linear;
 }
 .blue{
   position: relative;
   top: -10px;
   transform: rotateX(90deg);
-  transition: 0.4s all linear;
+  transition: 0.2s all linear;
 }
 .gggg:hover .red{
   top: -15px;
