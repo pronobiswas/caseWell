@@ -110,11 +110,12 @@ const Stalen = () => {
     return (
         <>
             <section id="stalen" className="w-full h-full py-12 ">
-                <div className="stalenWrapper w-full h-full  bg-black p-12  text-white flex flex-col lg:flex-row items-end gap-12">
+                <div className="stalenWrapper w-full h-full  bg-colorOne p-12  text-white flex flex-col lg:flex-row items-end gap-12 ">
 
-                    <div className="w-full lg:w-1/4 h-full bg-[#c4c3c325] shrink-0 min-h-[342px] p-8 flex justify-end items-end">
-                        <div className="w-full h-fit flex flex-col items-end gap-6">
-                            <h2 className=" md:max-w-56 text-2xl text-right">Type stalen deuren ment glas</h2>
+                    <div className="w-full lg:w-1/4 h-full  shrink-0 min-h-[342px] p-8 flex justify-end items-end bg-[#0c290136]">
+                        <div className="w-full h-fit flex flex-col  gap-6 ">
+                            <h2 className=" md:max-w-56 text-2xl ">Door Types</h2>
+                            <p>Explore our diverse range of exclusive wooden doors, each designed to offer distinct advantages in style, functionality, and space utilization. From grand entrances to seamless room transitions, we have the perfect solution for your home.</p>
                             <div className="w-fit border border-yellow-600 px-4 py-1">
                                 <span className="text-yellow-600">- CONFIGUREER DEUR</span>
                             </div>
@@ -122,11 +123,11 @@ const Stalen = () => {
                     </div>
                     <div className="stalenCardWrapper w-full lg:w-3/4 h-full">
                         <div className="w-full h-full flex flex-wrap md:flex-nowrap gap-0 cursor-pointer">
-                            {/* stalen card 1 */}
+                            {/* Pivot Doors */}
                             {/* ================== */}
                             <div
                                 ref={StalenCard1}
-                                className="stalen_card w-full h-full p-7 border border-yellow-900"
+                                className="stalen_card w-full h-auto p-7 border border-yellow-900"
                             >
                                 {/* -------- */}
                                 <div className="stalenanim w-full h-20 flex gap-0">
@@ -146,17 +147,14 @@ const Stalen = () => {
                                 </div>
 
                                 <div className="text">
-                                    <h3 className="text-2xl">Stalen</h3>
-                                    <h3 className="text-2xl text-yellow-600">taastdeuren</h3>
+                                    <h3 className="text-2xl text-yellow-600">Pivot Doors</h3>
                                     <p className="w-full mt-5 mb-6 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                                        assumenda eum repellat. Et cumque minima quae doloremque
-                                        fugit hic.
+                                        Rotate on a vertical axis, allowing for larger, more dramatic entrances.
                                     </p>
-                                    <span className="text-yellow-600">-ontdek NU</span>
+                                    <span className="text-yellow-600">-View Collections</span>
                                 </div>
                             </div>
-                            {/* stalen card 2  */}
+                            {/* slide door  */}
                             {/* ================== */}
                             <div
                                 ref={StalenCard2}
@@ -175,21 +173,18 @@ const Stalen = () => {
                                 </div>
 
                                 <div className="text">
-                                    <h3 className="text-2xl">Stalen</h3>
-                                    <h3 className="text-2xl text-yellow-600">taastdeuren</h3>
+                                    <h3 className="text-2xl text-yellow-600">Slide Doors</h3>
                                     <p className="w-full mt-5 mb-6 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                                        assumenda eum repellat. Et cumque minima quae doloremque
-                                        fugit hic.
+                                        Our custom sliding doors glide effortlessly along a track, making them perfect for space-saving layouts and modern interior design. Ideal as elegant room dividers, wardrobe solutions, or for creating a smooth flow between spaces.
                                     </p>
-                                    <span className="text-yellow-600">-ontdek NU</span>
+                                    <span className="text-yellow-600">-View Collections</span>
                                 </div>
                             </div>
-                            {/* stalen card 3 */}
+                            {/* Classic Hinged Doors */}
                             {/* ================== */}
                             <div
                                 ref={StalenCard3}
-                                className="stalen_card w-full h-full p-7 border border-yellow-900"
+                                className="stalen_card w-full h-auto p-7 border border-yellow-900"
                             >
                                 {/* -------- */}
                                 <div className="stalenanim w-full h-20 flex gap-0">
@@ -209,14 +204,11 @@ const Stalen = () => {
                                 </div>
 
                                 <div className="text">
-                                    <h3 className="text-2xl">Stalen</h3>
-                                    <h3 className="text-2xl text-yellow-600">taastdeuren</h3>
+                                    <h3 className="text-2xl text-yellow-600">Classic Hinged Doors</h3>
                                     <p className="w-full mt-5 mb-6 leading-6">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                                        assumenda eum repellat. Et cumque minima quae doloremque
-                                        fugit hic.
+                                        The classic door, swinging open and closed on side-mounted hinges.
                                     </p>
-                                    <span className="text-yellow-600 font-semibold">-ontdek NU</span>
+                                    <span className="text-yellow-600 font-semibold">-View Collections</span>
                                 </div>
                             </div>
                         </div>

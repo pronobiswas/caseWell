@@ -6,30 +6,30 @@ const data = [
     {
         title: "Architects",
         image: "/images/img1.png",
-        heading: "Architects",
+        heading: "Exclusive wooden doors",
         description:
-            "We can assist in bringing your technical and custom designs to life with precision, care, and a supply process you can count on.",
+            "Zebrano creates tailor-made pivot, sliding, and classic doors crafted from premium wood and finished with exclusive detailing. ",
     },
     {
-        title: "Custom Home Builders",
+        title: "Custom home builders ",
         image: "/images/img2.png",
-        heading: "Custom Home Builders",
+        heading: "Materials With a Story",
         description:
-            "Build homes your clients will love — with curated styles, efficient fulfillment, and cost-conscious options that protect your bottom line.",
+            "From rare woods to hand-selected stone and artisan glass, each material is chosen for its character, history, and natural beauty",
     },
     {
         title: "Interior Designers",
         image: "/images/img3.png",
-        heading: "Interior Designers",
+        heading: "Design Without Limits",
         description:
-            "Let us help bring your creative vision to life. From product selection to install coordination, we’re your behind-the-scenes partner in beautiful, buildable design.",
+            "We go beyond standard dimensions and finishes, shaping doors that integrate seamlessly into your architecture and reflect your personal style.",
     },
     {
         title: "Contractors & Installers",
         image: "/images/img4.png",
-        heading: "Contractors & Installers",
+        heading: "Craftsmanship & Durability",
         description:
-            "We can be your go-to supply team — dependable products, clear communication, and responsive support to keep your projects on track.",
+            "We build them so well, you might start showing them off more than your new kitchen.",
     },
 ];
 
@@ -135,37 +135,36 @@ const ContructorComponent2 = () => {
     }, []);
     return (
         <>
-            <div id="constructor" className="w-full h-full lg:h-screen p-12 bg-[#F2F0EA] font-myFont">
+            <div id="constructor" className="w-full h-full lg:h-screen p-5 md:p-12 bg-[#F2F0EA] font-myFont">
                 <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-8">
                     {/* Left Content */}
                     <div className="w-full lg:w-1/2 order-2 lg:order-1 p-8 lg:p-12 bg-[#E1DBCB] rounded-3xl">
                         <div className="w-full h-full flex flex-col justify-between">
-                            <p className="text-gray-700 mb-4">You're in the right place if you're a...</p>
+                            <p className="text-gray-700">“Passion for Wood. Precision in Design.”</p>
                             <div className="box1" ref={boxRef}>
                                 <h2
                                     ref={headingRef}
-                                    className="constructHeading text-4xl lg:text-5xl font-bold mt-6 mb-6 text-gray-900 leading-tight"
+                                    className="constructHeading text-2xl md:text-4xl lg:text-5xl font-bold my-3 md:my-6 text-gray-900 leading-tight"
                                 />
                                 <p
                                     ref={descRef}
-                                    className="constructDescription mb-8 max-w-md text-gray-700 text-lg leading-relaxed"
+                                    className="constructDescription mb-4 md:mb-8 max-w-md text-gray-700 text-sm md:text-lg leading-relaxed"
                                 />
                                 <div className="w-fit border-2 border-gray-800 px-6 py-3 bg-amber-50 cursor-pointer rounded-full flex items-center gap-3 hover:bg-amber-100 transition-all duration-300">
-                                    <span className="font-medium">See Contractor Service</span>
+                                    <span className="font-medium">See collection</span>
                                     <BsArrowUpRight className="w-5 h-5" />
                                 </div>
                             </div>
-
                             {/* Progress Section */}
-                            <div className="w-full mt-10">
+                            <div className="w-full mt-5 md:mt-10">
                                 {data.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="progressBox py-4 cursor-pointer rounded-lg px-2 transition-colors duration-300"
+                                        className="progressBox py-1 md:py-4 cursor-pointer rounded-lg px-2 transition-colors duration-300"
                                         onClick={() => handleClick(index)}
                                     >
-                                        <div className="w-full flex justify-between items-center mb-3">
-                                            <h3 className="text-2xl lg:text-3xl text-neutral-700 font-medium">{item.title}</h3>
+                                        <div className="w-full flex justify-between items-center mb-1 md:mb-3">
+                                            <h3 className="text-base md:text-2xl lg:text-3xl text-neutral-700 font-medium">{item.title}</h3>
                                             <span className="text-3xl text-neutral-600 font-light">+</span>
                                         </div>
                                         <div className="progressbar w-full h-[1px] bg-gray-200 rounded-full overflow-hidden">
@@ -182,7 +181,7 @@ const ContructorComponent2 = () => {
                     </div>
 
                     {/* Right Image */}
-                    <div className="w-full lg:w-1/2 order-1 lg:order-2 h-full  rounded-3xl lg:rounded-[80px] overflow-hidden">
+                    <div className="w-full lg:w-1/2 order-1 lg:order-2 h-60 md:h-[500px] lg:h-full  rounded-3xl lg:rounded-[80px] overflow-hidden">
                         <img
                             ref={imgRef}
                             src={data[0].image}

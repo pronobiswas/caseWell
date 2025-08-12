@@ -43,14 +43,15 @@ const WhyPartner = () => {
   //   });
 
 useEffect(() => {
-  const handleLoad = () => {
+  if (!partnerHeading.current || !partnerDes.current || !partnerCard.current) return;
+
+  const ctx = gsap.context(() => {
     const heading = partnerHeading.current;
     const split = new SplitText(partnerDes.current, { type: "words" });
-    const words = split.words;
-    const cards = partnerCard.current?.querySelectorAll(".box");
+    const words = split.words || [];
+    const cards = partnerCard.current.querySelectorAll(".box");
 
-    if (!heading || !cards) return;
-
+    // Heading animation
     gsap.from(heading, {
       y: 100,
       opacity: 0,
@@ -63,20 +64,23 @@ useEffect(() => {
         scrub: true,
       },
     });
-    gsap.from(words, {
-    x: 30,
-    opacity: 0,
-    ease: "power2.out",
-    duration: 1,
-    stagger: 0.1,
-    scrollTrigger: {
-      trigger: "#whyPartner",
-      start: "top 60%",
-      end: "+=200",
-      scrub: true,
-    },
-  });
 
+    // Description words animation
+    gsap.from(words, {
+      x: 30,
+      opacity: 0,
+      ease: "power2.out",
+      duration: 1,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: "#whyPartner",
+        start: "top 60%",
+        end: "+=200",
+        scrub: true,
+      },
+    });
+
+    // Cards animation
     gsap.from(cards, {
       y: 100,
       opacity: 0,
@@ -85,37 +89,27 @@ useEffect(() => {
       scrollTrigger: {
         trigger: "#whyPartner",
         start: "top 40%",
-        end: "+=500",
+        end: "+=200",
         scrub: true,
       },
     });
+  });
 
-    ScrollTrigger.refresh();
-  };
-
-  if (document.readyState === "complete") {
-    handleLoad();
-  } else {
-    window.addEventListener("load", handleLoad);
-  }
-
-  return () => {
-    window.removeEventListener("load", handleLoad);
-  };
+  return () => ctx.revert(); 
 }, []);
+
 
 
 
 
   return (
     <>
-      <section id="whyPartner" className="w-full h-full bg-bgOne">
-        <div className="partnerWrapper w-full h-full min-h-screen p-16 pt-20 flex flex-col justify-between">
+      <section id="whyPartner" className="w-full h-full bg-bgOne text-black">
+        <div className="partnerWrapper w-full h-full  p-16 pt-20 flex flex-col justify-between">
           <div className="partnerHeading flex justify-between">
-            <h3 ref={partnerHeading} className="text-3xl">Why Partner with Casewell?</h3>
-            <p ref={partnerDes} className="w-64 text-right">
-              We built the cabinet supply model that should've existed all
-              along, one that supports your success without getting in your way.
+            <h3 ref={partnerHeading} className="text-3xl">Why Choose Zebrano Studio?</h3>
+            <p ref={partnerDes} className="w-80 text-right">
+              We believe luxury shouldn’t be out of reach. Our doors are crafted with the same precision and materials found in the world’s finest interiors — yet designed to be accessible for every home. From first sketch to final installation, we make it possible to bring high-end design into your everyday life, without compromise.
             </p>
           </div>
           <div
@@ -127,9 +121,9 @@ useEffect(() => {
                 <FaRegMessage />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6>Complete Project Support</h6>
+                <h6>Bespoke Design </h6>
                 <p>
-                  Design help, showroom access, and fulfillment — all included.
+                  Tailored shapes, finishes, and materials to match your vision and space.
                 </p>
               </div>
               <div className="link flex items-center gap-3">
@@ -145,9 +139,9 @@ useEffect(() => {
                 <LuArrowRight />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6>Complete Project Support</h6>
+                <h6>Accessible Luxury</h6>
                 <p>
-                  Design help, showroom access, and fulfillment — all included.
+                  Premium craftsmanship and rare materials — made attainable for every project size.
                 </p>
               </div>
               <div className="link flex items-center gap-3">
@@ -163,9 +157,9 @@ useEffect(() => {
                 <BsLayoutWtf />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6>Complete Project Support</h6>
+                <h6>Easy Configuration</h6>
                 <p>
-                  Design help, showroom access, and fulfillment — all included.
+                  A simple process with curated options for faster delivery and effortless decision-making.
                 </p>
               </div>
               <div className="link flex items-center gap-3">
@@ -181,9 +175,9 @@ useEffect(() => {
                 <TbShield />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6>Complete Project Support</h6>
+                <h6>Precision Craftsmanship</h6>
                 <p>
-                  Design help, showroom access, and fulfillment — all included.
+                  Doors built to last a lifetime, with meticulous attention to detail.
                 </p>
               </div>
               <div className="link flex items-center gap-3">
@@ -199,9 +193,9 @@ useEffect(() => {
                 <PiArrowCircleUpRightLight />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6>Complete Project Support</h6>
+                <h6>Endless inspiration</h6>
                 <p>
-                  Design help, showroom access, and fulfillment — all included.
+                  Endless design possibilities to make your space truly unforgettable.
                 </p>
               </div>
               <div className="link flex items-center gap-3">

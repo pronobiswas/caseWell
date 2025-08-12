@@ -51,10 +51,10 @@ const InspirationHeader = () => {
 
   return (
     <section id="inspirationHeader">
-      <div className="inspirationHeaderWrapper text-white overflow-hidden">
+      <div className="inspirationHeaderWrapper w-full h-full text-white overflow-hidden">
         <h1
           ref={headingRef}
-          className="text-5xl md:text-[60px] lg:text-[152px] text-white font-semibold relative overflow-hidden"
+          className="text-5xl md:text-[60px] lg:text-[132px] text-white font-Montserrat font-bold relative overflow-hidden"
         >
           Explore our work
         </h1>
@@ -63,7 +63,7 @@ const InspirationHeader = () => {
           <div className="subheading w-full md:w-2/3 lg:order-2">
             <h2
               ref={subheadingRef}
-              className="text-[#698996] text-3xl md:text-5xl font-semibold w-full relative overflow-hidden "
+              className="text-colorTwo text-3xl md:text-4xl font-geist font-semibold w-full relative overflow-hidden "
             >
               " Our Zebrano Studio doors are designed to elevate your space, offering the bespoke luxury usually reserved for architectural masterpieces. See how <b>we make exclusivity accessible.</b>"
             </h2>

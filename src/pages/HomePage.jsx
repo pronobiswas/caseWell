@@ -11,7 +11,7 @@ import InspirationInsight from "../components/homeComponents/InspirationInsight"
 const HomePage = () => {
   
   return (
-    <div className="w-full h-full bg-[#F2F0EA] font-myFont">
+    <div className="w-full h-full bg-bgOne font-myFont">
       <Banner2/>
       <WhyPartner />
       <ContructorComponent2/>

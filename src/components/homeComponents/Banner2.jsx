@@ -59,7 +59,7 @@ const Banner2 = () => {
                 y: 100,
                 opacity: 0,
                 duration: 1,
-                delay:3,
+                delay:0.3,
                 ease: "power4.out",
                 stagger: 0.1
             });
@@ -69,7 +69,7 @@ const Banner2 = () => {
             gsap.from(split.words, {
                 y: -100,
                 opacity: 0,
-                delay:3,
+                delay:0.3,
                 duration: 1,
                 ease: "power4.out",
                 stagger: 0.1
@@ -88,36 +88,36 @@ const Banner2 = () => {
                 <div className="bannerWarpper w-full h-screen text-white">
                     {/* ==bannerRow== */}
                     <div className="proRow w-full h-1/4 border-b border-b-gray-400 relative">
-                    <div className="rowOverlay w-5 h-full bg-yellow-500 absolute top-0 left-0" style={{ width: "100%" }}></div>
+                    <div className="rowOverlay w-5 h-full bg-colorOne absolute top-0 left-0" style={{ width: "100%" }}></div>
                     </div>
                     {/* ==bannerRow== */}
                     <div className="proRow w-full h-1/4 border-b border-b-gray-400 py-5 px-20 relative">
-                    <div className="rowOverlay w-5 h-full bg-yellow-500 absolute top-0 right-0" style={{ width: "100%" }}></div>
+                    <div className="rowOverlay w-5 h-full bg-colorOne absolute top-0 right-0" style={{ width: "100%" }}></div>
                         <div className="banner_subHeading relative overflow-hidden">
-                            <h4 className='text-center text-2xl'>Residential and Signature Properties</h4>
+                            <h4 className='text-center text-2xl'>Exclusivity, now within reach</h4>
                         </div>
                         <div className="banner_heading relative overflow-hidden">
-                            <h1 className='text-[6vw] font-semibold'>High-end</h1>
+                            <h1 className='text-[6vw] font-semibold'>Luxury Doors</h1>
                         </div>
                     </div>
                     {/* ==bannerRow== */}
                     <div className="proRow w-full h-1/4 border-b border-b-gray-400 py-5 px-20 relative">
-                    <div className="rowOverlay w-5 h-full bg-yellow-500 absolute top-0 left-0" style={{ width: "100%" }}></div>
+                    <div className="rowOverlay w-5 h-full bg-colorOne absolute top-0 left-0" style={{ width: "100%" }}></div>
                         <div className="banner_subHeading relative overflow-hidden">
-                            <h4 className='text-center text-2xl'>Professional and Adaptive Spaces</h4>
+                            <h4 className='text-center text-2xl'>Doors that tell your story</h4>
                         </div>
                         <div className="banner_heading relative overflow-hidden">
-                            <h1 className='text-[6vw] font-semibold text-right'>Design + Build</h1>
+                            <h1 className='text-[6vw] font-semibold text-right'>Unique Designs</h1>
                         </div>
                     </div>
                     {/* ==bannerRow== */}
                     <div className="proRow w-full h-1/4 border-b border-b-gray-700 py-5 px-20 relative">
-                    <div className="rowOverlay w-5 h-full bg-yellow-500 absolute top-0 right-0" style={{ width: "100%" }}></div>
+                    <div className="rowOverlay w-5 h-full bg-colorOne absolute top-0 right-0" style={{ width: "100%" }}></div>
                         <div className="banner_subHeadingrelative overflow-hidden">
-                            <h4 className='text-right text-2xl'>Hospitality and Wellness Complexes</h4>
+                            <h4 className='text-right text-2xl'>Doors designed to transcend trends</h4>
                         </div>
                         <div className="banner_heading relative overflow-hidden">
-                            <h1 className='text-[6vw] font-semibold'>for elevated living</h1>
+                            <h1 className='text-[6vw] font-semibold'>Timeless Quality</h1>
                         </div>
                     </div>
                 </div>
