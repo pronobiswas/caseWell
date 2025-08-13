@@ -174,7 +174,7 @@ const HeaderNew = () => {
                         <div className="menu w-fit flex gap-5 items-center">
                             <ul className='flex gap-3 lg:gap-6 [&>li]:cursor-pointer text-xl'>
 
-                                <li className="menuItem relative group transition-all duration-300 ">
+                                <li className="menuItem relative group transition-all duration-300 hidden ">
                                     <Link to='/products'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
                                             <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Products</span>
@@ -207,7 +207,7 @@ const HeaderNew = () => {
 
                                     </div>
                                 </li>
-                                <li className="menuItem relative group ">
+                                <li className="menuItem relative group hidden">
                                     <Link to='/'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
                                             <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Collection</span>
