@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Stalen = () => {
     const StalenCard1 = useRef(null);
@@ -117,7 +118,7 @@ const Stalen = () => {
                             <h2 className=" md:max-w-56 text-2xl ">Door Types</h2>
                             <p>Explore our diverse range of exclusive wooden doors, each designed to offer distinct advantages in style, functionality, and space utilization. From grand entrances to seamless room transitions, we have the perfect solution for your home.</p>
                             <div className="w-fit border border-yellow-600 px-4 py-1">
-                                <span className="text-yellow-600">- CONFIGUREER DEUR</span>
+                                <span className="text-yellow-600">Configure Yours→</span>
                             </div>
                         </div>
                     </div>
@@ -151,7 +152,9 @@ const Stalen = () => {
                                     <p className="w-full mt-5 mb-6 ">
                                         Rotate on a vertical axis, allowing for larger, more dramatic entrances.
                                     </p>
-                                    <span className="text-yellow-600">-View Collections</span>
+                                    <Link to="/products/PivotDoor" >
+                                    <span className="text-yellow-600">Pivot doors →</span>
+                                    </Link>
                                 </div>
                             </div>
                             {/* slide door  */}
@@ -177,7 +180,9 @@ const Stalen = () => {
                                     <p className="w-full mt-5 mb-6 ">
                                         Our custom sliding doors glide effortlessly along a track, making them perfect for space-saving layouts and modern interior design. Ideal as elegant room dividers, wardrobe solutions, or for creating a smooth flow between spaces.
                                     </p>
-                                    <span className="text-yellow-600">-View Collections</span>
+                                    <Link to="/products/SlideDoor" >
+                                    <span className="text-yellow-600">Slide doors → </span>
+                                    </Link>
                                 </div>
                             </div>
                             {/* Classic Hinged Doors */}
@@ -208,7 +213,9 @@ const Stalen = () => {
                                     <p className="w-full mt-5 mb-6 leading-6">
                                         The classic door, swinging open and closed on side-mounted hinges.
                                     </p>
-                                    <span className="text-yellow-600 font-semibold">-View Collections</span>
+                                    <Link to="/products/HingedDoors" >
+                                    <span className="text-yellow-600 ">Classic doors →</span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

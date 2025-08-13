@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { gsap } from "gsap";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin);
+
+
+
 import ButtomHeading from '../../components/commonComponent/ButtomHeading'
 import BtnComponent from '../../components/homeComponents/utils/BtnComponent'
+import HingedDoorDescription from '../../components/cabinetryComponent/HingedDoorDescription';
+import HingedMeterialAndDesign from '../../components/cabinetryComponent/HingedMeterialAndDesign';
 
 const HingedDoors = () => {
+    const HingedBanner = useRef(null);
+    useEffect(()=>{
+        const svg = HingedBanner.current.querySelector('svg');
+        const path = HingedBanner.current.querySelectorAll('path');
+    },[]);
     return (
         <>
-            <section>
-                <div className="wrapper w-full h-screen flex items-end bg-bgTwo p-5 md:p-12">
+            <section ref={HingedBanner}>
+                <div className="wrapper w-full h-screen flex items-end bg-colorOne text-white p-5 md:p-12 ">
                     <div className='w-1/2 flex flex-col gap-5 '>
-                        <ButtomHeading heading='Hinged Doors' paragraph1='A hinged door is a traditional door style mounted on side hinges, swinging open and closed to provide easy and reliable access.' color='black' />
+                        <ButtomHeading heading='Hinged Doors' paragraph1='A hinged door is a traditional door style mounted on side hinges, swinging open and closed to provide easy and reliable access.' color='white'/>
                         <BtnComponent text='Configure Now' />
                     </div>
                     <div className='w-1/2 '>
@@ -34,6 +47,8 @@ const HingedDoors = () => {
                     
                 </div>
             </section>
+            <HingedDoorDescription/>
+            <HingedMeterialAndDesign/>
         </>
     )
 }

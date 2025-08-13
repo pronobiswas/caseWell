@@ -23,6 +23,9 @@ import AtelierCollection from "./pages/collection/AtelierCollection";
 import PivotDoor from "./pages/products/PivotDoor";
 import SlideDoor from "./pages/products/SlideDoor";
 import HingedDoors from "./pages/products/HingedDoors";
+import CollectionPage from "./pages/CollectionPage";
+import ConfiguratorPage from "./pages/ConfiguratorPage";
+import ConsciousNcrafts from "./pages/ConsciousNcrafts";
 
 
 function App() {
@@ -34,7 +37,6 @@ function App() {
           <Route path="/test" element={<TestPage />} />
           <Route path="/architects" element={<ArchitectPage />} />
           <Route path="/inspiration" element={<InspirationPage />} />
-          <Route path="/products" element={<CabinetryPage />} /> 
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/privacy-Policy" element={<PrivecyPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
@@ -42,10 +44,14 @@ function App() {
           <Route path="/collections/FineerCollection" element={<FineerCollection />} />
           <Route path="/collections/ThreeDCollection" element={<ThreeDCollection />} />
           <Route path="/collections/AtelierCollection" element={<AtelierCollection />} />
-          <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/products" element={<CabinetryPage />} /> 
           <Route path="/products/PivotDoor" element={<PivotDoor />} />
           <Route path="/products/SlideDoor" element={<SlideDoor />} />
           <Route path="/products/HingedDoors" element={<HingedDoors />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/aboutus/ConsciousNcrafts" element={<ConsciousNcrafts />} />
+          <Route path="/collection" element={<CollectionPage />} />
+          <Route path="/configurator" element={<ConfiguratorPage />} />
 
         </Route>
       </>

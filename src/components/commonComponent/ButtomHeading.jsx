@@ -14,7 +14,6 @@ const ButtomHeading = ({
   const headingRef = useRef(null);
   const subheadingRef = useRef(null);
   const subheadin2gRef = useRef(null);
-  console.log(color);
 
 
   useEffect(() => {

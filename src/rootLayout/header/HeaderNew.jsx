@@ -174,7 +174,7 @@ const HeaderNew = () => {
                         <div className="menu w-fit flex gap-5 items-center">
                             <ul className='flex gap-3 lg:gap-6 [&>li]:cursor-pointer text-xl'>
 
-                                <li className="menuItem relative group transition-all duration-300">
+                                <li className="menuItem relative group transition-all duration-300 ">
                                     <Link to='/products'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
                                             <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Products</span>
@@ -207,7 +207,7 @@ const HeaderNew = () => {
 
                                     </div>
                                 </li>
-                                <li className="menuItem relative group">
+                                <li className="menuItem relative group ">
                                     <Link to='/'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
                                             <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Collection</span>
@@ -278,7 +278,9 @@ const HeaderNew = () => {
                                                 <span>Meet the makers</span>
                                             </div>
                                             <div className='dropdownMenuItem '>
+                                                <Link to="/aboutus/ConsciousNcrafts" >
                                                 <span>Conscious crafts</span>
+                                                </Link>
                                             </div>
                                         </div>
 
@@ -295,7 +297,7 @@ const HeaderNew = () => {
                             </ul>
 
                             <div className="configaretor w-fit h-fit py-2 px-3 border bg-transparent text-white hover:bg-white hover:text-black  cursor-pointer rounded-full z-30">
-                                configure now
+                                Configure Now
                             </div>
                         </div>
                     </div>

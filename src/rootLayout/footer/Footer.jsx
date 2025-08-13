@@ -65,7 +65,7 @@ const Footer = () => {
   return (
     <>
       <footer ref={footerRef} id="footer" className='w-full h-full p-4 bg-[#F2F0EA]'>
-        <div className="footerWrapper pt-12 pb-0 px-12 rounded-[50px] bg-[#E1DBCB]">
+        <div className="footerWrapper pt-12 pb-0 px-12 rounded-[50px] bg-colorOne text-white">
           {/* ======footer row one===== */}
           <div className="footerRow flex flex-col md:flex-row justify-between gap-8">
             <div>
@@ -99,7 +99,7 @@ const Footer = () => {
             <div>
               <div className='flex flex-wrap gap-6'>
                 
-                <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-black '>
+                <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white '>
 
                   <li className='navLinkItem w-fit px-5 relative'>
                     <Link to="/products" >

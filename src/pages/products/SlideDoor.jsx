@@ -1,6 +1,8 @@
 import React from 'react'
 import ButtomHeading from '../../components/commonComponent/ButtomHeading'
 import BtnComponent from '../../components/homeComponents/utils/BtnComponent'
+import SlideDoorDescription from '../../components/cabinetryComponent/SlideDoorDescription'
+import SlideMeterialAndDesign from '../../components/cabinetryComponent/SlideMeterialAndDesign'
 
 const SlideDoor = () => {
   return (
@@ -14,6 +16,8 @@ const SlideDoor = () => {
                     </div>
                 </div>
             </section>
+            <SlideDoorDescription/>
+            <SlideMeterialAndDesign/>
     </>
   )
 }

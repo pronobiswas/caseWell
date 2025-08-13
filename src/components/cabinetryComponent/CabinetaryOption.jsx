@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BtnComponent from '../homeComponents/utils/BtnComponent';
+import { Link } from 'react-router-dom';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -71,8 +72,8 @@ const CabinetaryOption = () => {
             console.log(cabinetaryOptionContent);
             cabinetaryOptionContent.forEach((textBox) => {
                 gsap.from(textBox, {
-                    opacity:0,
-                    y:100,
+                    opacity: 0,
+                    y: 100,
                     ease: "power2.out",
                     stagger: 0.2,
                     scrollTrigger: {
@@ -95,26 +96,30 @@ const CabinetaryOption = () => {
 
     return (
         <>
-            <section ref={cabinetaryOptionMain} id="cabinetaryOpton" className='w-full h-full bg-bgOne'>
+            <section ref={cabinetaryOptionMain} id="cabinetaryOpton" className='w-full h-full bg-colorOne text-white font-geist'>
                 <div className="cabineteryOptionWrapper p-5 flex flex-col gap-5">
                     {/* --------cabinetary option one-------- */}
                     <div ref={optionOneRef} className="cabinetaryOptionOne w-full h-full flex flex-col md:flex-row gap-5">
 
-                        <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-bgTwo">
+                        <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-colorTwo">
                             <span>Option 1 :</span>
                             <div className='flex flex-col gap-14 mt-5'>
-                                <h3 className='font-myFont text-3xl'>Not Sure Where to Begin?</h3>
+                                <h3 className='font-Montserrat text-3xl'>Explore Our Collections</h3>
 
-                                <p>Answer a few quick questions, and we’ll guide you toward the best-fit option — whether it’s fast and efficient Ready-to-Fit cabinets, the flexibility of Made-to-Measure, or a fully integrated Custom or Bespoke millwork solution.</p>
-                                <BtnComponent text='See Contractor Services' />
+                                <p>Not sure where to begin? Browse our curated Glass, Veneer, 3D, and Atelier collections to discover the designs, materials, and finishes that inspire you. We’ll guide you toward the perfect fit for your style and space.</p>
+                                <Link to="/collection" >
+                                    <BtnComponent text='See collection' />
+                                </Link>
                             </div>
                         </div>
-                        <div className="optionOneCol w-full md:w-1/2 bg-white px-8 py-32">
+                        <div className="optionOneCol w-full md:w-1/2 bg-colorTwo px-8 py-32">
                             <span>Option 2:</span>
                             <div className='flex flex-col gap-14 mt-5'>
-                                <h3 className='font-myFont text-3xl'>Already Know What You Need?</h3>
-                                <p>Answer a few quick questions, and we’ll guide you toward the best-fit option — whether it’s fast and efficient Ready-to-Fit cabinets, the flexibility of Made-to-Measure, or a fully integrated Custom or Bespoke millwork solution.</p>
-                                <BtnComponent text='See Contractor Services' />
+                                <h3 className='font-myFont text-3xl'>Configure Your Own</h3>
+                                <p>Already know exactly what you want? Use our configurator to choose your door type, materials, hardware, and details — and we’ll craft it to your specifications.</p>
+                                <Link to='/configurator' >
+                                    <BtnComponent text='Configure yours' />
+                                </Link>
                             </div>
                         </div>
 
@@ -128,11 +133,13 @@ const CabinetaryOption = () => {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2  p-8">
-                            <div className='cabinetaryOptionContent flex flex-col gap-5'>
-                                <span>Ready-to-Fit</span>
-                                <h3 className='font-myFont text-3xl'>Standard Sizes. Streamlined Ordering. Fast Delivery</h3>
-                                <p>Pre-configured cabinet sizes with a curated selection of finishes and door styles. Ideal for trade professionals and confident DIYers looking for simplicity and speed. Cabinets are ordered online and ship flat-packed, ready to assemble.Perfect for rental properties, secondary units, budget-conscious renovations, or fast-moving installs.</p>
-                                <BtnComponent text='See Contractor Services' />
+                            <div className='cabinetaryOptionContent flex flex-col gap-5 font-geist'>
+                                <span>Choose your door type.</span>
+                                <h3 className='font-Montserrat text-3xl'>Make a statement.</h3>
+                                <p>Select from our most popular Pivot, Slide, or Hinged designs — pre-sized for standard openings and ready to install. Perfect for quick upgrades or projects on a tight schedule.</p>
+                                <Link to="/collection">
+                                    <BtnComponent text='See collection' />
+                                </Link>
                             </div>
                         </div>
 
@@ -142,10 +149,12 @@ const CabinetaryOption = () => {
 
                         <div className="w-full md:w-1/2 p-8 order-2 md:order-1 ">
                             <div className='cabinetaryOptionContent flex flex-col gap-5'>
-                            <span>Made-to-Measure</span>
-                                <h3 className='font-myFont text-3xl'>Slight Adjustments. Guided Design. Site-Verified Precision</h3>
-                                <p>This semi-custom option allows for minor adjustments to cabinet dimensions and layout within our standard framework. Includes a design consultation and site measurement to ensure everything fits your space. A service fee applies.Perfect for homeowners or professionals needing flexibility without the cost of full custom cabinetry.</p>
-                                <BtnComponent text='See Contractor Services' />
+                                <span>Select your material. </span>
+                                <h3 className='font-Montserrat text-3xl font-semibold'>Make it yours.</h3>
+                                <p>From fine veneers to solid woods, textured glass, or natural stone inlays — we’ll craft your chosen design to the exact dimensions of your space for a flawless fit.</p>
+                                <Link to="/collection">
+                                    <BtnComponent text='See collection' />
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 order-1 md:order-2">
@@ -165,10 +174,12 @@ const CabinetaryOption = () => {
                         </div>
                         <div className="w-full md:w-1/2  p-8">
                             <div className='cabinetaryOptionContent flex flex-col gap-5'>
-                            <span>Custom Cabinetry</span>
-                                <h3 className='font-myFont text-3xl'>Expanded Design Options. Trade-Led Projects. Integrated Material Planning</h3>
-                                <p>Available exclusively to trade professionals. If you’re a homeowner, we’ll connect you with a qualified designer or contractor to lead the process. We supply only.Perfect for design-led kitchens requiring tailored planning and collaborative execution.</p>
-                                <BtnComponent text='See Contractor Services' />
+                                <span>Define Your Grip Style </span>
+                                <h3 className='font-Montserrat font-semibold text-3xl'>Pick your handle or integrated grip.</h3>
+                                <p>Choose from fully integrated grips, bold contrasting metals, or matching material finishes to make your door as distinctive as your interior. </p>
+                                <Link to="/collection">
+                                    <BtnComponent text='See collection' />
+                                </Link>
                             </div>
                         </div>
 
@@ -178,10 +189,12 @@ const CabinetaryOption = () => {
 
                         <div className="w-full md:w-1/2  p-8 order-2 md:order-1 ">
                             <div className='cabinetaryOptionContent flex flex-col gap-5 '>
-                                <span>Bespoke Millwork</span>
-                                <h3 className='font-myFont text-3xl'>Architectural Detail. High-Touch Craftsmanship. Elevated Design Execution</h3>
-                                <p>Our most advanced cabinetry and millwork tier, tailored to architectural and luxury residential projects. We collaborate with your design or architectural team to support full elevations, renderings, and integrated millwork execution.Perfect for luxury homes, architect-driven projects, and builds with exacting design intent.</p>
-                                <BtnComponent text='See Contractor Services' />
+                                <span>Architectural Integration</span>
+                                <h3 className='font-Montserrat font-semibold text-3xl'>Seamlessly blend your door into the architecture.</h3>
+                                <p>From room dividers and wall panels to fully integrated frames, we create doors that become part of the wall itself — delivering a unified, continuous design throughout your space.</p>
+                                <Link to="/collection">
+                                    <BtnComponent text='See collection' />
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 order-1 md:order-2">
