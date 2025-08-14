@@ -69,7 +69,7 @@ const Footer = () => {
           {/* ======footer row one===== */}
           <div className="footerRow flex flex-col md:flex-row justify-between gap-8">
             <div>
-              <h2 className='text-5xl font-myFont mb-8 '>Luxury doors,<br></br> made accessible.</h2>
+              <h2 className='text-5xl  mb-8 '>Luxury doors,<br></br> made accessible.</h2>
               <BtnComponent text='See our collection' />
 
             </div>
