@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import '../../index.css'
-import TestPage from '../../pages/TestPage';
+import TestPage from '../../pages/PreLoader';
 
 const HeaderNew = () => {
     const location = useLocation();

@@ -8,7 +8,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import RootLayout from "./rootLayout/RootLayout";
-import TestPage from "./pages/TestPage";
+import TestPage from "./pages/PreLoader";
 import ArchitectPage from "./pages/ArchitectPage";
 import CabinetryPage from "./pages/CabinetryPage";
 import InspirationPage from "./pages/InspirationPage";
@@ -26,6 +26,7 @@ import HingedDoors from "./pages/products/HingedDoors";
 import CollectionPage from "./pages/CollectionPage";
 import ConfiguratorPage from "./pages/ConfiguratorPage";
 import ConsciousNcrafts from "./pages/ConsciousNcrafts";
+import VideoScroller from "./components/commonComponent/VideoScroller";
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="/aboutus/ConsciousNcrafts" element={<ConsciousNcrafts />} />
           <Route path="/collection" element={<CollectionPage />} />
           <Route path="/configurator" element={<ConfiguratorPage />} />
+          <Route path="/VideoScroller" element={<VideoScroller />} />
 
         </Route>
       </>

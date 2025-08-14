@@ -74,7 +74,7 @@ const ConsciousNCraftTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">01</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-geist font-semibold'> Working with Nature, Not Against It</h4>
+                  <h4 className='text-2xl  font-semibold'> Working with Nature, Not Against It</h4>
                   <p className='mt-5'>We believe that working with natural materials comes with a responsibility. Wood is not just a resource to us — it's a living story of time, climate, and place. That’s why we only work with suppliers who share our values: FSC-certified wood, sustainably managed forests, and a focus on regeneration over depletion.</p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const ConsciousNCraftTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">02</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-geist font-semibold'>2. Respect for the Material</h4>
+                  <h4 className='text-2xl  font-semibold'>2. Respect for the Material</h4>
                   <p className='mt-5'>Each piece of wood is unique — its grain, its texture, its imperfections. We design around that individuality, not in spite of it. Instead of forcing uniformity, we let the material speak. This reduces waste and honors the beauty of natural variation. We don’t over-process. We don’t over-paint. We bring out what’s already there.</p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ const ConsciousNCraftTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">03</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-geist font-semibold'>3. Design with Longevity in Mind</h4>
+                  <h4 className='text-2xl  font-semibold'>3. Design with Longevity in Mind</h4>
                   <p className='mt-5'>Fast furniture and temporary design aren’t part of our philosophy. We create doors meant to last a lifetime — not just in function, but in relevance. Timeless design and high-quality craftsmanship mean fewer replacements, fewer resources wasted, and a lighter impact on the planet over time.</p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ const ConsciousNCraftTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">04</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-geist font-semibold'>Craftsmanship as a Sustainable Act</h4>
+                  <h4 className='text-2xl  font-semibold'>Craftsmanship as a Sustainable Act</h4>
                   <p className='mt-5'>Sustainability isn’t only in the materials — it’s in the way we make. By producing locally, reducing transport footprints, and building in small series instead of mass production, we stay close to our process and in control of our impact. Every decision we make is weighed not just for efficiency, but for ethics.</p>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const ConsciousNCraftTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">05</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-geist font-semibold'>Pride in Every Detail</h4>
+                  <h4 className='text-2xl  font-semibold'>Pride in Every Detail</h4>
                   <p className='mt-5'>We’re proud of what we make — not just because it looks good, but because it feels good to stand behind something honest. A door is not just a functional object. It’s the first touchpoint of a home. And we believe that when it’s made with care, from a material as noble as wood, it deserves that extra bit of reverence.</p>
                 </div>
               </div>
