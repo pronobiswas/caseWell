@@ -16,7 +16,7 @@ const PrivecyPolicy = () => {
                         </div>
                         {/* ====1 who we are==== */}
                         <div className='w-full flex flex-col gap-2 py-5'>
-                            <h2 className='text-3xl font-myFont font-semibold'>Who We Are (Data Controller)</h2>
+                            <h2 className='text-3xl font-geist font-semibold'>Who We Are (Data Controller)</h2>
                             <p className='ml-5'>
                                 As the data controller, Zebrano Studio is responsible for the processing of your personal data.
                             </p>
@@ -29,7 +29,7 @@ const PrivecyPolicy = () => {
                             </address>
                         </div>
                         {/* ====2 Types of Personal Data We Collect==== */}
-                        <h2 className='text-4xl lg:mt-10 font-myFont'>Types of Personal Data We Collect</h2>
+                        <h2 className='text-4xl lg:mt-10 font-geist'>Types of Personal Data We Collect</h2>
                         <div className='w-full md:pl-10 p-5'>
                             <p className=''>
                                 We may collect the following types of personal data:
@@ -37,34 +37,34 @@ const PrivecyPolicy = () => {
                             <div className=''>
                                 <ul className='flex flex-col gap-5 [&>li]:flex [&>li]:flex-col md:[&>li]:flex-row [&>li]:gap-2 md:[&>li]:gap-5'>
                                     <li>
-                                        <p className='text-nowrap font-myFont'><b>Contact Information:</b></p>
+                                        <p className='text-nowrap font-geist'><b>Contact Information:</b></p>
                                         <p> Name, email address, phone number, postal address (for quotes, orders, and delivery).</p>
                                     </li>
                                     <li>
-                                        <p className='text-nowrap font-myFont'><b>Communication Data:</b></p>
+                                        <p className='text-nowrap font-geist'><b>Communication Data:</b></p>
                                         <p> Information you provide when you contact us via email, phone, contact forms, or social media.</p>
                                     </li>
                                     <li>
-                                        <p className='text-nowrap font-myFont'><b>Communication Data:</b></p>
+                                        <p className='text-nowrap font-geist'><b>Communication Data:</b></p>
                                         <p> Information you provide when you contact us via email, phone, contact forms, or social media.</p>
                                     </li>
                                     <li>
-                                        <p className='text-nowrap font-myFont'><b>Order and Transaction Data:</b></p>
+                                        <p className='text-nowrap font-geist'><b>Order and Transaction Data:</b></p>
                                         <p>Details about products and services you have purchased from us, payment information (though we typically use third-party payment processors who handle payment details directly).</p>
                                     </li>
                                     <li>
-                                        <p className='text-nowrap font-myFont'><b>Website Usage Data: </b></p>
+                                        <p className='text-nowrap font-geist'><b>Website Usage Data: </b></p>
                                         <p>Information about how you use our website, including your IP address, browser type, operating system, referral sources, pages viewed, and the duration of your visit. This is typically collected through cookies and similar technologies.</p>
                                     </li>
                                     <li>
-                                        <p className='text-nowrap font-myFont'><b>Marketing Preferences:</b></p>
+                                        <p className='text-nowrap font-geist'><b>Marketing Preferences:</b></p>
                                         <p> Your preferences regarding receiving marketing communications from us.</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         {/* ====3. How We Collect Your Personal Data===== */}
-                        <h2 className='text-4xl mt-5 lg:mt-10 font-myFont'>How We Collect Your Personal Data</h2>
+                        <h2 className='text-4xl mt-5 lg:mt-10 font-geist'>How We Collect Your Personal Data</h2>
                         <div className='w-full flex flex-col gap-2 p-5'>
                             <p>We collect personal data through various methods:</p>
                             <ul>
@@ -78,11 +78,11 @@ const PrivecyPolicy = () => {
                         </div>
                         {/* ====4. Purposes and Legal Basis for Processing Your Personal Data=== */}
                         <div className='w-full flex flex-col gap-2 py-5 lg:py-10'>
-                            <h2 className='text-4xl font-myFont'>Purposes and Legal Basis for Processing Your Personal Data</h2>
+                            <h2 className='text-4xl font-geist'>Purposes and Legal Basis for Processing Your Personal Data</h2>
                             <p>We process your personal data for the following purposes and based on the specified legal grounds under GDPR:</p>
                             <div className='p-5'>
                                 {/* --------- */}
-                                    <h4 className='text-2xl font-myFont '>To Provide Services and Fulfill Contracts:</h4>
+                                    <h4 className='text-2xl font-geist '>To Provide Services and Fulfill Contracts:</h4>
                                 <div className='pl-5 p-2'>
                                     <p>Processing your inquiries and providing quotes.</p>
                                     <p>Processing and fulfilling your orders for doors and other products.</p>
@@ -91,27 +91,27 @@ const PrivecyPolicy = () => {
                                     <p>Legal Basis: Performance of a contract or to take steps at your request prior to entering into a contract (GDPR Art. 6(1)(b)).</p>
                                 </div>
                                 {/* ------------ */}
-                                    <h4 className='text-2xl font-myFont'>To Communicate with You:</h4>
+                                    <h4 className='text-2xl font-geist'>To Communicate with You:</h4>
                                 <div className='pl-5 p-2'>
                                     <p>Responding to your questions and requests.</p>
                                     <p>Sending important service-related updates (e.g., order status).</p>
                                     <p>Legal Basis: Performance of a contract (Art. 6(1)(b)) or legitimate interest (Art. 6(1)(f)) in effective communication.</p>
                                 </div>
                                 {/* ----------- */}
-                                    <h4 className='text-2xl font-myFont'>For Marketing Purposes:</h4>
+                                    <h4 className='text-2xl font-geist'>For Marketing Purposes:</h4>
                                 <div  className='pl-5 p-2'>
                                     <p>Sending you newsletters, promotions, and information about our products and services that may be of interest to you, where you have opted in.</p>
                                     <p>Legal Basis: Your consent (GDPR Art. 6(1)(a)). You can withdraw your consent at any time.</p>
                                 </div>
                                 {/* ----------------- */}
-                                    <h4 className='text-2xl font-myFont'>To Improve Our Website and Services:</h4>
+                                    <h4 className='text-2xl font-geist'>To Improve Our Website and Services:</h4>
                                 <div className='pl-5 p-2'>
                                     <p>Analyzing website usage to understand user behavior and improve website functionality and user experience.</p>
                                     <p>Developing new products and services.</p>
                                     <p>Legal Basis: Legitimate interest (GDPR Art. 6(1)(f)) in improving our business and offerings.</p>
                                 </div>
                                 {/* -------------------- */}
-                                    <h3 className='text-2xl font-myFont'>For Legal Compliance and Protection:</h3>
+                                    <h3 className='text-2xl font-geist'>For Legal Compliance and Protection:</h3>
                                 <div className='pl-5 p-2'>
                                     <p>Complying with legal obligations (e.g., tax, accounting).</p>
                                     <p>Protecting our rights, property, or safety, and that of our customers or others.</p>
@@ -122,11 +122,11 @@ const PrivecyPolicy = () => {
                         </div>
                         {/* =====5. Cookies and Similar Technologies====== */}
                         <div>
-                            <p className='font-myFont'>Our website uses cookies and similar technologies to enhance your browsing experience, analyze site traffic, and for marketing purposes. You can manage your cookie preferences through your browser settings. For more detailed information, please refer to our separate Cookie Policy [Link to your Cookie Policy, if you have one].</p>
+                            <p className='font-geist'>Our website uses cookies and similar technologies to enhance your browsing experience, analyze site traffic, and for marketing purposes. You can manage your cookie preferences through your browser settings. For more detailed information, please refer to our separate Cookie Policy [Link to your Cookie Policy, if you have one].</p>
                         </div>
                         {/* ==========6. Sharing Your Personal Data======== */}
                         <div className='py-8 lg:py-10'>
-                            <h4 className='text-3xl font-myFont mb-2'>Sharing Your Personal Data</h4>
+                            <h4 className='text-3xl font-geist mb-2'>Sharing Your Personal Data</h4>
                             <p>We will not sell, rent, or lease your personal data to third parties. We may share your personal data with:</p>
                             <ul className='pl-5 mt-2'>
                                 <li>
@@ -140,22 +140,22 @@ const PrivecyPolicy = () => {
                         </div>
                         {/* ======7. International Data Transfers====== */}
                         <div className='py-8'>
-                            <h2 className='text-3xl font-myFont mb-2'>International Data Transfers</h2>
+                            <h2 className='text-3xl font-geist mb-2'>International Data Transfers</h2>
                             <p>As Zebrano Studio operates within the EU, your personal data will primarily be processed within the European Economic Area (EEA). If we transfer personal data to countries outside the EEA, we will ensure that appropriate safeguards are in place (e.g., Standard Contractual Clauses) to protect your data in accordance with GDPR.</p>
                         </div>
                         {/* =======8. Data Retention====== */}
                         <div>
-                            <h3 className='text-3xl font-myFont mb-2'>Data Retention</h3>
+                            <h3 className='text-3xl font-geist mb-2'>Data Retention</h3>
                             <p>We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements. The retention period depends on the type of data and the purpose for which it was collected.</p>
                         </div>
                         {/* =======9. Data Security====== */}
                         <div className='py-8 lg:py-10'>
-                            <h3 className='text-3xl font-myFont'>Data Security</h3>
+                            <h3 className='text-3xl font-geist'>Data Security</h3>
                             <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These measures include data encryption, access controls, and regular security assessments.</p>
                         </div>
                         {/* =====10. Your Data Protection Rights (GDPR)====== */}
                         <div className='w-full'>
-                            <h2 className='text-3xl font-myFont mb-2'>10. Your Data Protection Rights (GDPR)</h2>
+                            <h2 className='text-3xl font-geist mb-2'>10. Your Data Protection Rights (GDPR)</h2>
                             <p>Under the GDPR, you have the following rights regarding your personal data:</p>
                             <ul className='p-5'>
                                 <li>
@@ -187,23 +187,23 @@ const PrivecyPolicy = () => {
                         </div>
                         {/* =====11. Children's Privacy======= */}
                         <div className='py-8 lg:py-10'>
-                            <h2 className='text-3xl font-myFont mb-2'> Children's Privacy</h2>
+                            <h2 className='text-3xl font-geist mb-2'> Children's Privacy</h2>
                             <p>Our website and services are not directed at individuals under the age of 16. We do not knowingly collect personal data from children under 16. If we become aware that we have inadvertently collected personal data from a child under 16, we will take steps to delete such information as soon as possible.</p>
                         </div>
                         {/* =====12. Changes to This Privacy Policy===== */}
                         <div>
-                            <h2 className='text-3xl font-myFont mb-2'>Changes to This Privacy Policy</h2>
+                            <h2 className='text-3xl font-geist mb-2'>Changes to This Privacy Policy</h2>
                             <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting the new Privacy Policy on our website with a revised "Effective Date." We encourage you to review this Privacy Policy periodically.</p>
                         </div>
                         {/* =====13. Contact Us======= */}
                         <div className='py-8 lg:py-10'>
-                            <h2 className='text-3xl font-myFont mb-2'>Contact Us</h2>
+                            <h2 className='text-3xl font-geist mb-2'>Contact Us</h2>
                             <p>If you have any questions about this Privacy Policy or our data practices, or if you wish to exercise any of your rights, please contact us at:</p>
                             <p>Zebrano Studio Herikebrink 37 7544ER Enschede, The Netherlands Info@zebranostudio.com +31 6 42 99 70 18</p>
                         </div>
                         {/* ======14. Right to Lodge a Complaint======= */}
                         <div>
-                            <h2 className='text-3xl font-myFont mb-2'>Right to Lodge a Complaint</h2>
+                            <h2 className='text-3xl font-geist mb-2'>Right to Lodge a Complaint</h2>
                             <p>If you believe that your data protection rights have been violated, you have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens - AP):</p>
                         </div>
 

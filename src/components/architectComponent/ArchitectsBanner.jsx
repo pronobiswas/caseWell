@@ -29,7 +29,7 @@ const ArchitectsBanner = () => {
 
   return (
     <div className="architectsBanner">
-      <section id="architects" className='w-full h-screen bg-[url("/images/architecBanner.jpg")] bg-cover font-myFont'>
+      <section id="architects" className='w-full h-screen bg-[url("/images/architecBanner.jpg")] bg-cover font-geist'>
         <div className="architectsWrapper w-full h-full flex items-end p-12 text-white">
           <div className="architectsContent">
             <h2 ref={bannerHeadingRef} className='text-3xl md:text-5xl mb-8 leading-10'>

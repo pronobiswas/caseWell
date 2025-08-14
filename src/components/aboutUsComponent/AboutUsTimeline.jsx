@@ -79,7 +79,7 @@ const AboutUsTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">01</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-myFont font-semibold'>The Asian Spark</h4>
+                  <h4 className='text-2xl font-geist font-semibold'>The Asian Spark</h4>
                   <p className='mt-5'>Imagine this: two brothers, Mathijs and Robbert (that's us!), traveling through beautiful Southeast Asia. Amidst the bustling markets and serene temples, something caught our eye: everywhere we looked, we saw the most amazing handcrafted wooden items. From small figurines to impressive furniture – the attention to detail and the natural beauty of the wood were truly captivating. It was like a lightbulb went off: "Wow, this is it! We have to do something with this!"</p>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const AboutUsTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">02</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-myFont font-semibold'>From Bookmarks to Beach Paddles (with a Wooden Twist)</h4>
+                  <h4 className='text-2xl font-geist font-semibold'>From Bookmarks to Beach Paddles (with a Wooden Twist)</h4>
                   <p className='mt-5'>We've always been creative and handy, even as little kids. So, once we were back home, we immediately felt the urge to start working with wood ourselves. We started small, with super cool exclusive wooden bookmarks and unique tapas boards. But soon our projects became more ambitious: how about handcrafted beach paddles made from special wood types like the striped Zebrano, the deep red Purpleheart, or the exotic Palm wood? Each piece of wood had its own story and unique grain, and we loved making them speak.</p>
                 </div>
               </div>
@@ -116,7 +116,7 @@ const AboutUsTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">03</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-myFont font-semibold'>Our Annual Wood Pilgrimage and The Big Door of 2020</h4>
+                  <h4 className='text-2xl font-geist font-semibold'>Our Annual Wood Pilgrimage and The Big Door of 2020</h4>
                   <p className='mt-5'>A visit to the fine wood trade show wasn't just an errand for us, but an annual pilgrimage! A place where we could wander among the most beautiful planks and find inspiration. And then came the moment: new doors were needed. Buy them? No way! We could do that much better ourselves, right? And so it happened: in 2020, our very first self-made door saw the light of day. Crafted from Zebrano, our absolute favorite wood type. That distinctive grain and beautiful aesthetic... we were instantly sold!</p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ const AboutUsTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">04</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-myFont font-semibold'>And Then There Was... Zebrano Studio!</h4>
+                  <h4 className='text-2xl font-geist font-semibold'>And Then There Was... Zebrano Studio!</h4>
                   <p className='mt-5'>That first Zebrano door was more than just a door; it was a statement. Proof of our love for the craft and our vision. And the reactions? They were overwhelming! People were just as enthusiastic as we were about the unique beauty and quality. It was clear: we had to do more with this. And so, very naturally, our company was born and named after that special wood that inspired us so much: Zebrano Studio.</p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const AboutUsTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">05</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl font-myFont font-semibold'>Luxury Doors? Just for Everyone!</h4>
+                  <h4 className='text-2xl font-geist font-semibold'>Luxury Doors? Just for Everyone!</h4>
                   <p className='mt-5'>Our dream? Simple: to make that luxury and exclusivity, which you normally only encounter in chic hotels, top restaurants, or those amazing villas designed by top architects, accessible to everyone. We believe your home deserves that same grandeur and uniqueness, without you having to spend a fortune on an architect. At Zebrano Studio, we do things a little differently from the rest, and we bring that unparalleled quality and aesthetic directly to your doorstep.</p>
                 </div>
               </div>

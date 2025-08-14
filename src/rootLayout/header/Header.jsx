@@ -210,7 +210,7 @@ const Header = () => {
 
   return (
     <>
-      <header id="header" className="w-full z-50 fixed top-0 left-0 ">
+      <header id="header" className="w-full z-50 absolute top-0 left-0 ">
         <div className="w-full hidden md:block">
           <nav id="nav1" className={`p-5 bg-transparent ${toggleMenu ? '' : "hidden"} `}>
             <div className="navwrapper flex items-center justify-between p-2">

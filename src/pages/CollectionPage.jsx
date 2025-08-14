@@ -5,7 +5,7 @@ const CollectionPage = () => {
     <>
     <section id="collections">
         <div className="wrapper w-full h-screen bg-colorOne flex justify-center items-center">
-            <h1 className='text-white'>
+            <h1 className='text-white text-5xl'>
                 Cooming soon.
             </h1>
         </div>

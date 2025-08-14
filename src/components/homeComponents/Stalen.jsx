@@ -117,18 +117,19 @@ const Stalen = () => {
                         <div className="w-full h-fit flex flex-col  gap-6 ">
                             <h2 className=" md:max-w-56 text-2xl ">Door Types</h2>
                             <p>Explore our diverse range of exclusive wooden doors, each designed to offer distinct advantages in style, functionality, and space utilization. From grand entrances to seamless room transitions, we have the perfect solution for your home.</p>
-                            <div className="w-fit border border-yellow-600 px-4 py-1">
-                                <span className="text-yellow-600">Configure Yours→</span>
+                            <div className="w-fit border border-white px-4 py-1">
+                                <span className="text-white">Configure Yours→</span>
                             </div>
                         </div>
                     </div>
-                    <div className="stalenCardWrapper w-full lg:w-3/4 h-full">
+
+                    <div className="stalenCardWrapper w-full lg:w-3/4 h-full ">
                         <div className="w-full h-full flex flex-wrap md:flex-nowrap gap-0 cursor-pointer">
                             {/* Pivot Doors */}
                             {/* ================== */}
                             <div
                                 ref={StalenCard1}
-                                className="stalen_card w-full h-auto p-7 border border-yellow-900"
+                                className="stalen_card w-full h-auto p-7 border border-white"
                             >
                                 {/* -------- */}
                                 <div className="stalenanim w-full h-20 flex gap-0">
@@ -147,21 +148,28 @@ const Stalen = () => {
                                     {/* block two */}
                                 </div>
 
-                                <div className="text">
-                                    <h3 className="text-2xl text-yellow-600">Pivot Doors</h3>
-                                    <p className="w-full mt-5 mb-6 ">
-                                        Rotate on a vertical axis, allowing for larger, more dramatic entrances.
-                                    </p>
+                                <div className="text w-full h-[calc(100%-80px)] flex flex-col justify-between ">
+                                    <div className="w-full h-auto">
+                                        <h3 className="text-2xl text-white">Pivot Doors</h3>
+                                        <p className="w-full mt-5 mb-6 ">
+                                            Rotate on a vertical axis, allowing for larger, more dramatic entrances.
+                                        </p>
+                                    </div>
+
+                                    <div className="w-full h-auto">
                                     <Link to="/products/PivotDoor" >
-                                    <span className="text-yellow-600">Pivot doors →</span>
+                                        <div className="w-fit h-fit border rounded-full border-white py-2 px-5 self-end">
+                                            <span className="text-white">Pivot doors →</span>
+                                        </div>
                                     </Link>
+                                    </div>
                                 </div>
                             </div>
                             {/* slide door  */}
                             {/* ================== */}
                             <div
                                 ref={StalenCard2}
-                                className="stalen_card w-full h-full p-7 border border-yellow-900 lg:backdrop:border-x-0"
+                                className="stalen_card w-full h-full p-7 border border-white lg:backdrop:border-x-0"
                             >
                                 <div className="anim w-full h-20  relative flex ">
                                     <div className="w-8 h-8 bg-gray-300"></div>
@@ -175,13 +183,17 @@ const Stalen = () => {
                                     ></div>
                                 </div>
 
-                                <div className="text">
-                                    <h3 className="text-2xl text-yellow-600">Slide Doors</h3>
-                                    <p className="w-full mt-5 mb-6 ">
-                                        Our custom sliding doors glide effortlessly along a track, making them perfect for space-saving layouts and modern interior design. Ideal as elegant room dividers, wardrobe solutions, or for creating a smooth flow between spaces.
-                                    </p>
+                                <div className="text w-full h-full flex flex-col justify-between">
+                                    <div>
+                                        <h3 className="text-2xl text-white">Slide Doors</h3>
+                                        <p className="w-full mt-5 mb-6 ">
+                                            Our custom sliding doors glide effortlessly along a track, making them perfect for space-saving layouts and modern interior design. Ideal as elegant room dividers, wardrobe solutions, or for creating a smooth flow between spaces.
+                                        </p>
+                                    </div>
                                     <Link to="/products/SlideDoor" >
-                                    <span className="text-yellow-600">Slide doors → </span>
+                                        <div className="w-fit h-fit border rounded-full border-white py-2 px-5">
+                                            <span className="text-white">Slide doors → </span>
+                                        </div>
                                     </Link>
                                 </div>
                             </div>
@@ -189,7 +201,7 @@ const Stalen = () => {
                             {/* ================== */}
                             <div
                                 ref={StalenCard3}
-                                className="stalen_card w-full h-auto p-7 border border-yellow-900"
+                                className="stalen_card w-full h-auto p-7 border border-white"
                             >
                                 {/* -------- */}
                                 <div className="stalenanim w-full h-20 flex gap-0">
@@ -208,13 +220,19 @@ const Stalen = () => {
                                     <div className="w-1/4 h-8 bg-gray-400"></div>
                                 </div>
 
-                                <div className="text">
-                                    <h3 className="text-2xl text-yellow-600">Classic Hinged Doors</h3>
-                                    <p className="w-full mt-5 mb-6 leading-6">
-                                        The classic door, swinging open and closed on side-mounted hinges.
-                                    </p>
-                                    <Link to="/products/HingedDoors" >
-                                    <span className="text-yellow-600 ">Classic doors →</span>
+                                <div className="text w-full h-[calc(100%-80px)] flex  flex-col justify-between">
+                                    <div>
+
+                                        <h3 className="text-2xl text-white">Classic Hinged Doors</h3>
+                                        <p className="w-full mt-5 mb-6 leading-6">
+                                            The classic door, swinging open and closed on side-mounted hinges.
+                                        </p>
+                                    </div>
+
+                                    <Link to="/products/HingedDoors">
+                                        <div className="w-fit h-fit border rounded-full border-white py-2 px-5">
+                                            <span className="text-white">Classic doors →</span>
+                                        </div>
                                     </Link>
                                 </div>
                             </div>

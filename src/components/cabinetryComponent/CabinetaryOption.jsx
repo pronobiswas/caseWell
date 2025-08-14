@@ -96,12 +96,12 @@ const CabinetaryOption = () => {
 
     return (
         <>
-            <section ref={cabinetaryOptionMain} id="cabinetaryOpton" className='w-full h-full bg-colorOne text-white font-geist'>
+            <section ref={cabinetaryOptionMain} id="cabinetaryOpton" className='w-full h-full bg-bgOne text-black font-geist'>
                 <div className="cabineteryOptionWrapper p-5 flex flex-col gap-5">
                     {/* --------cabinetary option one-------- */}
                     <div ref={optionOneRef} className="cabinetaryOptionOne w-full h-full flex flex-col md:flex-row gap-5">
 
-                        <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-colorTwo">
+                        <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-bgTwo">
                             <span>Option 1 :</span>
                             <div className='flex flex-col gap-14 mt-5'>
                                 <h3 className='font-Montserrat text-3xl'>Explore Our Collections</h3>
@@ -112,10 +112,10 @@ const CabinetaryOption = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="optionOneCol w-full md:w-1/2 bg-colorTwo px-8 py-32">
+                        <div className="optionOneCol w-full md:w-1/2 bg-white px-8 py-32">
                             <span>Option 2:</span>
                             <div className='flex flex-col gap-14 mt-5'>
-                                <h3 className='font-myFont text-3xl'>Configure Your Own</h3>
+                                <h3 className='font-geist text-3xl'>Configure Your Own</h3>
                                 <p>Already know exactly what you want? Use our configurator to choose your door type, materials, hardware, and details — and we’ll craft it to your specifications.</p>
                                 <Link to='/configurator' >
                                     <BtnComponent text='Configure yours' />

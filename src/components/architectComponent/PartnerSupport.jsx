@@ -88,7 +88,7 @@ const PartnerSupport = () => {
     return (
         <>
             <section ref={partnerSupportRef} id="partnerSupport" className='w-full h-full bg-[#F2F0EA]'>
-                <div className="partnerSupportWrapper p-5 md:p-14 font-myFont">
+                <div className="partnerSupportWrapper p-5 md:p-14 font-geist">
 
                     <div className="partnerHeader w-full h-full flex pb-12">
                         <div className='w-full md:w-1/2'>

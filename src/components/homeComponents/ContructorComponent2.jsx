@@ -4,28 +4,28 @@ import gsap from "gsap";
 
 const data = [
     {
-        title: "Architects",
+        title: "Tailor-made",
         image: "/images/img1.png",
         heading: "Exclusive wooden doors",
         description:
             "Zebrano creates tailor-made pivot, sliding, and classic doors crafted from premium wood and finished with exclusive detailing. ",
     },
     {
-        title: "Custom home builders ",
+        title: "Custom details",
         image: "/images/img2.png",
         heading: "Materials With a Story",
         description:
             "From rare woods to hand-selected stone and artisan glass, each material is chosen for its character, history, and natural beauty",
     },
     {
-        title: "Interior Designers",
+        title: "Limitless Design",
         image: "/images/img3.png",
         heading: "Design Without Limits",
         description:
             "We go beyond standard dimensions and finishes, shaping doors that integrate seamlessly into your architecture and reflect your personal style.",
     },
     {
-        title: "Contractors & Installers",
+        title: "Conscious craft",
         image: "/images/img4.png",
         heading: "Craftsmanship & Durability",
         description:
@@ -135,7 +135,7 @@ const ContructorComponent2 = () => {
     }, []);
     return (
         <>
-            <div id="constructor" className="w-full h-full lg:h-screen p-5 md:p-12 bg-[#F2F0EA] font-myFont">
+            <div id="constructor" className="w-full h-full lg:h-screen p-5 md:p-12 bg-[#F2F0EA] font-geist">
                 <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-8">
                     {/* Left Content */}
                     <div className="w-full lg:w-1/2 order-2 lg:order-1 p-8 lg:p-12 bg-[#E1DBCB] rounded-3xl">

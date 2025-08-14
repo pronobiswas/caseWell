@@ -5,7 +5,7 @@ const ConfiguratorPage = () => {
     <>
     <section id="configurator">
         <div className="wrapper w-full h-screen bg-colorOne flex justify-center items-center">
-            <h1 className='text-5xl font-myFont'> Comeing Soon</h1>
+            <h1 className='text-5xl '> Comeing Soon</h1>
         </div>
     </section>
     </>

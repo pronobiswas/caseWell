@@ -72,7 +72,7 @@ const Conversation = () => {
         <>
             <section ref={conversationRef} id="conversation" className='w-full h-full bg-[#F2F0EA]'>
                 <h3 ref={bigTextRef} className='text-4xl text-center w-full max-w-4xl mx-auto py-14 text-stone-500'>Let’s break boundaries together. Join our Partner Program and start creating without limits.</h3>
-                <div className="conversationWrapper p-32 font-myFont bg-[#E1DBCB] flex justify-center">
+                <div className="conversationWrapper p-32 font-geist bg-[#E1DBCB] flex justify-center">
                     <div className="w-full flex flex-col items-center">
                         <h2 ref={headingTextRef} className='text-4xl mb-8 w-full text-center'>Let’s Get in Touch and Start a Conversation</h2>
                         <div className='w-full max-w-xl'>

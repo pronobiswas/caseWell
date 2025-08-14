@@ -65,7 +65,7 @@ const CasewellPartner = () => {
     return (
         <>
             <section ref={casewellPartner} id="casewellPartner" className='w-full h-full bg-[#F2F0EA]'>
-                <div className="casewellPartnerWrapper p-14 font-myFont">
+                <div className="casewellPartnerWrapper p-14 font-geist">
                     <div className="casewellpartnerHeader flex mb-24">
                         <div className='w-full md:w-1/2'>
                             <h2 ref={partnerHeading} className='text-5xl'>What you get as a Zebrano Partner:</h2>

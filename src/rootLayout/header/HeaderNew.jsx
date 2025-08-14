@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import '../../index.css'
+import TestPage from '../../pages/TestPage';
 
 const HeaderNew = () => {
     const location = useLocation();
@@ -481,9 +482,9 @@ const HeaderNew = () => {
                 </nav>
             </header>
 
-            {/* <section id="loader">
-                <div className="w-full h-screen bg-colorOne fixed top-0 left-0 z-50 "></div>
-            </section> */}
+            <section id="loader">
+                <TestPage/>
+            </section>
         </>
     )
 }
