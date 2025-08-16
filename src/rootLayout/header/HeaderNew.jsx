@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import '../../index.css'
 import TestPage from '../../pages/PreLoader';
+import { CiGlobe } from 'react-icons/ci';
 
 const HeaderNew = () => {
     const location = useLocation();
@@ -14,16 +15,76 @@ const HeaderNew = () => {
     const nav2Ref = useRef(null);
     const dropdownRef = useRef(null);
     const iconRef = useRef(null);
+    const productDropdownRef = useRef(null);
+    const productImgRef = useRef(null);
 
 
     const [isClicked, setIsClicked] = useState(false);
+    const [loading, setLoading] = useState(true);
 
+    const productsImgArr = [
+        "/images/img1.png",
+        "/images/img2.png",
+        "/images/img3.png",
+        "/images/img4.png",
+    ]
+    // ====scroll to top autometicly==========
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+
+    // ======loader header======
+
+    // useEffect(() => {
+
+    //     const hasVisited = localStorage.getItem("hasVisited");
+
+    //     if (hasVisited) {
+    //         setLoading(false);
+    //     } else {
+    //         localStorage.setItem("hasVisited", "true");
+    //         setTimeout(() => {
+    //             setLoading(false);
+    //         }, 20000);
+    //     }
+    //     const handleBeforeUnload = () => {
+    //         localStorage.removeItem("hasVisited");
+    //     };
+
+    //     window.addEventListener("beforeunload", handleBeforeUnload);
+
+    //     return () => {
+    //         window.removeEventListener("beforeunload", handleBeforeUnload);
+    //     };
+    // }, []);
+
+    // ======change image on hover========
+    useEffect(()=>{
+        if (!productDropdownRef?.current || !productImgRef?.current) return;
+        const list = productDropdownRef.current.querySelectorAll(".linkItem");
+        list.forEach((elm,idx)=>{
+            elm.addEventListener('mouseenter',()=>{
+                productImgRef.current.src = productsImgArr[idx]
+            })
+        });
+
+    console.log(list);
+    },[]);
+    
+    
+
+
+
+
+
+    // ====expand dropdown mmenu======
     const expandDropdown = () => {
         setIsClicked(prev => !prev);
     }
-
+    // =====expand menu=======
     useEffect(() => {
         gsap.to(dropdownRef.current, {
+            opacity: isClicked ? 1 : 0,
             width: isClicked ? "100%" : 0,
             duration: 1,
             ease: "power1.in"
@@ -171,11 +232,12 @@ const HeaderNew = () => {
                                 </strong>
                             </Link>
                         </div>
+
                         {/* =======menu======= */}
                         <div className="menu w-fit flex gap-5 items-center">
                             <ul className='flex gap-3 lg:gap-6 [&>li]:cursor-pointer text-xl'>
 
-                                <li className="menuItem relative group transition-all duration-300 hidden ">
+                                <li className="menuItem relative group transition-all duration-300  ">
                                     <Link to='/products'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
                                             <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Products</span>
@@ -183,69 +245,132 @@ const HeaderNew = () => {
                                         </div>
                                     </Link>
 
-                                    <div className="dropdownMenu w-52  bg-[#e1dbcb48] absolute top-8 right-0 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
+                                    <div className="dropdownMenu w-min h-auto  bg-[#83f7d400]  absolute top-4 left-0 pt-5 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
 
-                                        <div className="dropdounWrapper flex flex-col gap-3 shadow-md">
-                                            <Link to="/products/PivotDoor" >
-                                                <div className='dropdownMenuItem '>
-                                                    <span className='mt-0'>Pivot Doors</span>
-                                                    <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                        <div  className="dropdounWrapper p-5 bg-white text-black flex flex-col gap-3 shadow-md z-20">
+                                            <div className='w-full flex z-30'>
+                                                <div ref={productDropdownRef} className='w-40 flex flex-col gap-2'>
+                                                    <Link to="/products/PivotDoor" >
+                                                        <div className='linkItem'>
+                                                            <span className='m-0'>Pivot Doors</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products/SlideDoor" >
+                                                        <div className='linkItem '>
+                                                            <span>Sliding Doors</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products/HingedDoors" >
+                                                        <div className='linkItem '>
+                                                            <span>Hinged Doors</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products/HingedDoors" >
+                                                        <div className='linkItem '>
+                                                            <span>Flush-to-wall</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products" >
+                                                        <div className='linkItem '>
+                                                            <span>Wall Partiton</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products" >
+                                                        <div className='linkItem '>
+                                                            <span>Biosirie</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products" >
+                                                        <div className='linkItem '>
+                                                            <span>Materials</span>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                            </Link>
-                                            <Link to="/products/SlideDoor" >
-                                                <div className='dropdownMenuItem '>
-                                                    <span>Sliding Doors</span>
-                                                    <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                                <div className='w-56 h-64'>
+                                                    <img ref={productImgRef} src="/images/img1.png" alt="png" className='w-full h-full object-cover'/>
                                                 </div>
-                                            </Link>
-                                            <Link to="/products/HingedDoors" >
-                                                <div className='dropdownMenuItem '>
-                                                    <span>Hinged Doors</span>
-                                                    <p>Lorem, ipsum dolor ipsum dolor.</p>
-                                                </div>
-                                            </Link>
+                                            </div>
                                         </div>
 
                                     </div>
                                 </li>
-                                <li className="menuItem relative group hidden">
-                                    <Link to='/'>
+                                {/* ------collections------- */}
+                                <li className="menuItem relative group ">
+                                    <Link to='/collection'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
                                             <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Collection</span>
                                             <span className='group-hover:translate-y-[-28px] transition-all duration-300'>Collection</span>
                                         </div>
                                     </Link>
-                                    <div className="dropdownMenu w-52  bg-[#e1dbcb48] absolute top-8 right-0 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
+                                    <div className="dropdownMenu w-[500px] h-auto p-1  bg-colorOne absolute top-8 right-0 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
 
                                         <div className="dropdounWrapper flex flex-col gap-3 shadow-md">
                                             <Link to='/collections/GlassCollection'>
                                                 <div className='dropdownMenuItem '>
-                                                    <span className='mt-0'>Glass Collection</span>
-                                                    <p>Lorem, ipsum dolor ipsum dolor.</p>
+
+                                                    <div className='w-full flex'>
+                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                            <span className='mt-0'>Glass Collection</span>
+                                                            <p className='mt-2 mb-1'>Design doors made of glass – combining transparency, elegance and modern functionality.</p>
+                                                            <p>Discover our collection of luxury glass doors, including pivot and sliding models. Made with safety glass and refined finishes for a timeless, open feel.</p>
+                                                        </div>
+                                                        <div className='w-1/3' >
+                                                            <img src="/images/glassCollection01.webp" alt="" className='w-full h-full object-cover' />
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </Link>
                                             <Link to='/collections/FineerCollection'>
                                                 <div className='dropdownMenuItem '>
-                                                    <span>Veneer Collection</span>
-                                                    <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                                    <div className='w-full flex'>
+
+                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                            <span>Fineer Collection</span>
+                                                            <p className='mt-2 mb-1'>Wood veneer doors with rich textures, natural grains and architectural precision.</p>
+                                                            <p>Explore handcrafted fineer doors in walnut, oak, zebrano and more. Warm, minimal and made for design interiors.</p>
+                                                        </div>
+                                                        <div className='w-1/3'>
+                                                            <img src="/images/FineerCollection01.webp" alt="webp" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </Link>
                                             <Link to='/collections/ThreeDCollection'>
                                                 <div className='dropdownMenuItem '>
-                                                    <span>3D Collection</span>
-                                                    <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                                    <div className='w-full flex'>
+                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                            <span>3D Collection</span>
+                                                            <p className='mt-2 mb-1'>Textured doors with depth – sculptural surfaces that make a statement.</p>
+                                                            <p>Our 3D panel doors combine bold patterns with refined materials. Ideal for feature walls and spaces that need artistic dimension.</p>
+
+                                                        </div>
+                                                        <div className='w-1/3 flex'>
+                                                            <img src="/images/threeDCollections.webp" alt="" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </Link>
                                             <Link to="/collections/AtelierCollection" >
                                                 <div className='dropdownMenuItem '>
-                                                    <span>Atelier Collection</span>
-                                                    <p>Lorem, ipsum dolor ipsum dolor.</p>
+                                                    <div className='w-full flex'>
+                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                            <span>Atelier Collection</span>
+                                                            <p className='mt-2 mb-1'>Work with Zebrano Studio to create bespoke doors from glass, wood, stone or metal. Tailored to your architecture, taste and imagination.</p>
+                                                            <p>Work with Zebrano Studio to create bespoke doors from glass, wood, stone or metal. Tailored to your architecture, taste and imagination.</p>
+                                                        </div>
+                                                        <div className='w-1/3 '>
+                                                            <img src="/images/AtelierCollection.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </Link>
                                         </div>
 
                                     </div>
                                 </li>
+                                {/* ---------inspiration---------- */}
                                 <li className="menuItem relative group">
                                     <Link to='/inspiration'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
@@ -254,6 +379,7 @@ const HeaderNew = () => {
                                         </div>
                                     </Link>
                                 </li>
+                                {/* --------architects---------- */}
                                 <li className="menuItem relative group">
                                     <Link to="/architects">
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
@@ -262,6 +388,7 @@ const HeaderNew = () => {
                                         </div>
                                     </Link>
                                 </li>
+                                {/* ---------aboutus---------- */}
                                 <li className="menuItem relative group ">
                                     <Link to="/aboutus">
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
@@ -280,7 +407,7 @@ const HeaderNew = () => {
                                             </div>
                                             <div className='dropdownMenuItem '>
                                                 <Link to="/aboutus/ConsciousNcrafts" >
-                                                <span>Conscious crafts</span>
+                                                    <span>Conscious crafts</span>
                                                 </Link>
                                             </div>
                                         </div>
@@ -296,7 +423,14 @@ const HeaderNew = () => {
                                     </Link>
                                 </li>
                             </ul>
+                        </div>
 
+                        {/* ======button====== */}
+                        <div className='flex  items-center gap-6'>
+                            <div className='flex items-center gap-1 text-xl'>
+                                <CiGlobe />
+                                <span>En</span>
+                            </div>
                             <div className="configaretor w-fit h-fit py-2 px-3 border bg-transparent text-white hover:bg-white hover:text-black  cursor-pointer rounded-full z-30">
                                 Configure Now
                             </div>
@@ -398,7 +532,7 @@ const HeaderNew = () => {
                         </div>
 
 
-                        <div ref={dropdownRef} className="absolute top-[75px] right-0 w-60 h-[calc(100vh-75px)]  overflow-hidden ">
+                        <div ref={dropdownRef} className="absolute top-[75px] right-0 w-60 h-[calc(100vh-75px)]  overflow-hidden opacity-0 ">
                             <div className='w-full h-full bg-[#00000083] backdrop-blur-sm flex justify-center items-center '>
                                 <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white '>
 
@@ -415,7 +549,7 @@ const HeaderNew = () => {
                                         </Link>
                                     </li>
                                     <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/" >
+                                        <Link to="/collection" >
                                             <div className="gggg">
                                                 <div className='red w-fit '>
                                                     Collection
@@ -481,10 +615,21 @@ const HeaderNew = () => {
                     </div>
                 </nav>
             </header>
+            <div>
+                {/* {
+                    loading ?
+                        <section id="loader">
+                            <TestPage />
+                        </section>
+                        :
+                        ""
+                } */}
 
-            <section id="loader">
-                <TestPage/>
-            </section>
+                <section id="loader">
+                    <TestPage />
+                </section>
+
+            </div>
         </>
     )
 }

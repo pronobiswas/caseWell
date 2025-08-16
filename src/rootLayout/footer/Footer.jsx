@@ -98,7 +98,7 @@ const Footer = () => {
             {/* ====================== */}
             <div>
               <div className='flex flex-wrap gap-6'>
-                
+
                 <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white '>
 
                   <li className='navLinkItem w-fit px-5 relative'>
@@ -276,12 +276,11 @@ const Footer = () => {
                 </a>
               </div>
               <div className="w-1/2 lg:w-1/3 ">
-                <img src="/images/footerLogo.png" alt="images" className='w-full h-full object-cover' />
+                <Link to="/" >
+                  <img src="/images/footerLogo.png" alt="images" className='w-full h-full object-cover' />
+                </Link>
               </div>
             </div>
-            <div>
-            </div>
-
           </div>
 
         </div>

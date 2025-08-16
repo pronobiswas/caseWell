@@ -91,11 +91,11 @@ header#header{
 }
 
 
-.menu ul .menuItem .dropdownMenu{
+/* .menu ul .menuItem .dropdownMenu{
   @apply border-2 border-[#5454ff23] shadow-inner  shadow-[white] rounded-[10px] overflow-hidden text-black
-}
+} */
 .menu ul .menuItem .dropdownMenu .dropdounWrapper .dropdownMenuItem {
-  @apply [&>span]:text-base [&>span]:font-semibold [&>p]:font-myFont [&>p]:text-xs bg-[#e1dbcb57] px-3 pb-2 shadow-inner  shadow-[#f0e5c67e] hover:bg-bgTwo 
+  @apply [&>span]:text-base [&>span]:font-semibold  [&>p]:text-xs bg-[#e1dbcb57] p-5 shadow-inner  shadow-[#f0e5c67e] rounded hover:bg-bgTwo 
 }
 .configaretor{}
 /* ======nav bar======== */
