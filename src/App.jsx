@@ -27,6 +27,10 @@ import CollectionPage from "./pages/CollectionPage";
 import ConfiguratorPage from "./pages/ConfiguratorPage";
 import ConsciousNcrafts from "./pages/ConsciousNcrafts";
 import VideoScroller from "./components/commonComponent/VideoScroller";
+import FlushToWall from "./pages/products/FlushToWall";
+import WallPartition from "./pages/products/WallPartition";
+import Biosirie from "./pages/products/Biosirie";
+import Material from "./pages/products/Material";
 
 
 function App() {
@@ -41,6 +45,7 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/privacy-Policy" element={<PrivecyPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/collection" element={<CollectionPage />} />
           <Route path="/collections/GlassCollection" element={<GlassCollection />} />
           <Route path="/collections/FineerCollection" element={<FineerCollection />} />
           <Route path="/collections/ThreeDCollection" element={<ThreeDCollection />} />
@@ -49,9 +54,12 @@ function App() {
           <Route path="/products/PivotDoor" element={<PivotDoor />} />
           <Route path="/products/SlideDoor" element={<SlideDoor />} />
           <Route path="/products/HingedDoors" element={<HingedDoors />} />
+          <Route path="/products/flushTowall" element={<FlushToWall />} />
+          <Route path="/products/wallPartition" element={<WallPartition />} />
+          <Route path="/products/biosirie" element={<Biosirie />} />
+          <Route path="/products/material" element={<Material />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/aboutus/ConsciousNcrafts" element={<ConsciousNcrafts />} />
-          <Route path="/collection" element={<CollectionPage />} />
           <Route path="/configurator" element={<ConfiguratorPage />} />
           <Route path="/VideoScroller" element={<VideoScroller />} />
 

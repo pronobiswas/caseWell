@@ -97,7 +97,7 @@ header#header{
 .menu ul .menuItem .dropdownMenu .dropdounWrapper .dropdownMenuItem {
   @apply [&>span]:text-base [&>span]:font-semibold  [&>p]:text-xs bg-[#e1dbcb57] p-5 shadow-inner  shadow-[#f0e5c67e] rounded hover:bg-bgTwo 
 }
-.configaretor{}
+/* .configaretor{} */
 /* ======nav bar======== */
 .millworkContent{
   @apply w-80 mt-16 flex flex-col gap-5;
@@ -203,3 +203,17 @@ html {
 } */
 
 
+
+
+
+
+
+
+/* #############footer########## */
+.footerHeading{
+  text-shadow: 1px 2px 0 var(--colorOne);
+  stroke: 1px  var(--colorOne);
+  -webkit-text-stroke: 1px var(--colorOne);
+  /* background-color: #0d290036; */
+
+}

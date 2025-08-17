@@ -64,44 +64,23 @@ const Footer = () => {
 
   return (
     <>
-      <footer ref={footerRef} id="footer" className='w-full h-full p-4 bg-[#F2F0EA]'>
-        <div className="footerWrapper pt-12 pb-0 px-12 rounded-[50px] bg-colorOne text-white">
+      <footer ref={footerRef} id="footer" className='w-full h-full p-4 bg-bgOne'>
+        <div className="footerWrapper pt-12 pb-0 px-12 rounded-[50px] bg-bgTwo text-white">
           {/* ======footer row one===== */}
-          <div className="footerRow flex flex-col md:flex-row justify-between gap-8">
-            <div>
-              <h2 className='text-5xl  mb-8 '>Luxury doors,<br></br> made accessible.</h2>
+          <div className="footerRow w-full flex flex-col md:flex-row justify-between gap-8">
+            {/* ----w-1/2----- */}
+            <div className='w-1/2'>
+              <h2 className='footerHeading text-6xl font-bold mb-8 '>Luxury doors,<br></br> made accessible.</h2>
               <BtnComponent text='See our collection' />
-
             </div>
-            {/* ====================== */}
-            <div className='hidden'>
-              <address className='flex flex-col gap-2'>
-                <h4 className='text-2xl mb-5'>Contact Info</h4>
-                <p>
-                  <b>Email:</b>
-                  <a href="mailto:Info@zebranostudio.com" className='hover:underline'>Info@zebranostudio.com</a>
-                </p>
-                <p>
-                  <b>Whatsapp: </b>
-                  <a href="tel:+31642997018" className='hover:underline'>+31642997018</a>
-                </p>
-                <p>
-                  <b>Telephone: </b>
-                  <a href="tel:+31642997018" className='hover:underline'>+31642997018</a>
-                </p>
-                <p>
-                  <b>company number: </b>
-                  <a href="tel:60942037" className='hover:underline'>60942037</a>
-                </p>
-              </address>
-            </div>
-            {/* ====================== */}
-            <div>
-              <div className='flex flex-wrap gap-6'>
+            {/* -----w-1/2-------- */}
+            <div className="w-1/2 flex gap-6 justify-between">
+              {/* ---products--- */}
+              <div className=''>
+                <h5 className='text-2xl font-Montserrat font-semibold mb-5 text-colorOne'>Products</h5>
+                <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-geist [&>li]:cursor-pointer [&>li]:text-colorOne '>
 
-                <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white '>
-
-                  <li className='navLinkItem w-fit px-5 relative'>
+                  <li className='navLinkItem w-fit relative'>
                     <Link to="/products" >
                       <div className="gggg">
                         <div className='red w-fit '>
@@ -113,31 +92,43 @@ const Footer = () => {
                       </div>
                     </Link>
                   </li>
-                  <li className='navLinkItem w-fit px-5 relative'>
+                  <li className='navLinkItem w-fit relative'>
                     <Link to="/" >
                       <div className="gggg">
                         <div className='red w-fit '>
-                          Collection
+                          Materials
                         </div>
                         <div className='blue w-fit '>
-                          Collection
+                          Materials
                         </div>
                       </div>
                     </Link>
                   </li>
-                  <li className='navLinkItem w-fit px-5 relative'>
-                    <Link to="/inspiration" >
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/collection" >
                       <div className="gggg">
                         <div className='red w-fit '>
-                          Inspiration
+                          Collection
                         </div>
                         <div className='blue w-fit '>
-                          Inspiration
+                          Collection
                         </div>
                       </div>
                     </Link>
                   </li>
-                  <li className='navLinkItem w-fit px-5 relative'>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/configurator" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          Configuration
+                        </div>
+                        <div className='blue w-fit '>
+                          Configuration
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className='navLinkItem w-fit relative'>
                     <Link to="/architects" >
                       <div className="gggg">
                         <div className='red w-fit '>
@@ -149,19 +140,81 @@ const Footer = () => {
                       </div>
                     </Link>
                   </li>
-                  <li className='navLinkItem w-fit px-5 relative'>
-                    <Link to="/aboutus" >
+                </ul>
+              </div>
+              {/* ---zebrano--- */}
+              <div className=''>
+                <h5 className='text-2xl font-Montserrat font-semibold mb-5 text-colorOne'>Zebrano</h5>
+                <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-geist [&>li]:cursor-pointer [&>li]:text-colorOne '>
+
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/inspiration" >
                       <div className="gggg">
                         <div className='red w-fit '>
-                          About Us
+                          Inspiration
                         </div>
                         <div className='blue w-fit '>
-                          About Us
+                          Inspiration
                         </div>
                       </div>
                     </Link>
                   </li>
-                  <li className='navLinkItem w-fit px-5 relative'>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/aboutus" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          About
+                        </div>
+                        <div className='blue w-fit '>
+                          About
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          Story
+                        </div>
+                        <div className='blue w-fit '>
+                          Story
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          Our team
+                        </div>
+                        <div className='blue w-fit '>
+                          Our team
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/aboutus/ConsciousNcrafts" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          Consious Craft
+                        </div>
+                        <div className='blue w-fit '>
+                          Consious Craft
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* ---service--- */}
+              <div className=''>
+                <h5 className='text-2xl font-Montserrat font-semibold mb-5 text-colorOne'>Service</h5>
+                <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-geist [&>li]:cursor-pointer [&>li]:text-colorOne '>
+
+                  <li className='navLinkItem w-fit relative'>
                     <Link to="/contact" >
                       <div className="gggg">
                         <div className='red w-fit '>
@@ -173,15 +226,48 @@ const Footer = () => {
                       </div>
                     </Link>
                   </li>
-
-                </ul>
-                <ul className='flex flex-col gap-4 [&>li]:cursor-pointer'>
-                  <li><Link to='/terms'>Terms & Conditions</Link></li>
-                  <li><Link to='/privacy-Policy'>Privacy Policy</Link></li>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          FAQ
+                        </div>
+                        <div className='blue w-fit '>
+                          FAQ
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/terms" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          Terms & Conditions
+                        </div>
+                        <div className='blue w-fit '>
+                          Terms & Conditions
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className='navLinkItem w-fit relative'>
+                    <Link to="/privacy-Policy" >
+                      <div className="gggg">
+                        <div className='red w-fit '>
+                          Privacy policy
+                        </div>
+                        <div className='blue w-fit '>
+                          Our team
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
                 </ul>
               </div>
-
+              
             </div>
+
+            
 
           </div>
           {/* ======footer row two===== */}

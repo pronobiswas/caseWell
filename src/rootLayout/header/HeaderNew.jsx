@@ -15,8 +15,11 @@ const HeaderNew = () => {
     const nav2Ref = useRef(null);
     const dropdownRef = useRef(null);
     const iconRef = useRef(null);
+
     const productDropdownRef = useRef(null);
     const productImgRef = useRef(null);
+    const zebranoDropdownRef = useRef(null);
+    const zebranoImgRef = useRef(null);
 
 
     const [isClicked, setIsClicked] = useState(false);
@@ -27,12 +30,19 @@ const HeaderNew = () => {
         "/images/img2.png",
         "/images/img3.png",
         "/images/img4.png",
+        "/images/img1.png",
+        "/images/img2.png",
+    ]
+    const zebranoImgArr= [
+        "/images/timelineImg1.png",
+        "/images/timelineImg2.png",
+        "/images/timelineImg3.png",
+        "/images/timelineImg4.png",
     ]
     // ====scroll to top autometicly==========
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
-
     // ======loader header======
 
     // useEffect(() => {
@@ -58,8 +68,14 @@ const HeaderNew = () => {
     //     };
     // }, []);
 
+
+
+    console.log('everyThing going on the right way');
+    
+
     // ======change image on hover========
     useEffect(()=>{
+
         if (!productDropdownRef?.current || !productImgRef?.current) return;
         const list = productDropdownRef.current.querySelectorAll(".linkItem");
         list.forEach((elm,idx)=>{
@@ -67,16 +83,15 @@ const HeaderNew = () => {
                 productImgRef.current.src = productsImgArr[idx]
             })
         });
+         if (!zebranoDropdownRef?.current || !zebranoImgRef?.current) return;
+        const zebranoList = zebranoDropdownRef.current.querySelectorAll(".linkItem");
+        zebranoList.forEach((elm,idx)=>{
+            elm.addEventListener('mouseenter',()=>{
+                zebranoImgRef.current.src = zebranoImgArr[idx]
+            })
+        });
 
-    console.log(list);
     },[]);
-    
-    
-
-
-
-
-
     // ====expand dropdown mmenu======
     const expandDropdown = () => {
         setIsClicked(prev => !prev);
@@ -90,7 +105,7 @@ const HeaderNew = () => {
             ease: "power1.in"
         });
     }, [isClicked])
-
+    // =======colapse mobile menu when click link========
     useEffect(() => {
         if (!dropdownRef.current) return;
         const navlink = dropdownRef.current.querySelectorAll('.navLinkItem');
@@ -105,7 +120,7 @@ const HeaderNew = () => {
             })
         });
     }, []);
-
+// ======animate mobile menu button========
     useEffect(() => {
         if (!iconRef.current) return;
 
@@ -245,7 +260,7 @@ const HeaderNew = () => {
                                         </div>
                                     </Link>
 
-                                    <div className="dropdownMenu w-min h-auto  bg-[#83f7d400]  absolute top-4 left-0 pt-5 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
+                                    <div className="dropdownMenu w-min h-auto  bg-[#00000000]  absolute top-4 left-0 pt-5 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
 
                                         <div  className="dropdounWrapper p-5 bg-white text-black flex flex-col gap-3 shadow-md z-20">
                                             <div className='w-full flex z-30'>
@@ -265,22 +280,22 @@ const HeaderNew = () => {
                                                             <span>Hinged Doors</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products/HingedDoors" >
+                                                    <Link to="/products/flushTowall" >
                                                         <div className='linkItem '>
                                                             <span>Flush-to-wall</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products" >
+                                                    <Link to="/products/wallPartition" >
                                                         <div className='linkItem '>
                                                             <span>Wall Partiton</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products" >
+                                                    <Link to="/products/biosirie" >
                                                         <div className='linkItem '>
                                                             <span>Biosirie</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products" >
+                                                    <Link to="/products/material" >
                                                         <div className='linkItem '>
                                                             <span>Materials</span>
                                                         </div>
@@ -302,14 +317,14 @@ const HeaderNew = () => {
                                             <span className='group-hover:translate-y-[-28px] transition-all duration-300'>Collection</span>
                                         </div>
                                     </Link>
-                                    <div className="dropdownMenu w-[500px] h-auto p-1  bg-colorOne absolute top-8 right-0 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
+                                    <div className="dropdownMenu w-[500px] h-auto   bg-[#00000000] absolute top-4 right-0 pt-5 opacity-0  pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
 
-                                        <div className="dropdounWrapper flex flex-col gap-3 shadow-md">
+                                        <div className="dropdounWrapper p-5 bg-white flex flex-col gap-3 shadow-md">
                                             <Link to='/collections/GlassCollection'>
                                                 <div className='dropdownMenuItem '>
 
                                                     <div className='w-full flex'>
-                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                        <div className='w-2/3 [&>p]:text-xs text-colorOne'>
                                                             <span className='mt-0'>Glass Collection</span>
                                                             <p className='mt-2 mb-1'>Design doors made of glass – combining transparency, elegance and modern functionality.</p>
                                                             <p>Discover our collection of luxury glass doors, including pivot and sliding models. Made with safety glass and refined finishes for a timeless, open feel.</p>
@@ -325,7 +340,7 @@ const HeaderNew = () => {
                                                 <div className='dropdownMenuItem '>
                                                     <div className='w-full flex'>
 
-                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                        <div className='w-2/3 [&>p]:text-xs text-colorOne'>
                                                             <span>Fineer Collection</span>
                                                             <p className='mt-2 mb-1'>Wood veneer doors with rich textures, natural grains and architectural precision.</p>
                                                             <p>Explore handcrafted fineer doors in walnut, oak, zebrano and more. Warm, minimal and made for design interiors.</p>
@@ -339,7 +354,7 @@ const HeaderNew = () => {
                                             <Link to='/collections/ThreeDCollection'>
                                                 <div className='dropdownMenuItem '>
                                                     <div className='w-full flex'>
-                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                        <div className='w-2/3 [&>p]:text-xs text-colorOne'>
                                                             <span>3D Collection</span>
                                                             <p className='mt-2 mb-1'>Textured doors with depth – sculptural surfaces that make a statement.</p>
                                                             <p>Our 3D panel doors combine bold patterns with refined materials. Ideal for feature walls and spaces that need artistic dimension.</p>
@@ -354,7 +369,7 @@ const HeaderNew = () => {
                                             <Link to="/collections/AtelierCollection" >
                                                 <div className='dropdownMenuItem '>
                                                     <div className='w-full flex'>
-                                                        <div className='w-2/3 [&>p]:text-xs'>
+                                                        <div className='w-2/3 [&>p]:text-xs text-colorOne'>
                                                             <span>Atelier Collection</span>
                                                             <p className='mt-2 mb-1'>Work with Zebrano Studio to create bespoke doors from glass, wood, stone or metal. Tailored to your architecture, taste and imagination.</p>
                                                             <p>Work with Zebrano Studio to create bespoke doors from glass, wood, stone or metal. Tailored to your architecture, taste and imagination.</p>
@@ -370,7 +385,7 @@ const HeaderNew = () => {
 
                                     </div>
                                 </li>
-                                {/* ---------inspiration---------- */}
+                                {/* ------inspiration---------- */}
                                 <li className="menuItem relative group">
                                     <Link to='/inspiration'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
@@ -379,7 +394,7 @@ const HeaderNew = () => {
                                         </div>
                                     </Link>
                                 </li>
-                                {/* --------architects---------- */}
+                                {/* ------architects---------- */}
                                 <li className="menuItem relative group">
                                     <Link to="/architects">
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
@@ -388,32 +403,50 @@ const HeaderNew = () => {
                                         </div>
                                     </Link>
                                 </li>
-                                {/* ---------aboutus---------- */}
+                                {/* ------aboutus---------- */}
                                 <li className="menuItem relative group ">
                                     <Link to="/aboutus">
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
-                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300'>About us</span>
-                                            <span className='group-hover:translate-y-[-28px] transition-all duration-300'>About us</span>
+                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Zebrano</span>
+                                            <span className='group-hover:translate-y-[-28px] transition-all duration-300'>Zebrano</span>
                                         </div>
                                     </Link>
-                                    <div className="dropdownMenu w-52  bg-[#e1dbcb48] absolute top-8 right-0 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 rounded-[10px]">
+                                    <div className="dropdownMenu w-min h-auto  bg-[#00000000]  absolute top-4 left-0 pt-5 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
 
-                                        <div className="dropdounWrapper flex flex-col gap-1 shadow-md">
-                                            <div className='dropdownMenuItem '>
-                                                <span className='mt-0'>Our story</span>
-                                            </div>
-                                            <div className='dropdownMenuItem '>
-                                                <span>Meet the makers</span>
-                                            </div>
-                                            <div className='dropdownMenuItem '>
-                                                <Link to="/aboutus/ConsciousNcrafts" >
-                                                    <span>Conscious crafts</span>
-                                                </Link>
+                                        <div  className="dropdounWrapper p-5 bg-white text-black flex flex-col gap-3 shadow-md z-20">
+                                            <div className='w-full flex z-30'>
+                                                <div ref={zebranoDropdownRef} className='w-40 flex flex-col gap-2'>
+                                                    <Link to="/products/PivotDoor" >
+                                                        <div className='linkItem'>
+                                                            <span className='m-0'>Our story</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products/SlideDoor" >
+                                                        <div className='linkItem '>
+                                                            <span>Meet the makers</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products/HingedDoors" >
+                                                        <div className='linkItem '>
+                                                            <span>Concious Craft</span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link to="/products/HingedDoors" >
+                                                        <div className='linkItem '>
+                                                            <span>service</span>
+                                                        </div>
+                                                    </Link>
+                                                    
+                                                </div>
+                                                <div className='w-56 h-64'>
+                                                    <img ref={zebranoImgRef} src="/images/img1.png" alt="png" className='w-full h-full object-cover'/>
+                                                </div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </li>
+                                {/* ------contact us--------- */}
                                 <li className="menuItem relative group ">
                                     <Link to="/contact">
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">

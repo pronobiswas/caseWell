@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import BtnComponent from '../homeComponents/utils/BtnComponent';
-import SplitLine from '../commonComponent/SplitLine';
 import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
