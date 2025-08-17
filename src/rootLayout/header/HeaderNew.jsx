@@ -416,22 +416,22 @@ const HeaderNew = () => {
                                         <div  className="dropdounWrapper p-5 bg-white text-black flex flex-col gap-3 shadow-md z-20">
                                             <div className='w-full flex z-30'>
                                                 <div ref={zebranoDropdownRef} className='w-40 flex flex-col gap-2'>
-                                                    <Link to="/products/PivotDoor" >
+                                                    <Link to="/aboutus" >
                                                         <div className='linkItem'>
                                                             <span className='m-0'>Our story</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products/SlideDoor" >
+                                                    <Link to="/aboutus" >
                                                         <div className='linkItem '>
                                                             <span>Meet the makers</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products/HingedDoors" >
+                                                    <Link to="/aboutus/ConsciousNcrafts" >
                                                         <div className='linkItem '>
                                                             <span>Concious Craft</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/products/HingedDoors" >
+                                                    <Link to="/aboutus" >
                                                         <div className='linkItem '>
                                                             <span>service</span>
                                                         </div>
