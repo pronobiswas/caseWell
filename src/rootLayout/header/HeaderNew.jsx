@@ -11,6 +11,7 @@ const HeaderNew = () => {
     const isBlack = location.pathname === '/terms';
     const isBlack1 = location.pathname === '/privacy-Policy';
     const isBlack2 = location.pathname === '/contact';
+    const isBlack3 = location.pathname === '/aboutus';
 
     const nav2Ref = useRef(null);
     const dropdownRef = useRef(null);
@@ -45,28 +46,28 @@ const HeaderNew = () => {
     }, [location.pathname]);
     // ======loader header======
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     const hasVisited = localStorage.getItem("hasVisited");
+        const hasVisited = localStorage.getItem("hasVisited");
 
-    //     if (hasVisited) {
-    //         setLoading(false);
-    //     } else {
-    //         localStorage.setItem("hasVisited", "true");
-    //         setTimeout(() => {
-    //             setLoading(false);
-    //         }, 20000);
-    //     }
-    //     const handleBeforeUnload = () => {
-    //         localStorage.removeItem("hasVisited");
-    //     };
+        if (hasVisited) {
+            setLoading(false);
+        } else {
+            localStorage.setItem("hasVisited", "true");
+            setTimeout(() => {
+                setLoading(false);
+            }, 20000);
+        }
+        const handleBeforeUnload = () => {
+            localStorage.removeItem("hasVisited");
+        };
 
-    //     window.addEventListener("beforeunload", handleBeforeUnload);
+        window.addEventListener("beforeunload", handleBeforeUnload);
 
-    //     return () => {
-    //         window.removeEventListener("beforeunload", handleBeforeUnload);
-    //     };
-    // }, []);
+        return () => {
+            window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
+    }, []);
 
 
 
@@ -168,7 +169,7 @@ const HeaderNew = () => {
         <>
             <header className='w-full  absolute top-0 left-0'>
                 <nav className=" hidden lg:block p-5">
-                    <div className={`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 ? 'text-black' : 'text-white'}`}>
+                    <div className={`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 || isBlack3 ? 'text-black' : 'text-white'}`}>
 
                         {/* ======logo====== */}
                         <div className="log w-fit">
