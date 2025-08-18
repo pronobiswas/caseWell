@@ -24,7 +24,7 @@ const HeaderNew = () => {
 
 
     const [isClicked, setIsClicked] = useState(false);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     const productsImgArr = [
         "/images/img1.png",
@@ -46,28 +46,28 @@ const HeaderNew = () => {
     }, [location.pathname]);
     // ======loader header======
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const hasVisited = localStorage.getItem("hasVisited");
+    //     const hasVisited = localStorage.getItem("hasVisited");
 
-        if (hasVisited) {
-            setLoading(false);
-        } else {
-            localStorage.setItem("hasVisited", "true");
-            setTimeout(() => {
-                setLoading(false);
-            }, 20000);
-        }
-        const handleBeforeUnload = () => {
-            localStorage.removeItem("hasVisited");
-        };
+    //     if (hasVisited) {
+    //         setLoading(false);
+    //     } else {
+    //         localStorage.setItem("hasVisited", "true");
+    //         setTimeout(() => {
+    //             setLoading(false);
+    //         }, 20000);
+    //     }
+    //     const handleBeforeUnload = () => {
+    //         localStorage.removeItem("hasVisited");
+    //     };
 
-        window.addEventListener("beforeunload", handleBeforeUnload);
+    //     window.addEventListener("beforeunload", handleBeforeUnload);
 
-        return () => {
-            window.removeEventListener("beforeunload", handleBeforeUnload);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener("beforeunload", handleBeforeUnload);
+    //     };
+    // }, []);
 
 
 
@@ -650,18 +650,16 @@ const HeaderNew = () => {
                 </nav>
             </header>
             <div>
-                {/* {
+                {
                     loading ?
                         <section id="loader">
                             <TestPage />
                         </section>
                         :
                         ""
-                } */}
+                }
 
-                <section id="loader">
-                    <TestPage />
-                </section>
+                
 
             </div>
         </>

@@ -5,7 +5,9 @@ const FineerCollection = () => {
   return (
     <>
     <section>
-        <div className="warpper w-full h-screen flex items-end justify-start p-5 md:p-12 bg-bgTwo">
+        <div
+        style={{ backgroundImage: "url(/images/FineerCollection01.webp)" }}
+         className="warpper w-full h-screen flex items-end justify-start p-5 md:p-12 bg-bgTwo">
             <div className="box">
                 <h1 className='text-3xl md:text-5xl font-geist'></h1>
                 <p className='font-geist'></p>

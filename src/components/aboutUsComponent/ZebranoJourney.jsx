@@ -79,7 +79,7 @@ const ZebranoJourney = () => {
                     <div className="w-full md:w-1/2">
                         <div>
                             <p ref={headingOneRef} className='text-xl' >Fronm One Door to Endless Possibilities</p>
-                            <h2 ref={headingTwoRef} className='text-3xl lg:text-5xl mb-8 mt-2'>The Zebrano Studio Journey</h2>
+                            <h2 ref={headingTwoRef} className='text-3xl lg:text-5xl mb-8 mt-6'>The Zebrano Studio Journey</h2>
                             <p ref={pragraphRef} className='mb-8 '>What began as a single custom door project has evolved into a full collection of pivot, sliding, hinged, and flush-to-wall designs that redefine how interiors feel. Inspired by luxury hotels and
                                 architectural details, we've made it our mission to create doors and wall features that combine premium materials with personal design freedom.</p>
 
