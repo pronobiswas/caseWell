@@ -1,6 +1,8 @@
 import React from 'react'
-import ConsciousNcraftsBanner from '../components/aboutUsComponent/ConsciousNcraftsBanner'
 import ConsciousNCraftTimeline from '../components/aboutUsComponent/ConsciousNCraftTimeline'
+import ConsciousNcraftsBanner from '../components/aboutUsComponent/ConsciousNcraftsBanner'
+
+
 
 const ConsciousNcrafts = () => {
   return (
