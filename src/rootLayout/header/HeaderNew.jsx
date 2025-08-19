@@ -40,6 +40,13 @@ const HeaderNew = () => {
         "/images/timelineImg3.png",
         "/images/timelineImg4.png",
     ]
+    const collectionImgArr= [
+        "/images/timelineImg1.png",
+        "/images/timelineImg2.png",
+        "/images/timelineImg3.png",
+        "/images/timelineImg4.png",
+    ]
+   
     // ====scroll to top autometicly==========
     useEffect(() => {
         window.scrollTo(0, 0);
