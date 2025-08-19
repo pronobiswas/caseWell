@@ -8,10 +8,13 @@ import { CiGlobe } from 'react-icons/ci';
 
 const HeaderNew = () => {
     const location = useLocation();
+    console.log(location);
+    
     const isBlack = location.pathname === '/terms';
     const isBlack1 = location.pathname === '/privacy-Policy';
     const isBlack2 = location.pathname === '/contact';
     const isBlack3 = location.pathname === '/aboutus';
+    const isBlack4 = location.pathname === '/aboutus/theMakers';
 
     const nav2Ref = useRef(null);
     const dropdownRef = useRef(null);
@@ -174,9 +177,9 @@ const HeaderNew = () => {
 
     return (
         <>
-            <header className='w-full  absolute top-0 left-0'>
+            <header className='w-full  fixed top-0 left-0 z-50 bg-green-600'>
                 <nav className=" hidden lg:block p-5">
-                    <div className={`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 || isBlack3 ? 'text-black' : 'text-white'}`}>
+                    <div className={`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 || isBlack3 || isBlack4 ? 'text-black' : 'text-white'}`}>
 
                         {/* ======logo====== */}
                         <div className="log w-fit">
@@ -429,7 +432,7 @@ const HeaderNew = () => {
                                                             <span className='m-0'>Our story</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/aboutus" >
+                                                    <Link to="/aboutus/theMakers" >
                                                         <div className='linkItem '>
                                                             <span>Meet the makers</span>
                                                         </div>

@@ -31,6 +31,7 @@ import FlushToWall from "./pages/products/FlushToWall";
 import WallPartition from "./pages/products/WallPartition";
 import Biosirie from "./pages/products/Biosirie";
 import Material from "./pages/products/Material";
+import MeetTheMakerPage from "./pages/zebrano/MeetTheMakerPage";
 
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
           <Route path="/products/material" element={<Material />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/aboutus/ConsciousNcrafts" element={<ConsciousNcrafts />} />
+          <Route path="/aboutus/theMakers" element={<MeetTheMakerPage />} />
           <Route path="/configurator" element={<ConfiguratorPage />} />
           <Route path="/VideoScroller" element={<VideoScroller />} />
 

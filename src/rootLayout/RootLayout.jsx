@@ -25,10 +25,10 @@ const RootLayout = () => {
   return (
     <>
       {/* <Header /> */}
-      
+
+      <HeaderNew />
       <div id="smooth-wrapper" className="w-full h-full">
         <div id="smooth-content">
-          <HeaderNew/>
           <Outlet />
           <Footer />
         </div>

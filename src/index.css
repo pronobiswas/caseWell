@@ -217,3 +217,10 @@ html {
   /* background-color: #0d290036; */
 
 }
+.gradient_text {
+  background: linear-gradient(var(--angle, 90deg), #00680c, #2b0044, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% auto;
+  background-position: center center;
+}
