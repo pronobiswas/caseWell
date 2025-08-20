@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
-import '../../index.css'
+import React, { useEffect, useRef, useState } from 'react';
+import '../../index.css';
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(SplitText);
 
 const FAQSection = ({
     title="Got questions? You'll find plenty of answers in our FAQ,including:",
@@ -18,30 +21,47 @@ const FAQSection = ({
         },
     ]
 }) => {
+
     const [openIndex, setOpenIndex] = useState(null);
-
-
-   
-
-
+    const titleRef = useRef(null);
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     }
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+          
+    
+          const titleSplit = new SplitText(titleRef.current, {
+            type: 'lines,words,chars',
+            linesClass: 'line overflow-hidden block',
+          });
+          gsap.from(titleSplit.chars, {
+            rotateY: 90,
+            duration: 1,
+            ease: 'power4.out',
+            stagger: 0.03,
+          });
+    
+        });
+    
+    
+        return () => ctx.revert();
+      }, []);
     return (
-        <section className="max-w-2xl mx-auto p-6">
-            <h2 className="text-2xl  mb-8 text-right">{title}</h2>
+        <section className="w-full p-6">
+            <h2 ref={titleRef} className="text-3xl  mb-8 text-right">{title}</h2>
             <div className="space-y-4">
                 {faqs.map((faq, index) => (
                     <div key={index} className="w-full border-b border-b-black py-2">
                         <button
-                            className="gradient_text w-full text-left  flex justify-between items-center text-xl"
+                            className="gradient_text w-full text-left  flex justify-between items-center text-2xl"
                             onClick={() => toggleFAQ(index)}
                         >
                             {faq.question}
                             <span>{openIndex === index ? "-" : "+"}</span>
                         </button>
                         {openIndex === index && (
-                            <div className="gradient_text pt-3 text-gray-600">{faq.answer}</div>
+                            <div className="gradient_text text-xl p-5 text-gray-600">{faq.answer}</div>
                         )}
                     </div>
                 ))}

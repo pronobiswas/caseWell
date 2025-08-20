@@ -33,6 +33,8 @@ import Biosirie from "./pages/products/Biosirie";
 import Material from "./pages/products/Material";
 import MeetTheMakerPage from "./pages/zebrano/MeetTheMakerPage";
 import GlitchImage from "./components/commonComponent/GlitchImage";
+import OurStory from "./pages/zebrano/OurStory";
+import ServicesPage from "./pages/zebrano/ServicesPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -47,22 +49,10 @@ function App() {
           <Route path="/privacy-Policy" element={<PrivecyPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/collection" element={<CollectionPage />} />
-          <Route
-            path="/collections/GlassCollection"
-            element={<GlassCollection />}
-          />
-          <Route
-            path="/collections/FineerCollection"
-            element={<FineerCollection />}
-          />
-          <Route
-            path="/collections/ThreeDCollection"
-            element={<ThreeDCollection />}
-          />
-          <Route
-            path="/collections/AtelierCollection"
-            element={<AtelierCollection />}
-          />
+          <Route path="/collections/GlassCollection" element={<GlassCollection />}/>
+          <Route path="/collections/FineerCollection" element={<FineerCollection />} />
+          <Route path="/collections/ThreeDCollection" element={<ThreeDCollection />} />
+          <Route path="/collections/AtelierCollection" element={<AtelierCollection />}/>
           <Route path="/products" element={<CabinetryPage />} />
           <Route path="/products/PivotDoor" element={<PivotDoor />} />
           <Route path="/products/SlideDoor" element={<SlideDoor />} />
@@ -72,10 +62,9 @@ function App() {
           <Route path="/products/biosirie" element={<Biosirie />} />
           <Route path="/products/material" element={<Material />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
-          <Route
-            path="/aboutus/ConsciousNcrafts"
-            element={<ConsciousNcrafts />}
-          />
+          <Route path="/aboutus/ourStory" element={<OurStory />} />
+          <Route path="/aboutus/ConsciousNcrafts" element={<ConsciousNcrafts />} />
+          <Route path="/aboutus/services" element={<ServicesPage />} />
           <Route path="/aboutus/theMakers" element={<MeetTheMakerPage />} />
           <Route path="/configurator" element={<ConfiguratorPage />} />
           <Route path="/VideoScroller" element={<VideoScroller />} />

@@ -427,7 +427,7 @@ const HeaderNew = () => {
                                         <div  className="dropdounWrapper p-5 bg-white text-black flex flex-col gap-3 shadow-md z-20">
                                             <div className='w-full flex z-30'>
                                                 <div ref={zebranoDropdownRef} className='w-40 flex flex-col gap-2'>
-                                                    <Link to="/aboutus" >
+                                                    <Link to="/aboutus/ourStory" >
                                                         <div className='linkItem'>
                                                             <span className='m-0'>Our story</span>
                                                         </div>
@@ -442,7 +442,7 @@ const HeaderNew = () => {
                                                             <span>Concious Craft</span>
                                                         </div>
                                                     </Link>
-                                                    <Link to="/aboutus" >
+                                                    <Link to="/aboutus/services" >
                                                         <div className='linkItem '>
                                                             <span>service</span>
                                                         </div>

@@ -4,7 +4,8 @@ import { SplitText } from "gsap/SplitText";
 import BtnComponent from '../homeComponents/utils/BtnComponent';
 gsap.registerPlugin(SplitText);
 
-const ConsciousNcraftsBanner = () => {
+
+const OurStoryBanner = () => {
     const headingRef = useRef(null);
     const paragraphRef = useRef(null);
     const buttonRef = useRef(null);
@@ -30,11 +31,11 @@ const ConsciousNcraftsBanner = () => {
                 stagger: 0.01,
 
             });
-            gsap.from(buttonRef.current,{
-                yPercent:100,
-                opacity:0,
-                delay:0.8,
-                duration:0.5,
+            gsap.from(buttonRef.current, {
+                yPercent: 100,
+                opacity: 0,
+                delay: 0.8,
+                duration: 0.5,
             })
 
 
@@ -62,4 +63,4 @@ const ConsciousNcraftsBanner = () => {
     )
 }
 
-export default ConsciousNcraftsBanner
+export default OurStoryBanner
