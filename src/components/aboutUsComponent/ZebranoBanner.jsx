@@ -73,7 +73,7 @@ const ZebranoBanner = (
   return (
     <>
     <section id="zebranoBanner">
-        <div className="wrapper w-full h-auto p-5 py-20 md:p-10 md:py-20 lg:pb-10 lg:pt-28 xl:pt-28 2xl:pb-20">
+        <div className="wrapper w-full h-auto p-5 py-20 md:p-10 md:pt-32 md:py-20 lg:pb-10 lg:pt-32 xl:pt-40 2xl:pb-20">
             <h1 ref={headingOneRef} className='text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>{headingOne}</h1>
             <div className='w-full flex flex-col md:flex-row'>
                 <div className='w-full md:w-1/2'>

@@ -10,14 +10,14 @@ const CasewellPartner = () => {
     const casewellPartner = useRef(null);
     const partnerHeading = useRef(null);
     const partnerDescription = useRef(null);
+    const casewellContetntRef = useRef(null);
     useEffect(() => {
-  const handleLoad = () => {
+  const ctx = gsap.context(() => {
     const heading = partnerHeading.current;
     const split = new SplitText(partnerDescription.current, { type: "words" });
     const words = split.words;
-    const cards = casewellPartner.current?.querySelectorAll(".casewellcoll");
 
-    if (!heading || !cards) return;
+    if (!heading || !words.length) return;
 
     gsap.from(heading, {
       y: 100,
@@ -31,35 +31,64 @@ const CasewellPartner = () => {
         scrub: true,
       },
     });
+
     gsap.from(words, {
-    x: 30,
-    opacity: 0,
-    ease: "power2.out",
-    duration: 1,
-    stagger: 0.1,
-    scrollTrigger: {
-      trigger: casewellPartner.current,
-      start: "top 60%",
-      end: "+=200",
-      scrub: true,
-    },
-  });
+      x: 30,
+      opacity: 0,
+      ease: "power2.out",
+      duration: 1,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: casewellPartner.current,
+        start: "top 60%",
+        end: "+=200",
+        scrub: true,
+      },
+    });
+  }, casewellPartner);
 
-    
-
-    ScrollTrigger.refresh();
-  };
-
-  if (document.readyState === "complete") {
-    handleLoad();
-  } else {
-    window.addEventListener("load", handleLoad);
-  }
-
-  return () => {
-    window.removeEventListener("load", handleLoad);
-  };
+  return () => ctx.revert();
 }, []);
+
+
+
+    useEffect(() => {
+        if (!casewellContetntRef.current) return;
+        const ctx = gsap.context(() => {
+
+            const allSvg = casewellContetntRef.current.querySelectorAll("svg");
+
+            allSvg.forEach((svg) => {
+                const paths = svg.querySelectorAll("path");
+                paths.forEach((path) => {
+                    const length = path.getTotalLength();
+                    gsap.set(path, { strokeDasharray: length, strokeDashoffset: length });
+                });
+
+                gsap.to(paths, {
+                    strokeDashoffset: 0,
+                    duration: 2,
+                    ease: "power2.out",
+                    stagger: 0.3,
+                    scrollTrigger: {
+                        trigger: svg,
+                        start: "top 80%",
+                        end: "+=300",
+                        scrub: true,
+                    },
+                });
+            });
+
+
+
+        });
+
+
+        return () => ctx.revert();
+    }, []);
+
+
+
 
 
     return (
@@ -77,7 +106,8 @@ const CasewellPartner = () => {
                         </div>
                     </div>
                     {/* ================================= */}
-                    <div className="casewellContent flex flex-col gap-8 md:gap-14">
+                    <div ref={casewellContetntRef} className="casewellContent flex flex-col gap-8 md:gap-14">
+                        {/* ========column one========== */}
                         <div className="casewellrow flex flex-col md:flex-row gap-8">
                             <div className="casewellcoll w-full md:w-1/2 flex flex-col gap-7">
                                 <div className="iconWrapper text-8xl">
@@ -85,7 +115,6 @@ const CasewellPartner = () => {
                                         <svg width="71" height="62" viewBox="0 0 71 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M70 1V50.6262H24.7188L14.4766 60V50.6262H1V1H70Z" stroke="black" />
                                         </svg>
-
                                     </span>
                                 </div>
                                 <h3 className='text-3xl'>True Wholesale Pricing</h3>
@@ -105,8 +134,8 @@ const CasewellPartner = () => {
                                 <h3 className='text-3xl'>Unlimited Design Possibilities</h3>
                                 <p>Go wild with your ideas. Whether it’s unique shapes, mixed materials, or custom finishes, we don’t set limits — you dream it, we make it happen.</p>
                             </div>
-
                         </div>
+                        {/* ========column two========== */}
                         <div className="casewellrow flex flex-col md:flex-row gap-8">
                             <div className="casewellcoll w-full md:w-1/2 flex flex-col gap-7">
                                 <div className="iconWrapper text-8xl">
@@ -134,8 +163,8 @@ const CasewellPartner = () => {
                                 <h3 className='text-3xl'>Security & Reliability Through Open Communication</h3>
                                 <p>At Zebrano, communication is our foundation. We keep you informed, involved, and supported throughout the process, so you experience complete peace of mind on every project.</p>
                             </div>
-
                         </div>
+                        {/* ========column three========== */}
                         <div className="casewellrow flex flex-col md:flex-row gap-8">
                             <div className="casewellcoll w-full  flex flex-col gap-7">
                                 <div className="iconWrapper text-8xl">

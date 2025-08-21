@@ -11,6 +11,9 @@ import TechnicalSiteRequirement from './TechnicalSiteRequirement';
 import MeasurementDesignApprovals from './MeasurementDesignApprovals';
 import PaymentInvoicing from './PaymentInvoicing';
 import LeadTimesScheduling from './LeadTimesScheduling';
+import DeliveryAndInstallation from './DeliveryAndInstallation';
+import WarrantyAftercare from './WarrantyAftercare';
+import OrderReturnsSupports from './OrderReturnsSupports';
 
 
 const ServiceTab = () => {
@@ -27,6 +30,9 @@ const ServiceTab = () => {
         { key: "MeasurementDesignApprovals", label: "Measurement, Design & Approvals", component: <MeasurementDesignApprovals /> },
         { key: "PaymentInvoicing", label: "Payment & Invoicing", component: <PaymentInvoicing /> },
         { key: "LeadTimesScheduling", label: "Lead Times & Scheduling", component: <LeadTimesScheduling /> },
+        { key: "DeliveryAndInstallation", label: "Delivery & Installation", component: <DeliveryAndInstallation /> },
+        { key: "WarrantyAftercare", label: "Warranty & Aftercare ", component: <WarrantyAftercare /> },
+        { key: "OrderReturnsSupports", label: "Orders, Returns & Support", component: <OrderReturnsSupports /> },
         { key: "FAQ", label: "FAQ", component: <FAQ /> },
     ];
     useEffect(() => {

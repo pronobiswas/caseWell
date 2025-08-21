@@ -11,6 +11,7 @@ const Conversation = () => {
     const bigTextRef = useRef(null);
     const headingTextRef = useRef(null);
     const paragraphTextRef = useRef(null);
+    const btnRef = useRef(null);
     useEffect(() => {
         const splitBigText = new SplitText(bigTextRef.current, {
             type: "lines,words,chars",
@@ -22,6 +23,10 @@ const Conversation = () => {
 
 
         const spltitHeading2 = new SplitText(headingTextRef.current, {
+            type: "lines , words , chars",
+            linesClass: "lines block overflow-hidden"
+        })
+        const spltitparagraphText = new SplitText(paragraphTextRef.current, {
             type: "lines , words , chars",
             linesClass: "lines block overflow-hidden"
         })
@@ -60,6 +65,33 @@ const Conversation = () => {
                     scrub: true,
                 }
             });
+            // =====handle paragraph Text=====
+            gsap.from(spltitparagraphText.chars, {
+                x: 100,
+                ease: "power2.out",
+                duration: 1,
+                stagger: 0.01,
+                scrollTrigger: {
+                    trigger: headingTextRef.current,
+                    start: "top 85%",
+                    end: "+=200",
+                    scrub: true,
+                }
+            });
+            // =====handle button=======
+            gsap.from(btnRef.current, {
+                scale: 0.5,
+                ease: "power2.out",
+                duration: 1,
+                stagger: 0.01,
+                scrollTrigger: {
+                    trigger: conversationRef.current,
+                    start: "top 35%",
+                    end: "+=200",
+                    scrub: true,
+                    
+                }
+            });
 
             
         }, conversationRef)
@@ -71,7 +103,7 @@ const Conversation = () => {
     return (
         <>
             <section ref={conversationRef} id="conversation" className='w-full h-full bg-[#F2F0EA]'>
-                <h3 ref={bigTextRef} className='text-4xl text-center w-full max-w-4xl mx-auto py-14 text-stone-500'>Let’s break boundaries together. Join our Partner Program and start creating without limits.</h3>
+                <h3 ref={bigTextRef} className='text-4xl xl:text-5xl text-center w-full max-w-4xl xl:max-w-5xl mx-auto pt-14 pb-20 text-stone-600'>Let’s break boundaries together. Join our Partner Program and start creating without limits.</h3>
                 <div className="conversationWrapper p-32 font-geist bg-[#E1DBCB] flex justify-center">
                     <div className="w-full flex flex-col items-center">
                         <h2 ref={headingTextRef} className='text-4xl mb-8 w-full text-center'>Let’s Get in Touch and Start a Conversation</h2>
@@ -79,8 +111,7 @@ const Conversation = () => {
 
                         <p ref={paragraphTextRef} className='text-base mb-8 text-center'>We’d love to hear about your ideas, projects, or questions. No pressure—just a friendly chat to explore how we can create something amazing together. Reach out anytime!</p>
                         </div>
-                        <div className='flex justify-center'>
-
+                        <div ref={btnRef} className='flex justify-center'>
                             <BtnComponent text='Partner with Casewell' />
                         </div>
                     </div>
