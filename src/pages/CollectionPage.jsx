@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 const CollectionPage = () => {
+  const [activeCollection , setActiveCollection] = useState('Show all')
   const [showCollection, setShowCollection] = useState(true);
   const [filteredCollection, setFilteredCollection] = useState([]);
 
@@ -53,6 +54,7 @@ const CollectionPage = () => {
   ];
 
   const filterByTag = (tag) => {
+    setActiveCollection(tag);
     const result = allCollection.filter((item) => item.tag === tag);
     setFilteredCollection(result);
     setShowCollection(false);
@@ -61,21 +63,25 @@ const CollectionPage = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const allCollectionBox = collectionRef.current.querySelectorAll('.collectionBox');
-      console.log(allCollectionBox);
+      const allCollectionButton = collectionRef.current.querySelectorAll('button');
       allCollectionBox.forEach(box => {
         const randomX = gsap.utils.random(-50, 50);
         const randomY = gsap.utils.random(-50, 50);
+        const randomScale = gsap.utils.random(0.5, 1);
 
         gsap.from(box, {
           x: randomX,
           y: randomY,
-          scale:0.9,
+          scale:randomScale,
           opacity: 0,
           duration: 0.5,
           ease: "power3.inout",
         });
 
       });
+      
+      
+
     });
 
 

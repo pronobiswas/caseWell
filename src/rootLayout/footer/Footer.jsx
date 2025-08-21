@@ -257,7 +257,7 @@ const Footer = () => {
                           Privacy policy
                         </div>
                         <div className='blue w-fit '>
-                          Our team
+                          Privacy policy
                         </div>
                       </div>
                     </Link>

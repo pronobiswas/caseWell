@@ -177,7 +177,7 @@ const HeaderNew = () => {
 
     return (
         <>
-            <header className='w-full  fixed top-0 left-0 z-50 bg-green-600'>
+            <header className='w-full  fixed top-0 left-0 z-50 bg-bgTwo'>
                 <nav className=" hidden lg:block p-5">
                     <div className={`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 || isBlack3 || isBlack4 ? 'text-black' : 'text-white'}`}>
 
@@ -260,10 +260,10 @@ const HeaderNew = () => {
                         </div>
 
                         {/* =======menu======= */}
-                        <div className="menu w-fit flex gap-5 items-center">
+                        <div className="menu w-fit flex gap-5 items-center ">
                             <ul className='flex gap-3 lg:gap-6 [&>li]:cursor-pointer text-xl'>
 
-                                <li className="menuItem relative group transition-all duration-300  ">
+                                <li className="menuItem relative group transition-all duration-300 ">
                                     <Link to='/products'>
                                         <div className="navLink w-full h-7  relative flex flex-col overflow-hidden z-20 ">
                                             <span className='group-hover:translate-y-[-22px] transition-all duration-300'>Products</span>
@@ -271,7 +271,7 @@ const HeaderNew = () => {
                                         </div>
                                     </Link>
 
-                                    <div className="dropdownMenu w-min h-auto  bg-[#00000000]  absolute top-4 left-0 pt-5 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
+                                    <div className="dropdownMenu w-min h-auto  bg-[#00000000]  absolute top-7 left-0 pt-5 opacity-0  pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-30 ">
 
                                         <div  className="dropdounWrapper p-5 bg-white text-black flex flex-col gap-3 shadow-md z-20">
                                             <div className='w-full flex z-30'>
