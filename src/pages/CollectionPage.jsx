@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
 
 const CollectionPage = () => {
   const [showCollection, setShowCollection] = useState(true);
   const [filteredCollection, setFilteredCollection] = useState([]);
+
+  const collectionRef = useRef(null);
 
   const allCollection = [
     {
@@ -55,24 +58,51 @@ const CollectionPage = () => {
     setShowCollection(false);
   };
 
-  return (
-    <section id="collections">
-      <div className="wrapper w-full h-full bg-colorOne pt-20">
-        <h1 className="text-white text-5xl">Coming soon.</h1>
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const allCollectionBox = collectionRef.current.querySelectorAll('.collectionBox');
+      console.log(allCollectionBox);
+      allCollectionBox.forEach(box => {
+        const randomX = gsap.utils.random(-50, 50);
+        const randomY = gsap.utils.random(-50, 50);
 
-        <div className="flex gap-5 [&>button]:bg-bgTwo [&>button]:px-5">
-          <button onClick={() => filterByTag("glass")}>glass</button>
-          <button onClick={() => filterByTag("pivot")}>pivot</button>
-          <button onClick={() => filterByTag("slide")}>slide</button>
-          <button onClick={() => setShowCollection(true)}>show all</button>
+        gsap.from(box, {
+          x: randomX,
+          y: randomY,
+          scale:0.9,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power3.inout",
+        });
+
+      });
+    });
+
+
+    return () => ctx.revert();
+  }, [filteredCollection , showCollection]);
+
+  return (
+    <section ref={collectionRef} id="collections">
+      <div className="wrapper w-full h-full bg-colorOne p-5 md:p-10 lg:p-14 md:pt-28 lg:pt-32">
+        {/* =====collection header========= */}
+        <div className="">
+          <h1 className="text-white text-5xl">Some of our Collections</h1>
+        </div>
+        {/* ====collection nevigetor===== */}
+        <div className="w-full py-10 flex gap-5 [&>button]:text-xl [&>button]:text-bgTwo [&>button]:py-1 [&>button]:px-5 [&>button]:border [&>button]:rounded-full">
+          <button onClick={() => setShowCollection(true)}>Show all</button>
+          <button onClick={() => filterByTag("glass")}>Glass</button>
+          <button onClick={() => filterByTag("pivot")}>Pivot</button>
+          <button onClick={() => filterByTag("slide")}>Slide</button>
         </div>
 
-        <div className="w-full h-full flex flex-wrap gap-x-5">
+        <div className="w-full h-full flex flex-wrap gap-5">
           {(showCollection ? allCollection : filteredCollection).map(
             (item, index) => (
               <div
                 key={index}
-                className="w-[calc(33%-20px)] h-fit border bg-bgOne"
+                className="collectionBox w-[calc(33%-20px)] aspect-[4/3] border bg-bgOne"
               >
                 <div className="w-full h-full">
                   <img
@@ -81,8 +111,8 @@ const CollectionPage = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div>
-                  <p>{item.title}</p>
+                <div className="py-3 px-1">
+                  <p className="text-xl font-semibold text-colorOne">{item.title}</p>
                   <p>{item.description}</p>
                 </div>
               </div>
