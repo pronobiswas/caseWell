@@ -1,47 +1,52 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+import ProductsNmaterials from './ProductsNmaterials';
+import TechnicalSiteRequirement from './TechnicalSiteRequirement';
+import MeasurementDesignApprovals from './MeasurementDesignApprovals';
+import PaymentInvoicing from './PaymentInvoicing';
+import LeadTimesScheduling from './LeadTimesScheduling';
+import DeliveryAndInstallation from './DeliveryAndInstallation';
+import WarrantyAftercare from './WarrantyAftercare';
+import OrderReturnsSupports from './OrderReturnsSupports';
 
-const FAQ = ({
-  title="Got questions? You'll find plenty of answers in our FAQ,including:",
-    faqs = [
-        {
-            question: "What products do you make?",
-            answer: "Made-to-order doors (pivot, sliding, hinged, flush-to-wall/rasomuro), wall partitions (fixed/movable; glass/wood), and boiserie (decorative wall panelling).",
-        },
-        {
-            question: "Which materials and finishes are available?",
-            answer: "Solid wood and veneer, lacquer (RAL), glass (clear/low-iron/fluted/tinted), natural stone (e.g., marble), and high-grade ceramics/porcelain; hardware in black, stainless, bronze, or PVD. ",
-        },
-        {
-            question: "How can I track my order?",
-            answer: "Once your order is shipped, you’ll receive an email with a tracking link.",
-        },
-    ]
-}) => {
-  const [openIndex, setOpenIndex] = useState(null);
-      const toggleFAQ = (index) => {
-          setOpenIndex(openIndex === index ? null : index);
-      }
-  return (
-    <section className="w-full mx-auto p-6">
-            <h2 className="text-3xl  mb-8 text-right">{title}</h2>
-            <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                    <div key={index} className="w-full border-b border-b-black py-2">
-                        <button
-                            className="gradient_text w-full text-left  flex justify-between items-center text-2xl"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            {faq.question}
-                            <span>{openIndex === index ? "-" : "+"}</span>
-                        </button>
-                        {openIndex === index && (
-                            <div className="gradient_text text-xl pt-3 text-gray-600">{faq.answer}</div>
-                        )}
-                    </div>
-                ))}
+const FAQ = () => {
+    const [activeTab, setActiveTab] = useState("ProductsNmaterials");
+    const contentRef = useRef(null);
+    const tabs = [
+        { key: "ProductsNmaterials", label: "Products & Materials", component: <ProductsNmaterials /> },
+        { key: "TechnicalSiteRequirement", label: "Technical & Site Requirement", component: <TechnicalSiteRequirement /> },
+        { key: "MeasurementDesignApprovals", label: "Measurement, Design & Approvals", component: <MeasurementDesignApprovals /> },
+        { key: "PaymentInvoicing", label: "Payment & Invoicing", component: <PaymentInvoicing /> },
+        { key: "LeadTimesScheduling", label: "Lead Times & Scheduling", component: <LeadTimesScheduling /> },
+        { key: "DeliveryAndInstallation", label: "Delivery & Installation", component: <DeliveryAndInstallation /> },
+        { key: "WarrantyAftercare", label: "Warranty & Aftercare ", component: <WarrantyAftercare /> },
+        { key: "OrderReturnsSupports", label: "Orders, Returns & Support", component: <OrderReturnsSupports /> },
+    ];
+    return (
+        <section id="serviceTab">
+            <div className="wrapper w-full h-auto pt-10 flex gap-5 lg:gap-10  ">
+
+
+                <div className="navTab w-1/3 lg:w-1/4 pt-6 flex flex-col gap-5 [&>button]:w-fit [&>button]:text-xl [&>button]:border-b [&>button]:border-b-slate-500 [&>button]:text-left lg:[&>button]:text-2xl">
+                    {
+                        tabs.map((tab) => (
+                            <button
+                                key={tab.key}
+                                onClick={() => setActiveTab(tab.key)}
+                                 className={`${activeTab === tab.key ? "text-green-500 font-semibold border-b-black" : "text-colorOne border-b-slate-500"}`}
+                            >
+                                {tab.label}
+                            </button>
+                        ))
+                    }
+                </div>
+
+                <div ref={contentRef} className="w-2/3 lg:w-3/4">
+                    {tabs.find((tab) => tab.key === activeTab)?.component}
+                </div>
+
             </div>
         </section>
-  )
+    )
 }
 
 export default FAQ

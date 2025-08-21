@@ -31,7 +31,6 @@ const MeasurementDesignApprovals = () => {
   ]
   return (
     <div>
-        <h1 className='text-5xl mt-12 mb-8'>Measurement, Design & Approvals</h1>
         <FAQSection title={title} faqs={faqs} />
     </div>
   )

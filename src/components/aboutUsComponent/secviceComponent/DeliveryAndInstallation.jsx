@@ -31,7 +31,6 @@ const DeliveryAndInstallation = () => {
     ]
     return (
         <div>
-            <h1 className='text-5xl mt-12 mb-8'> Delivery & Installation </h1>
             <FAQSection title={title} faqs={faqs} />
         </div>
     )

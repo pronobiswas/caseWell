@@ -35,7 +35,6 @@ const TechnicalSiteRequirement = () => {
   ]
   return (
     <div>
-        <h1 className='text-5xl mt-12 mb-8'>Technical & Site Requirement</h1>
         <FAQSection title={title} faqs={faqs} />
     </div>
   )

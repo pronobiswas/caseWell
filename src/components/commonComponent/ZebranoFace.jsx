@@ -82,9 +82,6 @@ const ZebranoFace = () => {
         const x = -Math.min(targetOffset, maxOffset);
         gsap.to(track, { x, duration: 0.6, ease: "power3.out" });
 
-
-        const progress = ((index + 1) / slides.length) * 100;
-        gsap.to(progressRef.current, { width: `${progress}%`, duration: 0.4 });
     }, [index]);
 
     const handleCardClick = (i) => {
@@ -103,7 +100,7 @@ const ZebranoFace = () => {
 
     return (
         <section id="zebranoFace">
-            <div className="wrapper w-full h-auto p-10 pb-0 bg-bgTwo text-colorOne">
+            <div className="wrapper w-full h-auto p-10 pb-0 bg-bgOne text-colorOne">
                 {/* ==== Header ==== */}
                 <div className="w-full flex justify-between items-start">
                     <div className="w-fit  shrink-0 pl-5 lg:pl-10 xl:pl-16">
@@ -113,21 +110,7 @@ const ZebranoFace = () => {
 
                     {/* Controls */}
                     <div className="flex flex-col justify-between w-full h-auto">
-                        <div className="flex justify-between items-center py-5">
-                            <div className="flex gap-2 pl-20 pt-2">
-                                <button
-                                    onClick={prev}
-                                    className="bg-bgOne w-8 h-8 rounded-full flex justify-center items-center"
-                                >
-                                    <FaAngleLeft />
-                                </button>
-                                <button
-                                    onClick={next}
-                                    className="bg-bgOne w-8 h-8 rounded-full flex justify-center items-center"
-                                >
-                                    <FaAngleRight />
-                                </button>
-                            </div>
+                        <div className="flex items-center justify-end py-5">
 
                             <div className="flex items-end">
                                 <div className="flex items-center gap-1 bg-bgOne px-2 rounded-full">
@@ -184,19 +167,7 @@ const ZebranoFace = () => {
                 </div>
             </div>
 
-            {/* ==== Progress Bar ==== */}
-            <div className="w-full h-14 flex bg-bgTwo">
-                <div className="bg-bgOne w-1/3 rounded-tr-2xl"></div>
-                <div className="w-2/3 flex items-center">
-                    <div className="w-full h-[2px] bg-colorOne">
-                        <div
-                            ref={progressRef}
-                            className="h-full bg-bgOne"
-                            style={{ width: "10%" }}
-                        ></div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
     );
 };

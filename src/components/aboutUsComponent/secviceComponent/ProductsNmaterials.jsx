@@ -35,7 +35,6 @@ const ProductsNmaterials = () => {
   ]
   return (
     <div>
-        <h1 className='text-5xl mt-12 mb-8'>Products & Materials</h1>
         <FAQSection title={title} faqs={faqs} />
     </div>
   )

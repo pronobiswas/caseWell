@@ -6,18 +6,9 @@ import FAQ from './FAQ';
 import Guarantee from './Guarantee';
 import OrderProcess from './OrderProcess';
 import PaymentProcess from './PaymentProcess';
-import ProductsNmaterials from './ProductsNmaterials';
-import TechnicalSiteRequirement from './TechnicalSiteRequirement';
-import MeasurementDesignApprovals from './MeasurementDesignApprovals';
-import PaymentInvoicing from './PaymentInvoicing';
-import LeadTimesScheduling from './LeadTimesScheduling';
-import DeliveryAndInstallation from './DeliveryAndInstallation';
-import WarrantyAftercare from './WarrantyAftercare';
-import OrderReturnsSupports from './OrderReturnsSupports';
-
 
 const ServiceTab = () => {
-    const [activeTab, setActiveTab] = useState("ServiceBanner");
+    const [activeTab, setActiveTab] = useState("OrderProcess");
     const contentRef = useRef(null);
     const tabs = [
         { key: "OrderProcess", label: "Order process", component: <OrderProcess /> },
@@ -25,14 +16,6 @@ const ServiceTab = () => {
         { key: "Guarantee", label: "Guarantee", component: <Guarantee /> },
         { key: "PaymentProcess", label: "Payment Process", component: <PaymentProcess /> },
         { key: "CareMaintaince", label: "Care & Maintaince", component: <CareNmaintaince /> },
-        { key: "ProductsNmaterials", label: "Products & Materials", component: <ProductsNmaterials /> },
-        { key: "TechnicalSiteRequirement", label: "Technical & Site Requirement", component: <TechnicalSiteRequirement /> },
-        { key: "MeasurementDesignApprovals", label: "Measurement, Design & Approvals", component: <MeasurementDesignApprovals /> },
-        { key: "PaymentInvoicing", label: "Payment & Invoicing", component: <PaymentInvoicing /> },
-        { key: "LeadTimesScheduling", label: "Lead Times & Scheduling", component: <LeadTimesScheduling /> },
-        { key: "DeliveryAndInstallation", label: "Delivery & Installation", component: <DeliveryAndInstallation /> },
-        { key: "WarrantyAftercare", label: "Warranty & Aftercare ", component: <WarrantyAftercare /> },
-        { key: "OrderReturnsSupports", label: "Orders, Returns & Support", component: <OrderReturnsSupports /> },
         { key: "FAQ", label: "FAQ", component: <FAQ /> },
     ];
     useEffect(() => {
@@ -56,6 +39,7 @@ const ServiceTab = () => {
                                 <button
                                     key={tab.key}
                                     onClick={() => setActiveTab(tab.key)}
+                                    className={`${activeTab === tab.key ? " bg-colorOne text-white" : "bg-bgOne text-black"}`}
                                 >
                                     {tab.label}
                                 </button>

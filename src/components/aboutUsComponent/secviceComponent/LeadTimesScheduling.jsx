@@ -31,7 +31,6 @@ const LeadTimesScheduling = () => {
   ]
   return (
     <div>
-        <h1 className='text-5xl mt-12 mb-8'> Lead Times & Scheduling</h1>
         <FAQSection title={title} faqs={faqs} />
     </div>
   )
