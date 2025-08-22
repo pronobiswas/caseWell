@@ -5,11 +5,11 @@ import { gsap } from "gsap";
 import '../../index.css'
 import TestPage from '../../pages/PreLoader';
 import { CiGlobe } from 'react-icons/ci';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { MdArrowOutward, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 
 const HeaderNew = () => {
     const location = useLocation();
-    console.log(location);
+
 
     const isBlack = location.pathname === '/terms';
     const isBlack1 = location.pathname === '/privacy-Policy';
@@ -64,28 +64,28 @@ const HeaderNew = () => {
 
     // ======loader header======
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     const hasVisited = localStorage.getItem("hasVisited");
+        const hasVisited = localStorage.getItem("hasVisited");
 
-    //     if (hasVisited) {
-    //         setLoading(false);
-    //     } else {
-    //         localStorage.setItem("hasVisited", "true");
-    //         setTimeout(() => {
-    //             setLoading(false);
-    //         }, 20000);
-    //     }
-    //     const handleBeforeUnload = () => {
-    //         localStorage.removeItem("hasVisited");
-    //     };
+        if (hasVisited) {
+            setLoading(false);
+        } else {
+            localStorage.setItem("hasVisited", "true");
+            setTimeout(() => {
+                setLoading(false);
+            }, 20000);
+        }
+        const handleBeforeUnload = () => {
+            localStorage.removeItem("hasVisited");
+        };
 
-    //     window.addEventListener("beforeunload", handleBeforeUnload);
+        window.addEventListener("beforeunload", handleBeforeUnload);
 
-    //     return () => {
-    //         window.removeEventListener("beforeunload", handleBeforeUnload);
-    //     };
-    // }, []);
+        return () => {
+            window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
+    }, []);
 
 
     // ======change image on hover========
@@ -353,7 +353,7 @@ const HeaderNew = () => {
                                                     </Link>
                                                 </div>
                                                 <div className='w-56 h-64'>
-                                                    <img ref={productImgRef} src="/images/img1.png" alt="png" className='w-full h-full object-cover' />
+                                                    <img ref={productImgRef} src="/images/img1.png" alt="png" className='w-full h-full object-cover rounded-2xl' />
                                                 </div>
                                             </div>
                                         </div>
@@ -383,50 +383,30 @@ const HeaderNew = () => {
 
                                         <div className="dropdounWrapper p-5 bg-white flex flex-col gap-3 shadow-md">
                                             <div className='w-full flex z-30'>
-                                                <div ref={collectionDropdownRef} className='w-72 flex flex-col gap-2'>
+                                                <div ref={collectionDropdownRef} className='w-44 flex flex-col gap-2'>
                                                     <Link to='/collections/GlassCollection'>
-                                                        <div className='linkItem w-full group/nested text-colorOne'>
+                                                        <div className='linkItem w-full text-colorOne'>
                                                             <span className='group'>Glass Collection</span>
-                                                            <div className='w-full hidden group-hover/nested:block'>
-                                                                <p className='mt-2 mb-1 text-xs'>Design doors made of glass – combining transparency, elegance and modern functionality.</p>
-                                                                <p className='text-xs'>Discover our collection of luxury glass doors, including pivot and sliding models. Made with safety glass and refined finishes for a timeless, open feel.</p>
-                                                            </div>
                                                         </div>
                                                     </Link>
                                                     <Link to='/collections/FineerCollection'>
-                                                        <div className='linkItem w-full group/nested text-colorOne'>
+                                                        <div className='linkItem w-full text-colorOne'>
                                                             <span>Fineer Collection</span>
-                                                            <div className='w-full hidden group-hover/nested:block'>
-
-                                                                <p className='mt-2 mb-1 text-xs'>Wood veneer doors with rich textures, natural grains and architectural precision.</p>
-                                                                <p className='text-xs'>Explore handcrafted fineer doors in walnut, oak, zebrano and more. Warm, minimal and made for design interiors.</p>
-                                                            </div>
                                                         </div>
                                                     </Link>
                                                     <Link to='/collections/ThreeDCollection'>
-                                                        <div className='linkItem w-full group/nested text-colorOne'>
+                                                        <div className='linkItem w-full text-colorOne'>
                                                             <span>3D Collection</span>
-                                                            <div className='w-full hidden group-hover/nested:block'>
-
-                                                                <p className='mt-2 mb-1 text-xs'>Textured doors with depth – sculptural surfaces that make a statement.</p>
-                                                                <p className='text-xs'>Our 3D panel doors combine bold patterns with refined materials. Ideal for feature walls and spaces that need artistic dimension.</p>
-                                                            </div>
-
                                                         </div>
                                                     </Link>
                                                     <Link to="/collections/AtelierCollection" >
-                                                        <div className='linkItem w-full group/nested text-colorOne'>
+                                                        <div className='linkItem w-full text-colorOne'>
                                                             <span>Atelier Collection</span>
-                                                            <div className='w-full hidden group-hover/nested:block'>
-
-                                                                <p className='mt-2 mb-1 text-xs'>Work with Zebrano Studio to create bespoke doors from glass, wood, stone or metal. Tailored to your architecture, taste and imagination.</p>
-                                                                <p className='text-xs'>Work with Zebrano Studio to create bespoke doors from glass, wood, stone or metal. Tailored to your architecture, taste and imagination.</p>
-                                                            </div>
                                                         </div>
                                                     </Link>
                                                 </div>
                                                 <div className='w-56 h-64'>
-                                                    <img ref={collectionImgRef} src="/images/img1.png" alt="png" className='w-full h-full object-cover' />
+                                                    <img ref={collectionImgRef} src="/images/img1.png" alt="png" className='w-full h-full object-cover rounded-2xl' />
                                                 </div>
                                             </div>
 
@@ -515,7 +495,7 @@ const HeaderNew = () => {
 
                                                 </div>
                                                 <div className='w-56 h-64'>
-                                                    <img ref={zebranoImgRef} src="/images/timelineImg1.png" alt="png" className='w-full h-full object-cover' />
+                                                    <img ref={zebranoImgRef} src="/images/timelineImg1.png" alt="png" className='w-full h-full object-cover rounded-2xl' />
                                                 </div>
                                             </div>
                                         </div>
@@ -554,13 +534,17 @@ const HeaderNew = () => {
                                     <MdOutlineKeyboardArrowDown />
                                 </div>
                                 <div className="w-fit h-fit hidden group-hover:block  absolute top-7 right-0 bg-white rounded">
-                                    <span onClick={handleEn} className='block px-2 cursor-pointer hover:bg-colorOne hover:text-bgOne'>En</span>
-                                    <span onClick={handleDu} className='block px-2 cursor-pointer hover:bg-colorOne hover:text-bgOne'>Du</span>
+                                    <span onClick={handleEn} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>En</span>
+                                    <span onClick={handleDu} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>Du</span>
                                 </div>
                             </div>
 
-                            <div className="configaretor w-fit h-fit py-2 px-3 border bg-white text-colorOne hover:bg-colorOne hover:text-white  cursor-pointer rounded-full z-30">
-                                Configure Now
+                            <div className="configaretor w-fit h-fit py-2 px-3 flex items-center gap-2 border bg-white text-colorOne hover:bg-colorOne hover:text-white group  cursor-pointer rounded-full z-30">
+                                <span>Configure Now</span>
+                                <div className='w-5 h-5  relative overflow-hidden'>
+                                    <span className='text-xl  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward/> </span>
+                                    <span className='text-xl absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward/> </span>
+                                </div>
                             </div>
                         </div>
                     </div>

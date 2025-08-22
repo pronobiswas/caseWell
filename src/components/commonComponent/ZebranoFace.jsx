@@ -85,8 +85,6 @@ const ZebranoFace = () => {
     }, [index]);
 
     const handleCardClick = (i) => {
-        console.log(i);
-
         if (nameRef.current) nameRef.current.innerHTML = facesArray[i].name;
         if (designetionRef.current) designetionRef.current.innerHTML = facesArray[i].designastion;
         if (descriptionRef.current) descriptionRef.current.innerHTML = facesArray[i].description;

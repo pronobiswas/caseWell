@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { SplitText } from "gsap/SplitText";
+import DragableSlider from "../components/commonComponent/DragableSlider";
 
 gsap.registerPlugin(MorphSVGPlugin, SplitText);
 

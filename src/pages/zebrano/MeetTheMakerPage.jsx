@@ -3,6 +3,7 @@ import ZebranoBanner from '../../components/aboutUsComponent/ZebranoBanner'
 import MakerBanner from '../../components/aboutUsComponent/MakerBanner'
 import FaceSlider from '../../components/aboutUsComponent/FaceSlider'
 import ZebranoFace from '../../components/commonComponent/ZebranoFace'
+import DraggableSlider from '../../components/commonComponent/DragableSlider'
 
 const MeetTheMakerPage = () => {
   return (
@@ -17,6 +18,7 @@ const MeetTheMakerPage = () => {
         <MakerBanner/>
         <FaceSlider/>
         <ZebranoFace/>
+        <DraggableSlider/>
     </div>
     </>
   )
