@@ -59,6 +59,10 @@ header#header{
   stroke-dashoffset: 100 ;
   stroke-dasharray: 100 ;
 }
+.active{
+  position: relative;
+}
+
 #menuIcon .crosLine{
   stroke-dashoffset: 100 ;
   stroke-dasharray: 100 ;
