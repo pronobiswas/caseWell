@@ -36,6 +36,7 @@ import GlitchImage from "./components/commonComponent/GlitchImage";
 import OurStory from "./pages/zebrano/OurStory";
 import ServicesPage from "./pages/zebrano/ServicesPage";
 import DragableSlider from "./components/commonComponent/DragableSlider";
+import ZebranoPreLoader from "./rootLayout/ZebranoPreLoader";
 
 function App() {
   const router = createBrowserRouter(
@@ -45,6 +46,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/test2" element={<DragableSlider/>} />
+          <Route path="/test3" element={<ZebranoPreLoader/>} />
           <Route path="/architects" element={<ArchitectPage />} />
           <Route path="/inspiration" element={<InspirationPage />} />
           <Route path="/terms" element={<TermsAndConditions />} />

@@ -118,7 +118,7 @@ const Stalen = () => {
                             <h2 className=" md:max-w-56 text-2xl ">Door Types</h2>
                             <p>Explore our diverse range of exclusive wooden doors, each designed to offer distinct advantages in style, functionality, and space utilization. From grand entrances to seamless room transitions, we have the perfect solution for your home.</p>
                             <div className="w-fit border border-white px-4 py-1">
-                                <span className="text-white">Configure Yours→</span>
+                                <span className="text-white">Configure Yours →</span>
                             </div>
                         </div>
                     </div>

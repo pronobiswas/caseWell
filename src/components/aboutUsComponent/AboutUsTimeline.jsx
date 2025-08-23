@@ -21,7 +21,7 @@ const AboutUsTimeline = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: card,
-            start: 'top top',
+            start: 'top 100',
             end: '+=200',
             scrub: true,
             pin: true,

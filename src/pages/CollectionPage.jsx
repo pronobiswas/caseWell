@@ -42,13 +42,19 @@ const CollectionPage = () => {
     {
       title: "title6",
       description: "description six 6",
-      image: "/images/ais15.jpg",
+      image: "/images/glass/glassCollection1.jpg",
       tag: "glass",
     },
     {
       title: "title7",
       description: "description seven",
-      image: "/images/ais15.jpg",
+      image: "/images/glass/glassCollection2.jpg",
+      tag: "glass",
+    },
+    {
+      title: "glass title",
+      description: "description seven",
+      image: "/images/glass/glassCollection3.jpg",
       tag: "glass",
     },
   ];

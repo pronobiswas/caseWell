@@ -68,6 +68,31 @@ const TestPage = () => {
 
     return () => splitName.revert();
   }, []);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+
+      // const subheadingSplitLine = new SplitText(subheadingRef.current, {
+      //   type: 'lines',
+      //   linesClass: 'line overflow-hidden block',
+      // });
+      // const subheadingSplitWord = new SplitText(subheadingRef.current, {
+      //   type: 'words',
+      //   wordsClass: 'line overflow-hidden block',
+      // });
+      // gsap.from(subheadingSplitWord.words, {
+      //   y: 100,
+      //   opacity: 0,
+      //   duration: 2,
+      //   ease: 'power4.out',
+      //   stagger: 0.05,
+      // });
+
+    });
+
+
+    return () => ctx.revert();
+  }, []);
 
   return (
     <>
@@ -75,56 +100,59 @@ const TestPage = () => {
         <div className="wrapper w-full h-screen flex justify-center items-center bg-colorOne">
           <div className="wrapper w-full">
             <div className="flex justify-center items-center">
-              <svg
-                ref={svgOne}
-                width="61"
-                height="76"
-                viewBox="0 0 51 66"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  ref={pathOne}
-                  d="M18 10.534L45 7V59L18 54.4563V10.534Z"
-                  fill="white"
-                />
-                <path ref={pathTwo} d="M8.5 8L45 7V59L8.5 58V8Z" fill="white" />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M50 1H1V65H50V1ZM44 7H7.5V59H44V7Z"
-                  fill="white"
-                  stroke="white"
-                />
-                <ellipse
-                  ref={pathThree}
-                  cx="10"
-                  cy="33.5"
-                  rx="1"
-                  ry="1.5"
-                  fill="#2F3A2A"
-                />
-                <path
-                  ref={pathfour}
-                  d="M10 34H12H13"
-                  stroke="#2F3A2A"
-                  stroke-linecap="round"
-                />
-              </svg>
+              <div className="w-full h-fit border flex gap-14">
 
-              <span
-                ref={zebranoRef}
-                className="text-center text-[74px] font-bold text-white"
-              >
-                ZEBRAN
-              </span>
+                <svg
+                  ref={svgOne}
+                  width="61"
+                  height="76"
+                  viewBox="0 0 51 66"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    ref={pathOne}
+                    d="M18 10.534L45 7V59L18 54.4563V10.534Z"
+                    fill="white"
+                  />
+                  <path ref={pathTwo} d="M8.5 8L45 7V59L8.5 58V8Z" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M50 1H1V65H50V1ZM44 7H7.5V59H44V7Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <ellipse
+                    ref={pathThree}
+                    cx="10"
+                    cy="33.5"
+                    rx="1"
+                    ry="1.5"
+                    fill="#2F3A2A"
+                  />
+                  <path
+                    ref={pathfour}
+                    d="M10 34H12H13"
+                    stroke="#2F3A2A"
+                    stroke-linecap="round"
+                  />
+                </svg>
 
-              <span
-                ref={studioRef}
-                className="text-center text-[74px] font-semibold text-white"
-              >
-                Studio
-              </span>
+                <span
+                  ref={zebranoRef}
+                  className="text-center text-[74px] font-bold text-white"
+                >
+                  ZEBRAN
+                </span>
+
+                <span
+                  ref={studioRef}
+                  className="text-center text-[74px] font-semibold text-white"
+                >
+                  Studio
+                </span>
+              </div>
             </div>
           </div>
         </div>

@@ -354,10 +354,10 @@ const Footer = () => {
             <div className="w-full flex justify-between items-end pt-7 pb-5">
 
               <div className='flex gap-5 text-4xl text-white py-5'>
-                <a href="https://www.pinterest.com/" title='https://www.pinterest.com/'>
+                <a href="http://pinterest.com/zebranostudio" title='http://pinterest.com/zebranostudio'>
                   <FaPinterest />
                 </a>
-                <a href="https://www.instagram.com/" title='https://www.instagram.com/'>
+                <a href="http://instagram.com/zebrano.studio" title='http://instagram.com/zebrano.studio'>
                   <FaInstagramSquare />
                 </a>
               </div>

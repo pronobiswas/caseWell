@@ -6,6 +6,7 @@ import '../../index.css'
 import TestPage from '../../pages/PreLoader';
 import { CiGlobe } from 'react-icons/ci';
 import { MdArrowOutward, MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import ZebranoPreLoader from '../ZebranoPreLoader';
 
 const HeaderNew = () => {
     const location = useLocation();
@@ -37,7 +38,7 @@ const HeaderNew = () => {
     const [languse , setLanguse] = useState('En');
 
     const productsImgArr = [
-        "/images/PivotDoor.png",
+        "/images/pivotDoor1.jpg",
         "/images/slideDoor.jpg",
         "/images/img3.png",
         "/images/img4.png",
@@ -730,11 +731,12 @@ const HeaderNew = () => {
             <div>
                 {
                     loading ?
+                    ""
+                    :
                         <section id="loader">
-                            <TestPage />
+                            <ZebranoPreLoader />
                         </section>
-                        :
-                        ""
+                        
                 }
 
 
