@@ -2,97 +2,107 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { SplitText } from "gsap/SplitText";
-import DragableSlider from "../components/commonComponent/DragableSlider";
+import { TypeAnimation } from "react-type-animation";
+
 
 gsap.registerPlugin(MorphSVGPlugin, SplitText);
 
 const TestPage = () => {
-  const svgOne = useRef(null);
-  const pathOne = useRef(null);
-  const pathTwo = useRef(null);
-  const pathThree = useRef(null);
-  const pathfour = useRef(null);
-  const zebranoRef = useRef(null);
-  const studioRef = useRef(null);
+
   const loaderRef = useRef(null);
+  const text2Ref = useRef(null);
+
+  // useEffect(() => {
+  //   const pathTwoD = pathOne.current.getAttribute("d");
+  //   const splitName = new SplitText(zebranoRef.current, {
+  //     type: "lines,words,chars",
+  //     linesClass: "line overflow-hidden relative block",
+  //     wordsClass: "words overflow-hidden block",
+  //   });
+  //   const splitStudio = new SplitText(studioRef.current, {
+  //     type: "lines,words,chars",
+  //     linesClass: "line overflow-hidden relative",
+  //     wordsClass: "words overflow-hidden block",
+  //   });
+
+  //   gsap.from(splitName.chars, {
+  //     opacity: 0,
+  //     delay: 2,
+  //     duration: 1,
+  //     stagger: 0.3,
+  //   });
+
+  //   gsap.to(svgOne.current, {
+  //     x: 380,
+  //     duration: 2,
+  //     delay: 2,
+  //   });
+
+  //   gsap.to(pathTwo.current, {
+  //     duration: 2,
+  //     morphSVG: { shape: pathTwoD },
+  //     ease: "power1.inOut",
+  //   });
+  //   gsap.to(pathThree.current, {
+  //     x: 10,
+  //     duration: 2,
+  //     ease: "power1.inOut",
+  //   });
+  //   gsap.to(pathfour.current, {
+  //     x: 10,
+  //     duration: 2,
+  //     ease: "power1.inOut",
+  //   });
+
+  //   gsap.from(splitStudio.chars, {
+  //     opacity: 0,
+  //     y: 50,
+  //     delay: 2,
+  //     duration: 1,
+  //     stagger: 0.3,
+  //   });
+
+  //   return () => splitName.revert();
+  // }, []);
+
+  // ======animate text with gsap =======
 
   useEffect(() => {
-    const pathTwoD = pathOne.current.getAttribute("d");
-    const splitName = new SplitText(zebranoRef.current, {
-      type: "lines,words,chars",
-      linesClass: "line overflow-hidden relative block",
-      wordsClass: "words overflow-hidden block",
+    const texts = ["Hello, world!", "test text", "Demo text"];
+    let current = 0;
+    let ctx = gsap.context(() => {
+      function animateText(index) {
+        text2Ref.current.innerHTML = texts[index];
+        const split = new SplitText(text2Ref.current, {
+          type: "lines,words,chars",
+          linesClass: "line overflow-hidden relative block",
+          wordsClass: "words overflow-hidden block",
+        });
+        const tl = gsap.timeline();
+        tl.from(split.chars, {
+          opacity: 0,
+          duration: 0.3,
+          stagger: 0.3,
+        })
+        .to(split.chars, {
+          opacity: 0,
+          duration: 0.3,
+          stagger: 0.3,
+          onComplete: () => {
+            split.revert();
+            current = (index + 1) % texts.length;
+            animateText(current);
+          }
+        });
+      }
+      animateText(current);
     });
-    const splitStudio = new SplitText(studioRef.current, {
-      type: "lines,words,chars",
-      linesClass: "line overflow-hidden relative",
-      wordsClass: "words overflow-hidden block",
-    });
-
-    gsap.from(splitName.chars, {
-      opacity: 0,
-      delay: 2,
-      duration: 1,
-      stagger: 0.3,
-    });
-
-    gsap.to(svgOne.current, {
-      x: 380,
-      duration: 2,
-      delay: 2,
-    });
-
-    gsap.to(pathTwo.current, {
-      duration: 2,
-      morphSVG: { shape: pathTwoD },
-      ease: "power1.inOut",
-    });
-    gsap.to(pathThree.current, {
-      x: 10,
-      duration: 2,
-      ease: "power1.inOut",
-    });
-    gsap.to(pathfour.current, {
-      x: 10,
-      duration: 2,
-      ease: "power1.inOut",
-    });
-
-    gsap.from(splitStudio.chars, {
-      opacity: 0,
-      y: 50,
-      delay: 2,
-      duration: 1,
-      stagger: 0.3,
-    });
-
-    return () => splitName.revert();
-  }, []);
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-
-
-      // const subheadingSplitLine = new SplitText(subheadingRef.current, {
-      //   type: 'lines',
-      //   linesClass: 'line overflow-hidden block',
-      // });
-      // const subheadingSplitWord = new SplitText(subheadingRef.current, {
-      //   type: 'words',
-      //   wordsClass: 'line overflow-hidden block',
-      // });
-      // gsap.from(subheadingSplitWord.words, {
-      //   y: 100,
-      //   opacity: 0,
-      //   duration: 2,
-      //   ease: 'power4.out',
-      //   stagger: 0.05,
-      // });
-
-    });
-
-
     return () => ctx.revert();
   }, []);
+
+
+
+
 
   return (
     <>
@@ -100,58 +110,33 @@ const TestPage = () => {
         <div className="wrapper w-full h-screen flex justify-center items-center bg-colorOne">
           <div className="wrapper w-full">
             <div className="flex justify-center items-center">
-              <div className="w-full h-fit border flex gap-14">
+              <div className="w-full h-fit border gap-14 text-white text-5xl font-bold">
+                {/* ----textanimation line one--- */}
+                <div className="flex">
+                  <h1>Created by our makers,</h1>
+                  <TypeAnimation
+                    cursor={false}
+                    sequence={[
+                      'Hello, world!',
+                      1000,
+                      'Welcome to ',
+                      1000,
+                      'Type-Animation!',
+                      2000,
+                      '',
+                    ]}
+                    wrapper="h1"
 
-                <svg
-                  ref={svgOne}
-                  width="61"
-                  height="76"
-                  viewBox="0 0 51 66"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    ref={pathOne}
-                    d="M18 10.534L45 7V59L18 54.4563V10.534Z"
-                    fill="white"
+                    repeat={Infinity}
                   />
-                  <path ref={pathTwo} d="M8.5 8L45 7V59L8.5 58V8Z" fill="white" />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M50 1H1V65H50V1ZM44 7H7.5V59H44V7Z"
-                    fill="white"
-                    stroke="white"
-                  />
-                  <ellipse
-                    ref={pathThree}
-                    cx="10"
-                    cy="33.5"
-                    rx="1"
-                    ry="1.5"
-                    fill="#2F3A2A"
-                  />
-                  <path
-                    ref={pathfour}
-                    d="M10 34H12H13"
-                    stroke="#2F3A2A"
-                    stroke-linecap="round"
-                  />
-                </svg>
-
-                <span
-                  ref={zebranoRef}
-                  className="text-center text-[74px] font-bold text-white"
-                >
-                  ZEBRAN
-                </span>
-
-                <span
-                  ref={studioRef}
-                  className="text-center text-[74px] font-semibold text-white"
-                >
-                  Studio
-                </span>
+                </div>
+                {/* ----text animation line two---- */}
+                <div className="flex">
+                  <h1>perfected in</h1>
+                  <h1 ref={text2Ref} className="text-green-700">Hello, world!</h1>
+                </div>
+                {/* ---text animation line three------ */}
+                <h1>production.</h1>
               </div>
             </div>
           </div>

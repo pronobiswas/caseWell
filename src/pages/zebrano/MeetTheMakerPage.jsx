@@ -9,12 +9,13 @@ const MeetTheMakerPage = () => {
   return (
     <>
     <div className='w-full pt-20'>
-        <ZebranoBanner
+        {/* <ZebranoBanner
         headingOne="Created by our makers,"
         headingTwo='perfected in'
         headingThree='production.'
         zebranoText="Real hands. Real sawdust.Unreal results. From first sketch to final fit, we design,prototype,and and build under one roof - so every milimeter up and every door feels effortlessly right"
-        />
+        typeingComponnent='fasle'
+        /> */}
         <MakerBanner/>
         <FaceSlider/>
         <ZebranoFace/>
