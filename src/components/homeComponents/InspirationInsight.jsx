@@ -63,15 +63,15 @@ const InspirationInsight = () => {
     <section id="inspiration">
         <div className="inspirationWrapper p-12">
             <div className="inspirationHeader">
-                <h2 className='text-4xl'>Inspiration & Insights</h2>
-                <h3 className='text-2xl mt-5 mb-1'>Crafted from the Finest Wood</h3>
-                <p className='w-full max-w-[500px] text-sm'>Wood is more than our material — it’s our passion. Every grain tells a story. Every finish is done with love.</p>
+                <h2 className='text-4xl text-myColorOne font-NoeDisplayBold'>Inspiration & Insights</h2>
+                <h3 className='text-2xl mt-5 mb-1 font-NoeDisplayBold text-myColorOne italic'>Crafted from the Finest Wood</h3>
+                <p className='w-full max-w-[500px] text-sm font-Poppins text-myColorOne'>Wood is more than our material — it’s our passion. Every grain tells a story. Every finish is done with love.</p>
             </div>
             {/* ======inspirationSliderWrapper===== */}
             <div className="w-full h-full">
                 {/* =====inspiration slider header=== */}
                 <div className='w-full flex justify-end'> 
-                    <div className='w-fit h-fit bg-white py-1 px-3 rounded-full flex items-center gap-2'>
+                    <div className='w-fit h-fit bg-myColorThree py-1 px-3 rounded-full flex items-center gap-2'>
                         <span onClick={handleDecrement}><FaArrowLeft /></span>
                         <span>1.5</span>
                         <span onClick={handleIncrement}><FaArrowRight /></span>
@@ -85,37 +85,37 @@ const InspirationInsight = () => {
                         <div ref={slideRef} className="box-border overflow-hidden w-full h-full py-5 flex gap-10 flex-nowrap [&>div]:shrink-0 relative left-[70%]">
                             <div className="slideItem w-fit h-fit ">
                                 <img src="/images/slideImage1.jpg" alt="images" className='w-full max-w-[432px]'/>
-                                <div className='mt-5'>
-                                    <p>Top Performing Cabinet</p>
-                                    <p>Finishes of 2025</p>
+                                <div className='mt-5 '>
+                                    <p className='font-Poppins text-colorOne'>Top Performing Cabinet</p>
+                                    <p className='font-Poppins text-colorOne'>Finishes of 2025</p>
                                 </div>
                             </div>
                             <div className="slideItem w-fit h-fit">
                                 <img src="/images/slideImage2.jpg" alt="images" className='w-full max-w-[392px] h-[450px]'/>
                                 <div className='mt-5'>
-                                    <p>Top Performing Cabinet</p>
-                                    <p>Finishes of 2025</p>
+                                    <p className='font-Poppins text-colorOne'>Top Performing Cabinet</p>
+                                    <p className='font-Poppins text-colorOne'>Finishes of 2025</p>
                                 </div>
                             </div>
                             <div className="slideItem w-fit h-fit">
                                 <img src="/images/slideImage3.jpg" alt="images" className='w-full max-w-[420px]'/>
                                 <div className='mt-5'>
-                                    <p>Top Performing Cabinet</p>
-                                    <p>Finishes of 2025</p>
+                                    <p className='font-Poppins text-colorOne'>Top Performing Cabinet</p>
+                                    <p className='font-Poppins text-colorOne'>Finishes of 2025</p>
                                 </div>
                             </div>
                             <div className="slideItem w-fit h-fit">
                                 <img src="/images/slideImage4.jpg" alt="images" className='w-full max-w-[432px]'/>
                                 <div className='mt-5'>
-                                    <p>Top Performing Cabinet</p>
-                                    <p>Finishes of 2025</p>
+                                    <p className='font-Poppins text-colorOne'>Top Performing Cabinet</p>
+                                    <p className='font-Poppins text-colorOne'>Finishes of 2025</p>
                                 </div>
                             </div>
                             <div className="slideItem w-full max-w-[412px]">
                                 <img src="/images/slideImage5.jpg" alt="images" className='w-full h-full   object-cover'/>
                                 <div className='mt-5'>
-                                    <p>Top Performing Cabinet</p>
-                                    <p>Finishes of 2025</p>
+                                    <p className='font-Poppins text-colorOne'>Top Performing Cabinet</p>
+                                    <p className='font-Poppins text-colorOne'>Finishes of 2025</p>
                                 </div>
                             </div>
                         </div>

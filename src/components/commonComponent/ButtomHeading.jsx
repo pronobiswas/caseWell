@@ -78,10 +78,10 @@ const ButtomHeading = ({
 
   return (
     <div ref={textCon} className={`text-${color} w-full max-w-xl`}>
-      <h1 ref={headingRef} className="split text-3xl font-geist md:text-5xl">{heading}</h1>
-      <p ref={subheadingRef} className="split text-xl font-geist mt-5">{paragraph1}</p>
+      <h1 ref={headingRef} className="split text-3xl font-geist md:text-5xl text-textLight">{heading}</h1>
+      <p ref={subheadingRef} className="split text-xl font-geist mt-5 text-textLight">{paragraph1}</p>
       {paragraph2 && (
-        <p ref={subheadin2gRef} className="split text-base font-geist">{paragraph2}</p>
+        <p ref={subheadin2gRef} className="split text-base font-geist text-textLight">{paragraph2}</p>
       )}
     </div>
   );

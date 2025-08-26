@@ -53,9 +53,9 @@ const ProductBanner = ({url="/images/slideDoor.jpg",heading="Flush to wall",text
     backgroundSize:"100% 100%", 
    }}>
         <div className="cabinetryBannerWarper w-full h-full flex items-end p-12 z-0">
-            <div className="cabinetryBannerContent text-white ">
-                <h1 ref={headingRef} className='text-5xl font-Montserrat'>{heading}</h1>
-                <p ref={textRef} className='w-full max-w-2xl text-xl mt-8 mb-6 font-geist'>{text}</p>
+            <div className="cabinetryBannerContent  ">
+                <h1 ref={headingRef} className='text-5xl font-Montserrat text-textLight'>{heading}</h1>
+                <p ref={textRef} className='w-full max-w-2xl text-xl mt-8 mb-6 text-textLight'>{text}</p>
                 <Link to="/collection" >
                 <BtnComponent text='See collection'/>
                 </Link>

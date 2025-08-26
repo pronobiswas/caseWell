@@ -117,12 +117,12 @@ const CommonMetarialNDesign = (
     <>
     <section ref={secRef}>
 
-            <div className="wrapper w-full h-[560px] bg-colorOne text-white flex gap-10 p-5">
+            <div className="wrapper w-full h-[560px] bg-colorOne flex gap-10 p-5">
                 <div className="w-1/2 h-full">
                     <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-                        <span className='title'>{title1}</span>
-                        <h3 className="pivotDescHeading text-4xl font-Montserrat">{heading1}</h3>
-                        <p className='pivotDesc'>
+                        <span className='title text-textLight'>{title1}</span>
+                        <h3 className="pivotDescHeading text-4xl font-Montserrat text-textLight">{heading1}</h3>
+                        <p className='pivotDesc text-textLight'>
                             {desc1}
                         </p>
                         <BtnComponent text="View Materials" />
@@ -151,9 +151,9 @@ const CommonMetarialNDesign = (
                 </div>
                 <div className="w-1/2 h-full">
                     <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-                        <span className='title'>{title2}</span>
-                        <h3 className="pivotDescHeading text-4xl font-Montserrat">{heading2}</h3>
-                        <p className='pivotDesc'>
+                        <span className='title text-textLight'>{title2}</span>
+                        <h3 className="pivotDescHeading text-4xl font-Montserrat text-textLight">{heading2}</h3>
+                        <p className='pivotDesc text-textLight'>
                             {desc2}
                         </p>
                         <BtnComponent text="See Hardware Options" />
@@ -164,9 +164,9 @@ const CommonMetarialNDesign = (
             <div className="wrapper w-full h-[560px] bg-colorOne text-white flex gap-10 p-5">
                 <div className="w-1/2 h-full">
                     <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-                        <span className='title' >{title3}</span>
-                        <h3 className="pivotDescHeading text-4xl font-Montserrat">{heading3}</h3>
-                        <p className='pivotDesc'>
+                        <span className='title text-textLight' >{title3}</span>
+                        <h3 className="pivotDescHeading text-4xl font-Montserrat text-textLight">{heading3}</h3>
+                        <p className='pivotDesc text-textLight'>
                             {desc3}
                         </p>
                         <Link to="/contact" >

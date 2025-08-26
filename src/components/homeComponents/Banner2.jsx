@@ -94,30 +94,30 @@ const Banner2 = () => {
                     <div className="proRow w-full h-1/4 border-b border-b-gray-400 py-5 px-20 relative">
                     <div className="rowOverlay w-5 h-full bg-colorOne absolute top-0 right-0" style={{ width: "100%" }}></div>
                         <div className="banner_subHeading relative overflow-hidden">
-                            <h4 className='text-right text-2xl'>Exclusivity, now within reach</h4>
+                            <h4 className='text-right text-2xl text-white'>Exclusivity, now within reach</h4>
                         </div>
                         <div className="banner_heading relative overflow-hidden">
-                            <h1 className='text-[6vw] font-semibold'>Luxury Doors</h1>
+                            <h1 className='text-[6vw] font-semibold text-white'>Luxury Doors</h1>
                         </div>
                     </div>
                     {/* ==bannerRow== */}
                     <div className="proRow w-full h-1/4 border-b border-b-gray-400 py-5 px-20 relative">
                     <div className="rowOverlay w-5 h-full bg-colorOne absolute top-0 left-0" style={{ width: "100%" }}></div>
                         <div className="banner_subHeading relative overflow-hidden">
-                            <h4 className='text-left text-2xl'>Doors that tell your story</h4>
+                            <h4 className='text-left text-2xl text-white'>Doors that tell your story</h4>
                         </div>
                         <div className="banner_heading relative overflow-hidden">
-                            <h1 className='text-[6vw] font-semibold text-right'>Unique Designs</h1>
+                            <h1 className='text-[6vw] font-semibold text-right text-white'>Unique Designs</h1>
                         </div>
                     </div>
                     {/* ==bannerRow== */}
                     <div className="proRow w-full h-1/4 border-b border-b-gray-700 py-5 px-20 relative">
                     <div className="rowOverlay w-5 h-full bg-colorOne absolute top-0 right-0" style={{ width: "100%" }}></div>
                         <div className="banner_subHeadingrelative overflow-hidden">
-                            <h4 className='text-right text-2xl'>Doors designed to transcend trends</h4>
+                            <h4 className='text-right text-2xl text-white'>Doors designed to transcend trends</h4>
                         </div>
                         <div className="banner_heading relative overflow-hidden">
-                            <h1 className='text-[6vw] font-semibold'>Timeless Quality</h1>
+                            <h1 className='text-[6vw] font-semibold text-white'>Timeless Quality</h1>
                         </div>
                     </div>
                 </div>

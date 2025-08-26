@@ -8,6 +8,8 @@ export default {
         workFont: ['workFont', 'sans-serif'],
         Montserrat: ['Montserrat', 'sans-serif'],
         geist: ['geist', 'sans-serif'],
+        NoeDisplayBold: ['NoeDisplayBold', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
       },
       colors:{
         bgOne : 'var(--bgOne)',
@@ -16,6 +18,12 @@ export default {
         colorTwo : 'var(--colorTwo)',
         colorThree : 'var(--colorThree)',
         colorFour : 'var(--colorFour)',
+        
+        myColorOne:'var(--myColorOne)',
+        myColorTwo:'var(--myColorTwo)',
+        myColorThree:'var(--myColorThree)',
+        textDark:'var(--textDark)',
+        textLight:'var(--textLight)',
       }
     },
     

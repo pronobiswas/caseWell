@@ -70,14 +70,14 @@ const Footer = () => {
           <div className="footerRow w-full flex flex-col md:flex-row justify-between gap-8">
             {/* ----w-1/2----- */}
             <div className='w-1/2'>
-              <h2 className='footerHeading text-6xl font-bold mb-8 '>Luxury doors,<br></br> made accessible.</h2>
+              <h2 className='text-6xl font-NoeDisplayBold mb-8 text-myColorOne'>Luxury doors,<br></br> made accessible.</h2>
               <BtnComponent text='See our collection' />
             </div>
             {/* -----w-1/2-------- */}
             <div className="w-1/2 flex gap-6 justify-between">
               {/* ---products--- */}
               <div className=''>
-                <h5 className='text-2xl font-Montserrat font-semibold mb-5 text-colorOne'>Products</h5>
+                <h5 className='text-xl font-poppins font-semibold mb-5 text-colorOne uppercase'>Products</h5>
                 <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-geist [&>li]:cursor-pointer [&>li]:text-colorOne '>
 
                   <li className='navLinkItem w-fit relative'>
@@ -144,7 +144,7 @@ const Footer = () => {
               </div>
               {/* ---zebrano--- */}
               <div className=''>
-                <h5 className='text-2xl font-Montserrat font-semibold mb-5 text-colorOne'>Zebrano</h5>
+                <h5 className='text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase'>Zebrano</h5>
                 <ul className='w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-geist [&>li]:cursor-pointer [&>li]:text-colorOne '>
 
                   <li className='navLinkItem w-fit relative'>

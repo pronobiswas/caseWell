@@ -1,7 +1,11 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
+
+import emailjs from '@emailjs/browser';
+
 import { FiArrowUpRight } from 'react-icons/fi'
+import { use } from 'react';
 
 gsap.registerPlugin(SplitText);
 
@@ -9,6 +13,8 @@ const ContactUs = () => {
     const headingRef = useRef();
     const textRef = useRef();
     const text2Ref = useRef();
+
+    const formRef = useRef();
 
     useEffect(() => {
         const headingSplit = new SplitText(headingRef.current, {
@@ -48,6 +54,26 @@ const ContactUs = () => {
         });
     }, []);
 
+    const sendEmail = (e) => {
+    e.preventDefault();
+    let formData = new FormData(formRef.current);
+
+    emailjs
+      .sendForm('service_mgaa7q8', 'template_j467516', formRef.current, {
+        publicKey: 'hGXnZ_IzZesvJopYp',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('Failed to send the message, please try again.');
+        },
+      );
+  };
+
 
     
     return (
@@ -62,7 +88,7 @@ const ContactUs = () => {
                         </p>
                         <div className='w-full max-w-xl mx-auto pt-5'>
 
-                            <form action="">
+                            <form ref={formRef} onSubmit={sendEmail}>
                                 <div className='flex flex-col gap-5'>
                                     <div className='w-full flex flex-col'>
                                         <label htmlFor="fullName" className='text-sm mb-1 text-gray-500'>Name</label>
@@ -96,8 +122,9 @@ const ContactUs = () => {
                                         <label htmlFor="messagetxt" className='text-sm mb-1 text-gray-500'>Message</label>
                                         <textarea name="messagetxt" id="messagetxt" cols="75" rows='5'></textarea>
                                     </div>
-                                    <div className='flex justify-center pt-3'>
-                                        <div className='border border-gray-500 rounded-full w-fit h-fit flex items-center gap-2 py-2 px-3 group transition-all duration-500 ease-in-out cursor-pointer hover:bg-bgTwo'>
+                                    {/* ======submit===== */}
+                                    <div  className='flex justify-center pt-3'>
+                                        <button type='submit' className='border border-gray-500 rounded-full w-fit h-fit flex items-center gap-2 py-2 px-3 group transition-all duration-500 ease-in-out cursor-pointer hover:bg-bgTwo'>
                                             <span>Submit</span>
                                             <div className='w-[13px] h-[12px] relative  overflow-hidden'>
                                                 <div className=''>
@@ -107,7 +134,7 @@ const ContactUs = () => {
                                                     </span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </button >
                                     </div>
                                 </div>
 

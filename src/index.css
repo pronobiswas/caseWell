@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 @font-face {
   font-family: 'myFont';
   src: url('/fonts/myfont.otf') format('opentype');
@@ -27,13 +29,29 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'NoeDisplayBold';
+  src: url('/fonts/NoeDisplayBold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root{
   --bgOne:#F2F0EA;
   --bgTwo:#E1DBCB;
+  --bgThree:#c2c2b0;
   --colorOne: #2f3a2a ;
   --colorTwo: #858585  ;
   --colorThree: rgb(133 133 133);
   --colorFour: #2f3a2a50;
+
+  --textDark: #2a2a2a;
+  --textLight: #f2f0ea;
+
+  --myColorOne: #2f3a2a;
+  --myColorTwo:#f2f0ea;
+  --myColorThree:#c2c2b0;
 }
 
  body{
@@ -46,8 +64,8 @@
   position: relative;
   /* overflow: hidden; */
  }
- h1,h2,h3,h4,h5,h6{font-family: Montserrat;}
- p{font-family: geist;}
+ h1,h2,h3,h4,h5,h6{font-family: Montserrat; color:var(--colorOne)}
+ p{font-family: geist; color:var(--colorOne)}
  
 header#header{
   position: sticky !important;

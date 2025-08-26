@@ -20,14 +20,11 @@ const GlitchSlider = ({
       glitchTimeline.to(
         layer,
         {
-          x: gsap.utils.random(-15, 15),
-          y: gsap.utils.random(-10, 10),
-          rotation: gsap.utils.random(-2, 2),
           filter: "blur(2px) brightness(1.2)",
           duration: 0.1,
           ease: "power2.inOut",
           yoyo: true,
-          repeat: 3,
+          repeat: -1,
         },
         i * 0.05
       );

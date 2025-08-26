@@ -39,15 +39,15 @@ const CommonDoorDescription = ({
     return (
         <>
             <section>
-                <div className="wrapper w-full bg-colorOne text-white font-geist">
+                <div className="wrapper w-full bg-colorOne  font-geist">
                     <div ref={optionOneRef} className="cabinetaryOptionOne w-full h-full flex flex-col md:flex-row gap-5">
 
                         <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-colorTwo">
-                            <span>{titleOne}</span>
+                            <span className='text-textLight'>{titleOne}</span>
                             <div className='flex flex-col gap-14 mt-5'>
-                                <h3 className='font-Montserrat text-3xl'>{headingOne}</h3>
+                                <h3 className='font-Montserrat text-3xl text-textLight'>{headingOne}</h3>
 
-                                <p>{descriptionOne}</p>
+                                <p className='text-textLight'>{descriptionOne}</p>
                                 <Link to="/collection" >
                                     <BtnComponent text='See Collection' />
                                 </Link>
@@ -55,11 +55,11 @@ const CommonDoorDescription = ({
                         </div>
 
                         <div className="optionOneCol w-full md:w-1/2  px-8 py-32">
-                            <span>{titleTwo}</span>
+                            <span className='text-textLight'>{titleTwo}</span>
                             <div className='flex flex-col gap-14 mt-5'>
-                                <h3 className='font-Montserrat text-3xl'>{headingTwo}</h3>
+                                <h3 className='font-Montserrat text-3xl text-textLight'>{headingTwo}</h3>
 
-                                <p>{descriptionTwo}</p>
+                                <p className='text-textLight'>{descriptionTwo}</p>
                                 <Link to="/inspiration" >
                                     <BtnComponent text='Get Inspired' />
                                 </Link>

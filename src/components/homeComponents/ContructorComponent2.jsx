@@ -135,22 +135,22 @@ const ContructorComponent2 = () => {
     }, []);
     return (
         <>
-            <div id="constructor" className="w-full h-full lg:h-screen p-5 md:p-12 bg-[#F2F0EA] font-geist">
-                <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-8">
+            <div id="constructor" className="w-full h-full lg:h-screen p-5 md:p-12 bg-myColorTwo font-poppins">
+                <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-5">
                     {/* Left Content */}
-                    <div className="w-full lg:w-1/2 order-2 lg:order-1 p-8 lg:p-12 bg-[#E1DBCB] rounded-3xl">
-                        <div className="w-full h-full flex flex-col justify-between">
-                            <p className="text-gray-700">“Passion for Wood. Precision in Design.”</p>
+                    <div className="w-full lg:w-1/2 order-2 lg:order-1 p-8 lg:p-12 bg-myColorThree rounded-3xl">
+                        <div className="w-full h-full flex flex-col ">
+                            <p className="text-gray-700 ">“Passion for Wood. Precision in Design.”</p>
                             <div className="box1" ref={boxRef}>
                                 <h2
                                     ref={headingRef}
-                                    className="constructHeading text-2xl md:text-4xl lg:text-5xl font-bold my-3 md:my-6 text-gray-900 leading-tight"
+                                    className="constructHeading text-2xl md:text-4xl lg:text-5xl  my-3 md:my-6 text-gray-900 leading-tight font-NoeDisplayBold font-thin"
                                 />
                                 <p
                                     ref={descRef}
                                     className="constructDescription mb-4 md:mb-8 max-w-md text-gray-700 text-sm md:text-lg leading-relaxed"
                                 />
-                                <div className="w-fit border-2 border-gray-800 px-6 py-3 bg-amber-50 cursor-pointer rounded-full flex items-center gap-3 hover:bg-amber-100 transition-all duration-300">
+                                <div className="w-fit border border-gray-800 px-6 py-3 bg-myColorOne text-myColorTwo cursor-pointer rounded-full flex items-center gap-3 hover:bg-myColorTwo hover:text-myColorOne transition-all duration-300">
                                     <span className="font-medium">See collection</span>
                                     <BsArrowUpRight className="w-5 h-5" />
                                 </div>
