@@ -93,15 +93,15 @@ const CollectionPage = () => {
 
   return (
     <section ref={collectionRef} id="collections">
-      <div className="wrapper w-full h-full bg-colorOne p-5 md:p-10 lg:p-14 md:pt-28 lg:pt-32">
+      <div className="wrapper w-full h-full bg-myColorOne p-5 md:p-10 lg:p-14 md:pt-28 lg:pt-32">
         {/* =====collection header========= */}
         <div className="">
-          <h1 className="text-textLight text-5xl font-NoeDisplayBold">
+          <h1 className="text-textLight text-5xl font-Montserrat font-bold">
             Some of our Collections
           </h1>
         </div>
         {/* ====collection nevigetor===== */}
-        <div className="w-full py-10 flex gap-5 [&>button]:text-xl [&>button]:text-bgTwo [&>button]:py-1 [&>button]:px-5 [&>button]:border [&>button]:rounded-full">
+        <div className="w-full py-10 flex gap-5 [&>button]:text-xl [&>button]:text-bgTwo [&>button]:py-1 [&>button]:px-5 [&>button]:border [&>button]:rounded-full font-Poppins">
           <button onClick={() => setShowCollection(true)}>Show all</button>
           <button onClick={() => filterByTag("glass")}>Glass</button>
           <button onClick={() => filterByTag("pivot")}>Pivot</button>
@@ -113,7 +113,7 @@ const CollectionPage = () => {
             (item, index) => (
               <div
                 key={index}
-                className="collectionBox w-[calc(33%-20px)] aspect-[4/3] border bg-bgOne"
+                className="collectionBox w-[calc(33%-20px)] aspect-[4/3] border bg-bgOne cursor-pointer"
               >
                 <div className="w-full h-full">
                   <img
