@@ -45,18 +45,30 @@ function App() {
         <Route element={<RootLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/test" element={<TestPage />} />
-          <Route path="/test2" element={<DragableSlider/>} />
-          <Route path="/test3" element={<ZebranoPreLoader/>} />
+          <Route path="/test2" element={<DragableSlider />} />
+          <Route path="/test3" element={<ZebranoPreLoader />} />
           <Route path="/architects" element={<ArchitectPage />} />
           <Route path="/inspiration" element={<InspirationPage />} />
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/privacy-Policy" element={<PrivecyPolicy />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/collection" element={<CollectionPage />} />
-          <Route path="/collections/GlassCollection" element={<GlassCollection />}/>
-          <Route path="/collections/FineerCollection" element={<FineerCollection />} />
-          <Route path="/collections/ThreeDCollection" element={<ThreeDCollection />} />
-          <Route path="/collections/AtelierCollection" element={<AtelierCollection />}/>
+          <Route
+            path="/collections/GlassCollection"
+            element={<GlassCollection />}
+          />
+          <Route
+            path="/collections/FineerCollection"
+            element={<FineerCollection />}
+          />
+          <Route
+            path="/collections/ThreeDCollection"
+            element={<ThreeDCollection />}
+          />
+          <Route
+            path="/collections/AtelierCollection"
+            element={<AtelierCollection />}
+          />
           <Route path="/products" element={<CabinetryPage />} />
           <Route path="/products/PivotDoor" element={<PivotDoor />} />
           <Route path="/products/SlideDoor" element={<SlideDoor />} />
@@ -67,7 +79,10 @@ function App() {
           <Route path="/products/material" element={<Material />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/aboutus/ourStory" element={<OurStory />} />
-          <Route path="/aboutus/ConsciousNcrafts" element={<ConsciousNcrafts />} />
+          <Route
+            path="/aboutus/ConsciousNcrafts"
+            element={<ConsciousNcrafts />}
+          />
           <Route path="/aboutus/services" element={<ServicesPage />} />
           <Route path="/aboutus/theMakers" element={<MeetTheMakerPage />} />
           <Route path="/configurator" element={<ConfiguratorPage />} />

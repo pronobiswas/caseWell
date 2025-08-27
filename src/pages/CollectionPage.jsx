@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 const CollectionPage = () => {
-  const [activeCollection , setActiveCollection] = useState('Show all')
+  const [activeCollection, setActiveCollection] = useState("Show all");
   const [showCollection, setShowCollection] = useState(true);
   const [filteredCollection, setFilteredCollection] = useState([]);
 
@@ -68,9 +68,11 @@ const CollectionPage = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const allCollectionBox = collectionRef.current.querySelectorAll('.collectionBox');
-      const allCollectionButton = collectionRef.current.querySelectorAll('button');
-      allCollectionBox.forEach(box => {
+      const allCollectionBox =
+        collectionRef.current.querySelectorAll(".collectionBox");
+      const allCollectionButton =
+        collectionRef.current.querySelectorAll("button");
+      allCollectionBox.forEach((box) => {
         const randomX = gsap.utils.random(-50, 50);
         const randomY = gsap.utils.random(-50, 50);
         const randomScale = gsap.utils.random(0.5, 1);
@@ -78,28 +80,25 @@ const CollectionPage = () => {
         gsap.from(box, {
           x: randomX,
           y: randomY,
-          scale:randomScale,
+          scale: randomScale,
           opacity: 0,
           duration: 0.5,
           ease: "power3.inout",
         });
-
       });
-      
-      
-
     });
 
-
     return () => ctx.revert();
-  }, [filteredCollection , showCollection]);
+  }, [filteredCollection, showCollection]);
 
   return (
     <section ref={collectionRef} id="collections">
       <div className="wrapper w-full h-full bg-colorOne p-5 md:p-10 lg:p-14 md:pt-28 lg:pt-32">
         {/* =====collection header========= */}
         <div className="">
-          <h1 className="text-white text-5xl">Some of our Collections</h1>
+          <h1 className="text-textLight text-5xl font-NoeDisplayBold">
+            Some of our Collections
+          </h1>
         </div>
         {/* ====collection nevigetor===== */}
         <div className="w-full py-10 flex gap-5 [&>button]:text-xl [&>button]:text-bgTwo [&>button]:py-1 [&>button]:px-5 [&>button]:border [&>button]:rounded-full">
@@ -124,7 +123,9 @@ const CollectionPage = () => {
                   />
                 </div>
                 <div className="py-3 px-1">
-                  <p className="text-xl font-semibold text-colorOne">{item.title}</p>
+                  <p className="text-xl font-semibold text-colorOne">
+                    {item.title}
+                  </p>
                   <p>{item.description}</p>
                 </div>
               </div>

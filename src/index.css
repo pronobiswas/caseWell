@@ -2,127 +2,135 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @font-face {
-  font-family: 'myFont';
-  src: url('/fonts/myfont.otf') format('opentype');
+  font-family: "myFont";
+  src: url("/fonts/myfont.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'workFont';
-  src: url('/fonts/workFont.ttf') format('opentype');
+  font-family: "workFont";
+  src: url("/fonts/workFont.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat.ttf') format('opentype');
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'geist';
-  src: url('/fonts/geist.ttf') format('opentype');
+  font-family: "geist";
+  src: url("/fonts/geist.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'NoeDisplayBold';
-  src: url('/fonts/NoeDisplayBold.ttf') format('opentype');
+  font-family: "NoeDisplayBold";
+  src: url("/fonts/NoeDisplayBold.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
-
-:root{
-  --bgOne:#F2F0EA;
-  --bgTwo:#E1DBCB;
-  --bgThree:#c2c2b0;
-  --colorOne: #2f3a2a ;
-  --colorTwo: #858585  ;
+:root {
+  --bgOne: #f2f0ea;
+  --bgTwo: #e1dbcb;
+  --bgThree: #c2c2b0;
+  --colorOne: #2f3a2a;
+  --colorTwo: #858585;
   --colorThree: rgb(133 133 133);
   --colorFour: #2f3a2a50;
 
-  --textDark: #2a2a2a;
-  --textLight: #f2f0ea;
+  --DarkText: #2a2a2a;
+  --LightText: #f2f0ea;
 
   --myColorOne: #2f3a2a;
-  --myColorTwo:#f2f0ea;
-  --myColorThree:#c2c2b0;
+  --myColorTwo: #f2f0ea;
+  --myColorThree: #c2c2b0;
 }
 
- body{
-  width: 100Vw;
+body {
+  width: 100vw;
   overflow-x: hidden;
- }
- #root{
+}
+#root {
   width: 100%;
   height: 100%;
   position: relative;
   /* overflow: hidden; */
- }
- h1,h2,h3,h4,h5,h6{font-family: Montserrat; color:var(--colorOne)}
- p{font-family: geist; color:var(--colorOne)}
- 
-header#header{
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+}
+p {
+  font-family: Poppins;
+}
+h1 {
+  font-family: Montserrat;
+  color: var(--LightText);
+}
+
+header#header {
   position: sticky !important;
   top: 0;
   left: 0;
 }
 
 /* ======nav bar======== */
-#menuIcon .horizontalLine{
-  stroke-dashoffset: 100 ;
-  stroke-dasharray: 100 ;
+#menuIcon .horizontalLine {
+  stroke-dashoffset: 100;
+  stroke-dasharray: 100;
 }
-.active{
+.active {
   position: relative;
 }
 
-#menuIcon .crosLine{
-  stroke-dashoffset: 100 ;
-  stroke-dasharray: 100 ;
+#menuIcon .crosLine {
+  stroke-dashoffset: 100;
+  stroke-dasharray: 100;
 }
-.gggg{
+.gggg {
   width: fit-content;
   height: 30px;
   transform-style: preserve-3d;
   overflow: hidden;
 }
-.red{
+.red {
   position: relative;
   top: 0;
   transform: rotateX(0);
   transition: 0.2s all linear;
 }
-.blue{
+.blue {
   position: relative;
   top: -10px;
   transform: rotateX(90deg);
   transition: 0.2s all linear;
 }
-.gggg:hover .red{
+.gggg:hover .red {
   top: -15px;
   transform: rotateX(90deg);
 }
-.gggg:hover .blue{
+.gggg:hover .blue {
   top: -28px;
   transform: rotateX(0deg);
 }
-
 
 /* .menu ul .menuItem .dropdownMenu{
   @apply border-2 border-[#5454ff23] shadow-inner  shadow-[white] rounded-[10px] overflow-hidden text-black
 } */
 .menu ul .menuItem .dropdownMenu .dropdounWrapper .dropdownMenuItem {
-  @apply [&>span]:text-base [&>span]:font-semibold  [&>p]:text-xs bg-[#e1dbcb57] p-5 shadow-inner  shadow-[#f0e5c67e] rounded hover:bg-bgTwo 
+  @apply [&>span]:text-base [&>span]:font-semibold  [&>p]:text-xs bg-[#e1dbcb57] p-5 shadow-inner  shadow-[#f0e5c67e] rounded hover:bg-bgTwo;
 }
 /* .configaretor{} */
 /* ======nav bar======== */
-.millworkContent{
+.millworkContent {
   @apply w-80 mt-16 flex flex-col gap-5;
 }
 
@@ -131,31 +139,30 @@ html {
   scroll-behavior: smooth;
 } */
 
- #banner {
+#banner {
   background-size: 110% 110%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 /* ===menu1== */
-.menu1Lis{
-    width: 100%;
-    height: 25px;
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
+.menu1Lis {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
 }
-.menu1item{
-    height: 100%;
-    cursor: pointer;
-    
+.menu1item {
+  height: 100%;
+  cursor: pointer;
 }
-.menu1LinkWrapper{
-    display: flex;
-    flex-direction: column;
-    transition: .2s all linear;
+.menu1LinkWrapper {
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s all linear;
 }
-.menu1item:hover .menu1LinkWrapper{
-    transform: translateY(-24px);
+.menu1item:hover .menu1LinkWrapper {
+  transform: translateY(-24px);
 }
 
 .menu_item {
@@ -190,7 +197,7 @@ html {
   outline: 1px solid rgba(0, 0, 0, 0.349);
   border-radius: 8px;
 } */
-.amimateDoorThree{
+.amimateDoorThree {
   animation: doorAnimThree 2s ease-in-out forwards;
 }
 @keyframes doorAnimThree {
@@ -225,20 +232,14 @@ html {
   object-fit: cover;
 } */
 
-
 /* $$$$$$ZebranoHeading$$$$$$$$$$$ */
 
-
-
-
-
 /* #############footer########## */
-.footerHeading{
+.footerHeading {
   text-shadow: 1px 2px 0 var(--colorOne);
-  stroke: 1px  var(--colorOne);
+  stroke: 1px var(--colorOne);
   -webkit-text-stroke: 1px var(--colorOne);
   /* background-color: #0d290036; */
-
 }
 .gradient_text {
   background: linear-gradient(var(--angle, 90deg), #00680c, #2b0044, #000000);

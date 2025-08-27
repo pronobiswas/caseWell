@@ -4,29 +4,29 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        myFont: ['myFont', 'sans-serif'],
-        workFont: ['workFont', 'sans-serif'],
-        Montserrat: ['Montserrat', 'sans-serif'],
-        geist: ['geist', 'sans-serif'],
-        NoeDisplayBold: ['NoeDisplayBold', 'sans-serif'],
-        Poppins: ['Poppins', 'sans-serif'],
+        myFont: ["myFont", "sans-serif"],
+        workFont: ["workFont", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
+        geist: ["geist", "sans-serif"],
+        NoeDisplayBold: ["NoeDisplayBold", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
       },
-      colors:{
-        bgOne : 'var(--bgOne)',
-        bgTwo : 'var(--bgTwo)',
-        colorOne : 'var(--colorOne)',
-        colorTwo : 'var(--colorTwo)',
-        colorThree : 'var(--colorThree)',
-        colorFour : 'var(--colorFour)',
-        
-        myColorOne:'var(--myColorOne)',
-        myColorTwo:'var(--myColorTwo)',
-        myColorThree:'var(--myColorThree)',
-        textDark:'var(--textDark)',
-        textLight:'var(--textLight)',
-      }
+      colors: {
+        bgOne: "var(--bgOne)",
+        bgTwo: "var(--bgTwo)",
+        colorOne: "var(--colorOne)",
+        colorTwo: "var(--colorTwo)",
+        colorThree: "var(--colorThree)",
+        colorFour: "var(--colorFour)",
+
+        myColorOne: "var(--myColorOne)",
+        myColorTwo: "var(--myColorTwo)",
+        myColorThree: "var(--myColorThree)",
+        DarkText: "var(--DarkText)",
+        LightText: "var(--LightText)",
+      },
     },
-    
+
     container: {
       center: true,
       padding: {

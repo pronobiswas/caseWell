@@ -43,7 +43,8 @@ const WhyPartner = () => {
   //   });
 
   useEffect(() => {
-    if (!partnerHeading.current || !partnerDes.current || !partnerCard.current) return;
+    if (!partnerHeading.current || !partnerDes.current || !partnerCard.current)
+      return;
 
     const ctx = gsap.context(() => {
       const heading = partnerHeading.current;
@@ -98,18 +99,29 @@ const WhyPartner = () => {
     return () => ctx.revert();
   }, []);
 
-
-
-
-
   return (
     <>
-      <section id="whyPartner" className="w-full h-full bg-myColorTwo text-colorOne">
+      <section
+        id="whyPartner"
+        className="w-full h-full bg-myColorTwo text-colorOne"
+      >
         <div className="partnerWrapper w-full h-full  p-16 pt-20 flex flex-col justify-between">
           <div className="partnerHeading flex justify-between">
-            <h3 ref={partnerHeading} className="text-3xl font-NoeDisplayBold text-myColorOne">Why Choose Zebrano Studio?</h3>
-            <p ref={partnerDes} className="w-full max-w-xl text-right text-myColorOne">
-              We believe luxury shouldn’t be out of reach. Our doors are crafted with the same precision and materials found in the world’s finest interiors — yet designed to be accessible for every home. From first sketch to final installation, we make it possible to bring high-end design into your everyday life, without compromise.
+            <h3
+              ref={partnerHeading}
+              className="text-3xl font-Montserrat text-myColorOne"
+            >
+              Why Choose Zebrano Studio?
+            </h3>
+            <p
+              ref={partnerDes}
+              className="w-full max-w-xl text-right text-myColorOne font-Poppins"
+            >
+              We believe luxury shouldn’t be out of reach. Our doors are crafted
+              with the same precision and materials found in the world’s finest
+              interiors — yet designed to be accessible for every home. From
+              first sketch to final installation, we make it possible to bring
+              high-end design into your everyday life, without compromise.
             </p>
           </div>
           <div
@@ -121,9 +133,10 @@ const WhyPartner = () => {
                 <FaRegMessage />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6 className="text-myColorOne">Bespoke Design </h6>
-                <p className="text-myColorOne">
-                  Tailored shapes, finishes, and materials to match your vision and space.
+                <h6 className="text-myColorOne ">Bespoke Design </h6>
+                <p className="text-myColorOne ">
+                  Tailored shapes, finishes, and materials to match your vision
+                  and space.
                 </p>
               </div>
               {/* <div className="link flex items-center gap-3">
@@ -141,10 +154,10 @@ const WhyPartner = () => {
               <div className="text flex flex-col gap-3">
                 <h6 className="text-myColorOne">Accessible Luxury</h6>
                 <p className="text-myColorOne">
-                  Premium craftsmanship and rare materials — made attainable for every project size.
+                  Premium craftsmanship and rare materials — made attainable for
+                  every project size.
                 </p>
               </div>
-
             </div>
 
             <div className="box w-80 py-5  flex flex-col gap-6 ">
@@ -154,10 +167,10 @@ const WhyPartner = () => {
               <div className="text flex flex-col gap-3">
                 <h6 className="text-myColorOne">Easy Configuration</h6>
                 <p className="text-myColorOne">
-                  A simple process with curated options for faster delivery and effortless decision-making.
+                  A simple process with curated options for faster delivery and
+                  effortless decision-making.
                 </p>
               </div>
-
             </div>
 
             <div className="box w-80 py-5 flex flex-col gap-6  ">
@@ -167,10 +180,10 @@ const WhyPartner = () => {
               <div className="text flex flex-col gap-3">
                 <h6 className="text-myColorOne">Precision Craftsmanship</h6>
                 <p className="text-myColorOne">
-                  Doors built to last a lifetime, with meticulous attention to detail.
+                  Doors built to last a lifetime, with meticulous attention to
+                  detail.
                 </p>
               </div>
-
             </div>
 
             <div className="box w-80 py-5 flex flex-col gap-6  ">
@@ -180,10 +193,10 @@ const WhyPartner = () => {
               <div className="text flex flex-col gap-3">
                 <h6 className="text-myColorOne">Endless inspiration</h6>
                 <p className="text-myColorOne">
-                  Endless design possibilities to make your space truly unforgettable.
+                  Endless design possibilities to make your space truly
+                  unforgettable.
                 </p>
               </div>
-
             </div>
           </div>
         </div>
