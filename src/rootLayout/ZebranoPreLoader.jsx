@@ -139,7 +139,6 @@ const ZebranoPreLoader = () => {
                 </svg>
               
                 <span ref={zebranoRef} className="text-center text-[74px] font-bold text-white">ZEBRAN</span>
-                <div className="w-16 h-20"></div>
               
               
                 <span ref={studioRef} className="text-center text-[74px] font-semibold text-white">Studio</span>

@@ -1,24 +1,130 @@
-import React from 'react'
-import BtnComponent from '../homeComponents/utils/BtnComponent'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useRef } from 'react'
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BtnComponent from '../homeComponents/utils/BtnComponent';
+import { Link } from 'react-router-dom';
+
+gsap.registerPlugin(SplitText);
+gsap.registerPlugin(ScrollTrigger);
 
 const AccessibleBeautiful = () => {
+    const beautifulRef = useRef(null);
+    const rowOneRef = useRef(null);
+    const rowTwoRef = useRef(null);
+    const rowThreeRef = useRef(null);
+    const headingOneRef = useRef(null);
+    const headingtwoRef = useRef(null);
+    const subheadingOneRef = useRef(null);
+    const subheadingtwoRef = useRef(null);
+    const paragraphOneRef = useRef(null);
+    const paragraphtwoRef = useRef(null);
+    const paragraphThreeRef = useRef(null);
+
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+
+            
+          const headingOneSplit = new SplitText(headingOneRef.current, {
+            type: 'lines, words, chars',
+            linesClass: 'line overflow-hidden block',
+          });
+          const headingTwoSplit = new SplitText(headingtwoRef.current, {
+            type: 'lines, words, chars',
+            linesClass: 'line overflow-hidden block',
+          });
+
+          const paragraphOneSplit = new SplitText(paragraphOneRef.current, {
+            type: 'lines, words, chars',
+            linesClass: 'line overflow-hidden block',
+          });
+          const tl = gsap.timeline(
+            {
+              scrollTrigger: {
+                trigger: rowOneRef.current,
+                start: 'top 85%',
+                end: '+=400',
+                scrub: true,
+                markers:true,
+              }
+            }
+          );
+          tl.from(headingOneSplit.chars, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'power4.out',
+            stagger: 0.00,
+            
+          });
+          tl.from(headingTwoSplit.chars, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'power4.out',
+            stagger: 0.00,
+            scrollTrigger:{
+                trigger: rowOneRef.current,
+                start: 'top 80%',
+                end: '+=200',
+                scrub: true,
+                markers:true,
+            }
+          });
+          gsap.from(paragraphOneSplit.chars, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'power4.out',
+            stagger: 0.00,
+            scrollTrigger:{
+                trigger: rowOneRef.current,
+                start: 'top 75%',
+                end: '+=200',
+                scrub: true,
+                markers:true,
+            }
+          });
+          gsap.from(paragraphOneSplit.chars, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'power4.out',
+            stagger: 0.00,
+            scrollTrigger:{
+                trigger: rowOneRef.current,
+                start: 'top 75%',
+                end: '+=200',
+                scrub: true,
+                markers:true,
+            }
+          });
+
+
+
+
+
+    
+        });
+        return () => ctx.revert();
+      }, []);
     return (
         <>
-            <section id="accessibleBeautifull">
+            <section ref={beautifulRef} id="accessibleBeautifull">
                 <div className="wrapper w-full h-fit bg-myColorOne text-LightText">
                     {/* ===row one === */}
-                    <div className="row1">
+                    <div ref={rowOneRef} className="row1">
                         <div className="w-full flex">
                             <div className=" w-1/2 flex justify-center items-center py-10 px-8">
                                 <div className='w-full max-w-80'>
-                                    <h1 className='text-4xl font-semibold '>ACCESSIBLE.</h1>
-                                    <h1 className='text-4xl font-semibold mb-8 '>BEAUTIFUL.</h1>
-                                    <p>I've always felt that good design shouldn't hide behind velvet ropes. At Zebrano, I want everyone to enjoy the same
+                                    <h1 ref={headingOneRef} className='text-4xl font-semibold '>ACCESSIBLE.</h1>
+                                    <h1 ref={headingtwoRef} className='text-4xl font-semibold mb-8 '>BEAUTIFUL.</h1>
+                                    <p ref={paragraphOneRef}>I've always felt that good design shouldn't hide behind velvet ropes. At Zebrano, I want everyone to enjoy the same
                                         beautiful doors and details
                                         usually seen only in luxury hotels - right at home."
-                                    </p>
-                                    <p className='pt-5'><b>Mathijs</b> - Founder and designer, Zebrano Studio</p>
+                                    </p >
+                                    <p ref={paragraphtwoRef} className='pt-5'><b>Mathijs</b> - Founder and designer, Zebrano Studio</p>
                                 </div>
                             </div>
                             <div className="w-1/2">
@@ -27,7 +133,7 @@ const AccessibleBeautiful = () => {
                         </div>
                     </div>
                     {/* ===row two=== */}
-                    <div className="row2 w-full h-fit min-h-[530px] flex">
+                    <div ref={rowTwoRef} className="row2 w-full h-fit min-h-[530px] flex">
                         <div className="w-1/2 ">
                             <img src="/images/img3.png" alt="" className='w-full h-full object-cover' />
                         </div>
@@ -45,7 +151,7 @@ const AccessibleBeautiful = () => {
 
                     </div>
                     {/* ===row three=== */}
-                    <div className='row3 bg-myColorTwo pt-12 px-5 pb-10 text-myColorOne'>
+                    <div ref={rowThreeRef} className='row3 bg-myColorTwo pt-12 px-5 pb-10 text-myColorOne'>
                         <div className="wrapper w-full flex gap-5">
                             {/* ====col one=== */}
                             <div className="w-1/2">
@@ -54,7 +160,7 @@ const AccessibleBeautiful = () => {
                                         <img src="/images/img4.png" alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full flex flex-col items-center text-center p-5'>
-                                        <h3 className='text-3xl'>Are you a designer?</h3>
+                                        <h3 ref={subheadingOneRef} className='text-3xl'>Are you a designer?</h3>
                                         <p className='mb-8'>Our team is ready to help you discover all the possibilities </p>
                                         <Link to="/contact">
                                             <BtnComponent text='Discover materials' />
@@ -69,7 +175,7 @@ const AccessibleBeautiful = () => {
                                         <img src="/images/img4.png" alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full flex flex-col items-center text-center p-5'>
-                                        <h3 className='text-3xl'>Are you a designer?</h3>
+                                        <h3 ref={subheadingtwoRef} className='text-3xl'>Are you a designer?</h3>
                                         <p className='mb-8'>Our team is ready to help you discover all the possibilities </p>
                                         <Link to="/contact">
                                             <BtnComponent text='Get in contact' />
