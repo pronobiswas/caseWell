@@ -72,8 +72,8 @@ const ContactUs = () => {
     let formData = new FormData(formRef.current);
 
     emailjs
-      .sendForm("service_mgaa7q8", "template_j467516", formRef.current, {
-        publicKey: "hGXnZ_IzZesvJopYp",
+      .sendForm("service_mw2tclf", "template_ntdsj6g", formRef.current, {
+        publicKey: "zSJ4uoM7Xx-2HB2xZ",
       })
       .then(
         () => {
@@ -104,7 +104,7 @@ const ContactUs = () => {
               home deserves a touch of design, and every space should tell a
               story .
             </p>
-            <p ref={text2Ref} className="pt-5">
+            <p ref={text2Ref} className="pt-5 text-center">
               Whether you're dreaming big, working on a unique project, or just
               curious about the possibilities — we’d love to hear from you. Use
               the form below to get in touch, especially if you have special

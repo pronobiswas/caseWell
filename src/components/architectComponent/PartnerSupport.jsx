@@ -97,9 +97,9 @@ const PartnerSupport = () => {
 
                         <div className='w-full md:w-1/2'>
                             <p ref={partnerDes} className='text-sm mb-8'>
-                                We built Casewell because trade professionals deserve a supplier who champions their success, not competes for their clients. You keep relationships, earn the margins you deserve, and focus on what you do best.
+                                We built <strong>Zebrano</strong> because trade professionals deserve a supplier who champions their success, not competes for their clients. You keep relationships, earn the margins you deserve, and focus on what you do best.
                             </p>
-                            <BtnComponent text='Partner with casewell' />
+                            <BtnComponent text='Partner with Zebrano' />
                         </div>
                     </div>
 

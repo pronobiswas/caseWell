@@ -124,7 +124,7 @@ const Conversation = () => {
               </p>
             </div>
             <div ref={btnRef} className="flex justify-center">
-              <BtnComponent text="Partner with Casewell" />
+              <BtnComponent text="Partner with Zebrano" />
             </div>
           </div>
         </div>

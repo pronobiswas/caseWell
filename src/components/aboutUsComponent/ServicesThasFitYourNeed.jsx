@@ -5,6 +5,7 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FAQSection from '../commonComponent/FAQSection';
 import BtnComponent from '../homeComponents/utils/BtnComponent';
+import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
@@ -78,9 +79,9 @@ const ServicesThasFitYourNeed = () => {
     return (
         <>
             <section ref={zebranoServiceRef} id="servicesThatsFit">
-                <div className="wrapper w-full p-5 md:10 lg:p-14 flex gap-10 lg:gap-20 xl:gap-28 text-colorOne">
-                    <div className="w-1/2 flex flex-col justify-between">
-                        <div>
+                <div className="wrapper w-full p-5 md:10 lg:p-14 text-myColorOne">
+                    <div className="w-full">
+                        <div className='w-1/2'>
                             <h2 ref={headingRef} className='text-3xl lg:text-5xl'>Service That Fits Your Needs</h2>
                             <p
                                 ref={textRef}
@@ -90,15 +91,17 @@ const ServicesThasFitYourNeed = () => {
                                 //     WebkitTextFillColor: "transparent",
                                 //     backgroundSize: "200% auto",
                                 // }}
-                                className=' text-base lg:text-xl mt-8'>
+                                className=' text-base lg:text-xl mt-8 mb-5'>
                                 Whether you're ordering a single custom door or exploring ways to integrate multiple elements into your interior, we make the process simple and inspiring. Our team is here to guide you through choices, timelines, and practical details - so you feel confident from the first conversation to the final installation.
                             </p>
                         </div>
-                        <BtnComponent text='Services'/>
+                        <Link to="/aboutus/services">
+                            <BtnComponent text=' Service'/>
+                        </Link>
 
                     </div>
-                    <div className="w-1/2 h-auto ">
-                        <div className="faqWrapper">
+                    <div className="w-full h-auto flex justify-end">
+                        <div className="faqWrapper w-2/3">
                             <FAQSection title={title} faqs={faqs} />
                         </div>
                     </div>

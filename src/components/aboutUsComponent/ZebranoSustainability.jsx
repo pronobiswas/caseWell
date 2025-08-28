@@ -35,7 +35,7 @@ const ZebranoSustainability = () => {
                     scale:1.3,
                     scrollTrigger: {
                         trigger: ZebranoSustainabilityRef.current,
-                        start: "top 70%",
+                        start: "top 80%",
                         end: "+=200",
                         scrub: true,
                     }
@@ -43,7 +43,7 @@ const ZebranoSustainability = () => {
                 let tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: ZebranoSustainabilityRef.current,
-                        start: "top 70%",
+                        start: "top 85%",
                         end: "+=400",
                         scrub: true,
                     }
@@ -70,18 +70,18 @@ const ZebranoSustainability = () => {
   return (
     <>
     <section ref={ZebranoSustainabilityRef} id="ZebranoSustainability">
-        <div className="wrapper w-full flex " >
-            <div className="w-1/2 bg-bgOne flex items-center">
+        <div className="wrapper w-full flex bg-myColorOne textLightText py-5 pr-5" >
+            <div className="w-1/2  flex items-center">
             <div className='w-full h-auto p-5 md:p-10 lg:p-14'>
-                <p ref={headingOneRef} className='text-xl mb-2'>Sustainability</p>
-                <h2 ref={headingTwoRef} className='text-3xl md:text-4xl lg:text-5xl font-bold mb-8 '>Craftsmanship that cares</h2>
-                <p ref={pragraphRef} className='tex-base mb-8'>We choose sustainable materials, work with responsible suppliers, and build pieces meant to last for decades. Because great design should never come at the planet's expense</p>
+                <p ref={headingOneRef} className='text-xl mb-2 font-Poppins text-LightText'>Sustainability</p>
+                <h2 ref={headingTwoRef} className='text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-LightText font-Montserrat'>Craftsmanship that cares</h2>
+                <p ref={pragraphRef} className='text-base mb-8 text-LightText'>We choose sustainable materials, work with responsible suppliers, and build pieces meant to last for decades. Because great design should never come at the planet's expense</p>
                 <BtnComponent text="See More" />
             </div>
             </div>
             <div className="w-1/2">
-            <div className="imgBox w-full h-auto overflow-hidden">
-                <img ref={imgRef} src="/images/img1.png" alt="picture" />
+            <div className="imgBox w-full h-[500px] overflow-hidden">
+                <img ref={imgRef} src="/images/img1.png" alt="picture" className='w-full h-full object-fill' />
             </div>
             </div>
         </div>

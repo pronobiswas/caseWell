@@ -54,7 +54,7 @@ const FAQSection = ({
                 {faqs.map((faq, index) => (
                     <div key={index} className="w-full border-b border-b-black py-2">
                         <button
-                            className="gradient_text w-full text-left  flex justify-between items-center text-2xl"
+                            className="gradient_text w-full text-left  flex justify-between items-center text-2xl font-Poppins"
                             onClick={() => toggleFAQ(index)}
                         >
                             {faq.question}

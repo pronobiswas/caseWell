@@ -56,11 +56,11 @@ const ServiceBanner = () => {
             <section id="serviceBanner">
                 <div className="wrapper w-full h-fit pt-48 pb-20 px-5 md:px-10 lg:px-14 flex flex-col items-center gap-10 bg-bgTwo">
 
-                    <h1 ref={headingRef} className='text-[6vw] text-center text-bold font-serif'>Service & Terms</h1>
+                    <h1 ref={headingRef} className='text-[6vw] text-center text-myColorOne font-Montserrat font-bold'>Service & Terms</h1>
                     <p ref={subHeadingRef} className='text-xl text-center w-full max-w-4xl'>
                         Real hands. Real sawdust. Unreal results.
                         From first sketch to final fit, we design, prototype, and build under one
-                        ro0f — 5o every millimetre lines up and every door feels effortlessly right.
+                        roof — 50 every millimetre lines up and every door feels effortlessly right.
                     </p>
                 </div>
             </section>

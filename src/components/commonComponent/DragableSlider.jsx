@@ -113,7 +113,7 @@ const DraggableSlider = () => {
   };
 
   return (
-    <section className="w-full py-40">
+    <section className="w-full py-40 bg-myColorTwo">
       {/* ========feact array====== */}
       <section id="dragableAndClickableSlider">
         <div className="wrapper w-full h-fit p-5 flex gap-10  font-Poppins text-myColorOne">

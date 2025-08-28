@@ -65,7 +65,7 @@ const MakerBanner = () => {
 
   return (
     <section id="zebranoBanner">
-        <div className="wrapper w-full h-auto  p-5 py-20 md:p-10 md:pt-32 md:py-20 lg:pb-10 lg:pt-32 2xl:pb-20">
+        <div className="wrapper bg-myColorTwo w-full h-auto  p-5 py-20 md:p-10 md:pt-32 md:py-20 lg:pb-10 lg:pt-32 2xl:pb-20">
           <div className='w-full flex gap-5'>
             <h1 ref={headingOneRef} className='text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>Created by our makers,</h1>
             
