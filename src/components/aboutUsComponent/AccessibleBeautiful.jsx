@@ -24,91 +24,166 @@ const AccessibleBeautiful = () => {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
+            const images = beautifulRef.current.querySelectorAll('img');
+            images.forEach((img) => {
+                gsap.from(img, {
+                    scale: 0.5,
+                    opacity: 0,
+                    duration: 1,
+                    ease: 'power4.out',
+                    scrollTrigger: {
+                        trigger: img,
+                        start: 'top 90%',
+                        end: 'top 70%',
+                        scrub: true,
+                    }
+                });
+            });
+        }, beautifulRef);
 
-            
-          const headingOneSplit = new SplitText(headingOneRef.current, {
-            type: 'lines, words, chars',
-            linesClass: 'line overflow-hidden block',
-          });
-          const headingTwoSplit = new SplitText(headingtwoRef.current, {
-            type: 'lines, words, chars',
-            linesClass: 'line overflow-hidden block',
-          });
-
-          const paragraphOneSplit = new SplitText(paragraphOneRef.current, {
-            type: 'lines, words, chars',
-            linesClass: 'line overflow-hidden block',
-          });
-          const tl = gsap.timeline(
-            {
-              scrollTrigger: {
-                trigger: rowOneRef.current,
-                start: 'top 85%',
-                end: '+=400',
-                scrub: true,
-                markers:true,
-              }
-            }
-          );
-          tl.from(headingOneSplit.chars, {
-            y: 100,
-            opacity: 0,
-            duration: 2,
-            ease: 'power4.out',
-            stagger: 0.00,
-            
-          });
-          tl.from(headingTwoSplit.chars, {
-            y: 100,
-            opacity: 0,
-            duration: 2,
-            ease: 'power4.out',
-            stagger: 0.00,
-            scrollTrigger:{
-                trigger: rowOneRef.current,
-                start: 'top 80%',
-                end: '+=200',
-                scrub: true,
-                markers:true,
-            }
-          });
-          gsap.from(paragraphOneSplit.chars, {
-            y: 100,
-            opacity: 0,
-            duration: 2,
-            ease: 'power4.out',
-            stagger: 0.00,
-            scrollTrigger:{
-                trigger: rowOneRef.current,
-                start: 'top 75%',
-                end: '+=200',
-                scrub: true,
-                markers:true,
-            }
-          });
-          gsap.from(paragraphOneSplit.chars, {
-            y: 100,
-            opacity: 0,
-            duration: 2,
-            ease: 'power4.out',
-            stagger: 0.00,
-            scrollTrigger:{
-                trigger: rowOneRef.current,
-                start: 'top 75%',
-                end: '+=200',
-                scrub: true,
-                markers:true,
-            }
-          });
-
-
-
-
-
-    
-        });
         return () => ctx.revert();
-      }, []);
+    }, [])
+
+    // =========split text=====
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+
+            const headingOneSplit = new SplitText(headingOneRef.current, {
+                type: 'lines, words, chars',
+                linesClass: 'line overflow-hidden block',
+            });
+            const headingTwoSplit = new SplitText(headingtwoRef.current, {
+                type: 'lines, words, chars',
+                linesClass: 'line overflow-hidden block',
+            });
+
+            const paragraphOneSplit = new SplitText(paragraphOneRef.current, {
+                type: 'lines, words, chars',
+                linesClass: 'line overflow-hidden block',
+            });
+            const paragraphTwoSplit = new SplitText(paragraphtwoRef.current, {
+                type: 'lines, words, chars',
+                linesClass: 'line overflow-hidden block',
+            });
+            const paragraphThreeSplit = new SplitText(paragraphThreeRef.current, {
+                type: 'lines, words, chars',
+                linesClass: 'line overflow-hidden block',
+            });
+            const tl = gsap.timeline(
+                {
+                    scrollTrigger: {
+                        trigger: rowOneRef.current,
+                        start: 'top 85%',
+                        end: '+=400',
+                        scrub: true,
+                    }
+                }
+            );
+            tl.from(headingOneSplit.chars, {
+                // y: 100,
+                rotateX: 270,
+                opacity: 0,
+                duration: 2,
+                ease: 'power4.out',
+                stagger: 0.05,
+
+            });
+            tl.from(headingTwoSplit.chars, {
+                // y: 100,
+                rotateX: 270,
+                opacity: 0,
+                duration: 2,
+                ease: 'power4.out',
+                stagger: 0.05,
+
+            });
+            tl.from(paragraphOneSplit.chars, {
+                // y: 100,
+                rotateX: 270,
+                opacity: 0,
+                duration: 2,
+                ease: 'power4.out',
+                stagger: 0.05,
+
+            });
+            tl.from(paragraphTwoSplit.chars, {
+                y: 100,
+                opacity: 0,
+                duration: 2,
+                ease: 'power4.out',
+                stagger: 0.00,
+            });
+
+            gsap.from(paragraphThreeSplit.chars, {
+                rotateX: 270,
+                opacity: 0,
+                duration: 2,
+                ease: 'power4.out',
+                stagger: 0.05,
+                scrollTrigger: {
+                    trigger: rowTwoRef.current,
+                    start: 'top 80%',
+                    end: 'top 60%',
+                    scrub: true,
+                }
+            });
+
+
+            const allTitle = rowThreeRef.current.querySelectorAll('h3');
+            const allsubTitle = rowThreeRef.current.querySelectorAll('p');
+
+            allTitle.forEach((title) => {
+                const titleSplit = new SplitText(title, {
+                    type: 'lines, words, chars',
+                    linesClass: 'line overflow-hidden block',
+                });
+                gsap.from(titleSplit.chars, {
+                    rotateX: 270,
+                    opacity: 0,
+                    duration: 2,
+                    ease: 'power4.out',
+                    stagger: 0.05,
+                    scrollTrigger: {
+                        trigger: rowThreeRef.current,
+                        start: 'top 25%',
+                        end: '+=200',
+                        scrub: true,
+                    }
+                });
+            });
+
+            allsubTitle.forEach((subTitle) => {
+                const subTitleSplit = new SplitText(subTitle, {
+                    type: 'lines, words, chars',
+                    linesClass: 'line overflow-hidden block',
+                });
+                gsap.from(subTitleSplit.chars, {
+                    rotateX: 270,
+                    opacity: 0,
+                    duration: 2,
+                    ease: 'power4.out',
+                    stagger: 0.05,
+                    scrollTrigger: {
+                        trigger: rowThreeRef.current,
+                        start: 'top 30%',
+                        end: '+=200',
+                        scrub: true,
+                    }
+                });
+            });
+
+
+            return () => {
+                headingOneSplit.revert();
+                headingTwoSplit.revert();
+                paragraphOneSplit.revert();
+                paragraphTwoSplit.revert();
+            };
+        });
+
+        return () => ctx.revert();
+    }, []);
+    // ====return html content=======
     return (
         <>
             <section ref={beautifulRef} id="accessibleBeautifull">
@@ -133,14 +208,14 @@ const AccessibleBeautiful = () => {
                         </div>
                     </div>
                     {/* ===row two=== */}
-                    <div ref={rowTwoRef} className="row2 w-full h-fit min-h-[530px] flex">
+                    <div ref={rowTwoRef} className="row2 w-full h-fit min-h-[500px] flex">
                         <div className="w-1/2 ">
                             <img src="/images/img3.png" alt="" className='w-full h-full object-cover' />
                         </div>
                         <div className="w-1/2 h-full">
                             <div className="content w-full h-full flex justify-center items-center py-16">
                                 <div className='w-full h-full  max-w-96 flex flex-col gap-20'>
-                                    <p className='text-xl text-center'>We like to keep things close to home. Our doors are made right here in the Netherlands, shaped by makers who know their wood almost as well as their morning coffee. It's a mix of tradition, precision, and a little Dutch stubbornness that refuses to settle for "good enough." The result? Craft that feels local, but looks like it belongs anywhere in the world.</p>
+                                    <p ref={paragraphThreeRef} className='text-xl text-center'>We like to keep things close to home. Our doors are made right here in the Netherlands, shaped by makers who know their wood almost as well as their morning coffee. It's a mix of tradition, precision, and a little Dutch stubbornness that refuses to settle for "good enough." The result? Craft that feels local, but looks like it belongs anywhere in the world.</p>
                                     <div className='flex justify-center'>
                                         <BtnComponent text='Discover materials' />
                                     </div>
@@ -162,7 +237,7 @@ const AccessibleBeautiful = () => {
                                     <div className='w-full flex flex-col items-center text-center p-5'>
                                         <h3 ref={subheadingOneRef} className='text-3xl'>Are you a designer?</h3>
                                         <p className='mb-8'>Our team is ready to help you discover all the possibilities </p>
-                                        <Link to="/contact">
+                                        <Link to="/products/material">
                                             <BtnComponent text='Discover materials' />
                                         </Link>
                                     </div>
@@ -175,7 +250,7 @@ const AccessibleBeautiful = () => {
                                         <img src="/images/img4.png" alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full flex flex-col items-center text-center p-5'>
-                                        <h3 ref={subheadingtwoRef} className='text-3xl'>Are you a designer?</h3>
+                                        <h3 ref={subheadingtwoRef} className='text-3xl'>Need advice?</h3>
                                         <p className='mb-8'>Our team is ready to help you discover all the possibilities </p>
                                         <Link to="/contact">
                                             <BtnComponent text='Get in contact' />
