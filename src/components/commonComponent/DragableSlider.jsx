@@ -106,7 +106,6 @@ const DraggableSlider = () => {
 
   // =====handle clicked person details=========
   const grabPerson = (person) => {
-    console.log(person);
     nameRef.current.innerHTML = person.name;
     designetionRef.current.innerHTML = person.designastion;
     descriptionRef.current.innerHTML = person.description;
@@ -118,7 +117,9 @@ const DraggableSlider = () => {
       <section id="dragableAndClickableSlider">
         <div className="wrapper w-full h-fit p-5 flex gap-10  font-Poppins text-myColorOne">
           {/* =====person Details====== */}
-          <div className="details w-1/3 lg:1/4">
+          <div className="details w-1/3 lg:1/4 flex justify-center">
+
+          <div className="w-full max-w-xs">
             <h3
               ref={nameRef}
               className="text-3xl font-Montserrat font-semibold"
@@ -133,6 +134,8 @@ const DraggableSlider = () => {
               Consequuntur quidem hic libero dolorem. Incidunt molestiae
               recusandae veniam, tempora totam quo.
             </p>
+          </div>
+
           </div>
           {/* =========person slider====== */}
           <div className="w-2/3 lg:w-3/4 overflow-hidden">

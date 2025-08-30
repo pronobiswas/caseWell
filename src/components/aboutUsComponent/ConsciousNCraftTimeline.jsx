@@ -20,8 +20,8 @@ const ConsciousNCraftTimeline = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: card,
-            start: 'top top',
-            end: '+=200',
+            start: 'top 80',
+            end: '+=220',
             scrub: true,
             pin: true,
             pinSpacing: 0,

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 
@@ -15,6 +15,9 @@ const ContactUs = () => {
   const text2Ref = useRef();
 
   const formRef = useRef();
+  const thanksYouRef = useRef();
+  const [thankYouMessage, setThankYouMessage] = useState(true);
+  const [formData, setFormData] = useState({});
 
   useEffect(() => {
     const headingSplit = new SplitText(headingRef.current, {
@@ -65,23 +68,55 @@ const ContactUs = () => {
       duration: 1,
       ease: "power3.out",
     });
+
+
+    
+
+
   }, []);
 
+  // ====collect data ======
+  const handleInputChange = (e) => {
+  const { name, value } = e.target;
+  setFormData((prevData) => ({
+    ...prevData,
+    [name]: value,
+  }));
+};
+  // ======validate form ======
+  const validateForm = (data) => {
+    const { fullName, email, phone } = formData;
+    if (!fullName || !email || !phone) {
+      alert("All fields are required.");
+      return false;
+    }
+    return true;
+  };
+// ======send mail======
   const sendEmail = (e) => {
     e.preventDefault();
-    let formData = new FormData(formRef.current);
+    if (!validateForm(formData)) {
+      return;
+    }
 
     emailjs
       .sendForm("service_mw2tclf", "template_ntdsj6g", formRef.current, {
         publicKey: "zSJ4uoM7Xx-2HB2xZ",
       })
       .then(
-        () => {
+        (res) => {
           console.log("SUCCESS!");
           alert("Message sent successfully!");
+          if (res.status === 200) {
+            setThankYouMessage(true);
+            gsap.set(thanksYouRef.current, { autoAlpha: 1, y: 0, position: "fixed" });
+            setTimeout(() => {
+              setThankYouMessage(false);
+            }, 3000);
+          }
         },
-        (error) => {
-          console.log("FAILED...", error.text);
+        (err) => {
+          console.log("FAILED...", err.text);
           alert("Failed to send the message, please try again.");
         }
       );
@@ -125,6 +160,8 @@ const ContactUs = () => {
                       id="fullName"
                       name="fullName"
                       className="p-2"
+                      onInput={handleInputChange}
+                      required
                     />
                   </div>
                   <div className="w-full flex flex-col">
@@ -139,6 +176,8 @@ const ContactUs = () => {
                       id="email"
                       name="email"
                       className="p-2"
+                      onInput={handleInputChange}
+                      required
                     />
                   </div>
                   <div className="w-full flex flex-col">
@@ -153,6 +192,8 @@ const ContactUs = () => {
                       name="phone"
                       id="phone"
                       className="p-2"
+                      onInput={handleInputChange}
+                      required
                     />
                   </div>
                   <div className="w-full flex flex-col">
@@ -166,6 +207,7 @@ const ContactUs = () => {
                       name="contactReson"
                       id="contactReson"
                       className="p-2"
+                      onInput={handleInputChange}
                     >
                       <option value="I'm interested in the Trade Partner Program ">
                         I’d like a quote for a special custom door{" "}
@@ -186,7 +228,7 @@ const ContactUs = () => {
                     >
                       Consumer
                     </label>
-                    <select name="consumer" id="consumer" className="p-2">
+                    <select name="consumer" id="consumer" className="p-2" onInput={handleInputChange}>
                       <option value="Business">Business</option>
                       <option value="Private Customer">Private Customer</option>
                     </select>
@@ -201,6 +243,7 @@ const ContactUs = () => {
                     </label>
                     <textarea
                       name="messagetxt"
+                      onInput={handleInputChange}
                       id="messagetxt"
                       cols="75"
                       rows="5"
@@ -230,6 +273,20 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
+        {thankYouMessage && (
+          <div id="thankYouWrapper" className="w-full h-screen fixed top-0 left-0 z-40 inset-5 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="bg-white p-5 rounded shadow-md">
+              <h2 className="text-lg font-semibold">Thank You!</h2>
+              <p>Your message has been sent successfully.</p>
+              <button
+                onClick={() => setThankYouMessage(false)}
+                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

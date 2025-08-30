@@ -133,7 +133,7 @@ const Footer = () => {
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">
                   Zebrano
                 </h5>
-                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-geist [&>li]:cursor-pointer [&>li]:text-colorOne ">
+                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
                   <li className="navLinkItem w-fit relative">
                     <Link to="/inspiration">
                       <div className="gggg">
@@ -491,6 +491,12 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
+          </div>
+          {/* =====footer row three===== */}
+          <div className="w-full p-5">
+            <p className="text-myColorOne font-Poppins text-center">
+              © 2025 Zebrano Studio. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>

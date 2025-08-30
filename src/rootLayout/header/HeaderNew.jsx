@@ -506,7 +506,7 @@ const HeaderNew = () => {
                                                     </Link>
                                                     <Link to="/aboutus/services" >
                                                         <div className='linkItem '>
-                                                            <span>service</span>
+                                                            <span>Service</span>
                                                         </div>
                                                     </Link>
 
