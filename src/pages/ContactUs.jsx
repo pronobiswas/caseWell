@@ -6,19 +6,97 @@ import emailjs from "@emailjs/browser";
 
 import { FiArrowUpRight } from "react-icons/fi";
 import { use } from "react";
+import { FaRegCircleCheck } from "react-icons/fa6";
 
 gsap.registerPlugin(SplitText);
 
 const ContactUs = () => {
+ 
   const headingRef = useRef();
   const textRef = useRef();
   const text2Ref = useRef();
 
   const formRef = useRef();
   const thanksYouRef = useRef();
-  const [thankYouMessage, setThankYouMessage] = useState(true);
-  const [formData, setFormData] = useState({});
+  const mesegeBoxRef = useRef();
+  const [thankYouMessage, setThankYouMessage] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    contactReason: "",
+    consumer: "",
+    messagetxt: "",
+  });
 
+  // ====collect data ======
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  useEffect(() => {
+    gsap.from(mesegeBoxRef.current, {
+      opacity: 0.5,
+      y: -200,
+      duration: 1,
+      ease: "elastic.out(1,0.3)",
+    });
+  }, [thankYouMessage]);
+
+  // ======validate form ======
+  const validateForm = (formData) => {
+    const { fullName, email, phone, contactReason, consumer, messagetxt } = formData;
+    if (!fullName || !email || !phone || !contactReason || !consumer || !messagetxt) {
+      alert("All fields are required.");
+      return false;
+    }
+    return true;
+  };
+
+  // ======send mail======
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (!validateForm(formData)) {
+      return;
+    }
+    setThankYouMessage(true);
+    setTimeout(() => {
+      setThankYouMessage(false);
+    }, 3000);
+
+
+
+
+
+
+    return;
+    emailjs
+      .sendForm("service_mw2tclf", "template_ntdsj6g", formRef.current, {
+        publicKey: "zSJ4uoM7Xx-2HB2xZ",
+      })
+      .then(
+        (res) => {
+          console.log("SUCCESS!");
+          alert("Message sent successfully!");
+          if (res.status === 200) {
+            setThankYouMessage(true);
+            gsap.set(thanksYouRef.current, { autoAlpha: 1, y: 0, position: "fixed" });
+            setTimeout(() => {
+              setThankYouMessage(false);
+            }, 3000);
+          }
+        },
+        (err) => {
+          console.log("FAILED...", err.text);
+          alert("Failed to send the message, please try again.");
+        }
+      );
+  };
+  // ==========animation=========
   useEffect(() => {
     const headingSplit = new SplitText(headingRef.current, {
       type: "lines,words,chars",
@@ -70,57 +148,10 @@ const ContactUs = () => {
     });
 
 
-    
+
 
 
   }, []);
-
-  // ====collect data ======
-  const handleInputChange = (e) => {
-  const { name, value } = e.target;
-  setFormData((prevData) => ({
-    ...prevData,
-    [name]: value,
-  }));
-};
-  // ======validate form ======
-  const validateForm = (data) => {
-    const { fullName, email, phone } = formData;
-    if (!fullName || !email || !phone) {
-      alert("All fields are required.");
-      return false;
-    }
-    return true;
-  };
-// ======send mail======
-  const sendEmail = (e) => {
-    e.preventDefault();
-    if (!validateForm(formData)) {
-      return;
-    }
-
-    emailjs
-      .sendForm("service_mw2tclf", "template_ntdsj6g", formRef.current, {
-        publicKey: "zSJ4uoM7Xx-2HB2xZ",
-      })
-      .then(
-        (res) => {
-          console.log("SUCCESS!");
-          alert("Message sent successfully!");
-          if (res.status === 200) {
-            setThankYouMessage(true);
-            gsap.set(thanksYouRef.current, { autoAlpha: 1, y: 0, position: "fixed" });
-            setTimeout(() => {
-              setThankYouMessage(false);
-            }, 3000);
-          }
-        },
-        (err) => {
-          console.log("FAILED...", err.text);
-          alert("Failed to send the message, please try again.");
-        }
-      );
-  };
 
   return (
     <>
@@ -198,14 +229,14 @@ const ContactUs = () => {
                   </div>
                   <div className="w-full flex flex-col">
                     <label
-                      htmlFor="contactReson"
+                      htmlFor="contactReason"
                       className="text-sm mb-1 text-gray-500"
                     >
                       Contact reason
                     </label>
                     <select
-                      name="contactReson"
-                      id="contactReson"
+                      name="contactReason"
+                      id="contactReason"
                       className="p-2"
                       onInput={handleInputChange}
                     >
@@ -250,7 +281,7 @@ const ContactUs = () => {
                     ></textarea>
                   </div>
                   {/* ======submit===== */}
-                  <div className="flex justify-center pt-3">
+                  <div className="flex justify-center pt-3 relative">
                     <button
                       type="submit"
                       className="border border-gray-500 rounded-full w-fit h-fit flex items-center gap-2 py-2 px-3 group transition-all duration-500 ease-in-out cursor-pointer hover:bg-bgTwo"
@@ -267,6 +298,8 @@ const ContactUs = () => {
                         </div>
                       </div>
                     </button>
+                    
+
                   </div>
                 </div>
               </form>
@@ -274,13 +307,26 @@ const ContactUs = () => {
           </div>
         </div>
         {thankYouMessage && (
-          <div id="thankYouWrapper" className="w-full h-screen fixed top-0 left-0 z-40 inset-5 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-white p-5 rounded shadow-md">
-              <h2 className="text-lg font-semibold">Thank You!</h2>
-              <p>Your message has been sent successfully.</p>
+          <div id="thankYouWrapper" className="w-full h-screen fixed top-60 left-0 z-40  flex items-center justify-center bg-[#00000000]">
+            <div ref={mesegeBoxRef} className="bg-white p-5 rounded shadow-md ">
+              {/* ------ Thank You Message ------ */}
+              <div className="flex items-center gap-5">
+                <div className="w-20 h-20 rounded-full text-[80px] text-myColorOne">
+                  <FaRegCircleCheck />
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold">Thank You!</h2>
+                  <p>Your message has been sent successfully.</p>
+                </div>
+
+              </div>
+              {/* ------ Thank You Message ------ */}
+              <div className="py-5">
+                <p>We will reach out to you within 48 hours.</p>
+              </div>
               <button
                 onClick={() => setThankYouMessage(false)}
-                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hidden"
               >
                 Close
               </button>

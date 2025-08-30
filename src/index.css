@@ -199,6 +199,7 @@ html {
 } */
 .amimateDoorThree {
   animation: doorAnimThree 2s ease-in-out forwards;
+  color: red !important;
 }
 @keyframes doorAnimThree {
   0% {

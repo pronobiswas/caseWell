@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 const RootLayout = () => {
   useEffect(() => {
-    // Ensure smoother is only created once
     if (!ScrollSmoother.get()) {
       ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
@@ -29,7 +28,7 @@ const RootLayout = () => {
       <HeaderNew />
       <div id="smooth-wrapper" className="w-full h-full">
         <div id="smooth-content">
-          <Outlet />
+          <Outlet   />
           <Footer />
         </div>
       </div>

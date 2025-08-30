@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import BtnComponent from "./utils/BtnComponent";
 
 const Stalen = () => {
-  const StalenCard1 = useRef(null);
-  const StalenCard2 = useRef(null);
-  const StalenCard3 = useRef(null);
-  const dorOne = useRef(null);
-  const dorTwo = useRef(null);
-  const dorThree = useRef(null);
-  console.log(dorOne);
+  const StalenCard1 = useRef();
+  const StalenCard2 = useRef();
+  const StalenCard3 = useRef();
+  const dorOne = useRef();
+  const dorTwo = useRef();
+  const dorThree = useRef();
+ 
   useEffect(() => {
     const animateDoor = () => {
       if (dorOne.current) {
@@ -68,10 +68,7 @@ const Stalen = () => {
       StalenCard2.current.addEventListener("mouseenter", handleMouseEnter);
       StalenCard2.current.addEventListener("mouseleave", handleMouseLeave);
     }
-    if (StalenCard2.current) {
-      StalenCard2.current.addEventListener("mouseenter", handleMouseEnter);
-      StalenCard2.current.addEventListener("mouseleave", handleMouseLeave);
-    }
+    
     return () => {
       if (StalenCard2.current) {
         StalenCard2.current.removeEventListener("mouseenter", handleMouseEnter);
@@ -83,7 +80,7 @@ const Stalen = () => {
   useEffect(() => {
     const handleMouseEnter = () => {
       if (dorThree.current) {
-        dorThree.current.classList.add("amimateDoorThree"); // ensure correct class name
+        dorThree.current.classList.add("amimateDoorThree"); 
       }
     };
 
@@ -143,25 +140,25 @@ const Stalen = () => {
               >
                 {/* -------- */}
                 <div className="stalenanim w-full h-20 flex gap-0">
-                  <div className="w-1/4 h-8 bg-myColorTwo rounded-md"></div>
                   {/* block one */}
+                  <div className="w-1/4 h-8 bg-myColorTwo"></div>
                   <div className="w-2/4 p-3">
-                    <div className="doorAnim relative w-full h-2">
+                    <div className="doorAnim relative w-full h-2 ">
                       <div
                         ref={dorOne}
                         className="door w-[100%] h-1 bg-myColorTwo absolute top-0 left-0"
                       ></div>
-                      <div className="circle w-2 h-2 bg-myColorTwo rounded-full absolute top-[-2px] left-[-7px]"></div>
+                      <div className="circle w-2 h-2 bg-myColorTwo rounded-full absolute top-[-2px] left-[-5px]"></div>
                     </div>
                   </div>
-                  <div className="w-1/4 h-8 bg-myColorTwo rounded-md"></div>
                   {/* block two */}
+                  <div className="w-1/4 h-8 bg-myColorTwo"></div>
                 </div>
 
                 <div className=" w-full h-[calc(100%-80px)] flex flex-col justify-between ">
                   <div className="w-full h-auto">
                     <h3 className="text-2xl text-textLight font-Montserrat">
-                      Pivot Doors
+                       “Pivot Doors”
                     </h3>
                     <p className="w-full mt-5 mb-6 text-textLight font-Poppins">
                       Rotate on a vertical axis, allowing for larger, more
@@ -197,7 +194,7 @@ const Stalen = () => {
                 <div className="text w-full h-full flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl text-textLight  font-Montserrat">
-                      Slide Doors
+                      “Sliding Doors”
                     </h3>
                     <p className="w-full mt-5 mb-6 text-textLight font-Poppins">
                       Our custom sliding doors glide effortlessly along a track,
@@ -221,25 +218,25 @@ const Stalen = () => {
               >
                 {/* -------- */}
                 <div className="stalenanim w-full h-20 flex gap-0">
+                  <div className="w-1/4 h-8 bg-myColorTwo rounded-md"></div>
                   {/* block one */}
-                  <div className="w-1/4 h-8 bg-myColorTwo"></div>
                   <div className="w-2/4 p-3">
-                    <div className="doorAnim relative w-full h-2 ">
+                    <div className="doorAnim relative w-full h-2">
                       <div
                         ref={dorThree}
                         className="door w-[100%] h-1 bg-myColorTwo absolute top-0 left-0"
                       ></div>
-                      <div className="circle w-2 h-2 bg-myColorTwo rounded-full absolute top-[-2px] left-[-5px]"></div>
+                      <div className="circle w-2 h-2 bg-myColorTwo rounded-full absolute top-[-2px] left-[-7px]"></div>
                     </div>
                   </div>
+                  <div className="w-1/4 h-8 bg-myColorTwo rounded-md"></div>
                   {/* block two */}
-                  <div className="w-1/4 h-8 bg-myColorTwo"></div>
                 </div>
 
                 <div className="text w-full h-[calc(100%-80px)] flex  flex-col justify-between">
                   <div>
                     <h3 className="text-2xl text-textLight font-Montserrat">
-                      Classic Hinged Doors
+                      “Hinged Doors”
                     </h3>
                     <p className="w-full mt-5 mb-6 leading-6 text-textLight font-Poppins">
                       The classic door, swinging open and closed on side-mounted

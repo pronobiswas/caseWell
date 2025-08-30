@@ -95,7 +95,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
-                    <Link to="/">
+                    <Link to="/products/material">
                       <div className="gggg">
                         <div className="red w-fit ">Materials</div>
                         <div className="blue w-fit ">Materials</div>
@@ -151,7 +151,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
-                    <Link to="/">
+                    <Link to="/aboutus/ourStory">
                       <div className="gggg">
                         <div className="red w-fit ">Story</div>
                         <div className="blue w-fit ">Story</div>
@@ -159,7 +159,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
-                    <Link to="/">
+                    <Link to="/aboutus/theMakers">
                       <div className="gggg">
                         <div className="red w-fit ">Our team</div>
                         <div className="blue w-fit ">Our team</div>
@@ -191,7 +191,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
-                    <Link to="/">
+                    <Link to="/aboutus/services">
                       <div className="gggg">
                         <div className="red w-fit ">FAQ</div>
                         <div className="blue w-fit ">FAQ</div>

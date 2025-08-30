@@ -7,9 +7,9 @@ gsap.registerPlugin(SplitText);
 
 const ZebranoBanner = ({
   headingOne = "Making luxury",
-  headingTwo = "Accessible to ",
-  headingThree = "EveryOne",
-  zebranoText = "At Zebrano Studio,we believe great design should be within everyone's reach. From bespoke doors to fully itegrade wall features, our mission is to bring luxury craftsmanship and architectural beauty into every type of home - from city apartment to countryside villas.",
+  headingTwo = "accessible to ",
+  headingThree = "everyone",
+  zebranoText = "At Zebrano Studio,we believe great design should be within everyone's reach. From bespoke doors to fully integrade wall features, our mission is to bring luxury craftsmanship and architectural beauty into every type of home - from city apartment to countryside villas.",
   typeingComponnent = "true",
 }) => {
   const headingOneRef = useRef(null);

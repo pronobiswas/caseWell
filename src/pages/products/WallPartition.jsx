@@ -8,16 +8,16 @@ const WallPartition = () => {
     <>
       <ProductBanner
         url="/images/img1.png"
-        heading="Room Dividers – Custom Wall Partitions by Zebrano Studio)"
+        heading="“Room Dividers & Wall Partitions”"
         text="Our custom room dividers are designed to shape spaces without sacrificing light, flow, or style. Whether fixed, sliding, folding, or glass, each wall partition is crafted to match your doors and finishes for a unified, high-end look. Perfect for open-plan living, offices, or hospitality spaces, they add privacy, structure, and elegance — all tailor-made to your dimensions and interior vision.. "
       />
       <CommonDoorDescription
-        titleOne="What is a Room divide?"
-        titleTwo=" Why Choose Wall Partitions?"
+        titleOne='“What is a Room divider?”'
+        titleTwo=" Why Choose Room dividers?"
         headingOne="Style in Every Division"
         headingTwo="Flexible, Functional, Beautiful"
-        descriptionOne="Wall partitions are custom-built, non-load-bearing panels that define spaces while maintaining your design vision. Whether solid, glass, or mixed-material, they add structure without closing off light or flow"
-        descriptionTwo="Perfect for open-plan living, wall partitions offer privacy, sound control, and style — all while integrating perfectly with your existing finishes."
+        descriptionOne="Room dividers are custom-built, non-load-bearing panels that define spaces while maintaining your design vision. Whether solid, glass, or mixed-material, they add structure without closing off light or flow"
+        descriptionTwo="Perfect for open-plan living, room dividers offer privacy, sound control, and style — all while integrating perfectly with your existing finishes."
       />
       <CommonMetarialNDesign
         title1="Material Possibilities"

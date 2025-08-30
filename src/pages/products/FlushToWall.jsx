@@ -14,7 +14,7 @@ const FlushToWall = () => {
           titleOne="What is a Flush-to-Wall Door?"
           titleTwo=" Why Choose Flush-to-Wall?"
           headingOne="The Art of Disappearing"
-          headingTwo="Minimalism, Elevated"
+          headingTwo="Minimalism. Elevated"
           descriptionOne="Flush-to-wall doors, also called hidden or invisible doors, sit perfectly level with your wall — no visible frame, hinges, or trim. They blend seamlessly into your architecture for a clean, uninterrupted surface"
           descriptionTwo="These doors are ideal for interiors where design continuity is key. Whether painted to match the wall or finished as a bold statement, flush-to-wall doors keep the focus on the space, not the hardware."
         />

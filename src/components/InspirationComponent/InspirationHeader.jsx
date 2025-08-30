@@ -28,7 +28,7 @@ const InspirationHeader = () => {
       // Split subheading into lines (match heading)
       const subheadingSplitLine = new SplitText(subheadingRef.current, {
         type: "lines",
-        linesClass: "line overflow-hidden block",
+        linesClass: "line overflow-hidden block pb-1",
       });
       const subheadingSplitWord = new SplitText(subheadingRef.current, {
         type: "words",
@@ -61,11 +61,9 @@ const InspirationHeader = () => {
           <div className="subheading w-full md:w-2/3 lg:order-2">
             <h2
               ref={subheadingRef}
-              className="text-LightText text-3xl md:text-4xl font-Poppins font-semibold w-full relative overflow-hidden "
+              className="text-LightText text-3xl md:text-4xl font-Poppins font-normal w-full relative overflow-hidden "
             >
-              " Our Zebrano Studio doors are designed to elevate your space,
-              offering the bespoke luxury usually reserved for architectural
-              masterpieces. See how <b>we make exclusivity accessible.</b>"
+              Our Zebrano Studio doors are designed to elevate your space, offering the bespoke luxury usually reserved for architectural masterpieces. See how we make exclusivity accessible. 
             </h2>
           </div>
 

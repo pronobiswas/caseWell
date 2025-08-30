@@ -11,6 +11,9 @@ import BtnComponent from '../../components/homeComponents/utils/BtnComponent';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 const HeaderNew = () => {
+
+
+
     const location = useLocation();
 
 

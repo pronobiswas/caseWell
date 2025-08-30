@@ -92,7 +92,7 @@ const ConsciousNCraftTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">02</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl  font-semibold'>2. Respect for the Material</h4>
+                  <h4 className='text-2xl  font-semibold'>Respect for the Material</h4>
                   <p className='mt-5'>Each piece of wood is unique — its grain, its texture, its imperfections. We design around that individuality, not in spite of it. Instead of forcing uniformity, we let the material speak. This reduces waste and honors the beauty of natural variation. We don’t over-process. We don’t over-paint. We bring out what’s already there.</p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ const ConsciousNCraftTimeline = () => {
               <div className="indicator w-fit h-fit border border-violet-200 rounded-full py-5 px-1 bg-white z-10">03</div>
               <div className='textContiner w-full flex justify-center'>
                 <div className=' textbox w-full lg:w-3/4'>
-                  <h4 className='text-2xl  font-semibold'>3. Design with Longevity in Mind</h4>
+                  <h4 className='text-2xl  font-semibold'>Design with Longevity in Mind</h4>
                   <p className='mt-5'>Fast furniture and temporary design aren’t part of our philosophy. We create doors meant to last a lifetime — not just in function, but in relevance. Timeless design and high-quality craftsmanship mean fewer replacements, fewer resources wasted, and a lighter impact on the planet over time.</p>
                 </div>
               </div>
@@ -165,8 +165,8 @@ const ConsciousNCraftTimeline = () => {
           
 
         </div>
-        <div ref={bottomText} className='w-full md:w-3/4 h-full  p-5 md:p-12 lg:p-20'>
-          <p className='text-xl text-stone-600 font-bold md:text-3xl lg:text-4xl xl:text-5xl'>At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!</p>
+        <div ref={bottomText} className='w-full h-full  p-5 md:p-12 lg:p-20'>
+          <p className='text-center text-xl text-stone-600 font-Poppins md:text-3xl lg:text-4xl xl:text-5xl'>At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!</p>
         </div>
         <div className='w-full flex justify-center gap-10 py-8'>
           <BtnComponent text="Collection" bg="bgTwo"/>

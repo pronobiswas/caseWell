@@ -8,10 +8,17 @@ const SlideDoor = () => {
   return (
     <>
       <section>
-        <div className="wrapper w-full h-screen flex items-end bg-[url('/images/slideDoor.jpg')] bg-cover p-5 md:p-12">
+        <div
+          style={{
+            background: "linear-gradient(rgba(47, 58, 42, 0), rgba(47, 58, 42, 0.5)), url('/images/slideDoor.jpg')",
+            backgroundSize: "100% 100%",
+            backgroundSize: "100% 100%",
+            backgroundPosition: "center",
+          }}
+          className="wrapper w-full h-screen flex items-end bg-[] bg-cover p-5 md:p-12">
           <div className="flex flex-col gap-5">
             <ButtomHeading
-              heading="Slide Door"
+              heading='“Sliding Door”'
               paragraph1="A slide door operates by gliding horizontally along a track, offering a space-saving and modern solution for both interior and exterior openings."
               color="#1544B2"
             />

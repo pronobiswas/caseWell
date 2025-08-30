@@ -20,7 +20,7 @@ const ButtomHeading = ({
       // Split heading into lines
       const headingSplit = new SplitText(headingRef.current, {
         type: "lines",
-        linesClass: "line overflow-hidden block",
+        linesClass: "line overflow-hidden block pb-2",
       });
 
       gsap.from(headingSplit.lines, {

@@ -118,7 +118,9 @@ const CommonMetarialNDesign = ({
                 {heading1}
               </h3>
               <p className="pivotDesc text-textLight">{desc1}</p>
-              <BtnComponent text="View Materials" />
+              <Link to="/products/material">
+                <BtnComponent text="View Materials" />
+              </Link>
             </div>
           </div>
           <div className="w-1/2 h-full">
@@ -149,7 +151,9 @@ const CommonMetarialNDesign = ({
                 {heading2}
               </h3>
               <p className="pivotDesc text-textLight">{desc2}</p>
-              <BtnComponent text="See Hardware Options" />
+              <Link to="/products/material">
+                <BtnComponent text="See Hardware Options" />
+              </Link>
             </div>
           </div>
         </div>
@@ -162,7 +166,7 @@ const CommonMetarialNDesign = ({
                 {heading3}
               </h3>
               <p className="pivotDesc text-textLight">{desc3}</p>
-              <Link to="/contact">
+              <Link to="/products/material">
                 <BtnComponent text="View Materials" />
               </Link>
             </div>

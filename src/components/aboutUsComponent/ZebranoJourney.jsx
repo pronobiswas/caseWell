@@ -83,7 +83,7 @@ const ZebranoJourney = () => {
           <div className="w-full md:w-1/2">
             <div>
               <p ref={headingOneRef} className="text-xl">
-                Fronm One Door to Endless Possibilities
+                From one door to endless possibilities
               </p>
               <h2
                 ref={headingTwoRef}

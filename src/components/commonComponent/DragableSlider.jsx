@@ -14,47 +14,46 @@ const DraggableSlider = () => {
   const descriptionRef = useRef(null);
   const facesArray = [
     {
-      name: "Mathijs",
-      designastion: "Owner and woodworker",
+      name: "Robbert ",
+      designastion: "  – Interim Finance ",
       description:
-        "Necessitatibus illo, ipsam laboriosam ex voluptates beatae reprehenderit, quisquam fugiat consectetur voluptate aliquam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "Coming from a finance consulting background with an dose of creativity, Robbert decided to combine his talents to help Zebrano grow. As one of the brothers who started the Zebrano journey, he bridges strategy and design, ensuring every business decision aligns with our creative visi",
       image: "/images/img1.png",
     },
     {
-      name: "Robbert",
-      designastion: "Designer",
-      description:
-        "Consequatur, esse iure eum velit porro libero voluptatum. Cum, necessitatibus illo, ipsam laboriosam ex voluptates beatae reprehenderit, quisquam fugiat consectetur voluptate aliquam dignissimos!",
+      name: "Mathijs  ",
+      designastion: "– Owner & Woodworker ",
+      description:'With more than 15 years of experience in construction management and large-scale projects, Mathijs built a reputation for precision and leadership. From a young age, his passion for woodworking was evident, and over time he transitioned from running a midsize construction company to founding Zebrano Studio — where craftsmanship meets luxury design. Quote: “From wood grains to grand designs — every detail tells a story.” ',
       image: "/images/img2.png",
     },
     {
-      name: "Rick",
-      designastion: "Woodworker",
+      name: "Rick ",
+      designastion: " – Wood Specialist ",
       description:
-        "Cum, necessitatibus illo, ipsam laboriosam ex voluptates beatae reprehenderit, quisquam fugiat consectetur voluptate aliquam dignissimos! Consequatur, esse iure eum velit porro libero voluptatum.",
+        "Rick is our true specialist in wood. Trained in carpentry and woodworking, he knows every detail about the craft — from selecting the right species to cutting with millimeter precision. His deep knowledge ensures that each Zebrano piece is not only beautiful, but technically flawless.",
       image: "/images/img3.png",
     },
     {
-      name: "Mathijs",
-      designastion: "Owner and woodworker",
+      name: "Dave ",
+      designastion: " – Marketing & Sales",
       description:
-        "Voluptate aliquam dignissimos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ex voluptates beatae reprehenderit.",
+        "Dave brings a creative commercial edge to Zebrano Studio. With experience in brand storytelling and customer relations, he ensures that our vision reaches both homeowners and architects. He is the link between our workshop and the world, making sure every client feels guided and inspired throughout the process.",
+      image: "/images/img1.png",
+    },
+    {
+      name: "Peter  ",
+      designastion: "– Woodworker ",
+      description:'Peter represents the heart of our workshop. Skilled in both modern techniques and traditional joinery, he brings an artisan’s patience and precision to every door. Known for his steady hands and meticulous eye, Peter ensures that every piece leaving the studio carries the Zebrano standard.',
       image: "/images/img4.png",
     },
     {
-      name: "Robbert",
-      designastion: "Designer",
+      name: "Rick ",
+      designastion: " – Wood Specialist ",
       description:
-        "Velit porro libero voluptatum. Cum, necessitatibus illo, ipsam laboriosam ex voluptates beatae reprehenderit, quisquam fugiat consectetur voluptate aliquam dignissimos!",
-      image: "/images/img2.png",
-    },
-    {
-      name: "Rick",
-      designastion: "Woodworker",
-      description:
-        "Necessitatibus illo, ipsam laboriosam ex voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, esse iure eum velit porro libero voluptatum.",
+        "Rick is our true specialist in wood. Trained in carpentry and woodworking, he knows every detail about the craft — from selecting the right species to cutting with millimeter precision. His deep knowledge ensures that each Zebrano piece is not only beautiful, but technically flawless.",
       image: "/images/img3.png",
     },
+    
   ];
 
   useEffect(() => {
