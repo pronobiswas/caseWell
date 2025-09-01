@@ -108,7 +108,9 @@ const SlideMeterialAndDesign = () => {
                 oak, our luxury sliding doors are a blank canvas for your
                 vision.
               </p>
-              <BtnComponent text="View Materials" />
+              <Link to="/products/material">
+                <BtnComponent text="View Materials" />
+              </Link>
             </div>
           </div>
           <div className="w-1/2 h-full">
@@ -142,7 +144,9 @@ const SlideMeterialAndDesign = () => {
                 Premium tracks and concealed runners ensure your sliding door
                 moves effortlessly and quietly, with lasting durability.
               </p>
-              <BtnComponent text="See Hardware Options" />
+              <Link to="/configurator">
+                <BtnComponent text="See Hardware Options" />
+              </Link>
             </div>
           </div>
         </div>

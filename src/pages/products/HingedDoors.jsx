@@ -7,6 +7,7 @@ import ButtomHeading from "../../components/commonComponent/ButtomHeading";
 import BtnComponent from "../../components/homeComponents/utils/BtnComponent";
 import HingedDoorDescription from "../../components/cabinetryComponent/HingedDoorDescription";
 import HingedMeterialAndDesign from "../../components/cabinetryComponent/HingedMeterialAndDesign";
+import { Link } from "react-router-dom";
 
 const HingedDoors = () => {
   const HingedBanner = useRef(null);
@@ -24,7 +25,9 @@ const HingedDoors = () => {
               paragraph1="A hinged door is a traditional door style mounted on side hinges, swinging open and closed to provide easy and reliable access."
               color="white"
             />
-            <BtnComponent text="Configure Now" />
+            <Link to="/configurator">
+              <BtnComponent text="Configure Now" />
+            </Link>
           </div>
           <div className="w-1/2 ">
             <span>

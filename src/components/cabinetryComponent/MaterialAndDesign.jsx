@@ -110,7 +110,7 @@ const MaterialAndDesign = () => {
               imagine. Each one is built with precision to match your style,
               material preferences, and architectural vision.
             </p>
-            <BtnComponent text="View Materials" />
+            <Link to="/products/material"><BtnComponent text="View Materials" /></Link>
           </div>
         </div>
         <div className="w-1/2 h-full">
@@ -145,7 +145,7 @@ const MaterialAndDesign = () => {
               and soft-closing systems — so all you see is clean, uninterrupted
               design in every custom pivot door
             </p>
-            <BtnComponent text="See Hardware Options" />
+            <Link to="/configurator"><BtnComponent text="See Hardware Options" /></Link>
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@ const MaterialAndDesign = () => {
               integrated shelving for seamless architectural integration
               throughout your interior.
             </p>
-            <Link to="/contact">
+            <Link to="/configurator">
               <BtnComponent text="View Materials" />
             </Link>
           </div>

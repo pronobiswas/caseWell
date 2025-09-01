@@ -8,7 +8,9 @@ import { CiGlobe } from 'react-icons/ci';
 import { MdArrowOutward, MdOutlineArrowForward, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import ZebranoPreLoader from '../ZebranoPreLoader';
 import BtnComponent from '../../components/homeComponents/utils/BtnComponent';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong, FaPinterest } from 'react-icons/fa6';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { TfiAngleRight } from 'react-icons/tfi';
 
 const HeaderNew = () => {
 
@@ -202,13 +204,6 @@ const HeaderNew = () => {
     const handleDu = () => {
         setLanguse('Du')
     };
-
-
-
-
-// ***************draft***************
-// {`w-full  fixed top-0 left-0 z-50 ${isDeepGreen ? "bg-colorOne " : "bg-bgTwo"}`}
-// {`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 || isBlack3 || isBlack4 ? 'text-colorOne' : 'text-white'}`}
 
 
     return (
@@ -559,13 +554,15 @@ const HeaderNew = () => {
                                 </div>
                             </div>
 
-                            <div className="configaretor w-fit h-fit py-2 px-3 flex items-center gap-2 border bg-white text-colorOne hover:bg-colorOne hover:text-white group  cursor-pointer rounded-full z-30">
-                                <span>Configure Now</span>
-                                <div className='w-5 h-5  relative overflow-hidden'>
-                                    <span className='text-xl  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward /> </span>
-                                    <span className='text-xl absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward /> </span>
+                            <Link to="/configurator">
+                                <div className="configaretor w-fit h-fit py-2 px-3 flex items-center gap-2 border bg-white text-colorOne hover:bg-colorOne hover:text-white group  cursor-pointer rounded-full z-30">
+                                    <span>Configure Now</span>
+                                    <div className='w-5 h-5  relative overflow-hidden'>
+                                        <span className='text-xl  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward /> </span>
+                                        <span className='text-xl absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward /> </span>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </nav>
@@ -665,89 +662,159 @@ const HeaderNew = () => {
 
 
                         <div ref={dropdownRef} className="absolute top-[70px] right-0 w-60 h-[calc(100vh-60px)]  overflow-hidden opacity-0 ">
-                            <div className='w-full h-full bg-[#00000083] backdrop-blur-sm flex justify-center items-center '>
-                                <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white '>
+                            <div className='hidden'>
+                                <div className='w-full h-full bg-[#00000083] backdrop-blur-sm flex justify-center items-center '>
+                                    <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white'>
 
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/products" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Products
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/products" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Products
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Products
+                                                    </div>
                                                 </div>
-                                                <div className='blue w-fit '>
-                                                    Products
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/collection" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Collection
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Collection
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/collection" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Collection
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/inspiration" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Inspiration
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Inspiration
+                                                    </div>
                                                 </div>
-                                                <div className='blue w-fit '>
-                                                    Collection
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/architects" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Architects
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Architects
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/inspiration" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Inspiration
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/aboutus" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        About Us
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        About Us
+                                                    </div>
                                                 </div>
-                                                <div className='blue w-fit '>
-                                                    Inspiration
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/contact" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Contact
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Contact
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/architects" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Architects
-                                                </div>
-                                                <div className='blue w-fit '>
-                                                    Architects
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/aboutus" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    About Us
-                                                </div>
-                                                <div className='blue w-fit '>
-                                                    About Us
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/contact" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Contact
-                                                </div>
-                                                <div className='blue w-fit '>
-                                                    Contact
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </li>
+                                            </Link>
+                                        </li>
 
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
+                            {/* ===menu new=== */}
+                            <div className='w-full h-fit min-h-screen bg-[#f2f0eaa4] backdrop-blur-sm'>
+                                <div className='w-full h-fit'>
+
+                                    <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorTwo [&>li:hover]:bg-myColorTwo'>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <Link to="/products"><span>Products</span></Link>
+                                                <span><TfiAngleRight /></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <Link to="/collection"><span>Collection</span></Link>
+                                                <span><TfiAngleRight /></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <Link to="/inspiration"><span>Inspiration</span></Link>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <Link to="/inspiration"><span>Inspiration</span></Link>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <Link to="/architects"><span>Architects</span></Link>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <Link to="/zebrano"><span>Zebrano</span></Link>
+                                                <span><TfiAngleRight /></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <Link to="/contact"><span>Contact</span></Link>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    {/* =====mobile menu footer===== */}
+                                    <div className='w-full h-fit p-5'>
+                                        
+                                        <div className="flex gap-5 text-4xl text-white py-5">
+                                            <a
+                                                href="http://pinterest.com/zebranostudio"
+                                                title="http://pinterest.com/zebranostudio"
+                                            >
+                                                <FaPinterest />
+                                            </a>
+                                            <a
+                                                href="http://instagram.com/zebrano.studio"
+                                                title="http://instagram.com/zebrano.studio"
+                                            >
+                                                <FaInstagramSquare />
+                                            </a>
+                                        </div>
+                                        <h3 className='text-3xl text-white font-semibold'>Zebrano Studio</h3>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </nav>
             </header>
-            <div>
+
+            {/* =====pre loader===== */}
+            <div className='w-full  fixed top-0 left-0 z-50 bg-bgOne'>
                 {
                     loading ?
                         ""

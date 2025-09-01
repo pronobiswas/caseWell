@@ -5,13 +5,13 @@ const TermsAndConditions = () => {
     <>
       <section id="termsAndCondition" className="w-full h-full bg-myColorTwo">
         <div className="tremsWrapper w-full h-full py-20 px-5 lg:px-12">
-          <div className="container text-DarkText [&_h2]:text-3xl [&_h2]:mb-5 [&_ul]:list-disc [&_ul]:list-inside [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-5 [&_ul]:mb-5 [&_ul]:mt-5 [&_ul]:p-5 text-[14px]">
+          <div className="container text-DarkText text-base font-Poppins [&_h2]:text-3xl [&_h2]:mb-5 [&_h3]:text-xl [&_h3]:mb-1 [&_h3]:mt-3 [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-5 [&_ul]:mb-5 [&_ul]:mt-5 [&_ul]:p-5 text-[16px]">
             <div className="w-full h-full max-w-5xl mx-auto">
               {/* -------heading------ */}
               <div className="w-full pb-8">
-                <h1 className="text-4xl text-DarkText py-4">
+                <h2 className="text-5xl text-DarkText py-4">
                   Designed to fit. Terms that do, too.
-                </h1>
+                </h2>
                 <p className="text-base">
                   Here you’ll find the essentials: how we plan, when we deliver,
                   what we guarantee, and how to keep your Zebrano piece flawless
@@ -27,8 +27,8 @@ const TermsAndConditions = () => {
                 </p>
                 {/* ----1.1--- */}
                 <div className="articel">
-                  <h3>1. Zebrano Studio:</h3>
-                  <p>
+                  <h3>Zebrano Studio:</h3>
+                  <p className="pl-5">
                     the private limited company Zebrano Studio, with its
                     registered office in the Netherlands email
                     info@zebranostudio.com.
@@ -36,8 +36,8 @@ const TermsAndConditions = () => {
                 </div>
                 {/* -----1.2---- */}
                 <div className="articel">
-                  <h3>2. Customer: </h3>
-                  <p>
+                  <h3>Customer: </h3>
+                  <p className="pl-5">
                     {" "}
                     he party who enters into, intends to enter into, or for whom
                     Zebrano Studio makes an offer or performs a delivery or
@@ -46,7 +46,7 @@ const TermsAndConditions = () => {
                   {/* ---1.2.1--- */}
                   <div className="articel">
                     <h3>Business Customer: </h3>
-                    <p>
+                    <p className="pl-5">
                       {" "}
                       the customer acting in the course of a profession or
                       business.
@@ -55,7 +55,7 @@ const TermsAndConditions = () => {
                   {/* ---1.2.2--- */}
                   <div className="articel">
                     <h3>Consumer: </h3>
-                    <p>
+                    <p className="pl-5">
                       {" "}
                       the customer not acting in the course of a profession or
                       business.
@@ -65,7 +65,7 @@ const TermsAndConditions = () => {
                 {/* ------1.3------ */}
                 <div className="article">
                   <h3>Custom-Made Goods:</h3>
-                  <p>
+                  <p className="pl-5">
                     {" "}
                     products made according to the customer’s specifications,
                     not prefabricated, produced based on the customer’s chosen
@@ -75,7 +75,7 @@ const TermsAndConditions = () => {
                 </div>
               </div>
               {/* =========article2====== */}
-              <article>
+              <article className="mt-5">
                 <h2>Applicability </h2>
                 <ul>
                   <li>
@@ -100,7 +100,7 @@ const TermsAndConditions = () => {
               </article>
               {/* ====article3==== */}
               <article>
-                <h3> Offer / Quotation </h3>
+                <h2> Offer / Quotation </h2>
                 <ul>
                   <li>
                     1. Offers and quotations from Zebrano Studio are without
@@ -117,7 +117,7 @@ const TermsAndConditions = () => {
               </article>
               {/* ====article4==== */}
               <article>
-                <h3> The Agreement </h3>
+                <h2> The Agreement </h2>
                 <ul>
                   <li>
                     he agreement is concluded when the customer accepts Zebrano
@@ -209,9 +209,9 @@ const TermsAndConditions = () => {
                 </ul>
               </article>
               {/* =====article6====== */}
-              <article>
+              <article className="pb-7">
                 <h2>Intellectual Property </h2>
-                <p>
+                <p className="pl-5">
                   1. Unless agreed otherwise in writing, Zebrano Studio retains
                   the copyrights and all intellectual property rights to offers
                   made, and to designs, images, drawings, (prototype) models,
@@ -588,10 +588,9 @@ const TermsAndConditions = () => {
               </article>
               {/* =====article15===== */}
               <article>
-                <h2> Toepasselijk recht</h2>
+                <h2> Applicable law</h2>
                 <p>
-                  Alle overeenkomsten waarop deze voorwaarden van toepassing
-                  zijn verklaard, zijn onderworpen aan Nederlands recht.
+                  “All agreements to which these terms and conditions apply are subject to Dutch law.”
                 </p>
               </article>
             </div>

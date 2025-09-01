@@ -75,7 +75,7 @@ const InspirationInsight = () => {
           <div className="w-full h-full">
             {/* =====inspiration slider header=== */}
             <div className="w-full flex justify-end">
-              <div className="w-fit h-fit bg-myColorThree py-1 px-3 rounded-full flex items-center gap-2">
+              <div className=" bg-myColorThree py-1 px-3 rounded-full flex items-center gap-2">
                 <span onClick={handleDecrement}>
                   <FaArrowLeft />
                 </span>
@@ -86,12 +86,12 @@ const InspirationInsight = () => {
               </div>
             </div>
             {/* =======inspiration slider=========== */}
-            <div className="w-full h-full  my-5 overflow-hidden">
+            <div className="w-fit h-full  my-5 overflow-hidden">
               <div className="inspirationSliderWrapper box-border">
                 {/* ====slidesContainer=== */}
                 <div
                   ref={slideRef}
-                  className="box-border overflow-hidden w-full h-full py-5 flex gap-10 flex-nowrap [&>div]:shrink-0 relative left-[70%]"
+                  className="box-border w-full h-full py-5 flex gap-10 flex-nowrap [&>div]:shrink-0 relative left-[70%]"
                 >
                   <div className="slideItem w-fit h-fit ">
                     <img

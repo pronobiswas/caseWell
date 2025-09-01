@@ -109,7 +109,9 @@ const HingedMeterialAndDesign = () => {
                 inserts — our high-end hinged doors can be tailored to perfectly
                 match your interior style and palette.
               </p>
-              <BtnComponent text="View Materials" />
+              <Link to="/products/material">
+                <BtnComponent text="View Materials" />
+              </Link>
             </div>
           </div>
           <div className="w-1/2 h-full">
@@ -144,7 +146,9 @@ const HingedMeterialAndDesign = () => {
                 choose hardware that elevates the look and feel of your custom
                 hinged door.
               </p>
-              <BtnComponent text="See Hardware Options" />
+              <Link to="/configurator">
+                <BtnComponent text="See Hardware Options" />
+              </Link>
             </div>
           </div>
         </div>

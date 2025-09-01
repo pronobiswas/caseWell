@@ -76,7 +76,9 @@ const Footer = () => {
               <h2 className="text-6xl font-Montserrat font-bold mb-8 text-myColorOne">
                 Luxury doors,<br></br> made accessible.
               </h2>
-              <BtnComponent text="See our collection" />
+              <Link to="/collection">
+                <BtnComponent text="See our collection" />
+              </Link>
             </div>
             {/* -----w-1/2-------- */}
             <div className="w-1/2 flex gap-6 justify-between">
