@@ -95,8 +95,8 @@ const SlideMeterialAndDesign = () => {
   return (
     <>
       <section ref={secRef}>
-        <div className="wrapper w-full h-[560px] bg-colorOne text-white font-Poppins flex gap-10 p-5">
-          <div className="w-1/2 h-full">
+        <div className="wrapper w-full h-full md:h-[560px] bg-colorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
+          <div className="w-full md:w-1/2 h-full order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
               <span className="slideTitle">Material Variety</span>
               <h3 className="slideDescHeading text-4xl font-Montserrat">
@@ -113,7 +113,7 @@ const SlideMeterialAndDesign = () => {
               </Link>
             </div>
           </div>
-          <div className="w-1/2 h-full">
+          <div className="w-full md:w-1/2 h-full order-1 md:order-2">
             <div className="w-full h-full relative overflow-hidden">
               <img
                 src="/images/slideTransparent.jpg"
@@ -124,8 +124,8 @@ const SlideMeterialAndDesign = () => {
           </div>
         </div>
 
-        <div className="wrapper w-full h-[560px] bg-myColorOne text-LightText flex gap-10 p-5">
-          <div className="w-1/2 h-full">
+        <div className="wrapper w-full h-full md:h-[560px] bg-myColorOne text-LightText flex flex-col md:flex-row gap-10 p-5">
+          <div className="w-full md:w-1/2 h-full ">
             <div className="w-full h-full relative overflow-hidden">
               <img
                 src="/images/slideWodden.jpg"
@@ -134,7 +134,7 @@ const SlideMeterialAndDesign = () => {
               />
             </div>
           </div>
-          <div className="w-1/2 h-full">
+          <div className="w-full md:w-1/2 h-full ">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center font-Poppins">
               <span className="slideTitle">Hardware Precision</span>
               <h3 className="slideDescHeading text-4xl font-Montserrat">
@@ -151,8 +151,8 @@ const SlideMeterialAndDesign = () => {
           </div>
         </div>
 
-        <div className="wrapper w-full h-[560px] bg-myColorOne text-LightText font-Poppins flex gap-10 p-5">
-          <div className="w-1/2 h-full">
+        <div className="wrapper w-full h-full md:h-[560px] bg-myColorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
+          <div className="w-full md:w-1/2 h-full  order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
               <span className="slideTitle">Design Integration</span>
               <h3 className="slideDescHeading text-4xl font-Montserrat">
@@ -167,7 +167,7 @@ const SlideMeterialAndDesign = () => {
               </Link>
             </div>
           </div>
-          <div className="w-1/2 h-full">
+          <div className="w-full md:w-1/2 h-full order-1 md:order-2">
             <div className="w-full h-full relative overflow-hidden">
               <img
                 src="/images/pivotdoors1.jpg"

@@ -68,20 +68,22 @@ const Footer = () => {
         id="footer"
         className="w-full h-full p-4 bg-bgOne"
       >
-        <div className="footerWrapper pt-12 pb-0 px-12 rounded-[50px] bg-bgTwo text-white">
+        <div className="footerWrapper pt-12 pb-0 px-5 md:px-12 rounded-[50px] bg-myColorThree">
           {/* ======footer row one===== */}
           <div className="footerRow w-full flex flex-col md:flex-row justify-between gap-8">
             {/* ----w-1/2----- */}
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <h2 className="text-6xl font-Montserrat font-bold mb-8 text-myColorOne">
                 Luxury doors,<br></br> made accessible.
               </h2>
-              <Link to="/collection">
-                <BtnComponent text="See our collection" />
-              </Link>
+              <div className="w-full">
+                <Link to="/collection" className="w-full bg-black">
+                  <BtnComponent text="See our collection" />
+                </Link>
+              </div>
             </div>
             {/* -----w-1/2-------- */}
-            <div className="w-1/2 flex gap-6 justify-between">
+            <div className="w-full md:w-1/2 flex flex-wrap md:flex-nowrap gap-6 justify-between">
               {/* ---products--- */}
               <div className="">
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">

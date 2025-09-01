@@ -33,7 +33,7 @@ const ArchitectsBanner = () => {
         id="architects"
         className='w-full h-screen bg-[url("/images/architecBanner.jpg")] bg-cover font-Poppins'
       >
-        <div className="architectsWrapper w-full h-full flex items-end p-12 text-white">
+        <div className="architectsWrapper w-full h-full flex items-end p-5 md:p-12 text-white">
           <div className="architectsContent">
             <h2
               ref={bannerHeadingRef}

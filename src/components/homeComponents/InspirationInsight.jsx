@@ -72,7 +72,7 @@ const InspirationInsight = () => {
             </p>
           </div>
           {/* ======inspirationSliderWrapper===== */}
-          <div className="w-full h-full">
+          <div className="w-full h-full overflow-hidden">
             {/* =====inspiration slider header=== */}
             <div className="w-full flex justify-end">
               <div className=" bg-myColorThree py-1 px-3 rounded-full flex items-center gap-2">
