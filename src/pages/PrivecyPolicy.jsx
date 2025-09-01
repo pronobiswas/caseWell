@@ -31,7 +31,7 @@ const PrivecyPolicy = () => {
             </div>
             {/* ====1 who we are==== */}
             <div className="w-full flex flex-col gap-2 py-5">
-              <h2 className="text-3xl font-Montserrat font-semibold">
+              <h2 className="text-3xl font-Montserrat ">
                 Who We Are (Data Controller)
               </h2>
               <p className="ml-5">

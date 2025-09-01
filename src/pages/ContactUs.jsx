@@ -153,8 +153,8 @@ const ContactUs = () => {
       strokeDashoffset: pathLength,
     });
     const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
-    tl.to(circle, { strokeDashoffset: 0, duration: 1.2 })
-      .to(path, { strokeDashoffset: 0, duration: 0.8 }, "-=0.6");
+    tl.to(circle, { strokeDashoffset: 0, duration: 1.2, delay: 0.5 })
+      .to(path, { strokeDashoffset: 0, duration: 0.8 }, "+=0.1");
     
   }, [thankYouMessage]);
 

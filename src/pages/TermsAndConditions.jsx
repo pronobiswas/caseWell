@@ -5,11 +5,11 @@ const TermsAndConditions = () => {
     <>
       <section id="termsAndCondition" className="w-full h-full bg-myColorTwo">
         <div className="tremsWrapper w-full h-full py-20 px-5 lg:px-12">
-          <div className="container text-DarkText text-base font-Poppins [&_h2]:text-3xl [&_h2]:mb-5 [&_h3]:text-xl [&_h3]:mb-1 [&_h3]:mt-3 [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-5 [&_ul]:mb-5 [&_ul]:mt-5 [&_ul]:p-5 text-[16px]">
+          <div className="container text-DarkText text-base font-Poppins [&_h2]:text-4xl [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-5  [&_ul]:p-5">
             <div className="w-full h-full max-w-5xl mx-auto">
               {/* -------heading------ */}
-              <div className="w-full pb-8">
-                <h2 className="text-5xl text-DarkText py-4">
+              <div className="w-full pb-8 pt-8">
+                <h2 className="text-5xl font-Montserrat text-DarkText pb-5">
                   Designed to fit. Terms that do, too.
                 </h2>
                 <p className="text-base">
@@ -19,14 +19,14 @@ const TermsAndConditions = () => {
                 </p>
               </div>
               {/* ======article one===1===== */}
-              <div className="articel1">
-                <h2>Definitions </h2>
+              <div className="articel1 w-full flex flex-col">
+                <h2 className="mb-3">Definitions </h2>
                 <p>
                   In these terms and conditions, the following definitions
                   apply:{" "}
                 </p>
                 {/* ----1.1--- */}
-                <div className="articel">
+                <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
                   <h3>Zebrano Studio:</h3>
                   <p className="pl-5">
                     the private limited company Zebrano Studio, with its
@@ -35,7 +35,7 @@ const TermsAndConditions = () => {
                   </p>
                 </div>
                 {/* -----1.2---- */}
-                <div className="articel">
+                <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
                   <h3>Customer: </h3>
                   <p className="pl-5">
                     {" "}
@@ -44,7 +44,7 @@ const TermsAndConditions = () => {
                     service.
                   </p>
                   {/* ---1.2.1--- */}
-                  <div className="articel">
+                  <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
                     <h3>Business Customer: </h3>
                     <p className="pl-5">
                       {" "}
@@ -53,7 +53,7 @@ const TermsAndConditions = () => {
                     </p>
                   </div>
                   {/* ---1.2.2--- */}
-                  <div className="articel">
+                  <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
                     <h3>Consumer: </h3>
                     <p className="pl-5">
                       {" "}
