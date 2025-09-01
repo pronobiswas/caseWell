@@ -91,7 +91,7 @@ const ZebranoPreLoader = () => {
       morphSVG: { shape: pathTwoD }
     });
 
-    tl.to(svgOne.current, { x: 350, duration: 1.3 });
+    tl.to(svgOne.current, { x: 360, duration: 1.3 });
     tl.to(pathThree.current, { x: 10, duration: 2 }, "-2");
     tl.to(pathfour.current, { x: 10, duration: 2 }, "-2");
 
