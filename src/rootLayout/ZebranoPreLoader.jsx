@@ -91,7 +91,7 @@ const ZebranoPreLoader = () => {
       morphSVG: { shape: pathTwoD }
     });
 
-    tl.from(svgOne.current, { x: 350, duration: 1.3 });
+    tl.to(svgOne.current, { x: 350, duration: 1.3 });
     tl.to(pathThree.current, { x: 10, duration: 2 }, "-2");
     tl.to(pathfour.current, { x: 10, duration: 2 }, "-2");
 
@@ -128,7 +128,7 @@ const ZebranoPreLoader = () => {
           <div className="wrapper w-full">
 
 
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center gap-5">
               
                 <svg ref={svgOne} width="61" height="76" viewBox="0 0 51 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path ref={pathOne} d="M18 10.534L45 7V59L18 54.4563V10.534Z" fill="white" />
