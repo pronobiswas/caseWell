@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 import emailjs from "@emailjs/browser";
 
@@ -9,9 +10,10 @@ import { use } from "react";
 import { FaRegCircleCheck } from "react-icons/fa6";
 
 gsap.registerPlugin(SplitText);
+gsap.registerPlugin(DrawSVGPlugin);
 
 const ContactUs = () => {
- 
+
   const headingRef = useRef();
   const textRef = useRef();
   const text2Ref = useRef();
@@ -19,6 +21,7 @@ const ContactUs = () => {
   const formRef = useRef();
   const thanksYouRef = useRef();
   const mesegeBoxRef = useRef();
+  const checkSvgRef = useRef();
   const [thankYouMessage, setThankYouMessage] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
@@ -38,14 +41,7 @@ const ContactUs = () => {
     }));
   };
 
-  useEffect(() => {
-    gsap.from(mesegeBoxRef.current, {
-      opacity: 0.5,
-      y: -200,
-      duration: 1,
-      ease: "elastic.out(1,0.3)",
-    });
-  }, [thankYouMessage]);
+
 
   // ======validate form ======
   const validateForm = (formData) => {
@@ -67,10 +63,6 @@ const ContactUs = () => {
     setTimeout(() => {
       setThankYouMessage(false);
     }, 3000);
-
-
-
-
 
 
     return;
@@ -135,23 +127,37 @@ const ContactUs = () => {
       duration: 1,
       ease: "power3.out",
     });
-    gsap.from(text2Split.words, {
-      y: 50,
-      stagger: {
-        from: "edge",
-        each: 0.03,
-        amount: 0.5,
-        ease: "power2.inOut",
-      },
-      duration: 1,
-      ease: "power3.out",
-    });
-
-
-
-
-
+    
   }, []);
+
+
+    useEffect(() => {
+      if(!checkSvgRef.current) return;
+      const circle = checkSvgRef.current.querySelector("circle");
+    const path = checkSvgRef.current.querySelector("path");
+    gsap.from(mesegeBoxRef.current, {
+      opacity: 0.5,
+      y: -200,
+      duration: 1,
+      ease: "elastic.out(1,0.3)",
+    });
+    const circleLength = circle.getTotalLength();
+    gsap.set(circle, {
+      strokeDasharray: circleLength,
+      strokeDashoffset: circleLength,
+      fill: "transparent",
+    });
+    const pathLength = path.getTotalLength();
+    gsap.set(path, {
+      strokeDasharray: pathLength,
+      strokeDashoffset: pathLength,
+    });
+    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+    tl.to(circle, { strokeDashoffset: 0, duration: 1.2 })
+      .to(path, { strokeDashoffset: 0, duration: 0.8 }, "-=0.6");
+    
+  }, [thankYouMessage]);
+
 
   return (
     <>
@@ -298,7 +304,7 @@ const ContactUs = () => {
                         </div>
                       </div>
                     </button>
-                    
+
 
                   </div>
                 </div>
@@ -311,9 +317,12 @@ const ContactUs = () => {
             <div ref={mesegeBoxRef} className="bg-white p-5 rounded shadow-md ">
               {/* ------ Thank You Message ------ */}
               <div className="flex items-center gap-5">
-                <div className="w-20 h-20 rounded-full text-[80px] text-myColorOne">
-                  <FaRegCircleCheck />
-                </div>
+                
+                <svg ref={checkSvgRef} width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="40" r="36.5" fill="#D9D9D9" fill-opacity="0.31" stroke="green" stroke-width="7" />
+                  <path d="M23 40L35 50.5L57.5 29" stroke="green" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
                 <div>
                   <h2 className="text-lg font-semibold">Thank You!</h2>
                   <p>Your message has been sent successfully.</p>
