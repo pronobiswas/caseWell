@@ -128,7 +128,7 @@ const ZebranoPreLoader = () => {
           <div className="wrapper w-full">
 
 
-            <div className="flex justify-center items-center gap-6">
+            <div className="flex justify-center items-center gap-7">
               
                 <svg ref={svgOne} width="61" height="76" viewBox="0 0 51 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path ref={pathOne} d="M18 10.534L45 7V59L18 54.4563V10.534Z" fill="white" />
