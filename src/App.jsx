@@ -37,6 +37,7 @@ import OurStory from "./pages/zebrano/OurStory";
 import ServicesPage from "./pages/zebrano/ServicesPage";
 import DragableSlider from "./components/commonComponent/DragableSlider";
 import ZebranoPreLoader from "./rootLayout/ZebranoPreLoader";
+import FallbackPage from "./pages/FallbackPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -85,6 +86,8 @@ function App() {
           <Route path="/configurator" element={<ConfiguratorPage />} />
           <Route path="/VideoScroller" element={<VideoScroller />} />
           <Route path="/GlitchImage" element={<GlitchImage />} />
+          <Route path="/*" element={<FallbackPage />} />
+
         </Route>
       </>
     )

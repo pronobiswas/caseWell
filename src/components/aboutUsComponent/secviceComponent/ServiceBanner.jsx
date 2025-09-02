@@ -60,7 +60,7 @@ const ServiceBanner = () => {
                     <p ref={subHeadingRef} className='text-xl text-center w-full max-w-4xl'>
                         Real hands. Real sawdust. Unreal results.
                         From first sketch to final fit, we design, prototype, and build under one
-                        roof — 50 every millimetre lines up and every door feels effortlessly right.
+                        roof — so every millimetre lines up and every door feels effortlessly right.
                     </p>
                 </div>
             </section>

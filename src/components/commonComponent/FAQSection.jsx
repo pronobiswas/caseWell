@@ -5,7 +5,7 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText);
 
 const FAQSection = ({
-    title="Got questions? You'll find plenty of answers in our FAQ,including:",
+    title="",
     faqs = [
         {
             question: "What is your return policy?",

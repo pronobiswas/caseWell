@@ -2,7 +2,7 @@ import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection'
 
 const OrderProcess = () => {
-  const title = "Got questions? You'll find plenty of answers in our FAQ,including:";
+  const title = "";
   const faqs = [
     {
       question: "Consultation & Proposal",
@@ -36,7 +36,7 @@ const OrderProcess = () => {
   return (
     <>
       <section id="orderProcess">
-        <div className="wrapper py-5">
+        <div className="wrapper py-5 xl:px-32">
 
           <div className='pt-10 pb-6'>
             <h2 className='text-4xl mb-5'>Everything About Our Order Process (Netherlands) </h2>

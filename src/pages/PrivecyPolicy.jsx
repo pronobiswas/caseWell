@@ -26,7 +26,7 @@ const PrivecyPolicy = () => {
                 Data Protection Regulation (GDPR) (EU) 2016/679 and applicable
                 Dutch privacy legislation. This Privacy Policy explains how we
                 collect, use, disclose, and protect your personal data when you
-                visit our website [Your Website URL Here] and use our services.
+                visit our website and use our services.
               </p>
             </div>
             {/* ====1 who we are==== */}
