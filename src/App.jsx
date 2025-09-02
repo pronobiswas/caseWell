@@ -35,8 +35,6 @@ import MeetTheMakerPage from "./pages/zebrano/MeetTheMakerPage";
 import GlitchImage from "./components/commonComponent/GlitchImage";
 import OurStory from "./pages/zebrano/OurStory";
 import ServicesPage from "./pages/zebrano/ServicesPage";
-import DragableSlider from "./components/commonComponent/DragableSlider";
-import ZebranoPreLoader from "./rootLayout/ZebranoPreLoader";
 import FallbackPage from "./pages/FallbackPage";
 
 function App() {

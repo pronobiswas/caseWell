@@ -140,7 +140,7 @@ const HeaderNew = () => {
         gsap.to(dropdownRef.current, {
             opacity: isClicked ? 1 : 0,
             width: isClicked ? "100%" : 0,
-            duration: 1,
+            duration: 0.5,
             ease: "power1.in"
         });
     }, [isClicked])
@@ -776,7 +776,7 @@ const HeaderNew = () => {
                                         </li>
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <Link to="/zebrano"><span>Zebrano</span></Link>
+                                                <Link to="/aboutus"><span>Zebrano</span></Link>
                                                 <span><TfiAngleRight /></span>
                                             </div>
                                         </li>

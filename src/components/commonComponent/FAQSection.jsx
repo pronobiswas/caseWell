@@ -61,7 +61,9 @@ const FAQSection = ({
                             <span>{openIndex === index ? "-" : "+"}</span>
                         </button>
                         {openIndex === index && (
-                            <div className="gradient_text text-xl p-5 text-gray-600">{faq.answer}</div>
+                            <div className="gradient_text text-xl p-5 text-gray-600">
+                                {faq.answer}
+                            </div>
                         )}
                     </div>
                 ))}
