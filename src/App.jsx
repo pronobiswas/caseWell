@@ -36,6 +36,7 @@ import GlitchImage from "./components/commonComponent/GlitchImage";
 import OurStory from "./pages/zebrano/OurStory";
 import ServicesPage from "./pages/zebrano/ServicesPage";
 import FallbackPage from "./pages/FallbackPage";
+import AdminDashBoard from "./pages/auth/AdminDashBoard";
 
 function App() {
   const router = createBrowserRouter(
@@ -84,6 +85,10 @@ function App() {
           <Route path="/configurator" element={<ConfiguratorPage />} />
           <Route path="/VideoScroller" element={<VideoScroller />} />
           <Route path="/GlitchImage" element={<GlitchImage />} />
+
+
+
+          <Route path="/admin" element={<AdminDashBoard />} />
           <Route path="/*" element={<FallbackPage />} />
 
         </Route>
