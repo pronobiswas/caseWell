@@ -4,7 +4,7 @@ import FAQSectionTwo from '../../commonComponent/FAQSectionTwo';
 
 
 
-const title = "Delivery (Delivery & Installation in the Netherlands)";
+
 const faqs = [
   {
     question: "Delivery Options",
@@ -64,11 +64,14 @@ const Delivery = () => {
 
   return (
     <>
-      <div className='pt-10 pb-10'>
-        <h2 className='text-4xl mb-5'>Delivery (Delivery & Installation in the Netherlands) </h2>
-        <p>We deliver to <b>all Dutch provinces</b> using in-house teams or trusted partners. </p>
+      <div className='py-5 2xl:pl-32'>
+
+        <div className='pt-10 pb-6'>
+          <h2 className='text-4xl mb-5'>Delivery (Delivery & Installation in the Netherlands) </h2>
+          <p>We deliver to <b>all Dutch provinces</b> using in-house teams or trusted partners. </p>
+        </div>
+        <FAQSectionTwo faqs={faqs} />
       </div>
-      <FAQSectionTwo faqs={faqs} title={title} />
 
 
     </>

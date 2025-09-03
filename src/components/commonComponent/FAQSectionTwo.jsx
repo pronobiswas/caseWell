@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 
 
 const FAQSectionTwo = ({
-    title = "Testing Purpose",
+    
     faqs = [
         {
             question: "Consultation & Proposal",
@@ -32,10 +32,6 @@ const FAQSectionTwo = ({
     return (
         <>
             <section className="w-full p-6">
-                <h2 ref={titleRef} className="text-3xl mb-8 text-right">
-                    {title}
-                </h2>
-
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
                         <div key={index} className="w-full border-b border-b-black py-2">
@@ -48,13 +44,14 @@ const FAQSectionTwo = ({
                             </button>
 
                             {openIndex === index && (
-                                <div className="gradient_text text-xl p-5 text-gray-600 space-y-3">
+                                <div className=" text-xl p-5 text-gray-600 space-y-3">
                                     {faq.answers.map(
                                         (answer, i) =>
                                             answer && (
                                                 <p
                                                     key={i}
                                                     dangerouslySetInnerHTML={{ __html: answer }}
+                                                    className='gradient_text'
                                                 />
                                             )
                                     )}
