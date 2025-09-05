@@ -135,9 +135,10 @@ const ContactUs = () => {
       if(!checkSvgRef.current) return;
       const circle = checkSvgRef.current.querySelector("circle");
     const path = checkSvgRef.current.querySelector("path");
+    
     gsap.from(mesegeBoxRef.current, {
       opacity: 0.5,
-      y: -200,
+      yPercent: -200,
       duration: 1,
       ease: "elastic.out(1,0.3)",
     });
@@ -313,7 +314,7 @@ const ContactUs = () => {
           </div>
         </div>
         {thankYouMessage && (
-          <div id="thankYouWrapper" className="w-full h-screen fixed top-60 left-0 z-40  flex items-center justify-center bg-[#00000000]">
+          <div id="thankYouWrapper" className="w-full h-screen abs0lute top-[10%] left-0 z-40 bg-[#00000054] flex items-center justify-center bg-[#00000000]">
             <div ref={mesegeBoxRef} className="bg-white p-5 rounded shadow-md ">
               {/* ------ Thank You Message ------ */}
               <div className="flex items-center gap-5">

@@ -56,7 +56,7 @@ const ServiceBanner = () => {
             <section id="serviceBanner">
                 <div className="wrapper w-full h-fit pt-48 pb-20 px-5 md:px-10 lg:px-14 flex flex-col items-center gap-10 bg-bgTwo">
 
-                    <h1 ref={headingRef} className='text-[6vw] text-center text-myColorOne font-Montserrat font-bold'>Service & Terms</h1>
+                    <h1 ref={headingRef} className='text-[clamp(40px,6vw,172px)] text-center text-myColorOne font-Montserrat font-bold'>Service & Terms</h1>
                     <p ref={subHeadingRef} className='text-xl text-center w-full max-w-4xl'>
                         Real hands. Real sawdust. Unreal results.
                         From first sketch to final fit, we design, prototype, and build under one

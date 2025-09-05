@@ -32,6 +32,14 @@ const OrderProcess = () => {
       question: "Delivery / Installation & Handover",
       answer: "We deliver or deliver-and-install (NL only). After installation we perform functional checks and share care guidance.",
     },
+    {
+      question: "Change Requests",
+      answer: "Any change after approval (finish/size/hardware) may alter price and timeline. Work resumes after full payment of the change order",
+    },
+    {
+      question: "Cancellations",
+      answer: "Custom items are excluded from the standard right of withdrawal. Cancellations after payment are not possible unless agreed in writing before production starts (admin/design costs apply).",
+    },
   ]
   return (
     <>
@@ -44,18 +52,6 @@ const OrderProcess = () => {
           </div>
 
           <FAQSection title={title} faqs={faqs} />
-          <div className='py-5'>
-            <h3 className='text-2xl mb-2'><b>Change Requests</b></h3>
-            <p>Any change after approval (finish/size/hardware) may alter price and timeline. Work resumes after <b>full payment</b> of the change order.</p>
-          </div>
-          <div className='py-5'>
-            <h3 className='text-2xl mb-2'>
-              <b>Cancellations</b>
-            </h3>
-            <p className='w-full max-w-5xl'>
-              Custom items are excluded from the standard right of withdrawal. Cancellations after payment are not possible unless agreed in writing before production starts (admin/design costs apply).
-            </p>
-          </div>
 
         </div>
       </section>
