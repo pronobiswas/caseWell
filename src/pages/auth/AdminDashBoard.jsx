@@ -31,70 +31,6 @@ const AdminDashBoard = () => {
         }));
     };
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     let imageUrlToSave = null; // Use a distinct variable name to avoid confusion
-
-    //     try {
-    //         // Check if an image was selected
-    //         if (allInput.image) {
-    //             // 1. Create a reference to where the image will be stored in Cloud Storage
-    //             const storageRef = ref(storage, `images/${allInput.image.name}`);
-
-    //             // 2. Upload the image bytes, and WAIT for it to complete
-    //             await uploadBytes(storageRef, allInput.image);
-    //             console.log('Image uploaded successfully!');
-
-    //             // 3. Get the download URL, and WAIT for it to complete
-    //             imageUrlToSave = await getDownloadURL(storageRef);
-    //             console.log("Download URL:", imageUrlToSave);
-
-    //             // Optionally, update the state if you want to display the URL or image preview
-    //             setImgUrl(imageUrlToSave);
-    //         }
-
-    //         // Store form data in Firestore, using the now-available imageUrlToSave
-    //         await addDoc(collection(db, 'adminDashboardData'), {
-    //             name: allInput.name,
-    //             title: allInput.title,
-    //             shortDesc: allInput.shortDesc,
-    //             desc: allInput.desc,
-    //             category: allInput.category,
-    //             imageUrl: imageUrlToSave, // This will now correctly contain the URL or be null
-    //             createdAt: new Date()
-    //         });
-
-    //         alert('Data submitted successfully!');
-    //         // Reset the form after successful submission
-    //         setAllInput({
-    //             name: "",
-    //             title: "",
-    //             shortDesc: "",
-    //             desc: "",
-    //             category: "",
-    //             image: null,
-    //         });
-    //         setImgUrl(''); // Clear the image URL state as well
-    //     } catch (error) {
-    //         console.error('Error submitting data:', error);
-    //         alert('Error submitting data.');
-    //     }
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Dadar code
-    // New handleDelete function
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -114,9 +50,9 @@ const AdminDashBoard = () => {
                 const data = await response.json();
 
                 if (data.success) {
-                    // Get both the image URL and the delete URL from the response
+                    
                     imageUrlToSave = data.data.url;
-                    deleteUrlToSave = data.data.delete_url; // Corrected: Get the delete URL
+                    deleteUrlToSave = data.data.delete_url;
                     setImgUrl(imageUrlToSave);
                 } else {
                     throw new Error('ImageBB upload failed: ' + data.error.message);

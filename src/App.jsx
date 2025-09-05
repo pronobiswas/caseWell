@@ -37,6 +37,7 @@ import OurStory from "./pages/zebrano/OurStory";
 import ServicesPage from "./pages/zebrano/ServicesPage";
 import FallbackPage from "./pages/FallbackPage";
 import AdminDashBoard from "./pages/auth/AdminDashBoard";
+import SingleShowCaseProduct from "./pages/SingleShowCaseProduct";
 
 function App() {
   const router = createBrowserRouter(
@@ -89,6 +90,7 @@ function App() {
 
 
           <Route path="/admin" element={<AdminDashBoard />} />
+          <Route path="/allProduct" element={<SingleShowCaseProduct />} />
           <Route path="/*" element={<FallbackPage />} />
 
         </Route>
