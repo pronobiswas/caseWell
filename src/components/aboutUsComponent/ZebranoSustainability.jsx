@@ -70,8 +70,8 @@ const ZebranoSustainability = () => {
   return (
     <>
     <section ref={ZebranoSustainabilityRef} id="ZebranoSustainability">
-        <div className="wrapper w-full flex bg-myColorOne textLightText py-5 pr-5" >
-            <div className="w-1/2  flex items-center">
+        <div className="wrapper w-full flex flex-col md:flex-row bg-myColorOne textLightText py-5 md:pr-5" >
+            <div className="w-full md:w-1/2  flex items-center">
             <div className='w-full h-auto p-5 md:p-10 lg:p-14'>
                 <p ref={headingOneRef} className='text-xl mb-2 font-Poppins text-LightText'>Sustainability</p>
                 <h2 ref={headingTwoRef} className='text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-LightText font-Montserrat'>Craftsmanship that cares</h2>
@@ -79,7 +79,7 @@ const ZebranoSustainability = () => {
                 <BtnComponent text="See More" />
             </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
             <div className="imgBox w-full h-[500px] overflow-hidden">
                 <img ref={imgRef} src="/images/img1.png" alt="picture" className='w-full h-full object-fill' />
             </div>
