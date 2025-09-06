@@ -103,12 +103,12 @@ const Conversation = () => {
       >
         <h3
           ref={bigTextRef}
-          className="text-4xl xl:text-5xl text-center w-full max-w-4xl xl:max-w-5xl mx-auto pt-14 pb-20 text-stone-600"
+          className="text-3xl md:text-4xl xl:text-5xl text-center w-full max-w-4xl xl:max-w-5xl mx-auto px-5 pt-14 pb-20 text-stone-600"
         >
           Let’s break boundaries together. Join our Partner Program and start
           creating without limits.
         </h3>
-        <div className="conversationWrapper p-32 font-Poppins bg-[#E1DBCB] flex justify-center">
+        <div className="conversationWrapper p-5 md:p-32 font-Poppins bg-[#E1DBCB] flex justify-center">
           <div className="w-full flex flex-col items-center">
             <h2
               ref={headingTextRef}

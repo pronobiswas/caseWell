@@ -81,7 +81,7 @@ const ServicesThasFitYourNeed = () => {
             <section ref={zebranoServiceRef} id="servicesThatsFit">
                 <div className="wrapper w-full p-5 md:10 lg:p-14 text-myColorOne">
                     <div className="w-full">
-                        <div className='w-1/2'>
+                        <div className='w-full md:w-1/2'>
                             <h2 ref={headingRef} className='text-3xl lg:text-5xl'>“Service that fits your needs”</h2>
                             <p
                                 ref={textRef}
@@ -101,7 +101,7 @@ const ServicesThasFitYourNeed = () => {
 
                     </div>
                     <div className="w-full h-auto flex justify-end">
-                        <div className="faqWrapper w-2/3">
+                        <div className="faqWrapper w-full md:w-2/3">
                             <FAQSection title={title} faqs={faqs} />
                         </div>
                     </div>

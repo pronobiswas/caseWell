@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
 const CollectionPage = () => {
   const [activeCollection, setActiveCollection] = useState("Show all");
@@ -101,11 +102,12 @@ const CollectionPage = () => {
           </h1>
         </div>
         {/* ====collection nevigetor===== */}
-        <div className="w-full py-10 flex gap-5 [&>button]:text-xl [&>button]:text-bgTwo [&>button]:py-1 [&>button]:px-5 [&>button]:border [&>button]:rounded-full font-Poppins">
+        <div className="w-full py-10 flex flex-wrap gap-5 [&>button]:text-xl [&>button]:text-bgTwo [&>button]:py-1 [&>button]:px-5 [&>button]:border [&>button]:rounded-full font-Poppins">
           <button onClick={() => setShowCollection(true)}>Show all</button>
           <button onClick={() => filterByTag("glass")}>Glass</button>
           <button onClick={() => filterByTag("pivot")}>Pivot</button>
           <button onClick={() => filterByTag("slide")}>Slide</button>
+          <button><Link to="/admin">admin </Link></button>
         </div>
 
         <div className="w-full h-full flex flex-wrap gap-5">
@@ -113,7 +115,7 @@ const CollectionPage = () => {
             (item, index) => (
               <div
                 key={index}
-                className="collectionBox w-[calc(33%-20px)] aspect-[4/3] border bg-bgOne cursor-pointer"
+                className="collectionBox w-full md:w-[calc(33%-20px)] aspect-[4/3] border bg-bgOne cursor-pointer"
               >
                 <div className="w-full h-full">
                   <img

@@ -3,10 +3,12 @@ import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText);
 
-const TypeingText = () => {
+const TypeingText = ({
+    texts = ["interior", "design", "doors"]
+}) => {
     const text2Ref = useRef(null);
     useEffect(() => {
-        const texts = ["interior", "design", "doors"];
+        
         let current = 0;
         let ctx = gsap.context(() => {
             function animateText(index) {

@@ -3,6 +3,7 @@ import ButtomHeading from "../../components/commonComponent/ButtomHeading";
 import BtnComponent from "../../components/homeComponents/utils/BtnComponent";
 import DoorDescription from "../../components/cabinetryComponent/DoorDescription";
 import MaterialAndDesign from "../../components/cabinetryComponent/MaterialAndDesign";
+import { Link } from "react-router-dom";
 
 const PivotDoor = () => {
   return (
@@ -15,7 +16,9 @@ const PivotDoor = () => {
               paragraph1="A pivot door is a sleek, modern door design that rotates on a central or offset pivot hinge, allowing smooth and unique opening with a contemporary look."
               color="white"
             />
-            <BtnComponent text="Configure Now" />
+            <Link to="/configurator">
+              <BtnComponent text="Configure Now" />
+            </Link>
           </div>
         </div>
       </section>

@@ -8,14 +8,20 @@ import { CiGlobe } from 'react-icons/ci';
 import { MdArrowOutward, MdOutlineArrowForward, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import ZebranoPreLoader from '../ZebranoPreLoader';
 import BtnComponent from '../../components/homeComponents/utils/BtnComponent';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong, FaPinterest } from 'react-icons/fa6';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { TfiAngleRight } from 'react-icons/tfi';
+import { useSelector, useDispatch } from 'react-redux'
+import { language } from '../../features/LanguagaeSlice';
+
+
 
 const HeaderNew = () => {
 
 
 
     const location = useLocation();
-
+    const dispatch = useDispatch();
 
     const isBlack = location.pathname === '/terms';
     const isBlack1 = location.pathname === '/privacy-Policy';
@@ -138,15 +144,15 @@ const HeaderNew = () => {
         gsap.to(dropdownRef.current, {
             opacity: isClicked ? 1 : 0,
             width: isClicked ? "100%" : 0,
-            duration: 1,
+            duration: 0.5,
             ease: "power1.in"
         });
     }, [isClicked])
     // =======colapse mobile menu when click link========
     useEffect(() => {
         if (!dropdownRef.current) return;
-        const navlink = dropdownRef.current.querySelectorAll('.navLinkItem');
-        navlink.forEach((item) => {
+        const navlinkList = dropdownRef.current.querySelectorAll('li');
+        navlinkList.forEach((item) => {
             item.addEventListener('click', () => {
                 setIsClicked(false);
                 gsap.to(dropdownRef.current, {
@@ -198,17 +204,13 @@ const HeaderNew = () => {
     // ======handle languse========
     const handleEn = () => {
         setLanguse('En')
+        dispatch(language("en"))
+
     };
     const handleDu = () => {
         setLanguse('Du')
+        dispatch(language("du"))
     };
-
-
-
-
-// ***************draft***************
-// {`w-full  fixed top-0 left-0 z-50 ${isDeepGreen ? "bg-colorOne " : "bg-bgTwo"}`}
-// {`navWrapper w-full flex justify-between items-center ${isBlack || isBlack1 || isBlack2 || isBlack3 || isBlack4 ? 'text-colorOne' : 'text-white'}`}
 
 
     return (
@@ -329,7 +331,7 @@ const HeaderNew = () => {
 
                                         <div className="dropdounWrapper p-5 bg-bgOne  flex flex-col gap-3 shadow-md rounded-tr-xl rounded-bl-xl z-20">
                                             <div className='w-full flex z-30'>
-                                                <div ref={productDropdownRef} className='w-40 flex flex-col gap-2 text-base text-colorOne hover:[&>a]:font-bold [&>a]:transition-all [&>a]:duration-100 text-[20px] font-normal'>
+                                                <div ref={productDropdownRef} className='w-40 flex flex-col gap-2 text-base text-colorOne hover:[&>a]:font-semibold [&>a]:transition-all [&>a]:duration-100 text-[20px] font-normal'>
                                                     <Link to="/products/PivotDoor" >
                                                         <div className='linkItem'>
                                                             <span className='m-0'>Pivot Doors</span>
@@ -559,13 +561,15 @@ const HeaderNew = () => {
                                 </div>
                             </div>
 
-                            <div className="configaretor w-fit h-fit py-2 px-3 flex items-center gap-2 border bg-white text-colorOne hover:bg-colorOne hover:text-white group  cursor-pointer rounded-full z-30">
-                                <span>Configure Now</span>
-                                <div className='w-5 h-5  relative overflow-hidden'>
-                                    <span className='text-xl  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward /> </span>
-                                    <span className='text-xl absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward /> </span>
+                            <Link to="/configurator">
+                                <div className="configaretor w-fit h-fit py-2 px-3 flex items-center gap-2 border bg-white text-colorOne hover:bg-colorOne hover:text-white group  cursor-pointer rounded-full z-30">
+                                    <span>Configure Now</span>
+                                    <div className='w-5 h-5  relative overflow-hidden'>
+                                        <span className='text-xl  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward /> </span>
+                                        <span className='text-xl absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward /> </span>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </nav>
@@ -665,89 +669,188 @@ const HeaderNew = () => {
 
 
                         <div ref={dropdownRef} className="absolute top-[70px] right-0 w-60 h-[calc(100vh-60px)]  overflow-hidden opacity-0 ">
-                            <div className='w-full h-full bg-[#00000083] backdrop-blur-sm flex justify-center items-center '>
-                                <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white '>
+                            {/* ====menu hiddenn===== */}
+                            {/* <div className='hidden'>
+                                <div className='w-full h-full bg-[#00000083] backdrop-blur-sm flex justify-center items-center '>
+                                    <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-white'>
 
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/products" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Products
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/products" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Products
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Products
+                                                    </div>
                                                 </div>
-                                                <div className='blue w-fit '>
-                                                    Products
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/collection" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Collection
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Collection
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/collection" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Collection
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/inspiration" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Inspiration
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Inspiration
+                                                    </div>
                                                 </div>
-                                                <div className='blue w-fit '>
-                                                    Collection
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/architects" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Architects
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Architects
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/inspiration" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Inspiration
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/aboutus" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        About Us
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        About Us
+                                                    </div>
                                                 </div>
-                                                <div className='blue w-fit '>
-                                                    Inspiration
+                                            </Link>
+                                        </li>
+                                        <li className='navLinkItem w-fit px-5 relative'>
+                                            <Link to="/contact" >
+                                                <div className="gggg">
+                                                    <div className='red w-fit '>
+                                                        Contact
+                                                    </div>
+                                                    <div className='blue w-fit '>
+                                                        Contact
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/architects" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Architects
-                                                </div>
-                                                <div className='blue w-fit '>
-                                                    Architects
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/aboutus" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    About Us
-                                                </div>
-                                                <div className='blue w-fit '>
-                                                    About Us
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </li>
-                                    <li className='navLinkItem w-fit px-5 relative'>
-                                        <Link to="/contact" >
-                                            <div className="gggg">
-                                                <div className='red w-fit '>
-                                                    Contact
-                                                </div>
-                                                <div className='blue w-fit '>
-                                                    Contact
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </li>
+                                            </Link>
+                                        </li>
 
-                                </ul>
+                                    </ul>
+                                </div>
+                            </div> */}
+                            {/* ===menu new=== */}
+                            <div className='w-full h-fit min-h-screen bg-[#f2f0eaa4] backdrop-blur-sm'>
+                                <div className='w-full h-fit'>
+
+                                    <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorTwo [&>li:hover]:bg-myColorTwo'>
+                                        {/* ===products=== */}
+                                        <li className='group relative z-40'>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/products"><span>Products</span></NavLink>
+                                                <span className='group-hover:rotate-90'><TfiAngleRight /></span>
+                                            </div>
+                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-50">
+                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:font-Poppins [&>li]:text-myColorOne  [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:font-semibold [&>li:hover]:z-50 '>
+                                                    <li><NavLink to="/products/PivotDoor">Pivot Door</NavLink></li>
+                                                    <li><NavLink to="/products/SlideDoor">Slideing Door</NavLink></li>
+                                                    <li><NavLink to="/products/HingedDoors">Hinged Door</NavLink></li>
+                                                    <li><NavLink to="/products/flushTowall">Flush to Wall</NavLink></li>
+                                                    <li><NavLink to="/products/wallPartition">Wall Partition</NavLink></li>
+                                                    <li><NavLink to="/products/biosirie">Biosirie</NavLink></li>
+                                                    <li><NavLink to="/products/material">Meterials</NavLink></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        {/* ====collections=== */}
+                                        <li className='group relative z-30'>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/collection"><span>Collection</span></NavLink>
+                                                <span className='group-hover:rotate-90'><TfiAngleRight /></span>
+                                            </div>
+                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-40">
+                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
+                                                    <li><NavLink to="/collections/GlassCollection">Glass Collection</NavLink></li>
+                                                    <li><NavLink to="/collections/FineerCollection">Fineer Collection</NavLink></li>
+                                                    <li><NavLink to="/collections/ThreeDCollection">3D Collection</NavLink></li>
+                                                    <li><NavLink to="/collections/AtelierCollection">Atelier Collection</NavLink></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/inspiration"><span>Inspiration</span></NavLink>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/inspiration"><span>Inspiration</span></NavLink>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/architects"><span>Architects</span></NavLink>
+                                            </div>
+                                        </li>
+                                        <li className='group relative'>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/aboutus"><span>Zebrano</span></NavLink>
+                                                <span className='group-hover:rotate-90'><TfiAngleRight /></span>
+                                            </div>
+                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block">
+                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
+                                                    <li><NavLink to="/aboutus/ourStory">Our Story</NavLink></li>
+                                                    <li><NavLink to="/aboutus/theMakers">Meet The Makers</NavLink></li>
+                                                    <li><NavLink to="/aboutus/ConsciousNcrafts">Concious Craft</NavLink></li>
+                                                    <li><NavLink to="/aboutus/services">Services</NavLink></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/contact"><span>Contact</span></NavLink>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    {/* =====mobile menu footer===== */}
+                                    <div className='w-full h-fit p-5'>
+
+                                        <div className="flex gap-5 text-4xl text-white py-5">
+                                            <a
+                                                href="http://pinterest.com/zebranostudio"
+                                                title="http://pinterest.com/zebranostudio"
+                                            >
+                                                <FaPinterest />
+                                            </a>
+                                            <a
+                                                href="http://instagram.com/zebrano.studio"
+                                                title="http://instagram.com/zebrano.studio"
+                                            >
+                                                <FaInstagramSquare />
+                                            </a>
+                                        </div>
+                                        <h3 className='text-3xl text-white font-semibold'>Zebrano Studio</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </nav>
             </header>
-            <div>
+
+            {/* =====pre loader===== */}
+            <div className='w-full  fixed top-0 left-0 z-50 bg-bgOne'>
                 {
                     loading ?
                         ""

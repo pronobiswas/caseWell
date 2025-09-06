@@ -97,8 +97,8 @@ const MaterialAndDesign = () => {
 
   return (
     <section ref={secRef}>
-      <div className="wrapper w-full h-[560px] bg-myColorOne text-LightText flex gap-10 p-5 font-Poppins">
-        <div className="w-1/2 h-full">
+      <div className="wrapper w-full h-fit md:h-[560px] bg-myColorOne text-LightText flex flex-col md:flex-row gap-10 p-5 font-Poppins">
+        <div className="w-full md:w-1/2 h-full order-2 md:order-1">
           <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
             <span className="title font-Poppins">Material Possibilities</span>
             <h3 className="pivotDescHeading text-4xl font-Montserrat">
@@ -110,10 +110,10 @@ const MaterialAndDesign = () => {
               imagine. Each one is built with precision to match your style,
               material preferences, and architectural vision.
             </p>
-            <BtnComponent text="View Materials" />
+            <Link to="/products/material"><BtnComponent text="View Materials" /></Link>
           </div>
         </div>
-        <div className="w-1/2 h-full">
+        <div className="w-full md:w-1/2 h-full order-1 md:order-2">
           <div className="w-full h-full relative overflow-hidden">
             <img
               src="/images/pivotdoors1.jpg"
@@ -124,8 +124,8 @@ const MaterialAndDesign = () => {
         </div>
       </div>
 
-      <div className="wrapper w-full h-[560px] bg-colorOne text-LightText flex gap-10 p-5">
-        <div className="w-1/2 h-full">
+      <div className="wrapper w-full h-fit md:h-[560px] bg-colorOne text-LightText flex flex-col md:flex-row gap-10 p-5">
+        <div className="w-full md:w-1/2 h-full ">
           <div className="w-full h-full relative overflow-hidden">
             <img
               src="/images/pivotdoors1.jpg"
@@ -134,7 +134,7 @@ const MaterialAndDesign = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 h-full">
+        <div className="w-full md:w-1/2 h-full ">
           <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
             <span className="title font-Poppins ">Hardware & Details</span>
             <h3 className="pivotDescHeading text-4xl font-Montserrat">
@@ -145,13 +145,13 @@ const MaterialAndDesign = () => {
               and soft-closing systems — so all you see is clean, uninterrupted
               design in every custom pivot door
             </p>
-            <BtnComponent text="See Hardware Options" />
+            <Link to="/configurator"><BtnComponent text="See Hardware Options" /></Link>
           </div>
         </div>
       </div>
 
-      <div className="wrapper w-full h-[560px] bg-colorOne text-LightText flex gap-10 p-5">
-        <div className="w-1/2 h-full">
+      <div className="wrapper w-full h-fit md:h-[560px] bg-colorOne text-LightText flex flex-col md:flex-row gap-10 p-5">
+        <div className="w-full md:w-1/2 h-full order-1 md:order-2">
           <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
             <span className="title font-Poppins">Integration Options</span>
             <h3 className="pivotDescHeading text-4xl font-Montserrat">
@@ -162,12 +162,12 @@ const MaterialAndDesign = () => {
               integrated shelving for seamless architectural integration
               throughout your interior.
             </p>
-            <Link to="/contact">
+            <Link to="/configurator">
               <BtnComponent text="View Materials" />
             </Link>
           </div>
         </div>
-        <div className="w-1/2 h-full">
+        <div className="w-full md:w-1/2 h-full order-1 md:order-2">
           <div className="w-full h-full relative overflow-hidden">
             {/* ✅ ref added here */}
             <img

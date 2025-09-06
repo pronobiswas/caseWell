@@ -105,7 +105,7 @@ const WhyPartner = () => {
         id="whyPartner"
         className="w-full h-full bg-myColorTwo text-colorOne"
       >
-        <div className="partnerWrapper w-full h-full  p-16 pt-20 flex flex-col justify-between">
+        <div className="partnerWrapper w-full h-full p-5 md:p-16 pt-20 flex flex-col justify-between">
           <div className="partnerHeading flex justify-between">
             <h3
               ref={partnerHeading}

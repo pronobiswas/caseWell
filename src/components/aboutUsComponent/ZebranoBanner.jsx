@@ -75,7 +75,7 @@ const ZebranoBanner = ({
     <>
       <section id="zebranoBanner">
         <div className="wrapper w-full h-auto  p-5 py-20 md:p-10 md:pt-32 md:py-20 lg:pb-10 lg:pt-32 xl:pt-40 2xl:pb-20">
-          <div className="w-full flex gap-5">
+          <div className="w-full flex flex-col md:flex-row gap-2 md:gap-5">
             <h1
               ref={headingOneRef}
               className="text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-myColorOne"
@@ -100,8 +100,8 @@ const ZebranoBanner = ({
                 {headingThree}
               </h1>
             </div>
-            <div className="w-full md:w-1/2 py-20">
-              <p className="text-6xl font-bold text-myColorOne font-Poppins ">
+            <div className="w-full md:w-1/2 pt-20 md:pt-20 md:pb-20">
+              <p className="text-6xl font-bold text-myColorOne font-Poppins leading-3">
                 "
               </p>
               <p
@@ -111,7 +111,7 @@ const ZebranoBanner = ({
                 {" "}
                 {zebranoText}{" "}
               </p>
-              <p className="text-6xl font-bold text-right">"</p>
+              <p className="text-6xl font-bold text-right ">"</p>
             </div>
           </div>
         </div>

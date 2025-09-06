@@ -35,8 +35,9 @@ import MeetTheMakerPage from "./pages/zebrano/MeetTheMakerPage";
 import GlitchImage from "./components/commonComponent/GlitchImage";
 import OurStory from "./pages/zebrano/OurStory";
 import ServicesPage from "./pages/zebrano/ServicesPage";
-import DragableSlider from "./components/commonComponent/DragableSlider";
-import ZebranoPreLoader from "./rootLayout/ZebranoPreLoader";
+import FallbackPage from "./pages/FallbackPage";
+import AdminDashBoard from "./pages/auth/AdminDashBoard";
+import SingleShowCaseProduct from "./pages/SingleShowCaseProduct";
 
 function App() {
   const router = createBrowserRouter(
@@ -44,9 +45,6 @@ function App() {
       <>
         <Route element={<RootLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/test" element={<TestPage />} />
-          <Route path="/test2" element={<DragableSlider />} />
-          <Route path="/test3" element={<ZebranoPreLoader />} />
           <Route path="/architects" element={<ArchitectPage />} />
           <Route path="/inspiration" element={<InspirationPage />} />
           <Route path="/terms" element={<TermsAndConditions />} />
@@ -88,6 +86,13 @@ function App() {
           <Route path="/configurator" element={<ConfiguratorPage />} />
           <Route path="/VideoScroller" element={<VideoScroller />} />
           <Route path="/GlitchImage" element={<GlitchImage />} />
+
+
+
+          <Route path="/admin" element={<AdminDashBoard />} />
+          <Route path="/allProduct" element={<SingleShowCaseProduct />} />
+          <Route path="/*" element={<FallbackPage />} />
+
         </Route>
       </>
     )

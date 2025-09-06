@@ -3,6 +3,7 @@ import ButtomHeading from "../../components/commonComponent/ButtomHeading";
 import BtnComponent from "../../components/homeComponents/utils/BtnComponent";
 import SlideDoorDescription from "../../components/cabinetryComponent/SlideDoorDescription";
 import SlideMeterialAndDesign from "../../components/cabinetryComponent/SlideMeterialAndDesign";
+import { Link } from "react-router-dom";
 
 const SlideDoor = () => {
   return (
@@ -22,7 +23,9 @@ const SlideDoor = () => {
               paragraph1="A slide door operates by gliding horizontally along a track, offering a space-saving and modern solution for both interior and exterior openings."
               color="#1544B2"
             />
-            <BtnComponent text="Configure Now" />
+            <Link to="/configurator">
+              <BtnComponent text="Configure Now" />
+            </Link>
           </div>
         </div>
       </section>

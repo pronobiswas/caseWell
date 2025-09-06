@@ -190,8 +190,8 @@ const AccessibleBeautiful = () => {
                 <div className="wrapper w-full h-fit bg-myColorOne text-LightText">
                     {/* ===row one === */}
                     <div ref={rowOneRef} className="row1">
-                        <div className="w-full flex">
-                            <div className=" w-1/2 flex justify-center items-center py-10 px-8">
+                        <div className="w-full flex flex-col md:flex-row">
+                            <div className=" w-full md:w-1/2 flex justify-center items-center py-10 px-8">
                                 <div className='w-full max-w-80'>
                                     <h1 ref={headingOneRef} className='text-4xl font-semibold '>ACCESSIBLE.</h1>
                                     <h1 ref={headingtwoRef} className='text-4xl font-semibold mb-8 '>BEAUTIFUL.</h1>
@@ -202,17 +202,17 @@ const AccessibleBeautiful = () => {
                                     <p ref={paragraphtwoRef} className='pt-5'><b>Mathijs</b> - Founder and designer, Zebrano Studio</p>
                                 </div>
                             </div>
-                            <div className="w-1/2">
+                            <div className="w-full md:w-1/2">
                                 <img src="/images/img3.png" alt="" className='w-full h-full object-cover' />
                             </div>
                         </div>
                     </div>
                     {/* ===row two=== */}
-                    <div ref={rowTwoRef} className="row2 w-full h-fit min-h-[500px] flex">
-                        <div className="w-1/2 ">
+                    <div ref={rowTwoRef} className="row2 w-full h-fit min-h-[500px] flex flex-col md:flex-row">
+                        <div className="w-full md:w-1/2 order-2 md:order-1">
                             <img src="/images/img3.png" alt="" className='w-full h-full object-cover' />
                         </div>
-                        <div className="w-1/2 h-full">
+                        <div className="w-full md:w-1/2 h-full order-1 md:order-2">
                             <div className="content w-full h-full flex justify-center items-center py-16">
                                 <div className='w-full h-full  max-w-96 flex flex-col gap-20'>
                                     <p ref={paragraphThreeRef} className='text-xl text-center'>We like to keep things close to home. Our doors are made right here in the Netherlands, shaped by makers who know their wood almost as well as their morning coffee. It's a mix of tradition, precision, and a little Dutch stubbornness that refuses to settle for "good enough." The result? Craft that feels local, but looks like it belongs anywhere in the world.</p>
@@ -223,7 +223,6 @@ const AccessibleBeautiful = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     {/* ===row three=== */}
                     <div ref={rowThreeRef} className='row3 bg-myColorTwo pt-12 px-5 pb-10 text-myColorOne'>

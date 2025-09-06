@@ -111,12 +111,12 @@ const DraggableSlider = () => {
   };
 
   return (
-    <section className="w-full py-40 bg-myColorTwo">
+    <section className="w-full py-20 md:py-40 bg-myColorTwo">
       {/* ========feact array====== */}
       <section id="dragableAndClickableSlider">
-        <div className="wrapper w-full h-fit p-5 flex gap-10  font-Poppins text-myColorOne">
+        <div className="wrapper w-full h-fit p-5 flex flex-col md:flex-row gap-10  font-Poppins text-myColorOne">
           {/* =====person Details====== */}
-          <div className="details w-1/3 lg:1/4 flex justify-center">
+          <div className="details w-full  md:w-1/3 lg:1/4 flex justify-center">
 
           <div className="w-full max-w-xs">
             <h3
@@ -137,7 +137,7 @@ const DraggableSlider = () => {
 
           </div>
           {/* =========person slider====== */}
-          <div className="w-2/3 lg:w-3/4 overflow-hidden">
+          <div className="w-full md:w-2/3 lg:w-3/4 overflow-hidden">
             <div
               ref={holderBoxRef}
               id="SliderBox"
@@ -158,11 +158,11 @@ const DraggableSlider = () => {
                   onClick={() => grabPerson(person)}
                   className="w-54 lg:w-72 2xl:w-96 h-fit flex flex-col gap-5"
                 >
-                  <div className="w-54 h-54 md:w-60 md:h-60 lg:w-72 lg:h-72 2xl:w-96 2xl:h-96">
+                  <div className="w-56 h-56 md:w-60 md:h-60 lg:w-72 lg:h-72 2xl:w-96 2xl:h-96">
                     <img
                       src={person.image}
                       alt=""
-                      className="w-full h-full object-cover"
+                      className="w-full h-full  object-cover"
                     />
                   </div>
                   <div className="w-full font-Poppins">

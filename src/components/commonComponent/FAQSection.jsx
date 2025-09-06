@@ -5,7 +5,7 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText);
 
 const FAQSection = ({
-    title="Got questions? You'll find plenty of answers in our FAQ,including:",
+    title="",
     faqs = [
         {
             question: "What is your return policy?",
@@ -61,7 +61,9 @@ const FAQSection = ({
                             <span>{openIndex === index ? "-" : "+"}</span>
                         </button>
                         {openIndex === index && (
-                            <div className="gradient_text text-xl p-5 text-gray-600">{faq.answer}</div>
+                            <div className="gradient_text text-xl p-5 text-gray-600">
+                                {faq.answer}
+                            </div>
                         )}
                     </div>
                 ))}

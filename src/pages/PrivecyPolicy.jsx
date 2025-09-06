@@ -26,12 +26,12 @@ const PrivecyPolicy = () => {
                 Data Protection Regulation (GDPR) (EU) 2016/679 and applicable
                 Dutch privacy legislation. This Privacy Policy explains how we
                 collect, use, disclose, and protect your personal data when you
-                visit our website [Your Website URL Here] and use our services.
+                visit our website and use our services.
               </p>
             </div>
             {/* ====1 who we are==== */}
             <div className="w-full flex flex-col gap-2 py-5">
-              <h2 className="text-3xl font-Montserrat font-semibold">
+              <h2 className="text-3xl font-Montserrat ">
                 Who We Are (Data Controller)
               </h2>
               <p className="ml-5">

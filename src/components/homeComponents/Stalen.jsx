@@ -13,15 +13,13 @@ const Stalen = () => {
   useEffect(() => {
     const animateDoor = () => {
       if (dorOne.current) {
-        dorOne.current.style.transform = "rotate(30deg)";
-        dorOne.current.style.transformOrigin = "left center";
-        dorOne.current.style.transition = "transform 1s ease-in-out";
+        dorOne.current.classList.add("amimateDoorThree");
       }
     };
 
     const resetDoor = () => {
       if (dorOne.current) {
-        dorOne.current.style.transform = "translateX(0)";
+        dorOne.current.classList.remove("amimateDoorThree");
       }
     };
 
@@ -86,7 +84,7 @@ const Stalen = () => {
 
     const handleMouseLeave = () => {
       if (dorThree.current) {
-        dorThree.current.classList.remove("amimateDoorThree");
+        dorThree.current.style.transform = "translateX(0)";
       }
     };
 
