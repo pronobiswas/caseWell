@@ -11,13 +11,17 @@ import BtnComponent from '../../components/homeComponents/utils/BtnComponent';
 import { FaArrowRightLong, FaPinterest } from 'react-icons/fa6';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { TfiAngleRight } from 'react-icons/tfi';
+import { useSelector, useDispatch } from 'react-redux'
+import { language } from '../../features/LanguagaeSlice';
+
+
 
 const HeaderNew = () => {
 
 
 
     const location = useLocation();
-
+    const dispatch = useDispatch();
 
     const isBlack = location.pathname === '/terms';
     const isBlack1 = location.pathname === '/privacy-Policy';
@@ -200,9 +204,12 @@ const HeaderNew = () => {
     // ======handle languse========
     const handleEn = () => {
         setLanguse('En')
+        dispatch(language("en"))
+
     };
     const handleDu = () => {
         setLanguse('Du')
+        dispatch(language("du"))
     };
 
 
@@ -324,7 +331,7 @@ const HeaderNew = () => {
 
                                         <div className="dropdounWrapper p-5 bg-bgOne  flex flex-col gap-3 shadow-md rounded-tr-xl rounded-bl-xl z-20">
                                             <div className='w-full flex z-30'>
-                                                <div ref={productDropdownRef} className='w-40 flex flex-col gap-2 text-base text-colorOne hover:[&>a]:font-bold [&>a]:transition-all [&>a]:duration-100 text-[20px] font-normal'>
+                                                <div ref={productDropdownRef} className='w-40 flex flex-col gap-2 text-base text-colorOne hover:[&>a]:font-semibold [&>a]:transition-all [&>a]:duration-100 text-[20px] font-normal'>
                                                     <Link to="/products/PivotDoor" >
                                                         <div className='linkItem'>
                                                             <span className='m-0'>Pivot Doors</span>
@@ -662,9 +669,10 @@ const HeaderNew = () => {
 
 
                         <div ref={dropdownRef} className="absolute top-[70px] right-0 w-60 h-[calc(100vh-60px)]  overflow-hidden opacity-0 ">
-                            <div className='hidden'>
+                            {/* ====menu hiddenn===== */}
+                            {/* <div className='hidden'>
                                 <div className='w-full h-full bg-[#00000083] backdrop-blur-sm flex justify-center items-center '>
-                                    <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:text-white'>
+                                    <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-white'>
 
                                         <li className='navLinkItem w-fit px-5 relative'>
                                             <Link to="/products" >
@@ -741,54 +749,83 @@ const HeaderNew = () => {
 
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* ===menu new=== */}
                             <div className='w-full h-fit min-h-screen bg-[#f2f0eaa4] backdrop-blur-sm'>
                                 <div className='w-full h-fit'>
 
-                                    <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-myFont [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorTwo [&>li:hover]:bg-myColorTwo'>
-                                        <li>
+                                    <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorTwo [&>li:hover]:bg-myColorTwo'>
+                                        {/* ===products=== */}
+                                        <li className='group relative z-40'>
                                             <div className='w-full flex justify-between items-center'>
-                                                <Link to="/products"><span>Products</span></Link>
-                                                <span><TfiAngleRight /></span>
+                                                <NavLink to="/products"><span>Products</span></NavLink>
+                                                <span className='group-hover:rotate-90'><TfiAngleRight /></span>
+                                            </div>
+                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-50">
+                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:font-Poppins [&>li]:text-myColorOne  [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:font-semibold [&>li:hover]:z-50 '>
+                                                    <li><NavLink to="/products/PivotDoor">Pivot Door</NavLink></li>
+                                                    <li><NavLink to="/products/SlideDoor">Slideing Door</NavLink></li>
+                                                    <li><NavLink to="/products/HingedDoors">Hinged Door</NavLink></li>
+                                                    <li><NavLink to="/products/flushTowall">Flush to Wall</NavLink></li>
+                                                    <li><NavLink to="/products/wallPartition">Wall Partition</NavLink></li>
+                                                    <li><NavLink to="/products/biosirie">Biosirie</NavLink></li>
+                                                    <li><NavLink to="/products/material">Meterials</NavLink></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        {/* ====collections=== */}
+                                        <li className='group relative z-30'>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/collection"><span>Collection</span></NavLink>
+                                                <span className='group-hover:rotate-90'><TfiAngleRight /></span>
+                                            </div>
+                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-40">
+                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
+                                                    <li><NavLink to="/collections/GlassCollection">Glass Collection</NavLink></li>
+                                                    <li><NavLink to="/collections/FineerCollection">Fineer Collection</NavLink></li>
+                                                    <li><NavLink to="/collections/ThreeDCollection">3D Collection</NavLink></li>
+                                                    <li><NavLink to="/collections/AtelierCollection">Atelier Collection</NavLink></li>
+                                                </ul>
                                             </div>
                                         </li>
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <Link to="/collection"><span>Collection</span></Link>
-                                                <span><TfiAngleRight /></span>
+                                                <NavLink to="/inspiration"><span>Inspiration</span></NavLink>
                                             </div>
                                         </li>
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <Link to="/inspiration"><span>Inspiration</span></Link>
+                                                <NavLink to="/inspiration"><span>Inspiration</span></NavLink>
                                             </div>
                                         </li>
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <Link to="/inspiration"><span>Inspiration</span></Link>
+                                                <NavLink to="/architects"><span>Architects</span></NavLink>
+                                            </div>
+                                        </li>
+                                        <li className='group relative'>
+                                            <div className='w-full flex justify-between items-center'>
+                                                <NavLink to="/aboutus"><span>Zebrano</span></NavLink>
+                                                <span className='group-hover:rotate-90'><TfiAngleRight /></span>
+                                            </div>
+                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block">
+                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
+                                                    <li><NavLink to="/aboutus/ourStory">Our Story</NavLink></li>
+                                                    <li><NavLink to="/aboutus/theMakers">Meet The Makers</NavLink></li>
+                                                    <li><NavLink to="/aboutus/ConsciousNcrafts">Concious Craft</NavLink></li>
+                                                    <li><NavLink to="/aboutus/services">Services</NavLink></li>
+                                                </ul>
                                             </div>
                                         </li>
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <Link to="/architects"><span>Architects</span></Link>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className='w-full flex justify-between items-center'>
-                                                <Link to="/aboutus"><span>Zebrano</span></Link>
-                                                <span><TfiAngleRight /></span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className='w-full flex justify-between items-center'>
-                                                <Link to="/contact"><span>Contact</span></Link>
+                                                <NavLink to="/contact"><span>Contact</span></NavLink>
                                             </div>
                                         </li>
                                     </ul>
                                     {/* =====mobile menu footer===== */}
                                     <div className='w-full h-fit p-5'>
-                                        
+
                                         <div className="flex gap-5 text-4xl text-white py-5">
                                             <a
                                                 href="http://pinterest.com/zebranostudio"
@@ -807,7 +844,6 @@ const HeaderNew = () => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </nav>

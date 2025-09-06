@@ -4,8 +4,13 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { initializeApp } from 'firebase/app';
 import firebaseConfig from '../../config/firebaseConfig';
 import { storage, db } from "../../config/firebaseConfig";
+import { useSelector, useDispatch } from 'react-redux'
+import { showCaseProduct, ShowCaseProductSlice } from '../../features/ShowCaseProductSlice';
+
+
 
 const AdminDashBoard = () => {
+    const dispatch= useDispatch();
     const app = initializeApp(firebaseConfig);
     // const db = getFirestore(app);
     // const storage = getStorage(app);
@@ -105,6 +110,7 @@ const AdminDashBoard = () => {
                 ...doc.data()
             }));
             setData(fetchedData);
+            dispatch(showCaseProduct(fetchedData));
 
         } catch (error) {
             console.error('Error fetching documents: ', error);
