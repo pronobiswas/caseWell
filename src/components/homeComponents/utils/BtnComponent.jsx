@@ -30,9 +30,9 @@ const BtnComponent = ({ text = "", groundColor = "white" }) => {
     <div>
       <div
         ref={buttonRef}
-        className={`pro_btn w-fit flex items-center gap-2 border py-3 px-5 bg-${groundColor} text-myColorOne cursor-pointer rounded-full`}
+        className={`pro_btn w-fit flex items-center gap-2 border py-3 px-5 bg-${groundColor} text-myColorOne cursor-pointer rounded-full font-Poppins`}
       >
-        <span>{text}</span>
+        <span className="text-Poppins">{text}</span>
         <div className="icon w-[15px] h-[15px] overflow-hidden">
           <div ref={iconListRef} className="pro_icon_wrapper relative">
             <span>

@@ -9,7 +9,7 @@ const Stalen = () => {
   const dorOne = useRef();
   const dorTwo = useRef();
   const dorThree = useRef();
- 
+
   useEffect(() => {
     const animateDoor = () => {
       if (dorOne.current) {
@@ -68,7 +68,7 @@ const Stalen = () => {
       StalenCard2.current.addEventListener("mouseenter", handleMouseEnter);
       StalenCard2.current.addEventListener("mouseleave", handleMouseLeave);
     }
-    
+
     return () => {
       if (StalenCard2.current) {
         StalenCard2.current.removeEventListener("mouseenter", handleMouseEnter);
@@ -80,7 +80,7 @@ const Stalen = () => {
   useEffect(() => {
     const handleMouseEnter = () => {
       if (dorThree.current) {
-        dorThree.current.classList.add("amimateDoorThree"); 
+        dorThree.current.classList.add("amimateDoorThree");
       }
     };
 
@@ -158,7 +158,7 @@ const Stalen = () => {
                 <div className=" w-full h-[calc(100%-80px)] flex flex-col justify-between ">
                   <div className="w-full h-auto">
                     <h3 className="text-2xl text-textLight font-Montserrat">
-                       “Pivot Doors”
+                      “Pivot Doors”
                     </h3>
                     <p className="w-full mt-5 mb-6 text-textLight font-Poppins">
                       Rotate on a vertical axis, allowing for larger, more
