@@ -151,8 +151,8 @@ const HeaderNew = () => {
     // =======colapse mobile menu when click link========
     useEffect(() => {
         if (!dropdownRef.current) return;
-        const navlink = dropdownRef.current.querySelectorAll('.navLinkItem');
-        navlink.forEach((item) => {
+        const navlinkList = dropdownRef.current.querySelectorAll('li');
+        navlinkList.forEach((item) => {
             item.addEventListener('click', () => {
                 setIsClicked(false);
                 gsap.to(dropdownRef.current, {
