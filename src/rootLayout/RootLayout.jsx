@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState ,createContext ,useContext } from "react";
 import { Outlet } from "react-router-dom";
 // import Header from "./header/Header";
 import Footer from "./footer/Footer";
@@ -9,7 +9,10 @@ import HeaderNew from "./header/HeaderNew";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
+export const LanguageContext = createContext();
+
 const RootLayout = () => {
+  const [changelanguase, setChangeLangause] = useState(true);
   useEffect(() => {
     if (!ScrollSmoother.get()) {
       ScrollSmoother.create({
@@ -21,10 +24,11 @@ const RootLayout = () => {
     }
   }, []);
 
+  
   return (
     <>
+    <LanguageContext.Provider value={{ changelanguase, setChangeLangause }}>
       {/* <Header /> */}
-
       <HeaderNew />
       <div id="smooth-wrapper" className="w-full h-full">
         <div id="smooth-content">
@@ -32,6 +36,7 @@ const RootLayout = () => {
           <Footer />
         </div>
       </div>
+      </LanguageContext.Provider>
     </>
   );
 };

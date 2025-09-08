@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
@@ -13,10 +13,11 @@ import { FaInstagramSquare } from 'react-icons/fa';
 import { TfiAngleRight } from 'react-icons/tfi';
 import { useSelector, useDispatch } from 'react-redux'
 import { language } from '../../features/LanguagaeSlice';
-
+import { LanguageContext } from '../RootLayout';
 
 
 const HeaderNew = () => {
+    const { changelanguase, setChangeLangause } = useContext(LanguageContext);
 
 
 
@@ -163,6 +164,7 @@ const HeaderNew = () => {
             })
         });
     }, []);
+
     // ======animate mobile menu button========
     useEffect(() => {
         if (!iconRef.current) return;
@@ -205,11 +207,13 @@ const HeaderNew = () => {
     const handleEn = () => {
         setLanguse('En')
         dispatch(language("en"))
+        setChangeLangause(true);
 
     };
     const handleDu = () => {
         setLanguse('Du')
         dispatch(language("du"))
+        setChangeLangause(false);
     };
 
 

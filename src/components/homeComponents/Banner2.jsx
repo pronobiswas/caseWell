@@ -1,11 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "../../index.css";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { LanguageContext } from "../../rootLayout/RootLayout";
 
 gsap.registerPlugin(SplitText);
 
 const Banner2 = () => {
+  const { changelanguase } = useContext(LanguageContext);
   const bannerRef = useRef(null);
   const images = [
     "/images/image1.png",
@@ -100,12 +102,20 @@ const Banner2 = () => {
             ></div>
             <div className="banner_subHeading relative overflow-hidden">
               <h4 className="text-right text-2xl text-LightText font-Poppins">
-                Exclusivity, now within reach
+                {changelanguase? 
+                "Exclusivity, now within reach"
+                :
+                "Exclusiviteit, nu binnen handbereik"
+                }
               </h4>
             </div>
             <div className="banner_heading relative overflow-hidden">
               <h1 className="text-[6vw] font-Montserrat text-lightText text-left">
-                Luxury Doors
+                {changelanguase? 
+                "Luxury Doors"
+                :
+                "Luxe deuren"
+                }
               </h1>
             </div>
           </div>
@@ -118,12 +128,16 @@ const Banner2 = () => {
             <div className="banner_subHeading relative overflow-hidden">
               {/* --heading 4-- */}
               <h4 className="text-left text-2xl text-LightText font-Poppins">
-                Doors that tell your story
+                
+                {changelanguase?
+                "Doors that tell your story"
+              :
+              "Deuren die uw verhaal vertellen"}
               </h4>
             </div>
             <div className="banner_heading relative overflow-hidden">
               <h1 className="text-[6vw] text-right text-textLight font-Montserrat">
-                Unique Designs
+                {changelanguase?"Unique Designs":"Unieke ontwerpen"}
               </h1>
             </div>
           </div>
@@ -135,12 +149,12 @@ const Banner2 = () => {
             ></div>
             <div className="banner_subHeading relative overflow-hidden">
               <h4 className="text-right text-2xl text-LightText font-Poppins">
-                Doors designed to transcend trends
+                {changelanguase?"Doors designed to transcend trends":"Deuren ontworpen om trends te overstijgen"}
               </h4>
             </div>
             <div className="banner_heading relative overflow-hidden">
               <h1 className="text-[6vw]  text-textLight font-Montserrat">
-                Timeless Quality
+                {changelanguase?"Timeless Quality":"Tijdloze kwaliteit"}
               </h1>
             </div>
           </div>
