@@ -6,11 +6,12 @@ import firebaseConfig from '../../config/firebaseConfig';
 import { storage, db } from "../../config/firebaseConfig";
 import { useSelector, useDispatch } from 'react-redux'
 import { showCaseProduct, ShowCaseProductSlice } from '../../features/ShowCaseProductSlice';
+import PostShowcaseProduct from './PostShowcaseProduct';
 
 
 
 const AdminDashBoard = () => {
-    const dispatch= useDispatch();
+    const dispatch = useDispatch();
     const app = initializeApp(firebaseConfig);
     // const db = getFirestore(app);
     // const storage = getStorage(app);
@@ -42,6 +43,7 @@ const AdminDashBoard = () => {
         let imageUrlToSave = null;
         let deleteUrlToSave = null;
 
+
         try {
             if (allInput.image) {
                 const formData = new FormData();
@@ -55,7 +57,7 @@ const AdminDashBoard = () => {
                 const data = await response.json();
 
                 if (data.success) {
-                    
+
                     imageUrlToSave = data.data.url;
                     deleteUrlToSave = data.data.delete_url;
                     setImgUrl(imageUrlToSave);
@@ -63,6 +65,7 @@ const AdminDashBoard = () => {
                     throw new Error('ImageBB upload failed: ' + data.error.message);
                 }
             }
+
 
             // Store form data in Firestore, including the deleteUrlToSave
             await addDoc(collection(db, 'adminDashboardData'), {
@@ -126,11 +129,11 @@ const AdminDashBoard = () => {
     const handleDelete = async (id, deleteUrl) => {
         if (window.confirm("Are you sure you want to delete this item?")) {
             try {
-                
+
                 await deleteDoc(doc(db, 'adminDashboardData', id));
 
                 if (deleteUrl) {
-                    
+
                     const deleteKey = deleteUrl.split('/').pop();
 
                     // Construct the correct ImageBB delete API endpoint
@@ -207,7 +210,7 @@ const AdminDashBoard = () => {
                         <button type="submit" className='border px-4 py-2'>submit</button>
                     </form>
                 </div>
-
+                <PostShowcaseProduct/>
 
 
 
@@ -254,6 +257,7 @@ const AdminDashBoard = () => {
                     ) : (
                         <p>No data available.</p>
                     )}
+                    
                 </div>
 
 

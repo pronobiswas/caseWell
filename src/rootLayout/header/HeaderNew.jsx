@@ -47,7 +47,7 @@ const HeaderNew = () => {
 
     const [isClicked, setIsClicked] = useState(false);
     const [loading, setLoading] = useState(false);
-    const [languse, setLanguse] = useState('En');
+    const [languse, setLanguse] = useState('EN');
 
     const productsImgArr = [
         "/images/pivotDoor1.jpg",
@@ -205,14 +205,14 @@ const HeaderNew = () => {
 
     // ======handle languse========
     const handleEn = () => {
-        setLanguse('En')
-        dispatch(language("en"))
+        setLanguse('EN')
+        dispatch(language("EN"))
         setChangeLangause(true);
 
     };
     const handleDu = () => {
-        setLanguse('Du')
-        dispatch(language("du"))
+        setLanguse('NL')
+        dispatch(language("NL"))
         setChangeLangause(false);
     };
 
@@ -560,8 +560,8 @@ const HeaderNew = () => {
                                     <MdOutlineKeyboardArrowDown />
                                 </div>
                                 <div className="w-fit h-fit hidden group-hover:block  absolute top-7 right-0 bg-white rounded">
-                                    <span onClick={handleEn} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>En</span>
-                                    <span onClick={handleDu} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>Du</span>
+                                    <span onClick={handleEn} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>EN</span>
+                                    <span onClick={handleDu} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>NL</span>
                                 </div>
                             </div>
 
