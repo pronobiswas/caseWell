@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 import { FiArrowUpRight } from "react-icons/fi";
 import { use } from "react";
 import { FaRegCircleCheck } from "react-icons/fa6";
+import Modal from "../components/homeComponents/utils/Modal";
 
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(DrawSVGPlugin);
@@ -162,6 +163,7 @@ const ContactUs = () => {
 
   return (
     <>
+    
       <section id="contactUs" className="w-full h-full bg-bgOne p-5 py-36">
         <div className="contactUsWrapper flex justify-center">
           <div className="formwrapper w-full max-w-3xl font-Poppins text-myCollorOne">
@@ -315,6 +317,7 @@ const ContactUs = () => {
         </div>
         {thankYouMessage && (
           <div id="thankYouWrapper" className="w-full h-screen abs0lute top-[10%] left-0 z-40 bg-[#00000054] flex items-center justify-center">
+            <Modal isOpen="true">
             <div ref={mesegeBoxRef} className="bg-white p-5 rounded shadow-md ">
               {/* ------ Thank You Message ------ */}
               <div className="flex items-center gap-5">
@@ -341,8 +344,10 @@ const ContactUs = () => {
                 Close
               </button>
             </div>
+            </Modal>
           </div>
         )}
+        
       </section>
     </>
   );

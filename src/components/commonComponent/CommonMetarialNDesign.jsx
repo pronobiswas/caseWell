@@ -110,8 +110,8 @@ const CommonMetarialNDesign = ({
   return (
     <>
       <section ref={secRef} className="bg-myColorOne">
-        <div className="wrapper w-full h-[560px] bg-myColorOne text-LightText font-Poppins flex gap-10 p-5">
-          <div className="w-1/2 h-full">
+        <div className="wrapper w-full h-auto md:h-[560px] bg-myColorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
+          <div className="w-full md:w-1/2 h-full order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
               <span className="title text-textLight">{title1}</span>
               <h3 className="pivotDescHeading text-4xl font-Montserrat text-textLight">
@@ -123,7 +123,7 @@ const CommonMetarialNDesign = ({
               </Link>
             </div>
           </div>
-          <div className="w-1/2 h-full">
+          <div className="w-full md:w-1/2 h-full order-1 md:order-2">
             <div className="w-full h-full relative overflow-hidden">
               <img
                 src={imageUrl1}
@@ -134,8 +134,8 @@ const CommonMetarialNDesign = ({
           </div>
         </div>
 
-        <div className="wrapper w-full h-[560px] bg-myColorOne text-LightText font-Poppins flex gap-10 p-5">
-          <div className="w-1/2 h-full">
+        <div className="wrapper w-full h-auto md:h-[560px] bg-myColorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
+          <div className="w-full md:w-1/2 h-full">
             <div className="w-full h-full relative overflow-hidden">
               <img
                 src={imageUrl2}
@@ -144,7 +144,7 @@ const CommonMetarialNDesign = ({
               />
             </div>
           </div>
-          <div className="w-1/2 h-full">
+          <div className=" w-full md:w-1/2 h-full">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
               <span className="title text-textLight">{title2}</span>
               <h3 className="pivotDescHeading text-4xl font-Montserrat text-textLight">
@@ -158,8 +158,8 @@ const CommonMetarialNDesign = ({
           </div>
         </div>
 
-        <div className="wrapper w-full h-[560px] bg-myColorOne text-LightText font-Poppins flex gap-10 p-5">
-          <div className="w-1/2 h-full">
+        <div className="wrapper w-full h-auto md:h-[560px] bg-myColorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
+          <div className="w-full md:w-1/2 h-full order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
               <span className="title text-textLight">{title3}</span>
               <h3 className="pivotDescHeading text-4xl font-Montserrat text-textLight">
@@ -171,7 +171,7 @@ const CommonMetarialNDesign = ({
               </Link>
             </div>
           </div>
-          <div className="w-1/2 h-full">
+          <div className="w-full md:w-1/2 h-full order-1 md:order-2">
             <div className="w-full h-full relative overflow-hidden">
               {/* ✅ ref added here */}
               <img

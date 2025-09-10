@@ -55,7 +55,7 @@ const ProductBanner = ({
           backgroundSize: "100% 100%",
         }}
       >
-        <div className="cabinetryBannerWarper w-full h-full flex items-end p-12 z-0">
+        <div className="cabinetryBannerWarper w-full h-full flex items-end p-5 md:p-12 z-0">
           <div className="cabinetryBannerContent  ">
             <h1
               ref={headingRef}
@@ -65,7 +65,7 @@ const ProductBanner = ({
             </h1>
             <p
               ref={textRef}
-              className="w-full max-w-2xl text-xl mt-8 mb-6 text-textLight font-Poppins "
+              className="w-full max-w-2xl text-base md:text-xl mt-8 mb-6 text-textLight font-Poppins "
             >
               {text}
             </p>

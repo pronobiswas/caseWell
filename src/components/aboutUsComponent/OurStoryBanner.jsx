@@ -46,7 +46,7 @@ const OurStoryBanner = () => {
     return (
         <>
             <section id="ConsciousNcraftsBanner">
-                <div className="Wrapper w-full h-screen bg-[url('/images/aboutUsBanner.png')] bg-cover bg-center flex items-end p-12">
+                <div className="Wrapper w-full h-screen bg-[url('/images/aboutUsBanner.png')] bg-cover bg-center flex items-end p-5 md:p-12">
                     <div className='w-full max-w-[700px] h-fit flex flex-col gap-6 text-LightText  '>
                         <h1 ref={headingRef} className='font-Montserrat font-semibold text-2xl md:text-5xl'>Zebrano Studio - Exclusivity for Everyone (and a little different from the rest!)</h1>
                         <p ref={paragraphRef} className='text-sm md:text-xl '>
