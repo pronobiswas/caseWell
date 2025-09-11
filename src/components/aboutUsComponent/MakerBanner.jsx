@@ -72,13 +72,13 @@ const MakerBanner = () => {
             <TypeingText texts={["makers ", "designers", "people "]} />
           </div>
 
-          <div className='w-full flex flex-col md:flex-row'>
+          <div className='w-full flex flex-col md:flex-row gap-10 md:gap-1'>
             <div className='w-full md:w-1/2'>
               <h1 ref={headingTwoRef} className='w-fit text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>perfected in</h1>
               <h1 ref={headingThreeRef} className='w-fit text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>production.</h1>
             </div>
             <div className="w-full md:w-1/2">
-              <p className='text-6xl font-bold text-colorOne '>"</p>
+              <p className='text-6xl font-bold text-colorOne leading-3 md:leading-normal '>"</p>
               <p ref={subheadingRef} className='text-base text-right text-colorOne md:text-2xl'> Real hands. Real sawdust.Unreal results. From first sketch to final fit, we design,prototype,and and build under one roof - so every milimeter up and every door feels effortlessly right </p>
               <p className='text-6xl font-bold text-right'>"</p>
             </div>

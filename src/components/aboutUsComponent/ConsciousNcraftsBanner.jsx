@@ -45,7 +45,7 @@ const ConsciousNcraftsBanner = () => {
     return (
         <>
             <section id="ConsciousNcraftsBanner">
-                <div className="Wrapper w-full h-screen bg-[url('/images/aboutUsBanner.png')] bg-cover bg-center flex items-end p-12">
+                <div className="Wrapper w-full h-screen bg-[url('/images/aboutUsBanner.png')] bg-cover bg-center flex items-end p-5 md:p-12">
                     <div className='w-full max-w-[700px] h-fit flex flex-col gap-6 text-white  '>
                         <h1 ref={headingRef} className='font-Montserrat text-2xl md:text-5xl'>Conscious Craft</h1>
                         <p ref={paragraphRef} className='text-sm md:text-xl '>
