@@ -211,6 +211,11 @@ const HeaderNew = () => {
 
     };
     const handleDu = () => {
+        setLanguse('DE')
+        dispatch(language("DE"))
+        setChangeLangause(false);
+    };
+    const handleNl = () => {
         setLanguse('NL')
         dispatch(language("NL"))
         setChangeLangause(false);
@@ -561,7 +566,8 @@ const HeaderNew = () => {
                                 </div>
                                 <div className="w-fit h-fit hidden group-hover:block  absolute top-7 right-0 bg-white rounded">
                                     <span onClick={handleEn} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>EN</span>
-                                    <span onClick={handleDu} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>NL</span>
+                                    <span onClick={handleNl} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>NL</span>
+                                    <span onClick={handleDu} className='block px-2 cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>DE</span>
                                 </div>
                             </div>
 

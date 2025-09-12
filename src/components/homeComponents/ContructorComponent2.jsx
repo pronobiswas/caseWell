@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
-import { LanguageContext } from "../../rootLayout/RootLayout";
+// import { LanguageContext } from "../../rootLayout/RootLayout";
 
 const data = [
   {
@@ -48,8 +48,8 @@ const data = [
 ];
 
 const ContructorComponent2 = () => {
-  const { changelanguase } = useContext(LanguageContext);
-  console.log(changelanguase)
+  // const context = useContext(LanguageContext);
+  const changelanguase =  true;
   const imgRef = useRef(null);
   const headingRef = useRef(null);
   const descRef = useRef(null);
