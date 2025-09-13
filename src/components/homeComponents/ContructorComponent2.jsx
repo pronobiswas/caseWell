@@ -2,66 +2,67 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
-// import { LanguageContext } from "../../rootLayout/RootLayout";
+import { useTranslation } from "react-i18next";
 
-const data = [
-  {
-    title: "Tailor-made",
-    image: "/images/img1.png",
-    heading: "Exclusive wooden doors",
-    headingDU: "Exclusieve houten deuren",
-    description:
-      "Zebrano creates tailor-made pivot, sliding, and classic doors crafted from premium wood and finished with exclusive detailing. ",
-    descriptionDU:
-      "Zebrano maakt op maat gemaakte draaideuren, schuifdeuren en klassieke deuren, vervaardigd uit hoogwaardig hout en afgewerkt met exclusieve details.",
-  },
-  {
-    title: "Custom details",
-    image: "/images/img2.png",
-    heading: "Materials With a Story",
-    headingDU: "Materialen met een verhaal",
-    description:
-      "From rare woods to hand-selected stone and artisan glass, each material is chosen for its character, history, and natural beauty",
-    descriptionDU:
-      "Van zeldzame houtsoorten tot met de hand geselecteerde stenen en ambachtelijk glas: elk materiaal wordt gekozen vanwege zijn karakter, geschiedenis en natuurlijke schoonheid.",
-  },
-  {
-    title: "Limitless Design",
-    image: "/images/img3.png",
-    heading: "Design Without Limits",
-    headingDU: "Ontwerp zonder grenzen",
-    description:
-      "We go beyond standard dimensions and finishes, shaping doors that integrate seamlessly into your architecture and reflect your personal style.",
-    descriptionDU:
-      "Wij gaan verder dan standaardafmetingen en afwerkingen en ontwerpen deuren die naadloos aansluiten op uw architectuur en uw persoonlijke stijl weerspiegelen.",
-  },
-  {
-    title: "Conscious craft",
-    image: "/images/img4.png",
-    heading: "Craftsmanship & Durability",
-    headingDU: "Vakmanschap & Duurzaamheid",
-    description:
-      "We build them so well, you might start showing them off more than your new kitchen.",
-    descriptionDU:
-      "We hebben ze zo goed gebouwd dat u ze misschien wel vaker zult laten zien dan uw nieuwe keuken.",
-  },
-];
+// const data2 = [
+//   {
+//     title: "Tailor-made",
+//     image: "/images/img1.png",
+//     heading: "Exclusive wooden doors",
+//     headingDU: "Exclusieve houten deuren",
+//     description:
+//       "Zebrano creates tailor-made pivot, sliding, and classic doors crafted from premium wood and finished with exclusive detailing. ",
+//     descriptionDU:
+//       "Zebrano maakt op maat gemaakte draaideuren, schuifdeuren en klassieke deuren, vervaardigd uit hoogwaardig hout en afgewerkt met exclusieve details.",
+//   },
+//   {
+//     title: "Custom details",
+//     image: "/images/img2.png",
+//     heading: "Materials With a Story",
+//     headingDU: "Materialen met een verhaal",
+//     description:
+//       "From rare woods to hand-selected stone and artisan glass, each material is chosen for its character, history, and natural beauty",
+//     descriptionDU:
+//       "Van zeldzame houtsoorten tot met de hand geselecteerde stenen en ambachtelijk glas: elk materiaal wordt gekozen vanwege zijn karakter, geschiedenis en natuurlijke schoonheid.",
+//   },
+//   {
+//     title: "Limitless Design",
+//     image: "/images/img3.png",
+//     heading: "Design Without Limits",
+//     headingDU: "Ontwerp zonder grenzen",
+//     description:
+//       "We go beyond standard dimensions and finishes, shaping doors that integrate seamlessly into your architecture and reflect your personal style.",
+//     descriptionDU:
+//       "Wij gaan verder dan standaardafmetingen en afwerkingen en ontwerpen deuren die naadloos aansluiten op uw architectuur en uw persoonlijke stijl weerspiegelen.",
+//   },
+//   {
+//     title: "Conscious craft",
+//     image: "/images/img4.png",
+//     heading: "Craftsmanship & Durability",
+//     headingDU: "Vakmanschap & Duurzaamheid",
+//     description:
+//       "We build them so well, you might start showing them off more than your new kitchen.",
+//     descriptionDU:
+//       "We hebben ze zo goed gebouwd dat u ze misschien wel vaker zult laten zien dan uw nieuwe keuken.",
+//   },
+// ];
 
 const ContructorComponent2 = () => {
-  // const context = useContext(LanguageContext);
-  const changelanguase =  true;
-  const imgRef = useRef(null);
-  const headingRef = useRef(null);
-  const descRef = useRef(null);
+  const { t } = useTranslation();
+  const data = t("homePage.ContructorComponent2.data", { returnObjects: true });
+  
+  const imgRef = useRef();
+  const headingRef = useRef();
+  const descRef = useRef();
   const progressRefs = useRef([]);
-  const boxRef = useRef(null);
+  const boxRef = useRef();
 
   const currentIndexRef = useRef(0);
-  const intervalRef = useRef(null);
+  const intervalRef = useRef();
   const isAnimatingRef = useRef(false);
 
   const animateContent = (index) => {
-    const { heading, headingDU, description, descriptionDU, image } =
+    const { heading, description, image } =
       data[index];
 
     gsap.to(boxRef.current, {
@@ -69,10 +70,8 @@ const ContructorComponent2 = () => {
       y: 0,
       duration: 0.3,
       onComplete: () => {
-        headingRef.current.innerHTML = changelanguase ? heading : headingDU;
-        descRef.current.innerHTML = changelanguase
-          ? description
-          : descriptionDU;
+        headingRef.current.innerHTML = heading;
+        descRef.current.innerHTML = description;
         gsap.fromTo(
           boxRef.current,
           { opacity: 0.5, y: 0 },
@@ -136,13 +135,8 @@ const ContructorComponent2 = () => {
   };
 
   useEffect(() => {
-    // Initialize with correct language
-    headingRef.current.innerHTML = changelanguase
-      ? data[0].heading
-      : data[0].headingDU;
-    descRef.current.innerHTML = changelanguase
-      ? data[0].description
-      : data[0].descriptionDU;
+    headingRef.current.innerHTML = data[0].heading
+    descRef.current.innerHTML = data[0].description
     animateProgress(0);
     startAutoSlide();
 
@@ -150,7 +144,7 @@ const ContructorComponent2 = () => {
       clearInterval(intervalRef.current);
       gsap.killTweensOf(progressRefs.current);
     };
-  }, [changelanguase]);
+  }, []);
 
   return (
     <div
@@ -162,9 +156,7 @@ const ContructorComponent2 = () => {
         <div className="w-full lg:w-1/2 order-2 lg:order-1 p-8 lg:p-12 bg-myColorThree rounded-3xl">
           <div className="w-full h-full flex flex-col ">
             <p className="text-myColorOne ">
-              {changelanguase
-                ? "“Passion for Wood. Precision in Design.”"
-                : "“Passie voor hout. Precisie in design.”"}
+              {t("homePage.ContructorComponent2.title")}
             </p>
             <div className="box1" ref={boxRef}>
               <h2
@@ -178,7 +170,7 @@ const ContructorComponent2 = () => {
 
               <Link to={"/collection"}>
                 <div className="w-fit border border-gray-800 px-6 py-3 bg-myColorOne text-myColorTwo cursor-pointer rounded-full flex items-center gap-3 hover:bg-myColorTwo hover:text-myColorOne transition-all duration-300">
-                  <span className="font-medium">See collection</span>
+                  <span className="font-medium">{t("homePage.ContructorComponent2.btnTex")}</span>
                   <BsArrowUpRight className="w-5 h-5" />
                 </div>
               </Link>

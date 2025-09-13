@@ -10,8 +10,10 @@ import { RxArrowTopRight } from "react-icons/rx";
 import { TbShield } from "react-icons/tb";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+import { useTranslation } from "react-i18next";
 
 const WhyPartner = () => {
+  const { t } = useTranslation();
   const partnerCard = useRef(null);
   const partnerHeading = useRef(null);
   const partnerDes = useRef(null);
@@ -111,17 +113,13 @@ const WhyPartner = () => {
               ref={partnerHeading}
               className="text-3xl font-Montserrat text-myColorOne"
             >
-              Why Choose Zebrano Studio?
+              {t("homePage.WhyPartner.partnerHeading.title")}
             </h3>
             <p
               ref={partnerDes}
               className="w-full max-w-xl text-right text-myColorOne font-Poppins"
             >
-              We believe luxury shouldn’t be out of reach. Our doors are crafted
-              with the same precision and materials found in the world’s finest
-              interiors — yet designed to be accessible for every home. From
-              first sketch to final installation, we make it possible to bring
-              high-end design into your everyday life, without compromise.
+              {t("homePage.WhyPartner.partnerHeading.description")}
             </p>
           </div>
           <div
@@ -133,18 +131,11 @@ const WhyPartner = () => {
                 <FaRegMessage />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6 className="text-myColorOne ">Bespoke Design </h6>
+                <h6 className="text-myColorOne ">{t("homePage.WhyPartner.cards1.title")}</h6>
                 <p className="text-myColorOne ">
-                  Tailored shapes, finishes, and materials to match your vision
-                  and space.
+                  {t("homePage.WhyPartner.cards1.description")}
                 </p>
               </div>
-              {/* <div className="link flex items-center gap-3">
-                <span>Read more</span>{" "}
-                <span>
-                  <RxArrowTopRight />
-                </span>
-              </div> */}
             </div>
 
             <div className="box w-80 py-5  flex flex-col gap-6  ">
@@ -152,10 +143,9 @@ const WhyPartner = () => {
                 <LuArrowRight />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6 className="text-myColorOne">Accessible Luxury</h6>
+                <h6 className="text-myColorOne">{t("homePage.WhyPartner.cards2.title")}</h6>
                 <p className="text-myColorOne">
-                  Premium craftsmanship and rare materials — made attainable for
-                  every project size.
+                  {t("homePage.WhyPartner.cards2.description")}
                 </p>
               </div>
             </div>
@@ -165,10 +155,9 @@ const WhyPartner = () => {
                 <BsLayoutWtf />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6 className="text-myColorOne">Easy Configuration</h6>
+                <h6 className="text-myColorOne">{t("homePage.WhyPartner.cards3.title")}</h6>
                 <p className="text-myColorOne">
-                  A simple process with curated options for faster delivery and
-                  effortless decision-making.
+                  {t("homePage.WhyPartner.cards3.description")}
                 </p>
               </div>
             </div>
@@ -178,10 +167,9 @@ const WhyPartner = () => {
                 <TbShield />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6 className="text-myColorOne">Precision Craftsmanship</h6>
+                <h6 className="text-myColorOne">{t("homePage.WhyPartner.cards4.title")}</h6>
                 <p className="text-myColorOne">
-                  Doors built to last a lifetime, with meticulous attention to
-                  detail.
+                  {t("homePage.WhyPartner.cards4.description")}
                 </p>
               </div>
             </div>
@@ -191,10 +179,9 @@ const WhyPartner = () => {
                 <PiArrowCircleUpRightLight />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6 className="text-myColorOne">Endless inspiration</h6>
+                <h6 className="text-myColorOne">{t("homePage.WhyPartner.cards5.title")}</h6>
                 <p className="text-myColorOne">
-                  Endless design possibilities to make your space truly
-                  unforgettable.
+                  {t("homePage.WhyPartner.cards5.description")}
                 </p>
               </div>
             </div>

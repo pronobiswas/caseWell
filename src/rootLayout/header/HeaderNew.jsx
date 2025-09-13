@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, {  useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import '../../index.css'
-import TestPage from '../../pages/PreLoader';
 import { CiGlobe } from 'react-icons/ci';
 import { MdArrowOutward, MdOutlineArrowForward, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import ZebranoPreLoader from '../ZebranoPreLoader';
@@ -13,12 +12,11 @@ import { FaInstagramSquare } from 'react-icons/fa';
 import { TfiAngleRight } from 'react-icons/tfi';
 import { useSelector, useDispatch } from 'react-redux'
 import { language } from '../../features/LanguagaeSlice';
-import { LanguageContext } from '../RootLayout';
+import { useTranslation } from "react-i18next";
 
 
 const HeaderNew = () => {
-    const { changelanguase, setChangeLangause } = useContext(LanguageContext);
-
+    const { i18n } = useTranslation();
 
 
     const location = useLocation();
@@ -207,26 +205,28 @@ const HeaderNew = () => {
     const handleEn = () => {
         setLanguse('EN')
         dispatch(language("EN"))
-        setChangeLangause(true);
+        i18n.changeLanguage("en");
+
 
     };
     const handleDu = () => {
         setLanguse('DE')
         dispatch(language("DE"))
-        setChangeLangause(false);
+        i18n.changeLanguage("de");
     };
     const handleNl = () => {
         setLanguse('NL')
         dispatch(language("NL"))
-        setChangeLangause(false);
+        i18n.changeLanguage("nl");
     };
 
-
+    console.log();
+    
     return (
         <>
             <header className="w-full  fixed top-0 left-0 z-50 bg-bgOne">
                 <nav className=" hidden lg:block px-5 py-3">
-                    <div className="navWrapper w-full flex justify-between items-center text-colorOne">
+                    <div className= {`navWrapper w-full flex justify-between items-center text-colorOne `} >
 
                         {/* ======logo====== */}
                         <div className="logo w-60 2xl:w-80 shrink-0">
