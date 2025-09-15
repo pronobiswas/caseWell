@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const InspirationInsight = () => {
+  const { t } = useTranslation();
   let [clickedValue, setClickedValue] = useState(0);
   const progressRef = useRef(null);
   const slideRef = useRef(null);
@@ -61,14 +63,13 @@ const InspirationInsight = () => {
         <div className="inspirationWrapper p-12">
           <div className="inspirationHeader">
             <h2 className="text-4xl text-myColorOne font-Montserrat">
-              Inspiration & Insights
+              {t("homePage.InspirationInsight.heading")}
             </h2>
             <h3 className="text-2xl mt-5 mb-1 font-Montserrat text-myColorOne">
-              Crafted from the Finest Wood
+              {t("homePage.InspirationInsight.title")}
             </h3>
             <p className="w-full max-w-[500px] text-sm font-Poppins text-myColorOne">
-              Wood is more than our material — it’s our passion. Every grain
-              tells a story. Every finish is done with love.
+              {t("homePage.InspirationInsight.description")}
             </p>
           </div>
           {/* ======inspirationSliderWrapper===== */}

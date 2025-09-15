@@ -3,10 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const CabinetaryOption = () => {
+  const { t } = useTranslation();
   const cabinetaryOptionMain = useRef(null);
   const optionOneRef = useRef(null);
   const optionTwoRef = useRef(null);
@@ -104,36 +106,31 @@ const CabinetaryOption = () => {
             className="cabinetaryOptionOne w-full h-full flex flex-col md:flex-row gap-5"
           >
             <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-myCollorThree text-myColorOne">
-              <span>Option 1 :</span>
+              <span>{t("ProductsPage.CabinetaryOption.option1.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
                 <h3 className="font-Montserrat font-semibold text-3xl">
-                  Explore Our Collections
+                  {t("ProductsPage.CabinetaryOption.option1.heading")}
                 </h3>
 
                 <p>
-                  Not sure where to begin? Browse our curated Glass, Veneer, 3D,
-                  and Atelier collections to discover the designs, materials,
-                  and finishes that inspire you. We’ll guide you toward the
-                  perfect fit for your style and space.
+                  {t("ProductsPage.CabinetaryOption.option1.desc")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See collection" />
+                  <BtnComponent text={t("ProductsPage.CabinetaryOption.option1.btnText")}/>
                 </Link>
               </div>
             </div>
             <div className="optionOneCol w-full md:w-1/2 bg-myColorThree px-8 py-32">
-              <span>Option 2:</span>
+              <span>{t("ProductsPage.CabinetaryOption.option2.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
                 <h3 className="font-Montserrat font-semibold text-3xl">
-                  Configure Your Own
+                  {t("ProductsPage.CabinetaryOption.option2.heading")}
                 </h3>
                 <p>
-                  Already know exactly what you want? Use our configurator to
-                  choose your door type, materials, hardware, and details — and
-                  we’ll craft it to your specifications.
+                  {t("ProductsPage.CabinetaryOption.option2.desc")}
                 </p>
                 <Link to="/configurator">
-                  <BtnComponent text="Configure yours" />
+                  <BtnComponent text={t("ProductsPage.CabinetaryOption.option1.btnText")} />
                 </Link>
               </div>
             </div>
@@ -154,15 +151,13 @@ const CabinetaryOption = () => {
             </div>
             <div className="w-full md:w-1/2  p-8">
               <div className="cabinetaryOptionContent flex flex-col gap-5">
-                <span className="font-Poppins">Choose your door type.</span>
-                <h3 className="font-Montserrat text-3xl">Make a statement.</h3>
+                <span className="font-Poppins">{t("ProductsPage.CabinetaryOption.row1.title")}</span>
+                <h3 className="font-Montserrat text-3xl">{t("ProductsPage.CabinetaryOption.row1.heading")}</h3>
                 <p>
-                  Select from our most popular Pivot, Slide, or Hinged designs —
-                  pre-sized for standard openings and ready to install. Perfect
-                  for quick upgrades or projects on a tight schedule.
+                  {t("ProductsPage.CabinetaryOption.row1.desc")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See collection" />
+                  <BtnComponent text={t("ProductsPage.CabinetaryOption.row1.btnText")} />
                 </Link>
               </div>
             </div>
@@ -174,17 +169,15 @@ const CabinetaryOption = () => {
           >
             <div className="w-full md:w-1/2 p-8 order-2 md:order-1 ">
               <div className="cabinetaryOptionContent flex flex-col gap-5">
-                <span className="font-Poppins">Select your material. </span>
+                <span className="font-Poppins">{t("ProductsPage.CabinetaryOption.row2.title")}</span>
                 <h3 className="font-Montserrat text-3xl font-semibold">
-                  Make it yours.
+                  {t("ProductsPage.CabinetaryOption.row2.heading")}
                 </h3>
                 <p>
-                  From fine veneers to solid woods, textured glass, or natural
-                  stone inlays — we’ll craft your chosen design to the exact
-                  dimensions of your space for a flawless fit.
+                  {t("ProductsPage.CabinetaryOption.row2.desc")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See collection" />
+                  <BtnComponent text={t("ProductsPage.CabinetaryOption.row2.btnText")} />
                 </Link>
               </div>
             </div>
@@ -214,17 +207,15 @@ const CabinetaryOption = () => {
             </div>
             <div className="w-full md:w-1/2  p-8">
               <div className="cabinetaryOptionContent flex flex-col gap-5">
-                <span className="font-Poppins">Define Your Grip Style </span>
+                <span className="font-Poppins">{t("ProductsPage.CabinetaryOption.row3.title")}</span>
                 <h3 className="font-Montserrat font-semibold text-3xl">
-                  Pick your handle or integrated grip.
+                  {t("ProductsPage.CabinetaryOption.row3.heading")}
                 </h3>
                 <p>
-                  Choose from fully integrated grips, bold contrasting metals,
-                  or matching material finishes to make your door as distinctive
-                  as your interior.{" "}
+                  {t("ProductsPage.CabinetaryOption.row3.desc")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See collection" />
+                  <BtnComponent text={t("ProductsPage.CabinetaryOption.row3.btnText")} />
                 </Link>
               </div>
             </div>
@@ -233,17 +224,15 @@ const CabinetaryOption = () => {
           <div className="cabinetaryOptionFour w-full h-full flex flex-col gap-5 md:flex-row md:items-center">
             <div className="w-full md:w-1/2  p-8 order-2 md:order-1 ">
               <div className="cabinetaryOptionContent flex flex-col gap-5 ">
-                <span className="font-Poppins">Architectural Integration</span>
+                <span className="font-Poppins">{t("ProductsPage.CabinetaryOption.row4.title")}</span>
                 <h3 className="font-Montserrat font-semibold text-3xl">
-                  Seamlessly blend your door into the architecture.
+                  {t("ProductsPage.CabinetaryOption.row4.heading")}
                 </h3>
                 <p>
-                  From room dividers and wall panels to fully integrated frames,
-                  we create doors that become part of the wall itself —
-                  delivering a unified, continuous design throughout your space.
+                  {t("ProductsPage.CabinetaryOption.row4.desc")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See collection" />
+                  <BtnComponent text={t("ProductsPage.CabinetaryOption.row4.btnText")} />
                 </Link>
               </div>
             </div>

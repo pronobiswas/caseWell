@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 import { IoMailUnread } from "react-icons/io5";
 import { FaInstagramSquare, FaWhatsappSquare } from "react-icons/fa";
 import { FaHeadphones, FaPinterest, FaSquarePhone } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+  const { t } = useTranslation();
   const footerRef = useRef(null);
   const svgRef = useRef(null);
 
@@ -73,11 +75,11 @@ const Footer = () => {
           <div className="footerRow w-full flex flex-col md:flex-row justify-between gap-8">
             {/* ----w-1/2----- */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-6xl font-Montserrat font-bold mb-8 text-myColorOne">
-                Luxury doors,<br></br> made accessible.
+              <h2 className="w-full max-w-[520PX] text-6xl font-Montserrat font-bold mb-8 text-myColorOne">
+                {t("footer.title")}
               </h2>
               <div className="w-full">
-                <Link to="/collection" className="w-full bg-black">
+                <Link to="/collection" className="w-full bg-myColorOne">
                   <BtnComponent text="See our collection" />
                 </Link>
               </div>
@@ -87,46 +89,46 @@ const Footer = () => {
               {/* ---products--- */}
               <div className="">
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">
-                  Products
+                  {t("footer.Products")}
                 </h5>
                 <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
                   <li className="navLinkItem w-fit relative">
                     <Link to="/products">
                       <div className="gggg">
-                        <div className="red w-fit ">Products</div>
-                        <div className="blue w-fit ">Products</div>
+                        <div className="red w-fit ">{t("footer.Products")}</div>
+                        <div className="blue w-fit ">{t("footer.Products")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/products/material">
                       <div className="gggg">
-                        <div className="red w-fit ">Materials</div>
-                        <div className="blue w-fit ">Materials</div>
+                        <div className="red w-fit ">{t("footer.Materials")}</div>
+                        <div className="blue w-fit ">{t("footer.Materials")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/collection">
                       <div className="gggg">
-                        <div className="red w-fit ">Collection</div>
-                        <div className="blue w-fit ">Collection</div>
+                        <div className="red w-fit ">{t("footer.Collection")}</div>
+                        <div className="blue w-fit ">{t("footer.Collection")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/configurator">
                       <div className="gggg">
-                        <div className="red w-fit ">Configuration</div>
-                        <div className="blue w-fit ">Configuration</div>
+                        <div className="red w-fit ">{t("footer.Configuration")}</div>
+                        <div className="blue w-fit ">{t("footer.Configuration")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/architects">
                       <div className="gggg">
-                        <div className="red w-fit ">Architects</div>
-                        <div className="blue w-fit ">Architects</div>
+                        <div className="red w-fit ">{t("footer.Architects")}</div>
+                        <div className="blue w-fit ">{t("footer.Architects")}</div>
                       </div>
                     </Link>
                   </li>
@@ -135,46 +137,46 @@ const Footer = () => {
               {/* ---zebrano--- */}
               <div className="">
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">
-                  Zebrano
+                  {t("footer.Zebrano")}
                 </h5>
                 <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
                   <li className="navLinkItem w-fit relative">
                     <Link to="/inspiration">
                       <div className="gggg">
-                        <div className="red w-fit ">Inspiration</div>
-                        <div className="blue w-fit ">Inspiration</div>
+                        <div className="red w-fit ">{t("footer.Inspiration")}</div>
+                        <div className="blue w-fit ">{t("footer.Inspiration")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/aboutus">
                       <div className="gggg">
-                        <div className="red w-fit ">About</div>
-                        <div className="blue w-fit ">About</div>
+                        <div className="red w-fit ">{t("footer.About")}</div>
+                        <div className="blue w-fit ">{t("footer.About")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/aboutus/ourStory">
                       <div className="gggg">
-                        <div className="red w-fit ">Story</div>
-                        <div className="blue w-fit ">Story</div>
+                        <div className="red w-fit ">{t("footer.Story")}</div>
+                        <div className="blue w-fit ">{t("footer.Story")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/aboutus/theMakers">
                       <div className="gggg">
-                        <div className="red w-fit ">Our team</div>
-                        <div className="blue w-fit ">Our team</div>
+                        <div className="red w-fit ">{t("footer.OurTeam")}</div>
+                        <div className="blue w-fit ">{t("footer.OurTeam")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/aboutus/ConsciousNcrafts">
                       <div className="gggg">
-                        <div className="red w-fit ">Consious Craft</div>
-                        <div className="blue w-fit ">Consious Craft</div>
+                        <div className="red w-fit ">{t("footer.ConsciousCraft")}</div>
+                        <div className="blue w-fit ">{t("footer.ConsciousCraft")}</div>
                       </div>
                     </Link>
                   </li>
@@ -183,38 +185,38 @@ const Footer = () => {
               {/* ---service--- */}
               <div className="">
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">
-                  Service
+                  {t("footer.Service")}
                 </h5>
                 <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
                   <li className="navLinkItem w-fit relative">
                     <Link to="/contact">
                       <div className="gggg">
-                        <div className="red w-fit ">Contact</div>
-                        <div className="blue w-fit ">Contact</div>
+                        <div className="red w-fit ">{t("footer.Contact")}</div>
+                        <div className="blue w-fit ">{t("footer.Contact")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/aboutus/services">
                       <div className="gggg">
-                        <div className="red w-fit ">FAQ</div>
-                        <div className="blue w-fit ">FAQ</div>
+                        <div className="red w-fit ">{t("footer.FAQ")}</div>
+                        <div className="blue w-fit ">{t("footer.FAQ")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/terms">
                       <div className="gggg">
-                        <div className="red w-fit ">Terms & Conditions</div>
-                        <div className="blue w-fit ">Terms & Conditions</div>
+                        <div className="red w-fit max-w-36 2xl:max-w-full truncate">{t("footer.TermsConditions")}</div>
+                        <div className="blue w-fit max-w-36 2xl:max-w-full truncate">{t("footer.TermsConditions")}</div>
                       </div>
                     </Link>
                   </li>
                   <li className="navLinkItem w-fit relative">
                     <Link to="/privacy-Policy">
                       <div className="gggg">
-                        <div className="red w-fit ">Privacy policy</div>
-                        <div className="blue w-fit ">Privacy policy</div>
+                        <div className="red w-fit max-w-36 2xl:max-w-full truncate">{t("footer.PrivacyPolicy")}</div>
+                        <div className="blue w-fit max-w-36 2xl:max-w-full truncate">{t("footer.PrivacyPolicy")}</div>
                       </div>
                     </Link>
                   </li>
@@ -499,7 +501,7 @@ const Footer = () => {
           {/* =====footer row three===== */}
           <div className="w-full p-5">
             <p className="text-myColorOne font-Poppins text-center">
-              © 2025 Zebrano Studio. All rights reserved.
+              {t("footer.footNone")}
             </p>
           </div>
         </div>

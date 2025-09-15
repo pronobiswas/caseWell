@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import BtnComponent from "./utils/BtnComponent";
+import { useTranslation } from "react-i18next";
 
 const Stalen = () => {
+   const { t } = useTranslation();
   const StalenCard1 = useRef();
   const StalenCard2 = useRef();
   const StalenCard3 = useRef();
@@ -114,18 +116,15 @@ const Stalen = () => {
           <div className="w-full lg:w-1/4 h-full  shrink-0 min-h-[342px] p-8 flex justify-end items-end bg-[#0c290136] shadow-inner shadow-[#01500163] border border-[#003800]">
             <div className="w-full h-fit flex flex-col  gap-6 ">
               <h2 className=" md:max-w-56 text-2xl text-textLight font-Montserrat">
-                Door Types
+                {t("homePage.Stalen.card1.title")}
               </h2>
               <p className="text-LightText font-Poppins">
-                Explore our diverse range of exclusive wooden doors, each
-                designed to offer distinct advantages in style, functionality,
-                and space utilization. From grand entrances to seamless room
-                transitions, we have the perfect solution for your home.
+                {t("homePage.Stalen.card1.desc")}
               </p>
               <Link to="/configurator">
                 <div className="w-fit border border-textLight px-4 py-1">
                   <span className="text-LightText font-Poppins">
-                    Configure Yours →
+                    {t("homePage.Stalen.card1.btnText")}
                   </span>
                 </div>
               </Link>
@@ -160,17 +159,16 @@ const Stalen = () => {
                 <div className=" w-full h-[calc(100%-80px)] flex flex-col justify-between ">
                   <div className="w-full h-auto">
                     <h3 className="text-2xl text-textLight font-Montserrat">
-                       “Pivot Doors”
+                       {t("homePage.Stalen.card2.title")}
                     </h3>
                     <p className="w-full mt-5 mb-6 text-textLight font-Poppins">
-                      Rotate on a vertical axis, allowing for larger, more
-                      dramatic entrances.
+                      {t("homePage.Stalen.card2.desc")}
                     </p>
                   </div>
 
                   <div className="w-full h-auto">
                     <Link to="/collection">
-                      <BtnComponent text="View Collection" />
+                      <BtnComponent text={t("homePage.Stalen.card2.btnText")} />
                     </Link>
                   </div>
                 </div>
@@ -196,18 +194,15 @@ const Stalen = () => {
                 <div className="text w-full h-full flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl text-textLight  font-Montserrat">
-                      “Sliding Doors”
+                      {t("homePage.Stalen.card3.title")}
                     </h3>
                     <p className="w-full mt-5 mb-6 text-textLight font-Poppins">
-                      Our custom sliding doors glide effortlessly along a track,
-                      making them perfect for space-saving layouts and modern
-                      interior design. Ideal as elegant room dividers, wardrobe
-                      solutions, or for creating a smooth flow between spaces.
+                      {t("homePage.Stalen.card3.desc")}
                     </p>
                   </div>
                   <div className="w-full h-auto">
                     <Link to="/collection">
-                      <BtnComponent text="View Collection" />
+                      <BtnComponent text={t("homePage.Stalen.card3.btnText")} />
                     </Link>
                   </div>
                 </div>
@@ -238,17 +233,16 @@ const Stalen = () => {
                 <div className="text w-full h-[calc(100%-80px)] flex  flex-col justify-between">
                   <div>
                     <h3 className="text-2xl text-textLight font-Montserrat">
-                      “Hinged Doors”
+                      {t("homePage.Stalen.card4.title")}
                     </h3>
                     <p className="w-full mt-5 mb-6 leading-6 text-textLight font-Poppins">
-                      The classic door, swinging open and closed on side-mounted
-                      hinges.
+                      {t("homePage.Stalen.card4.desc")}
                     </p>
                   </div>
 
                   <div className="w-full h-auto">
                     <Link to="/collection">
-                      <BtnComponent text="View Collection" />
+                      <BtnComponent text={t("homePage.Stalen.card4.btnText")} />
                     </Link>
                   </div>
                 </div>
