@@ -3,10 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HingedDoorDescription = () => {
+  const { t } = useTranslation();
   const hingedOptionOneRef = useRef(null);
   useEffect(() => {
     if (!hingedOptionOneRef.current) return;
@@ -40,36 +42,31 @@ const HingedDoorDescription = () => {
             className="cabinetaryOptionOne w-full h-full flex flex-col md:flex-row gap-5"
           >
             <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-myColorThree">
-              <span>What is a Hinged Door?</span>
+              <span>{t("ProductsPage.HingedDoors.DoorDescription.desc1.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
                 <h3 className="font-Montserrat text-3xl">
-                  Timeless & Versatile
+                  {t("ProductsPage.HingedDoors.DoorDescription.desc1.heading")}
                 </h3>
 
                 <p>
-                  Hinged doors are the classics — side-mounted, easy to use, and
-                  endlessly adaptable. Our luxury hinged doors work in any
-                  setting, from a minimalist loft to a grand townhouse
+                  {t("ProductsPage.HingedDoors.DoorDescription.desc1.description")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See Collection" />
+                  <BtnComponent text={t("ProductsPage.HingedDoors.DoorDescription.desc1.btnText")}/>
                 </Link>
               </div>
             </div>
 
             <div className="optionOneCol w-full md:w-1/2  px-8 py-32">
-              <span>Why Choose Hinged?</span>
+              <span>{t("ProductsPage.HingedDoors.DoorDescription.desc2.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
-                <h3 className="font-Montserrat text-3xl">Everyday Luxury</h3>
+                <h3 className="font-Montserrat text-3xl">{t("ProductsPage.HingedDoors.DoorDescription.desc2.heading")}</h3>
 
                 <p>
-                  Reliable, stylish, and flexible — custom hinged doors work
-                  beautifully in almost any space. From single openings to grand
-                  double doors, they bring comfort, function, and elegance in
-                  equal measure.
+                  {t("ProductsPage.HingedDoors.DoorDescription.desc2.description")}
                 </p>
                 <Link to="/inspiration">
-                  <BtnComponent text="Get Inspired" />
+                  <BtnComponent text={t("ProductsPage.HingedDoors.DoorDescription.desc2.btnText")} />
                 </Link>
               </div>
             </div>

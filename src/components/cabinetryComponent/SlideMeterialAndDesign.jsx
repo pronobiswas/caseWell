@@ -8,8 +8,10 @@ import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
+import { useTranslation } from "react-i18next";
 
 const SlideMeterialAndDesign = () => {
+  const { t } = useTranslation();
   const secRef = useRef(null);
 
   useEffect(() => {
@@ -98,18 +100,16 @@ const SlideMeterialAndDesign = () => {
         <div className="wrapper w-full h-full md:h-[560px] bg-colorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
           <div className="w-full md:w-1/2 h-full order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-              <span className="slideTitle">Material Variety</span>
+              <span className="slideTitle">{t("ProductsPage.SlidingDoor.MaterialAndDesign.row1.title")}</span>
               <h3 className="slideDescHeading text-4xl font-Montserrat">
                 {" "}
-                Your Style, Your Door
+                {t("ProductsPage.SlidingDoor.MaterialAndDesign.row1.heading")}
               </h3>
               <p className="pivotDesc">
-                Go transparent, bold, or natural — from frosted glass to warm
-                oak, our luxury sliding doors are a blank canvas for your
-                vision.
+                {t("ProductsPage.SlidingDoor.MaterialAndDesign.row1.desc")}
               </p>
               <Link to="/products/material">
-                <BtnComponent text="View Materials" />
+                <BtnComponent text={t("ProductsPage.SlidingDoor.MaterialAndDesign.row1.btnText")}/>
               </Link>
             </div>
           </div>
@@ -136,16 +136,15 @@ const SlideMeterialAndDesign = () => {
           </div>
           <div className="w-full md:w-1/2 h-full ">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center font-Poppins">
-              <span className="slideTitle">Hardware Precision</span>
+              <span className="slideTitle">{t("ProductsPage.SlidingDoor.MaterialAndDesign.row2.title")}</span>
               <h3 className="slideDescHeading text-4xl font-Montserrat">
-                Smooth & Silent
+                {t("ProductsPage.SlidingDoor.MaterialAndDesign.row2.heading")}
               </h3>
               <p className="pivotDesc">
-                Premium tracks and concealed runners ensure your sliding door
-                moves effortlessly and quietly, with lasting durability.
+                {t("ProductsPage.SlidingDoor.MaterialAndDesign.row2.desc")}
               </p>
               <Link to="/configurator">
-                <BtnComponent text="See Hardware Options" />
+                <BtnComponent text={t("ProductsPage.SlidingDoor.MaterialAndDesign.row2.btnText")}/>
               </Link>
             </div>
           </div>
@@ -154,16 +153,15 @@ const SlideMeterialAndDesign = () => {
         <div className="wrapper w-full h-full md:h-[560px] bg-myColorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
           <div className="w-full md:w-1/2 h-full  order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-              <span className="slideTitle">Design Integration</span>
+              <span className="slideTitle">{t("ProductsPage.SlidingDoor.MaterialAndDesign.row3.title")}</span>
               <h3 className="slideDescHeading text-4xl font-Montserrat">
-                Flow Between Spaces
+                {t("ProductsPage.SlidingDoor.MaterialAndDesign.row3.heading")}
               </h3>
               <p className="pivotDesc">
-                Combine sliding doors with wall panels, frames, or matching
-                finishes for a fully integrated interior design concept.
+                {t("ProductsPage.SlidingDoor.MaterialAndDesign.row3.desc")}
               </p>
               <Link to="/contact">
-                <BtnComponent text="Get in Contact" />
+                <BtnComponent text={t("ProductsPage.SlidingDoor.MaterialAndDesign.row3.btnText")} />
               </Link>
             </div>
           </div>

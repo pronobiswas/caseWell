@@ -4,11 +4,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 const MaterialAndDesign = () => {
+  const { t } = useTranslation();
   const secRef = useRef(null);
   const imgRef = useRef(null);
   const headingRef = useRef(null);
@@ -100,17 +102,14 @@ const MaterialAndDesign = () => {
       <div className="wrapper w-full h-fit md:h-[560px] bg-myColorOne text-LightText flex flex-col md:flex-row gap-10 p-5 font-Poppins">
         <div className="w-full md:w-1/2 h-full order-2 md:order-1">
           <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-            <span className="title font-Poppins">Material Possibilities</span>
+            <span className="title font-Poppins">{t("ProductsPage.Pivot.MaterialAndDesign.row1.title")}</span>
             <h3 className="pivotDescHeading text-4xl font-Montserrat">
-              Crafted Your Way
+              {t("ProductsPage.Pivot.MaterialAndDesign.row1.heading")}
             </h3>
             <p className="pivotDesc">
-              From deep walnut to airy glass panels or even stone inlays, our
-              high-end pivot doors can carry just about any look you can
-              imagine. Each one is built with precision to match your style,
-              material preferences, and architectural vision.
+              {t("ProductsPage.Pivot.MaterialAndDesign.row1.desc")}
             </p>
-            <Link to="/products/material"><BtnComponent text="View Materials" /></Link>
+            <Link to="/products/material"><BtnComponent text={t("ProductsPage.Pivot.MaterialAndDesign.row2.btnText")} /></Link>
           </div>
         </div>
         <div className="w-full md:w-1/2 h-full order-1 md:order-2">
@@ -136,16 +135,14 @@ const MaterialAndDesign = () => {
         </div>
         <div className="w-full md:w-1/2 h-full ">
           <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-            <span className="title font-Poppins ">Hardware & Details</span>
+            <span className="title font-Poppins ">{t("ProductsPage.Pivot.MaterialAndDesign.row2.title")}</span>
             <h3 className="pivotDescHeading text-4xl font-Montserrat">
-              Invisible Precision
+              {t("ProductsPage.Pivot.MaterialAndDesign.row2.heading")}
             </h3>
             <p className="pivotDesc">
-              We hide the clever stuff — concealed pivot hinges, flush handles,
-              and soft-closing systems — so all you see is clean, uninterrupted
-              design in every custom pivot door
+              {t("ProductsPage.Pivot.MaterialAndDesign.row2.desc")}
             </p>
-            <Link to="/configurator"><BtnComponent text="See Hardware Options" /></Link>
+            <Link to="/configurator"><BtnComponent text={t("ProductsPage.Pivot.MaterialAndDesign.row2.btnText")} /></Link>
           </div>
         </div>
       </div>
@@ -153,17 +150,15 @@ const MaterialAndDesign = () => {
       <div className="wrapper w-full h-fit md:h-[560px] bg-colorOne text-LightText flex flex-col md:flex-row gap-10 p-5">
         <div className="w-full md:w-1/2 h-full order-1 md:order-2">
           <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-            <span className="title font-Poppins">Integration Options</span>
+            <span className="title font-Poppins">{t("ProductsPage.Pivot.MaterialAndDesign.row3.title")}</span>
             <h3 className="pivotDescHeading text-4xl font-Montserrat">
-              From Door to Design Feature
+              {t("ProductsPage.Pivot.MaterialAndDesign.row3.heading")}
             </h3>
             <p className="pivotDesc">
-              Pair your pivot door with matching wall panels, custom frames, or
-              integrated shelving for seamless architectural integration
-              throughout your interior.
+              {t("ProductsPage.Pivot.MaterialAndDesign.row3.desc")}
             </p>
             <Link to="/configurator">
-              <BtnComponent text="View Materials" />
+              <BtnComponent text={t("ProductsPage.Pivot.MaterialAndDesign.row3.btnText")}/>
             </Link>
           </div>
         </div>

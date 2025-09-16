@@ -5,11 +5,13 @@ import { SplitText } from "gsap/SplitText";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 const HingedMeterialAndDesign = () => {
+  const { t } = useTranslation();
   const hingedsecRef = useRef(null);
 
   useEffect(() => {
@@ -100,17 +102,15 @@ const HingedMeterialAndDesign = () => {
         <div className="wrapper w-full h-full md:h-[560px] bg-colorOne text-LightText font-Poppins flex flex-col md:flex-row gap-10 p-5">
           <div className="w-full md:w-1/2 h-full order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-              <span className="hingedTitle">Material Choices</span>
+              <span className="hingedTitle">{t("ProductsPage.HingedDoors.MaterialAndDesign.row1.title")}</span>
               <h3 className="hingedDescHeading text-4xl font-Montserrat">
-                Finish It Your Way
+                {t("ProductsPage.HingedDoors.MaterialAndDesign.row1.heading")}
               </h3>
               <p className="hingedDesc">
-                Natural woodgrain, rich veneers, painted panels, or glass
-                inserts — our high-end hinged doors can be tailored to perfectly
-                match your interior style and palette.
+                {t("ProductsPage.HingedDoors.MaterialAndDesign.row1.desc")}
               </p>
               <Link to="/products/material">
-                <BtnComponent text="View Materials" />
+                <BtnComponent text={t("ProductsPage.HingedDoors.MaterialAndDesign.row1.btnText")} />
               </Link>
             </div>
           </div>
@@ -137,17 +137,15 @@ const HingedMeterialAndDesign = () => {
           </div>
           <div className="w-full md:w-1/2 h-full ">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-              <span className="hingedTitle">Hardware Precision</span>
+              <span className="hingedTitle">{t("ProductsPage.HingedDoors.MaterialAndDesign.row2.title")}</span>
               <h3 className="hingedDescHeading text-4xl font-Montserrat">
-                Make It Distinctive
+                {t("ProductsPage.HingedDoors.MaterialAndDesign.row2.heading")}
               </h3>
               <p className="hingedDesc">
-                Handles that blend in, or handles that steal the spotlight —
-                choose hardware that elevates the look and feel of your custom
-                hinged door.
+                {t("ProductsPage.HingedDoors.MaterialAndDesign.row2.desc")}
               </p>
               <Link to="/configurator">
-                <BtnComponent text="See Hardware Options" />
+                <BtnComponent text={t("ProductsPage.HingedDoors.MaterialAndDesign.row2.btnText")} />
               </Link>
             </div>
           </div>
@@ -156,17 +154,15 @@ const HingedMeterialAndDesign = () => {
         <div className="wrapper w-full h-full md:h-[560px] bg-myColorOne text-LightText font-Poppins flex flex-col md:flex-row  gap-10 p-5">
           <div className="w-full md:w-1/2 h-full order-2 md:order-1">
             <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
-              <span className="hingedTitle">Integration Ideas</span>
+              <span className="hingedTitle">{t("ProductsPage.HingedDoors.MaterialAndDesign.row3.title")}</span>
               <h3 className="hingedDescHeading text-4xl font-Montserrat">
-                {" "}
-                Beyond the Frame
+                {t("ProductsPage.HingedDoors.MaterialAndDesign.row3.heading")}
               </h3>
               <p className="hingedDesc">
-                Match your hinged door with trims, skirting, or wall panels in
-                the same finish for a unified, architecturally cohesive look
+                {t("ProductsPage.HingedDoors.MaterialAndDesign.row3.desc")}
               </p>
               <Link to="/contact">
-                <BtnComponent text="Get in Contact" />
+                <BtnComponent text={t("ProductsPage.HingedDoors.MaterialAndDesign.row3.btnText")} />
               </Link>
             </div>
           </div>

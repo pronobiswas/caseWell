@@ -3,10 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SlideDoorDescription = () => {
+  const { t } = useTranslation();
   const optionOneRef = useRef(null);
   useEffect(() => {
     if (!optionOneRef.current) return;
@@ -40,39 +42,33 @@ const SlideDoorDescription = () => {
             className="cabinetaryOptionOne w-full h-full flex flex-col md:flex-row gap-5"
           >
             <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-myColorThree text-myColorOne">
-              <span>What is a Sliding Door?</span>
+              <span>{t("ProductsPage.SlidingDoor.DoorDescription.desc1.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
                 <h3 className="font-Montserrat text-3xl">
-                  Space-Saving Elegance
+                  {t("ProductsPage.SlidingDoor.DoorDescription.desc1.heading")}
                 </h3>
 
                 <p>
-                  Sliding doors glide along a track instead of swinging open,
-                  making them ideal for space-conscious layouts. Our modern
-                  sliding doors work beautifully as statement room dividers or
-                  sleek wardrobe solutions.
+                  {t("ProductsPage.SlidingDoor.DoorDescription.desc1.description")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See Collection" />
+                  <BtnComponent text={t("ProductsPage.SlidingDoor.DoorDescription.desc1.btnText")} />
                 </Link>
               </div>
             </div>
 
             <div className="optionOneCol w-full md:w-1/2  px-8 py-32">
-              <span>Why Choose Sliding?</span>
+              <span>{t("ProductsPage.SlidingDoor.DoorDescription.desc2.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
                 <h3 className="font-Montserrat text-3xl">
-                  Flexible & Functional
+                  {t("ProductsPage.SlidingDoor.DoorDescription.desc2.heading")}
                 </h3>
 
                 <p>
-                  Perfect for dividing spaces, hiding storage, or creating a
-                  seamless flow between rooms, our custom sliding doors offer
-                  practical solutions without compromising on design. Button:
-                  Get Inspired → Inspiration page.
+                  {t("ProductsPage.SlidingDoor.DoorDescription.desc2.description")}
                 </p>
                 <Link to="/inspiration">
-                  <BtnComponent text="Get Inspired" />
+                  <BtnComponent text={t("ProductsPage.SlidingDoor.DoorDescription.desc2.btnText")}/>
                 </Link>
               </div>
             </div>

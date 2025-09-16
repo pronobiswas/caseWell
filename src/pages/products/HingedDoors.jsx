@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(DrawSVGPlugin);
 
 import ButtomHeading from "../../components/commonComponent/ButtomHeading";
@@ -10,6 +11,7 @@ import HingedMeterialAndDesign from "../../components/cabinetryComponent/HingedM
 import { Link } from "react-router-dom";
 
 const HingedDoors = () => {
+  const { t } = useTranslation();
   const HingedBanner = useRef(null);
   useEffect(() => {
     const svg = HingedBanner.current.querySelector("svg");
@@ -21,12 +23,12 @@ const HingedDoors = () => {
         <div className="wrapper w-full h-screen flex items-end bg-myColorOne text-LightText p-5 md:p-12 ">
           <div className="w-1/2 flex flex-col gap-5 ">
             <ButtomHeading
-              heading="Hinged Doors"
-              paragraph1="A hinged door is a traditional door style mounted on side hinges, swinging open and closed to provide easy and reliable access."
+              heading={t("ProductsPage.HingedDoors.banner.heading")}
+              paragraph1={t("ProductsPage.HingedDoors.banner.subHeading")}
               color="white"
             />
             <Link to="/configurator">
-              <BtnComponent text="Configure Now" />
+              <BtnComponent text={t("ProductsPage.HingedDoors.banner.btnText")} />
             </Link>
           </div>
           <div className="w-1/2 ">

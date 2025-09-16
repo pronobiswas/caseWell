@@ -3,10 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const DoorDescription = () => {
+  const { t } = useTranslation();
   const optionOneRef = useRef(null);
   useEffect(() => {
     if (!optionOneRef.current) return;
@@ -41,40 +43,33 @@ const DoorDescription = () => {
             className="cabinetaryOptionOne w-full h-full flex flex-col md:flex-row gap-5"
           >
             <div className="optionOneCol w-full md:w-1/2 px-8 py-32 bg-myColorThree">
-              <span>What is a Pivot Door?</span>
+              <span>{t("ProductsPage.Pivot.DoorDescription.ddesc1.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
                 <h3 className="font-Montserrat text-3xl">
-                  A Statement in Motion
+                  {t("ProductsPage.Pivot.DoorDescription.ddesc1.heading")}
                 </h3>
 
                 <p>
-                  Forget the ordinary swing — luxury pivot doors rotate from a
-                  central point, creating a smooth, weightless movement that
-                  feels more like a design experience than just an opening.
-                  Oversized or heavy? Not a problem — our custom pivot doors
-                  handle it effortlessly.
+                  {t("ProductsPage.Pivot.DoorDescription.ddesc1.description")}
                 </p>
                 <Link to="/collection">
-                  <BtnComponent text="See Collection" />
+                  <BtnComponent text={t("ProductsPage.Pivot.DoorDescription.ddesc1.btnText")} />
                 </Link>
               </div>
             </div>
 
             <div className="optionOneCol w-full md:w-1/2  px-8 py-32">
-              <span>Why Choose Pivot?</span>
+              <span>{t("ProductsPage.Pivot.DoorDescription.ddesc2.title")}</span>
               <div className="flex flex-col gap-14 mt-5">
                 <h3 className="font-Montserrat text-3xl">
-                  Bold, Seamless, Functional
+                  {t("ProductsPage.Pivot.DoorDescription.ddesc2.heading")}
                 </h3>
 
                 <p>
-                  A pivot door isn’t just an entrance — it’s a statement piece.
-                  Perfect for wide openings, modern pivot doors create a sense
-                  of arrival while keeping movement effortless and perfectly
-                  balanced..
+                  {t("ProductsPage.Pivot.DoorDescription.ddesc2.description")}
                 </p>
                 <Link to="/inspiration">
-                  <BtnComponent text="Get Inspired" />
+                  <BtnComponent text={t("ProductsPage.Pivot.DoorDescription.ddesc2.btnText")} />
                 </Link>
               </div>
             </div>

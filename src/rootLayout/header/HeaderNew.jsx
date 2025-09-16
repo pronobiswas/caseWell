@@ -17,6 +17,7 @@ import { useTranslation } from "react-i18next";
 
 const HeaderNew = () => {
     const { i18n } = useTranslation();
+    const { t } = useTranslation();
 
 
     const location = useLocation();
@@ -329,8 +330,8 @@ const HeaderNew = () => {
                                     >
                                         <div className='w-fit flex items-center '>
                                             <div className="navLink w-full h-6   relative flex flex-col overflow-hidden z-20 ">
-                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300'>PRODUCTS</span>
-                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300'>PRODUCTS</span>
+                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.products")}</span>
+                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.products")}</span>
                                             </div>
                                             <MdOutlineKeyboardArrowDown />
                                         </div>
@@ -343,37 +344,37 @@ const HeaderNew = () => {
                                                 <div ref={productDropdownRef} className='w-40 flex flex-col gap-2 text-base text-colorOne hover:[&>a]:font-semibold [&>a]:transition-all [&>a]:duration-100 text-[20px] font-normal'>
                                                     <Link to="/products/PivotDoor" >
                                                         <div className='linkItem'>
-                                                            <span className='m-0'>Pivot Doors</span>
+                                                            <span className='m-0'>{t("header.menu.PivotDoors")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/products/SlideDoor" >
                                                         <div className='linkItem '>
-                                                            <span>Sliding Doors</span>
+                                                            <span>{t("header.menu.SlidingDoors")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/products/HingedDoors" >
                                                         <div className='linkItem '>
-                                                            <span>Hinged Doors</span>
+                                                            <span>{t("header.menu.HingedDoors")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/products/flushTowall" >
                                                         <div className='linkItem '>
-                                                            <span>Flush-to-wall</span>
+                                                            <span>{t("header.menu.FlushToWall")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/products/wallPartition" >
                                                         <div className='linkItem '>
-                                                            <span>Wall Partiton</span>
+                                                            <span>{t("header.menu.WallPartition")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/products/biosirie" >
                                                         <div className='linkItem '>
-                                                            <span>Biosirie</span>
+                                                            <span>{t("header.menu.Boiserie")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/products/material" >
                                                         <div className='linkItem '>
-                                                            <span>Materials</span>
+                                                            <span>{t("header.menu.Materials")}</span>
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -398,8 +399,8 @@ const HeaderNew = () => {
                                     >
                                         <div className="w-fit flex items-center">
                                             <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300'>COLLECTION</span>
-                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300'>COLLECTION</span>
+                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Collection")}</span>
+                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Collection")}</span>
                                             </div>
                                             <MdOutlineKeyboardArrowDown />
                                         </div>
@@ -411,27 +412,27 @@ const HeaderNew = () => {
                                                 <div ref={collectionDropdownRef} className='w-44 flex flex-col gap-2 text-base text-colorOne hover:[&>a]:font-bold [&>a]:transition-all [&>a]:duration-100 font-normal text-[20px]'>
                                                     <Link to='/collections/GlassCollection'>
                                                         <div className='linkItem w-full text-colorOne'>
-                                                            <span className='group'>Glass Collection</span>
+                                                            <span className='group'>{t("header.menu.GlassCollection")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to='/collections/FineerCollection'>
                                                         <div className='linkItem w-full text-colorOne'>
-                                                            <span>Fineer Collection</span>
+                                                            <span>{t("header.menu.VeneerCollection")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to='/collections/ThreeDCollection'>
                                                         <div className='linkItem w-full text-colorOne'>
-                                                            <span>3D Collection</span>
+                                                            <span>{t("header.menu.3DCollection")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/collections/AtelierCollection" >
                                                         <div className='linkItem w-full text-colorOne'>
-                                                            <span>Atelier Collection</span>
+                                                            <span>{t("header.menu.AtelierCollection")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/configurator">
                                                         <div className='w-fit mt-10 text-bgOne py-2 px-4 rounded-full bg-colorOne flex items-center gap-1'>
-                                                            <span>Configurator </span>
+                                                            <span>{t("header.menu.Configurator")} </span>
                                                             <span><MdOutlineArrowForward /></span>
                                                         </div>
                                                     </Link>
@@ -457,8 +458,8 @@ const HeaderNew = () => {
                                         }
                                     >
                                         <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                            <span className='group-hover:translate-y-[-28px] transition-all duration-300'>INSPIRATION</span>
-                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300'>INSPIRATION</span>
+                                            <span className='group-hover:translate-y-[-28px] transition-all duration-300 uppercase'>{t("header.menu.Inspiration")} </span>
+                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Inspiration")} </span>
                                         </div>
                                     </NavLink>
                                 </li>
@@ -474,8 +475,8 @@ const HeaderNew = () => {
                                         }
                                     >
                                         <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300'>ARCHITECTS</span>
-                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300'>ARCHITECTS</span>
+                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Architects")}</span>
+                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Architects")}</span>
                                         </div>
                                     </NavLink>
                                 </li>
@@ -492,8 +493,8 @@ const HeaderNew = () => {
                                     >
                                         <div className="w-fit flex items-center">
                                             <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300'>ZEBRANO</span>
-                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300'>ZEBRANO</span>
+                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Zebrano")}</span>
+                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Zebrano")}</span>
                                             </div>
                                             <MdOutlineKeyboardArrowDown />
                                         </div>
@@ -505,22 +506,22 @@ const HeaderNew = () => {
                                                 <div ref={zebranoDropdownRef} className='w-40 flex flex-col gap-2 text-base text-colorOne hover:[&>a]:font-bold [&>a]:transition-all [&>a]:duration-100 font-normal text-[20px]'>
                                                     <Link to="/aboutus/ourStory" >
                                                         <div className='linkItem'>
-                                                            <span className='m-0'>Our story</span>
+                                                            <span className='m-0'>{t("header.menu.OurStory")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/aboutus/theMakers" >
                                                         <div className='linkItem '>
-                                                            <span>Meet the makers</span>
+                                                            <span>{t("header.menu.MeetTheMakers")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/aboutus/ConsciousNcrafts" >
                                                         <div className='linkItem '>
-                                                            <span>Concious Craft</span>
+                                                            <span>{t("header.menu.ConsciousCraft")}</span>
                                                         </div>
                                                     </Link>
                                                     <Link to="/aboutus/services" >
                                                         <div className='linkItem '>
-                                                            <span>Service</span>
+                                                            <span>{t("header.menu.Service")}</span>
                                                         </div>
                                                     </Link>
 
@@ -545,8 +546,8 @@ const HeaderNew = () => {
                                         }
                                     >
                                         <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300'>CONTACT</span>
-                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300'>CONTACT</span>
+                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Contact")}</span>
+                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Contact")}</span>
                                         </div>
                                     </NavLink>
                                 </li>
@@ -573,7 +574,7 @@ const HeaderNew = () => {
 
                             <Link to="/configurator">
                                 <div className="configaretor w-fit h-fit py-2 px-3 flex items-center gap-2 border bg-white text-colorOne hover:bg-colorOne hover:text-white group  cursor-pointer rounded-full z-30">
-                                    <span>Configure Now</span>
+                                    <span>{t("header.menu.ConfigureNow")}</span>
                                     <div className='w-5 h-5  relative overflow-hidden'>
                                         <span className='text-xl  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward /> </span>
                                         <span className='text-xl absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward /> </span>
@@ -768,68 +769,64 @@ const HeaderNew = () => {
                                         {/* ===products=== */}
                                         <li className='group relative z-40'>
                                             <div className='w-full flex justify-between items-center'>
-                                                <NavLink to="/products"><span>Products</span></NavLink>
+                                                <NavLink to="/products"><span>{t("header.menu.products")}</span></NavLink>
                                                 <span className='group-hover:rotate-90'><TfiAngleRight /></span>
                                             </div>
                                             <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-50">
                                                 <ul className='flex flex-col [&>li]:text-2xl [&>li]:font-Poppins [&>li]:text-myColorOne  [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:font-semibold [&>li:hover]:z-50 '>
-                                                    <li><NavLink to="/products/PivotDoor">Pivot Door</NavLink></li>
-                                                    <li><NavLink to="/products/SlideDoor">Slideing Door</NavLink></li>
-                                                    <li><NavLink to="/products/HingedDoors">Hinged Door</NavLink></li>
-                                                    <li><NavLink to="/products/flushTowall">Flush to Wall</NavLink></li>
-                                                    <li><NavLink to="/products/wallPartition">Wall Partition</NavLink></li>
-                                                    <li><NavLink to="/products/biosirie">Biosirie</NavLink></li>
-                                                    <li><NavLink to="/products/material">Meterials</NavLink></li>
+                                                    <li><NavLink to="/products/PivotDoor">{t("header.menu.PivotDoors")}</NavLink></li>
+                                                    <li><NavLink to="/products/SlideDoor">{t("header.menu.SlidingDoors")}</NavLink></li>
+                                                    <li><NavLink to="/products/HingedDoors">{t("header.menu.HingedDoors")}</NavLink></li>
+                                                    <li><NavLink to="/products/flushTowall">{t("header.menu.FlushToWall")}</NavLink></li>
+                                                    <li><NavLink to="/products/wallPartition">{t("header.menu.WallPartition")}</NavLink></li>
+                                                    <li><NavLink to="/products/biosirie">{t("header.menu.Boiserie")}</NavLink></li>
+                                                    <li><NavLink to="/products/material">{t("header.menu.Materials")}</NavLink></li>
                                                 </ul>
                                             </div>
                                         </li>
                                         {/* ====collections=== */}
                                         <li className='group relative z-30'>
                                             <div className='w-full flex justify-between items-center'>
-                                                <NavLink to="/collection"><span>Collection</span></NavLink>
+                                                <NavLink to="/collection"><span>{t("header.menu.Collection")}</span></NavLink>
                                                 <span className='group-hover:rotate-90'><TfiAngleRight /></span>
                                             </div>
                                             <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-40">
                                                 <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
-                                                    <li><NavLink to="/collections/GlassCollection">Glass Collection</NavLink></li>
-                                                    <li><NavLink to="/collections/FineerCollection">Fineer Collection</NavLink></li>
-                                                    <li><NavLink to="/collections/ThreeDCollection">3D Collection</NavLink></li>
-                                                    <li><NavLink to="/collections/AtelierCollection">Atelier Collection</NavLink></li>
+                                                    <li><NavLink to="/collections/GlassCollection">{t("header.menu.GlassCollection")}</NavLink></li>
+                                                    <li><NavLink to="/collections/FineerCollection">{t("header.menu.VeneerCollection")}</NavLink></li>
+                                                    <li><NavLink to="/collections/ThreeDCollection">{t("header.menu.3DCollection")}</NavLink></li>
+                                                    <li><NavLink to="/collections/AtelierCollection">{t("header.menu.AtelierCollection")}</NavLink></li>
                                                 </ul>
                                             </div>
                                         </li>
+                                        
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <NavLink to="/inspiration"><span>Inspiration</span></NavLink>
+                                                <NavLink to="/inspiration"><span>{t("header.menu.Inspiration")}</span></NavLink>
                                             </div>
                                         </li>
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <NavLink to="/inspiration"><span>Inspiration</span></NavLink>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className='w-full flex justify-between items-center'>
-                                                <NavLink to="/architects"><span>Architects</span></NavLink>
+                                                <NavLink to="/architects"><span>{t("header.menu.Architects")}</span></NavLink>
                                             </div>
                                         </li>
                                         <li className='group relative'>
                                             <div className='w-full flex justify-between items-center'>
-                                                <NavLink to="/aboutus"><span>Zebrano</span></NavLink>
+                                                <NavLink to="/aboutus"><span>{t("header.menu.Zebrano")}</span></NavLink>
                                                 <span className='group-hover:rotate-90'><TfiAngleRight /></span>
                                             </div>
                                             <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block">
                                                 <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
-                                                    <li><NavLink to="/aboutus/ourStory">Our Story</NavLink></li>
-                                                    <li><NavLink to="/aboutus/theMakers">Meet The Makers</NavLink></li>
-                                                    <li><NavLink to="/aboutus/ConsciousNcrafts">Concious Craft</NavLink></li>
-                                                    <li><NavLink to="/aboutus/services">Services</NavLink></li>
+                                                    <li><NavLink to="/aboutus/ourStory">{t("header.menu.OurStory")}</NavLink></li>
+                                                    <li><NavLink to="/aboutus/theMakers">{t("header.menu.MeetTheMakers")}</NavLink></li>
+                                                    <li><NavLink to="/aboutus/ConsciousNcrafts">{t("header.menu.ConsciousCraft")}</NavLink></li>
+                                                    <li><NavLink to="/aboutus/services">{t("header.menu.Service")}</NavLink></li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
-                                                <NavLink to="/contact"><span>Contact</span></NavLink>
+                                                <NavLink to="/contact"><span>{t("header.menu.Contact")}</span></NavLink>
                                             </div>
                                         </li>
                                     </ul>

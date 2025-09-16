@@ -15,11 +15,11 @@ const PivotDoor = () => {
           <div className="flex flex-col gap-5">
             <ButtomHeading
               heading={t("ProductsPage.Pivot.pageName")}
-              paragraph1="A pivot door is a sleek, modern door design that rotates on a central or offset pivot hinge, allowing smooth and unique opening with a contemporary look."
+              paragraph1={t("ProductsPage.Pivot.banner.subHeading")}
               color="white"
             />
             <Link to="/configurator">
-              <BtnComponent text="Configure Now" />
+              <BtnComponent text={t("ProductsPage.Pivot.banner.btnText")}  />
             </Link>
           </div>
         </div>
