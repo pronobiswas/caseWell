@@ -2,18 +2,19 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { useTranslation } from "react-i18next";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 gsap.registerPlugin(SplitText);
 
 const ProductBanner = ({
-  url = "/images/slideDoor.jpg",
+  url = "/images/BoiserieBG.jpeg",
   heading = "Flush to wall",
   text = "We offer two ways to get started — choose the path that suits you best.",
   link = "",
 }) => {
+  const { t } = useTranslation();
   const headingRef = useRef(null);
   const textRef = useRef(null);
-  console.log(url);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -70,7 +71,7 @@ const ProductBanner = ({
               {text}
             </p>
             <Link to="/collection">
-              <BtnComponent text="See collection" />
+              <BtnComponent text={t("ProductsPage.WallPartitions.banner.btnText")} />
             </Link>
           </div>
         </div>

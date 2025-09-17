@@ -3,10 +3,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const Conversation = () => {
+  const { t,i18n  } = useTranslation();
   const conversationRef = useRef(null);
   const bigTextRef = useRef(null);
   const headingTextRef = useRef(null);
@@ -92,7 +94,7 @@ const Conversation = () => {
     return () => {
       ctx.revert();
     };
-  }, []);
+  }, [i18n.language]);
 
   return (
     <>
@@ -105,8 +107,7 @@ const Conversation = () => {
           ref={bigTextRef}
           className="text-3xl md:text-4xl xl:text-5xl text-center w-full max-w-4xl xl:max-w-5xl mx-auto px-5 pt-14 pb-20 text-stone-600"
         >
-          Let’s break boundaries together. Join our Partner Program and start
-          creating without limits.
+          {t("Architects.PartnerSupport.Conversation.title")}
         </h3>
         <div className="conversationWrapper p-5 md:p-32 font-Poppins bg-[#E1DBCB] flex justify-center">
           <div className="w-full flex flex-col items-center">
@@ -114,17 +115,15 @@ const Conversation = () => {
               ref={headingTextRef}
               className="text-4xl mb-8 w-full text-center"
             >
-              Let’s Get in Touch and Start a Conversation
+              {t("Architects.PartnerSupport.Conversation.heading")}
             </h2>
             <div className="w-full max-w-xl">
               <p ref={paragraphTextRef} className="text-base mb-8 text-center">
-                We’d love to hear about your ideas, projects, or questions. No
-                pressure—just a friendly chat to explore how we can create
-                something amazing together. Reach out anytime!
+                {t("Architects.PartnerSupport.Conversation.desc")}
               </p>
             </div>
             <div ref={btnRef} className="flex justify-center">
-              <BtnComponent text="Partner with Zebrano" />
+              <BtnComponent text={t("Architects.PartnerSupport.Conversation.btnText")} />
             </div>
           </div>
         </div>

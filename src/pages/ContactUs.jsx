@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { useTranslation } from "react-i18next";
 
 import emailjs from "@emailjs/browser";
 
@@ -14,6 +15,7 @@ gsap.registerPlugin(SplitText);
 gsap.registerPlugin(DrawSVGPlugin);
 
 const ContactUs = () => {
+  const { t } = useTranslation();
 
   const headingRef = useRef();
   const textRef = useRef();
@@ -128,6 +130,17 @@ const ContactUs = () => {
       duration: 1,
       ease: "power3.out",
     });
+    gsap.from(text2Split.words, {
+      y: 50,
+      stagger: {
+        from: "edge",
+        each: 0.03,
+        amount: 0.5,
+        ease: "power2.inOut",
+      },
+      duration: 1,
+      ease: "power3.out",
+    });
     
   }, []);
 
@@ -171,19 +184,13 @@ const ContactUs = () => {
               ref={headingRef}
               className="text-5xl text-center mb-6 font-Montserrat text-myColorOne"
             >
-              Contact Us
+              {t("contact.header.heading")}
             </h1>
             <p ref={textRef} className="text-center ">
-              At Zebrano Studio, we started with a simple idea: to bring
-              luxurious, tailor-made doors within reach — without limits. Every
-              home deserves a touch of design, and every space should tell a
-              story .
+              {t("contact.header.text1")}
             </p>
             <p ref={text2Ref} className="pt-5 text-center">
-              Whether you're dreaming big, working on a unique project, or just
-              curious about the possibilities — we’d love to hear from you. Use
-              the form below to get in touch, especially if you have special
-              requests or ideas beyond the ordinary.
+             {t("contact.header.text2")}
             </p>
             <div className="w-full max-w-xl mx-auto pt-5">
               <form ref={formRef} onSubmit={sendEmail}>
@@ -193,7 +200,7 @@ const ContactUs = () => {
                       htmlFor="fullName"
                       className="text-sm mb-1 text-gray-500"
                     >
-                      Name
+                      {t("contact.form.label.Name")}
                     </label>
                     <input
                       type="text"
@@ -209,7 +216,7 @@ const ContactUs = () => {
                       htmlFor="email"
                       className="text-sm mb-1 text-gray-500"
                     >
-                      Email
+                      {t("contact.form.label.Email")}
                     </label>
                     <input
                       type="email"
@@ -225,7 +232,7 @@ const ContactUs = () => {
                       htmlFor="phone"
                       className="text-sm mb-1 text-gray-500"
                     >
-                      Phone Number
+                      {t("contact.form.label.PhoneNumber")}
                     </label>
                     <input
                       type="text"
@@ -241,7 +248,7 @@ const ContactUs = () => {
                       htmlFor="contactReason"
                       className="text-sm mb-1 text-gray-500"
                     >
-                      Contact reason
+                      {t("contact.form.label.ContactReason")}
                     </label>
                     <select
                       name="contactReason"
@@ -250,7 +257,7 @@ const ContactUs = () => {
                       onInput={handleInputChange}
                     >
                       <option value="I'm interested in the Trade Partner Program ">
-                        I’d like a quote for a special custom door{" "}
+                        {t("contact.form.select.optionOne.option1")}
                       </option>
                       <option value=" I’d like a quote for cabinetry">
                         {" "}
@@ -266,10 +273,10 @@ const ContactUs = () => {
                       className="text-sm mb-1 text-gray-500"
                       htmlFor="consumer"
                     >
-                      Consumer
+                      {t("contact.form.label.Consumer")}
                     </label>
                     <select name="consumer" id="consumer" className="p-2" onInput={handleInputChange}>
-                      <option value="Business">Business</option>
+                      <option value="Business">{t("contact.form.select.optionTwo.option1")}</option>
                       <option value="Private Customer">Private Customer</option>
                     </select>
                   </div>
@@ -279,7 +286,7 @@ const ContactUs = () => {
                       htmlFor="messagetxt"
                       className="text-sm mb-1 text-gray-500"
                     >
-                      Message
+                      {t("contact.form.label.Message")}
                     </label>
                     <textarea
                       name="messagetxt"
@@ -295,7 +302,7 @@ const ContactUs = () => {
                       type="submit"
                       className="border border-gray-500 rounded-full w-fit h-fit flex items-center gap-2 py-2 px-3 group transition-all duration-500 ease-in-out cursor-pointer hover:bg-bgTwo"
                     >
-                      <span>Submit</span>
+                      <span>{t("contact.form.Submit")}</span>
                       <div className="w-[13px] h-[12px] relative  overflow-hidden">
                         <div className="">
                           <span className="absolute top-0 left-0 group-hover:left-[10px] group-hover:-top-[10px] transition-all duration-500 ease-in-out">

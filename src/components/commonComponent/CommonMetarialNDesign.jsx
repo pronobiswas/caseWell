@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
@@ -22,6 +23,7 @@ const CommonMetarialNDesign = ({
   desc3 = "Pair your pivot door with matching wall panels, custom frames, or integrated shelving for seamless architectural integration throughout your interior.",
   imageUrl3 = "/images/pivotdoors1.jpg",
 }) => {
+  const { t } = useTranslation();
   const secRef = useRef(null);
   const imgRef = useRef(null);
   const headingRef = useRef(null);
@@ -119,7 +121,7 @@ const CommonMetarialNDesign = ({
               </h3>
               <p className="pivotDesc text-textLight">{desc1}</p>
               <Link to="/products/material">
-                <BtnComponent text="View Materials" />
+                <BtnComponent text={t("ProductsPage.FlushToWall.MaterialAndDesign.row1.btnText")}/>
               </Link>
             </div>
           </div>
@@ -152,7 +154,7 @@ const CommonMetarialNDesign = ({
               </h3>
               <p className="pivotDesc text-textLight">{desc2}</p>
               <Link to="/products/material">
-                <BtnComponent text="See Hardware Options" />
+                <BtnComponent text={t("ProductsPage.FlushToWall.MaterialAndDesign.row2.btnText")} />
               </Link>
             </div>
           </div>
@@ -167,7 +169,7 @@ const CommonMetarialNDesign = ({
               </h3>
               <p className="pivotDesc text-textLight">{desc3}</p>
               <Link to="/products/material">
-                <BtnComponent text="View Materials" />
+                <BtnComponent text={t("ProductsPage.FlushToWall.MaterialAndDesign.row3.btnText")} />
               </Link>
             </div>
           </div>

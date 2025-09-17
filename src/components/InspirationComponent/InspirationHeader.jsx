@@ -2,10 +2,12 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import "../../index.css";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(SplitText);
 
 const InspirationHeader = () => {
+  const { t } = useTranslation();
   const headingRef = useRef(null);
   const subheadingRef = useRef(null);
 
@@ -54,7 +56,7 @@ const InspirationHeader = () => {
           ref={headingRef}
           className="text-5xl md:text-[60px] lg:text-[132px] text-LightText font-Montserrat font-bold relative overflow-hidden"
         >
-          Explore our work
+          {t("Inspiration.banner.heading")}
         </h1>
 
         <div className="inspirationContentWrapper flex flex-col lg:flex-row gap-8 md:gap-14 md:justify-between mt-20">
@@ -63,18 +65,18 @@ const InspirationHeader = () => {
               ref={subheadingRef}
               className="text-LightText text-3xl md:text-4xl font-Poppins font-normal w-full relative overflow-hidden "
             >
-              Our Zebrano Studio doors are designed to elevate your space, offering the bespoke luxury usually reserved for architectural masterpieces. See how we make exclusivity accessible. 
+              {t("Inspiration.banner.description")}
             </h2>
           </div>
 
           <div className="flex gap-5 w-full max-w-[400px] lg:order-1">
             <div>
               <span className="text-yellow-400 text-3xl">+</span>
-              <p>More than 1000 configurations </p>
+              <p>{t("Inspiration.banner.titleOne")} </p>
             </div>
             <div>
               <span className="text-yellow-400 text-3xl">+</span>
-              <p>Recommended by interior designers</p>
+              <p>{t("Inspiration.banner.titleTwo")}</p>
             </div>
           </div>
         </div>

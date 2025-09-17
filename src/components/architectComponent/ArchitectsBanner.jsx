@@ -3,10 +3,13 @@ import { MdArrowOutward } from "react-icons/md";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(SplitText);
 
 const ArchitectsBanner = () => {
+  const { t } = useTranslation();
+    // let x = {t("ProductsPage.Pivot.pageName")}
   const bannerHeadingRef = useRef(null);
 
   useEffect(() => {
@@ -37,11 +40,11 @@ const ArchitectsBanner = () => {
           <div className="architectsContent">
             <h2
               ref={bannerHeadingRef}
-              className="text-3xl md:text-5xl mb-8 leading-10 text-textLight"
+              className="w-full max-w-md text-3xl md:text-5xl mb-8 leading-10 text-textLight"
             >
-              Join the story of <br /> Zebrano Studio
+              {t("Architects.ArchitectsBanner.title")}
             </h2>
-            <BtnComponent text="join now" />
+            <BtnComponent text={t("Architects.ArchitectsBanner.btnText")}/>
           </div>
         </div>
       </section>

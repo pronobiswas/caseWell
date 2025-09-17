@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +15,7 @@ const CommonDoorDescription = ({
   descriptionOne = "Forget the ordinary swing — luxury pivot doors rotate from a central point, creating a smooth, weightless movement that feels more like a design experience than just an opening. Oversized or heavy? Not a problem — our custom pivot doors handle it effortlessly.",
   descriptionTwo = "A pivot door isn’t just an entrance — it’s a statement piece. Perfect for wide openings, modern pivot doors create a sense of arrival while keeping movement effortless and perfectly balanced..",
 }) => {
+  const { t } = useTranslation();
   const optionOneRef = useRef(null);
   useEffect(() => {
     if (!optionOneRef.current) return;
@@ -55,7 +57,7 @@ const CommonDoorDescription = ({
 
                 <p className="text-textLight">{descriptionOne}</p>
                 <Link to="/collection">
-                  <BtnComponent text="See Collection" />
+                  <BtnComponent text={t("ProductsPage.FlushToWall.DoorDescription.desc1.btnText")} />
                 </Link>
               </div>
             </div>
@@ -69,7 +71,7 @@ const CommonDoorDescription = ({
 
                 <p className="text-textLight">{descriptionTwo}</p>
                 <Link to="/inspiration">
-                  <BtnComponent text="Get Inspired" />
+                  <BtnComponent text={t("ProductsPage.FlushToWall.DoorDescription.desc2.btnText")} />
                 </Link>
               </div>
             </div>

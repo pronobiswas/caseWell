@@ -1,7 +1,9 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const InspirationGalary = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section id="inspirationGalary">
@@ -25,7 +27,7 @@ const InspirationGalary = () => {
                 <div className="inspirationSeeMore flex items-center gap-2">
                   <div className="relative overflow-hidden">
                     <span className="inline-block -translate-y-5 group-hover:translate-y-0 duration-300 ease-in-out   ">
-                      See more
+                      {t("Inspiration.btnText")}
                     </span>
                   </div>
                   <div className="p-2 border border-transparent rounded-full group-hover:border-amber-300 overflow-hidden">
@@ -55,7 +57,7 @@ const InspirationGalary = () => {
                 <div className="inspirationSeeMore flex items-center gap-2">
                   <div className="relative overflow-hidden">
                     <span className="inline-block -translate-y-5 group-hover:translate-y-0 duration-300 ease-in-out   ">
-                      See more
+                      {t("Inspiration.btnText")}
                     </span>
                   </div>
                   <div className="p-2 border border-transparent rounded-full group-hover:border-amber-300 overflow-hidden">
@@ -86,7 +88,7 @@ const InspirationGalary = () => {
                 <div className="inspirationSeeMore flex items-center gap-2">
                   <div className="relative overflow-hidden">
                     <span className="inline-block -translate-y-5 group-hover:translate-y-0 duration-300 ease-in-out   ">
-                      See more
+                      {t("Inspiration.btnText")}
                     </span>
                   </div>
                   <div className="p-2 border border-transparent rounded-full group-hover:border-amber-300 overflow-hidden">
@@ -115,7 +117,7 @@ const InspirationGalary = () => {
                 <div className="inspirationSeeMore flex items-center gap-2">
                   <div className="relative overflow-hidden">
                     <span className="inline-block -translate-y-5 group-hover:translate-y-0 duration-300 ease-in-out   ">
-                      See more
+                      {t("Inspiration.btnText")}
                     </span>
                   </div>
                   <div className="p-2 border border-transparent rounded-full group-hover:border-amber-300 overflow-hidden">

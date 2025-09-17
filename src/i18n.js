@@ -184,7 +184,6 @@ const resources = {
             "btnText": "See collection"
           },
         },
-        // &&&&&&&&&& pivot doors &&&&&&&&&
         "Pivot": {
           "pageName": "Pivot Doors",
           "banner": {
@@ -314,6 +313,211 @@ const resources = {
             },
           },
         },
+        "FlushToWall": {
+          "pageName": "Flush-to-Wall",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Flush-to-Wall Doors (Seamless Series)",
+            "subHeading": "Flush-to-wall doors — also called hidden doors, concealed frame doors, or invisible doors — are the ultimate in minimalist architecture. At Zebrano Studio, we craft these doors to sit perfectly level with your wall, so the frame and hinges completely disappear. The result? A clean, uninterrupted surface that enhances the beauty of your interior without visual clutter.",
+            "btnText": "See Collection"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "What is a Flush-to-Wall Door?",
+              "heading": "The Art of Disappearing ",
+              "description": "  Flush-to-wall doors, also called hidden or invisible doors, sit perfectly level with your wall — no visible frame, hinges, or trim. They blend seamlessly into your architecture for a clean, uninterrupted surface. ",
+              "btnText": "See Collection"
+            },
+            "desc2": {
+              "title": "Why Choose Flush-to-Wall?",
+              "heading": "Minimalism. Elevated",
+              "description": "These doors are ideal for interiors where design continuity is key. Whether painted to match the wall or finished as a bold statement, flush-to-wall doors keep the focus on the space, not the hardware.",
+              "btnText": "Get Inspired"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Material Possibilities",
+              "heading": "Made for Your Space",
+              "desc": " From premium veneers to smooth lacquer, textured glass, or stone inlays, every flush-to-wall door is custom-built to match your dimensions and design vision.",
+              "btnText": "View Materials"
+            },
+            "row2": {
+              "title": "Hardware & Details",
+              "heading": "Hidden Technology",
+              "desc": "Concealed hinges, magnetic locks, and precision frames are engineered for flawless function — all while staying out of sight.",
+              "btnText": "See Hardware Option"
+            },
+            "row3": {
+              "title": "Integration Options",
+              "heading": "One Continuous Surface ",
+              "desc": "Combine your flush-to-wall door with matching wall panels or integrated shelving for a seamless architectural feature that flows from one surface to the next.",
+              "btnText": "View Materials"
+            },
+          },
+        },
+        "WallPartitions": {
+          "pageName": "Room Dividers & Wall Partitions",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Room Dividers & Wall Partitions",
+            "subHeading": "Our custom room dividers are designed to shape spaces without sacrificing light, flow, or style. Whether fixed, sliding, folding, or glass, each wall partition is crafted to match your doors and finishes for a unified, high-end look. Perfect for open-plan living, offices, or hospitality spaces, they add privacy, structure, and elegance — all tailor-made to your dimensions and interior vision.",
+            "btnText": "See Collection"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "What is a Room Divider?",
+              "heading": "Style in Every Division ",
+              "description": " Room dividers are custom-built, non-load-bearing panels that define spaces while maintaining your design vision. Whether solid, glass, or mixed-material, they add structure without closing off light or flow.",
+              "btnText": "See Collection"
+            },
+            "desc2": {
+              "title": "Why Choose Room Dividers?",
+              "heading": "Flexible, Functional, Beautiful ",
+              "description": "Perfect for open-plan living, room dividers offer privacy, sound control, and style — all while integrating perfectly with your existing finishes.",
+              "btnText": "Get Inspired"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Material Possibilities",
+              "heading": "Designed Around You ",
+              "desc": "Choose from wood, veneer, lacquer, frosted glass, clear glass, or combinations to create a partition that matches your doors and interior style.",
+              "btnText": "View Materials"
+            },
+            "row2": {
+              "title": "Hardware & Details",
+              "heading": "Movement Made Easy ",
+              "desc": "For sliding or folding partitions, we use precision tracks and soft-closing systems to ensure smooth operation without compromising design.",
+              "btnText": "See Hardware Option"
+            },
+            "row3": {
+              "title": "Integration Options",
+              "heading": "Unified Interiors ",
+              "desc": " Coordinate your partitions with Zebrano doors, wall paneling, or flush-to-wall systems for a continuous, harmonious look throughout your space.",
+              "btnText": "Get in Contact"
+            },
+          },
+        },
+        "Boiserie": {
+          "pageName": "Boiserie",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Boiserie Wall Paneling",
+            "subHeading": "Boiserie is decorative wall paneling that transforms plain walls into architectural features. At Zebrano Studio, our custom boiserie ranges from classic, ornate styles to sleek, minimal cladding — all designed to match your doors and interiors for a cohesive, high-end look.",
+            "btnText": "See Collection"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "What is Boiserie?",
+              "heading": "From Classic to Contemporary   ",
+              "description": "Originally a hallmark of French architecture, boiserie brings elegance and depth to interiors. Today, it can be tailored to suit modern minimalism, timeless tradition, or bold design statements.",
+              "btnText": "See Collection"
+            },
+            "desc2": {
+              "title": "Why Choose Boiserie?",
+              "heading": "Architectural Continuity",
+              "description": " Boiserie adds texture, rhythm, and luxury to walls. It can frame doors, integrate with flush-to-wall systems, or stand alone as a striking feature, creating seamless design continuity throughout your space.",
+              "btnText": "Get Inspired"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Material Possibilities",
+              "heading": "Designed to Match",
+              "desc": " From fine wood veneers to lacquered panels, textiles, or stone accents — our boiserie is always custom-built to harmonize with your interior style and dimensions.",
+              "btnText": "View Materials"
+            },
+            "row2": {
+              "title": "Hardware & Details",
+              "heading": "Precision in Every Line  ",
+              "desc": " Invisible mounting systems and seamless detailing ensure that your boiserie feels like part of the architecture itself, not an addition.",
+              "btnText": "See Hardware Option"
+            },
+            "row3": {
+              "title": "Integration Options",
+              "heading": "Walls That Tell a Story",
+              "desc": "Combine boiserie with Zebrano doors, partitions, or flush-to-wall systems for a unified architectural concept that turns walls into design statements.",
+              "btnText": "Get in Contact"
+            },
+          },
+        },
+        "Materials": {
+          "pageName": "Materials",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Materials That Shape Our Designs",
+            "subHeading": "At Zebrano Studio, every detail begins with the right material. From timeless woods and luxurious veneers to glass, stone, and metals — we combine craftsmanship with innovation. Each choice defines the character, durability, and beauty of your interior.",
+            "btnText": "See Collection"
+          },
+        },
+      },
+      // ====contactPage====
+      "contact": {
+        "pageName": "Contact Us",
+        "header": {
+          "heading": "Contact Us",
+          "text1": "At Zebrano Studio, we started with a simple idea: to bring luxurious, tailor-made doors within reach — without limits. Every home deserves a touch of design, and every space should tell a story.",
+          "text2": "Whether you're dreaming big, working on a unique project, or just curious about the possibilities — we’d love to hear from you. Use the form below to get in touch, especially if you have special requests or ideas beyond the ordinary.",
+        },
+        "form": {
+          "label": {
+            "Name": "Name",
+            "Email": "Email",
+            "PhoneNumber": "Phone Number",
+            "ContactReason": "Contact reason",
+            "Consumer": "Consumer",
+            "Message": "Message",
+          },
+          "select": {
+            "optionOne": {
+              "option1": "I’d like a quote for a special custom door"
+            },
+            "optionTwo": {
+              "option1": "Business"
+            },
+          },
+          "Submit": "Submit"
+        }
+      },
+      // =====Inspiration====
+      "Inspiration": {
+        "pageName": "Inspiration",
+        "banner": {
+          "heading": "Explore our work",
+          "description": "Our Zebrano Studio doors are designed to elevate your space, offering the bespoke luxury usually reserved for architectural masterpieces. See how we make exclusivity accessible.",
+          "titleOne": "More than 1000 configurations",
+          "titleTwo": "Recommended by interior designers",
+        },
+        "btnText": "See more",
+      },
+      // =====Architects=======
+      "Architects": {
+        "pageName": "Inspiration",
+        "ArchitectsBanner": {
+          "title": "Join the story of Zebrano Studio",
+          "btnText": "Join now",
+        },
+        "PartnerSupport": {
+          "partnerHeading": {
+            "title": "Partner-First Support.",
+            "desc": "We built Zebrano because trade professionals deserve a supplier who champions their success, not competes for their clients. You keep relationships, earn the margins you deserve, and focus on what you do best.",
+            "btnText": "Partner with Zebrano",
+          },
+          "professionalDemand": {
+            "heading": "Are you a designer who truly dares to think differently?",
+            "textOne": "Do you sometimes feel your creativity is held back by what’s possible — whether it’s materials, finishes, or production limits? You’re not alone. We get it.",
+            "textTwo": "At Zebrano, we believe great design should never be limited by execution. That’s why we offer you unlimited possibilities to explore, experiment, and bring your boldest ideas to life — with our full support every step of the way.",
+            "textThree": "If you’re ready to work with a partner who values your vision as much as you do, and who’s committed to making the impossible possible, then you’ve come to the right place."
+          },
+          "Conversation": {
+            "title": "Let’s break boundaries together. Join our Partner Program and start creating without limits.",
+            "heading": "Let’s Get in Touch and Start a Conversation. ",
+            "desc": "We’d love to hear about your ideas, projects, or questions. No pressure — just a friendly chat to explore how we can create something amazing together. Reach out anytime!",
+            "btnText": "Partner with Zebrano",
+          },
+        },
+
       },
 
       // %%%%% FOOTER %%%%%%%
@@ -647,7 +851,213 @@ const resources = {
             },
           },
         },
+        "FlushToWall": {
+          "pageName": "Flush-to-Wall",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Wandvlakke deuren (Seamless Series)",
+            "subHeading": "Wandvlakke deuren — ook wel verborgen deuren, deuren met een verdekt kozijn of onzichtbare deuren genoemd — zijn het toppunt van minimalistische architectuur. Bij Zebrano Studio maken we deze deuren zo dat ze exact gelijklopen met je wand, waardoor het kozijn en de scharnieren volledig verdwijnen. Het resultaat? Een strakke, ononderbroken afwerking die de schoonheid van je interieur benadrukt zonder visuele ruis.",
+            "btnText": "Bekijk collectie"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "Wat is een wandvlakke deur?",
+              "heading": "De kunst van verdwijnen",
+              "description": "Wandvlakke deuren, ook wel verborgen of onzichtbare deuren genoemd, lopen exact gelijk met je wand — zonder zichtbaar kozijn, scharnieren of lijsten. Ze gaan naadloos op in je architectuur voor een strakke, ononderbroken afwerking.",
+              "btnText": "Bekijk collectie"
+            },
+            "desc2": {
+              "title": "Waarom kiezen voor wandvlakke deuren?",
+              "heading": "Minimalisme. Verheven",
+              "description": "Deze deuren zijn ideaal voor interieurs waar ontwerpcontinuïteit centraal staat. Of ze nu worden meegeschilderd in de kleur van de muur of juist afgewerkt als krachtig statement — wandvlakke deuren houden de aandacht op de ruimte, niet op het beslag.",
+              "btnText": "Laat je inspireren"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Materiaal­mogelijkheden",
+              "heading": "Gemaakt voor jouw ruimte",
+              "desc": "Van luxe fineer tot gladde lak, getextureerd glas of stenen inlays — elke wandvlakke deur wordt volledig op maat gemaakt, passend bij jouw afmetingen en designvisie.",
+              "btnText": "Bekijk materialen"
+            },
+            "row2": {
+              "title": "Beslag & details",
+              "heading": "Verborgen technologie",
+              "desc": " Verborgen scharnieren, magneetsloten en precisiekozijnen zijn ontworpen voor een perfecte werking — en blijven volledig uit het zicht.",
+              "btnText": "Bekijk beslagopties"
+            },
+            "row3": {
+              "title": "Integratie­opties",
+              "heading": "Eén doorlopend oppervlak ",
+              "desc": "Combineer je wandvlakke deur met bijpassende wandpanelen of geïntegreerde kasten voor een architectonisch geheel dat van het ene oppervlak in het andere overgaat.",
+              "btnText": "Bekijk materialen"
+            },
+          },
+        },
+        "WallPartitions": {
+          "pageName": "Roomdividers & scheidingswanden",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Roomdividers & scheidingswanden",
+            "subHeading": "Onze maatwerk roomdividers zijn ontworpen om ruimtes vorm te geven zonder licht, doorstroming of stijl op te offeren. Vast, schuivend, vouwbaar of in glas — elke scheidingswand wordt afgestemd op je deuren en afwerkingen voor een uniform, high-end geheel. Perfect voor open woonruimtes, kantoren of hospitality, ze voegen privacy, structuur en elegantie toe — allemaal op maat gemaakt naar jouw afmetingen en interieurvisie.",
+            "btnText": "Bekijk collectie"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "Wat is een roomdivider?",
+              "heading": "Stijl in elke verdeling ",
+              "description": "Roomdividers zijn op maat gemaakte, niet-dragende panelen die ruimtes afbakenen zonder je ontwerpvisie te verliezen. Massief, glas of een mix van materialen — ze voegen structuur toe zonder licht of doorstroming te blokkeren.",
+              "btnText": "Bekijk collectie"
+            },
+            "desc2": {
+              "title": "Waarom kiezen voor roomdividers?",
+              "heading": "Flexibel, functioneel, stijlvol ",
+              "description": " Ideaal voor open woonruimtes — roomdividers bieden privacy, akoestische controle en stijl, terwijl ze perfect aansluiten bij je bestaande afwerkingen.",
+              "btnText": "Laat je inspireren"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Materiaal­mogelijkheden",
+              "heading": "Beweging eenvoudig gemaakt",
+              "desc": "Kies uit hout, fineer, lak, matglas, helder glas of combinaties om een wand te creëren die aansluit bij je deuren en interieurstijl.",
+              "btnText": "Bekijk materialen"
+            },
+            "row2": {
+              "title": "Beslag & details",
+              "heading": "Movement Made Easy ",
+              "desc": "Voor schuivende of vouwbare wanden gebruiken we precisierails en soft-close systemen voor een soepele werking zonder concessies aan het design.",
+              "btnText": "Bekijk beslagopties"
+            },
+            "row3": {
+              "title": "Geheel in harmonie",
+              "heading": "Unified Interiors ",
+              "desc": "Combineer je scheidingswanden met Zebrano deuren, wandpanelen of wandvlakke systemen voor een doorlopend, harmonieus interieur.",
+              "btnText": "Neem contact op"
+            },
+          },
+        },
+        "Boiserie": {
+          "pageName": "Boiserie Wandpanelen",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Boiserie Wandpanelen",
+            "subHeading": "Boiserie is decoratieve wandbekleding die vlakke muren verandert in architectonische elementen. Bij Zebrano Studio varieert onze maatwerk boiserie van klassieke, sierlijke stijlen tot strakke, minimalistische bekleding — allemaal ontworpen om perfect aan te sluiten bij je deuren en interieur voor een samenhangende, high-end uitstraling.",
+            "btnText": "Bekijk collectie"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "Wat is boiserie?",
+              "heading": "Van klassiek tot modern",
+              "description": "Oorspronkelijk een kenmerk van de Franse architectuur, brengt boiserie elegantie en diepte in interieurs. Tegenwoordig kan het volledig worden afgestemd op modern minimalisme, tijdloze traditie of gedurfde designstatements.",
+              "btnText": "Bekijk collectie"
+            },
+            "desc2": {
+              "title": "Waarom kiezen voor boiserie?",
+              "heading": "Architectonische continuïteit",
+              "description": "Boiserie voegt textuur, ritme en luxe toe aan muren. Het kan deuren omlijsten, geïntegreerd worden met wandvlakke systemen of zelfstandig fungeren als opvallend element — voor een naadloze designcontinuïteit in je hele ruimte.",
+              "btnText": "Laat je inspireren"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Materiaal­mogelijkheden",
+              "heading": "Ontworpen om te matchen",
+              "desc": " Van luxe houtfineer tot gelakte panelen, textiel of stenen accenten — onze boiserie wordt altijd op maat gemaakt om te harmoniseren met jouw interieurstijl en afmetingen.",
+              "btnText": "Bekijk materialen"
+            },
+            "row2": {
+              "title": "Beslag & details",
+              "heading": "Precisie in elke lijn",
+              "desc": " Onzichtbare montagesystemen en naadloze details zorgen ervoor dat je boiserie voelt als een integraal onderdeel van de architectuur — niet als een toevoeging.",
+              "btnText": "Bekijk beslagopties"
+            },
+            "row3": {
+              "title": "Integratie­opties",
+              "heading": "Muren die een verhaal vertellen ",
+              "desc": " Combineer boiserie met Zebrano deuren, scheidingswanden of wandvlakke systemen voor een samenhangend architectonisch concept dat muren verandert in designstatements.",
+              "btnText": "Neem contact op"
+            },
+          },
+        },
+        "Materials": {
+          "pageName": "Materialen",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Materialen die onze ontwerpen vormen",
+            "subHeading": "Bij Zebrano Studio begint elk detail met het juiste materiaal. Van tijdloze houtsoorten en luxe fineer tot glas, steen en metaal — wij combineren vakmanschap met innovatie. Elke keuze bepaalt het karakter, de duurzaamheid en de schoonheid van je interieur.",
+            "btnText": "Bekijk collectie"
+          },
+        },
       },
+      // ====contactPage====
+      "contact": {
+        "pageName": "Contact Us",
+        "header": {
+          "heading": "Neem contact met ons op",
+          "text1": "Bij Zebrano Studio begonnen we met een simpel idee: luxe, maatwerkdeuren bereikbaar maken — zonder grenzen. Elk huis verdient een vleugje design, en elke ruimte zou een verhaal moeten vertellen.",
+          "text2": "Of je nu groots droomt, werkt aan een uniek project of gewoon nieuwsgierig bent naar de mogelijkheden — we horen graag van je. Gebruik het formulier hieronder om contact op te nemen, zeker als je speciale wensen hebt of ideeën die verder gaan dan gewoon."
+        },
+        "form": {
+          "label": {
+            "Name": "Naam",
+            "Email": "E-mail",
+            "PhoneNumber": "Telefoonnummer",
+            "ContactReason": "Reden van contact",
+            "Consumer": "Particulier",
+            "Message": "Bericht",
+          },
+          "select": {
+            "optionOne": {
+              "option1": "Ik wil graag een offerte voor een speciale maatwerkdeur"
+            },
+            "optionTwo": {
+              "option1": "Zakelijk"
+            },
+          },
+          "Submit": "Versturen"
+        }
+      },
+      // =====Inspiration====
+      "Inspiration": {
+        "pageName": "Inspiration",
+        "banner": {
+          "heading": "Ontdek onze trots",
+          "description": "Bij Zebrano Studio maken we deuren die niet alleen functioneel zijn, maar jouw ruimte echt laten spreken. Met ons maatwerk brengen we de luxe die je vaak alleen in iconische gebouwen ziet, gewoon bij jou thuis. Zo wordt exclusiviteit iets dat je dagelijks kunt ervaren.",
+          "titleOne": "Meer dan 10000 configuraties",
+          "titleTwo": "Aanbevolen door interieurontwerpers",
+        },
+        "btnText": "Bekijk meer",
+      },
+      // =====Architects=======
+      "Architects": {
+        "pageName": "Inspiration",
+        "ArchitectsBanner": {
+          "title": "Word onderdeel van het verhaal van Zebrano Studio",
+          "btnText": "Meld je nu aan",
+        },
+        "PartnerSupport": {
+          "partnerHeading": {
+            "title": "Partner-First Support.",
+            "desc": " Wij hebben Zebrano opgericht omdat vakmensen een leverancier verdienen die hun succes ondersteunt, niet met hun klanten concurreert. Jij behoudt de relaties, verdient de marges die je verdient en focust op wat jij het beste doet.",
+            "btnText": "Werk samen met Zebrano",
+          },
+          "professionalDemand": {
+            "heading": "Ben jij een ontwerper die écht durft anders te denken?",
+            "textOne": "Heb je soms het gevoel dat je creativiteit wordt beperkt door wat mogelijk is — of het nu gaat om materialen, afwerkingen of productiegrenzen? Je bent niet de enige. Wij begrijpen dat.",
+            "textTwo": "Bij Zebrano geloven we dat goed design nooit beperkt mag worden door de uitvoering. Daarom bieden we je onbeperkte mogelijkheden om te ontdekken, te experimenteren en je meest gedurfde ideeën tot leven te brengen — met onze volledige steun in elke stap.",
+            "textThree": "Als je klaar bent om samen te werken met een partner die jouw visie net zo waardeert als jijzelf, en die zich inzet om het onmogelijke mogelijk te maken, dan ben je hier aan het juiste adres."
+          },
+          "Conversation": {
+            "title": "Laten we samen grenzen doorbreken. Word lid van ons Partnerprogramma en ontwerp zonder beperkingen.",
+            "heading": "Laten we het gesprek starten.",
+            "desc": " We horen graag meer over jouw ideeën, projecten of vragen. Geen druk — gewoon een prettig gesprek om te ontdekken hoe we samen iets bijzonders kunnen maken. Neem gerust contact op!",
+            "btnText": "Partner with Zebrano",
+          },
+        },
+
+      },
+
       // %%%%% FOOTER %%%%%%%
       "footer": {
         "title": "Luxe deuren, voor iedereen bereikbaar.",
@@ -850,7 +1260,6 @@ const resources = {
             "btnText": "Kollektion ansehen"
           },
         },
-        // &&&&&&& PIVOT DOOR &&&&&&&&
         "Pivot": {
           "pageName": "Pivot-Türen",
           "banner": {
@@ -980,7 +1389,214 @@ const resources = {
             },
           },
         },
+        "FlushToWall": {
+          "pageName": "Flush-to-Wall",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Bündig mit der Wand Türen (Seamless Series)",
+            "subHeading": "Wandbündige Türen — auch verdeckte Türen, Türen mit unsichtbarem Rahmen oder unsichtbare Türen genannt — sind das Nonplusultra minimalistischer Architektur. Bei Zebrano Studio fertigen wir diese Türen so, dass sie perfekt bündig mit Ihrer Wand abschließen, sodass Rahmen und Scharniere vollständig verschwinden. Das Ergebnis? Eine saubere, ununterbrochene Fläche, die die Schönheit Ihres Interieurs ohne visuelle Ablenkung unterstreicht.",
+            "btnText": "Kollektion ansehen"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "Was ist eine wandbündige Tür?",
+              "heading": "Die Kunst des Verschwindens",
+              "description": "Wandbündige Türen, auch verdeckte oder unsichtbare Türen genannt, schließen perfekt mit Ihrer Wand ab – ohne sichtbare Rahmen, Scharniere oder Leisten. Sie verschmelzen nahtlos mit Ihrer Architektur und schaffen eine saubere, ununterbrochene Oberfläche.",
+              "btnText": "Kollektion ansehen"
+            },
+            "desc2": {
+              "title": "Warum wandbündige Türen wählen?",
+              "heading": "Minimalismus. Neu definiert ",
+              "description": "Diese Türen sind ideal für Innenräume, in denen Designkontinuität entscheidend ist. Ob in Wandfarbe gestrichen oder als mutiges Statement gestaltet – wandbündige Türen lenken die Aufmerksamkeit auf den Raum, nicht auf die Beschläge.",
+              "btnText": "Inspiration finden"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Materialmöglichkeiten",
+              "heading": "Für Ihren Raum gefertigt ",
+              "desc": " Von edlem Furnier über glatten Lack bis hin zu strukturiertem Glas oder Steineinlagen – jede wandbündige Tür wird maßgefertigt, abgestimmt auf Ihre Maße und Ihre Designvision.",
+              "btnText": "Materialien ansehen"
+            },
+            "row2": {
+              "title": "Beschläge & Details",
+              "heading": "Verborgene Technik",
+              "desc": " Verdeckte Scharniere, Magnetschlösser und Präzisionsrahmen sind für eine einwandfreie Funktion konzipiert – und bleiben dabei unsichtbar.",
+              "btnText": "Beschlagoptionen ansehen"
+            },
+            "row3": {
+              "title": "Integrationsmöglichkeiten",
+              "heading": "Eine durchgehende Fläche",
+              "desc": "Kombinieren Sie Ihre wandbündige Tür mit passenden Wandpaneelen oder integrierten Regalen für ein architektonisches Element, das von einer Fläche nahtlos in die nächste übergeht.",
+              "btnText": "Materialien ansehen"
+            },
+          },
+        },
+        "WallPartitions": {
+          "pageName": "Raumteiler & Trennwände",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Raumteiler & Trennwände",
+            "subHeading": "Unsere maßgefertigten Raumteiler sind dafür konzipiert, Räume zu gestalten, ohne Licht, Fluss oder Stil zu beeinträchtigen. Ob feststehend, schiebbar, faltbar oder aus Glas – jede Trennwand wird passend zu Ihren Türen und Oberflächen gefertigt, für ein einheitliches High-End-Design. Ideal für offene Wohnräume, Büros oder Hospitality-Bereiche – sie verleihen Privatsphäre, Struktur und Eleganz, maßgeschneidert auf Ihre Dimensionen und Ihre Interior-Vision.",
+            "btnText": "Kollektion ansehen"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "Was ist ein Raumteiler?",
+              "heading": "Stil in jeder Unterteilung",
+              "description": "Raumteiler sind maßgefertigte, nichttragende Paneele, die Räume definieren und gleichzeitig Ihre Designvision bewahren. Ob massiv, aus Glas oder Materialkombination – sie fügen Struktur hinzu, ohne Licht oder Fluss zu unterbrechen.",
+              "btnText": "Kollektion ansehen"
+            },
+            "desc2": {
+              "title": "Warum Raumteiler wählen?",
+              "heading": "Flexibel, funktional, schön",
+              "description": "Ideal für offene Wohnkonzepte – Raumteiler bieten Privatsphäre, Schallschutz und Stil, und integrieren sich perfekt in Ihre bestehenden Oberflächen.",
+              "btnText": "Inspiration finden"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Materialmöglichkeiten",
+              "heading": "Um Sie herum gestaltet ",
+              "desc": "Wählen Sie zwischen Holz, Furnier, Lack, Milchglas, Klarglas oder Kombinationen, um eine Trennwand zu schaffen, die zu Ihren Türen und Ihrem Einrichtungsstil passt.",
+              "btnText": "Materialien ansehen"
+            },
+            "row2": {
+              "title": "Beschläge & Details",
+              "heading": "Bewegung leicht gemacht",
+              "desc": "Für Schiebe- oder Faltwände verwenden wir Präzisionsschienen und Soft-Close-Systeme, die eine reibungslose Funktion gewährleisten – ohne das Design zu beeinträchtigen.",
+              "btnText": "Beschlagoptionen ansehen"
+            },
+            "row3": {
+              "title": "Integrationsmöglichkeiten",
+              "heading": "Einheitliches Interieur",
+              "desc": "Koordinieren Sie Ihre Trennwände mit Zebrano-Türen, Wandverkleidungen oder wandbündigen Systemen für ein durchgehendes, harmonisches Gesamtbild.",
+              "btnText": "Kontakt aufnehmen"
+            },
+          },
+        },
+        "Boiserie": {
+          "pageName": "Boiserie Wandverkleidung",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Boiserie Wall Paneling",
+            "subHeading": "Boiserie ist dekorative Wandverkleidung, die schlichte Wände in architektonische Highlights verwandelt. Bei Zebrano Studio reicht unsere maßgefertigte Boiserie von klassischen, verzierten Stilen bis hin zu schlichter, minimalistischer Verkleidung – alles abgestimmt auf Ihre Türen und Ihr Interieur für ein harmonisches High-End-Ambiente.",
+            "btnText": "Kollektion ansehen"
+          },
+          "DoorDescription": {
+            "desc1": {
+              "title": "Was ist Boiserie?",
+              "heading": "Von klassisch bis modern ",
+              "description": "Ursprünglich ein Merkmal der französischen Architektur, verleiht Boiserie Innenräumen Eleganz und Tiefe. Heute kann sie ganz auf modernes Minimalismus, zeitlose Tradition oder mutige Designstatements zugeschnitten werden.",
+              "btnText": "Kollektion ansehen"
+            },
+            "desc2": {
+              "title": "Warum Boiserie wählen?",
+              "heading": "Architektonische Kontinuität",
+              "description": " Boiserie verleiht Wänden Textur, Rhythmus und Luxus. Sie kann Türen einrahmen, in wandbündige Systeme integriert werden oder als markantes Element für sich stehen – und sorgt so für nahtlose Designkontinuität in Ihrem gesamten Raum.",
+              "btnText": "Inspiration finden"
+            },
+          },
+          "MaterialAndDesign": {
+            "row1": {
+              "title": "Materialmöglichkeiten",
+              "heading": "Passend gestaltet",
+              "desc": "Von edlem Holzfurnier über lackierte Paneele, Textilien oder Steinelemente – unsere Boiserie wird stets maßgefertigt, um mit Ihrem Einrichtungsstil und Ihren Maßen zu harmonieren.",
+              "btnText": "Materialien ansehen"
+            },
+            "row2": {
+              "title": "Beschläge & Details",
+              "heading": "Präzision in jeder Linie ",
+              "desc": "Unsichtbare Montagesysteme und nahtlose Details lassen Ihre Boiserie wie einen integralen Bestandteil der Architektur wirken – nicht wie ein Zusatz",
+              "btnText": "Beschlagoptionen ansehen"
+            },
+            "row3": {
+              "title": "Integrationsmöglichkeiten",
+              "heading": "Wände, die eine Geschichte erzählen",
+              "desc": "Kombinieren Sie Boiserie mit Zebrano-Türen, Trennwänden oder wandbündigen Systemen für ein einheitliches architektonisches Konzept, das Wände zu Designstatements macht.",
+              "btnText": "Kontakt aufnehmen"
+            },
+          },
+        },
+        "Materials": {
+          "pageName": "Materialien",
+          "banner": {
+            "bannerBG": "",
+            "heading": "Materialien, die unsere Designs prägen",
+            "subHeading": "Bei Zebrano Studio beginnt jedes Detail mit dem richtigen Material. Von zeitlosen Hölzern und edlen Furnieren bis hin zu Glas, Stein und Metall – wir verbinden Handwerkskunst mit Innovation. Jede Wahl definiert den Charakter, die Langlebigkeit und die Schönheit Ihres Interieurs.",
+            "btnText": "Kollektion ansehen"
+          },
+        },
       },
+      // ====contactPage====
+      "contact": {
+        "pageName": "Kontaktieren Sie uns",
+        "header": {
+          "heading": "Kontaktieren Sie uns",
+          "text1": "Bei Zebrano Studio begannen wir mit einer einfachen Idee: luxuriöse, maßgeschneiderte Türen zugänglich zu machen – ohne Grenzen. Jedes Zuhause verdient einen Hauch von Design, und jeder Raum sollte eine Geschichte erzählen.",
+          "text2": "Ob Sie groß träumen, an einem einzigartigen Projekt arbeiten oder einfach nur neugierig auf die Möglichkeiten sind – wir würden uns freuen, von Ihnen zu hören. Nutzen Sie das Formular unten, besonders wenn Sie spezielle Wünsche oder außergewöhnliche Ideen haben.",
+        },
+        "form": {
+          "label": {
+            "Name": "Name",
+            "Email": "E-Mail",
+            "PhoneNumber": "Telefonnummer",
+            "ContactReason": "Grund der Kontaktaufnahme",
+            "Consumer": "Privatkunde",
+            "Message": "Nachricht",
+          },
+          "select": {
+            "optionOne": {
+              "option1": "Ich hätte gern ein Angebot für eine spezielle Maßanfertigung"
+            },
+            "optionTwo": {
+              "option1": "Geschäftskunde"
+            },
+          },
+          "Submit": "Absenden"
+        }
+      },
+      // =====Inspiration====
+      "Inspiration": {
+        "pageName": "Inspiration",
+        "banner": {
+          "heading": "Entdecken Sie unsere Arbeit",
+          "description": "Unsere Zebrano Studio Türen sind darauf ausgelegt, Ihren Raum aufzuwerten, und bieten die maßgeschneiderte Luxusqualität, die normalerweise architektonischen Meisterwerken vorbehalten ist. Erleben Sie, wie wir Exklusivität zugänglich machen.",
+          "titleOne": "Mehr als 1000 Konfigurationen",
+          "titleTwo": "Empfohlen von Innenarchitekten",
+        },
+        "btnText": "Mehr ansehen",
+      },
+      // =====Architects=======
+      "Architects": {
+        "pageName": "Inspiration",
+        "ArchitectsBanner": {
+          "title": "Werden Sie Teil der Geschichte von Zebrano Studio",
+          "btnText": "Jetzt beitreten",
+        },
+        "PartnerSupport": {
+          "partnerHeading": {
+            "title": "Partner-First Support.",
+            "desc": "Wir haben Zebrano gegründet, weil Fachleute einen Lieferanten verdienen, der ihren Erfolg unterstützt, statt um ihre Kunden zu konkurrieren. Sie behalten die Beziehungen, sichern sich die verdienten Margen und konzentrieren sich auf das, was Sie am besten können.",
+            "btnText": "Werden Sie Partner von Zebrano",
+          },
+          "professionalDemand": {
+            "heading": "Sind Sie ein Designer, der wirklich den Mut hat, anders zu denken?",
+            "textOne": "Haben Sie manchmal das Gefühl, dass Ihre Kreativität durch das Mögliche eingeschränkt wird – sei es durch Materialien, Oberflächen oder Produktionsgrenzen? Sie sind nicht allein. Wir verstehen das.",
+            "textTwo": "Bei Zebrano glauben wir, dass großartiges Design niemals durch die Umsetzung begrenzt werden sollte. Deshalb bieten wir Ihnen unbegrenzte Möglichkeiten, zu erkunden, zu experimentieren und Ihre kühnsten Ideen zum Leben zu erwecken – mit unserer vollen Unterstützung bei jedem Schritt.",
+            "textThree": "Wenn Sie bereit sind, mit einem Partner zusammenzuarbeiten, der Ihre Vision genauso wertschätzt wie Sie selbst und der sich dafür einsetzt, das Unmögliche möglich zu machen, dann sind Sie hier genau richtig."
+          },
+          "Conversation": {
+            "title": "Lassen Sie uns gemeinsam Grenzen überschreiten. Treten Sie unserem Partnerprogramm bei und gestalten Sie ohne Grenzen.",
+            "heading": "Lassen Sie uns ins Gespräch kommen. ",
+            "desc": "Wir würden gerne mehr über Ihre Ideen, Projekte oder Fragen erfahren. Kein Druck – nur ein freundliches Gespräch, um herauszufinden, wie wir gemeinsam etwas Besonderes schaffen können. Melden Sie sich jederzeit!",
+            "btnText": "Partner with Zebrano",
+          },
+        },
+
+      },
+
+
       // %%%%% FOOTER %%%%%%%
       // %%%%% FOOTER %%%%%%%
       "footer": {
