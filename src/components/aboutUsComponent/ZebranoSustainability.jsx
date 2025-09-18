@@ -3,10 +3,12 @@ import BtnComponent from '../homeComponents/utils/BtnComponent'
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 const ZebranoSustainability = () => {
+    const { t, i18n } = useTranslation();
     const headingOneRef = useRef(null);
         const ZebranoSustainabilityRef = useRef(null);
         const headingTwoRef = useRef(null);
@@ -66,17 +68,21 @@ const ZebranoSustainability = () => {
                     });
             });
             return () => ctx.revert();
-        }, []);
+        }, [i18n.language]);
   return (
     <>
-    <section ref={ZebranoSustainabilityRef} id="ZebranoSustainability">
+    <section key={i18n.language} ref={ZebranoSustainabilityRef} id="ZebranoSustainability">
         <div className="wrapper w-full flex flex-col md:flex-row bg-myColorOne textLightText py-5 md:pr-5" >
             <div className="w-full md:w-1/2  flex items-center">
             <div className='w-full h-auto p-5 md:p-10 lg:p-14'>
-                <p ref={headingOneRef} className='text-xl mb-2 font-Poppins text-LightText'>Sustainability</p>
-                <h2 ref={headingTwoRef} className='text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-LightText font-Montserrat'>Craftsmanship that cares</h2>
-                <p ref={pragraphRef} className='text-base mb-8 text-LightText'>We choose sustainable materials, work with responsible suppliers, and build pieces meant to last for decades. Because great design should never come at the planet's expense</p>
-                <BtnComponent text="See More" />
+                <p ref={headingOneRef} className='text-xl mb-2 font-Poppins text-LightText'>
+                    {t("Zebrano.Sustainability.title")}
+                </p>
+                <h2 ref={headingTwoRef} className='text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-LightText font-Montserrat'>{t("Zebrano.Sustainability.heading")}</h2>
+                <p ref={pragraphRef} className='text-base mb-8 text-LightText'>
+                    {t("Zebrano.Sustainability.desc")}
+                </p>
+                <BtnComponent text={t("Zebrano.Sustainability.btnText")} />
             </div>
             </div>
             <div className="w-full md:w-1/2">

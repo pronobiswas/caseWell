@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import TypeingText from "../commonComponent/TypeingText";
-
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(SplitText);
 
 const ZebranoBanner = ({
@@ -12,12 +12,15 @@ const ZebranoBanner = ({
   zebranoText = "At Zebrano Studio,we believe great design should be within everyone's reach. From bespoke doors to fully integrade wall features, our mission is to bring luxury craftsmanship and architectural beauty into every type of home - from city apartment to countryside villas.",
   typeingComponnent = "true",
 }) => {
+  const { t, i18n } = useTranslation();
   const headingOneRef = useRef(null);
   const headingTwoRef = useRef(null);
   const headingThreeRef = useRef(null);
   const subheadingRef = useRef(null);
 
   const text2Ref = useRef(null);
+  const texts = t('Zebrano.ZebranoBanner.texts', { returnObjects: true });
+
   // =====spiral effect=======
   // useEffect(() => {
   //   const ctx = gsap.context(() => {
@@ -71,6 +74,8 @@ const ZebranoBanner = ({
   //   return () => ctx.revert();
   // }, []);
 
+
+
   return (
     <>
       <section id="zebranoBanner">
@@ -82,7 +87,7 @@ const ZebranoBanner = ({
             >
               {headingOne}
             </h1>
-            {typeingComponnent ? <TypeingText /> : ""}
+            {typeingComponnent ? <TypeingText texts={texts} /> : ""}
           </div>
 
           <div className="w-full flex flex-col md:flex-row">

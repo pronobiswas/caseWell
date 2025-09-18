@@ -2,10 +2,12 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(Draggable);
 
 const DraggableSlider = () => {
+  const { t, i18n } = useTranslation();
   const holderBoxRef = useRef(null);
   const mouseTrackerRef = useRef(null);
 
@@ -14,44 +16,34 @@ const DraggableSlider = () => {
   const descriptionRef = useRef(null);
   const facesArray = [
     {
-      name: "Robbert ",
-      designastion: "  – Interim Finance ",
-      description:
-        "Coming from a finance consulting background with an dose of creativity, Robbert decided to combine his talents to help Zebrano grow. As one of the brothers who started the Zebrano journey, he bridges strategy and design, ensuring every business decision aligns with our creative visi",
+      name: `${t("Zebrano.DraggableSlider.person.Robbert.name")}`,
+      designastion:  `${t("Zebrano.DraggableSlider.person.Robbert.designation")}`,
+      description:`${t("Zebrano.DraggableSlider.person.Robbert.details")}`,
       image: "/images/img1.png",
     },
     {
-      name: "Mathijs  ",
-      designastion: "– Owner & Woodworker ",
-      description:'With more than 15 years of experience in construction management and large-scale projects, Mathijs built a reputation for precision and leadership. From a young age, his passion for woodworking was evident, and over time he transitioned from running a midsize construction company to founding Zebrano Studio — where craftsmanship meets luxury design. Quote: “From wood grains to grand designs — every detail tells a story.” ',
+      name: `${t("Zebrano.DraggableSlider.person.Mathijs.name")}`,
+      designastion:  `${t("Zebrano.DraggableSlider.person.Mathijs.designation")}`,
+      description:`${t("Zebrano.DraggableSlider.person.Mathijs.details")}`,
       image: "/images/img2.png",
     },
     {
-      name: "Rick ",
-      designastion: " – Wood Specialist ",
-      description:
-        "Rick is our true specialist in wood. Trained in carpentry and woodworking, he knows every detail about the craft — from selecting the right species to cutting with millimeter precision. His deep knowledge ensures that each Zebrano piece is not only beautiful, but technically flawless.",
+      name: `${t("Zebrano.DraggableSlider.person.Rick.name")}`,
+      designastion:  `${t("Zebrano.DraggableSlider.person.Rick.designation")}`,
+      description:`${t("Zebrano.DraggableSlider.person.Rick.details")}`,
       image: "/images/img3.png",
     },
     {
-      name: "Dave ",
-      designastion: " – Marketing & Sales",
-      description:
-        "Dave brings a creative commercial edge to Zebrano Studio. With experience in brand storytelling and customer relations, he ensures that our vision reaches both homeowners and architects. He is the link between our workshop and the world, making sure every client feels guided and inspired throughout the process.",
+      name: `${t("Zebrano.DraggableSlider.person.Dave.name")}`,
+      designastion:  `${t("Zebrano.DraggableSlider.person.Dave.designation")}`,
+      description:`${t("Zebrano.DraggableSlider.person.Dave.details")}`,
       image: "/images/img1.png",
     },
     {
-      name: "Peter  ",
-      designastion: "– Woodworker ",
-      description:'Peter represents the heart of our workshop. Skilled in both modern techniques and traditional joinery, he brings an artisan’s patience and precision to every door. Known for his steady hands and meticulous eye, Peter ensures that every piece leaving the studio carries the Zebrano standard.',
+      name: `${t("Zebrano.DraggableSlider.person.Peter.name")}`,
+      designastion:  `${t("Zebrano.DraggableSlider.person.Peter.designation")}`,
+      description:`${t("Zebrano.DraggableSlider.person.Peter.details")}`,
       image: "/images/img4.png",
-    },
-    {
-      name: "Rick ",
-      designastion: " – Wood Specialist ",
-      description:
-        "Rick is our true specialist in wood. Trained in carpentry and woodworking, he knows every detail about the craft — from selecting the right species to cutting with millimeter precision. His deep knowledge ensures that each Zebrano piece is not only beautiful, but technically flawless.",
-      image: "/images/img3.png",
     },
     
   ];
@@ -113,25 +105,27 @@ const DraggableSlider = () => {
   return (
     <section className="w-full py-20 md:py-40 bg-myColorTwo">
       {/* ========feact array====== */}
+      <h1 className="text-3xl lg:text-5xl text-myColorOne ml-5 lg:ml-14 mb-8 lg:mb-14 max-w-xl">
+        {t("Zebrano.DraggableSlider.heading")}
+      </h1>
       <section id="dragableAndClickableSlider">
         <div className="wrapper w-full h-fit p-5 flex flex-col md:flex-row gap-10  font-Poppins text-myColorOne">
           {/* =====person Details====== */}
           <div className="details w-full  md:w-1/3 lg:1/4 flex justify-center">
 
           <div className="w-full max-w-xs">
+            
             <h3
               ref={nameRef}
               className="text-3xl font-Montserrat font-semibold"
             >
-              Person Name
+              {t("Zebrano.DraggableSlider.title")}
             </h3>
             <h5 ref={designetionRef} className="text-xl font-Poppins font-bold">
-              Designetion
+              
             </h5>
             <p ref={descriptionRef} className="mt-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur quidem hic libero dolorem. Incidunt molestiae
-              recusandae veniam, tempora totam quo.
+              {t("Zebrano.DraggableSlider.description")}
             </p>
           </div>
 

@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(SplitText);
 
 const TypeingText = ({
     texts = ["interior", "design", "doors"]
 }) => {
+    const { t, i18n } = useTranslation();
     const text2Ref = useRef(null);
     useEffect(() => {
         
@@ -38,7 +40,7 @@ const TypeingText = ({
             animateText(current);
         });
         return () => ctx.revert();
-    }, []);
+    }, [i18n.language]);
 
     return (
         <>

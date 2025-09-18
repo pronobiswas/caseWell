@@ -4,10 +4,11 @@ import PartnerSupport from '../components/architectComponent/PartnerSupport'
 import CasewellPartner from '../components/architectComponent/CasewellPartner'
 import Conversation from '../components/architectComponent/Conversation'
 import WhyPartner from '../components/homeComponents/WhyPartner'
+import { useTranslation } from 'react-i18next'
+
 
 const ArchitectPage = () => {
-
-
+  const { t } = useTranslation();
   return (
     <>
         <ArchitectsBanner />

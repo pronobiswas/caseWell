@@ -510,14 +510,119 @@ const resources = {
             "textTwo": "At Zebrano, we believe great design should never be limited by execution. That’s why we offer you unlimited possibilities to explore, experiment, and bring your boldest ideas to life — with our full support every step of the way.",
             "textThree": "If you’re ready to work with a partner who values your vision as much as you do, and who’s committed to making the impossible possible, then you’ve come to the right place."
           },
-          "Conversation": {
-            "title": "Let’s break boundaries together. Join our Partner Program and start creating without limits.",
-            "heading": "Let’s Get in Touch and Start a Conversation. ",
-            "desc": "We’d love to hear about your ideas, projects, or questions. No pressure — just a friendly chat to explore how we can create something amazing together. Reach out anytime!",
-            "btnText": "Partner with Zebrano",
+        },
+        "Conversation": {
+          "title": "Let’s break boundaries together. Join our Partner Program and start creating without limits.",
+          "heading": "Let’s Get in Touch and Start a Conversation. ",
+          "desc": "We’d love to hear about your ideas, projects, or questions. No pressure — just a friendly chat to explore how we can create something amazing together. Reach out anytime!",
+          "btnText": "Partner with Zebrano",
+        },
+        "CasewellPartner": {
+          "heading": "What you get as a Zebrano Partner:",
+          "subHeading": "",
+          "card": {
+            "title1": "True Wholesale Pricing",
+            "desc1": "We provide genuine wholesale pricing to all our partners, empowering you to grow your business profitably and competitively. Because when you succeed, we succeed.",
+            "title2": "Unlimited Design Possibilities",
+            "desc2": "Go wild with your ideas. Whether it’s unique shapes, mixed materials, or custom finishes, we don’t set limits — you dream it, we make it happen.",
+            "title3": "Full In-House Design Support",
+            "desc3": "Enjoy direct access to our expert design team who guide you every step of the way. We reduce your workload and stress, so you can focus on what you do best — designing amazing spaces.",
+            "title4": "Security & Reliability Through Open Communication",
+            "desc4": "At Zebrano, communication is our foundation. We keep you informed, involved, and supported throughout the process, so you experience complete peace of mind on every project.",
+            "title5": "Full-Service Support",
+            "desc5": "We’re not just a materials provider — we’re your backend support team. You get the benefits of design guidance, showroom access, and fulfillment coordination as if you had it all in-house, but without the overhead. That means less stress, fewer errors, and more time to focus on what you do best.",
           },
         },
 
+      },
+      // ==== zebrano/aboutus =====
+      "Zebrano": {
+        "pageName": "Zebrano",
+        "ZebranoBanner": {
+          "headingOne": "Making luxury",
+          "headingTwo": " accessible to",
+          "headingThree": "everyone",
+          "zebranoText": "At Zebrano Studio, we believe great design should be within everyone's reach. From bespoke doors to fully integrated wall features, our mission is to bring luxury craftsmanship and architectural beauty into every type of home – from city apartments to countryside villas.",
+          "texts": ["design", "doors", "interior"]
+        },
+        "ZebranoJourney": {
+          "title": "From one door to endless possibilities",
+          "heading": "The Zebrano Studio Journey",
+          "desc": "What began as a single custom door project has evolved into a full collection of pivot, sliding, hinged, and flush-to-wall designs that redefine how interiors feel. Inspired by luxury hotels and architectural details, we've made it our mission to create doors and wall features that combine premium materials with personal design freedom.",
+          "btnText": "See More",
+        },
+        "DraggableSlider": {
+          "heading": "Meet the faces behind Zebrano Studio",
+          "title": "Our Team",
+          "description": "Behind every seamless door is a story and a few perfectionists with sawdust in their hair. Get to know the minds (and hands) that bring Zebrano Studio to life in Meet the Makers.",
+          "person": {
+            "Robbert": {
+              "name": "Robbert",
+              "designation": "Interim Finance",
+              "details": "Coming from a finance consulting background with a dose of creativity, Robbert decided to combine his talents to help Zebrano grow. As one of the brothers who started the Zebrano journey, he bridges strategy and design, ensuring every business decision aligns with our creative vision.",
+            },
+
+            "Mathijs": {
+              "name": "Mathijs",
+              "designation": "Owner & Woodworker",
+              "details": "With more than 15 years of experience in construction management and large-scale projects, Mathijs built a reputation for precision and leadership. From a young age, his passion for woodworking was evident, and over time he transitioned from running a midsize construction company to founding Zebrano Studio — where craftsmanship meets luxury design. Quote: “From wood grains to grand designs — every detail tells a story.” ",
+            },
+
+            "Rick": {
+              "name": "Rick",
+              "designation": "Wood Specialist",
+              "details": "Rick is our true specialist in wood. Trained in carpentry and woodworking, he knows every detail about the craft — from selecting the right species to cutting with millimeter precision. His deep knowledge ensures that each Zebrano piece is not only beautiful, but technically flawless.",
+            },
+
+            "Dave": {
+              "name": "Dave ",
+              "designation": "Marketing & Sales",
+              "details": "Dave brings a creative commercial edge to Zebrano Studio. With experience in brand storytelling and customer relations, he ensures that our vision reaches both homeowners and architects. He is the link between our workshop and the world, making sure every client feels guided and inspired throughout the process.",
+            },
+
+            "Peter": {
+              "name": "Peter",
+              "designation": "Woodworker",
+              "details": "Peter represents the heart of our workshop. Skilled in both modern techniques and traditional joinery, he brings an artisan’s patience and precision to every door. Known for his steady hands and meticulous eye, Peter ensures that every piece leaving the studio carries the Zebrano standard.",
+            },
+          },
+        },
+        "Sustainability": {
+          "title": "Sustainability",
+          "heading": "Craftsmanship that cares",
+          "desc": "We choose sustainable materials, work with responsible suppliers, and build pieces meant to last for decades. Because great design should never come at the planet's expense.",
+          "btnText": "See More",
+        },
+        "ServicesThasFitYourNeed": {
+          "title": "Service that fits your needs",
+          "desc": "Whether you're ordering a single custom door or exploring ways to integrate multiple elements into your interior, we make the process simple and inspiring. Our team is here to guide you through choices, timelines, and practical details – so you feel confident from the first conversation to the final installation.",
+          "btn": "Service",
+          "FAQ": {
+            "heading": "Got questions? You'll find plenty of answers in our FAQ, including:",
+            "faqs": [
+              {
+                question: "What are standard production lead times?",
+                answer: `– Doors (pivot/sliding/hinged) 6–8 weeks; Flush-to-Wall 8–10 weeks; Wall partitions 6–8 weeks; Boiserie 8–10 weeks.`,
+              },
+              {
+                question: "How customisable are your doors?",
+                answer: "– Sizes, finishes, glass types, edge details, hardware sets, and options (e.g., soft-close, pivot closer, seals) are configurable. Ultra-custom builds move to a quote path.",
+              },
+              {
+                question: "Do you supply hardware?",
+                answer: "– Yes—hinges, pivots, sliders, handles, and seals as specified; third-party hardware by agreement after compatibility checks.",
+              },
+              {
+                question: "What warranty do you offer?",
+                answer: "– 2-year warranty on doors/materials (manufacturing defects/structural integrity) and 6-month warranty on installation workmanship (when performed by Zebrano).",
+              },
+              {
+                question: "Do you install as well?",
+                answer: "– Yes—optional installation in NL. Includes fitting Zebrano frames/leafs/hardware, alignment, clearances, and functional checks; excludes structural works, electricals, plastering/painting, and third-party materials.",
+              },
+            ]
+          }
+        },
       },
 
       // %%%%% FOOTER %%%%%%%
@@ -1048,14 +1153,123 @@ const resources = {
             "textTwo": "Bij Zebrano geloven we dat goed design nooit beperkt mag worden door de uitvoering. Daarom bieden we je onbeperkte mogelijkheden om te ontdekken, te experimenteren en je meest gedurfde ideeën tot leven te brengen — met onze volledige steun in elke stap.",
             "textThree": "Als je klaar bent om samen te werken met een partner die jouw visie net zo waardeert als jijzelf, en die zich inzet om het onmogelijke mogelijk te maken, dan ben je hier aan het juiste adres."
           },
-          "Conversation": {
-            "title": "Laten we samen grenzen doorbreken. Word lid van ons Partnerprogramma en ontwerp zonder beperkingen.",
-            "heading": "Laten we het gesprek starten.",
-            "desc": " We horen graag meer over jouw ideeën, projecten of vragen. Geen druk — gewoon een prettig gesprek om te ontdekken hoe we samen iets bijzonders kunnen maken. Neem gerust contact op!",
-            "btnText": "Partner with Zebrano",
+        },
+        "Conversation": {
+          "title": "Laten we samen grenzen doorbreken. Word lid van ons Partnerprogramma en ontwerp zonder beperkingen.",
+          "heading": "Laten we het gesprek starten.",
+          "desc": " We horen graag meer over jouw ideeën, projecten of vragen. Geen druk — gewoon een prettig gesprek om te ontdekken hoe we samen iets bijzonders kunnen maken. Neem gerust contact op!",
+          "btnText": "Partner with Zebrano",
+        },
+        "CasewellPartner": {
+          "heading": "Wat je krijgt als Zebrano Partner:",
+          "subHeading": "",
+          "card": {
+            "title1": "Echte groothandelsprijzen",
+            "desc1": "Bij ons krijg je altijd eerlijke groothandelsprijzen. Zo kun jij je bedrijf winstgevend en concurrerend laten groeien. Want als jij groeit, groeien wij met je mee.",
+
+            "title2": "Onbeperkte ontwerpvrijheid",
+            "desc2": "Laat je creativiteit de vrije loop. Of het nu gaat om unieke vormen, bijzondere materiaalcombinaties of een speciale afwerking — wij zetten geen grenzen. Jij droomt het, wij maken het mogelijk.",
+
+            "title3": "Directe designondersteuning",
+            "desc3": "Je krijgt rechtstreeks toegang tot ons designteam. Samen denken we mee en begeleiden we je in elke stap. Zo nemen we werk en zorgen uit handen, zodat jij je kunt focussen op waar je het beste in bent: inspirerende ruimtes ontwerpen.",
+
+            "title4": "Zekerheid door open communicatie",
+            "desc4": "Goede communicatie is onze basis. We houden je op de hoogte, betrekken je in het proces en zorgen dat je je gesteund voelt. Zo werk je met volle gemoedsrust aan ieder project.",
+
+            "title5": "Volledige ondersteuning",
+            "desc5": "Wij zijn meer dan een leverancier van materialen — we zijn jouw supportteam achter de schermen. Je profiteert van designadvies, toegang tot onze showroom en coördinatie van de uitvoering. Alles alsof je een eigen team in huis hebt, maar zonder de vaste lasten. Minder stress, minder fouten, meer tijd om te doen wat jij het liefst doet.",
           },
         },
 
+      },
+      // ==== zebrano/aboutus =====
+      "Zebrano": {
+        "pageName": "Zebrano",
+        "ZebranoBanner": {
+          "headingOne": "Wij maken Luxe ",
+          "headingTwo": "bereikbaar voor",
+          "headingThree": "iedereen",
+          "zebranoText": "Bij Zebrano Studio vinden we dat luxe design voor iedereen bereikbaar moet zijn. Van maatwerkdeuren tot volledig geïntegreerde wandoplossingen: onze missie is om vakmanschap en stijlvolle vormgeving in elk huis te brengen — van stadsappartement tot landelijke villa.",
+          "texts": ["design", "deuren", "interieur"]
+        },
+        "ZebranoJourney": {
+          "title": "Van één deur naar eindeloze mogelijkheden",
+          "heading": "De reis van Zebrano Studio",
+          "desc": "Wat begon als een enkel maatwerkdeurproject is uitgegroeid tot een volledige collectie pivot-, schuif-, draai- en wandvlakdeuren die de beleving van interieurs opnieuw definiëren. Geïnspireerd door luxe hotels en architectonische details, hebben we het onze missie gemaakt om deuren en wandoplossingen te creëren die premium materialen combineren met persoonlijke ontwerpvrijheid.",
+          "btnText": "Bekijk meer",
+        },
+        "DraggableSlider": {
+          "heading": "Ontmoet de mensen van Zebrano Studio",
+          "title": "Ons Team",
+          "description": "Achter elke naadloze deur schuilt een verhaal — en een paar perfectionisten met zaagsel in hun haar. Maak kennis met de mensen (en handen) die Zebrano Studio tot leven brengen.",
+          "person": {
+            "Robbert": {
+              "name": "Robbert",
+              "designation": "Interim Finance",
+              "details": "Met een achtergrond in financiële consultancy en een flinke dosis creativiteit besloot Robbert zijn talenten te combineren om Zebrano te laten groeien. Als een van de broers die de Zebrano-reis begonnen, slaat hij de brug tussen strategie en design en zorgt hij dat elke zakelijke beslissing aansluit bij onze creatieve visie.",
+            },
+
+            "Mathijs": {
+              "name": "Mathijs",
+              "designation": "Eigenaar & Houtbewerker",
+              "details": "Met meer dan 15 jaar ervaring in bouwmanagement en grootschalige projecten heeft Mathijs een reputatie opgebouwd in precisie en leiderschap. Al op jonge leeftijd was zijn passie voor houtbewerking duidelijk. Na verloop van tijd maakte hij de overstap van het leiden van een middelgroot bouwbedrijf naar de oprichting van Zebrano Studio — waar vakmanschap en luxe design samenkomen. Quote: “Van houtnerf tot groot ontwerp — elk detail vertelt een verhaal.”",
+            },
+
+            "Rick": {
+              "name": "Rick",
+              "designation": "Houtspecialist",
+              "details": "Rick is onze echte specialist in hout. Opgeleid in timmerwerk en houtbewerking kent hij elk detail van het vak — van het kiezen van de juiste houtsoort tot het zagen op millimeterprecisie. Zijn diepe kennis zorgt ervoor dat elk Zebrano-stuk niet alleen mooi is, maar ook technisch perfect.",
+            },
+
+            "Dave": {
+              "name": "Dave ",
+              "designation": " Marketing & Sales",
+              "details": "Dave brengt een creatieve commerciële insteek naar Zebrano Studio. Met ervaring in merkverhalen en klantrelaties zorgt hij ervoor dat onze visie zowel huiseigenaren als architecten bereikt. Hij is de schakel tussen onze werkplaats en de wereld en zorgt dat elke klant zich begeleid en geïnspireerd voelt tijdens het hele proces."
+            },
+
+            "Peter": {
+              "name": "Peter",
+              "designation": "Houtbewerker",
+              "details": "Peter vertegenwoordigt het hart van onze werkplaats. Bekwaam in zowel moderne technieken als traditioneel vakwerk brengt hij het geduld en de precisie van een ambachtsman in elke deur. Bekend om zijn vaste hand en scherp oog zorgt Peter ervoor dat elk stuk dat het atelier verlaat voldoet aan de Zebrano-standaard.",
+            },
+          },
+        },
+        "Sustainability": {
+          "title": "Duurzaamheid",
+          "heading": "Vakmanschap met zorg",
+          "desc": "Wij kiezen duurzame materialen, werken met verantwoorde leveranciers en maken stukken die tientallen jaren meegaan. Want goed design mag nooit ten koste gaan van de planeet.",
+          "btnText": "Lees meer",
+        },
+        "ServicesThasFitYourNeed": {
+          "title": "Service die bij jouw wensen past",
+          "desc": "Of je nu één maatwerkdeur bestelt of meerdere elementen in je interieur wilt integreren, wij maken het proces eenvoudig en inspirerend. Ons team begeleidt je bij keuzes, planningen en praktische details – zodat je je zeker voelt van het eerste gesprek tot de laatste installatie.",
+          "btn": "Service",
+          "FAQ": {
+            "heading": "Vragen? Je vindt veel antwoorden in onze FAQ, waaronder:",
+            "faqs": [
+              {
+                question: "Wat zijn de standaard levertijden?",
+                answer: ` - Deuren (pivot/schuif/draaideur) 6–8 weken; Flush-to-Wall 8–10 weken; Scheidingswanden 6–8 weken; Boiserie 8–10 weken.`,
+              },
+              {
+                question: "Hoeveel maatwerk is er mogelijk?",
+                answer: " – Afmetingen, afwerkingen, glassoorten, randdetails, beslagsets en opties (bijv. soft-close, pivotsluiter, afdichtingen) zijn configureerbaar. Ultiem maatwerk gaat via een offerte.",
+              },
+              {
+                question: "Leveren jullie ook beslag?",
+                answer: " – Ja, scharnieren, pivots, schuifrails, grepen en afdichtingen volgens specificatie; externe hardware na compatibiliteitscontrole en afspraak.",
+              },
+              {
+                question: "Welke garantie bieden jullie?",
+                answer: " – 2 jaar garantie op deuren/materialen (fabricagefouten/constructieveiligheid) en 6 maanden garantie op montage (indien uitgevoerd door Zebrano).",
+              },
+              {
+                question: "Installeren jullie ook?",
+                answer: " – Ja, optionele installatie in NL. Inclusief plaatsing van Zebrano kozijnen/deurbladen/beslag, afstelling, speling en functionele checks; exclusief constructiewerk, elektra, stuc/ schilderwerk en derden-materialen.",
+              },
+            ]
+          }
+        },
       },
 
       // %%%%% FOOTER %%%%%%%
@@ -1586,14 +1800,126 @@ const resources = {
             "textTwo": "Bei Zebrano glauben wir, dass großartiges Design niemals durch die Umsetzung begrenzt werden sollte. Deshalb bieten wir Ihnen unbegrenzte Möglichkeiten, zu erkunden, zu experimentieren und Ihre kühnsten Ideen zum Leben zu erwecken – mit unserer vollen Unterstützung bei jedem Schritt.",
             "textThree": "Wenn Sie bereit sind, mit einem Partner zusammenzuarbeiten, der Ihre Vision genauso wertschätzt wie Sie selbst und der sich dafür einsetzt, das Unmögliche möglich zu machen, dann sind Sie hier genau richtig."
           },
-          "Conversation": {
-            "title": "Lassen Sie uns gemeinsam Grenzen überschreiten. Treten Sie unserem Partnerprogramm bei und gestalten Sie ohne Grenzen.",
-            "heading": "Lassen Sie uns ins Gespräch kommen. ",
-            "desc": "Wir würden gerne mehr über Ihre Ideen, Projekte oder Fragen erfahren. Kein Druck – nur ein freundliches Gespräch, um herauszufinden, wie wir gemeinsam etwas Besonderes schaffen können. Melden Sie sich jederzeit!",
-            "btnText": "Partner with Zebrano",
+        },
+        "Conversation": {
+          "title": "Lassen Sie uns gemeinsam Grenzen überschreiten. Treten Sie unserem Partnerprogramm bei und gestalten Sie ohne Grenzen.",
+          "heading": "Lassen Sie uns ins Gespräch kommen. ",
+          "desc": "Wir würden gerne mehr über Ihre Ideen, Projekte oder Fragen erfahren. Kein Druck – nur ein freundliches Gespräch, um herauszufinden, wie wir gemeinsam etwas Besonderes schaffen können. Melden Sie sich jederzeit!",
+          "btnText": "Partner with Zebrano",
+        },
+        "CasewellPartner": {
+          "heading": "Was Sie als Zebrano-Partner erhalten:",
+          "subHeading": "",
+          "card": {
+            "title1": "Echte Großhandelspreise",
+            "desc1": "Wir bieten allen unseren Partnern echte Großhandelspreise, damit Sie Ihr Geschäft profitabel und wettbewerbsfähig ausbauen können. Denn wenn Sie erfolgreich sind, sind wir es auch.",
+
+            "title2": "Unbegrenzte Designmöglichkeiten",
+            "desc2": "Lassen Sie Ihrer Kreativität freien Lauf. Ob einzigartige Formen, Materialkombinationen oder spezielle Oberflächen – wir setzen keine Grenzen. Sie träumen es, wir machen es möglich.",
+
+            "title3": "Umfassende interne Designunterstützung",
+            "desc3": "Sie erhalten direkten Zugang zu unserem Designteam, das Sie in jedem Schritt begleitet. So entlasten wir Sie und reduzieren Stress, damit Sie sich auf das konzentrieren können, was Sie am besten können: großartige Räume gestalten.",
+
+            "title4": "Sicherheit & Verlässlichkeit durch offene Kommunikation",
+            "desc4": "Bei Zebrano ist Kommunikation unser Fundament. Wir halten Sie informiert, beziehen Sie in den Prozess ein und unterstützen Sie jederzeit, sodass Sie bei jedem Projekt völlige Sicherheit haben.",
+
+            "title5": "Umfassender Service-Support",
+            "desc5": "Wir sind mehr als nur ein Materiallieferant – wir sind Ihr Supportteam im Hintergrund. Sie profitieren von Designberatung, Zugang zu unserem Showroom und Koordination der Abwicklung – als hätten Sie ein eigenes Team im Haus, jedoch ohne die Fixkosten. Weniger Stress, weniger Fehler, mehr Zeit für das, was Sie am liebsten tun.",
           },
         },
 
+      },
+      // ==== zebrano/aboutus =====
+      "Zebrano": {
+        "pageName": "Zebrano",
+        "ZebranoBanner": {
+          "headingOne": "Wir machen Luxus",
+          "headingTwo": " für alle",
+          "headingThree": "zugänglich",
+          "zebranoText": "Bei Zebrano Studio glauben wir, dass großartiges Design für jeden zugänglich sein sollte. Von maßgeschneiderten Türen bis hin zu vollständig integrierten Wandlösungen – unsere Mission ist es, luxuriöse Handwerkskunst und architektonische Schönheit in jedes Zuhause zu bringen – vom Stadtapartment bis zur Landhausvilla.",
+          "texts": ["design", "Türen", "Interieur"]
+        },
+        "ZebranoJourney": {
+          "title": "Von einer Tür zu unendlichen Möglichkeiten",
+          "heading": "Die Reise von Zebrano Studio",
+          "desc": "Was als ein einziges maßgefertigtes Türprojekt begann, hat sich zu einer vollständigen Kollektion von Pivot-, Schiebe-, Dreh- und wandbündigen Türen entwickelt, die das Raumgefühl völlig neu definieren. Inspiriert von Luxushotels und architektonischen Details ist es unsere Mission, Türen und Wandlösungen zu schaffen, die hochwertige Materialien mit persönlicher Gestaltungsfreiheit vereinen.",
+          "btnText": "Mehr erfahren",
+        },
+        "DraggableSlider": {
+          "heading": "Lernen Sie die Gesichter hinter Zebrano Studio kennen",
+          "title": "Unser Team",
+          "description": "Hinter jeder nahtlosen Tür steckt eine Geschichte – und ein paar Perfektionisten mit Sägespänen im Haar. Lernen Sie die Köpfe (und Hände) kennen, die Zebrano Studio zum Leben erwecken.",
+          "person": {
+            "Robbert": {
+              "name": "Robbert",
+              "designation": "Interim Finance",
+              "details": "Aus der Finanzberatung kommend und mit einer Portion Kreativität ausgestattet, entschied sich Robbert, seine Talente zu verbinden, um Zebrano wachsen zu lassen. Als einer der Brüder, die die Zebrano-Reise begonnen haben, schlägt er die Brücke zwischen Strategie und Design und stellt sicher, dass jede geschäftliche Entscheidung mit unserer kreativen Vision übereinstimmt.",
+            },
+
+            "Mathijs": {
+              "name": "Mathijs",
+              "designation": "Eigentümer & Holzhandwerker",
+              "details": "Mit mehr als 15 Jahren Erfahrung im Baumanagement und in Großprojekten hat sich Mathijs einen Ruf für Präzision und Führungsstärke erarbeitet. Schon in jungen Jahren war seine Leidenschaft für Holzarbeiten deutlich zu erkennen. Im Laufe der Zeit wechselte er von der Leitung eines mittelständischen Bauunternehmens zur Gründung von Zebrano Studio – wo Handwerkskunst auf luxuriöses Design trifft. Zitat: „Von Holzmaserungen bis zu großen Designs – jedes Detail erzählt eine Geschichte.“",
+            },
+
+            "Rick": {
+              "name": "Rick",
+              "designation": "Holzspezialist",
+              "details": "Rick ist unser wahrer Holzspezialist. Ausgebildet in Zimmerei und Holzverarbeitung kennt er jedes Detail des Handwerks – von der Auswahl der richtigen Holzarten bis hin zum millimetergenauen Zuschnitt. Sein tiefes Wissen stellt sicher, dass jedes Zebrano-Stück nicht nur schön, sondern auch technisch makellos ist.",
+            },
+
+            "Dave": {
+              "name": "Dave ",
+              "designation": "Marketing & Vertrieb",
+              "details": "Dave bringt eine kreative, kommerzielle Note ins Zebrano Studio. Mit Erfahrung im Markenstorytelling und in der Kundenbetreuung sorgt er dafür, dass unsere Vision sowohl Hausbesitzer als auch Architekten erreicht. Er ist die Verbindung zwischen unserer Werkstatt und der Welt und stellt sicher, dass sich jeder Kunde während des gesamten Prozesses begleitet und inspiriert fühlt.",
+            },
+
+            "Peter": {
+              "name": "Peter",
+              "designation": "Holzhandwerker",
+              "details": "Peter verkörpert das Herz unserer Werkstatt. Versiert in modernen Techniken ebenso wie in traditioneller Handwerkskunst, bringt er Geduld und Präzisio",
+            },
+          },
+        },
+        "Sustainability": {
+          "title": "Nachhaltigkeit",
+          "heading": "Handwerk mit Verantwortung",
+          "desc": "Wir wählen nachhaltige Materialien, arbeiten mit verantwortungsbewussten Lieferanten und fertigen Stücke, die jahrzehntelang halten. Denn großartiges Design darf niemals auf Kosten des Planeten gehen.",
+          "btnText": "Mehr erfahren",
+        },
+        "ServicesThasFitYourNeed": {
+          "title": "Service, die zu Ihren Bedürfnissen passt",
+          "desc": "Ob Sie eine einzelne maßgefertigte Tür bestellen oder mehrere Elemente in Ihr Interieur integrieren möchten – wir machen den Prozess einfach und inspirierend. Unser Team begleitet Sie bei Entscheidungen, Zeitplänen und praktischen Details – damit Sie sich vom ersten Gespräch bis zur finalen Montage sicher fühlen.",
+          "btn": "Service",
+          "FAQ": {
+            "heading": "Fragen? Viele Antworten finden Sie in unseren FAQ, unter anderem:",
+
+            "faqs": [
+              {
+                question: "Wie lang sind die Standard-Lieferzeiten?",
+                answer: ` – Türen (Pivot/Schiebe/Dreh) 6–8 Wochen; Wandbündig 8–10 Wochen; Raumtrennwände 6–8 Wochen; Boiserie 8–10 Wochen.`,
+              },
+              {
+                question: "Wie individuell sind Ihre Türen anpassbar?",
+                answer: " – Größen, Oberflächen, Glasarten, Kantendetails, Beschlagsätze und Optionen (z. B. Soft-Close, Pivot-Schließer, Dichtungen) sind konfigurierbar. Extrem maßgeschneiderte Projekte laufen über ein Angebot.",
+              },
+              {
+                question: "Liefern Sie auch Beschläge?",
+                answer: " – Ja, Scharniere, Pivot-Beschläge, Schieber, Griffe und Dichtungen gemäß Spezifikation; Fremdbeschläge nach Absprache und Kompatibilitätsprüfung.",
+              },
+              {
+                question: "Welche Garantie bieten Sie?",
+                answer: " – 2 Jahre Garantie auf Türen/Materialien (Fertigungsfehler/Strukturintegrität) und 6 Monate Garantie auf Montage (wenn von Zebrano durchgeführt).",
+              },
+              {
+                question: "Bieten Sie auch Montage an?",
+                answer: "– Ja, optionale Montage in NL. Beinhaltet den Einbau von Zebrano-Rahmen/Blättern/Beschlägen, Ausrichtung, Abstände und Funktionsprüfungen; ausgenommen sind Bauarbeiten, Elektrik, Verputzen/Streichen und Fremdmaterialien.",
+              },
+            ]
+
+
+          }
+        },
       },
 
 

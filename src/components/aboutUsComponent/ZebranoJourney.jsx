@@ -3,10 +3,12 @@ import BtnComponent from "../homeComponents/utils/BtnComponent";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 const ZebranoJourney = () => {
+  const { t, i18n } = useTranslation();
   const headingOneRef = useRef(null);
   const zebranoJourneyRef = useRef(null);
   const headingTwoRef = useRef(null);
@@ -65,10 +67,10 @@ const ZebranoJourney = () => {
         });
     });
     return () => ctx.revert();
-  }, []);
+  }, [i18n.language]);
   return (
     <>
-      <section ref={zebranoJourneyRef} id="zebranoJourney">
+      <section key={i18n.language} ref={zebranoJourneyRef} id="zebranoJourney">
         <div className="wrapper w-full p-5 flex flex-col md:flex-row gap-5 md:gap-10 lg:gap-24 md:items-center ">
           <div className="w-full md:w-1/2">
             <div className="w-full h-auto overflow-hidden">
@@ -83,24 +85,19 @@ const ZebranoJourney = () => {
           <div className="w-full md:w-1/2">
             <div>
               <p ref={headingOneRef} className="text-xl">
-                From one door to endless possibilities
+                {t("Zebrano.ZebranoJourney.title")}
               </p>
               <h2
                 ref={headingTwoRef}
                 className="text-3xl lg:text-5xl mb-8 mt-6"
               >
-                The Zebrano Studio Journey
+                {t("Zebrano.ZebranoJourney.heading")}
               </h2>
               <p ref={pragraphRef} className="mb-8 ">
-                What began as a single custom door project has evolved into a
-                full collection of pivot, sliding, hinged, and flush-to-wall
-                designs that redefine how interiors feel. Inspired by luxury
-                hotels and architectural details, we've made it our mission to
-                create doors and wall features that combine premium materials
-                with personal design freedom.
+                {t("Zebrano.ZebranoJourney.desc")}
               </p>
 
-              <BtnComponent text="See More" />
+              <BtnComponent text={t("Zebrano.ZebranoJourney.btnText")} />
             </div>
           </div>
         </div>

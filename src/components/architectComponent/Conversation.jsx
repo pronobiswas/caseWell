@@ -107,7 +107,7 @@ const Conversation = () => {
           ref={bigTextRef}
           className="text-3xl md:text-4xl xl:text-5xl text-center w-full max-w-4xl xl:max-w-5xl mx-auto px-5 pt-14 pb-20 text-stone-600"
         >
-          {t("Architects.PartnerSupport.Conversation.title")}
+          {t("Architects.Conversation.title")}
         </h3>
         <div className="conversationWrapper p-5 md:p-32 font-Poppins bg-[#E1DBCB] flex justify-center">
           <div className="w-full flex flex-col items-center">
@@ -115,15 +115,15 @@ const Conversation = () => {
               ref={headingTextRef}
               className="text-4xl mb-8 w-full text-center"
             >
-              {t("Architects.PartnerSupport.Conversation.heading")}
+              {t("Architects.Conversation.heading")}
             </h2>
             <div className="w-full max-w-xl">
               <p ref={paragraphTextRef} className="text-base mb-8 text-center">
-                {t("Architects.PartnerSupport.Conversation.desc")}
+                {t("Architects.Conversation.desc")}
               </p>
             </div>
             <div ref={btnRef} className="flex justify-center">
-              <BtnComponent text={t("Architects.PartnerSupport.Conversation.btnText")} />
+              <BtnComponent text={t("Architects.Conversation.btnText")} />
             </div>
           </div>
         </div>
