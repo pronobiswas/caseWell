@@ -1,6 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
+// i18n.language
 
 const PrivecyPolicy = () => {
+    const { t, i18n } = useTranslation();
   return (
     <>
       <section
@@ -10,23 +14,15 @@ const PrivecyPolicy = () => {
         <div className="container">
           <div className=" priecyPolicyWrapper w-full max-w-5xl mx-auto p-5 xl:p-10">
             <div className="w-full flex flex-col gap-5">
-              <h2 className="text-5xl">Privacy Policy for Zebrano Studio</h2>
+              <h2 className="text-5xl">
+                {t("privecyPolicy.header.heading")}
+              </h2>
               <p>
-                {" "}
-                <b>Effective Date:</b> 29 July 2025
+                <b>{t("privecyPolicy.header.EffectiveDate")}</b>
+                {t("privecyPolicy.header.date")}
               </p>
               <p>
-                Alright, we know it's not the most thrilling read, but this
-                stuff is super important (and mandatory!). At Zebrano Studio,
-                we're all about beautiful wooden doors, not complicated legal
-                jargon. However, protecting your privacy is a big deal to us.
-                So, while it might be a bit "boring," we want to be crystal
-                clear about how we handle your personal data. Rest assured, we
-                comply with all the rules and regulations, including the General
-                Data Protection Regulation (GDPR) (EU) 2016/679 and applicable
-                Dutch privacy legislation. This Privacy Policy explains how we
-                collect, use, disclose, and protect your personal data when you
-                visit our website and use our services.
+                {t("privecyPolicy.header.desc")}
               </p>
             </div>
             {/* ====1 who we are==== */}
@@ -50,75 +46,52 @@ const PrivecyPolicy = () => {
             </div>
             {/* ====2 Types of Personal Data We Collect==== */}
             <h2 className="text-4xl lg:mt-10 font-MontSerrat">
-              Types of Personal Data We Collect
+              {t("privecyPolicy.TypesOfPersonalData.title")}
             </h2>
             <div className="w-full md:pl-10 p-5">
               <p className="">
-                We may collect the following types of personal data:
+                {t("privecyPolicy.TypesOfPersonalData.desc")}
               </p>
               <div className="">
                 <ul className="flex flex-col gap-5 [&>li]:flex [&>li]:flex-col md:[&>li]:flex-row [&>li]:gap-2 md:[&>li]:gap-5">
                   <li>
                     <p className="text-nowrap ">
-                      <b>Contact Information:</b>
+                      <b>{t("privecyPolicy.TypesOfPersonalData.row1.text1")}</b>
                     </p>
                     <p>
-                      {" "}
-                      Name, email address, phone number, postal address (for
-                      quotes, orders, and delivery).
+                      {t("privecyPolicy.TypesOfPersonalData.row1.text2")}
                     </p>
                   </li>
                   <li>
                     <p className="text-nowrap ">
-                      <b>Communication Data:</b>
+                      <b>{t("privecyPolicy.TypesOfPersonalData.row2.text1")}</b>
                     </p>
                     <p>
-                      {" "}
-                      Information you provide when you contact us via email,
-                      phone, contact forms, or social media.
+                      {t("privecyPolicy.TypesOfPersonalData.row2.text2")}
                     </p>
                   </li>
                   <li>
                     <p className="text-nowrap ">
-                      <b>Communication Data:</b>
+                      <b>{t("privecyPolicy.TypesOfPersonalData.row3.text1")}</b>
                     </p>
                     <p>
-                      {" "}
-                      Information you provide when you contact us via email,
-                      phone, contact forms, or social media.
+                      {t("privecyPolicy.TypesOfPersonalData.row3.text2")}
                     </p>
                   </li>
                   <li>
                     <p className="text-nowrap ">
-                      <b>Order and Transaction Data:</b>
+                      <b>{t("privecyPolicy.TypesOfPersonalData.row4.text1")}</b>
                     </p>
                     <p>
-                      Details about products and services you have purchased
-                      from us, payment information (though we typically use
-                      third-party payment processors who handle payment details
-                      directly).
+                      {t("privecyPolicy.TypesOfPersonalData.row4.text2")}
                     </p>
                   </li>
                   <li>
                     <p className="text-nowrap ">
-                      <b>Website Usage Data: </b>
+                      <b>{t("privecyPolicy.TypesOfPersonalData.row5.text1")}</b>
                     </p>
                     <p>
-                      Information about how you use our website, including your
-                      IP address, browser type, operating system, referral
-                      sources, pages viewed, and the duration of your visit.
-                      This is typically collected through cookies and similar
-                      technologies.
-                    </p>
-                  </li>
-                  <li>
-                    <p className="text-nowrap ">
-                      <b>Marketing Preferences:</b>
-                    </p>
-                    <p>
-                      {" "}
-                      Your preferences regarding receiving marketing
-                      communications from us.
+                      {t("privecyPolicy.TypesOfPersonalData.row5.text2")}
                     </p>
                   </li>
                 </ul>
@@ -126,22 +99,20 @@ const PrivecyPolicy = () => {
             </div>
             {/* ====3. How We Collect Your Personal Data===== */}
             <h2 className="text-4xl mt-5 lg:mt-10 ">
-              How We Collect Your Personal Data
+              {t("privecyPolicy.HowWeCollect.title")}
             </h2>
             <div className="w-full flex flex-col gap-2 p-5">
-              <p>We collect personal data through various methods:</p>
+              <p>{t("privecyPolicy.HowWeCollect.desc")}</p>
               <ul>
                 <li>
                   <p>
-                    <b>Directly from You:</b> When you fill out contact forms,
-                    request a quote, place an order, subscribe to our
-                    newsletter, or communicate with us directly.
+                    <b>{t("privecyPolicy.HowWeCollect.row1.text1")}</b> 
+                    {t("privecyPolicy.HowWeCollect.row1.text2")}
                   </p>
                 </li>
                 <li>
                   <p>
-                    <b>Automatically: </b> Through cookies and similar
-                    technologies when you browse our website.
+                    <b>{t("privecyPolicy.HowWeCollect.row2.text1")} </b> {t("privecyPolicy.HowWeCollect.row2.text2")}
                   </p>
                 </li>
               </ul>
@@ -149,30 +120,22 @@ const PrivecyPolicy = () => {
             {/* ====4. Purposes and Legal Basis for Processing Your Personal Data=== */}
             <div className="w-full flex flex-col gap-2 py-5 lg:py-10">
               <h2 className="text-4xl ">
-                Purposes and Legal Basis for Processing Your Personal Data
+                {t("privecyPolicy.Purposes.heading")}
               </h2>
               <p>
-                We process your personal data for the following purposes and
-                based on the specified legal grounds under GDPR:
+                {t("privecyPolicy.Purposes.desc")}
               </p>
               <div className="p-5">
                 {/* --------- */}
                 <h4 className="text-2xl  ">
-                  To Provide Services and Fulfill Contracts:
+                  {t("privecyPolicy.Purposes.ToProvide.title")}
                 </h4>
                 <div className="pl-5 p-2">
-                  <p>Processing your inquiries and providing quotes.</p>
-                  <p>
-                    Processing and fulfilling your orders for doors and other
-                    products.
-                  </p>
-                  <p>Managing deliveries and installations.</p>
-                  <p>Providing customer support.</p>
-                  <p>
-                    Legal Basis: Performance of a contract or to take steps at
-                    your request prior to entering into a contract (GDPR Art.
-                    6(1)(b)).
-                  </p>
+                  <p>{t("privecyPolicy.Purposes.ToProvide.text1")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToProvide.text2")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToProvide.text3")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToProvide.text4")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToProvide.text5")}</p>
                 </div>
                 {/* ------------ */}
                 <h4 className="text-2xl ">To Communicate with You:</h4>

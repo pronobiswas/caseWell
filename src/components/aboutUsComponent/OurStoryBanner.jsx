@@ -2,10 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 import { SplitText } from "gsap/SplitText";
 import BtnComponent from '../homeComponents/utils/BtnComponent';
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(SplitText);
 
 
 const OurStoryBanner = () => {
+    const { t, i18n } = useTranslation();
     const headingRef = useRef(null);
     const paragraphRef = useRef(null);
     const buttonRef = useRef(null);

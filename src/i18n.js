@@ -624,6 +624,121 @@ const resources = {
           }
         },
       },
+      // ======OurStory==========
+      "OurStory": {
+        "OurStoryBanner": {
+          "heading": "A journey through Southeast Asia",
+          "desc": "In 2015, as two brothers backpacking through Southeast Asia, we were struck by the craftsmanship we encountered everywhere. From bustling markets to serene temples, wood was transformed into objects of remarkable beauty — from intricate carvings to refined furniture. The natural elegance of the material, combined with the dedication of local artisans, planted the first seed of what would later become Zebrano Studio.",
+          "btnText": "",
+        },
+        "AboutUsTimeline": {},
+      },
+      // ========ConsciousNcrafts=========
+      "ConsciousNcrafts": {
+        "ConsciousNcraftsBanner": {
+          "heading": "Conscious Craft",
+          "desc": "Simple principles that guide how we work with care, respect, and purpose.",
+          "btnText": "Get Started",
+        },
+        "ConsciousNCraftTimeline": {
+          "row1": {
+            "title": "Working with Nature, Not Against It",
+            "desc": "We believe that working with natural materials comes with a responsibility. Wood is not just a resource to us — it's a living story of time, climate, and place. That’s why we only work with suppliers who share our values: FSC-certified wood, sustainably managed forests, and a focus on regeneration over depletion.",
+            "imgSrc": "",
+          },
+
+          "row2": {
+            "title": "Respect for the Material",
+            "desc": "Each piece of wood is unique — its grain, its texture, its imperfections. We design around that individuality, not in spite of it. Instead of forcing uniformity, we let the material speak. This reduces waste and honors the beauty of natural variation. We don’t over-process. We don’t over-paint. We bring out what’s already there.",
+            "imgSrc": "",
+          },
+          "row3": {
+            "title": "Design with Longevity in Mind",
+            "desc": "Fast furniture and temporary design aren’t part of our philosophy. We create doors meant to last a lifetime — not just in function, but in relevance. Timeless design and high-quality craftsmanship mean fewer replacements, fewer resources wasted, and a lighter impact on the planet over time.",
+            "imgSrc": "",
+          },
+          "row4": {
+            "title": "Craftsmanship as a Sustainable Act",
+            "desc": "Sustainability isn’t only in the materials — it’s in the way we make. By producing locally, reducing transport footprints, and building in small series instead of mass production, we stay close to our process and in control of our impact. Every decision we make is weighed not just for efficiency, but for ethics.",
+            "imgSrc": "",
+          },
+          "row5": {
+            "title": "Pride in Every Detail",
+            "desc": "We’re proud of what we make — not just because it looks good, but because it feels good to stand behind something honest. A door is not just a functional object. It’s the first touchpoint of a home. And we believe that when it’s made with care, from a material as noble as wood, it deserves that extra bit of reverence.",
+            "imgSrc": "",
+          },
+        },
+        "additionalText": "At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!",
+        "btnText1": "Collection",
+        "btnText2": "Configure your own",
+      },
+      // ======privecyPolicy=========
+      "privecyPolicy": {
+        "header": {
+          "heading": "Privacy Policy for Zebrano Studio",
+          "EffectiveDate": "Effective Date :",
+          "date": "29 July 2025",
+          "desc": `Alright, we know it's not the most thrilling read, but this stuff is super important (and mandatory!). At Zebrano Studio, we're all about beautiful wooden doors, not complicated legal jargon. However, protecting your privacy is a big deal to us. So, while it might be a bit "boring," we want to be crystal clear about how we handle your personal data. Rest assured, we comply with all the rules and regulations, including the General Data Protection Regulation (GDPR) (EU) 2016/679 and applicable Dutch privacy legislation. This Privacy Policy explains how we collect, use, disclose, and protect your personal data when you visit our website and use our services.`,
+          "whoWeAre": {
+            "heading": "Types of Personal Data We Collect",
+            "desc": "We may collect the following types of personal data:",
+            "title": "Zebrano Studio",
+            "address": "Herikebrink 37 7544ER Enschede",
+            "country": "The Netherlands",
+            "email": "Info@zebranostudio.com",
+            "phone": "+31 6 42 99 70 18",
+          },
+        },
+        "TypesOfPersonalData": {
+          "title": "Types of Personal Data We Collect",
+          "desc": "We may collect the following types of personal data:",
+          "row1": {
+            "text1": "Contact Information:",
+            "text2": "Name, email address, phone number, postal address (for quotes, orders, and delivery).",
+          },
+          "row2": {
+            "text1": "Communication Data:",
+            "text2": "Information you provide when you contact us via email, phone, contact forms, or social media.",
+          },
+          "row3": {
+            "text1": "Order and Transaction Data: ",
+            "text2": "Details about products and services you have purchased from us, payment information (though we typically use third-party payment processors who handle payment details directly).",
+          },
+          "row4": {
+            "text1": "Website Usage Data: ",
+            "text2": " Information about how you use our website, including your IP address, browser type, operating system, referral sources, pages viewed, and the duration of your visit. This is typically collected through cookies and similar technologies.",
+          },
+          "row5": {
+            "text1": "Marketing Preferences: ",
+            "text2": "Your preferences regarding receiving marketing communications from us.",
+          },
+        },
+        "HowWeCollect": {
+          "title": "How We Collect Your Personal Data",
+          "desc": "We collect personal data through various methods:",
+          "row1": {
+            "text1": "Directly from You: ",
+            "text2": "When you fill out contact forms, request a quote, place an order, subscribe to our newsletter, or communicate with us directly.",
+          },
+          "row2": {
+            "text1": "Automatically",
+            "text2": "Through cookies and similar technologies when you browse our website.",
+          },
+        },
+        "Purposes": {
+          "heading": "Purposes and Legal Basis for Processing Your Personal Data",
+          "desc": "We process your personal data for the following purposes and based on the specified legal grounds under GDPR:",
+          "ToProvide": {
+            "title": "To Provide Services and Fulfill Contracts:",
+            "text1": "Processing your inquiries and providing quotes.",
+            "text2": "Processing and fulfilling your orders for doors and other products.",
+            "text3": "Managing deliveries and installations.",
+            "text4": "Providing customer support.",
+            "text5": "Legal Basis: Performance of a contract or to take steps at your request prior to entering into a contract (GDPR Art. 6(1)(b)).",
+          },
+          "ToCommunicate": {},
+        }
+      },
 
       // %%%%% FOOTER %%%%%%%
       "footer": {
@@ -1270,6 +1385,121 @@ const resources = {
             ]
           }
         },
+      },
+      // ======OurStory==========
+      "OurStory": {
+        "OurStoryBanner": {
+          "heading": "",
+          "desc": "",
+          "btnText": "",
+        },
+        "AboutUsTimeline": {},
+      },
+      // ========ConsciousNcrafts=========
+      "ConsciousNcrafts": {
+        "ConsciousNcraftsBanner": {
+          "heading": "Bewust vakmanschap",
+          "desc": "Eenvoudige principes die ons werk sturen: met zorg, respect en een duidelijk doel.",
+          "btnText": "Get Started",
+        },
+        "ConsciousNCraftTimeline": {
+          "row1": {
+            "title": "Werken mét de natuur, niet ertegen",
+            "desc": "Wij geloven dat werken met natuurlijke materialen verantwoordelijkheid met zich meebrengt. Voor ons is hout niet zomaar een grondstof — het is een levend verhaal van tijd, klimaat en plek. Daarom werken wij alleen met leveranciers die onze waarden delen: FSC-gecertificeerd hout, duurzaam beheerde bossen en een focus op regeneratie in plaats van uitputting.",
+            "imgSrc": "",
+          },
+
+          "row2": {
+            "title": "Respect voor het materiaal",
+            "desc": "Elk stuk hout is uniek — de nerf, de structuur, de imperfecties. Wij ontwerpen rondom die eigenheid, niet ertegenin. In plaats van uniformiteit af te dwingen, laten we het materiaal spreken. Dat vermindert verspilling en eert de schoonheid van natuurlijke variatie. We verwerken niet te veel. We schilderen niet te veel. We brengen naar voren wat er al is.",
+            "imgSrc": "",
+          },
+          "row3": {
+            "title": "Ontwerpen met oog voor de lange termijn",
+            "desc": "Wegwerpmeubels en tijdelijk design passen niet bij onze filosofie. Wij maken deuren die een leven lang meegaan — niet alleen in functie, maar ook in uitstraling. Tijdloos design en hoogwaardig vakmanschap zorgen voor minder vervanging, minder verspilling en een kleinere impact op de planeet.",
+            "imgSrc": "",
+          },
+          "row4": {
+            "title": "Vakmanschap als duurzame daad",
+            "desc": "Duurzaamheid zit niet alleen in de materialen — maar ook in de manier waarop we werken. Door lokaal te produceren, transport te beperken en in kleine series te bouwen in plaats van massaproductie, blijven we dicht bij het proces en houden we grip op onze impact. Elke beslissing die we nemen, weegt niet alleen efficiëntie, maar ook ethiek mee.",
+            "imgSrc": "",
+          },
+          "row5": {
+            "title": "Trots in elk detail",
+            "desc": "Wij zijn trots op wat we maken — niet alleen omdat het er goed uitziet, maar omdat het goed voelt om achter iets echts te staan. Een deur is niet zomaar een functioneel object. Het is het eerste contactpunt van een huis. En wij geloven dat wanneer het met zorg is gemaakt, van een materiaal zo edel als hout, het die extra waardering verdient.",
+            "imgSrc": "",
+          },
+        },
+        "additionalText": "Bij Zebrano Studio maken we niet zomaar standaarddeuren; we creëren echte kunstwerken die een verhaal vertellen en een leven lang meegaan. Klaar om jouw droomdeur te realiseren? Wij helpen je graag!",
+        "btnText1": "Collectie",
+        "btnText2": "Configureer je eigen deur",
+      },
+      // ======privecyPolicy=========
+      "privecyPolicy": {
+        "header": {
+          "heading": "Privacyverklaring van Zebrano Studio",
+          "EffectiveDate": "Ingangsdatum :",
+          "date": "29 juli 2025",
+          "desc": `Oké, we weten dat dit niet de spannendste tekst is om te lezen, maar het is wél belangrijk (en verplicht!). Bij Zebrano Studio draait het bij ons om prachtige houten deuren, niet om ingewikkeld juridisch taalgebruik. Toch vinden we het beschermen van jouw privacy ontzettend belangrijk. Dus, ook al is het misschien een beetje “saai”, we willen heel duidelijk zijn over hoe wij met jouw persoonsgegevens omgaan. Je kunt erop vertrouwen dat wij voldoen aan alle regels en wetgeving, waaronder de Algemene Verordening Gegevensbescherming (AVG) (EU) 2016/679 en de toepasselijke Nederlandse privacywetgeving. Deze privacyverklaring legt uit hoe wij persoonsgegevens verzamelen, gebruiken, delen en beschermen wanneer je onze website bezoekt en onze diensten gebruikt.`,
+          "whoWeAre": {
+            "heading": "Welke persoonsgegevens wij verzamelen",
+            "desc": "Wij kunnen de volgende soorten persoonsgegevens verzamelen:",
+            "title": "Zebrano Studio",
+            "address": "Herikebrink 37 7544ER Enschede",
+            "country": "The Netherlands",
+            "email": "Info@zebranostudio.com",
+            "phone": "+31 6 42 99 70 18",
+          },
+        },
+        "TypesOfPersonalData": {
+          "title": "Welke persoonsgegevens wij verzamelen",
+          "desc": "Wij kunnen de volgende soorten persoonsgegevens verzamelen:",
+          "row1": {
+            "text1": "Contactgegevens:",
+            "text2": "Naam, e-mailadres, telefoonnummer, postadres (voor offertes, bestellingen en levering).",
+          },
+          "row2": {
+            "text1": "Communicatiegegevens:",
+            "text2": " Informatie die je verstrekt wanneer je contact met ons opneemt via e-mail, telefoon, contactformulieren of sociale media.",
+          },
+          "row3": {
+            "text1": "Bestel- en transactiegegevens:",
+            "text2": "Gegevens over producten en diensten die je bij ons hebt gekocht, betalingsinformatie (wij werken doorgaans met externe betaalproviders die de betaalgegevens direct verwerken).",
+          },
+          "row4": {
+            "text1": "Website-gebruiksgegevens:",
+            "text2": " Informatie over hoe je onze website gebruikt, zoals je IP-adres, browsertype, besturingssysteem, herkomst, bezochte pagina’s en de duur van je bezoek. Dit wordt meestal verzameld via cookies en vergelijkbare technologieën.",
+          },
+          "row5": {
+            "text1": "Marketingvoorkeuren:",
+            "text2": "Jouw voorkeuren met betrekking tot het ontvangen van marketingcommunicatie van ons.",
+          },
+        },
+        "HowWeCollect": {
+          "title": "Hoe wij jouw persoonsgegevens verzamelen",
+          "desc": "Wij verzamelen persoonsgegevens op verschillende manieren:",
+          "row1": {
+            "text1": "Rechtstreeks van jou:",
+            "text2": "Wanneer je contactformulieren invult, een offerte aanvraagt, een bestelling plaatst, je aanmeldt voor onze nieuwsbrief of direct met ons communiceert.",
+          },
+          "row2": {
+            "text1": "Automatisch:",
+            "text2": "Via cookies en vergelijkbare technologieën wanneer je onze website bezoekt.",
+          },
+        },
+        "Purposes": {
+          "heading": "Doeleinden en rechtsgrond voor het verwerken van jouw persoonsgegevens",
+          "desc": "Wij verwerken jouw persoonsgegevens voor de volgende doeleinden en op basis van de genoemde rechtsgronden onder de AVG:",
+          "ToProvide": {
+            "title": "Voor het leveren van diensten en het uitvoeren van overeenkomsten:",
+            "text1": " Het verwerken van jouw aanvragen en het opstellen van offertes.",
+            "text2": "Het verwerken en uitvoeren van bestellingen van deuren en andere producten.",
+            "text3": "Het organiseren van leveringen en installaties. ",
+            "text4": "Het bieden van klantenservice.",
+            "text5": "Rechtsgrond: uitvoering van een overeenkomst of om op jouw verzoek maatregelen te nemen vóór het sluiten van een overeenkomst (AVG art. 6(1)(b)).",
+          },
+          "ToCommunicate": {},
+        }
       },
 
       // %%%%% FOOTER %%%%%%%
@@ -1920,6 +2150,121 @@ const resources = {
 
           }
         },
+      },
+      // ======OurStory==========
+      "OurStory": {
+        "OurStoryBanner": {
+          "heading": "",
+          "desc": "",
+          "btnText": "",
+        },
+        "AboutUsTimeline": {},
+      },
+      // ========ConsciousNcrafts=========
+      "ConsciousNcrafts": {
+        "ConsciousNcraftsBanner": {
+          "heading": "Bewusstes Handwerk",
+          "desc": "Einfache Prinzipien, die unser Arbeiten leiten – mit Sorgfalt, Respekt und Verantwortung.",
+          "btnText": "Get Started",
+        },
+        "ConsciousNCraftTimeline": {
+          "row1": {
+            "title": "Mit der Natur arbeiten, nicht gegen sie",
+            "desc": "Wir glauben, dass die Arbeit mit natürlichen Materialien Verantwortung bedeutet. Holz ist für uns nicht nur ein Rohstoff – es ist eine lebendige Geschichte von Zeit, Klima und Herkunft. Deshalb arbeiten wir ausschließlich mit Lieferanten, die unsere Werte teilen: FSC-zertifiziertes Holz, nachhaltig bewirtschaftete Wälder und ein Fokus auf Regeneration statt Ausbeutung.",
+            "imgSrc": "",
+          },
+
+          "row2": {
+            "title": "Respekt vor dem Material",
+            "desc": "Jedes Stück Holz ist einzigartig – seine Maserung, seine Struktur, seine Unvollkommenheiten. Wir entwerfen um diese Individualität herum, nicht dagegen. Anstatt Einheitlichkeit zu erzwingen, lassen wir das Material sprechen. Das reduziert Abfall und würdigt die Schönheit der natürlichen Vielfalt. Wir überarbeiten nicht. Wir überlackieren nicht. Wir heben hervor, was bereits da ist.",
+            "imgSrc": "",
+          },
+          "row3": {
+            "title": "Gestaltung mit Blick auf Langlebigkeit",
+            "desc": "Schnelllebige Möbel und kurzlebiges Design gehören nicht zu unserer Philosophie. Wir schaffen Türen, die ein Leben lang halten – nicht nur in der Funktion, sondern auch in der Relevanz. Zeitloses Design und hochwertige Handwerkskunst bedeuten weniger Ersatz, weniger Ressourcenverschwendung und eine geringere Belastung für den Planeten.",
+            "imgSrc": "",
+          },
+          "row4": {
+            "title": "Handwerk als nachhaltiger Akt",
+            "desc": "Nachhaltigkeit liegt nicht nur in den Materialien – sondern auch in der Art, wie wir arbeiten. Durch lokale Produktion, weniger Transport und kleine Serien statt Massenproduktion bleiben wir nah am Prozess und behalten unsere Auswirkungen im Blick. Jede Entscheidung, die wir treffen, wird nicht nur nach Effizienz, sondern auch nach Ethik bewertet.",
+            "imgSrc": "",
+          },
+          "row5": {
+            "title": "Stolz in jedem Detail",
+            "desc": "Wir sind stolz auf das, was wir machen – nicht nur, weil es gut aussieht, sondern weil es sich gut anfühlt, hinter etwas Ehrlichem zu stehen. Eine Tür ist nicht einfach nur ein funktionales Objekt. Sie ist der erste Berührungspunkt eines Zuhauses. Und wir glauben, dass wenn sie mit Sorgfalt aus einem so edlen Material wie Holz gefertigt ist, sie diese besondere Wertschätzung verdient.",
+            "imgSrc": "",
+          },
+        },
+        "additionalText": "Bei Zebrano Studio fertigen wir nicht einfach Standardtüren; wir schaffen wahre Kunstwerke, die eine Geschichte erzählen und ein Leben lang halten. Bereit für Ihre Traumtür? Wir helfen Ihnen gerne!",
+        "btnText1": "Kollektion",
+        "btnText2": "Gestalten Sie Ihre eigene",
+      },
+      // ======privecyPolicy=========
+      "privecyPolicy": {
+        "header": {
+          "heading": "Datenschutzerklärung von Zebrano Studio",
+          "EffectiveDate": "Gültigkeitsdatum :",
+          "date": "29 Juli 2025",
+          "desc": `Zugegeben, dies ist nicht die spannendste Lektüre, aber sie ist sehr wichtig (und vorgeschrieben!). Bei Zebrano Studio geht es uns um wunderschöne Holztüren, nicht um komplizierten Juristenjargon. Dennoch ist der Schutz Ihrer Privatsphäre für uns von großer Bedeutung. Deshalb möchten wir – auch wenn es vielleicht etwas „langweilig“ wirkt – völlig transparent machen, wie wir mit Ihren personenbezogenen Daten umgehen. Seien Sie sicher: Wir halten uns an alle Vorschriften, einschließlich der Datenschutz-Grundverordnung (DSGVO) (EU) 2016/679 sowie anwendbarer niederländischer Datenschutzgesetze. Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten erfassen, verwenden, weitergeben und schützen, wenn Sie unsere Website besuchen und unsere Dienste nutzen.`,
+          "whoWeAre": {
+            "heading": "Welche personenbezogenen Daten wir erheben",
+            "desc": "Wir können die folgenden Arten personenbezogener Daten erheben:",
+            "title": "Zebrano Studio",
+            "address": "Herikebrink 37 7544ER Enschede",
+            "country": "The Netherlands",
+            "email": "Info@zebranostudio.com",
+            "phone": "+31 6 42 99 70 18",
+          },
+        },
+        "TypesOfPersonalData": {
+          "title": "Welche personenbezogenen Daten wir erheben",
+          "desc": "Wir können die folgenden Arten personenbezogener Daten erheben:",
+          "row1": {
+            "text1": "Kontaktdaten:",
+            "text2": "Name, E-Mail-Adresse, Telefonnummer, Postanschrift (für Angebote, Bestellungen und Lieferungen).",
+          },
+          "row2": {
+            "text1": "Kommunikationsdaten: ",
+            "text2": " Informationen, die Sie angeben, wenn Sie uns per E-Mail, Telefon, Kontaktformular oder über soziale Medien kontaktieren.",
+          },
+          "row3": {
+            "text1": "Bestell- und Transaktionsdaten: ",
+            "text2": "Angaben zu Produkten und Dienstleistungen, die Sie bei uns gekauft haben, Zahlungsinformationen (in der Regel über Drittanbieter, die die Zahlungsdetails direkt verarbeiten).",
+          },
+          "row4": {
+            "text1": "Nutzungsdaten der Website:",
+            "text2": "Informationen darüber, wie Sie unsere Website nutzen, einschließlich Ihrer IP-Adresse, Browsertyp, Betriebssystem, Herkunft, aufgerufene Seiten und Dauer Ihres Besuchs. Dies wird in der Regel durch Cookies und ähnliche Technologien erhoben.",
+          },
+          "row5": {
+            "text1": "Marketingpräferenzen:",
+            "text2": "Ihre Präferenzen in Bezug auf den Erhalt von Marketingkommunikation von uns.",
+          },
+        },
+        "HowWeCollect": {
+          "title": "Wie wir Ihre personenbezogenen Daten erheben",
+          "desc": "Wir erheben personenbezogene Daten auf verschiedene Arten:",
+          "row1": {
+            "text1": "Direkt von Ihnen:",
+            "text2": "Wenn Sie Kontaktformulare ausfüllen, ein Angebot anfordern, eine Bestellung aufgeben, unseren Newsletter abonnieren oder direkt mit uns kommunizieren.",
+          },
+          "row2": {
+            "text1": "Automatisch:",
+            "text2": "Durch Cookies und ähnliche Technologien, wenn Sie unsere Website besuchen.",
+          },
+        },
+        "Purposes": {
+          "heading": "Zwecke und Rechtsgrundlagen für die Verarbeitung Ihrer personenbezogenen Daten",
+          "desc": "Wir verarbeiten Ihre personenbezogenen Daten für die folgenden Zwecke und auf den im Rahmen der DSGVO angegebenen Rechtsgrundlagen:",
+          "ToProvide": {
+            "title": "Zur Erbringung von Dienstleistungen und zur Vertragserfüllung:",
+            "text1": "  Bearbeitung Ihrer Anfragen und Erstellung von Angeboten.",
+            "text2": "Bearbeitung und Erfüllung Ihrer Bestellungen für Türen und andere Produkte.",
+            "text3": "Organisation von Lieferungen und Montagen.",
+            "text4": "Bereitstellung von Kundensupport.",
+            "text5": " Rechtsgrundlage: Erfüllung eines Vertrags oder Durchführung vorvertraglicher Maßnahmen auf Ihre Anfrage (DSGVO Art. 6(1)(b)).",
+          },
+          "ToCommunicate": {},
+        }
       },
 
 

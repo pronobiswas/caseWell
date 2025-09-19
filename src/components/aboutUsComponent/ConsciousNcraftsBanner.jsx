@@ -2,9 +2,11 @@ import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 import { SplitText } from "gsap/SplitText";
 import BtnComponent from '../homeComponents/utils/BtnComponent';
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(SplitText);
 
 const ConsciousNcraftsBanner = () => {
+    const { t, i18n } = useTranslation();
     const headingRef = useRef(null);
     const paragraphRef = useRef(null);
     const buttonRef = useRef(null);
@@ -47,9 +49,11 @@ const ConsciousNcraftsBanner = () => {
             <section id="ConsciousNcraftsBanner">
                 <div className="Wrapper w-full h-screen bg-[url('/images/aboutUsBanner.png')] bg-cover bg-center flex items-end p-5 md:p-12">
                     <div className='w-full max-w-[700px] h-fit flex flex-col gap-6 text-white  '>
-                        <h1 ref={headingRef} className='font-Montserrat text-2xl md:text-5xl'>Conscious Craft</h1>
+                        <h1 ref={headingRef} className='font-Montserrat text-2xl md:text-5xl'>
+                            {t("ConsciousNcrafts.ConsciousNcraftsBanner.heading")}
+                        </h1>
                         <p ref={paragraphRef} className='text-sm md:text-xl '>
-                            Simple principles that guide how we work with care, respect, and purpose.
+                           {t("ConsciousNcrafts.ConsciousNcraftsBanner.desc")}
                         </p>
                         <div ref={buttonRef} className='w-fit'>
                             <BtnComponent text='Get Started' />
