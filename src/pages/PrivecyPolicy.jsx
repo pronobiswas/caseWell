@@ -138,108 +138,72 @@ const PrivecyPolicy = () => {
                   <p>{t("privecyPolicy.Purposes.ToProvide.text5")}</p>
                 </div>
                 {/* ------------ */}
-                <h4 className="text-2xl ">To Communicate with You:</h4>
+                <h4 className="text-2xl ">{t("privecyPolicy.Purposes.ToCommunicate.title")}</h4>
                 <div className="pl-5 p-2">
-                  <p>Responding to your questions and requests.</p>
-                  <p>
-                    Sending important service-related updates (e.g., order
-                    status).
-                  </p>
-                  <p>
-                    Legal Basis: Performance of a contract (Art. 6(1)(b)) or
-                    legitimate interest (Art. 6(1)(f)) in effective
-                    communication.
-                  </p>
+                  <p>{t("privecyPolicy.Purposes.ToCommunicate.text1")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToCommunicate.text2")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToCommunicate.text3")}</p>
                 </div>
                 {/* ----------- */}
-                <h4 className="text-2xl ">For Marketing Purposes:</h4>
+                <h4 className="text-2xl ">{t("privecyPolicy.Purposes.ForMarketing.title")}</h4>
                 <div className="pl-5 p-2">
                   <p>
-                    Sending you newsletters, promotions, and information about
-                    our products and services that may be of interest to you,
-                    where you have opted in.
+                    {t("privecyPolicy.Purposes.ForMarketing.text1")}
                   </p>
                   <p>
-                    Legal Basis: Your consent (GDPR Art. 6(1)(a)). You can
-                    withdraw your consent at any time.
+                    {t("privecyPolicy.Purposes.ForMarketing.text2")}
                   </p>
                 </div>
                 {/* ----------------- */}
                 <h4 className="text-2xl ">
-                  To Improve Our Website and Services:
+                  {t("privecyPolicy.Purposes.ToImprove.title")}
                 </h4>
                 <div className="pl-5 p-2">
-                  <p>
-                    Analyzing website usage to understand user behavior and
-                    improve website functionality and user experience.
-                  </p>
-                  <p>Developing new products and services.</p>
-                  <p>
-                    Legal Basis: Legitimate interest (GDPR Art. 6(1)(f)) in
-                    improving our business and offerings.
-                  </p>
+                  <p>{t("privecyPolicy.Purposes.ToImprove.text1")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToImprove.text2")}</p>
+                  <p>{t("privecyPolicy.Purposes.ToImprove.text3")}</p>
                 </div>
                 {/* -------------------- */}
                 <h3 className="text-2xl ">
-                  For Legal Compliance and Protection:
+                  {t("privecyPolicy.Purposes.ForLegal.title")}
                 </h3>
                 <div className="pl-5 p-2">
-                  <p>
-                    Complying with legal obligations (e.g., tax, accounting).
-                  </p>
-                  <p>
-                    Protecting our rights, property, or safety, and that of our
-                    customers or others.
-                  </p>
-                  <p>Preventing fraud and ensuring security.</p>
-                  <p>
-                    Legal Basis: Legal obligation (GDPR Art. 6(1)(c)) or
-                    legitimate interest (Art. 6(1)(f)) in protecting our
-                    business.
-                  </p>
+                  <p>{t("privecyPolicy.Purposes.ForLegal.text1")}</p>
+                  <p>{t("privecyPolicy.Purposes.ForLegal.text2")}</p>
+                  <p>{t("privecyPolicy.Purposes.ForLegal.text3")}</p>
+                  <p>{t("privecyPolicy.Purposes.ForLegal.text4")}</p>
                 </div>
               </div>
             </div>
             {/* =====5. Cookies and Similar Technologies====== */}
             <div>
               <p className="font-Poppins">
-                Our website uses cookies and similar technologies to enhance
-                your browsing experience, analyze site traffic, and for
-                marketing purposes. You can manage your cookie preferences
-                through your browser settings. For more detailed information,
-                please refer to our separate Cookie Policy [Link to your Cookie
-                Policy, if you have one].
+                {t("privecyPolicy.Purposes.CookiePolicy")}
               </p>
             </div>
             {/* ==========6. Sharing Your Personal Data======== */}
             <div className="py-8 lg:py-10">
-              <h4 className="text-3xl  mb-2">Sharing Your Personal Data</h4>
+              <h4 className="text-3xl  mb-2">{t("privecyPolicy.Sharing.title")}</h4>
               <p>
-                We will not sell, rent, or lease your personal data to third
-                parties. We may share your personal data with:
+                {t("privecyPolicy.Sharing.desc")}
               </p>
               <ul className="pl-5 mt-2">
                 <li>
                   <p>
-                    <b>Service Providers:</b> Third-party companies that perform
-                    services on our behalf, such as payment processing, website
-                    hosting, analytics, marketing, and delivery services. These
-                    providers are contractually obligated to protect your data
-                    and only use it for the purposes for which it was provided.
+                    <b>{t("privecyPolicy.Sharing.row1.text1")}</b>
+                    {t("privecyPolicy.Sharing.row1.text2")}
                   </p>
                 </li>
                 <li>
                   <p>
-                    <b>Legal Requirements:</b>If required to do so by law or in
-                    response to valid requests by public authorities (e.g., a
-                    court order or government agency).
+                    <b>{t("privecyPolicy.Sharing.row2.text1")}</b>
+                    {t("privecyPolicy.Sharing.row2.text2")}
                   </p>
                 </li>
                 <li>
                   <p>
-                    <b>Business Transfers:</b> In connection with a merger,
-                    acquisition, or sale of all or a portion of our assets, your
-                    personal data may be transferred as part of that
+                    <b>{t("privecyPolicy.Sharing.row3.text1")}</b>
+                    {t("privecyPolicy.Sharing.row3.text2")}
                     transaction.
                   </p>
                 </li>
@@ -247,164 +211,121 @@ const PrivecyPolicy = () => {
             </div>
             {/* ======7. International Data Transfers====== */}
             <div className="py-8">
-              <h2 className="text-3xl mb-2">International Data Transfers</h2>
+              <h2 className="text-3xl mb-2">{t("privecyPolicy.International.title")}</h2>
               <p>
-                As Zebrano Studio operates within the EU, your personal data
-                will primarily be processed within the European Economic Area
-                (EEA). If we transfer personal data to countries outside the
-                EEA, we will ensure that appropriate safeguards are in place
-                (e.g., Standard Contractual Clauses) to protect your data in
-                accordance with GDPR.
+               {t("privecyPolicy.International.desc")}
               </p>
             </div>
             {/* =======8. Data Retention====== */}
             <div>
-              <h3 className="text-3xl mb-2">Data Retention</h3>
+              <h3 className="text-3xl mb-2">{t("privecyPolicy.DataRetention.title")}</h3>
               <p>
-                We retain your personal data only for as long as necessary to
-                fulfill the purposes for which it was collected, including for
-                the purposes of satisfying any legal, accounting, or reporting
-                requirements. The retention period depends on the type of data
-                and the purpose for which it was collected.
+                {t("privecyPolicy.DataRetention.desc")}
               </p>
             </div>
             {/* =======9. Data Security====== */}
             <div className="py-8 lg:py-10">
-              <h3 className="text-3xl ">Data Security</h3>
+              <h3 className="text-3xl ">{t("privecyPolicy.DataSecurity.title")}</h3>
               <p>
-                We implement appropriate technical and organizational measures
-                to protect your personal data against unauthorized access,
-                alteration, disclosure, or destruction. These measures include
-                data encryption, access controls, and regular security
-                assessments.
+                {t("privecyPolicy.DataSecurity.desc")}
               </p>
             </div>
             {/* =====10. Your Data Protection Rights (GDPR)====== */}
             <div className="w-full">
               <h2 className="text-3xl  mb-2">
-                10. Your Data Protection Rights (GDPR)
+                {t("privecyPolicy.GDPR.title")}
               </h2>
               <p>
-                Under the GDPR, you have the following rights regarding your
-                personal data:
+                {t("privecyPolicy.GDPR.desc")}
               </p>
               <ul className="p-5">
                 <li>
                   <p>
-                    <b>Right to Access (Art. 15 GDPR):</b> You have the right to
-                    request a copy of the personal data we hold about you.
+                    <b>{t("privecyPolicy.GDPR.row1.text1")}</b> 
+                    {t("privecyPolicy.GDPR.row1.text2")}
                   </p>
                 </li>
                 <li>
                   <p>
-                    <b>Right to Rectification (Art. 16 GDPR): </b> You have the
-                    right to request that we correct any inaccurate or
-                    incomplete personal data.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <b>
-                      Right to Erasure ("Right to Be Forgotten") (Art. 17 GDPR):
-                    </b>{" "}
-                    You have the right to request the deletion of your personal
-                    data under certain circumstances.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <b>Right to Restriction of Processing (Art. 18 GDPR):</b>{" "}
-                    You have the right to request that we restrict the
-                    processing of your personal data under certain conditions.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <b>Right to Data Portability (Art. 20 GDPR): </b>You have
-                    the right to receive your personal data in a structured,
-                    commonly used, and machine-readable format and to transmit
-                    it to another controller.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <b>Right to Object (Art. 21 GDPR):</b>You have the right to
-                    object to the processing of your personal data in certain
-                    situations, particularly when processing is based on
-                    legitimate interests or for direct marketing.
+                    <b>{t("privecyPolicy.GDPR.row2.text1")}</b> 
+                    {t("privecyPolicy.GDPR.row2.text2")}
                   </p>
                 </li>
                 <li>
                   <p>
                     <b>
-                      Rights in Relation to Automated Decision-Making and
-                      Profiling (Art. 22 GDPR):{" "}
-                    </b>{" "}
-                    You have the right not to be subject to a decision based
-                    solely on automated processing, including profiling, which
-                    produces legal effects concerning you or similarly
-                    significantly affects you.
+                      {t("privecyPolicy.GDPR.row3.text1")}
+                    </b>
+                    {t("privecyPolicy.GDPR.row3.text2")}
                   </p>
                 </li>
                 <li>
                   <p>
-                    <b>Right to Withdraw Consent:</b> If we are processing your
-                    personal data based on your consent, you have the right to
-                    withdraw that consent at any time. This will not affect the
-                    lawfulness of processing based on consent before its
-                    withdrawal.
+                    <b>{t("privecyPolicy.GDPR.row4.text1")}</b>
+                    {t("privecyPolicy.GDPR.row4.text2")}
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>{t("privecyPolicy.GDPR.row5.text1")}</b>
+                    {t("privecyPolicy.GDPR.row5.text2")}
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>{t("privecyPolicy.GDPR.row6.text1")}</b>
+                    {t("privecyPolicy.GDPR.row6.text2")}
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>
+                      {t("privecyPolicy.GDPR.row7.text1")}
+                    </b>{" "}
+                    {t("privecyPolicy.GDPR.row7.text2")}
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>{t("privecyPolicy.GDPR.row8.text1")}</b>
+                    {t("privecyPolicy.GDPR.row8.text2")}
                   </p>
                 </li>
               </ul>
               <p>
-                To exercise any of these rights, please contact us using the
-                contact details provided in Section 1. We will respond to your
-                request within one month.
+                {t("privecyPolicy.GDPR.ToExercise")}
               </p>
             </div>
             {/* =====11. Children's Privacy======= */}
             <div className="py-8 lg:py-10">
-              <h2 className="text-3xl  mb-2"> Children's Privacy</h2>
+              <h2 className="text-3xl  mb-2">{t("privecyPolicy.ChildrenPrivacy.title")}</h2>
               <p>
-                Our website and services are not directed at individuals under
-                the age of 16. We do not knowingly collect personal data from
-                children under 16. If we become aware that we have inadvertently
-                collected personal data from a child under 16, we will take
-                steps to delete such information as soon as possible.
+                {t("privecyPolicy.ChildrenPrivacy.desc")}
               </p>
             </div>
             {/* =====12. Changes to This Privacy Policy===== */}
             <div>
-              <h2 className="text-3xl  mb-2">Changes to This Privacy Policy</h2>
+              <h2 className="text-3xl  mb-2">{t("privecyPolicy.ChangesTo.title")}</h2>
               <p>
-                We may update this Privacy Policy from time to time to reflect
-                changes in our practices or for other operational, legal, or
-                regulatory reasons. We will notify you of any significant
-                changes by posting the new Privacy Policy on our website with a
-                revised "Effective Date." We encourage you to review this
-                Privacy Policy periodically.
+                {t("privecyPolicy.ChangesTo.desc")}
               </p>
             </div>
             {/* =====13. Contact Us======= */}
             <div className="py-8 lg:py-10">
-              <h2 className="text-3xl  mb-2">Contact Us</h2>
+              <h2 className="text-3xl  mb-2">{t("privecyPolicy.ContactUs.title")}</h2>
               <p>
-                If you have any questions about this Privacy Policy or our data
-                practices, or if you wish to exercise any of your rights, please
-                contact us at:
+                {t("privecyPolicy.ContactUs.desc")}
               </p>
-              <p>
+              <p className="hidden">
                 Zebrano Studio Herikebrink 37 7544ER Enschede, The Netherlands
                 Info@zebranostudio.com +31 6 42 99 70 18
               </p>
             </div>
             {/* ======14. Right to Lodge a Complaint======= */}
             <div>
-              <h2 className="text-3xl mb-2">Right to Lodge a Complaint</h2>
+              <h2 className="text-3xl mb-2">{t("privecyPolicy.RightToLodge.title")}</h2>
               <p>
-                If you believe that your data protection rights have been
-                violated, you have the right to lodge a complaint with the Dutch
-                Data Protection Authority (Autoriteit Persoonsgegevens - AP):
+                {t("privecyPolicy.RightToLodge.desc")}
               </p>
             </div>
           </div>

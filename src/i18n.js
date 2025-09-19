@@ -736,8 +736,121 @@ const resources = {
             "text4": "Providing customer support.",
             "text5": "Legal Basis: Performance of a contract or to take steps at your request prior to entering into a contract (GDPR Art. 6(1)(b)).",
           },
-          "ToCommunicate": {},
-        }
+          "ToCommunicate": {
+            "title": "To Communicate with You:",
+            "text1": "Responding to your questions and requests.",
+            "text2": "Sending important service-related updates (e.g., order status).",
+            "text3": "Legal Basis: Performance of a contract (Art. 6(1)(b)) or legitimate interest (Art. 6(1)(f)) in effective communication.",
+          },
+          "ForMarketing": {
+            "title": "For Marketing Purposes:",
+            "text1": "Sending you newsletters, promotions, and information about our products and services that may be of interest to you, where you have opted in.",
+            "text2": "Legal Basis: Your consent (GDPR Art. 6(1)(a)). You can withdraw your consent at any time.",
+          },
+          "ToImprove": {
+            "title": "To Improve Our Website and Services:",
+            "text1": "Analyzing website usage to understand user behavior and improve website functionality and user experience.",
+            "text2": "Developing new products and services.",
+            "text3": "Legal Basis: Legitimate interest (GDPR Art. 6(1)(f)) in improving our business and offerings.",
+          },
+          "ForLegal": {
+            "title": "For Legal Compliance and Protection:",
+            "text1": "Complying with legal obligations (e.g., tax, accounting).",
+            "text2": "Protecting our rights, property, or safety, and that of our customers or others.",
+            "text3": "Preventing fraud and ensuring security.",
+            "text4": "Legal Basis: Legal obligation (GDPR Art. 6(1)(c)) or legitimate interest (Art. 6(1)(f)) in protecting our business.",
+          },
+          "CookiePolicy": "Our website uses cookies and similar technologies to enhance your browsing experience, analyze site traffic, and for marketing purposes. You can manage your cookie preferences through your browser settings. For more detailed information, please refer to our separate Cookie Policy.",
+
+        },
+        "Sharing": {
+          "title": "Sharing Your Personal Data",
+          "desc": "We will not sell, rent, or lease your personal data to third parties. We may share your personal data with:",
+          "row1": {
+            "text1": "Service Providers: ",
+            "text2": "Third-party companies that perform services on our behalf, such as payment processing, website hosting, analytics, marketing, and delivery services. These providers are contractually obligated to protect your data and only use it for the purposes for which it was provided.",
+          },
+          "row2": {
+            "text1": "Legal Requirements:",
+            "text2": "If required to do so by law or in response to valid requests by public authorities (e.g., a court order or government agency).",
+          },
+          "row3": {
+            "text1": "Business Transfers:",
+            "text2": "In connection with a merger, acquisition, or sale of all or a portion of our assets, your personal data may be transferred as part of that transaction.",
+          },
+        },
+        "International": {
+          "title": "International Data Transfers",
+          "desc": "As Zebrano Studio operates within the EU, your personal data will primarily be processed within the European Economic Area (EEA). If we transfer personal data to countries outside the EEA, we will ensure that appropriate safeguards are in place (e.g., Standard Contractual Clauses) to protect your data in accordance with GDPR.",
+        },
+        "DataRetention": {
+          "title": "Data Retention",
+          "desc": "We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements. The retention period depends on the type of data and the purpose for which it was collected.",
+        },
+        "DataSecurity": {
+          "title": "Data Security",
+          "desc": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These measures include data encryption, access controls, and regular security assessments.",
+        },
+        "GDPR": {
+          "title": "Your Data Protection Rights (GDPR)",
+          "desc": "Under the GDPR, you have the following rights regarding your personal data:",
+          "row1": {
+            "text1": "Right to Access (Art. 15 GDPR):",
+            "text2": "You have the right to request a copy of the personal data we hold about you.",
+          },
+          "row2": {
+            "text1": "Right to Rectification (Art. 16 GDPR):",
+            "text2": "You have the right to request that we correct any inaccurate or incomplete personal data.",
+          },
+          "row3": {
+            "text1": `Right to Erasure ("Right to Be Forgotten") (Art. 17 GDPR): `,
+            "text2": "You have the right to request the deletion of your personal data under certain circumstances.",
+          },
+          "row4": {
+            "text1": "Right to Restriction of Processing (Art. 18 GDPR): ",
+            "text2": " You have the right to request that we restrict the processing of your personal data under certain conditions.",
+          },
+          "row5": {
+            "text1": "Right to Data Portability (Art. 20 GDPR):",
+            "text2": "You have the right to receive your personal data in a structured, commonly used, and machine-readable format and to transmit it to another controller.",
+          },
+          "row6": {
+            "text1": "Right to Object (Art. 21 GDPR):",
+            "text2": "You have the right to object to the processing of your personal data in certain situations, particularly when processing is based on legitimate interests or for direct marketing.",
+          },
+          "row7": {
+            "text1": "Rights in Relation to Automated Decision-Making and Profiling (Art. 22 GDPR):",
+            "text2": "You have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning you or similarly significantly affects you.",
+          },
+          "row8": {
+            "text1": "Right to Withdraw Consent:",
+            "text2": "If we are processing your personal data based on your consent, you have the right to withdraw that consent at any time. This will not affect the lawfulness of processing based on consent before its withdrawal.",
+          },
+          "ToExercise" : "To exercise any of these rights, please contact us using the contact details provided in Section 1. We will respond to your request within one month.",
+        },
+        "ChildrenPrivacy" :{
+          "title" : "Children's Privacy",
+          "desc" : "Our website and services are not directed at individuals under the age of 16. We do not knowingly collect personal data from children under 16. If we become aware that we have inadvertently collected personal data from a child under 16, we will take steps to delete such information as soon as possible.",
+        },
+        "ChangesTo" : {
+          "title" : "Changes to This Privacy Policy",
+          "desc" : 'We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting the new Privacy Policy on our website with a revised "Effective Date." We encourage you to review this Privacy Policy periodically.',
+        },
+        "ContactUs" : {
+          "title" : "Contact Us",
+          "desc" : "If you have any questions about this privacy policy or about how we handle data, or if you wish to exercise any of your rights, please contact us at: Zebrano Studio, Netherlands, info@zebranostudio.com",
+          'address' : {
+            "name" : "Zebrano Studio",
+            "city" : "Herikebrink 37 7544ER Enschede",
+            "country" : "The Netherlands",
+            "email" : "Info@zebranostudio.com ",
+            "phone" : "+31 6 42 99 70 18",
+          }
+        },
+        "RightToLodge" : {
+          "title" : "Right to Lodge a Complaint",
+          "desc" : "If you believe that your data protection rights have been violated, you have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens - AP):",
+        },
       },
 
       // %%%%% FOOTER %%%%%%%
@@ -1498,8 +1611,120 @@ const resources = {
             "text4": "Het bieden van klantenservice.",
             "text5": "Rechtsgrond: uitvoering van een overeenkomst of om op jouw verzoek maatregelen te nemen vóór het sluiten van een overeenkomst (AVG art. 6(1)(b)).",
           },
-          "ToCommunicate": {},
-        }
+          "ToCommunicate": {
+            "title": "Voor communicatie met jou:",
+            "text1": " Het beantwoorden van vragen en verzoeken.",
+            "text2": "Het verzenden van belangrijke service-gerelateerde updates (bijv. bestelstatus).",
+            "text3": "Rechtsgrond: uitvoering van een overeenkomst (art. 6(1)(b)) of gerechtvaardigd belang (art. 6(1)(f)) bij effectieve communicatie.",
+          },
+          "ForMarketing": {
+            "title": "Voor marketingdoeleinden:",
+            "text1": "Het verzenden van nieuwsbrieven, promoties en informatie over onze producten en diensten die voor jou interessant kunnen zijn, mits je hiervoor toestemming hebt gegeven. ",
+            "text2": " Rechtsgrond: jouw toestemming (AVG art. 6(1)(a)). Je kunt jouw toestemming op elk moment intrekken.",
+          },
+          "ToImprove": {
+            "title": "Voor verbetering van onze website en diensten:",
+            "text1": " Het analyseren van websitegebruik om gebruikersgedrag te begrijpen en functionaliteit en ervaring te verbeteren.",
+            "text2": " Het ontwikkelen van nieuwe producten en diensten.",
+            "text3": " Rechtsgrond: gerechtvaardigd belang (AVG art. 6(1)(f)) bij het verbeteren van ons bedrijf en ons aanbod.",
+          },
+          "ForLegal": {
+            "title": "Voor wettelijke naleving en bescherming: ",
+            "text1": "Het voldoen aan wettelijke verplichtingen (bijv. belasting, boekhouding).",
+            "text2": "Het beschermen van onze rechten, eigendommen of veiligheid, en die van onze klanten of anderen.",
+            "text3": " Het voorkomen van fraude en het waarborgen van beveiliging.",
+            "text4": "Rechtsgrond: wettelijke verplichting (AVG art. 6(1)(c)) of gerechtvaardigd belang (art. 6(1)(f)) bij bescherming van ons bedrijf.",
+          },
+          "CookiePolicy": "Onze website maakt gebruik van cookies en vergelijkbare technologieën om je surfervaring te verbeteren, websiteverkeer te analyseren en voor marketingdoeleinden. Je kunt je cookievoorkeuren beheren via je browserinstellingen. Voor meer gedetailleerde informatie verwijzen wij naar ons aparte Cookiebeleid.",
+        },
+        "Sharing": {
+          "title": "Het delen van jouw persoonsgegevens",
+          "desc": "Wij verkopen, verhuren of leasen jouw persoonsgegevens niet aan derden. We kunnen jouw persoonsgegevens delen met:",
+          "row1": {
+            "text1": "Dienstverleners:  ",
+            "text2": "Derde partijen die diensten voor ons uitvoeren, zoals betalingsverwerking, webhosting, analyse, marketing en bezorgdiensten. Deze partijen zijn contractueel verplicht jouw gegevens te beschermen en alleen te gebruiken voor de doeleinden waarvoor ze zijn verstrekt.",
+          },
+          "row2": {
+            "text1": "Wettelijke vereisten: ",
+            "text2": "Indien dit wettelijk verplicht is of op verzoek van bevoegde autoriteiten (bijv. een gerechtelijk bevel of overheidsinstantie).",
+          },
+          "row3": {
+            "text1": "Bedrijfsoverdrachten:",
+            "text2": "In het kader van een fusie, overname of verkoop van (een deel van) onze activa kunnen jouw persoonsgegevens worden overgedragen als onderdeel van die transactie.",
+          },
+        },
+        "International": {
+          "title": "Internationale gegevensoverdracht",
+          "desc": "Omdat Zebrano Studio binnen de EU opereert, worden jouw persoonsgegevens in principe verwerkt binnen de Europese Economische Ruimte (EER). Indien wij persoonsgegevens overdragen naar landen buiten de EER, zorgen wij voor passende waarborgen (bijv. standaardcontractbepalingen) om jouw gegevens te beschermen conform de AVG.",
+        },
+        "DataRetention": {
+          "title": "Bewaartermijn van gegevens",
+          "desc": "Wij bewaren jouw persoonsgegevens alleen zo lang als nodig is om de doeleinden te vervullen waarvoor ze zijn verzameld, inclusief het voldoen aan wettelijke, boekhoudkundige of rapportageverplichtingen. De bewaartermijn hangt af van het type gegevens en het doel waarvoor deze zijn verzameld.",
+        },
+        "DataSecurity": {
+          "title": "Gegevensbeveiliging",
+          "desc": "Wij nemen passende technische en organisatorische maatregelen om jouw persoonsgegevens te beschermen tegen ongeoorloofde toegang, wijziging, openbaarmaking of vernietiging. Deze maatregelen omvatten gegevensversleuteling, toegangsbeheer en regelmatige veiligheidscontroles.",
+        },
+        "GDPR": {
+          "title": "Jouw privacyrechten (AVG)",
+          "desc": "Onder de AVG heb je de volgende rechten met betrekking tot jouw persoonsgegevens:",
+          "row1": {
+            "text1": "Recht op inzage (art. 15 AVG):",
+            "text2": " Je hebt het recht een kopie op te vragen van de persoonsgegevens die wij van jou bewaren.",
+          },
+          "row2": {
+            "text1": "Recht op rectificatie (art. 16 AVG): ",
+            "text2": "Je hebt het recht ons te verzoeken onjuiste of onvolledige persoonsgegevens te corrigeren.",
+          },
+          "row3": {
+            "text1": `Recht op gegevenswissing ("recht om vergeten te worden") (art. 17 AVG): `,
+            "text2": "Je hebt het recht ons te verzoeken jouw persoonsgegevens te verwijderen onder bepaalde omstandigheden.",
+          },
+          "row4": {
+            "text1": "Recht op beperking van verwerking (art. 18 AVG): ",
+            "text2": "  Je hebt het recht ons te verzoeken de verwerking van jouw persoonsgegevens te beperken onder bepaalde voorwaarden",
+          },
+          "row5": {
+            "text1": "Recht op overdraagbaarheid (art. 20 AVG): ",
+            "text2": "Je hebt het recht jouw persoonsgegevens te ontvangen in een gestructureerd, gangbaar en machineleesbaar formaat en deze door te geven aan een andere verwerkingsverantwoordelijke.",
+          },
+          "row6": {
+            "text1": "Recht van bezwaar (art. 21 AVG): ",
+            "text2": " Je hebt het recht bezwaar te maken tegen de verwerking van jouw persoonsgegevens in bepaalde situaties, met name wanneer de verwerking plaatsvindt op basis van gerechtvaardigd belang of voor direct marketing.",
+          },
+          "row7": {
+            "text1": "Rechten met betrekking tot geautomatiseerde besluitvorming en profilering (art. 22 AVG): ",
+            "text2": "Je hebt het recht niet te worden onderworpen aan een besluit dat uitsluitend gebaseerd is op geautomatiseerde verwerking, inclusief profilering, dat rechtsgevolgen voor jou heeft of jou op vergelijkbare wijze aanzienlijk treft.",
+          },
+          "row8": {
+            "text1": "Recht om toestemming in te trekken: ",
+            "text2": "Als wij jouw persoonsgegevens verwerken op basis van jouw toestemming, heb je het recht die toestemming op elk moment in te trekken. Dit heeft geen invloed op de rechtmatigheid van de verwerking vóór de intrekking.",
+          },
+          "ToExercise": "Om een van deze rechten uit te oefenen, kun je contact met ons opnemen via de contactgegevens vermeld in sectie 1. Wij reageren binnen één maand op jouw verzoek."
+        },
+        "ChildrenPrivacy" :{
+          "title" : "Privacy van kinderen",
+          "desc" : "Onze website en diensten zijn niet gericht op personen jonger dan 16 jaar. Wij verzamelen niet bewust persoonsgegevens van kinderen onder de 16. Als wij erachter komen dat wij per ongeluk persoonsgegevens van een kind onder de 16 hebben verzameld, zullen wij die zo snel mogelijk verwijderen.",
+        },
+        "ChangesTo" : {
+          "title" : "Wijzigingen in deze privacyverklaring",
+          "desc" : 'Wij kunnen deze privacyverklaring van tijd tot tijd bijwerken om wijzigingen in onze praktijken weer te geven of om andere operationele, juridische of regelgevende redenen. Bij belangrijke wijzigingen stellen wij je hiervan op de hoogte door de nieuwe privacyverklaring op onze website te plaatsen met een aangepaste "ingangsdatum". We raden je aan deze verklaring regelmatig te bekijken.',
+        },
+        "ContactUs" : {
+          "title" : "Contact opnemen",
+          "desc" : "Als je vragen hebt over deze privacyverklaring of over hoe wij met gegevens omgaan, of als je een van jouw rechten wilt uitoefenen, neem dan contact met ons op: Zebrano Studio, Nederland, info@zebranostudio.com",
+          'address' : {
+            "name" : "Zebrano Studio",
+            "city" : "Herikebrink 37 7544ER Enschede",
+            "country" : "The Netherlands",
+            "email" : "Info@zebranostudio.com ",
+            "phone" : "+31 6 42 99 70 18",
+          }
+        },
+        "RightToLodge" : {
+          "title" : "Recht om een klacht in te dienen",
+          "desc" : "Als je van mening bent dat jouw privacyrechten zijn geschonden, heb je het recht een klacht in te dienen bij de Autoriteit Persoonsgegevens (AP).",
+        },
       },
 
       // %%%%% FOOTER %%%%%%%
@@ -2263,8 +2488,120 @@ const resources = {
             "text4": "Bereitstellung von Kundensupport.",
             "text5": " Rechtsgrundlage: Erfüllung eines Vertrags oder Durchführung vorvertraglicher Maßnahmen auf Ihre Anfrage (DSGVO Art. 6(1)(b)).",
           },
-          "ToCommunicate": {},
-        }
+          "ToCommunicate": {
+            "title": "Zur Kommunikation mit Ihnen: ",
+            "text1": "Beantwortung Ihrer Fragen und Anfragen.",
+            "text2": "Versand wichtiger servicebezogener Mitteilungen (z. B. Bestellstatus). ",
+            "text3": "Rechtsgrundlage: Vertragserfüllung (Art. 6(1)(b)) oder berechtigtes Interesse (Art. 6(1)(f)) an effektiver Kommunikation.",
+          },
+          "ForMarketing": {
+            "title": "Für Marketingzwecke:",
+            "text1": " Versand von Newslettern, Angeboten und Informationen über unsere Produkte und Dienstleistungen, die für Sie von Interesse sein könnten, sofern Sie zugestimmt haben.",
+            "text2": "Rechtsgrundlage: Ihre Einwilligung (DSGVO Art. 6(1)(a)). Sie können Ihre Einwilligung jederzeit widerrufen.",
+          },
+          "ToImprove": {
+            "title": "Zur Verbesserung unserer Website und Dienstleistungen:",
+            "text1": "Analyse der Websitenutzung, um das Nutzerverhalten zu verstehen und die Funktionalität und Erfahrung zu verbessern.",
+            "text2": "Entwicklung neuer Produkte und Dienstleistungen.",
+            "text3": "Rechtsgrundlage: Berechtigtes Interesse (DSGVO Art. 6(1)(f)) an der Verbesserung unseres Unternehmens und unserer Angebote.",
+          },
+          "ForLegal": {
+            "title": "Zur rechtlichen Einhaltung und zum Schutz:",
+            "text1": "Erfüllung gesetzlicher Verpflichtungen (z. B. Steuern, Buchhaltung).",
+            "text2": " Schutz unserer Rechte, unseres Eigentums oder unserer Sicherheit sowie der unserer Kunden oder anderer Personen. ",
+            "text3": " Verhinderung von Betrug und Gewährleistung der Sicherheit.",
+            "text4": "Rechtsgrundlage: Gesetzliche Verpflichtung (DSGVO Art. 6(1)(c)) oder berechtigtes Interesse (Art. 6(1)(f)) am Schutz unseres Unternehmens.",
+          },
+          "CookiePolicy": "Unsere Website verwendet Cookies und ähnliche Technologien, um Ihr Surferlebnis zu verbessern, den Website-Verkehr zu analysieren und für Marketingzwecke. Sie können Ihre Cookie-Einstellungen über Ihre Browsereinstellungen verwalten. Für weitere Details verweisen wir auf unsere separate Cookie-Richtlinie.",
+        },
+        "Sharing": {
+          "title": "Weitergabe Ihrer personenbezogenen Daten",
+          "desc": "Wir verkaufen, vermieten oder verleasen Ihre personenbezogenen Daten nicht an Dritte. Wir können Ihre Daten weitergeben an:",
+          "row1": {
+            "text1": "Dienstleister:  ",
+            "text2": " Drittunternehmen, die in unserem Auftrag Dienstleistungen erbringen, wie z. B. Zahlungsabwicklung, Webhosting, Analysen, Marketing und Lieferdienste. Diese Anbieter sind vertraglich verpflichtet, Ihre Daten zu schützen und nur für die vorgesehenen Zwecke zu verwenden.",
+          },
+          "row2": {
+            "text1": "Gesetzliche Anforderungen:",
+            "text2": "Wenn dies gesetzlich vorgeschrieben ist oder auf gültige Anfragen von Behörden (z. B. Gerichtsbeschluss oder Regierungsbehörde) erfolgt.",
+          },
+          "row3": {
+            "text1": "Unternehmensübertragungen: ",
+            "text2": "Im Zusammenhang mit einer Fusion, Übernahme oder dem Verkauf von (einem Teil) unseres Vermögens können Ihre personenbezogenen Daten als Teil dieser Transaktion übertragen werden.",
+          },
+        },
+        "International": {
+          "title": "Internationale Datenübermittlungen",
+          "desc": "Da Zebrano Studio innerhalb der EU tätig ist, werden Ihre personenbezogenen Daten in der Regel innerhalb des Europäischen Wirtschaftsraums (EWR) verarbeitet. Wenn wir personenbezogene Daten in Länder außerhalb des EWR übertragen, stellen wir sicher, dass geeignete Schutzmaßnahmen (z. B. Standardvertragsklauseln) vorhanden sind, um Ihre Daten gemäß DSGVO zu schützen.",
+        },
+        "DataRetention": {
+          "title": "Datenspeicherung",
+          "desc": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es erforderlich ist, um die Zwecke zu erfüllen, für die sie erhoben wurden, einschließlich zur Erfüllung gesetzlicher, buchhalterischer oder berichtspflichtiger Anforderungen. Die Aufbewahrungsdauer hängt von der Art der Daten und dem Zweck ab, für den sie erhoben wurden.",
+        },
+        "DataSecurity": {
+          "title": "Datensicherheit",
+          "desc": "Wir setzen geeignete technische und organisatorische Maßnahmen ein, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen. Diese Maßnahmen umfassen Datenverschlüsselung, Zugangskontrollen und regelmäßige Sicherheitsüberprüfungen.",
+        },
+        "GDPR": {
+          "title": "Ihre Datenschutzrechte (DSGVO)",
+          "desc": "Nach der DSGVO haben Sie die folgenden Rechte in Bezug auf Ihre personenbezogenen Daten:",
+          "row1": {
+            "text1": "Auskunftsrecht (Art. 15 DSGVO): ",
+            "text2": " Sie haben das Recht, eine Kopie der personenbezogenen Daten anzufordern, die wir über Sie gespeichert haben.",
+          },
+          "row2": {
+            "text1": "Recht auf Berichtigung (Art. 16 DSGVO): ",
+            "text2": "Sie haben das Recht, die Berichtigung unrichtiger oder unvollständiger personenbezogener Daten zu verlangen.",
+          },
+          "row3": {
+            "text1": `Recht auf Löschung („Recht auf Vergessenwerden“) (Art. 17 DSGVO): `,
+            "text2": "Sie haben das Recht, die Löschung Ihrer personenbezogenen Daten unter bestimmten Umständen zu verlangen.",
+          },
+          "row4": {
+            "text1": "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO): ",
+            "text2": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten unter bestimmten Bedingungen zu verlangen.",
+          },
+          "row5": {
+            "text1": "Recht auf Datenübertragbarkeit (Art. 20 DSGVO):",
+            "text2": "Sie haben das Recht, Ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und sie an einen anderen Verantwortlichen zu übermitteln.",
+          },
+          "row6": {
+            "text1": "Widerspruchsrecht (Art. 21 DSGVO):",
+            "text2": " Sie haben das Recht, der Verarbeitung Ihrer personenbezogenen Daten in bestimmten Situationen zu widersprechen, insbesondere wenn die Verarbeitung auf berechtigten Interessen beruht oder für Direktwerbung erfolgt.",
+          },
+          "row7": {
+            "text1": "Rechte im Zusammenhang mit automatisierten Entscheidungen und Profiling (Art. 22 DSGVO):",
+            "text2": "Sie haben das Recht, nicht einer Entscheidung unterworfen zu werden, die ausschließlich auf automatisierter Verarbeitung – einschließlich Profiling – beruht und die Ihnen gegenüber rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt.",
+          },
+          "row8": {
+            "text1": "Recht auf Widerruf der Einwilligung: ",
+            "text2": "Wenn wir Ihre personenbezogenen Daten auf Grundlage Ihrer Einwilligung verarbeiten, haben Sie das Recht, diese Einwilligung jederzeit zu widerrufen. Die Rechtmäßigkeit der Verarbeitung vor dem Widerruf bleibt davon unberührt.",
+          },
+          "ToExercise": "Um eines dieser Rechte auszuüben, kontaktieren Sie uns bitte unter den in Abschnitt 1 angegebenen Kontaktdaten. Wir werden Ihre Anfrage innerhalb eines Monats beantworten.",
+        },
+        "ChildrenPrivacy" :{
+          "title" : "Datenschutz von Kindern",
+          "desc" : "Unsere Website und Dienstleistungen richten sich nicht an Personen unter 16 Jahren. Wir erheben nicht wissentlich personenbezogene Daten von Kindern unter 16 Jahren. Sollten wir feststellen, dass wir unbeabsichtigt Daten eines Kindes unter 16 Jahren erhoben haben, werden wir diese so schnell wie möglich löschen.",
+        },
+        "ChangesTo" : {
+          "title" : "Änderungen dieser Datenschutzerklärung",
+          "desc" : 'Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen in unseren Praktiken oder aus anderen betrieblichen, rechtlichen oder regulatorischen Gründen zu berücksichtigen. Über wesentliche Änderungen informieren wir Sie, indem wir die neue Datenschutzerklärung mit einem aktualisierten „Gültigkeitsdatum“ auf unserer Website veröffentlichen. Wir empfehlen Ihnen, diese Erklärung regelmäßig zu prüfen.',
+        },
+        "ContactUs" : {
+          "title" : "Kontakt",
+          "desc" : "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zu unserem Umgang mit Daten haben oder eines Ihrer Rechte ausüben möchten, kontaktieren Sie uns bitte unter: Zebrano Studio, Niederlande, info@zebranostudio.com",
+          'address' : {
+            "name" : "Zebrano Studio",
+            "city" : "Herikebrink 37 7544ER Enschede",
+            "country" : "The Netherlands",
+            "email" : "Info@zebranostudio.com ",
+            "phone" : "+31 6 42 99 70 18",
+          }
+        },
+        "RightToLodge" : {
+          "title" : "Recht auf Beschwerde",
+          "desc" : "Wenn Sie der Meinung sind, dass Ihre Datenschutzrechte verletzt wurden, haben Sie das Recht, eine Beschwerde bei der niederländischen Datenschutzbehörde (Autoriteit Persoonsgegevens – AP) einzureichen.",
+        },
       },
 
 
