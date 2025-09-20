@@ -4,11 +4,14 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BtnComponent from '../homeComponents/utils/BtnComponent';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+// i18n.language
 
 gsap.registerPlugin(SplitText);
 gsap.registerPlugin(ScrollTrigger);
 
 const AccessibleBeautiful = () => {
+    const { t, i18n } = useTranslation();
     const beautifulRef = useRef(null);
     const rowOneRef = useRef(null);
     const rowTwoRef = useRef(null);
@@ -42,7 +45,7 @@ const AccessibleBeautiful = () => {
         }, beautifulRef);
 
         return () => ctx.revert();
-    }, [])
+    }, [i18n.language])
 
     // =========split text=====
     useEffect(() => {
@@ -121,7 +124,7 @@ const AccessibleBeautiful = () => {
                 ease: 'power4.out',
                 stagger: 0.05,
                 scrollTrigger: {
-                    trigger: rowTwoRef.current,
+                    trigger: paragraphThreeRef.current,
                     start: 'top 80%',
                     end: 'top 60%',
                     scrub: true,
@@ -182,24 +185,28 @@ const AccessibleBeautiful = () => {
         });
 
         return () => ctx.revert();
-    }, []);
+    }, [i18n.language]);
     // ====return html content=======
     return (
         <>
-            <section ref={beautifulRef} id="accessibleBeautifull">
+            <section key={i18n.language} ref={beautifulRef} id="accessibleBeautifull">
                 <div className="wrapper w-full h-fit bg-myColorOne text-LightText">
                     {/* ===row one === */}
                     <div ref={rowOneRef} className="row1">
                         <div className="w-full flex flex-col md:flex-row">
                             <div className=" w-full md:w-1/2 flex justify-center items-center py-10 px-8">
                                 <div className='w-full max-w-80'>
-                                    <h1 ref={headingOneRef} className='text-4xl font-semibold '>ACCESSIBLE.</h1>
-                                    <h1 ref={headingtwoRef} className='text-4xl font-semibold mb-8 '>BEAUTIFUL.</h1>
-                                    <p ref={paragraphOneRef}>I've always felt that good design shouldn't hide behind velvet ropes. At Zebrano, I want everyone to enjoy the same
-                                        beautiful doors and details
-                                        usually seen only in luxury hotels - right at home."
+                                    <h1 ref={headingOneRef} className='text-4xl font-semibold '>
+                                        {t("MeetTheMakers.AccessibleBeautiful.row1.title1")}
+                                    </h1>
+                                    <h1 ref={headingtwoRef} className='text-4xl font-semibold mb-8 '>{t("MeetTheMakers.AccessibleBeautiful.row1.title2")}</h1>
+                                    <p ref={paragraphOneRef}>
+                                        {t("MeetTheMakers.AccessibleBeautiful.row1.desc")}
                                     </p >
-                                    <p ref={paragraphtwoRef} className='pt-5'><b>Mathijs</b> - Founder and designer, Zebrano Studio</p>
+                                    <p ref={paragraphtwoRef} className='pt-5'>
+                                        <b>{t("MeetTheMakers.AccessibleBeautiful.row1.name")}</b>
+                                        {t("MeetTheMakers.AccessibleBeautiful.row1.designetion")}
+                                    </p>
                                 </div>
                             </div>
                             <div className="w-full md:w-1/2">
@@ -214,10 +221,13 @@ const AccessibleBeautiful = () => {
                         </div>
                         <div className="w-full md:w-1/2 h-full order-1 md:order-2">
                             <div className="content w-full h-full flex justify-center items-center py-16">
-                                <div className='w-full h-full  max-w-96 flex flex-col gap-20'>
-                                    <p ref={paragraphThreeRef} className='text-xl text-center'>We like to keep things close to home. Our doors are made right here in the Netherlands, shaped by makers who know their wood almost as well as their morning coffee. It's a mix of tradition, precision, and a little Dutch stubbornness that refuses to settle for "good enough." The result? Craft that feels local, but looks like it belongs anywhere in the world.</p>
+                                <div className='w-full h-full  max-w-md flex flex-col gap-14'>
+                                    <h3 className='text-4xl font-semibold text-center'>{t("MeetTheMakers.AccessibleBeautiful.row2.title")}</h3>
+                                    <p ref={paragraphThreeRef} className=' text-center'> 
+                                        {t("MeetTheMakers.AccessibleBeautiful.row2.desc")}
+                                        </p>
                                     <div className='flex justify-center'>
-                                        <BtnComponent text='Discover materials' />
+                                        <BtnComponent text={t("MeetTheMakers.AccessibleBeautiful.row2.btnText")} />
                                     </div>
 
                                 </div>
@@ -234,10 +244,14 @@ const AccessibleBeautiful = () => {
                                         <img src="/images/img4.png" alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full flex flex-col items-center text-center p-5'>
-                                        <h3 ref={subheadingOneRef} className='text-3xl'>Are you a designer?</h3>
-                                        <p className='mb-8'>Our team is ready to help you discover all the possibilities </p>
+                                        <h3 ref={subheadingOneRef} className='text-3xl'>
+                                            {t("MeetTheMakers.AccessibleBeautiful.row3.title1")}
+                                        </h3>
+                                        <p className='mb-8'>
+                                            {t("MeetTheMakers.AccessibleBeautiful.row3.desc1")}
+                                        </p>
                                         <Link to="/products/material">
-                                            <BtnComponent text='Discover materials' />
+                                            <BtnComponent text={t("MeetTheMakers.AccessibleBeautiful.row3.btnText1")} />
                                         </Link>
                                     </div>
                                 </div>
@@ -249,10 +263,14 @@ const AccessibleBeautiful = () => {
                                         <img src="/images/img4.png" alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full flex flex-col items-center text-center p-5'>
-                                        <h3 ref={subheadingtwoRef} className='text-3xl'>Need advice?</h3>
-                                        <p className='mb-8'>Our team is ready to help you discover all the possibilities </p>
+                                        <h3 ref={subheadingtwoRef} className='text-3xl'>
+                                            {t("MeetTheMakers.AccessibleBeautiful.row3.title2")}
+                                        </h3>
+                                        <p className='mb-8'>
+                                            {t("MeetTheMakers.AccessibleBeautiful.row3.desc2")}
+                                        </p>
                                         <Link to="/contact">
-                                            <BtnComponent text='Get in contact' />
+                                            <BtnComponent text={t("MeetTheMakers.AccessibleBeautiful.row3.btnText2")} />
                                         </Link>
                                     </div>
                                 </div>

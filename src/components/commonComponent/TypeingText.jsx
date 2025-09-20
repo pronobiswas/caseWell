@@ -45,7 +45,7 @@ const TypeingText = ({
     return (
         <>
             <div className="w-fit">
-                <h1 ref={text2Ref} className="text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne">interiors</h1>
+                <h1 key={i18n.language} ref={text2Ref} className="text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne">interiors</h1>
             </div>
         </>
     )

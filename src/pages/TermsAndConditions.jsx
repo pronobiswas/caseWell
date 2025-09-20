@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const TermsAndConditions = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <section id="termsAndCondition" className="w-full h-full bg-myColorTwo">
@@ -10,161 +12,105 @@ const TermsAndConditions = () => {
               {/* -------heading------ */}
               <div className="w-full pb-8 pt-8">
                 <h2 className="text-5xl font-Montserrat text-DarkText pb-5">
-                  Designed to fit. Terms that do, too.
+                  {t("TermsAndConditions.heading.title")}
                 </h2>
                 <p className="text-base">
-                  Here you’ll find the essentials: how we plan, when we deliver,
-                  what we guarantee, and how to keep your Zebrano piece flawless
-                  for years. Clear agreements, smooth projects
+                  {t("TermsAndConditions.heading.desc")}
                 </p>
               </div>
               {/* ======article one===1===== */}
               <div className="articel1 w-full flex flex-col">
-                <h2 className="mb-3">Definitions </h2>
-                <p>
-                  In these terms and conditions, the following definitions
-                  apply:{" "}
-                </p>
+                <h2 className="mb-3">{t("TermsAndConditions.Definitions.title")} </h2>
                 {/* ----1.1--- */}
                 <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
-                  <h3>Zebrano Studio:</h3>
+                  <h3>{t("TermsAndConditions.Definitions.ZebranoStudio.title")}</h3>
                   <p className="pl-5">
-                    the private limited company Zebrano Studio, with its
-                    registered office in the Netherlands email
-                    info@zebranostudio.com.
+                    {t("TermsAndConditions.Definitions.ZebranoStudio.desc")}
                   </p>
                 </div>
                 {/* -----1.2---- */}
                 <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
-                  <h3>Customer: </h3>
+                  <h3>{t("TermsAndConditions.Definitions.Customer.title")}</h3>
                   <p className="pl-5">
-                    {" "}
-                    he party who enters into, intends to enter into, or for whom
-                    Zebrano Studio makes an offer or performs a delivery or
-                    service.
+                    {t("TermsAndConditions.Definitions.Customer.desc")}
                   </p>
                   {/* ---1.2.1--- */}
                   <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
-                    <h3>Business Customer: </h3>
+                    <h3>{t("TermsAndConditions.Definitions.BusinessCustomer.title")}</h3>
                     <p className="pl-5">
-                      {" "}
-                      the customer acting in the course of a profession or
-                      business.
+                      {t("TermsAndConditions.Definitions.BusinessCustomer.desc")}
                     </p>
                   </div>
                   {/* ---1.2.2--- */}
                   <div className="articel [&>h3]:text-2xl [&>h3]:py-2">
-                    <h3>Consumer: </h3>
-                    <p className="pl-5">
-                      {" "}
-                      the customer not acting in the course of a profession or
-                      business.
+                    <h3>{t("TermsAndConditions.Definitions.Consumer.title")}</h3>
+                    <p className="pl-5 ">
+                      {t("TermsAndConditions.Definitions.Consumer.desc")}
                     </p>
                   </div>
                 </div>
                 {/* ------1.3------ */}
-                <div className="article">
-                  <h3>Custom-Made Goods:</h3>
+                <div className="article [&>h3]:text-2xl [&>h3]:py-2">
+                  <h3>{t("TermsAndConditions.Definitions.CustomMadeGoods.title")}</h3>
                   <p className="pl-5">
-                    {" "}
-                    products made according to the customer’s specifications,
-                    not prefabricated, produced based on the customer’s chosen
-                    shape, size/dimensions, colour, and material type, or
-                    clearly intended for a specific person.
+                    {t("TermsAndConditions.Definitions.CustomMadeGoods.desc")}
                   </p>
                 </div>
               </div>
               {/* =========article2====== */}
               <article className="mt-5">
-                <h2>Applicability </h2>
+                <h2>{t("TermsAndConditions.Applicability.title")} </h2>
                 <ul>
                   <li>
-                    1. These terms apply to all offers, quotations, agreements,
-                    services, and acts. In case of conflict between the contents
-                    of the agreement and these general terms, the provisions of
-                    the agreement prevail.
+                    {t("TermsAndConditions.Applicability.text1")}
                   </li>
                   <li>
-                    2. If there is ambiguity about the interpretation of one or
-                    more provisions of these terms or a situation is not
-                    covered, the provision or situation shall be assessed “in
-                    the spirit” of these terms.
+                    {t("TermsAndConditions.Applicability.text2")}
                   </li>
                   <li>
-                    3. If Zebrano Studio does not always demand strict
-                    compliance with these terms, this does not mean that the
-                    provisions do not apply, nor that Zebrano Studio waives the
-                    right to demand strict compliance in other cases.
+                    {t("TermsAndConditions.Applicability.text3")}
                   </li>
                 </ul>
               </article>
               {/* ====article3==== */}
               <article>
-                <h2> Offer / Quotation </h2>
+                <h2> {t("TermsAndConditions.OfferQuotation.title")}</h2>
                 <ul>
                   <li>
-                    1. Offers and quotations from Zebrano Studio are without
-                    obligation unless expressly stated otherwise.
+                    {t("TermsAndConditions.OfferQuotation.text1")}
                   </li>
                   <li>
-                    2. Any errors—such as incorrect price indications and
-                    calculation or clerical mistakes—on Zebrano Studio’s
-                    website, in advertisements, offers and quotations,
-                    publications, order confirmations, or other documents are
-                    not binding.
+                    {t("TermsAndConditions.OfferQuotation.text2")}
                   </li>
                 </ul>
               </article>
               {/* ====article4==== */}
               <article>
-                <h2> The Agreement </h2>
+                <h2>{t("TermsAndConditions.TheAgreement.title")}</h2>
                 <ul>
                   <li>
-                    he agreement is concluded when the customer accepts Zebrano
-                    Studio’s offer. The purchase is established upon signing the
-                    order confirmation.
+                    {t("TermsAndConditions.TheAgreement.text1")}
                   </li>
                   <li>
-                    2. The order confirmation is leading in principle. The
-                    customer must carefully check it for omissions and
-                    inaccuracies and report these to Zebrano Studio in time, at
-                    least within 3 days of receipt of the order confirmation.
+                    {t("TermsAndConditions.TheAgreement.text2")}
                   </li>
                   <li>
-                    3. Offers and promotions are temporary. After the closing
-                    date of an offer or promotional period, the customer can no
-                    longer make use of it. Price reductions after the agreement
-                    is concluded—for example due to offers, promotions, or
-                    discounts on showroom models—do not entitle the customer to
-                    a price reduction.
+                    {t("TermsAndConditions.TheAgreement.text3")}
                   </li>
                   <li>
-                    4. Special promotional terms may apply to offers and
-                    promotions.
+                    {t("TermsAndConditions.TheAgreement.text4")}
                   </li>
                   <li>
-                    5. Amendments to the agreement and deviations from these
-                    general terms are only valid if agreed in writing between
-                    the customer and Zebrano Studio.
+                    {t("TermsAndConditions.TheAgreement.text5")}
                   </li>
                   <li>
-                    6. If changes to the agreement lead to an increase or
-                    decrease in costs, the resulting change in the purchase
-                    price must be agreed in writing.
+                    {t("TermsAndConditions.TheAgreement.text6")}
                   </li>
                   <li>
-                    7. If it appears that (further) performance of the agreement
-                    by Zebrano Studio is not possible due to force majeure,
-                    Zebrano Studio may suspend or dissolve the agreement without
-                    being liable for damages. This does not prevent the parties
-                    from making mutual proposals to amend the agreement in such
-                    a way that proper and complete performance is possible.
+                    {t("TermsAndConditions.TheAgreement.text7")}
                   </li>
                   <li>
-                    8. In the event of the customer’s bankruptcy, suspension of
-                    payments, or attachment of assets, Zebrano Studio may
-                    dissolve the agreement in whole or in part without notice of
-                    default.
+                    {t("TermsAndConditions.TheAgreement.text8")}
                   </li>
                 </ul>
               </article>

@@ -2,10 +2,14 @@ import React, { useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import TypeingText from '../commonComponent/TypeingText';
+import { useTranslation } from "react-i18next";
+// i18n.language
 
 gsap.registerPlugin(SplitText);
 
 const MakerBanner = () => {
+  const { t, i18n } = useTranslation();
+  const typedText = t('MeetTheMakers.banner.typedText', { returnObjects: true });
   const headingOneRef = useRef(null);
     const headingTwoRef = useRef(null);
     const headingThreeRef = useRef(null);
@@ -68,18 +72,20 @@ const MakerBanner = () => {
     <section id="zebranoBanner">
         <div className="wrapper bg-myColorTwo w-full h-auto  p-5 py-20 md:p-10 md:pt-32 md:py-20 lg:pb-10 lg:pt-32 2xl:pb-20">
           <div className='w-full flex gap-5'>
-            <h1 ref={headingOneRef} className='text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>Created by our </h1>
-            <TypeingText texts={["makers ", "designers", "people "]} />
+            <h1 ref={headingOneRef} className='text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>{t("MeetTheMakers.banner.heading1")}</h1>
+            <TypeingText texts= {typedText} />
           </div>
 
           <div className='w-full flex flex-col md:flex-row gap-10 md:gap-1'>
             <div className='w-full md:w-1/2'>
-              <h1 ref={headingTwoRef} className='w-fit text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>perfected in</h1>
-              <h1 ref={headingThreeRef} className='w-fit text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>production.</h1>
+              <h1 ref={headingTwoRef} className='w-fit text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>{t("MeetTheMakers.banner.heading2")}</h1>
+              <h1 ref={headingThreeRef} className='w-fit text-5xl md:text-6xl font-Montserrat font-bold lg:text-[6vw] text-colorOne'>{t("MeetTheMakers.banner.heading3")}</h1>
             </div>
             <div className="w-full md:w-1/2">
               <p className='text-6xl font-bold text-colorOne leading-3 md:leading-normal '>"</p>
-              <p ref={subheadingRef} className='text-base text-right text-colorOne md:text-2xl'> Real hands. Real sawdust.Unreal results. From first sketch to final fit, we design,prototype,and and build under one roof - so every milimeter up and every door feels effortlessly right </p>
+              <p ref={subheadingRef} className='text-base text-right text-colorOne md:text-2xl'>
+                {t("MeetTheMakers.banner.desc")}
+              </p>
               <p className='text-6xl font-bold text-right'>"</p>
             </div>
           </div>

@@ -633,6 +633,38 @@ const resources = {
         },
         "AboutUsTimeline": {},
       },
+      // ====Meet the Makers=====
+      "MeetTheMakers" : {
+        "banner" : {
+          "heading1":"Created by our",
+          "heading2":"perfected in",
+          "heading3":"production.",
+          "desc" : "Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype, and build under one roof – so every millimeter adds up and every door feels effortlessly right.",
+          "typedText" : ["designers","people","makers"],
+        },
+        "AccessibleBeautiful" : {
+          "row1":{
+            "title1" : "ACCESSIBLE .",
+            "title2" : "BEAUTIFUL .",
+            "desc" : `"I've always felt that good design shouldn't hide behind velvet ropes. At Zebrano, I want everyone to enjoy the same beautiful doors and details usually seen only in luxury hotels – right at home." `,
+            "name" : "Mathijs",
+            "designetion" : "– Founder and Designer, Zebrano Studio",
+          },
+          "row2" : {
+            "title" : "We like to keep things close to home.",
+            "desc" : `Our doors are made right here in the Netherlands, shaped by makers who know their wood almost as well as their morning coffee. It's a mix of tradition, precision, and a little Dutch stubbornness that refuses to settle for "good enough." The result? Craft that feels local, but looks like it belongs anywhere in the world.`,
+            "btnText" : "Discover materials",
+          },
+          "row3" : {
+            "title1" : "Are you a designer? ",
+            "title2" : "Need advice?",
+            "desc1" : "Our team is ready to help you discover all the possibilities.",
+            "desc2" : "Our team is ready to help you discover all the possibilities.",
+            "btnText1" : "Discover materials",
+            "btnText2" : "Get in contact",
+          },
+        },
+      },
       // ========ConsciousNcrafts=========
       "ConsciousNcrafts": {
         "ConsciousNcraftsBanner": {
@@ -826,30 +858,91 @@ const resources = {
             "text1": "Right to Withdraw Consent:",
             "text2": "If we are processing your personal data based on your consent, you have the right to withdraw that consent at any time. This will not affect the lawfulness of processing based on consent before its withdrawal.",
           },
-          "ToExercise" : "To exercise any of these rights, please contact us using the contact details provided in Section 1. We will respond to your request within one month.",
+          "ToExercise": "To exercise any of these rights, please contact us using the contact details provided in Section 1. We will respond to your request within one month.",
         },
-        "ChildrenPrivacy" :{
-          "title" : "Children's Privacy",
-          "desc" : "Our website and services are not directed at individuals under the age of 16. We do not knowingly collect personal data from children under 16. If we become aware that we have inadvertently collected personal data from a child under 16, we will take steps to delete such information as soon as possible.",
+        "ChildrenPrivacy": {
+          "title": "Children's Privacy",
+          "desc": "Our website and services are not directed at individuals under the age of 16. We do not knowingly collect personal data from children under 16. If we become aware that we have inadvertently collected personal data from a child under 16, we will take steps to delete such information as soon as possible.",
         },
-        "ChangesTo" : {
-          "title" : "Changes to This Privacy Policy",
-          "desc" : 'We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting the new Privacy Policy on our website with a revised "Effective Date." We encourage you to review this Privacy Policy periodically.',
+        "ChangesTo": {
+          "title": "Changes to This Privacy Policy",
+          "desc": 'We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting the new Privacy Policy on our website with a revised "Effective Date." We encourage you to review this Privacy Policy periodically.',
         },
-        "ContactUs" : {
-          "title" : "Contact Us",
-          "desc" : "If you have any questions about this privacy policy or about how we handle data, or if you wish to exercise any of your rights, please contact us at: Zebrano Studio, Netherlands, info@zebranostudio.com",
-          'address' : {
-            "name" : "Zebrano Studio",
-            "city" : "Herikebrink 37 7544ER Enschede",
-            "country" : "The Netherlands",
-            "email" : "Info@zebranostudio.com ",
-            "phone" : "+31 6 42 99 70 18",
+        "ContactUs": {
+          "title": "Contact Us",
+          "desc": "If you have any questions about this privacy policy or about how we handle data, or if you wish to exercise any of your rights, please contact us at: Zebrano Studio, Netherlands, info@zebranostudio.com",
+          'address': {
+            "name": "Zebrano Studio",
+            "city": "Herikebrink 37 7544ER Enschede",
+            "country": "The Netherlands",
+            "email": "Info@zebranostudio.com ",
+            "phone": "+31 6 42 99 70 18",
           }
         },
-        "RightToLodge" : {
-          "title" : "Right to Lodge a Complaint",
-          "desc" : "If you believe that your data protection rights have been violated, you have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens - AP):",
+        "RightToLodge": {
+          "title": "Right to Lodge a Complaint",
+          "desc": "If you believe that your data protection rights have been violated, you have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens - AP):",
+        },
+      },
+      // =====TermsAndConditions======
+      "TermsAndConditions": {
+        "heading": {
+          "title": "Designed to fit. Terms that do, too.",
+          "desc": "Here you’ll find the essentials: how we plan, when we deliver, what we guarantee, and how to keep your Zebrano piece flawless for years. Clear agreements, smooth projects.",
+        },
+        "Definitions": {
+          "title": "Definitions",
+          "desc": "",
+          "ZebranoStudio": {
+            "title": "Zebrano Studio: ",
+            "desc": "the private limited company Zebrano Studio, with its registered office in the Netherlands, email info@zebranostudio.com.",
+          },
+          "Customer": {
+            "title": "Customer:",
+            "desc": " the party who enters into, intends to enter into, or for whom Zebrano Studio makes an offer or performs a delivery or service.",
+          },
+          "BusinessCustomer": {
+            "title": "Business Customer:",
+            "desc": "the customer acting in the course of a profession or business.",
+          },
+          "Consumer": {
+            "title": "Consumer:",
+            "desc": "the customer not acting in the course of a profession or business.",
+          },
+          "CustomMadeGoods": {
+            "title": "Custom-Made Goods:",
+            "desc": "products made according to the customer’s specifications, not prefabricated, produced based on the customer’s chosen shape, size/dimensions, colour, and material type, or clearly intended for a specific person.",
+          },
+        },
+        "Applicability": {
+          "title": "Applicability",
+          "text1": "1. These terms apply to all offers, quotations, agreements, services, and acts. In case of conflict between the contents of the agreement and these general terms, the provisions of the agreement prevail.",
+          "text2": "2. If there is ambiguity about the interpretation of one or more provisions of these terms or a situation is not covered, the provision or situation shall be assessed “in the spirit” of these terms.",
+          "text3": "3. If Zebrano Studio does not always demand strict compliance with these terms, this does not mean that the provisions do not apply, nor that Zebrano Studio waives the right to demand strict compliance in other cases.",
+        },
+        "OfferQuotation" : {
+          "title" : "Offer / Quotation",
+          "text1" : "1. Offers and quotations from Zebrano Studio are without obligation unless expressly stated otherwise.",
+          "text2" : "2. Any errors—such as incorrect price indications and calculation or clerical mistakes—on Zebrano Studio’s website, in advertisements, offers and quotations, publications, order confirmations, or other documents are not binding.",
+        },
+        "TheAgreement" : {
+          "title" : "The Agreement",
+
+          "text1" : "1. The agreement is concluded when the customer accepts Zebrano Studio’s offer. The purchase is established upon signing the order confirmation.",
+
+          "text2" : "2. The order confirmation is leading in principle. The customer must carefully check it for omissions and inaccuracies and report these to Zebrano Studio in time, at least within 3 days of receipt of the order confirmation.",
+
+          "text3" : "3. Offers and promotions are temporary. After the closing date of an offer or promotional period, the customer can no longer make use of it. Price reductions after the agreement is concluded—for example due to offers, promotions, or discounts on showroom models—do not entitle the customer to a price reduction.",
+
+          "text4" : "4. Special promotional terms may apply to offers and promotions.",
+
+          "text5" : "5. Amendments to the agreement and deviations from these general terms are only valid if agreed in writing between the customer and Zebrano Studio.",
+
+          "text6" : "6. If changes to the agreement lead to an increase or decrease in costs, the resulting change in the purchase price must be agreed in writing.",
+
+          "text7" : "7. If it appears that (further) performance of the agreement by Zebrano Studio is not possible due to force majeure, Zebrano Studio may suspend or dissolve the agreement without being liable for damages. This does not prevent the parties from making mutual proposals to amend the agreement in such a way that proper and complete performance is possible.",
+
+          "text8" : "8. In the event of the customer’s bankruptcy, suspension of payments, or attachment of assets, Zebrano Studio may dissolve the agreement in whole or in part without notice of default.",
         },
       },
 
@@ -1508,6 +1601,38 @@ const resources = {
         },
         "AboutUsTimeline": {},
       },
+      // ====Meet the Makers=====
+      "MeetTheMakers" : {
+        "banner" : {
+          "heading1":"Gemaakt door onze",
+          "heading2":"geperfectioneerd in",
+          "heading3":" de productie.",
+          "desc" : "Echte handen. Echt zaagsel. Onwerkelijke resultaten. Van eerste schets tot perfecte pasvorm: wij ontwerpen, prototypen en bouwen onder één dak – zodat elke millimeter klopt en elke deur moeiteloos goed voelt.",
+          "typedText" : ["ontwerpers","mensen","makers"],
+        },
+        "AccessibleBeautiful" : {
+          "row1":{
+            "title1" : "TOEGANKELIJK .",
+            "title2" : "MOOI .",
+            "desc" : `"Ik heb altijd gevonden dat goed design niet verstopt hoeft te worden achter fluwelen touwen. Bij Zebrano wil ik dat iedereen kan genieten van dezelfde prachtige deuren en details die je normaal alleen in luxe hotels ziet – gewoon thuis."`,
+            "name" : "Mathijs",
+            "designetion" : "– oprichter en ontwerper, Zebrano Studio",
+          },
+          "row2" : {
+            "title" : "Wij houden dingen graag dichtbij huis.",
+            "desc" : `Onze deuren worden hier in Nederland gemaakt, door makers die hun hout bijna net zo goed kennen als hun ochtendkoffie. Het is een mix van traditie, precisie en een beetje Nederlandse koppigheid die weigert genoegen te nemen met ‘goed genoeg’. Het resultaat? Vakmanschap dat lokaal voelt, maar overal ter wereld thuishoort.`,
+            "btnText" : "Ontdek materialen",
+          },
+          "row3" : {
+            "title1" : "Ben jij ontwerper?",
+            "title2" : "Advies nodig?",
+            "desc1" : "Ons team staat klaar om je alle mogelijkheden te laten ontdekken.",
+            "desc2" : "Ons team staat klaar om je alle mogelijkheden te laten ontdekken.",
+            "btnText1" : "Ontdek materialen",
+            "btnText2" : "Neem contact op",
+          },
+        },
+      },
       // ========ConsciousNcrafts=========
       "ConsciousNcrafts": {
         "ConsciousNcraftsBanner": {
@@ -1702,28 +1827,89 @@ const resources = {
           },
           "ToExercise": "Om een van deze rechten uit te oefenen, kun je contact met ons opnemen via de contactgegevens vermeld in sectie 1. Wij reageren binnen één maand op jouw verzoek."
         },
-        "ChildrenPrivacy" :{
-          "title" : "Privacy van kinderen",
-          "desc" : "Onze website en diensten zijn niet gericht op personen jonger dan 16 jaar. Wij verzamelen niet bewust persoonsgegevens van kinderen onder de 16. Als wij erachter komen dat wij per ongeluk persoonsgegevens van een kind onder de 16 hebben verzameld, zullen wij die zo snel mogelijk verwijderen.",
+        "ChildrenPrivacy": {
+          "title": "Privacy van kinderen",
+          "desc": "Onze website en diensten zijn niet gericht op personen jonger dan 16 jaar. Wij verzamelen niet bewust persoonsgegevens van kinderen onder de 16. Als wij erachter komen dat wij per ongeluk persoonsgegevens van een kind onder de 16 hebben verzameld, zullen wij die zo snel mogelijk verwijderen.",
         },
-        "ChangesTo" : {
-          "title" : "Wijzigingen in deze privacyverklaring",
-          "desc" : 'Wij kunnen deze privacyverklaring van tijd tot tijd bijwerken om wijzigingen in onze praktijken weer te geven of om andere operationele, juridische of regelgevende redenen. Bij belangrijke wijzigingen stellen wij je hiervan op de hoogte door de nieuwe privacyverklaring op onze website te plaatsen met een aangepaste "ingangsdatum". We raden je aan deze verklaring regelmatig te bekijken.',
+        "ChangesTo": {
+          "title": "Wijzigingen in deze privacyverklaring",
+          "desc": 'Wij kunnen deze privacyverklaring van tijd tot tijd bijwerken om wijzigingen in onze praktijken weer te geven of om andere operationele, juridische of regelgevende redenen. Bij belangrijke wijzigingen stellen wij je hiervan op de hoogte door de nieuwe privacyverklaring op onze website te plaatsen met een aangepaste "ingangsdatum". We raden je aan deze verklaring regelmatig te bekijken.',
         },
-        "ContactUs" : {
-          "title" : "Contact opnemen",
-          "desc" : "Als je vragen hebt over deze privacyverklaring of over hoe wij met gegevens omgaan, of als je een van jouw rechten wilt uitoefenen, neem dan contact met ons op: Zebrano Studio, Nederland, info@zebranostudio.com",
-          'address' : {
-            "name" : "Zebrano Studio",
-            "city" : "Herikebrink 37 7544ER Enschede",
-            "country" : "The Netherlands",
-            "email" : "Info@zebranostudio.com ",
-            "phone" : "+31 6 42 99 70 18",
+        "ContactUs": {
+          "title": "Contact opnemen",
+          "desc": "Als je vragen hebt over deze privacyverklaring of over hoe wij met gegevens omgaan, of als je een van jouw rechten wilt uitoefenen, neem dan contact met ons op: Zebrano Studio, Nederland, info@zebranostudio.com",
+          'address': {
+            "name": "Zebrano Studio",
+            "city": "Herikebrink 37 7544ER Enschede",
+            "country": "The Netherlands",
+            "email": "Info@zebranostudio.com ",
+            "phone": "+31 6 42 99 70 18",
           }
         },
-        "RightToLodge" : {
-          "title" : "Recht om een klacht in te dienen",
-          "desc" : "Als je van mening bent dat jouw privacyrechten zijn geschonden, heb je het recht een klacht in te dienen bij de Autoriteit Persoonsgegevens (AP).",
+        "RightToLodge": {
+          "title": "Recht om een klacht in te dienen",
+          "desc": "Als je van mening bent dat jouw privacyrechten zijn geschonden, heb je het recht een klacht in te dienen bij de Autoriteit Persoonsgegevens (AP).",
+        },
+      },
+      // =====TermsAndConditions======
+      "TermsAndConditions": {
+        "heading": {
+          "title": "Ontworpen om te passen. Voorwaarden die dat ook doen.",
+          "desc": "Hier vind je de essentie: hoe wij plannen, wanneer wij leveren, wat wij garanderen en hoe je jouw Zebrano-stuk jarenlang perfect houdt. Duidelijke afspraken, soepel verloop.",
+        },
+        "Definitions": {
+          "title": "Definities",
+          "desc": "",
+          "ZebranoStudio": {
+            "title": "Zebrano Studio:",
+            "desc": "de besloten vennootschap Zebrano Studio, statutair gevestigd in Nederland, e-mail info@zebranostudio.com.",
+          },
+          "Customer": {
+            "title": "Klant:",
+            "desc": "de partij die een overeenkomst aangaat of wil aangaan met Zebrano Studio, of voor wie Zebrano Studio een aanbod doet of een ",
+          },
+          "BusinessCustomer": {
+            "title": "Zakelijke klant: ",
+            "desc": "de klant die handelt in de uitoefening van een beroep of bedrijf.",
+          },
+          "Consumer": {
+            "title": "Consument:",
+            "desc": "de klant die niet handelt in de uitoefening van een beroep of bedrijf.",
+          },
+          "CustomMadeGoods": {
+            "title": "Maatwerkproducten:",
+            "desc": " producten die volgens de specificaties van de klant worden gemaakt, niet vooraf gefabriceerd, geproduceerd op basis van de door de klant gekozen vorm, afmetingen, kleur en materiaalsoort, of duidelijk bestemd voor een specifieke persoon.",
+          },
+        },
+        "Applicability": {
+          "title": "Toepasselijkheid",
+          "text1": "1. Deze voorwaarden zijn van toepassing op alle aanbiedingen, offertes, overeenkomsten, diensten en handelingen. In geval van tegenstrijdigheid tussen de inhoud van de overeenkomst en deze algemene voorwaarden, prevaleren de bepalingen van de overeenkomst.",
+          "text2": "2. Indien er onduidelijkheid bestaat over de uitleg van één of meer bepalingen van deze voorwaarden of indien een situatie niet is geregeld, wordt de bepaling of situatie beoordeeld “in de geest” van deze voorwaarden.",
+          "text3": "3. Indien Zebrano Studio niet steeds strikte naleving van deze voorwaarden verlangt, betekent dit niet dat de bepalingen niet van toepassing zijn, noch dat Zebrano Studio het recht verliest om in andere gevallen wel strikte naleving te eisen.",
+        },
+        "OfferQuotation" : {
+          "title" : "Aanbod / Offerte",
+          "text1" : "1. Aanbiedingen en offertes van Zebrano Studio zijn vrijblijvend, tenzij uitdrukkelijk anders vermeld.",
+          "text2" : "2. Eventuele fouten – zoals onjuiste prijsvermeldingen en reken- of schrijffouten – op de website van Zebrano Studio, in advertenties, offertes, publicaties, orderbevestigingen of andere documenten zijn niet bindend.",
+        },
+        "TheAgreement" : {
+          "title" : "De overeenkomst",
+
+          "text1" : "1. De overeenkomst komt tot stand wanneer de klant het aanbod van Zebrano Studio accepteert. De koop is definitief bij ondertekening van de orderbevestiging.",
+
+          "text2" : "2. De orderbevestiging is in principe leidend. De klant dient deze zorgvuldig te controleren op omissies en onjuistheden en deze tijdig, uiterlijk binnen 3 dagen na ontvangst, aan Zebrano Studio te melden.",
+
+          "text3" : "3. Aanbiedingen en acties zijn tijdelijk. Na afloop van de looptijd kan de klant er geen gebruik meer van maken. Prijsverlagingen na het sluiten van de overeenkomst – bijvoorbeeld door acties of kortingen op showroommodellen – geven de klant geen recht op een lagere prijs.",
+
+          "text4" : "4. Voor aanbiedingen en acties kunnen bijzondere voorwaarden gelden.",
+
+          "text5" : "5. Wijzigingen van de overeenkomst en afwijkingen van deze algemene voorwaarden zijn alleen geldig indien schriftelijk overeengekomen tussen de klant en Zebrano Studio.",
+
+          "text6" : "6. Indien wijzigingen in de overeenkomst leiden tot een verhoging of verlaging van de kosten, dient de aanpassing van de koopprijs schriftelijk te worden overeengekomen.",
+
+          "text7" : "7. Indien blijkt dat (verdere) uitvoering van de overeenkomst door Zebrano Studio niet mogelijk is wegens overmacht, kan Zebrano Studio de overeenkomst opschorten of ontbinden zonder aansprakelijk te zijn voor schade. Dit laat onverlet dat partijen elkaar voorstellen kunnen doen om de overeenkomst zodanig te wijzigen dat juiste en volledige uitvoering alsnog mogelijk is.",
+          
+          "text8" : "8. In geval van faillissement, surseance van betaling of beslaglegging van de klant, kan Zebrano Studio de overeenkomst geheel of gedeeltelijk ontbinden zonder ingebrekestelling.",
         },
       },
 
@@ -2385,6 +2571,38 @@ const resources = {
         },
         "AboutUsTimeline": {},
       },
+      // ====Meet the Makers=====
+      "MeetTheMakers" : {
+        "banner" : {
+          "heading1":"Gemacht von unseren",
+          "heading2":"perfektioniert in",
+          "heading3":"der Produktion.",
+          "desc" : "Echte Hände. Echter Holzstaub. Unglaubliche Ergebnisse. Vom ersten Entwurf bis zur finalen Passform – wir entwerfen, entwickeln Prototypen und fertigen unter einem Dach, damit jeder Millimeter stimmt und jede Tür mühelos perfekt wirkt.",
+          "typedText" : ["Designern","Menschen","Machern"],
+        },
+        "AccessibleBeautiful" : {
+          "row1":{
+            "title1" : "ZUGÄNGLICH .",
+            "title2" : "SCHÖN .",
+            "desc" : `“Ich war schon immer der Meinung, dass gutes Design sich nicht hinter Samtseilen verstecken sollte. Bei Zebrano möchte ich, dass jeder dieselben wunderschönen Türen und Details genießen kann, die man sonst nur in Luxushotels sieht – direkt zu Hause.„`,
+            "name" : "Mathijs",
+            "designetion" : "–  Gründer und Designer, Zebrano Studio",
+          },
+          "row2" : {
+            "title" : "Wir halten die Dinge gerne nah am Zuhause.",
+            "desc" : `Unsere Türen werden hier in den Niederlanden gefertigt, von Machern, die ihr Holz fast so gut kennen wie ihren Morgenkaffee. Es ist eine Mischung aus Tradition, Präzision und ein wenig niederländischer Sturheit, die sich nicht mit „gut genug“ zufriedengibt. Das Ergebnis? Handwerk, das lokal verwurzelt ist, aber überall auf der Welt passt.`,
+            "btnText" : "Materialien entdecken",
+          },
+          "row3" : {
+            "title1" : "Sind Sie Designer? ",
+            "title2" : "Brauchen Sie Beratung?",
+            "desc1" : "Unser Team hilft Ihnen gerne, alle Möglichkeiten zu entdecken.",
+            "desc2" : "Unser Team ist bereit, Ihnen alle Möglichkeiten zu zeigen.",
+            "btnText1" : "Materialien entdecken",
+            "btnText2" : "Kontakt aufnehmen",
+          },
+        },
+      },
       // ========ConsciousNcrafts=========
       "ConsciousNcrafts": {
         "ConsciousNcraftsBanner": {
@@ -2579,28 +2797,89 @@ const resources = {
           },
           "ToExercise": "Um eines dieser Rechte auszuüben, kontaktieren Sie uns bitte unter den in Abschnitt 1 angegebenen Kontaktdaten. Wir werden Ihre Anfrage innerhalb eines Monats beantworten.",
         },
-        "ChildrenPrivacy" :{
-          "title" : "Datenschutz von Kindern",
-          "desc" : "Unsere Website und Dienstleistungen richten sich nicht an Personen unter 16 Jahren. Wir erheben nicht wissentlich personenbezogene Daten von Kindern unter 16 Jahren. Sollten wir feststellen, dass wir unbeabsichtigt Daten eines Kindes unter 16 Jahren erhoben haben, werden wir diese so schnell wie möglich löschen.",
+        "ChildrenPrivacy": {
+          "title": "Datenschutz von Kindern",
+          "desc": "Unsere Website und Dienstleistungen richten sich nicht an Personen unter 16 Jahren. Wir erheben nicht wissentlich personenbezogene Daten von Kindern unter 16 Jahren. Sollten wir feststellen, dass wir unbeabsichtigt Daten eines Kindes unter 16 Jahren erhoben haben, werden wir diese so schnell wie möglich löschen.",
         },
-        "ChangesTo" : {
-          "title" : "Änderungen dieser Datenschutzerklärung",
-          "desc" : 'Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen in unseren Praktiken oder aus anderen betrieblichen, rechtlichen oder regulatorischen Gründen zu berücksichtigen. Über wesentliche Änderungen informieren wir Sie, indem wir die neue Datenschutzerklärung mit einem aktualisierten „Gültigkeitsdatum“ auf unserer Website veröffentlichen. Wir empfehlen Ihnen, diese Erklärung regelmäßig zu prüfen.',
+        "ChangesTo": {
+          "title": "Änderungen dieser Datenschutzerklärung",
+          "desc": 'Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen in unseren Praktiken oder aus anderen betrieblichen, rechtlichen oder regulatorischen Gründen zu berücksichtigen. Über wesentliche Änderungen informieren wir Sie, indem wir die neue Datenschutzerklärung mit einem aktualisierten „Gültigkeitsdatum“ auf unserer Website veröffentlichen. Wir empfehlen Ihnen, diese Erklärung regelmäßig zu prüfen.',
         },
-        "ContactUs" : {
-          "title" : "Kontakt",
-          "desc" : "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zu unserem Umgang mit Daten haben oder eines Ihrer Rechte ausüben möchten, kontaktieren Sie uns bitte unter: Zebrano Studio, Niederlande, info@zebranostudio.com",
-          'address' : {
-            "name" : "Zebrano Studio",
-            "city" : "Herikebrink 37 7544ER Enschede",
-            "country" : "The Netherlands",
-            "email" : "Info@zebranostudio.com ",
-            "phone" : "+31 6 42 99 70 18",
+        "ContactUs": {
+          "title": "Kontakt",
+          "desc": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zu unserem Umgang mit Daten haben oder eines Ihrer Rechte ausüben möchten, kontaktieren Sie uns bitte unter: Zebrano Studio, Niederlande, info@zebranostudio.com",
+          'address': {
+            "name": "Zebrano Studio",
+            "city": "Herikebrink 37 7544ER Enschede",
+            "country": "The Netherlands",
+            "email": "Info@zebranostudio.com ",
+            "phone": "+31 6 42 99 70 18",
           }
         },
-        "RightToLodge" : {
-          "title" : "Recht auf Beschwerde",
-          "desc" : "Wenn Sie der Meinung sind, dass Ihre Datenschutzrechte verletzt wurden, haben Sie das Recht, eine Beschwerde bei der niederländischen Datenschutzbehörde (Autoriteit Persoonsgegevens – AP) einzureichen.",
+        "RightToLodge": {
+          "title": "Recht auf Beschwerde",
+          "desc": "Wenn Sie der Meinung sind, dass Ihre Datenschutzrechte verletzt wurden, haben Sie das Recht, eine Beschwerde bei der niederländischen Datenschutzbehörde (Autoriteit Persoonsgegevens – AP) einzureichen.",
+        },
+      },
+      // =====TermsAndConditions======
+      "TermsAndConditions": {
+        "heading": {
+          "title": "Entworfen, um zu passen. Bedingungen, die es auch tun.",
+          "desc": "Hier finden Sie das Wesentliche: wie wir planen, wann wir liefern, was wir garantieren und wie Sie Ihr Zebrano-Stück über Jahre hinweg makellos halten. Klare Vereinbarungen, reibungslose Projekte.",
+        },
+        "Definitions": {
+          "title": "Begriffsbestimmungen",
+          "desc": "",
+          "ZebranoStudio": {
+            "title": "Zebrano Studio: ",
+            "desc": " die Gesellschaft mit beschränkter Haftung Zebrano Studio, mit Sitz in den Niederlanden, E-Mail info@zebranostudio.com.",
+          },
+          "Customer": {
+            "title": "Kunde:",
+            "desc": "  die Partei, die mit Zebrano Studio einen Vertrag abschließt oder abzuschließen beabsichtigt oder für die Zebrano Studio ein Angebot erstellt oder eine Lieferung oder Dienstleistung erbringt.",
+          },
+          "BusinessCustomer": {
+            "title": "Geschäftskunde:",
+            "desc": " der Kunde, der im Rahmen eines Berufs oder Gewerbes handelt.",
+          },
+          "Consumer": {
+            "title": "Verbraucher:",
+            "desc": "der Kunde, der nicht im Rahmen eines Berufs oder Gewerbes handelt.",
+          },
+          "CustomMadeGoods": {
+            "title": "Maßgefertigte Waren:",
+            "desc": "Produkte, die nach den Spezifikationen des Kunden hergestellt werden, nicht vorgefertigt, basierend auf der vom Kunden gewählten Form, Größe/Abmessungen, Farbe und Materialart oder eindeutig für eine bestimmte Person bestimmt.",
+          },
+        },
+        "Applicability": {
+          "title": "Anwendbarkeit",
+          "text1": "1. Diese Bedingungen gelten für alle Angebote, Kostenvoranschläge, Vereinbarungen, Dienstleistungen und Handlungen. Im Falle eines Widerspruchs zwischen dem Inhalt der Vereinbarung und diesen allgemeinen Bedingungen haben die Bestimmungen der Vereinbarung Vorrang.",
+          "text2": "2. Wenn Unklarheiten über die Auslegung einer oder mehrerer Bestimmungen dieser Bedingungen bestehen oder eine Situation nicht geregelt ist, wird die Bestimmung oder Situation „im Geiste“ dieser Bedingungen beurteilt.",
+          "text3": "3. Wenn Zebrano Studio nicht immer auf die strikte Einhaltung dieser Bedingungen besteht, bedeutet dies nicht, dass die Bestimmungen nicht gelten oder dass Zebrano Studio auf das Recht verzichtet, in anderen Fällen die strikte Einhaltung zu verlangen.",
+        },
+        "OfferQuotation" : {
+          "title" : "Angebot / Kostenvoranschlag",
+          "text1" : "1. Angebote und Kostenvoranschläge von Zebrano Studio sind unverbindlich, sofern nicht ausdrücklich anders angegeben.",
+          "text2" : "2. Etwaige Fehler – wie falsche Preisangaben sowie Rechen- oder Schreibfehler – auf der Website von Zebrano Studio, in Anzeigen, Angeboten, Veröffentlichungen, Auftragsbestätigungen oder anderen Dokumenten sind nicht verbindlich.",
+        },
+        "TheAgreement" : {
+          "title" : "Die Vereinbarung",
+
+          "text1" : "1. Die Vereinbarung kommt zustande, wenn der Kunde das Angebot von Zebrano Studio annimmt. Der Kaufvertrag wird mit der Unterzeichnung der Auftragsbestätigung geschlossen.",
+
+          "text2" : "2. Die Auftragsbestätigung ist grundsätzlich maßgeblich. Der Kunde muss diese sorgfältig auf Auslassungen und Unrichtigkeiten prüfen und Zebrano Studio rechtzeitig, spätestens innerhalb von 3 Tagen nach Erhalt, informieren.",
+
+          "text3" : "3. Angebote und Aktionen sind zeitlich begrenzt. Nach Ablauf der Frist kann der Kunde sie nicht mehr in Anspruch nehmen. Preissenkungen nach Vertragsschluss – etwa durch Aktionen oder Rabatte auf Ausstellungsstücke – berechtigen den Kunden nicht zu einer Preisreduzierung.",
+
+          "text4" : "4. Für Angebote und Aktionen können besondere Bedingungen gelten.",
+
+          "text5" : "5. Änderungen der Vereinbarung und Abweichungen von diesen allgemeinen Bedingungen sind nur gültig, wenn sie schriftlich zwischen dem Kunden und Zebrano Studio vereinbart wurden.",
+
+          "text6" : "6. Wenn Änderungen der Vereinbarung zu einer Erhöhung oder Senkung der Kosten führen, muss die entsprechende Änderung des Kaufpreises schriftlich vereinbart werden.",
+
+          "text7" : "7. Wenn sich herausstellt, dass eine (weitere) Erfüllung der Vereinbarung durch Zebrano Studio aufgrund höherer Gewalt nicht möglich ist, kann Zebrano Studio die Vereinbarung aussetzen oder auflösen, ohne für Schäden haftbar zu sein. Dies hindert die Parteien nicht daran, Vorschläge zur Anpassung der Vereinbarung zu machen, sodass eine ordnungsgemäße und vollständige Erfüllung möglich wird.",
+          
+          "text8" : "8. Im Falle der Insolvenz, Zahlungsaussetzung oder Pfändung von Vermögenswerten des Kunden kann Zebrano Studio die Vereinbarung ganz oder teilweise ohne Mahnung auflösen.",
         },
       },
 
