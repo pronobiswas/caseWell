@@ -704,6 +704,234 @@ const resources = {
         "btnText1": "Collection",
         "btnText2": "Configure your own",
       },
+      // ====services=====
+      "Service" : {
+        "banner" : {
+          "title" : "Service & Terms",
+          "desc" :"Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
+        },
+        "ServiceTab" : {
+          "OrderProcess":{
+            "title" : "Everything About Our Order Process (Netherlands)",
+            "desc" : "Our products are made to order. We follow a fixed sequence so timelines stay reliable.",
+            "faqs":[
+              {
+                "question":"Consultation & Proposal",
+                "answer" : "We discuss scope, materials, finishes, and installation. You receive a written proposal with pricing and indicative lead time. Quotes are valid 30 days unless material volatility is noted.",
+              },
+              {
+                "question":" Measurement",
+                "answer" : "You can provide measurements, or we perform a paid measurement service (recommended). If you supply measurements, you accept responsibility for dimensional accuracy.",
+              },
+              {
+                "question":"Technical Drawings & Sign-off",
+                "answer" : "We prepare drawings/specs. Production only proceeds after written approval of all drawings, finishes, and hardware.",
+              },
+              {
+                "question":"Payment",
+                "answer" : "We work with 100% upfront payment. See “Payment Process” for accepted methods (iDEAL, cards, Apple Pay, PayPal, SEPA) and invoicing details.",
+              },
+              {
+                "question":"Production & Quality Control",
+                "answer" : "Upon payment + approval, we reserve your production slot. Lead time starts. Each item is checked for finish quality, fit, and function.",
+              },
+              {
+                "question":"Pre-Delivery Scheduling ",
+                "answer" : "Near completion we propose a delivery/installation window. You confirm access, parking, lift/stair details, and site readiness.",
+              },
+              {
+                "question":"Delivery / Installation & Handover",
+                "answer" : "We deliver or deliver-and-install (NL only). After installation we perform functional checks and share care guidance."
+              },
+              {
+                "question":"Change Requests",
+                "answer" : "Any change after approval (finish/size/hardware) may alter price and timeline. Work resumes after full payment of the change order."
+              },
+              {
+                "question":"Cancellations",
+                "answer" : "Custom items are excluded from the standard right of withdrawal. Cancellations after payment are not possible unless agreed in writing before production starts (admin/design costs apply)."
+              },
+            ]
+          },
+          "Delivery":{
+            "title" : "Delivery (Delivery & Installation in the Netherlands)",
+            "desc" : "We deliver to all Dutch provinces using in-house teams or trusted partners.",
+            "faqs" :[
+              {
+                "question":"Delivery Options",
+                "answers" : [
+                  "Supply-Only: Kerbside/ground-floor delivery to the first accessible point.",
+                  " White-Glove: Two-person delivery to room of choice (if access permits). Packaging removal on request.",
+                ],
+              },
+              {
+                "question":"Scheduling & Access ",
+                "answers" : [
+                  "We agree a date + time window. You ensure safe access (door widths, lifts, staircases), parking permits if needed, and a clear path. If access is not possible, re-delivery and/or additional handling costs apply.",
+                ],
+              },
+              {
+                "question":"Packaging & Protection ",
+                "answers" : [
+                  "Doors and panels ship with full foam protection and edge guards. Accessories are packed in branded sleeves/boxes.",
+                ],
+              },
+              {
+                "question":"Damage on Arrival",
+                "answers" : [
+                  "Visible damage: note on the delivery form immediately and photograph before unwrapping",
+                  " Concealed damage: report in writing within 24 hours of delivery with photos and order number.",
+                ],
+              },
+              {
+                "question":"Risk Transfer",
+                "answers" : [
+                  "Risk transfers at delivery. For white-glove/installation, risk transfers after placement in the agreed room/area.",
+                ],
+              },
+              {
+                "question":"Installation (Optional, NL only)",
+                "answers" : [
+                  "Included scope (unless otherwise stated):",
+                  "Fitting frames/leafs/hardware supplied by Zebrano. ",
+                  "Alignment, clearances, functional checks (swing/slide/pivot).",
+                  "Basic sealing/finishing where specified. Not included: structural changes, electrical works, plastering/painting, third-party materials, and works outside the agreed opening.",
+                ],
+              },
+              {
+                "question":"Site Readiness (Required)",
+                "answers" : [
+                  "Finished openings within tolerance, walls plumb/level",
+                  " Interior climate: 15–25 °C and 40–60% RH.",
+                  "Substrates dry; area clean and accessible; 230 V power available. Re-visits due to site not ready are chargeable and must be paid before re-scheduling.",
+                ],
+              },
+            ],
+          },
+          "Guarantee" : {
+            "title" : "Guarantee (Netherlands)",
+            "desc" : "We stand behind our craftsmanship.",
+            "faqs" : [
+              {
+                "question" : "Duration",
+                "answers" : [
+                  "2 years from delivery date.",
+                ],
+              },
+              {
+                "question" : "What We Cover",
+                "answers" : [
+                  "Manufacturing defects, structural integrity, hardware function, veneer bonding/lamination, and factory finishes per spec.",
+                ],
+              },
+              {
+                "question" : "What’s Not Covered",
+                "answers" : [
+                  " Industry-standard tolerances (typ. ±1–2 mm; handcrafted panels up to ±4 mm).",
+                ],
+              },
+              {
+                "question" : "Tolerances",
+                "answers" : [
+                  "2 years from delivery date.",
+                ],
+              },
+              {
+                "question" : "Claims Process",
+                "answers" : [
+                  " Email photos, description, order/invoice number. On-site inspection may occur. Remedy at our discretion: repair, replacement, or refund of the defective item. Consequential costs excluded.",
+                ],
+              }
+            ],
+          },
+          "CareAndMaintenance": {
+            "title" : "Care & Maintenance",
+            "desc" : "Regular care protects the finish and function. Use soft cloths and pH-neutral cleaners unless noted.",
+            "faqs" : [
+              {
+                "question" : "Glass",
+                "answers" : ["Clean with glass cleaner/mild soap; dry lint-free. Avoid abrasives/blades on textured glass. Check film/adhesive compatibility."],
+              },{
+                "question" : "Solid Wood",
+                "answers" : ["Dust weekly; slightly damp wipe; maintain 40–60% RH; re-oil/wax yearly if specified; protect from sun/heat."],
+              },{
+                "question" : "Wood Veneer",
+                "answers" : ["Soft dry/lightly damp cloth; do not sand; oiled: light oil yearly; lacquered: mild cleaners only. Natural variation expected."],
+              },{
+                "question" : "Stone & Ceramic",
+                "answers" : [" pH-neutral cleaner; avoid acids/alkalis; wipe spills immediately; seal natural stone annually; ceramics usually no seal."],
+              },{
+                "question" : "Hardware & Metal",
+                "answers" : ["Dry/slightly damp wipe; no abrasives/solvents; light lubrication 6–12 mnd; tighten visible screws; don’t adjust concealed mechanisms. Patina is normal."],
+              },{
+                "question" : "Hinged & Pivot Doors — Tips",
+                "answers" : ["Don’t force against stops; don’t hang weight on handles; keep floor/track clean."],
+              },{
+                "question" : "Maintenance Summary",
+                "answers" : ["Weekly: dust/wipe. Quarterly: check hardware, clean tracks/pivots. Annually: oil/wax (if appl.), reseal stone, general inspection."],
+              },
+              
+            ],
+          },
+          "FAQ":{
+            "ProductsAndMaterials" : {
+              "title" : "Products & Materials",
+              "faqs" : [
+                {
+                  "question" : "What products do you make?",
+                  "answer" : "Made-to-order doors … and boiserie (decorative wall panelling).",
+                },
+                {
+                  "question" : "Which materials and finishes are available?",
+                  "answer" : "Solid wood, veneer, lacquer (RAL), glass, natural stone, ceramics/porcelain; hardware in black, stainless, bronze, PVD.",
+                },
+                {
+                  "question" : "Do you offer flush-to-wall (rasomuro) doors?",
+                  "answer" : "Yes—concealed frames and hardware create a seamless, coplanar look.",
+                },
+                {
+                  "question" : "How customisable are your doors?",
+                  "answer" : "Sizes, finishes, glass, edges, hardware; ultra-custom via quote path.",
+                },
+                {
+                  "question" : "Are natural variations normal?",
+                  "answer" : "Yes—wood grain/colour and stone veining vary.",
+                },
+                {
+                  "question" : "Can you match an existing finish?",
+                  "answer" : "We can get close from a physical sample; exact match not guaranteed.",
+                },
+                {
+                  "question" : "Do you supply hardware?",
+                  "answer" : "Yes—hinges, pivots, sliders, handles, seals per spec; third-party by agreement.",
+                },
+              ],
+            },
+            "TechnicalAndSiteRequirement" : {
+              "title" : "Technical & Site Requirement",
+              "faqs" : [
+                {
+                  "question":"General site requirements?",
+                  "answer" : "Openings square/plumb/level; dry substrates; 15–25 °C & 40–60% RH; clear access; 230 V power.",
+                },
+                {
+                  "question":"Pivot requirements & UFH",
+                  "answer" : "Ceiling fixable; plywood backing where needed; drill ≥4 cm; keep 25×25 cm pipe-free zones (pivot & side panels).",
+                },
+                {
+                  "question":"Skirting/floor finishes",
+                  "answer" : "May require cutting; choose flat skirting to avoid; painter finishes cut edges.",
+                },
+                {
+                  "question":"Tolerances",
+                  "answer":"±1–2 mm components; handcrafted panels up to ±4 mm.",
+                },
+              ],
+            },
+          },
+        },
+      },
+
       // ======privecyPolicy=========
       "privecyPolicy": {
         "header": {
@@ -1778,6 +2006,234 @@ const resources = {
         "additionalText": "Bij Zebrano Studio maken we niet zomaar standaarddeuren; we creëren echte kunstwerken die een verhaal vertellen en een leven lang meegaan. Klaar om jouw droomdeur te realiseren? Wij helpen je graag!",
         "btnText1": "Collectie",
         "btnText2": "Configureer je eigen deur",
+      },
+       // ====services=====
+      "Service" : {
+        "banner" : {
+          "title" : "Service & Terms",
+          "desc" :"Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
+        },
+        "ServiceTab" : {
+          "OrderProcess" : {
+            "title" : "Alles over ons bestelproces (Nederland)",
+            "desc" : "Onze producten worden op bestelling gemaakt. We volgen een vaste volgorde zodat de doorlooptijden betrouwbaar blijven.",
+            "faqs":[
+              {
+                "question":"Consult & voorstel",
+                "answer" : "We bespreken scope, materialen, afwerkingen en installatie. Je ontvangt een schriftelijk voorstel met prijs en indicatieve levertijd. Offertes zijn 30 dagen geldig, tenzij materiaalschommelingen zijn vermeld.",
+              },
+              {
+                "question":" Inmeten",
+                "answer" : "Je kunt maten aanleveren of gebruikmaken van onze betaalde inmeetservice (aanbevolen). Lever je zelf maten aan, dan ben je verantwoordelijk voor de maatnauwkeurigheid.",
+              },
+              {
+                "question":"Technische tekeningen & akkoord",
+                "answer" : "Wij maken tekeningen/specificaties. Productie start pas na schriftelijke goedkeuring van alle tekeningen, afwerkingen en beslag."
+              },
+              {
+                "question":"Betaling ",
+                "answer" : "We werken met 100% vooruitbetaling. Zie “Betaalproces” voor betaalmethoden (iDEAL, kaarten, Apple Pay, PayPal, SEPA) en factuurdetails.",
+              },
+              {
+                "question":"Productie & kwaliteitscontrole",
+                "answer" : "Na betaling + akkoord reserveren we je productieslot. De levertijd start. Elk item wordt gecontroleerd op afwerking, passing en functionaliteit.",
+              },
+              {
+                "question":"Vooraf plannen levering ",
+                "answer" : "Richting afronding stellen we een lever-/installatievenster voor. Jij bevestigt toegang, parkeren, lift/trap-details en bouwplaatsgereedheid.",
+              },
+              {
+                "question":"Levering / installatie & overdracht",
+                "answer" : "We leveren of leveren-en-installeren (alleen NL). Na installatie voeren we functietests uit en delen onderhoudsadvies.",
+              },
+              {
+                "question":"Wijzigingsverzoeken",
+                "answer" : "Elke wijziging na akkoord (afwerking/maat/beslag) kan prijs en planning beïnvloeden. Werk wordt hervat na volledige betaling van de wijzigingsopdracht.",
+              },
+              {
+                "question":"Annuleringen",
+                "answer" : "Maatwerk is uitgesloten van het herroepingsrecht. Annuleren na betaling is niet mogelijk, tenzij schriftelijk overeengekomen vóór start productie (administratie-/ontwerpkosten van toepassing).",
+              },
+
+            ]
+          },
+          "Delivery":{
+            "title" : "Levering (Levering & installatie in Nederland)",
+            "desc" : "Wij leveren in alle Nederlandse provincies met eigen teams of betrouwbare partners.",
+            "faqs" :[
+              {
+                "question":"Leveropties",
+                "answers" : [
+                  "Alleen levering: Trottoir/begane grond tot eerste toegankelijke punt.",
+                  "White-glove: Tweemanslevering tot kamer naar keuze (indien toegang mogelijk). Verpakking verwijderen op verzoek.",
+                ],
+              },
+              {
+                "question":"Planning & toegang",
+                "answers" : [
+                  "We spreken een datum + tijdvenster af. Jij zorgt voor veilige toegang (deurbreedtes, lift/trap), evt. parkeervergunningen en een vrije route. Bij geen toegang gelden herleverings- en/of extra handlingskosten.",
+                ],
+              },
+              {
+                "question":"Verpakking & bescherming",
+                "answers" : [
+                  "Deuren en panelen worden verzonden met volledige foam-bescherming en kantbeschermers. Accessoires in branded hoezen/dozen.",
+                ],
+              },
+              {
+                "question":"Schade bij aankomst",
+                "answers" : [
+                  "Zichtbare schade: direct noteren op leverbon en vóór uitpakken fotograferen.",
+                  "Verborgen schade: binnen 24 uur na levering schriftelijk melden met foto’s en ordernummer.",
+                ],
+              },
+              {
+                "question":"Risico-overgang",
+                "answers" : [
+                  "Risico gaat over bij levering. Bij white-glove/installatie gaat het risico over na plaatsing in de afgesproken ruimte.",
+                ],
+              },
+              {
+                "question":"Installatie (optioneel, alleen NL)",
+                "answers" : [
+                  "Inbegrepen (tenzij anders aangegeven):",
+                  "Plaatsen van door Zebrano geleverd kozijn/blad/beslag.",
+                  "Uitlijning, speling, functionaliteit (draaien/schuiven/pivot).",
+                  " Basis afdichten/afwerken waar gespecificeerd. Niet inbegrepen: constructieve aanpassingen, elektra, stuc-/schilderwerk, derdenmaterialen en werk buiten de afgesproken sparing.",
+                ],
+              },
+              {
+                "question":"Werkplek gereed (vereist)",
+                "answers" : [
+                  "Afgewerkte sparingen binnen tolerantie, wanden haaks/vlak.",
+                  "Binnenklimaat: 15–25 °C en 40–60% RV.",
+                  "Ondergronden droog; ruimte schoon en toegankelijk; 230 V aanwezig. Herbezoeken door niet-gereed zijn worden doorbelast en vooraf betaald.",
+                ],
+              },
+            ],
+          },
+          "Guarantee" : {
+            "title" : "Garantie (Nederland) ",
+            "desc" : "Wij staan achter ons vakmanschap.",
+            "faqs" : [
+              {
+                "question" : "Duur",
+                "answers" : [
+                  "2 jaar vanaf leverdatum.",
+                ],
+              },
+              {
+                "question" : "Wat we dekken",
+                "answers" : [
+                  "Fabricagefouten, constructieve integriteit, werking van beslag, verlijming/laminering van fineer en fabrieksafwerkingen volgens specificatie.",
+                ],
+              },
+              {
+                "question" : "Niet gedekt",
+                "answers" : [
+                  " Slijtage, onjuist gebruik/impact, waterschade, abnormaal klimaat, natuurlijke variaties, werking/trek door klimaat, installatie/wijzigingen door derden, niet-Zebrano beslag.",
+                ],
+              },
+              {
+                "question" : "Toleranties",
+                "answers" : [
+                  "Branche-standaard toleranties (typ. ±1–2 mm; handgemaakte panelen tot ±4 mm).",
+                ],
+              },
+              {
+                "question" : "Claimprocedure",
+                "answers" : [
+                  "Mail foto’s, omschrijving en order-/factuurnummer. Mogelijk volgt inspectie op locatie. Oplossing naar ons inzicht: reparatie, vervanging of terugbetaling van het defecte item. Gevolgschade uitgesloten.",
+                ],
+              }
+            ],
+          },
+          "CareAndMaintenance": {
+            "title" : "Onderhoud & verzorging",
+            "desc" : "Regelmatig onderhoud beschermt afwerking en functie. Gebruik zachte doeken en pH-neutrale reinigers, tenzij anders aangegeven.",
+            "faqs" : [
+              {
+                "question" : "Glas",
+                "answers" : ["Reinig met glasreiniger/milde zeep; droog pluisvrij. Vermijd schuurmiddelen/mesjes op gestructureerd glas. Controleer folie/adhesief-compatibiliteit."],
+              },{
+                "question" : "Massief hout",
+                "answers" : [" Wekelijks afstoffen; licht vochtig afnemen; 40–60% RV aanhouden; jaarlijks oliën/waxen indien gespecificeerd; beschermen tegen zon/hitte."],
+              },{
+                "question" : "Houtfineer",
+                "answers" : ["Zachte droge/licht vochtige doek; niet schuren; geolied: jaarlijks licht oliën; gelakt: alleen milde reinigers. Natuurlijke variatie verwacht."],
+              },{
+                "question" : "Steen & keramiek",
+                "answers" : ["pH-neutrale reiniger; vermijd zuren/basen; morsen direct wissen; natuursteen jaarlijks sealen; keramiek meestal niet nodig."],
+              },{
+                "question" : "Beslag & metaal",
+                "answers" : ["Droog/licht vochtig afnemen; geen schuurmiddelen/oplosmiddelen; licht smeren 6–12 mnd; zichtbare schroeven aandraaien; geen verborgen mechanismen afstellen. Patina is normaal."],
+              },{
+                "question" : "Draaideuren & pivot — tips",
+                "answers" : ["Niet tegen aanslagen forceren; geen gewicht aan grepen hangen; vloer/rails schoon houden."],
+              },{
+                "question" : "Onderhoudssamenvatting   ",
+                "answers" : ["Wekelijks: stof/afnemen. Per kwartaal: beslag checken, rails/pivots reinigen. Jaarlijks: olie/wax (indien van toepassing), steen resealen, algemene inspectie."],
+              },
+              
+            ],
+          },
+          "FAQ":{
+            "ProductsAndMaterials" : {
+              "title" : "Products & Materials",
+              "faqs" : [
+                {
+                  "question" : "Welke producten maken jullie?",
+                  "answer" : "Deuren op maat … en boiserie (decoratieve wandbekleding).",
+                },
+                {
+                  "question" : "Welke materialen/afwerkingen zijn er?",
+                  "answer" : "Massief hout, fineer, lak (RAL), glas, natuursteen, keramiek/porselein; beslag in zwart, rvs, brons, PVD.",
+                },
+                {
+                  "question" : "Bieden jullie wandvlakke (rasomuro) deuren?",
+                  "answer" : "Ja — verdekte kozijnen en beslag voor een naadloos, coplanar effect.",
+                },
+                {
+                  "question" : "Hoe ver te personaliseren?",
+                  "answer" : "Maten, afwerkingen, glas, kanten, beslag; ultra-maatwerk via offertepad.",
+                },
+                {
+                  "question" : "Zijn natuurlijke variaties normaal?",
+                  "answer" : "Ja — houtnerf/kleur en steenadering variëren.",
+                },
+                {
+                  "question" : "Kunnen jullie een bestaande afwerking benaderen?",
+                  "answer" : "We kunnen dicht benaderen met een fysiek monster; exacte match niet gegarandeerd.",
+                },
+                {
+                  "question" : "Leveren jullie ook beslag?",
+                  "answer" : "Ja — scharnieren, pivots, schuiven, grepen, profielen volgens specificatie; derden in overleg.",
+                },
+              ],
+            },
+            "TechnicalAndSiteRequirement" : {
+              "title" : "Technical & Site Requirement",
+              "faqs" : [
+                {
+                  "question":"Algemene werkeisen?",
+                  "answer" : "Sparingen haaks/vlak/waterpas; ondergronden droog; 15–25 °C & 40–60% RV; vrije toegang; 230 V aanwezig.",
+                },
+                {
+                  "question":"Pivot-eisen & vloerverwarming",
+                  "answer" : "Plafond schroefbaar; waar nodig multiplex achterhout; boren ≥4 cm; 25×25 cm leidingvrije zones (pivot & zijpanelen).",
+                },
+                {
+                  "question":"Plinten/vloerafwerking",
+                  "answer" : "Mogelijk inzagen; kies vlakke plakplint om te vermijden; schilder werkt zaagsnede af.",
+                },
+                {
+                  "question":"Toleranties",
+                  "answer":"±1–2 mm componenten; handgemaakte panelen tot ±4 mm.",
+                },
+              ],
+            },
+          },
+        },
       },
       // ======privecyPolicy=========
       "privecyPolicy": {
@@ -2867,6 +3323,235 @@ const resources = {
         "btnText1": "Kollektion",
         "btnText2": "Gestalten Sie Ihre eigene",
       },
+      // ====services=====
+      "Service" : {
+        "banner" : {
+          "title" : "Service & Terms",
+          "desc" :"Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
+        },
+        "ServiceTab" : {
+          "OrderProcess" : {
+            "title" : "Alles über unseren Bestellprozess (Niederlande) ",
+            "desc" : " Unsere Produkte werden auf Bestellung gefertigt. Wir folgen einer festen Abfolge, damit Zeitpläne verlässlich bleiben.",
+            "faqs":[
+              {
+                "question":"Beratung & Angebot",
+                "answer" : " Wir besprechen Umfang, Materialien, Oberflächen und Montage. Sie erhalten ein schriftliches Angebot mit Preis und voraussichtlicher Lieferzeit. Angebote sind 30 Tage gültig, außer bei ausgewiesener Materialvolatilität.",
+              },
+              {
+                "question":" Aufmaß",
+                "answer" : "Sie können Maße bereitstellen oder unseren kostenpflichtigen Aufmaßservice nutzen (empfohlen). Bei Eigenmaßen übernehmen Sie die Verantwortung für die Maßgenauigkeit.",
+              },
+              {
+                "question":"Technische Zeichnungen & Freigabe",
+                "answer" : "Wir erstellen Zeichnungen/Spezifikationen. Die Produktion beginnt erst nach schriftlicher Freigabe aller Zeichnungen, Oberflächen und Beschläge.",
+              },
+              {
+                "question":"Zahlung",
+                "answer" : "Wir arbeiten mit 100 % Vorkasse. Siehe „Zahlungsprozess“ für akzeptierte Methoden (iDEAL, Karten, Apple Pay, PayPal, SEPA) und Rechnungsdetails.",
+              },
+              {
+                "question":"Produktion & Qualitätskontrolle",
+                "answer" : "Nach Zahlung + Freigabe reservieren wir Ihren Produktionsslot. Die Lieferzeit startet. Jedes Teil wird auf Oberfläche, Passung und Funktion geprüft.",
+              },
+              {
+                "question":"Vorab-Terminierung der Lieferung",
+                "answer" : "Nahe Fertigstellung schlagen wir ein Liefer-/Montagefenster vor. Sie bestätigen Zugang, Parken, Aufzug-/Treppendetails und Baustellenbereitschaft.",
+              },
+              {
+                "question":"Lieferung / Montage & Übergabe",
+                "answer" : "Wir liefern oder liefern-und-montieren (nur NL). Nach der Montage führen wir Funktionsprüfungen durch und geben Pflegehinweise.",
+              },
+              {
+                "question":"Änderungswünsche",
+                "answer" : "Jede Änderung nach Freigabe (Oberfläche/Maß/Beschlag) kann Preis und Zeitplan beeinflussen. Arbeiten werden nach vollständiger Zahlung der Änderungsbestellung fortgesetzt."
+              },
+              {
+                "question":"Stornierungen",
+                "answer" : "Maßanfertigungen sind vom Widerrufsrecht ausgenommen. Stornierungen nach Zahlung sind nicht möglich, außer schriftlich vor Produktionsstart vereinbart (Verwaltungs-/Designkosten fallen an).",
+              },
+            ]
+          },
+          "Delivery":{
+            "title" : "Lieferung (Lieferung & Montage in den Niederlanden) ",
+            "desc" : "Wir liefern in alle niederländischen Provinzen mit eigenen Teams oder verlässlichen Partnern.",
+            "faqs" :[
+              {
+                "question":"Lieferoptionen",
+                "answers" : [
+                  "Nur Anlieferung: Bordstein/Erdgeschoss bis zum ersten zugänglichen Punkt.",
+                  " White-Glove: Zwei-Personen-Lieferung bis zum Wunschraum (sofern Zugang möglich). Verpackungsentsorgung auf Wunsch.",
+                ],
+              },
+              {
+                "question":"Terminierung & Zugang ",
+                "answers" : [
+                  "Wir vereinbaren ein Datum + Zeitfenster. Sie sorgen für sicheren Zugang (Türbreiten, Aufzüge, Treppen), ggf. Parkgenehmigungen und freie Wege. Bei fehlendem Zugang fallen erneute Liefer- und/oder Zusatzhandlingkosten an.",
+                ],
+              },
+              {
+                "question":"Verpackung & Schutz",
+                "answers" : [
+                  "Türen und Paneele werden mit vollständigem Schaumschutz und Kantenschonern versendet. Zubehör in Markenhüllen/-boxen.",
+                ],
+              },
+              {
+                "question":"Transportschäden",
+                "answers" : [
+                  "Sichtbare Schäden: sofort auf dem Lieferschein vermerken und vor dem Auspacken fotografieren.",
+                  " Verdeckte Schäden: innerhalb von 24 Stunden schriftlich melden mit Fotos und Auftragsnummer.",
+                ],
+              },
+              {
+                "question":"Gefahrübergang ",
+                "answers" : [
+                  "Die Gefahr geht bei Lieferung über. Bei White-Glove/Montage nach Platzierung im vereinbarten Raum/Bereich.",
+                ],
+              },
+              {
+                "question":"Montage (optional, nur NL)",
+                "answers" : [
+                  "  Inklusive (sofern nicht anders angegeben): ",
+                  " Einbau von durch Zebrano gelieferten Rahmen/Blatt/Beschlägen.",
+                  "Ausrichtung, Fugen, Funktionsprüfungen (Dreh/Schiebe/Pivot).",
+                  "Basisabdichtung/-finish, wo spezifiziert. Nicht enthalten: konstruktive Änderungen, Elektrik, Putz-/Malerarbeiten, Fremdmaterialien, Arbeiten außerhalb der vereinbarten Öffnung.",
+                ],
+              },
+              {
+                "question":"Montageort bereit (erforderlich)",
+                "answers" : [
+                  "Fertige Öffnungen innerhalb Toleranz, Wände lot/eben.",
+                  " Innenklima: 15–25 °C und 40–60 % rF.",
+                  "Untergründe trocken; Bereich sauber & zugänglich; 230 V vorhanden. Zusatztermine wegen Nicht-Bereitschaft sind kostenpflichtig und vor Neuplanung zu zahlen.",
+                ],
+              },
+            ],
+          },
+          "Guarantee" : {
+            "title" : "Garantie (Niederlande)",
+            "desc" : "Wir stehen hinter unserer Handwerkskunst.",
+            "faqs" : [
+              {
+                "question" : "Dauer  ",
+                "answers" : [
+                  "2 Jahre ab Lieferdatum.",
+                ],
+              },
+              {
+                "question" : "Abdeckung",
+                "answers" : [
+                  "Herstellungsfehler, strukturelle Integrität, Beschlagfunktion, Furnierverklebung/-laminierung und Werksoberflächen gemäß Spezifikation.",
+                ],
+              },
+              {
+                "question" : "Nicht abgedeckt",
+                "answers" : [
+                  "Verschleiß, Fehlgebrauch/Schlag, Wassereintritt, abnormales Klima, natürliche Variationen, Verzug/Verformung durch Klima, Fremdmontage/-änderungen, Fremdbeschläge.",
+                ],
+              },
+              {
+                "question" : "Toleranzen",
+                "answers" : [
+                  "Branchenübliche Toleranzen (typ. ±1–2 mm; handgefertigte Paneele bis ±4 mm).",
+                ],
+              },
+              {
+                "question" : "Reklamationsablauf",
+                "answers" : [
+                  "Mailen Sie Fotos, Beschreibung, Auftrags-/Rechnungsnummer. Eine Vor-Ort-Prüfung kann erfolgen. Abhilfe nach unserem Ermessen: Reparatur, Ersatz oder Erstattung des fehlerhaften Teils. Folgekosten ausgeschlossen.",
+                ],
+              }
+            ],
+          },
+          "CareAndMaintenance": {
+            "title" : "Pflege & Wartung",
+            "desc" : "Regelmäßige Pflege schützt Oberfläche und Funktion. Verwenden Sie weiche Tücher und pH-neutrale Reiniger, sofern nicht anders angegeben.",
+            "faqs" : [
+              {
+                "question" : "Glas  ",
+                "answers" : ["Mit Glasreiniger/milder Seife reinigen; fusselfrei trocknen. Keine Schleifmittel/Klingen auf strukturiertem Glas. Folien/Haftung vorher prüfen."],
+              },{
+                "question" : "Massivholz",
+                "answers" : ["Wöchentlich entstauben; leicht feucht wischen; 40–60 % rF halten; jährlich ölen/wachsen falls vorgesehen; vor Sonne/Hitze schützen."],
+              },{
+                "question" : "Holzfurnier",
+                "answers" : ["Weiches trocken/leicht feuchtes Tuch; nicht schleifen; geölt: jährlich leicht ölen; lackiert: nur milde Reiniger. Natürliche Variation normal."],
+              },{
+                "question" : "Stein & Keramik",
+                "answers" : [" pH-neutraler Reiniger; keine Säuren/Basen; Verschüttetes sofort wischen; Naturstein jährlich versiegeln; Keramik meist ohne Versiegelung."],
+              },{
+                "question" : "Beschläge & Metall",
+                "answers" : [" Trocken/leicht feucht wischen; keine Schleifmittel/Lösungsmittel; leicht schmieren 6–12 Mon.; sichtbare Schrauben nachziehen; verdeckte Mechanik nicht verstellen. Patina ist normal."],
+              },{
+                "question" : "Dreh- & Pivot-Türen — Tipps",
+                "answers" : ["Nicht gegen Anschläge drücken; keine Last an Griffen aufhängen; Boden/Schienen sauber halten."],
+              },{
+                "question" : "Wartungsübersicht",
+                "answers" : ["Wöchentlich: stauben/wischen. Vierteljährlich: Beschläge prüfen, Schienen/Pivots reinigen. Jährlich: ölen/wachsen (falls zutreffend), Stein nachversiegeln, Gesamtcheck."],
+              },
+              
+            ],
+          },
+          "FAQ":{
+            "ProductsAndMaterials" : {
+              "title" : "Products & Materials",
+              "faqs" : [
+                {
+                  "question" : "Welche Produkte stellen Sie her?",
+                  "answer" : "Maßgefertigte Türen … und Boiserie (dekorative Wandverkleidung).",
+                },
+                {
+                  "question" : "Welche Materialien/Oberflächen gibt es?",
+                  "answer" : "Massivholz, Furnier, Lack (RAL), Glas, Naturstein, Keramik/Porzellan; Beschläge in Schwarz, Edelstahl, Bronze, PVD.",
+                },
+                {
+                  "question" : "Bieten Sie wandbündige (Rasomuro) Türen an?",
+                  "answer" : "Ja — verdeckte Rahmen und Beschläge für einen nahtlosen, coplanaren Look.",
+                },
+                {
+                  "question" : "Wie individuell sind Ihre Türen?",
+                  "answer" : "Maße, Oberflächen, Glas, Kanten, Beschläge; Ultra-Custom über Angebotsprozess.",
+                },
+                {
+                  "question" : "Sind natürliche Variationen normal?",
+                  "answer" : "Ja — Holzmaserung/Farbe und Steinäderung variieren.",
+                },
+                {
+                  "question" : "Können Sie eine bestehende Oberfläche anpassen?",
+                  "answer" : "Wir können anhand eines Musters nahekommen; exakte Übereinstimmung nicht garantiert.",
+                },
+                {
+                  "question" : "Liefern Sie Beschläge?",
+                  "answer" : "Ja — Scharniere, Pivots, Schiebeläufe, Griffe, Dichtungen gem. Spez.; Drittanbieter nach Vereinbarung.",
+                },
+              ],
+            },
+            "TechnicalAndSiteRequirement" : {
+              "title" : "Technical & Site Requirement",
+              "faqs" : [
+                {
+                  "question":"Allgemeine Baustellenanforderungen?",
+                  "answer" : "Öffnungen recht/lot/eben; Untergründe trocken; 15–25 °C & 40–60 % rF; freier Zugang; 230 V vorhanden.",
+                },
+                {
+                  "question":"Pivot-Anforderungen & FBH",
+                  "answer" : "Decke verschraubbar; ggf. Sperrholz hinterlegt; bohren ≥4 cm; 25×25 cm leitungsfreie Zonen (Pivot & Seitenteile).",
+                },
+                {
+                  "question":"Sockel/Bodenbeläge",
+                  "answer" : "Evtl. Ausschnitt nötig; flache Leisten wählen; Maler schließt Schnittkanten.",
+                },
+                {
+                  "question":"Toleranzen",
+                  "answer":"±1–2 mm Bauteile; handgefertigte Paneele bis ±4 mm.",
+                },
+              ],
+            },
+          },
+          
+        },
+      },
+      
       // ======privecyPolicy=========
       "privecyPolicy": {
         "header": {

@@ -1,5 +1,6 @@
 import React from 'react'
 import FAQSectionTwo from '../../commonComponent/FAQSectionTwo';
+import { useTranslation } from 'react-i18next';
 
 
 const faqs = [
@@ -64,15 +65,17 @@ const faqs = [
 ];
 
 const CareNmaintaince = () => {
+  const { t, i18n } = useTranslation();
+      const faqsArray = t("Service.ServiceTab.CareAndMaintenance.faqs", { returnObjects: true });
   return (
     <section id="care_N_maintaince">
       <div className="wrapper py-5 2xl:pl-32">
         {/* heading */}
         <div className='pt-10 pb-6'>
-          <h2 className='text-4xl mb-5'>Care & Maintenance  </h2>
-          <p>Regular care protects the finish and function. Always use soft cloths and <b>pH-neutral</b> cleaners unless noted. </p>
+          <h2 className='text-4xl mb-5'> {t("Service.ServiceTab.CareAndMaintenance.title")} </h2>
+          <p>{t("Service.ServiceTab.CareAndMaintenance.desc")}</p>
         </div>
-        <FAQSectionTwo faqs={faqs} />
+        <FAQSectionTwo faqs={faqsArray} />
         
       </div>
     </section>

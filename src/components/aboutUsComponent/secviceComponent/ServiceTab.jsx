@@ -7,7 +7,12 @@ import Guarantee from './Guarantee';
 import OrderProcess from './OrderProcess';
 import PaymentProcess from './PaymentProcess';
 
+import { useTranslation } from 'react-i18next';
+
 const ServiceTab = () => {
+    const { t, i18n } = useTranslation();
+    const faqsArray = t("Service.ServiceTab.Guarantee.faqs", { returnObjects: true });
+
     const [activeTab, setActiveTab] = useState("OrderProcess");
     const contentRef = useRef(null);
     const tabs = [
@@ -19,19 +24,19 @@ const ServiceTab = () => {
         { key: "FAQ", label: "FAQ", component: <FAQ /> },
     ];
     useEffect(() => {
-    if (contentRef.current) {
-      gsap.fromTo(
-        contentRef.current,
-        { autoAlpha: 0, y: 30 },
-        { autoAlpha: 1, y: 0, duration: 0.6, ease: "power3.out" }
-      );
-    }
-  }, [activeTab]);
+        if (contentRef.current) {
+            gsap.fromTo(
+                contentRef.current,
+                { autoAlpha: 0, y: 30 },
+                { autoAlpha: 1, y: 0, duration: 0.6, ease: "power3.out" }
+            );
+        }
+    }, [activeTab]);
     return (
         <>
             <section id="serviceTab">
                 <div className="wrapper w-full h-auto p-5 md:p-10 lg:p-14">
-                    
+
 
                     <div className="navTab w-full  flex justify-center gap-5 flex-wrap [&>button]:px-5 [&>button]:py-2 [&>button]:border [&>button]:border-black [&>button]:rounded-full [&>button]:text-xl [&>button]:hover:text-xl hover:[&>button]:bg-colorOne hover:[&>button]:text-bgOne">
                         {

@@ -1,7 +1,11 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection'
+import { useTranslation } from "react-i18next";
 
 const OrderProcess = () => {
+  const { t, i18n } = useTranslation();
+  const faqsArray = t("Service.ServiceTab.OrderProcess.faqs", { returnObjects: true });
+  
   const title = "";
   const faqs = [
     {
@@ -43,15 +47,15 @@ const OrderProcess = () => {
   ]
   return (
     <>
-      <section id="orderProcess">
+      <section key={i18n.language} id="orderProcess">
         <div className="wrapper py-5 xl:px-32">
 
           <div className='pt-10 pb-6'>
-            <h2 className='text-4xl mb-5'>Everything About Our Order Process (Netherlands) </h2>
-            <p>Our products are made to order. We follow a fixed sequence so timelines stay reliable. </p>
+            <h2 className='text-4xl mb-5'>{t("Service.ServiceTab.OrderProcess.title")} </h2>
+            <p>{t("Service.ServiceTab.OrderProcess.desc")}  </p>
           </div>
 
-          <FAQSection title={title} faqs={faqs} />
+          <FAQSection title={title} faqs={faqsArray} />
 
         </div>
       </section>

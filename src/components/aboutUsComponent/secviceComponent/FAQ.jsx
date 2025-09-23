@@ -7,8 +7,12 @@ import LeadTimesScheduling from './LeadTimesScheduling';
 import DeliveryAndInstallation from './DeliveryAndInstallation';
 import WarrantyAftercare from './WarrantyAftercare';
 import OrderReturnsSupports from './OrderReturnsSupports';
+import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
+    const { t, i18n } = useTranslation();
+    const faqsArray = t("Service.ServiceTab.Guarantee.faqs", { returnObjects: true });
+
     const [activeTab, setActiveTab] = useState("ProductsNmaterials");
     const contentRef = useRef(null);
     const tabs = [
@@ -32,7 +36,7 @@ const FAQ = () => {
                             <button
                                 key={tab.key}
                                 onClick={() => setActiveTab(tab.key)}
-                                 className={`${activeTab === tab.key ? "text-green-500 font-semibold border-b-black" : "text-colorOne border-b-slate-500"}`}
+                                className={`${activeTab === tab.key ? "text-green-500 font-semibold border-b-black" : "text-colorOne border-b-slate-500"}`}
                             >
                                 {tab.label}
                             </button>

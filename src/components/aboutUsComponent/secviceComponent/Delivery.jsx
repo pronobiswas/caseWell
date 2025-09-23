@@ -1,9 +1,7 @@
 import React, { useRef, useState } from 'react'
 import FAQSection from '../../commonComponent/FAQSection'
 import FAQSectionTwo from '../../commonComponent/FAQSectionTwo';
-
-
-
+import { useTranslation } from "react-i18next";
 
 const faqs = [
   {
@@ -61,16 +59,18 @@ const faqs = [
 
 
 const Delivery = () => {
+  const { t, i18n } = useTranslation();
+    const faqsArray = t("Service.ServiceTab.Delivery.faqs", { returnObjects: true });
 
   return (
     <>
       <div className='py-5 2xl:pl-32'>
 
         <div className='pt-10 pb-6'>
-          <h2 className='text-4xl mb-5'>Delivery (Delivery & Installation in the Netherlands) </h2>
-          <p>We deliver to <b>all Dutch provinces</b> using in-house teams or trusted partners. </p>
+          <h2 className='text-4xl mb-5'>{t("Service.ServiceTab.Delivery.title")}</h2>
+          <p>{t("Service.ServiceTab.Delivery.desc")}</p>
         </div>
-        <FAQSectionTwo faqs={faqs} />
+        <FAQSectionTwo faqs={faqsArray} />
       </div>
 
 

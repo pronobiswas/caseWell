@@ -1,8 +1,6 @@
 import React from 'react'
 import FAQSectionTwo from '../../commonComponent/FAQSectionTwo';
-
-
-
+import { useTranslation } from 'react-i18next';
 
 const title = "";
 const faqs = [
@@ -34,22 +32,24 @@ const faqs = [
       `Email photos, description, order/invoice number. We may inspect on site. Remedy is at our discretion: repair, replacement, or refund of the defective item. Consequential costs are excluded.`
     ],
   },
-  
+
 ];
 
 const Guarantee = () => {
+  const { t, i18n } = useTranslation();
+  const faqsArray = t("Service.ServiceTab.Guarantee.faqs", { returnObjects: true });
   return (
     <>
       <section id="guarantee">
         <div className="wrapper py-5 2xl:pl-32">
           {/* heading */}
           <div className='pt-10 pb-6'>
-            <h2 className='text-4xl mb-5'>Guarantee (Netherlands) </h2>
-            <p className='mb-0'>We stand behind our craftsmanship.</p>
+            <h2 className='text-4xl mb-5'>{t("Service.ServiceTab.Guarantee.title")}</h2>
+            <p className='mb-0'>{t("Service.ServiceTab.Guarantee.desc")}</p>
           </div>
-          <FAQSectionTwo faqs={faqs} title={title} />
-          
-          
+          <FAQSectionTwo faqs={faqsArray} title={title} />
+
+
         </div>
       </section>
     </>

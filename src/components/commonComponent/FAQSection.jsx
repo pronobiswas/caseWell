@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../../index.css';
+import { useTranslation } from "react-i18next";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText);
+// i18n.language
 
 const FAQSection = ({
     title="",
@@ -21,6 +23,8 @@ const FAQSection = ({
         },
     ]
 }) => {
+
+    const { t, i18n } = useTranslation();
 
     const [openIndex, setOpenIndex] = useState(null);
     const titleRef = useRef(null);
@@ -46,9 +50,9 @@ const FAQSection = ({
     
     
         return () => ctx.revert();
-      }, []);
+      }, [i18n.language]);
     return (
-        <section className="w-full p-6">
+        <section key={i18n.language}  className="w-full p-6">
             <h2 ref={titleRef} className="text-3xl  mb-8 text-right">{title}</h2>
             <div className="space-y-4">
                 {faqs.map((faq, index) => (

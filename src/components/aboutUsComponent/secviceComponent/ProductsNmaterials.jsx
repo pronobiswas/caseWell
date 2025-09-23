@@ -1,9 +1,16 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection'
+import { useTranslation } from 'react-i18next';
 
 const ProductsNmaterials = () => {
-    const title="Products & Materials";
-    const faqs = [
+  const { t, i18n } = useTranslation();
+  const faqsArray = t("Service.ServiceTab.FAQ.TechnicalAndSiteRequirement.faqs", { returnObjects: true });
+  console.log(faqsArray);
+  
+
+  
+  const title = "Products & Materials";
+  const faqs = [
     {
       question: "What products do you make?",
       answer: " Made-to-order doors (pivot, sliding, hinged, flush-to-wall/rasomuro), wall partitions (fixed/movable; glass/wood), and boiserie (decorative wall panelling).",
@@ -35,7 +42,7 @@ const ProductsNmaterials = () => {
   ]
   return (
     <div>
-        <FAQSection title={title} faqs={faqs} />
+      <FAQSection title={title} faqs={faqsArray} />
     </div>
   )
 }
