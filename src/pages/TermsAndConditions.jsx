@@ -116,427 +116,226 @@ const TermsAndConditions = () => {
               </article>
               {/* ====article5==== */}
               <article>
-                <h2>Right of Withdrawal / Termination of the Agreement </h2>
+                <h2>{t("TermsAndConditions.RightOfWithdrawal.title")}</h2>
                 <ul>
                   <li>
-                    1. Most products manufactured and/or supplied by Zebrano
-                    Studio are <b>custom-made</b> and not prefabricated,
-                    including at least products made in Zebrano Studio’s
-                    factory, such as tables, coffee tables, side tables, bar
-                    tables, garden tables, cabinets, TV units, upholstered
-                    furniture, and made-to-measure wall shelves. The{" "}
-                    <b>right of withdrawal does not apply</b> to these products.
-                    They cannot be returned.
+                    {t("TermsAndConditions.RightOfWithdrawal.text1")}
                   </li>
                   <li>
-                    2. If the customer wishes to terminate the agreement without
-                    a breach having occurred and Zebrano Studio agrees, the
-                    agreement may be terminated by mutual consent. In that case,
-                    Zebrano Studio is entitled to compensation for damage,
-                    including loss suffered and lost profit. Unless agreed
-                    otherwise, the compensation amounts to 30% of the purchase
-                    price, or 50% if at the time of termination by mutual
-                    consent the customer has already been informed that
-                    (partial) delivery can take place.
+                    {t("TermsAndConditions.RightOfWithdrawal.text2")}
                   </li>
                   <li>
-                    3. If Zebrano Studio collects the product from the consumer
-                    at the consumer’s request, the consumer bears the costs.
-                    These are <em>€95.00 including VAT</em> for addresses within
-                    the Benelux. At the time of collection, the product must be
-                    properly packaged and ready behind the first threshold. If
-                    not, the product will not be taken.
+                    {t("TermsAndConditions.RightOfWithdrawal.text3")}
                   </li>
                   <li>
-                    4. The purchase amount will be refunded after Zebrano Studio
-                    has inspected the product and found it to be complete,
-                    unused, and undamaged.
+                    {t("TermsAndConditions.RightOfWithdrawal.text4")}
                   </li>
                 </ul>
               </article>
               {/* =====article6====== */}
               <article className="pb-7">
-                <h2>Intellectual Property </h2>
+                <h2>{t("TermsAndConditions.IntellectualProperty.title")}</h2>
                 <p className="pl-5">
-                  1. Unless agreed otherwise in writing, Zebrano Studio retains
-                  the copyrights and all intellectual property rights to offers
-                  made, and to designs, images, drawings, (prototype) models,
-                  and the like provided by it. The customer may not reproduce,
-                  publish, exploit, or exhibit material belonging to Zebrano
-                  Studio on which intellectual property rights rest without
-                  Zebrano Studio’s permission.
+                  {t("TermsAndConditions.IntellectualProperty.text1")}
                 </p>
               </article>
               {/* =====article7====== */}
               <article>
-                <h2>Delivery Time </h2>
+                <h2>{t("TermsAndConditions.DeliveryTime.title")}</h2>
                 <ul>
                   <li>
-                    1. The delivery time and/or execution period is determined
-                    by <i>Zebrano Studio</i> <strong>approximately. </strong>
+                    {t("TermsAndConditions.DeliveryTime.text1")}
                   </li>
                   <li>
-                    2. In determining the delivery time and/or execution period,
-                    Zebrano Studio assumes it can perform the assignment under
-                    the circumstances known to it at that time.
+                    {t("TermsAndConditions.DeliveryTime.text2")}
                   </li>
                   <li>
-                    3. The delivery time and/or execution period commences when
-                    agreement has been reached on all commercial and technical
-                    details, all necessary information is in Zebrano Studio’s
-                    possession and, insofar as agreed, the down payment has been
-                    received.
+                    {t("TermsAndConditions.DeliveryTime.text3")}
                   </li>
                   <li>
-                    4. If the anticipated delivery time and/or execution period
-                    is exceeded, Zebrano Studio will be granted an additional
-                    reasonable period to still deliver.
+                    {t("TermsAndConditions.DeliveryTime.text4")}
                   </li>
                   <li>
-                    5. Exceeding the delivery time and/or execution period never
-                    entitles the customer to damages from Zebrano Studio.
+                    {t("TermsAndConditions.DeliveryTime.text5")}
                   </li>
                 </ul>
               </article>
               {/* =====article8====== */}
               <article>
-                <h2> Transport and Damage upon Delivery </h2>
+                <h2>{t("TermsAndConditions.TransportAndDamage.title")}</h2>
                 <ul>
                   <li>
-                    1. Unless agreed otherwise, the agreement includes transport
-                    of the products by Zebrano Studio, which bears the risk of
-                    damage and loss during transport. If the products are
-                    delivered by a professional carrier, Zebrano Studio will
-                    ensure adequate insurance.
+                    {t("TermsAndConditions.TransportAndDamage.text1")}
                   </li>
                   <li>
-                    2. Zebrano Studio is not liable for damage occurring{" "}
-                    <b>from the first door/threshold</b> of the delivery address
-                    onwards. We are, however, happy to help place the product
-                    inside.
+                    {t("TermsAndConditions.TransportAndDamage.text2")}
                   </li>
                   <li>
-                    3. f damage is found upon delivery, the customer must report
-                    this to Zebrano Studio within <b>two working days</b> of
-                    delivery; otherwise, the customer is deemed to have received
-                    the delivered products without damage.
+                    {t("TermsAndConditions.TransportAndDamage.text3")}
                   </li>
                 </ul>
               </article>
               {/* =====article9====== */}
               <article>
-                <h2>Delivery </h2>
+                <h2>{t("TermsAndConditions.Delivery.title")}</h2>
                 <ul>
                   <li>
-                    1. The customer must ensure that the place of delivery is
-                    easily accessible and that everything within their power is
-                    done to enable a smooth delivery. The customer must also
-                    ensure that the place of delivery can be properly secured.
+                    {t("TermsAndConditions.Delivery.text1")}
                   </li>
                   <li>
-                    2. The customer shall inform Zebrano Studio, prior to
-                    entering into the agreement, of special circumstances at the
-                    delivery location that make the use of aids—such as a
-                    (removal) lift or crane—necessary. The customer must also
-                    ensure that required approvals (permits, etc.) and
-                    information essential to the work (e.g., accessibility of
-                    the delivery location) are provided to Zebrano Studio in
-                    time.
+                    {t("TermsAndConditions.Delivery.text2")}
                   </li>
                   <li>
-                    3. In the event of incorrect or incomplete information from
-                    the customer, the (additional) costs for using special aids
-                    are borne by the customer.
+                    {t("TermsAndConditions.Delivery.text3")}
                   </li>
                   <li>
-                    4. If a (removal) lift or crane is needed, Zebrano Studio
-                    will arrange for its availability at the time of delivery.
-                    The costs are for the customer and must be paid to Zebrano
-                    Studio <b>prior to delivery</b>.
+                    {t("TermsAndConditions.Delivery.text4")}
                   </li>
                   <li>
-                    5. If the customer wishes to arrange a (removal) lift or
-                    crane themselves, Zebrano Studio will deliver the products{" "}
-                    <b>free of charge</b> on the ground floor without assembly.
-                    The customer remains responsible for moving and/or
-                    transporting products via the lift or crane, loading and
-                    unloading the products, and assembling them, as well as for
-                    any damage resulting therefrom.
+                    {t("TermsAndConditions.Delivery.text5")}
                   </li>
                   <li>
-                    6. If the delivery location is not accessible at the time of
-                    delivery—for example because the product dimensions are too
-                    large to reach that place—this is at the customer’s expense
-                    and risk. In that case Zebrano Studio will deliver the
-                    products <b>unassembled</b> on the ground floor.
+                    {t("TermsAndConditions.Delivery.text6")}
                   </li>
                   <li>
-                    7. If the products offered for delivery are not accepted,
-                    other than due to defective delivery, Zebrano Studio will
-                    make a second delivery within a reasonable period.
+                    {t("TermsAndConditions.Delivery.text7")}
                   </li>
                   <li>
-                    8. If it appears upon delivery by Zebrano Studio that
-                    immediate delivery cannot take place due to circumstances
-                    for the customer’s account and risk as described in this
-                    article, and the customer requests a second delivery,Zebrano
-                    Studio may charge additional freight, delivery, and storage
-                    costs to the customer.
+                    {t("TermsAndConditions.Delivery.text8")}
                   </li>
                   <li>
-                    9. If the customer wishes to postpone the delivery date,
-                    this must be communicated to Zebrano Studio no later than{" "}
-                    <b>20 working</b> days prior to the scheduled delivery date.
-                    A later request will be assessed for feasibility and storage
-                    costs will be charged to the customer. Storage costs are{" "}
-                    <b>€25 per week</b> from the original delivery date. For
-                    changes within <b>3 working days</b> prior to the scheduled
-                    delivery date, we charge <b>€75</b> change fees to the
-                    customer, separate from the storage costs mentioned.
+                    {t("TermsAndConditions.Delivery.text9")}
                   </li>
                 </ul>
               </article>
               {/* =====article10===== */}
               <article>
-                <h2>Storage of Products </h2>
+                <h2>{t("TermsAndConditions.StorageOfProducts.title")}</h2>
                 <ul>
                   <li>
-                    1. After refusal or after a second delivery, Zebrano Studio
-                    may charge storage costs and any further damages and costs
-                    to the customer.
+                    {t("TermsAndConditions.StorageOfProducts.text1")}
                   </li>
                   <li>
-                    2. If a second delivery is also not accepted, Zebrano Studio
-                    will demand performance of the agreement, granting the
-                    customer a period of up to 30 days to still take delivery of
-                    the products. If the products are not taken within this
-                    period, Zebrano Studio may dissolve the agreement, with the
-                    customer owing compensation for the damage suffered by
-                    Zebrano Studio.
+                    {t("TermsAndConditions.StorageOfProducts.text2")}
                   </li>
                 </ul>
               </article>
               {/* =====article11===== */}
               <article>
-                <h2>Payment </h2>
+                <h2>{t("TermsAndConditions.Payment.title")} </h2>
                 <ul>
                   <li>
-                    1. Payment is made in euros. Zebrano Studio’s prices state
-                    whether they are inclusive or exclusive of VAT.
+                    {t("TermsAndConditions.Payment.text1")}
                   </li>
                   <li>
-                    2. When entering into an agreement with a consumer, Zebrano
-                    Studio may request a down payment of up to 30% of the
-                    purchase price. For agreements with a business customer,
-                    Zebrano Studio may, before delivering or continuing
-                    performance, require payment of the full purchase price or
-                    security for the customer’s payment obligations.
+                    {t("TermsAndConditions.Payment.text2")}
                   </li>
                   <li>
-                    3. Unless agreed otherwise, the net (remaining) purchase
-                    price must be paid before delivery.
+                    {t("TermsAndConditions.Payment.text3")}
                   </li>
                   <li>
-                    4. If Zebrano Studio performs a delivery under an agreement
-                    in parts, it is entitled to demand payment for each partial
-                    delivery. The customer will receive a partial invoice for
-                    each delivery.
+                    {t("TermsAndConditions.Payment.text4")}
                   </li>
                   <li>
-                    5. The consumer owes statutory interest pursuant to{" "}
-                    <b>Article 6:119 of the Dutch Civil Code</b> over the period
-                    in which they are in default of paying the purchase price.
-                    The business customer owes{" "}
-                    <b>statutory commercial interest (Article 6:119a DCC)</b>{" "}
-                    over the period of default.
+                    {t("TermsAndConditions.Payment.text5")}
                   </li>
                   <li>
-                    6. Without prejudice to paragraph 5, after default occurs
-                    Zebrano Studio will send the consumer a{" "}
-                    <b>payment reminder</b>, demanding payment within{" "}
-                    <b>14 days</b> from the day after the reminder. The consumer
-                    will be informed that extrajudicial collection costs will be
-                    due if payment remains outstanding, stating the amount of
-                    such costs.
+                    {t("TermsAndConditions.Payment.text6")}
                   </li>
                   <li>
-                    7. Zebrano Studio is entitled to proceed to collection of
-                    the amount due without further notice of default and may
-                    engage third parties for collection. In that case, the
-                    customer also owes <b>extrajudicial collection costs</b>,
-                    determined in accordance with the{" "}
-                    <b>
-                      Dutch Act on Standardisation of Extrajudicial Collection
-                      Costs
-                    </b>{" "}
-                    and the related decree.
+                    {t("TermsAndConditions.Payment.text7")}
                   </li>
                   <li>
-                    8. In the event of complaints, the customer is only entitled
-                    to suspend payment of <b>that part</b> of the amount due
-                    which is reasonably proportionate to the nature and
-                    seriousness of the complaint. This does not release the
-                    customer from the obligation to pay the remainder within the
-                    agreed term.
+                    {t("TermsAndConditions.Payment.text8")}
                   </li>
                   <li>
-                    9. Zebrano Studio remains the <strong>owner</strong> of the
-                    products until the customer has paid the total amount due
-                    under the agreement. The customer must handle the products
-                    with care and may not transfer them to third parties, pledge
-                    them, loan them, or remove them (or have them removed) from
-                    the location where they were delivered until the purchase
-                    price and any interest and costs have been paid in full.
+                    {t("TermsAndConditions.Payment.text9")}
                   </li>
                 </ul>
               </article>
               {/* =====article12===== */}
               <article>
-                <h2>Warranty </h2>
+                <h2>{t("TermsAndConditions.Warranty.title")}</h2>
                 <ul>
                   <li>
-                    1. Unless agreed otherwise in writing, Zebrano Studio
-                    warrants the soundness of the delivered products for a
-                    period of <b>2 years</b> after delivery.
+                    {t("TermsAndConditions.Warranty.text1")}
                   </li>
                   <li>
-                    2. For custom-made products, minor deviations in dimensions
-                    are permitted. Zebrano Studio may deviate by <b>2%</b> from
-                    the agreed dimensions, unless expressly agreed otherwise.
+                    {t("TermsAndConditions.Warranty.text2")}
                   </li>
                   <li>
-                    3. The customer must in all cases give Zebrano Studio the
-                    opportunity to remedy any defect. Zebrano Studio’s liability
-                    is limited to <b>repair free of charge</b> of a defective
-                    product or <b>replacement</b> of that product or a part
-                    thereof, at Zebrano Studio’s discretion.
+                    {t("TermsAndConditions.Warranty.text3")}
                   </li>
                   <li>
-                    4. No warranty is given if defects are the result of normal
-                    wear and tear, improper use, lack of or incorrect
-                    maintenance or installation, (dis)assembly, modification, or
-                    repair by the customer or third parties. No warranty is
-                    given on products that were not new at the time of delivery,
-                    showroom models, products or parts covered by a
-                    manufacturer’s warranty, or product-specific characteristics
-                    including the natural behaviour of wood (see also below).
+                    {t("TermsAndConditions.Warranty.text4")}
                   </li>
                   <li>
-                    5. All wooden parts are subject to a <b>limited warranty</b>
-                    covering manufacturing defects only. The{" "}
-                    <b>natural behaviour of wood</b> is excluded as it is not a
-                    defect in the product or production but a characteristic of
-                    the material. “Behaviour of wood” includes expansion,
-                    shrinkage, cracking, and/or warping. The wood used by
-                    Zebrano Studio is sawn and dried to a moisture content of
-                    approximately <b> 8%–12%,</b> making the product suitable
-                    for use in a heated room. Wood remains a natural product and
-                    absorbs/releases moisture. The extent to which this occurs
-                    depends, among other things, on temperature differences and
-                    humidity. Wood will work less if the humidity remains at a
-                    near-constant level; we recommend <b>50%–60%</b> humidity,
-                    typically <b>10% lower in winter</b> and{" "}
-                    <b>10% higher in summer</b>.
+                    {t("TermsAndConditions.Warranty.text5")}
                   </li>
                   <li>
-                    6. The file <b>“Wood Variations and Tips”</b> forms part of
-                    these general terms and will be provided to the customer by
-                    email.
+                    {t("TermsAndConditions.Warranty.text6")}
                   </li>
                   <li>
-                    7. If <b>All-in-house </b> has been purchased at the time of
-                    purchase, the customer applies the associated care products
-                    to the product themselves. This is not performed by Zebrano
-                    Studio.
+                    {t("TermsAndConditions.Warranty.text7")}
                   </li>
                   <li>
-                    8. Zebrano Studio is not responsible for differing
-                    expectations of the customer regarding the upholstery of
-                    seating furniture in materials other than those present in
-                    our showrooms.
+                    {t("TermsAndConditions.Warranty.text8")}
                   </li>
                   <li>
-                    9. Zebrano Studio’s <b>repair voucher</b> covers the repair
-                    of (dry) cracks in wooden furniture manufactured by Zebrano
-                    Studio. Other (repair) services are subject to different
-                    rates to be determined by Zebrano Studio.
+                    {t("TermsAndConditions.Warranty.text9")}
                   </li>
                 </ul>
               </article>
               {/* =====article13===== */}
               <article>
-                <h2> Liability </h2>
+                <h2> {t("TermsAndConditions.Liability.title")} </h2>
                 <ul>
                   <li>
-                    1. The risk of damage rests with Zebrano Studio until
-                    delivery to the customer at the <b>first door/threshold</b>{" "}
-                    of the delivery address, unless expressly agreed otherwise.
+                    {t("TermsAndConditions.Liability.text1")}
                   </li>
                   <li>
-                    2. Zebrano Studio is not liable for damage to walls, frames,
-                    floors, or other goods caused by delivery and/or assembly of
-                    our products.
+                    {t("TermsAndConditions.Liability.text2")}
                   </li>
                   <li>
-                    3. Zebrano Studio is not liable for direct or indirect
-                    damage resulting from defects in the delivered products or
-                    otherwise, nor for delays in delivery, except in cases of
-                    intent or gross negligence on Zebrano Studio’s part.
+                    {t("TermsAndConditions.Liability.text3")}
                   </li>
                   <li>
-                    4. If the customer installs, assembles, etc., products
-                    themselves or has this done by a third party, the customer
-                    and/or third party is responsible for correct installation,
-                    assembly, etc., and everything that goes with it. In such
-                    cases, if something goes wrong during installation/assembly
-                    or if there are imperfections in the result, Zebrano Studio
-                    is not responsible or liable.
+                    {t("TermsAndConditions.Liability.text4")}
                   </li>
                   <li>
-                    5. If Zebrano Studio is liable, it shall never be obliged to
-                    compensate any damage of whatever nature and by whatever
-                    cause exceeding the <b>total amount of the transaction</b>{" "}
-                    between the customer and Zebrano Studio.
+                    {t("TermsAndConditions.Liability.text5")}
                   </li>
                   <li>
-                    6. If Zebrano Studio cannot rely on any exclusion of
-                    liability, its liability is limited to the amount covered by
-                    its liability insurance.
+                    {t("TermsAndConditions.Liability.text6")}
+                  </li>
+                  <li>
+                    {t("TermsAndConditions.Liability.text7")}
+                  </li>
+                  <li>
+                    {t("TermsAndConditions.Liability.text8")}
                   </li>
                 </ul>
               </article>
               {/* =====article14===== */}
               <article>
-                <h2>Complaints </h2>
+                <h2>{t("TermsAndConditions.Complaints.title")}</h2>
                 <ul>
                   <li>
-                    1. Complaints regarding the quality of delivered products or
-                    materials or the performance of the work can only be
-                    asserted by the customer by submitting them to Zebrano
-                    Studio within 2 working days after delivery of the products.
-                    If submission within this period is reasonably not possible,
-                    the period of <b>2 working days</b> applies from the moment
-                    the defect was discovered or reasonably could have been
-                    discovered. The complaint must contain a clear and complete
-                    description of the grievances and observed defects.
+                    {t("TermsAndConditions.Complaints.text1")}
                   </li>
                   <li>
-                    2. The previous paragraph does not affect the shorter period
-                    provided in <b>Article 9</b>.
+                    {t("TermsAndConditions.Complaints.text2")}
                   </li>
                   <li>
-                    3. Wanneer de afnemer tegen het advies van Zebrano Studio in
-                    bepaalde werkzaamheden wil (doen) verrichten of beletten,
-                    is, tenzij schriftelijk vastgelegd, elke klacht hierop
-                    uitgesloten.
+                    {t("TermsAndConditions.Complaints.text3")}
                   </li>
                 </ul>
               </article>
               {/* =====article15===== */}
               <article>
-                <h2> Applicable law</h2>
+                <h2>{t("TermsAndConditions.ApplicableLaw.title")}</h2>
                 <p>
-                  “All agreements to which these terms and conditions apply are subject to Dutch law.”
+                  {t("TermsAndConditions.ApplicableLaw.text")}
                 </p>
               </article>
             </div>

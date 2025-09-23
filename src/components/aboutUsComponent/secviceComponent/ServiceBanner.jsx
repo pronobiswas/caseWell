@@ -21,7 +21,7 @@ const ServiceBanner = () => {
             });
             gsap.from(headingSplit.chars, {
                 yPercent: 100,
-                scale:0.1,
+                scale: 0.1,
                 duration: 1.5,
                 ease: 'power4.out',
                 stagger: {
@@ -61,6 +61,10 @@ const ServiceBanner = () => {
                         Real hands. Real sawdust. Unreal results.
                         From first sketch to final fit, we design, prototype, and build under one
                         roof — so every millimetre lines up and every door feels effortlessly right.
+                    </p>
+                    <p className='hidden'>
+                        Dutch: Echte handen. Echt zaagsel. Onwerkelijke resultaten.Van eerste schets tot eindmontage ontwerpen, prototypen en bouwen wij alles onder één dak – zodat elke millimeter klopt en elke deur perfect aanvoelt.
+                        Echte Hände. Echter Staub. Außergewöhnliche Ergebnisse.Von der ersten Zeichnung bis zum letzten Einbau entstehen Entwurf, Prototyp und Fertigung unter einem Dach – damit jeder Millimeter passt und jede Tür sich vollkommen selbstverständlich anfühlt.
                     </p>
                 </div>
             </section>

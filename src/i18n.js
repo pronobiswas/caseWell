@@ -944,6 +944,113 @@ const resources = {
 
           "text8" : "8. In the event of the customer’s bankruptcy, suspension of payments, or attachment of assets, Zebrano Studio may dissolve the agreement in whole or in part without notice of default.",
         },
+        "RightOfWithdrawal":{
+          "title":"Right of Withdrawal / Termination of the Agreement",
+          "text1":"1. Most products manufactured and/or supplied by Zebrano Studio are custom-made and not prefabricated, including at least products made in Zebrano Studio’s factory, such as tables, coffee tables, side tables, bar tables, garden tables, cabinets, TV units, upholstered furniture, and made-to-measure wall shelves. The right of withdrawal does not apply to these products. They cannot be returned.",
+          "text2":"2. If the customer wishes to terminate the agreement without a breach having occurred and Zebrano Studio agrees, the agreement may be terminated by mutual consent. In that case, Zebrano Studio is entitled to compensation for damage, including loss suffered and lost profit. Unless agreed otherwise, the compensation amounts to 30% of the purchase price, or 50% if at the time of termination by mutual consent the customer has already been informed that (partial) delivery can take place.",
+          "text3":"3. If Zebrano Studio collects the product from the consumer at the consumer’s request, the consumer bears the costs. These are €95.00 including VAT for addresses within the Benelux. At the time of collection, the product must be properly packaged and ready behind the first threshold. If not, the product will not be taken.",
+          "text4":"4. The purchase amount will be refunded after Zebrano Studio has inspected the product and found it to be complete, unused, and undamaged.",
+        },
+        "IntellectualProperty" : {
+          "title" : "Intellectual Property",
+          "text1" : "1. Unless agreed otherwise in writing, Zebrano Studio retains the copyrights and all intellectual property rights to offers made, and to designs, images, drawings, (prototype) models, and the like provided by it. The customer may not reproduce, publish, exploit, or exhibit material belonging to Zebrano Studio on which intellectual property rights rest without Zebrano Studio’s permission.",
+        },
+        "DeliveryTime" : {
+          "title" : "Delivery Time",
+          "text1" : "1. The delivery time and/or execution period is determined by Zebrano Studio approximately.",
+
+          "text2" : "2. In determining the delivery time and/or execution period, Zebrano Studio assumes it can perform the assignment under the circumstances known to it at that time.",
+
+          "text3" : "3. The delivery time and/or execution period commences when agreement has been reached on all commercial and technical details, all necessary information is in Zebrano Studio’s possession and, insofar as agreed, the down payment has been received.",
+
+          "text4" : "4. If the anticipated delivery time and/or execution period is exceeded, Zebrano Studio will be granted an additional reasonable period to still deliver.",
+
+          "text5" : "5. Exceeding the delivery time and/or execution period never entitles the customer to damages from Zebrano Studio.",
+        },
+        "TransportAndDamage" : {
+          "title" : "Transport and Damage upon Delivery",
+          "text1" : "1. Unless agreed otherwise, the agreement includes transport of the products by Zebrano Studio, which bears the risk of damage and loss during transport. If the products are delivered by a professional carrier, Zebrano Studio will ensure adequate insurance.",
+          "text2" : "2. Zebrano Studio is not liable for damage occurring from the first door/threshold of the delivery address onwards. We are, however, happy to help place the product inside.",
+          "text3" : "3. If damage is found upon delivery, the customer must report this to Zebrano Studio within two working days of delivery; otherwise, the customer is deemed to have received the delivered products without damage.",
+        },
+        "Delivery" : {
+          "title" : "Delivery",
+          "text1":"1. The customer must ensure that the place of delivery is easily accessible and that everything within their power is done to enable a smooth delivery. The customer must also ensure that the place of delivery can be properly secured.",
+
+          "text2":"2. The customer shall inform Zebrano Studio, prior to entering into the agreement, of special circumstances at the delivery location that make the use of aids—such as a (removal) lift or crane—necessary. The customer must also ensure that required approvals (permits, etc.) and information essential to the work (e.g., accessibility of the delivery location) are provided to Zebrano Studio in time.",
+
+          "text3":"3. In the event of incorrect or incomplete information from the customer, the (additional) costs for using special aids are borne by the customer.",
+
+          "text4":"4. If a (removal) lift or crane is needed, Zebrano Studio will arrange for its availability at the time of delivery. The costs are for the customer and must be paid to Zebrano Studio prior to delivery.",
+
+          "text5":"5. If the customer wishes to arrange a (removal) lift or crane themselves, Zebrano Studio will deliver the products free of charge on the ground floor without assembly. The customer remains responsible for moving and/or transporting products via the lift or crane, loading and unloading the products, and assembling them, as well as for any damage resulting therefrom.",
+
+          "text6":"6. If the delivery location is not accessible at the time of delivery—for example because the product dimensions are too large to reach that place—this is at the customer’s expense and risk. In that case Zebrano Studio will deliver the products unassembled on the ground floor.",
+
+          "text7":"7. If the products offered for delivery are not accepted, other than due to defective delivery, Zebrano Studio will make a second delivery within a reasonable period.",
+
+          "text8":"8. If it appears upon delivery by Zebrano Studio that immediate delivery cannot take place due to circumstances for the customer’s account and risk as described in this article, and the customer requests a second delivery, Zebrano Studio may charge additional freight, delivery, and storage costs to the customer.",
+
+          "text9":"9. If the customer wishes to postpone the delivery date, this must be communicated to Zebrano Studio no later than 20 working days prior to the scheduled delivery date. A later request will be assessed for feasibility and storage costs will be charged to the customer. Storage costs are €25 per week from the original delivery date. For changes within 3 working days prior to the scheduled delivery date, we charge €75 change fees to the customer, separate from the storage costs mentioned.",
+        },
+        "StorageOfProducts":{
+          "title" : "Storage of Products",
+          "text1" : "1. After refusal or after a second delivery, Zebrano Studio may charge storage costs and any further damages and costs to the customer.",
+          "text2" : "2. If a second delivery is also not accepted, Zebrano Studio will demand performance of the agreement, granting the customer a period of up to 30 days to still take delivery of the products. If the products are not taken within this period, Zebrano Studio may dissolve the agreement, with the customer owing compensation for the damage suffered by Zebrano Studio.",
+        },
+        "Payment" : {
+          "title" : "Payment",
+          "text1" : "1. Payment is made in euros. Zebrano Studio’s prices state whether they are inclusive or exclusive of VAT.",
+          "text2" : "2. When entering into an agreement with a consumer, Zebrano Studio may request a down payment of up to 30% of the purchase price. For agreements with a business customer, Zebrano Studio may, before delivering or continuing performance, require payment of the full purchase price or security for the customer’s payment obligations.",
+          "text3" : "3. Unless agreed otherwise, the net (remaining) purchase price must be paid before delivery.",
+          "text4" : "4. If Zebrano Studio performs a delivery under an agreement in parts, it is entitled to demand payment for each partial delivery. The customer will receive a partial invoice for each delivery.",
+          "text5" : "5. The consumer owes statutory interest pursuant to Article 6:119 of the Dutch Civil Code over the period in which they are in default of paying the purchase price. The business customer owes statutory commercial interest (Article 6:119a DCC) over the period of default.",
+          "text6" : "6. Without prejudice to paragraph 5, after default occurs Zebrano Studio will send the consumer a payment reminder, demanding payment within 14 days from the day after the reminder. The consumer will be informed that extrajudicial collection costs will be due if payment remains outstanding, stating the amount of such costs.",
+          "text7" : "7. Zebrano Studio is entitled to proceed to collection of the amount due without further notice of default and may engage third parties for collection. In that case, the customer also owes extrajudicial collection costs, determined in accordance with the Dutch Act on Standardisation of Extrajudicial Collection Costs and the related decree.",
+          "text8" : "8. In the event of complaints, the customer is only entitled to suspend payment of that part of the amount due which is reasonably proportionate to the nature and seriousness of the complaint. This does not release the customer from the obligation to pay the remainder within the agreed term.",
+          "text9" : "9. Zebrano Studio remains the owner of the products until the customer has paid the total amount due under the agreement. The customer must handle the products with care and may not transfer them to third parties, pledge them, loan them, or remove them (or have them removed) from the location where they were delivered until the purchase price and any interest and costs have been paid in full.",
+        },
+        "Warranty" : {
+          "title" : "Warranty",
+          "text1" : "1. Unless agreed otherwise in writing, Zebrano Studio warrants the soundness of the delivered products for a period of 2 years after delivery.",
+
+          "text2" : "2. For custom-made products, minor deviations in dimensions are permitted. Zebrano Studio may deviate by 2% from the agreed dimensions, unless expressly agreed otherwise.",
+
+          "text3" : "3. The customer must in all cases give Zebrano Studio the opportunity to remedy any defect. Zebrano Studio’s liability is limited to repair free of charge of a defective product or replacement of that product or a part thereof, at Zebrano Studio’s discretion.",
+
+          "text4" : "4. No warranty is given if defects are the result of normal wear and tear, improper use, lack of or incorrect maintenance or installation, (dis)assembly, modification, or repair by the customer or third parties. No warranty is given on products that were not new at the time of delivery, showroom models, products or parts covered by a manufacturer’s warranty, or product-specific characteristics including the natural behaviour of wood (see also below).",
+
+          "text5" : "5. All wooden parts are subject to a limited warranty covering manufacturing defects only. The natural behaviour of wood is excluded as it is not a defect in the product or production but a characteristic of the material. “Behaviour of wood” includes expansion, shrinkage, cracking, and/or warping. The wood used by Zebrano Studio is sawn and dried to a moisture content of approximately 8%–12%, making the product suitable for use in a heated room. Wood remains a natural product and absorbs/releases moisture. The extent to which this occurs depends, among other things, on temperature differences and humidity. Wood will work less if the humidity remains at a near-constant level; we recommend 50%–60% humidity, typically 10% lower in winter and 10% higher in summer.",
+
+          "text6" : "6. The file “Wood Variations and Tips” forms part of these general terms and will be provided to the customer by email.",
+
+          "text7" : "7. If All-in-house has been purchased at the time of purchase, the customer applies the associated care products to the product themselves. This is not performed by Zebrano Studio.",
+
+          "text8" : "8. Zebrano Studio is not responsible for differing expectations of the customer regarding the upholstery of seating furniture in materials other than those present in our showrooms.",
+
+          "text9" : "9. Zebrano Studio’s repair voucher covers the repair of (dry) cracks in wooden furniture manufactured by Zebrano Studio. Other (repair) services are subject to different rates to be determined by Zebrano Studio.",
+        },
+        "Liability" : {
+          "title" : "Liability",
+          "text1" : "1. The risk of damage rests with Zebrano Studio until delivery to the customer at the first door/threshold of the delivery address, unless expressly agreed otherwise.",
+          "text2" : "2. Zebrano Studio is not liable for damage to walls, frames, floors, or other goods caused by delivery and/or assembly of our products.",
+          "text3" : "3. The risk of damage rests with Zebrano Studio until delivery to the customer at the first door/threshold of the delivery address, unless expressly agreed otherwise.",
+          "text4" : "4. Zebrano Studio is not liable for damage to walls, frames, floors, or other goods caused by delivery and/or assembly of our products.",
+          "text5" : "5. Zebrano Studio is not liable for direct or indirect damage resulting from defects in the delivered products or otherwise, nor for delays in delivery, except in cases of intent or gross negligence on Zebrano Studio’s part.",
+          "text6" : "6. If the customer installs, assembles, etc., products themselves or has this done by a third party, the customer and/or third party is responsible for correct installation, assembly, etc., and everything that goes with it. In such cases, if something goes wrong during installation/assembly or if there are imperfections in the result, Zebrano Studio is not responsible or liable.",
+          "text7" : "If Zebrano Studio is liable, it shall never be obliged to compensate any damage of whatever nature and by whatever cause exceeding the total amount of the transaction between the customer and Zebrano Studio.",
+          "text8" : "If Zebrano Studio cannot rely on any exclusion of liability, its liability is limited to the amount covered by its liability insurance."
+        },
+        "Complaints" : {
+          "title" : "Complaints",
+          "text1" : "Complaints regarding the quality of delivered products or materials or the performance of the work can only be asserted by the customer by submitting them to Zebrano Studio within 2 working days after delivery of the products. If submission within this period is reasonably not possible, the period of 2 working days applies from the moment the defect was discovered or reasonably could have been discovered. The complaint must contain a clear and complete description of the grievances and observed defects.",
+          "text2" : "The previous paragraph does not affect the shorter period provided in Article 9.",
+          "text3" : "When the customer wishes to carry out or prevent certain work against the advice of Zebrano Studio, every complaint in this respect is excluded, unless otherwise agreed in writing.",
+        },
+        "ApplicableLaw" : {
+          "title" : "Applicable law",
+          "text" : "“All agreements to which these terms and conditions apply are subject to Dutch law.”"
+        },
       },
 
       // %%%%% FOOTER %%%%%%%
@@ -1910,6 +2017,124 @@ const resources = {
           "text7" : "7. Indien blijkt dat (verdere) uitvoering van de overeenkomst door Zebrano Studio niet mogelijk is wegens overmacht, kan Zebrano Studio de overeenkomst opschorten of ontbinden zonder aansprakelijk te zijn voor schade. Dit laat onverlet dat partijen elkaar voorstellen kunnen doen om de overeenkomst zodanig te wijzigen dat juiste en volledige uitvoering alsnog mogelijk is.",
           
           "text8" : "8. In geval van faillissement, surseance van betaling of beslaglegging van de klant, kan Zebrano Studio de overeenkomst geheel of gedeeltelijk ontbinden zonder ingebrekestelling.",
+        },
+        "RightOfWithdrawal":{
+          "title":"Herroepingsrecht / Beëindiging van de overeenkomst",
+          "text1":"1. De meeste producten die door Zebrano Studio worden vervaardigd en/of geleverd zijn maatwerk en niet prefab. Dit omvat in ieder geval producten die in de fabriek van Zebrano Studio worden gemaakt, zoals tafels, salontafels, bijzettafels, bartafels, tuintafels, kasten, tv-meubels, gestoffeerde meubels en op maat gemaakte wandplanken. Het herroepingsrecht is op deze producten niet van toepassing. Ze kunnen niet worden geretourneerd.",
+
+          "text2":"2. Indien de klant de overeenkomst wenst te beëindigen zonder dat er sprake is van een tekortkoming en Zebrano Studio hiermee instemt, kan de overeenkomst met wederzijds goedvinden worden beëindigd. In dat geval heeft Zebrano Studio recht op schadevergoeding, waaronder geleden verlies en gederfde winst. Tenzij anders overeengekomen bedraagt de vergoeding 30% van de koopprijs, of 50% indien de klant op het moment van beëindiging reeds op de hoogte was gesteld dat (gedeeltelijke) levering kan plaatsvinden.",
+
+          "text3":"3. Indien Zebrano Studio op verzoek van de consument het product ophaalt, zijn de kosten voor de consument. Deze bedragen €95,00 inclusief btw voor adressen binnen de Benelux. Het product moet bij ophaling deugdelijk verpakt en gereed staan achter de eerste drempel. Indien dit niet het geval is, wordt het product niet meegenomen.",
+
+          "text4":"4. Het aankoopbedrag wordt terugbetaald nadat Zebrano Studio het product heeft geïnspecteerd en heeft vastgesteld dat het volledig, ongebruikt en onbeschadigd is.",
+        },
+         "IntellectualProperty" : {
+          "title" : "Intellectueel eigendom",
+          "text1" : "1. Tenzij schriftelijk anders overeengekomen, behoudt Zebrano Studio de auteursrechten en alle intellectuele eigendomsrechten op door haar gedane aanbiedingen en op door haar verstrekte ontwerpen, afbeeldingen, tekeningen, (prototype) modellen en dergelijke. De klant mag zonder toestemming van Zebrano Studio geen materiaal waarop intellectuele eigendomsrechten rusten verveelvoudigen, openbaar maken, exploiteren of tentoonstellen.",
+        },
+        "DeliveryTime" : {
+          "title" : "Levertijd",
+          "text1" : "1. De levertijd en/of uitvoeringstermijn wordt door Zebrano Studio bij benadering vastgesteld.",
+
+          "text2" : "2. Bij het vaststellen van de levertijd en/of uitvoeringstermijn gaat Zebrano Studio uit van de omstandigheden die haar op dat moment bekend zijn.",
+
+          "text3" : "3. De levertijd en/of uitvoeringstermijn gaat in zodra overeenstemming is bereikt over alle commerciële en technische details, alle noodzakelijke informatie in het bezit is van Zebrano Studio en, voor zover overeengekomen, de aanbetaling is ontvangen.",
+
+          "text4" : "4. Indien de verwachte levertijd en/of uitvoeringstermijn wordt overschreden, krijgt Zebrano Studio een aanvullende redelijke termijn om alsnog te leveren.",
+
+          "text5" : "5. Het overschrijden van de levertijd en/of uitvoeringstermijn geeft de klant nooit recht op schadevergoeding door Zebrano Studio.",
+        },
+        "TransportAndDamage" : {
+          "title" : "Transport en schade bij levering",
+          "text1" : "1. Tenzij anders overeengekomen omvat de overeenkomst het transport van de producten door Zebrano Studio, die het risico van schade en verlies tijdens transport draagt. Indien de producten door een professionele vervoerder worden geleverd, zorgt Zebrano Studio voor een passende verzekering.",
+          "text2" : "2. Zebrano Studio is niet aansprakelijk voor schade die ontstaat vanaf de eerste deur/drempel van het afleveradres. Wij helpen echter graag met het plaatsen van het product binnen.",
+          "text3" : "3. Indien bij levering schade wordt geconstateerd, dient de klant dit binnen twee werkdagen na levering aan Zebrano Studio te melden; anders wordt de klant geacht de geleverde producten zonder schade te hebben ontvangen.",
+        },
+        "Delivery" : {
+          "title" : "Levering",
+          "text1":"1. De klant moet ervoor zorgen dat de plaats van levering goed bereikbaar is en dat alles binnen zijn macht wordt gedaan om een vlotte levering mogelijk te maken. De klant moet er tevens voor zorgen dat de plaats van levering deugdelijk kan worden beveiligd.",
+
+          "text2":"2. De klant dient Zebrano Studio vóór het aangaan van de overeenkomst te informeren over bijzondere omstandigheden op de plaats van levering die het gebruik van hulpmiddelen – zoals een (verhuis)lift of kraan – noodzakelijk maken. Ook moet de klant ervoor zorgen dat vereiste toestemmingen (vergunningen e.d.) en essentiële informatie (bijv. bereikbaarheid van de locatie) tijdig aan Zebrano Studio worden verstrekt.",
+
+          "text3":"3. Bij onjuiste of onvolledige informatie van de klant zijn de (extra) kosten voor het gebruik van speciale hulpmiddelen voor rekening van de klant.",
+
+          "text4":"4. Indien een (verhuis)lift of kraan nodig is, zorgt Zebrano Studio voor de beschikbaarheid hiervan op het moment van levering. De kosten zijn voor de klant en moeten vóór levering aan Zebrano Studio worden voldaan.",
+
+          "text5":"5. Indien de klant zelf een (verhuis)lift of kraan wenst te regelen, levert Zebrano Studio de producten kosteloos op de begane grond, zonder montage. De klant blijft verantwoordelijk voor het verplaatsen en/of vervoeren van de producten via lift of kraan, het laden en lossen, en de montage, evenals voor eventuele daaruit voortvloeiende schade.",
+
+          "text6":"6. Indien de plaats van levering op het moment van levering niet toegankelijk is – bijvoorbeeld omdat de productafmetingen te groot zijn om die plaats te bereiken – is dit voor rekening en risico van de klant. In dat geval levert Zebrano Studio de producten ongemonteerd op de begane grond.",
+
+          "text7":"7. Indien de aangeboden producten niet worden geaccepteerd, anders dan wegens een gebrekkige levering, zal Zebrano Studio binnen een redelijke termijn een tweede levering doen.",
+
+          "text8":"8. Indien bij levering door Zebrano Studio blijkt dat onmiddellijke levering niet kan plaatsvinden door omstandigheden die voor rekening en risico van de klant komen zoals beschreven in dit artikel, en de klant een tweede levering verzoekt, kan Zebrano Studio extra vracht-, leverings- en opslagkosten aan de klant in rekening brengen.",
+
+          "text9":"9. Indien de klant de leverdatum wil uitstellen, moet dit uiterlijk 20 werkdagen vóór de geplande leverdatum aan Zebrano Studio worden doorgegeven. Een later verzoek wordt beoordeeld op haalbaarheid en er worden opslagkosten aan de klant in rekening gebracht. De opslagkosten bedragen €25 per week vanaf de oorspronkelijke leverdatum. Voor wijzigingen binnen 3 werkdagen vóór de geplande leverdatum rekenen wij €75 wijzigingskosten aan de klant, naast de genoemde opslagkosten.",
+        },
+        "StorageOfProducts":{
+          "title" : "Opslag van producten",
+          "text1" : "1. Na weigering of na een tweede levering kan Zebrano Studio opslagkosten en eventuele verdere schade en kosten aan de klant in rekening brengen.",
+          "text2" : "2. Indien een tweede levering eveneens niet wordt geaccepteerd, zal Zebrano Studio nakoming van de overeenkomst eisen en de klant een termijn van maximaal 30 dagen geven om de producten alsnog af te nemen. Indien de producten binnen deze termijn niet worden afgenomen, kan Zebrano Studio de overeenkomst ontbinden, waarbij de klant schadevergoeding verschuldigd is voor de geleden schade.",
+        },
+        "Payment" : {
+          "title" : "Betaling",
+          "text1" : "1. Betaling geschiedt in euro’s. Bij de prijzen van Zebrano Studio wordt aangegeven of deze inclusief of exclusief btw zijn.",
+
+          "text2" : "2. Bij een overeenkomst met een consument kan Zebrano Studio een aanbetaling van maximaal 30% van de koopprijs vragen. Bij overeenkomsten met zakelijke klanten kan Zebrano Studio, vóór levering of voortzetting van de uitvoering, betaling van de volledige koopprijs of zekerheid voor de betalingsverplichtingen verlangen.",
+
+          "text3" : "3. Tenzij anders overeengekomen, dient de netto (resterende) koopprijs vóór levering te worden betaald.",
+
+          "text4" : "4. Indien Zebrano Studio een levering in gedeelten uitvoert, heeft zij het recht betaling te vragen voor iedere deellevering. De klant ontvangt voor elke levering een deelfactuur.",
+
+          "text5" : "5. De consument is wettelijke rente verschuldigd conform artikel 6:119 BW over de periode waarin hij in verzuim is met betaling van de koopprijs. De zakelijke klant is wettelijke handelsrente verschuldigd (artikel 6:119a BW) over de periode van verzuim.",
+
+          "text6" : "6. Onverminderd het bepaalde in lid 5 stuurt Zebrano Studio de consument na intreden van verzuim een betalingsherinnering, waarbij betaling binnen 14 dagen na de dag van de herinnering wordt gevorderd. De consument wordt erop gewezen dat buitengerechtelijke incassokosten verschuldigd zijn indien betaling uitblijft, met vermelding van de hoogte van die kosten.",
+
+          "text7" : "7. Zebrano Studio is gerechtigd tot invordering van het verschuldigde bedrag over te gaan zonder verdere ingebrekestelling en kan hiervoor derden inschakelen. In dat geval is de klant tevens buitengerechtelijke incassokosten verschuldigd, vastgesteld conform de Wet normering buitengerechtelijke incassokosten en het daarbij behorende besluit.",
+
+          "text8" : "8. Bij klachten is de klant slechts gerechtigd betaling van dat deel van het verschuldigde bedrag op te schorten dat redelijkerwijs in verhouding staat tot de aard en ernst van de klacht. Dit ontslaat de klant niet van de verplichting het overige binnen de overeengekomen termijn te betalen.",
+
+          "text9" : "9. Zebrano Studio blijft eigenaar van de producten totdat de klant het volledige verschuldigde bedrag uit de overeenkomst heeft betaald. De klant moet de producten zorgvuldig behandelen en mag deze niet aan derden overdragen, verpanden, uitlenen of (laten) verwijderen van de plaats van levering totdat de koopprijs en eventuele rente en kosten volledig zijn voldaan.",
+        },
+        "Warranty" : {
+          "title" : "Garantie",
+          "text1" : "1. Tenzij schriftelijk anders overeengekomen, garandeert Zebrano Studio de deugdelijkheid van de geleverde producten gedurende een periode van 2 jaar na levering.",
+
+          "text2" : "2. Bij maatwerkproducten zijn kleine afwijkingen in afmetingen toegestaan. Zebrano Studio mag tot 2% afwijken van de overeengekomen afmetingen, tenzij uitdrukkelijk anders overeengekomen.",
+
+          "text3" : "3. De klant moet Zebrano Studio in alle gevallen de gelegenheid geven een gebrek te herstellen. De aansprakelijkheid van Zebrano Studio is beperkt tot kosteloos herstel van een gebrekkig product of vervanging daarvan of van een onderdeel, naar keuze van Zebrano Studio.",
+
+          "text4" : "4. Geen garantie wordt verleend indien gebreken het gevolg zijn van normale slijtage, onoordeelkundig gebruik, gebrek aan of onjuist onderhoud of installatie, (de)montage, wijziging of reparatie door de klant of derden. Geen garantie wordt verleend op producten die bij levering niet nieuw waren, showroommodellen, producten of onderdelen die onder een fabrieksgarantie vallen, of productspecifieke eigenschappen waaronder het natuurlijke gedrag van hout (zie hieronder).",
+
+          "text5" : "5. Op alle houten onderdelen geldt een beperkte garantie die uitsluitend fabricagefouten dekt. Het natuurlijke gedrag van hout is uitgesloten, aangezien dit geen gebrek is in het product of de productie, maar een eigenschap van het materiaal. “Gedrag van hout” omvat uitzetting, krimp, scheuren en/of kromtrekken. Het door Zebrano Studio gebruikte hout is gezaagd en gedroogd tot een vochtgehalte van circa 8%–12%, waardoor het geschikt is voor gebruik in een verwarmde ruimte. Hout blijft een natuurproduct en neemt vocht op of geeft het af. De mate waarin dit gebeurt, hangt onder meer af van temperatuurverschillen en luchtvochtigheid. Hout werkt minder als de luchtvochtigheid nagenoeg constant blijft; wij adviseren een luchtvochtigheid van 50%–60%, doorgaans 10% lager in de winter en 10% hoger in de zomer.",
+
+          "text6" : "6. Het document “Houtvariaties en tips” maakt deel uit van deze algemene voorwaarden en wordt per e-mail aan de klant verstrekt.",
+
+          "text7" : "7. Indien bij aankoop het All-in-house pakket is afgenomen, dient de klant zelf de bijbehorende onderhoudsproducten op het product toe te passen. Dit wordt niet uitgevoerd door Zebrano Studio.",
+
+          "text8" : "8. Zebrano Studio is niet verantwoordelijk voor afwijkende verwachtingen van de klant over de bekleding van zitmeubelen in andere materialen dan die welke aanwezig zijn in onze showrooms.",
+
+          "text9" : "9. De reparatiebon van Zebrano Studio dekt de reparatie van (droge) scheuren in houten meubels die door Zebrano Studio zijn vervaardigd. Andere (reparatie)diensten vallen onder verschillende tarieven die door Zebrano Studio worden vastgesteld.",
+        },
+        "Liability" : {
+          "title" : "Aansprakelijkheid",
+          "text1" : "1. Het risico van schade berust bij Zebrano Studio tot aan levering aan de klant bij de eerste deur/drempel van het afleveradres, tenzij uitdrukkelijk anders overeengekomen.",
+          "text2" : "2. Zebrano Studio is niet aansprakelijk voor schade aan muren, kozijnen, vloeren of andere goederen veroorzaakt door levering en/of montage van onze producten.",
+          "text3" : "3. Het risico van schade berust bij Zebrano Studio tot aan de levering aan de klant bij de eerste deur/drempel van het afleveradres, tenzij uitdrukkelijk anders is overeengekomen.",
+          "text4" : "4. Zebrano Studio is niet aansprakelijk voor schade aan muren, kozijnen, vloeren of andere goederen die is veroorzaakt door de levering en/of montage van onze producten.",
+          "text5" : "5. Zebrano Studio is niet aansprakelijk voor directe of indirecte schade als gevolg van gebreken in de geleverde producten of anderszins, noch voor vertragingen in de levering, behalve in gevallen van opzet of grove nalatigheid aan de zijde van Zebrano Studio.",
+          "text6" : "6. Indien de klant zelf producten installeert, monteert, enz., of dit laat doen door een derde partij, is de klant en/of derde partij verantwoordelijk voor de juiste installatie, montage, enz. en alles wat daarbij hoort. In dergelijke gevallen is Zebrano Studio niet verantwoordelijk of aansprakelijk indien er iets misgaat tijdens de installatie/montage of indien er onvolkomenheden in het resultaat optreden.",
+          "text7" : "Indien Zebrano Studio aansprakelijk is, is zij nooit verplicht enige schade, van welke aard en door welke oorzaak dan ook, te vergoeden die het totale bedrag van de transactie tussen de klant en Zebrano Studio te boven gaat.",
+          "text8" : "Indien Zebrano Studio zich niet kan beroepen op enige uitsluiting van aansprakelijkheid, is haar aansprakelijkheid beperkt tot het bedrag dat door haar aansprakelijkheidsverzekering wordt gedekt."
+        },
+        "Complaints" : {
+          "title" : "Complaints",
+          "text1" : "Klachten over de kwaliteit van de geleverde producten of materialen of de uitvoering van het werk kunnen door de klant slechts worden ingediend bij Zebrano Studio binnen 2 werkdagen na levering van de producten. Indien indiening binnen deze termijn redelijkerwijs niet mogelijk is, geldt de termijn van 2 werkdagen vanaf het moment dat het gebrek werd ontdekt of redelijkerwijs kon worden ontdekt. De klacht dient een duidelijke en volledige omschrijving van de bezwaren en geconstateerde gebreken te bevatten.",
+          "text2" : "Het vorige lid laat de kortere termijn genoemd in artikel 9 onverlet.",
+          "text3" : "Wanneer de afnemer tegen het advies van Zebrano Studio in bepaalde werkzaamheden wil (doen) verrichten of beletten, is, tenzij schriftelijk vastgelegd, elke klacht hierop uitgesloten.",
+        },
+        "ApplicableLaw" : {
+          "title" : "Applicable law",
+          "text" : " “Op alle overeenkomsten waarop deze voorwaarden van toepassing zijn, is Nederlands recht van toepassing.” "
         },
       },
 
@@ -2880,6 +3105,122 @@ const resources = {
           "text7" : "7. Wenn sich herausstellt, dass eine (weitere) Erfüllung der Vereinbarung durch Zebrano Studio aufgrund höherer Gewalt nicht möglich ist, kann Zebrano Studio die Vereinbarung aussetzen oder auflösen, ohne für Schäden haftbar zu sein. Dies hindert die Parteien nicht daran, Vorschläge zur Anpassung der Vereinbarung zu machen, sodass eine ordnungsgemäße und vollständige Erfüllung möglich wird.",
           
           "text8" : "8. Im Falle der Insolvenz, Zahlungsaussetzung oder Pfändung von Vermögenswerten des Kunden kann Zebrano Studio die Vereinbarung ganz oder teilweise ohne Mahnung auflösen.",
+        },
+        "RightOfWithdrawal":{
+          "title":"Widerrufsrecht / Beendigung der Vereinbarung",
+          "text1":"1. Die meisten von Zebrano Studio hergestellten und/oder gelieferten Produkte sind maßgefertigt und nicht vorgefertigt. Dazu gehören mindestens Produkte, die in der Fabrik von Zebrano Studio hergestellt werden, wie Tische, Couchtische, Beistelltische, Bartische, Gartentische, Schränke, TV-Möbel, Polstermöbel und maßgefertigte Wandregale. Für diese Produkte gilt kein Widerrufsrecht. Sie können nicht zurückgegeben werden.",
+
+          "text2":"2. Möchte der Kunde die Vereinbarung ohne Vertragsverletzung beenden und stimmt Zebrano Studio dem zu, kann die Vereinbarung einvernehmlich aufgehoben werden. In diesem Fall hat Zebrano Studio Anspruch auf Schadenersatz, einschließlich erlittenem Verlust und entgangenem Gewinn. Sofern nicht anders vereinbart, beträgt die Entschädigung 30 % des Kaufpreises oder 50 %, wenn der Kunde zum Zeitpunkt der Beendigung bereits darüber informiert war, dass (teilweise) geliefert werden kann.",
+
+          "text3":"3. Holt Zebrano Studio das Produkt auf Wunsch des Verbrauchers ab, trägt der Verbraucher die Kosten. Diese betragen 95,00 € einschließlich MwSt. für Adressen innerhalb der Benelux. Zum Zeitpunkt der Abholung muss das Produkt ordnungsgemäß verpackt und hinter der ersten Schwelle bereitstehen. Andernfalls wird das Produkt nicht mitgenommen.",
+
+          "text4":"4. Der Kaufbetrag wird zurückerstattet, nachdem Zebrano Studio das Produkt geprüft und festgestellt hat, dass es vollständig, unbenutzt und unbeschädigt ist.",
+        },
+         "IntellectualProperty" : {
+          "title" : "Geistiges Eigentum",
+          "text1" : "1. Sofern nicht schriftlich anders vereinbart, behält Zebrano Studio die Urheberrechte und alle geistigen Eigentumsrechte an Angeboten sowie an bereitgestellten Entwürfen, Abbildungen, Zeichnungen, (Prototyp-)Modellen und Ähnlichem. Der Kunde darf ohne Zustimmung von Zebrano Studio kein Material, das dem geistigen Eigentum unterliegt, vervielfältigen, veröffentlichen, verwerten oder ausstellen.",
+        },
+        "DeliveryTime" : {
+          "title" : "Lieferzeit",
+          "text1" : "1. Die Lieferzeit und/oder Ausführungsfrist wird von Zebrano Studio ungefähr bestimmt.",
+
+          "text2" : "2. Bei der Festlegung der Lieferzeit und/oder Ausführungsfrist geht Zebrano Studio von den zu diesem Zeitpunkt bekannten Umständen aus.",
+
+          "text3" : "3. Die Lieferzeit und/oder Ausführungsfrist beginnt, sobald eine Einigung über alle kaufmännischen und technischen Details erzielt wurde, alle erforderlichen Informationen Zebrano Studio vorliegen und, soweit vereinbart, die Anzahlung eingegangen ist.",
+
+          "text4" : "4. Wird die voraussichtliche Lieferzeit und/oder Ausführungsfrist überschritten, erhält Zebrano Studio eine zusätzliche angemessene Frist zur Lieferung.",
+
+          "text5" : "5. Eine Überschreitung der Lieferzeit und/oder Ausführungsfrist berechtigt den Kunden niemals zu Schadensersatz von Zebrano Studio.",
+        },
+        "TransportAndDamage" : {
+          "title" : "Transport und Schäden bei Lieferung",
+          "text1" : "1. Sofern nicht anders vereinbart, umfasst die Vereinbarung den Transport der Produkte durch Zebrano Studio, das das Risiko von Schäden und Verlusten während des Transports trägt. Werden die Produkte durch einen professionellen Spediteur geliefert, sorgt Zebrano Studio für eine angemessene Versicherung.",
+          "text2" : "2. Zebrano Studio haftet nicht für Schäden, die ab der ersten Tür/Schwelle der Lieferadresse entstehen. Wir helfen jedoch gerne beim Platzieren des Produkts im Inneren.",
+          "text3" : "3. Wird bei der Lieferung ein Schaden festgestellt, muss der Kunde dies Zebrano Studio innerhalb von zwei Werktagen nach der Lieferung melden; andernfalls gilt die Ware als ohne Schaden erhalten.",
+        },
+        "Delivery" : {
+          "title" : "Lieferung",
+          "text1":"1. Der Kunde muss sicherstellen, dass der Lieferort leicht zugänglich ist und alles in seiner Macht Stehende tun, um eine reibungslose Lieferung zu ermöglichen. Der Kunde muss außerdem sicherstellen, dass der Lieferort ordnungsgemäß gesichert werden kann.",
+
+          "text2":"2. Der Kunde hat Zebrano Studio vor Abschluss der Vereinbarung über besondere Umstände am Lieferort zu informieren, die den Einsatz von Hilfsmitteln – wie z. B. eines (Umzugs-)Lifts oder Krans – erforderlich machen. Der Kunde muss außerdem sicherstellen, dass erforderliche Genehmigungen (z. B. Bewilligungen) und wesentliche Informationen (z. B. Erreichbarkeit des Lieferorts) rechtzeitig an Zebrano Studio übermittelt werden.",
+
+          "text3":"3. Bei falschen oder unvollständigen Angaben des Kunden trägt der Kunde die (zusätzlichen) Kosten für den Einsatz spezieller Hilfsmittel.",
+
+          "text4":"4. Ist ein (Umzugs-)Lift oder Kran erforderlich, sorgt Zebrano Studio zum Zeitpunkt der Lieferung für dessen Verfügbarkeit. Die Kosten trägt der Kunde und müssen vor der Lieferung an Zebrano Studio gezahlt werden.",
+
+          "text5":"5. Möchte der Kunde selbst einen (Umzugs-)Lift oder Kran organisieren, liefert Zebrano Studio die Produkte kostenlos im Erdgeschoss ohne Montage. Der Kunde bleibt verantwortlich für den Transport der Produkte per Lift oder Kran, für Be- und Entladen sowie für die Montage und alle daraus entstehenden Schäden.",
+
+          "text6":"6. Ist der Lieferort zum Zeitpunkt der Lieferung nicht zugänglich – etwa weil die Produktabmessungen zu groß sind, um diesen Ort zu erreichen – geht dies zu Lasten und auf Risiko des Kunden. In diesem Fall liefert Zebrano Studio die Produkte unmontiert im Erdgeschoss.",
+
+          "text7":"7. Werden die angebotenen Produkte nicht angenommen, außer aufgrund einer mangelhaften Lieferung, führt Zebrano Studio innerhalb einer angemessenen Frist eine zweite Lieferung durch.",
+
+          "text8":"8. Stellt sich bei der Lieferung durch Zebrano Studio heraus, dass eine sofortige Lieferung aufgrund von Umständen, die zu Lasten und auf Risiko des Kunden gehen, nicht möglich ist, und verlangt der Kunde eine zweite Lieferung, kann Zebrano Studio zusätzliche Fracht-, Liefer- und Lagerkosten berechnen.",
+
+          "text9":"9. Möchte der Kunde den Liefertermin verschieben, muss dies Zebrano Studio spätestens 20 Arbeitstage vor dem geplanten Liefertermin mitgeteilt werden. Ein späterer Antrag wird auf Durchführbarkeit geprüft, und dem Kunden werden Lagerkosten berechnet. Die Lagerkosten betragen 25 € pro Woche ab dem ursprünglichen Liefertermin. Für Änderungen innerhalb von 3 Arbeitstagen vor dem geplanten Liefertermin berechnen wir dem Kunden 75 € Änderungsgebühren zusätzlich zu den genannten Lagerkosten.",
+        },
+        "StorageOfProducts":{
+          "title" : "Lagerung von Produkten",
+          "text1" : "1. Nach einer Verweigerung oder nach einer zweiten Lieferung kann Zebrano Studio dem Kunden Lagerkosten sowie weitere Schäden und Kosten in Rechnung stellen.",
+          "text2" : "2. Wird auch eine zweite Lieferung nicht angenommen, verlangt Zebrano Studio die Erfüllung des Vertrags und gewährt dem Kunden eine Frist von bis zu 30 Tagen, um die Produkte dennoch abzunehmen. Erfolgt die Abnahme innerhalb dieser Frist nicht, kann Zebrano Studio die Vereinbarung auflösen, wobei der Kunde zum Ersatz des entstandenen Schadens verpflichtet ist.",
+        },
+        "Payment" : {
+          "title" : "Zahlung",
+          "text1" : "1. Die Zahlung erfolgt in Euro. Die Preise von Zebrano Studio geben an, ob sie inklusive oder exklusive Mehrwertsteuer sind.",
+          "text2" : "2. Bei Verträgen mit Verbrauchern kann Zebrano Studio eine Anzahlung von bis zu 30 % des Kaufpreises verlangen. Bei Verträgen mit Geschäftskunden kann Zebrano Studio vor Lieferung oder Fortsetzung der Leistung die Zahlung des gesamten Kaufpreises oder eine Sicherheit für die Zahlungsverpflichtungen verlangen.",
+
+          "text3" : "3. Sofern nicht anders vereinbart, ist der Nettokaufpreis (Restbetrag) vor Lieferung zu zahlen.",
+
+          "text4" : "4. Führt Zebrano Studio eine Lieferung in Teilen aus, ist sie berechtigt, für jede Teillieferung eine Zahlung zu verlangen. Der Kunde erhält für jede Lieferung eine Teilrechnung.",
+          "text5" : "5. Der Verbraucher schuldet gemäß Artikel 6:119 BW gesetzliche Zinsen für den Zeitraum, in dem er mit der Zahlung des Kaufpreises in Verzug ist. Der Geschäftskunde schuldet gemäß Artikel 6:119a BW gesetzliche Handelszinsen für den Verzugszeitraum.",
+
+          "text6" : "6. Unbeschadet Absatz 5 sendet Zebrano Studio dem Verbraucher nach Eintritt des Verzugs eine Zahlungsaufforderung und fordert die Zahlung innerhalb von 14 Tagen ab dem Tag nach der Mahnung. Der Verbraucher wird darüber informiert, dass im Falle der Nichtzahlung außergerichtliche Inkassokosten anfallen, unter Angabe der Höhe dieser Kosten.",
+
+          "text7" : "7. Zebrano Studio ist berechtigt, den geschuldeten Betrag ohne weitere Mahnung einzutreiben und hierfür Dritte einzuschalten. In diesem Fall schuldet der Kunde auch außergerichtliche Inkassokosten, die gemäß dem niederländischen Gesetz zur Normierung außergerichtlicher Inkassokosten und der dazugehörigen Verordnung festgelegt werden.",
+
+          "text8" : "8. Im Falle von Reklamationen ist der Kunde nur berechtigt, die Zahlung desjenigen Teils des geschuldeten Betrags auszusetzen, der in einem angemessenen Verhältnis zur Art und Schwere der Beschwerde steht. Dies entbindet den Kunden nicht von der Verpflichtung, den Restbetrag innerhalb der vereinbarten Frist zu zahlen.",
+
+          "text9" : "9. Zebrano Studio bleibt Eigentümer der Produkte, bis der Kunde den gesamten aufgrund der Vereinbarung geschuldeten Betrag bezahlt hat. Der Kunde muss die Produkte sorgfältig behandeln und darf sie nicht an Dritte übertragen, verpfänden, verleihen oder vom Lieferort entfernen (lassen), bis der Kaufpreis sowie etwaige Zinsen und Kosten vollständig beglichen sind.",
+        },
+        "Warranty" : {
+          "title" : "Garantie",
+          "text1" : "1. Sofern nicht schriftlich anders vereinbart, gewährleistet Zebrano Studio die ordnungsgemäße Beschaffenheit der gelieferten Produkte für einen Zeitraum von 2 Jahren nach Lieferung.",
+
+          "text2" : "2. Bei maßgefertigten Produkten sind geringfügige Abweichungen in den Maßen zulässig. Zebrano Studio darf bis zu 2 % von den vereinbarten Abmessungen abweichen, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
+
+          "text3" : "3. Der Kunde muss Zebrano Studio in jedem Fall die Möglichkeit geben, einen Mangel zu beheben. Die Haftung von Zebrano Studio ist auf die kostenlose Reparatur eines mangelhaften Produkts oder den Ersatz dieses Produkts oder eines Teils davon nach Wahl von Zebrano Studio beschränkt.",
+
+          "text4" : "4. Es wird keine Garantie gewährt, wenn Mängel auf normale Abnutzung, unsachgemäßen Gebrauch, mangelnde oder fehlerhafte Wartung oder Installation, (De-)Montage, Änderung oder Reparatur durch den Kunden oder Dritte zurückzuführen sind. Es wird keine Garantie auf Produkte gewährt, die bei Lieferung nicht neu waren, Ausstellungsmodelle, Produkte oder Teile, die unter eine Herstellergarantie fallen, oder produktspezifische Eigenschaften, einschließlich des natürlichen Verhaltens von Holz (siehe unten).",
+
+          "text5" : "5. Für alle Holzteile gilt eine eingeschränkte Garantie, die nur Herstellungsfehler abdeckt. Das natürliche Verhalten von Holz ist ausgeschlossen, da es sich hierbei nicht um einen Mangel des Produkts oder der Produktion handelt, sondern um eine Eigenschaft des Materials. „Holzverhalten“ umfasst Ausdehnung, Schrumpfung, Risse und/oder Verformungen. Das von Zebrano Studio verwendete Holz ist auf einen Feuchtigkeitsgehalt von ca. 8 %–12 % gesägt und getrocknet, wodurch es für den Einsatz in beheizten Räumen geeignet ist. Holz bleibt ein Naturprodukt und nimmt Feuchtigkeit auf oder gibt sie ab. Das Ausmaß hängt unter anderem von Temperaturunterschieden und Luftfeuchtigkeit ab. Holz arbeitet weniger, wenn die Luftfeuchtigkeit nahezu konstant bleibt; wir empfehlen 50 %–60 % Luftfeuchtigkeit, typischerweise 10 % niedriger im Winter und 10 % höher im Sommer.",
+
+          "text6" : "6. Die Datei „Holzvariationen und Tipps“ ist Bestandteil dieser Allgemeinen Geschäftsbedingungen und wird dem Kunden per E-Mail zur Verfügung gestellt.",
+
+          "text7" : "7. Wurde beim Kauf das All-in-house-Paket erworben, muss der Kunde die entsprechenden Pflegeprodukte selbst auf das Produkt anwenden. Dies wird nicht von Zebrano Studio durchgeführt.",
+
+          "text8" : "8. Zebrano Studio ist nicht verantwortlich für abweichende Erwartungen des Kunden hinsichtlich der Polsterung von Sitzmöbeln in anderen Materialien als denjenigen, die in unseren Ausstellungsräumen vorhanden sind.",
+
+          "text9" : "9. Der Reparaturgutschein von Zebrano Studio deckt die Reparatur von (trockenen) Rissen in von Zebrano Studio hergestellten Holzmöbeln ab. Andere (Reparatur-)Leistungen unterliegen unterschiedlichen von Zebrano Studio festzulegenden Tarifen.",
+        },
+        "Liability" : {
+          "title" : "Haftung",
+          "text1" : "1. Das Risiko von Schäden liegt bei Zebrano Studio bis zur Lieferung an den Kunden an der ersten Tür/Schwelle der Lieferadresse, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
+          "text2" : "2. Zebrano Studio haftet nicht für Schäden an Wänden, Rahmen, Bö",
+          "text3" : "3.Das Risiko von Schäden liegt bei Zebrano Studio bis zur Lieferung an den Kunden an der ersten Tür/Schwelle der Lieferadresse, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
+          "text4" : "4. Zebrano Studio haftet nicht für Schäden an Wänden, Rahmen, Böden oder anderen Gegenständen, die durch die Lieferung und/oder Montage unserer Produkte verursacht werden.",
+          "text5" : "5. Zebrano Studio haftet nicht für direkte oder indirekte Schäden, die durch Mängel an den gelieferten Produkten oder anderweitig entstehen, noch für Lieferverzögerungen, außer in Fällen von Vorsatz oder grober Fahrlässigkeit seitens Zebrano Studio.",
+          "text6" : "6. Wenn der Kunde Produkte selbst installiert, montiert usw. oder dies durch einen Dritten durchführen lässt, ist der Kunde und/oder der Dritte für die ordnungsgemäße Installation, Montage usw. sowie alles, was damit zusammenhängt, verantwortlich. In solchen Fällen ist Zebrano Studio nicht verantwortlich oder haftbar, wenn während der Installation/Montage etwas schiefgeht oder wenn es Unvollkommenheiten im Ergebnis gibt.",
+          "text7" : "Sollte Zebrano Studio haftbar sein, ist sie niemals verpflichtet, Schäden jeglicher Art und aus jeglichem Grund zu ersetzen, die den Gesamtbetrag der Transaktion zwischen dem Kunden und Zebrano Studio übersteigen.",
+          "text8" : "Wenn Zebrano Studio sich nicht auf einen Haftungsausschluss berufen kann, ist ihre Haftung auf den Betrag beschränkt, der durch ihre Haftpflichtversicherung gedeckt ist."
+        },
+        "Complaints" : {
+          "title" : "Complaints",
+          "text1" : "Beschwerden über die Qualität der gelieferten Produkte oder Materialien oder die Ausführung der Arbeiten können vom Kunden nur innerhalb von 2 Werktagen nach Lieferung der Produkte bei Zebrano Studio eingereicht werden. Ist eine Einreichung innerhalb dieser Frist vernünftigerweise nicht möglich, gilt die Frist von 2 Werktagen ab dem Zeitpunkt, an dem der Mangel entdeckt wurde oder vernünftigerweise hätte entdeckt werden können. Die Beschwerde muss eine klare und vollständige Beschreibung der Beanstandungen und festgestellten Mängel enthalten.",
+          "text2" : "Der vorherige Absatz lässt die in Artikel 9 genannte kürzere Frist unberührt.",
+          "text3" : "Wenn der Kunde entgegen dem Rat von Zebrano Studio bestimmte Arbeiten durchführen oder verhindern möchte, ist jede diesbezügliche Beschwerde ausgeschlossen, sofern nicht schriftlich etwas anderes vereinbart wurde.",
+        },
+        "ApplicableLaw" : {
+          "title" : "Applicable law",
+          "text" : `“Auf alle Vereinbarungen, auf die diese Bedingungen Anwendung finden, ist niederländisches Recht anwendbar.”`
         },
       },
 
