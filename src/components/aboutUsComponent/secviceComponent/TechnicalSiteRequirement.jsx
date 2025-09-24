@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const TechnicalSiteRequirement = () => {
   const { t, i18n } = useTranslation();
     const faqsArray = t("Service.ServiceTab.FAQ.ProductsAndMaterials.faqs", { returnObjects: true });
-    console.log(faqsArray);
+
     
     const title="Technical & Site Requirement";
     const faqs = [

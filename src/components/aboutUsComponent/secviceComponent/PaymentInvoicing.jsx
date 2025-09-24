@@ -1,9 +1,12 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection'
+import { useTranslation } from 'react-i18next';
 
 const PaymentInvoicing = () => {
-    const title="Payment & Invoicing ";
-    const faqs = [
+  const { t, i18n } = useTranslation();
+  const faqsArray = t("Service.ServiceTab.FAQ.PaymentAndInvoicing.faqs", { returnObjects: true });
+  const title = t("Service.ServiceTab.FAQ.PaymentAndInvoicing.title");
+  const faqs = [
     {
       question: "When do I pay?",
       answer: "100% upfront on order confirmation (after final drawings/measurements are approved).",
@@ -31,7 +34,7 @@ const PaymentInvoicing = () => {
   ]
   return (
     <div>
-        <FAQSection title={title} faqs={faqs} />
+      <FAQSection title={title} faqs={faqsArray} />
     </div>
   )
 }

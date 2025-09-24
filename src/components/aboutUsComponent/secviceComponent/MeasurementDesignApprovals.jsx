@@ -1,9 +1,12 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection';
+import { useTranslation } from 'react-i18next';
 
 const MeasurementDesignApprovals = () => {
-    const title="Measurement, Design & Approvals";
-    const faqs = [
+  const { t, i18n } = useTranslation();
+  const faqsArray = t("Service.ServiceTab.FAQ.MeasurementDesignApprovals.faqs", { returnObjects: true });
+  const title = t("Service.ServiceTab.FAQ.MeasurementDesignApprovals.title");
+  const faqs = [
     {
       question: "Who takes measurements?",
       answer: "You can supply sizes or book our paid measurement service (recommended). If you provide sizes, you are responsible for accuracy.",
@@ -31,7 +34,7 @@ const MeasurementDesignApprovals = () => {
   ]
   return (
     <div>
-        <FAQSection title={title} faqs={faqs} />
+      <FAQSection title={title} faqs={faqsArray} />
     </div>
   )
 }

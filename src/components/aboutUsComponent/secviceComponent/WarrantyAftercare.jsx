@@ -1,8 +1,11 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection';
+import { useTranslation } from 'react-i18next';
 
 const WarrantyAftercare = () => {
-    const title = "Warranty & Aftercare ";
+    const { t, i18n } = useTranslation();
+    const faqsArray = t("Service.ServiceTab.FAQ.WarrantyAftercare.faqs", { returnObjects: true });
+    const title = t("Service.ServiceTab.FAQ.WarrantyAftercare.title");
     const faqs = [
         {
             question: "What warranty do you offer?",
@@ -31,7 +34,7 @@ const WarrantyAftercare = () => {
     ]
     return (
         <div>
-            <FAQSection title={title} faqs={faqs} />
+            <FAQSection title={title} faqs={faqsArray} />
         </div>
     )
 }

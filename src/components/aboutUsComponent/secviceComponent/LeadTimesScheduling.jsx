@@ -1,9 +1,12 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection';
+import { useTranslation } from 'react-i18next';
 
 const LeadTimesScheduling = () => {
-    const title="Lead Times & Scheduling ";
-    const faqs = [
+  const { t, i18n } = useTranslation();
+  const faqsArray = t("Service.ServiceTab.FAQ.LeadTimesAndScheduling.faqs", { returnObjects: true });
+  const title = t("Service.ServiceTab.FAQ.LeadTimesAndScheduling.title");
+  const faqs = [
     {
       question: " What are standard production lead times?",
       answer: "Doors (pivot/sliding/hinged) 6–8 weeks; Flush-to-Wall 8–10 weeks; Wall partitions 6–8 weeks; Boiserie 8–10 weeks.",
@@ -31,7 +34,7 @@ const LeadTimesScheduling = () => {
   ]
   return (
     <div>
-        <FAQSection title={title} faqs={faqs} />
+      <FAQSection title={title} faqs={faqsArray} />
     </div>
   )
 }

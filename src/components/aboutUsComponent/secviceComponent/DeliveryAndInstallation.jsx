@@ -1,8 +1,11 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection';
+import { useTranslation } from 'react-i18next';
 
 const DeliveryAndInstallation = () => {
-    const title = "Delivery & Installation";
+    const { t, i18n } = useTranslation();
+    const faqsArray = t("Service.ServiceTab.FAQ.DeliveryAndInstallation.faqs", { returnObjects: true });
+    const title = t("Service.ServiceTab.FAQ.DeliveryAndInstallation.title");
     const faqs = [
         {
             question: "Where do you deliver?",
@@ -31,7 +34,7 @@ const DeliveryAndInstallation = () => {
     ]
     return (
         <div>
-            <FAQSection title={title} faqs={faqs} />
+            <FAQSection title={title} faqs={faqsArray} />
         </div>
     )
 }

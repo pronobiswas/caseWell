@@ -631,7 +631,38 @@ const resources = {
           "desc": "In 2015, as two brothers backpacking through Southeast Asia, we were struck by the craftsmanship we encountered everywhere. From bustling markets to serene temples, wood was transformed into objects of remarkable beauty — from intricate carvings to refined furniture. The natural elegance of the material, combined with the dedication of local artisans, planted the first seed of what would later become Zebrano Studio.",
           "btnText": "",
         },
-        "AboutUsTimeline": {},
+        "AboutUsTimeline": {
+          "row1" : {
+            "title" : "A journey through Southeast Asia",
+            "desc" : "In 2015, as two brothers backpacking through Southeast Asia, we were struck by the craftsmanship we encountered everywhere. From bustling markets to serene temples, wood was transformed into objects of remarkable beauty — from intricate carvings to refined furniture. The natural elegance of the material, combined with the dedication of local artisans, planted the first seed of what would later become Zebrano Studio.",
+          },
+          "row2" : {
+            "title" : "From small pieces to bold creations",
+            "desc" : "Back home, our curiosity quickly turned into action. We started experimenting with wood, creating small objects like bookmarks and tapas boards. Soon, these experiments grew into more ambitious pieces — handcrafted paddles made from distinctive woods such as striped Zebrano, deep red Purpleheart, and exotic Palm. Each material had its own character, and discovering how to highlight it became our craft.",
+          },
+          "row3" : {
+            "title" : "The first door",
+            "desc" : "Wood became more than a hobby — it turned into a calling. Our annual visits to fine wood trade shows became a source of inspiration and connection. In 2020, the moment arrived: we needed new doors. Instead of buying, we built our own. That first Zebrano door, with its striking grain and timeless presence, marked the beginning of a new chapter.",
+          },
+          "row4" : {
+            "title" : "The start of Zebrano Studio",
+            "desc" : "That door wasn’t just a practical solution — it was a statement. The response from others confirmed what we felt ourselves: there was something unique here, worth sharing. Out of this moment, Zebrano Studio was born — named after the very wood that had inspired us from the start.",
+          },
+          "row5" : {
+            "title" : "Luxury, made accessible",
+            "desc" : "Our mission has been clear ever since: to make the exclusivity of luxury interiors available to everyone. Not just in hotels, restaurants, or villas, but in any home where design and quality matter. We create doors and wall features that combine premium materials, timeless craftsmanship, and design freedom — works of art built to last a lifetime.",
+          },
+          "buttomText" : {
+            "title" : {
+              "text1" : "At Zebrano Studio, we don’t just build doors ",
+              "text2" : " — we craft experiences that tell a story.",
+              "text3" : "Ready to create yours?",
+            },
+            "desc" : "Our dream? Simple: to make that luxury and exclusivity, which you normally only encounter in chic hotels, top restaurants, or those amazing villas designed by top architects, accessible to everyone. We believe your home deserves that same grandeur and uniqueness, without you having to spend a fortune on an architect. At Zebrano Studio, we do things a little differently from the rest, and we bring that unparalleled quality and aesthetic directly to your doorstep.",
+
+            "lastText" : "At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!"
+          }
+        },
       },
       // ====Meet the Makers=====
       "MeetTheMakers" : {
@@ -925,6 +956,180 @@ const resources = {
                 {
                   "question":"Tolerances",
                   "answer":"±1–2 mm components; handcrafted panels up to ±4 mm.",
+                },
+              ],
+            },
+            "MeasurementDesignApprovals" : {
+              "title" : "Measurement, Design & Approvals",
+              "faqs" : [
+                {
+                  "question" : "Who takes measurements?",
+                  "answer" : "You or our paid service (recommended). Your own sizes = your responsibility.",
+                },
+                {
+                  "question" : "Documents before production?",
+                  "answer" : "Proposal, technical drawings/specs, install notes if supply-only.",
+                },
+                {
+                  "question" : "How to approve?",
+                  "answer" : "Written approval required; production starts after approval + payment.",
+                },
+                {
+                  "question" : "Work from architect drawings?",
+                  "answer" : "Yes—send PDF/DWG; we confirm feasibility/adjustments.",
+                },
+                {
+                  "question" : "Change after approval?",
+                  "answer" : "Via change order; price/lead time may change; resumes after full payment.",
+                },
+                {
+                  "question" : "3D/visual previews?",
+                  "answer" : "Possible for selected lines; scope-dependent; design fee may apply.",
+                },
+              ]
+            },
+            "PaymentAndInvoicing" : {
+              "title" : "Payment & Invoicing",
+              "faqs" : [
+                {
+                  "question" : "When do I pay?",
+                  "answer" : " 100% upfront after final approvals.",
+                },
+                {
+                  "question" : "Methods?",
+                  "answer" : "iDEAL, cards, Apple Pay, PayPal, SEPA (via Mollie).",
+                },
+                {
+                  "question" : " Prices & VAT? ",
+                  "answer" : "EUR; excl. 21% BTW unless stated; VAT at checkout/invoice.",
+                },
+                {
+                  "question" : "Arrears/split invoices? ",
+                  "answer" : "No arrears; no split across entities.",
+                },
+                {
+                  "question" : "Business invoice details? ",
+                  "answer" : " Legal name, address, KvK, BTW-nummer; check accuracy before payment.",
+                },
+                {
+                  "question" : "Payments secure?",
+                  "answer" : "Yes—SCA/3-D Secure; ID checks on high-value orders possible.",
+                },
+              ],
+            },
+            "LeadTimesAndScheduling" : {
+              "title" : "Lead Times & Scheduling",
+              "faqs" : [
+                {
+                  "question" : "Standard lead times?",
+                  "answer" : "Doors 6–8 w; Flush-to-Wall 8–10 w; Partitions 6–8 w; Boiserie 8–10 w.",
+                },
+                {
+                  "question" : "When does lead time start?",
+                  "answer" : "After full payment and written approval.",
+                },
+                {
+                  "question" : " Expedited?",
+                  "answer" : "~2 weeks faster at extra cost, capacity/material dependent.",
+                },
+                {
+                  "question" : " Updates?",
+                  "answer" : "Yes—status updates and delivery/installation window near completion.",
+                },
+                {
+                  "question" : "Hold a slot?",
+                  "answer" : "No—slots aren’t reserved without payment/approval.",
+                },
+                {
+                  "question" : "Postpone delivery?",
+                  "answer" : "Yes—inform early; storage/re-visit fees may apply.",
+                },
+              ]
+            },
+            "DeliveryAndInstallation" : {
+              "title" : "Delivery & Installation",
+              "faqs" : [
+                {
+                  "question" : "Where do you deliver? ",
+                  "answer" : "All Dutch provinces.",
+                },
+                {
+                  "question" : "Delivery options? ",
+                  "answer" : "Supply-Only or White-Glove.",
+                },
+                {
+                  "question" : "Do you install?",
+                  "answer" : "Yes in NL; scope included/excluded as specified.",
+                },
+                {
+                  "question" : "Site readiness?",
+                  "answer" : "Tolerances, climate, access, power; re-visits chargeable.",
+                },
+                {
+                  "question" : "Report transport damage? ",
+                  "answer" : " Visible: note + photo; concealed: 24 h with photos/order no.",
+                },
+                {
+                  "question" : "Difficult access?",
+                  "answer" : "Tell us in advance; extra manpower/lift can be arranged (quoted).",
+                },
+              ],
+            },
+            "WarrantyAftercare" : {
+              "title" : "Warranty & Aftercare",
+              "faqs" : [
+                {
+                  "question" : "Warranty?",
+                  "answer" : "2-year product; 6-month installation (if by Zebrano).",
+                },
+                {
+                  "question" : "Covered/not covered?",
+                  "answer" : "Mechanisms, bonding, factory/install defects vs. wear, misuse, climate, variations, third-party install, improper cleaning.",
+                },
+                {
+                  "question" : "Make a claim? ",
+                  "answer" : "Email photos, description, order/invoice no.; remedy at our discretion.",
+                },
+                {
+                  "question" : "Care for glass? ",
+                  "answer" : " Glass cleaner/mild soap; avoid abrasives/blades; confirm films.",
+                },
+                {
+                  "question" : "Maintain wood/veneer/stone/ceramic?",
+                  "answer" : "See detailed care above.",
+                },
+                {
+                  "question" : "Hardware & mechanisms?",
+                  "answer" : "Hardware & mechanisms?",
+                },
+              ],
+            },
+            "OrderReturnsSupports" : {
+              "title" : "Orders, Returns & Support",
+              "faqs" : [
+                {
+                  "question" : " Cancel/return?",
+                  "answer" : "Custom items excluded from withdrawal; exceptions only pre-production and in writing (costs apply).",
+                },
+                {
+                  "question" : "Showroom?",
+                  "answer" : "By appointment; digital consults and samples available (deposit/fee).",
+                },
+                {
+                  "question" : "Work with architects/designers?",
+                  "answer" : " Yes—trade/projects welcome; request specs/samples/terms.",
+                },
+                {
+                  "question" : "Configure online & upload? ",
+                  "answer" : "Yes; ultra-custom switches to Quote. After purchase upload drawings/photos.",
+                },
+                {
+                  "question" : "Payment/data secure?",
+                  "answer" : "Mail info@zebranostudio.com; doorgaans 1–3 werkdagen.",
+                },
+                {
+                  "question" : "Payment/data secure?",
+                  "answer" : "Email info@zebranostudio.com; typical reply 1–3 business days.",
                 },
               ],
             },
@@ -1930,11 +2135,42 @@ const resources = {
       // ======OurStory==========
       "OurStory": {
         "OurStoryBanner": {
-          "heading": "",
-          "desc": "",
+          "heading": "A journey through Southeast Asia",
+          "desc": "In 2015, as two brothers backpacking through Southeast Asia, we were struck by the craftsmanship we encountered everywhere. From bustling markets to serene temples, wood was transformed into objects of remarkable beauty — from intricate carvings to refined furniture. The natural elegance of the material, combined with the dedication of local artisans, planted the first seed of what would later become Zebrano Studio.",
           "btnText": "",
         },
-        "AboutUsTimeline": {},
+        "AboutUsTimeline": {
+          "row1" : {
+            "title" : "Een reis door Zuidoost-Azië",
+            "desc" : "In 2015, toen wij als broers aan het backpacken waren door Zuidoost-Azië, werden we geraakt door het vakmanschap dat we overal tegenkwamen. Van drukke markten tot serene tempels: hout werd overal omgevormd tot objecten van bijzondere schoonheid — van verfijnde houtsnijwerken tot elegant meubilair. De natuurlijke uitstraling van het materiaal, gecombineerd met de toewijding van lokale ambachtslieden, plantte het eerste zaadje voor wat later Zebrano Studio zou worden.",
+          },
+          "row2" : {
+            "title" : " Van kleine werken tot gedurfde creaties",
+            "desc" : "Terug thuis veranderde onze nieuwsgierigheid al snel in actie. We begonnen te experimenteren met hout en maakten kleine objecten zoals boekenleggers en tapasplanken. Al snel groeiden die experimenten uit tot ambitieuzere projecten — handgemaakte paddels van bijzondere houtsoorten zoals gestreept Zebrano, dieprood Purpleheart en exotisch palmhout. Elk materiaal had zijn eigen karakter en het ontdekken hoe we dat konden benadrukken werd onze kunst.",
+          },
+          "row3" : {
+            "title" : "De eerste deur",
+            "desc" : "Hout werd meer dan een hobby — het werd een roeping. Onze jaarlijkse bezoeken aan fineer- en houtbeurzen werden een bron van inspiratie en verbinding. In 2020 kwam het moment: we hadden nieuwe deuren nodig. In plaats van te kopen, besloten we ze zelf te maken. Die eerste Zebrano-deur, met zijn opvallende nerf en tijdloze uitstraling, markeerde het begin van een nieuw hoofdstuk.",
+          },
+          "row4" : {
+            "title" : "Het begin van Zebrano Studio",
+            "desc" : "Die deur was niet zomaar een praktische oplossing — het was een statement. De reacties van anderen bevestigden wat wij zelf al voelden: dit was iets unieks, de moeite waard om te delen. Uit dat moment werd Zebrano Studio geboren — vernoemd naar het hout dat ons vanaf het begin inspireerde.",
+          },
+          "row5" : {
+            "title" : "Luxe, bereikbaar gemaakt",
+            "desc" : "Sindsdien is onze missie helder: de exclusiviteit van luxe interieurs toegankelijk maken voor iedereen. Niet alleen in hotels, restaurants of villa’s, maar in elk huis waar design en kwaliteit ertoe doen. Wij creëren deuren en wandoplossingen die premium materialen, tijdloos vakmanschap en ontwerpvrijheid combineren — kunstwerken die een leven lang meegaan.",
+          },
+          "buttomText" : {
+            "title" : {
+              "text1" : "Bij Zebrano Studio maken we niet zomaar deuren  ",
+              "text2" : "— we creëren ervaringen die een verhaal vertellen.",
+              "text3" : "Klaar om die van jou te maken?",
+            },
+            "desc" : "Onze droom? Simpel: die luxe en exclusiviteit, die je normaal alleen ziet in chique hotels, toprestaurants of indrukwekkende villa’s van toparchitecten, toegankelijk maken voor iedereen. Wij geloven dat jouw huis diezelfde grandeur en eigenheid verdient, zonder dat je daarvoor een fortuin hoeft uit te geven aan een architect. Bij Zebrano Studio doen we het net even anders dan de rest, en brengen we die ongeëvenaarde kwaliteit en uitstraling direct tot bij jou thuis.",
+            
+            "lastText" : "Bij Zebrano Studio maken we niet zomaar standaarddeuren; we creëren echte kunstwerken die een verhaal vertellen en een leven lang meegaan. Klaar om jouw droomdeur te realiseren? Wij helpen je graag!"
+          }
+        },
       },
       // ====Meet the Makers=====
       "MeetTheMakers" : {
@@ -2229,6 +2465,180 @@ const resources = {
                 {
                   "question":"Toleranties",
                   "answer":"±1–2 mm componenten; handgemaakte panelen tot ±4 mm.",
+                },
+              ],
+            },
+            "MeasurementDesignApprovals" : {
+              "title" : "Measurement, Design & Approvals",
+              "faqs" : [
+                {
+                  "question" : "Wie meet er in?",
+                  "answer" : "Jij of onze betaalde service (aanbevolen). Eigen maten = eigen verantwoordelijkheid.",
+                },
+                {
+                  "question" : "Documenten vóór productie?",
+                  "answer" : "Voorstel, technische tekeningen/specificaties, installatienotities bij alleen levering.",
+                },
+                {
+                  "question" : "Hoe keuren?",
+                  "answer" : "Schriftelijk akkoord vereist; productie start na akkoord + betaling.",
+                },
+                {
+                  "question" : "Werken met architecttekeningen?",
+                  "answer" : "Ja — stuur PDF/DWG; wij toetsen haalbaarheid/aanpassingen.",
+                },
+                {
+                  "question" : "Wijziging na akkoord?",
+                  "answer" : "Via wijzigingsopdracht; prijs/doorlooptijd kan wijzigen; hervat na volledige betaling.",
+                },
+                {
+                  "question" : "3D/visual previews?",
+                  "answer" : "Mogelijk voor geselecteerde lijnen; afhankelijk van scope; ontwerpfee mogelijk.",
+                },
+              ]
+            },
+            "PaymentAndInvoicing" : {
+              "title" : "Payment & Invoicing",
+              "faqs" : [
+                {
+                  "question" : " Wanneer betalen? ",
+                  "answer" : "100% vooruit na definitieve goedkeuring.",
+                },
+                {
+                  "question" : "Methoden?",
+                  "answer" : "iDEAL, kaarten, Apple Pay, PayPal, SEPA (via Mollie).",
+                },
+                {
+                  "question" : "Prijzen & BTW?",
+                  "answer" : "EUR; excl. 21% BTW tenzij vermeld; BTW op checkout/factuur.",
+                },
+                {
+                  "question" : "Achteraf/splitsen? ",
+                  "answer" : "Geen achteraf; geen splitsing per entiteit.",
+                },
+                {
+                  "question" : "Zakelijke gegevens?",
+                  "answer" : "Juridische naam, adres, KvK, BTW-nummer; controleer vóór betaling.",
+                },
+                {
+                  "question" : "Betalingen veilig?",
+                  "answer" : " Ja — SCA/3-D Secure; ID-checks mogelijk bij hoge bedragen.",
+                },
+              ],
+            },
+            "LeadTimesAndScheduling" : {
+              "title" : "Lead Times & Scheduling",
+              "faqs" : [
+                {
+                  "question" : "Standaard levertijden?",
+                  "answer" : "Deuren 6–8 w; Wandvlak 8–10 w; Wandscheidingen 6–8 w; Boiserie 8–10 w.",
+                },
+                {
+                  "question" : "Start levertijd?",
+                  "answer" : "Na volledige betaling en schriftelijk akkoord.",
+                },
+                {
+                  "question" : "Versnellen?",
+                  "answer" : " ~2 weken sneller tegen meerprijs, afhankelijk van capaciteit/materialen.",
+                },
+                {
+                  "question" : " Updates?",
+                  "answer" : " Ja — statusupdates en lever-/installatievenster tegen einde.",
+                },
+                {
+                  "question" : " Slot vasthouden?",
+                  "answer" : "Nee — geen reservering zonder betaling/akkoord.",
+                },
+                {
+                  "question" : " Levering uitstellen?",
+                  "answer" : "Ja — tijdig melden; opslag-/herbezoekkosten mogelijk.",
+                },
+              ]
+            },
+            "DeliveryAndInstallation" : {
+              "title" : "Delivery & Installation",
+              "faqs" : [
+                {
+                  "question" : "Waar leveren jullie?",
+                  "answer" : " Alle Nederlandse provincies.",
+                },
+                {
+                  "question" : "Leveropties?",
+                  "answer" : "Alleen levering of White-glove.",
+                },
+                {
+                  "question" : "Installeren jullie? ",
+                  "answer" : "Ja in NL; scope inbegrepen/uitgesloten zoals gespecificeerd.",
+                },
+                {
+                  "question" : "Werkplek gereed? ",
+                  "answer" : "Toleranties, klimaat, toegang, stroom; herbezoek tegen kosten.",
+                },
+                {
+                  "question" : "Transportschade melden?",
+                  "answer" : "Zichtbaar: noteren + foto; verborgen: binnen 24 u met foto’s/order nr.",
+                },
+                {
+                  "question" : "Moeilijke toegang?",
+                  "answer" : "Meld vooraf; extra mankracht/verhuislift mogelijk (offerte).",
+                },
+              ],
+            },
+            "WarrantyAftercare" : {
+              "title" : "Warranty & Aftercare",
+              "faqs" : [
+                {
+                  "question" : "Garantie?",
+                  "answer" : "2 jaar product; 6 maanden installatie (door Zebrano).",
+                },
+                {
+                  "question" : "Gedekt/niet? ",
+                  "answer" : "Mechanismen, verlijming, fabrieks/installatiefouten vs. slijtage, misbruik, klimaat, variaties, derdeninstallatie, onjuist reinigen.",
+                },
+                {
+                  "question" : "Claim indienen?  ",
+                  "answer" : " Mail foto’s, omschrijving, order-/factuurnr.; oplossing naar ons inzicht.",
+                },
+                {
+                  "question" : "Glas verzorgen?",
+                  "answer" : " Glasreiniger/milde zeep; geen schuurmiddelen/mesjes; folie vooraf checken.",
+                },
+                {
+                  "question" : "Onderhoud hout/fineer/steen/keramiek?",
+                  "answer" : "Zie onderhoud hierboven.",
+                },
+                {
+                  "question" : "Beslag & mechaniek?",
+                  "answer" : "Droog/licht vochtig afnemen; licht smeren 6–12 m; schroeven aandraaien; geen verborgen delen afstellen.",
+                },
+              ],
+            },
+            "OrderReturnsSupports" : {
+              "title" : "Orders, Returns & Support",
+              "faqs" : [
+                {
+                  "question" : " Annuleren/retour?",
+                  "answer" : "Maatwerk uitgesloten van herroeping; uitzonderingen alleen vóór productie en schriftelijk (kosten).",
+                },
+                {
+                  "question" : "Showroom?",
+                  "answer" : "Op afspraak; digitale consults en stalen beschikbaar (borg/fee).",
+                },
+                {
+                  "question" : " Samenwerking architect/interieur?",
+                  "answer" : "Ja — trade/projecten welkom; vraag specs/stalen/voorwaarden.",
+                },
+                {
+                  "question" : "Online configureren & uploaden?",
+                  "answer" : "Ja; ultra-maatwerk via Offerte. Na aankoop tekeningen/foto’s uploaden.",
+                },
+                {
+                  "question" : "Betaling/data veilig?",
+                  "answer" : " Ja — Mollie, SCA/3-D Secure; dataminimalisatie volgens privacybeleid.",
+                },
+                {
+                  "question" : " Support & reactietijd? ",
+                  "answer" : " Mail info@zebranostudio.com; doorgaans 1–3 werkdagen.",
                 },
               ],
             },
@@ -3246,11 +3656,42 @@ const resources = {
       // ======OurStory==========
       "OurStory": {
         "OurStoryBanner": {
-          "heading": "",
-          "desc": "",
+          "heading": "A journey through Southeast Asia",
+          "desc": "In 2015, as two brothers backpacking through Southeast Asia, we were struck by the craftsmanship we encountered everywhere. From bustling markets to serene temples, wood was transformed into objects of remarkable beauty — from intricate carvings to refined furniture. The natural elegance of the material, combined with the dedication of local artisans, planted the first seed of what would later become Zebrano Studio.",
           "btnText": "",
         },
-        "AboutUsTimeline": {},
+        "AboutUsTimeline": {
+          "row1" : {
+            "title" : "Eine Reise durch Südostasien",
+            "desc" : "2015, als Brüder mit dem Rucksack durch Südostasien unterwegs, waren wir beeindruckt von dem Handwerk, das uns überall begegnete. Von geschäftigen Märkten bis zu stillen Tempeln wurde Holz in Objekte von außergewöhnlicher Schönheit verwandelt – von filigranen Schnitzereien bis zu edlen Möbeln. Die natürliche Eleganz des Materials, kombiniert mit der Hingabe der lokalen Handwerker, legte den ersten Grundstein für das, was später Zebrano Studio werden sollte.",
+          },
+          "row2" : {
+            "title" : "Von kleinen Stücken zu mutigen Kreationen",
+            "desc" : "Wieder zu Hause wurde unsere Neugier schnell zu Tatendrang. Wir begannen, mit Holz zu experimentieren, und fertigten kleine Objekte wie Lesezeichen und Tapasbretter. Bald entwickelten sich daraus größere Projekte – handgefertigte Paddel aus besonderen Hölzern wie gestreiftem Zebrano, tiefrotem Purpleheart und exotischem Palmenholz. Jedes Material hatte seinen eigenen Charakter, und herauszufinden, wie man diesen betont, wurde zu unserem Handwerk.",
+          },
+          "row3" : {
+            "title" : "Die erste Tür",
+            "desc" : "Holz wurde mehr als nur ein Hobby – es wurde zu einer Berufung. Unsere jährlichen Besuche auf Edelhölzer-Messen wurden zu einer Quelle der Inspiration und Begegnung. 2020 war es soweit: Wir brauchten neue Türen. Anstatt sie zu kaufen, bauten wir sie selbst. Diese erste Zebrano-Tür, mit ihrer markanten Maserung und zeitlosen Präsenz, markierte den Beginn eines neuen Kapitels.",
+          },
+          "row4" : {
+            "title" : "Der Beginn von Zebrano Studio",
+            "desc" : "Diese Tür war nicht nur eine praktische Lösung – sie war ein Statement. Die Reaktionen anderer bestätigten, was wir selbst gespürt hatten: Hier war etwas Einzigartiges, das geteilt werden musste. Aus diesem Moment entstand Zebrano Studio – benannt nach dem Holz, das uns von Anfang an inspiriert hatte.",
+          },
+          "row5" : {
+            "title" : "Luxus, zugänglich gemacht",
+            "desc" : "Seitdem ist unsere Mission klar: die Exklusivität luxuriöser Interieurs für alle zugänglich zu machen. Nicht nur in Hotels, Restaurants oder Villen, sondern in jedem Zuhause, in dem Design und Qualität zählen. Wir schaffen Türen und Wandlösungen, die edle Materialien, zeitloses Handwerk und Gestaltungsfreiheit vereinen – wahre Kunstwerke, die ein Leben lang halten.",
+          },
+          "buttomText" : {
+            "title" : {
+              "text1" : "Bei Zebrano Studio bauen wir nicht einfach Türen ",
+              "text2" : "– wir schaffen Erlebnisse, die eine Geschichte erzählen. ",
+              "text3" : "Bereit, Ihre zu erschaffen?",
+            },
+            "desc" : "Unser Traum? Ganz einfach: Diesen Luxus und diese Exklusivität, die man normalerweise nur in schicken Hotels, Spitzenrestaurants oder beeindruckenden Villen bekannter Architekten findet, für alle zugänglich zu machen. Wir glauben, dass auch Ihr Zuhause dieselbe Großzügigkeit und Einzigartigkeit verdient – ohne ein Vermögen für einen Architekten auszugeben. Bei Zebrano Studio machen wir die Dinge ein wenig anders als die anderen – und bringen diese unvergleichliche Qualität und Ästhetik direkt zu Ihnen nach Hause.",
+            
+            "lastText" : "Bei Zebrano Studio fertigen wir nicht einfach Standardtüren; wir schaffen wahre Kunstwerke, die eine Geschichte erzählen und ein Leben lang halten. Bereit für Ihre Traumtür? Wir helfen Ihnen gerne!"
+          }
+        },
       },
       // ====Meet the Makers=====
       "MeetTheMakers" : {
@@ -3544,6 +3985,180 @@ const resources = {
                 {
                   "question":"Toleranzen",
                   "answer":"±1–2 mm Bauteile; handgefertigte Paneele bis ±4 mm.",
+                },
+              ],
+            },
+            "MeasurementDesignApprovals" : {
+              "title" : "Measurement, Design & Approvals",
+              "faqs" : [
+                {
+                  "question" : " Wer nimmt das Aufmaß?",
+                  "answer" : "Sie oder unser kostenpflichtiger Service (empfohlen). Eigene Maße = Ihre Verantwortung.",
+                },
+                {
+                  "question" : "Unterlagen vor Produktion?",
+                  "answer" : "Angebot, technische Zeichnungen/Spez., Montagehinweise bei Nur-Lieferung.",
+                },
+                {
+                  "question" : "Wie freigeben?",
+                  "answer" : "Schriftliche Freigabe nötig; Produktion startet nach Freigabe + Zahlung.",
+                },
+                {
+                  "question" : "Arbeit nach Architektenplänen?",
+                  "answer" : "Ja — PDF/DWG senden; wir prüfen Machbarkeit/Anpassungen.",
+                },
+                {
+                  "question" : "Änderung nach Freigabe?",
+                  "answer" : "Per Change Order; Preis/Lieferzeit können ändern; Fortsetzung nach Vollzahlung.",
+                },
+                {
+                  "question" : "3D-/Visual-Previews?",
+                  "answer" : "Für ausgewählte Linien möglich; abhängig vom Umfang; ggf. Designgebühr.",
+                },
+              ]
+            },
+            "PaymentAndInvoicing" : {
+              "title" : "Payment & Invoicing",
+              "faqs" : [
+                {
+                  "question" : "Wann zahlen?",
+                  "answer" : "100 % Vorkasse nach finaler Freigabe.",
+                },
+                {
+                  "question" : "Methoden?",
+                  "answer" : "iDEAL, Karten, Apple Pay, PayPal, SEPA (über Mollie).",
+                },
+                {
+                  "question" : " Preise & USt?",
+                  "answer" : " EUR; zzgl. 21 % MwSt., sofern nicht anders; USt. bei Checkout/Rechnung.",
+                },
+                {
+                  "question" : "Später/splitten? ",
+                  "answer" : "Keine Nachzahlung; keine Aufteilung auf mehrere Einheiten.",
+                },
+                {
+                  "question" : "Firmendaten?  ",
+                  "answer" : "Rechtsträger, Adresse, Handelsregister-/USt-Nr.; vor Zahlung prüfen.",
+                },
+                {
+                  "question" : "Zahlungen sicher?",
+                  "answer" : "Ja — SCA/3-D Secure; Ident-Prüfung bei hohen Beträgen möglich.",
+                },
+              ],
+            },
+            "LeadTimesAndScheduling" : {
+              "title" : "Lead Times & Scheduling",
+              "faqs" : [
+                {
+                  "question" : "Standard-Lieferzeiten?",
+                  "answer" : "Türen 6–8 W; Wandbündig 8–10 W; Trennwände 6–8 W; Boiserie 8–10 W.",
+                },
+                {
+                  "question" : " Start der Lieferzeit?",
+                  "answer" : "Nach vollständiger Zahlung und schriftlicher Freigabe.",
+                },
+                {
+                  "question" : " Beschleunigt?",
+                  "answer" : " ~2 Wochen schneller gegen Aufpreis, abhängig von Kapazität/Material.",
+                },
+                {
+                  "question" : " Updates?",
+                  "answer" : " Ja — Statusupdates und Liefer-/Montagefenster zum Schluss.",
+                },
+                {
+                  "question" : "Slot halten?",
+                  "answer" : "Nein — keine Reservierung ohne Zahlung/Freigabe.",
+                },
+                {
+                  "question" : "Lieferung verschieben? ",
+                  "answer" : "Ja — frühzeitig melden; Lager-/Zusatzterminkosten möglich.",
+                },
+              ]
+            },
+            "DeliveryAndInstallation" : {
+              "title" : "Delivery & Installation",
+              "faqs" : [
+                {
+                  "question" : "Wohin liefern Sie?",
+                  "answer" : "Alle niederländischen Provinzen.",
+                },
+                {
+                  "question" : "Lieferoptionen? ",
+                  "answer" : "Nur Lieferung oder White-Glove.",
+                },
+                {
+                  "question" : " Montieren Sie?",
+                  "answer" : "Ja in NL; Umfang inkl./exkl. wie angegeben.",
+                },
+                {
+                  "question" : "Baustelle bereit?",
+                  "answer" : "Toleranzen, Klima, Zugang, Strom; Zusatztermine kostenpflichtig.",
+                },
+                {
+                  "question" : "Transportschäden melden?",
+                  "answer" : " Visible: note + photo; concealed: 24 h with photos/order no.",
+                },
+                {
+                  "question" : " Schwieriger Zugang? ",
+                  "answer" : "Vorab melden; Zusatzpersonal/Umzugslift möglich (Angebot).",
+                },
+              ],
+            },
+            "WarrantyAftercare" : {
+              "title" : "Warranty & Aftercare",
+              "faqs" : [
+                {
+                  "question" : "Warranty?",
+                  "answer" : "2-year product; 6-month installation (if by Zebrano).",
+                },
+                {
+                  "question" : "Covered/not covered?",
+                  "answer" : "Mechanisms, bonding, factory/install defects vs. wear, misuse, climate, variations, third-party install, improper cleaning.",
+                },
+                {
+                  "question" : "Make a claim? ",
+                  "answer" : "Email photos, description, order/invoice no.; remedy at our discretion.",
+                },
+                {
+                  "question" : "Care for glass? ",
+                  "answer" : " Glass cleaner/mild soap; avoid abrasives/blades; confirm films.",
+                },
+                {
+                  "question" : "Maintain wood/veneer/stone/ceramic?",
+                  "answer" : "See detailed care above.",
+                },
+                {
+                  "question" : "Hardware & mechanisms?",
+                  "answer" : "Hardware & mechanisms?",
+                },
+              ],
+            },
+            "OrderReturnsSupports" : {
+              "title" : "Orders, Returns & Support",
+              "faqs" : [
+                {
+                  "question" : "Stornieren/retournieren? ",
+                  "answer" : "Maßanfertigung vom Widerruf ausgenommen; Ausnahmen nur vor Produktion und schriftlich (Kosten).",
+                },
+                {
+                  "question" : "Showroom?",
+                  "answer" : "Nach Termin; digitale Beratung und Muster (Kaution/Gebühr).",
+                },
+                {
+                  "question" : " Zusammenarbeit mit Architekten/Designern?",
+                  "answer" : "Ja — Handel/Projekte willkommen; Specs/Muster/Konditionen anfragen.",
+                },
+                {
+                  "question" : "Online konfigurieren & hochladen?",
+                  "answer" : " Ja; Ultra-Custom via Angebot. Nach Kauf Pläne/Fotos hochladen.",
+                },
+                {
+                  "question" : " Zahlung/Daten sicher? ",
+                  "answer" : "Ja — Mollie, SCA/3-D Secure; Datenminimierung gem. Datenschutzerklärung.",
+                },
+                {
+                  "question" : "Support & Reaktionszeit?",
+                  "answer" : "Mail an info@zebranostudio.com; i. d. R. 1–3 Werktage.",
                 },
               ],
             },

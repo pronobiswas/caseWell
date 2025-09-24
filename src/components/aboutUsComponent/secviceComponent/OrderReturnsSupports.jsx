@@ -1,8 +1,11 @@
 import React from 'react'
 import FAQSection from '../../commonComponent/FAQSection'
+import { useTranslation } from 'react-i18next';
 
 const OrderReturnsSupports = () => {
-    const title = "Orders, Returns & Support";
+    const { t, i18n } = useTranslation();
+    const faqsArray = t("Service.ServiceTab.FAQ.OrderReturnsSupports.faqs", { returnObjects: true });
+    const title = t("Service.ServiceTab.FAQ.OrderReturnsSupports.title");
     const faqs = [
         {
             question: "Can I cancel or return my order?",
@@ -31,7 +34,7 @@ const OrderReturnsSupports = () => {
     ]
     return (
         <div>
-            <FAQSection title={title} faqs={faqs} />
+            <FAQSection title={title} faqs={faqsArray} />
         </div>
     )
 }
