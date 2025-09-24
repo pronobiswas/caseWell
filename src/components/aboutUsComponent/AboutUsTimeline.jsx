@@ -223,7 +223,7 @@ const AboutUsTimeline = () => {
 
 
         <div ref={bottomText} className='w-full h-full  p-5 md:p-12 lg:p-20'>
-          <h4 className='text-center text-xl text-stone-600 font-bold md:text-3xl lg:text-4xl xl:text-5xl'>At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!</h4>
+          <h4 className='text-center text-xl text-stone-600 font-bold md:text-3xl lg:text-4xl xl:text-5xl'>{t("OurStory.AboutUsTimeline.buttomText.lastText")}</h4>
         </div>
         <div className='w-full flex justify-center gap-10 py-8'>
           <BtnComponent text="Collection" bg="myColorTwo" />
