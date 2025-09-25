@@ -450,6 +450,49 @@ const resources = {
             "subHeading": "At Zebrano Studio, every detail begins with the right material. From timeless woods and luxurious veneers to glass, stone, and metals — we combine craftsmanship with innovation. Each choice defines the character, durability, and beauty of your interior.",
             "btnText": "See Collection"
           },
+          "MaterialAndDesignContent": {
+            "row1": {
+              "title": "Wood.",
+              "desc": "Natural hardwoods like oak, walnut, and zebrano form the base of our collections. Each wood type is carefully selected for strength, grain, and finish.",
+            },
+            "row2": {
+              "title": "Veneer.",
+              "desc": "A refined layer of real wood, allowing unique textures and rare species to come to life with consistency and elegance.",
+            },
+            "row3": {
+              "title": "Glass.",
+              "desc": "Clear, tinted, or structured glass to open spaces with light and transparency — from privacy glass to statement glass doors.",
+            },
+            "row4": {
+              "title": "Metal.",
+              "desc": "Aluminium, bronze, or steel accents create contrast and precision, used in frames, hinges, and detailing.",
+            },
+            "row5": {
+              "title": "Stone & Ceramics.",
+              "desc": "Marble, travertine, or ceramic stone panels add a sense of permanence and luxury to our designs.",
+            },
+            "row6": {
+              "title": "Handles & Hardware.",
+              "desc": "Minimal recessed grips, bold handles, and custom hardware — both functional and sculptural.",
+            },
+            "row7": {
+              "title": "Finishes & Oils.",
+              "desc": "From matte oils to deep stains, each finish is chosen to protect and enhance natural character.",
+            },
+            "row8" : {
+              "col1":{
+                "title" : "Sustainability & Durability",
+                "subTitle" : "Sustainable Choices",
+                "text" : "We source responsibly — FSC-certified wood, durable finishes, and recyclable glass & metal."
+              },
+              "col2":{
+                "title" : "Built to Last",
+                "desc" : "Every material is chosen not just for its look, but for its longevity. A Zebrano product is made to live with you for decades.",
+                "btnText" : "Configure Now",
+              },
+            },
+
+          },
         },
       },
       // ====contactPage====
@@ -632,67 +675,67 @@ const resources = {
           "btnText": "",
         },
         "AboutUsTimeline": {
-          "row1" : {
-            "title" : "A journey through Southeast Asia",
-            "desc" : "In 2015, as two brothers backpacking through Southeast Asia, we were struck by the craftsmanship we encountered everywhere. From bustling markets to serene temples, wood was transformed into objects of remarkable beauty — from intricate carvings to refined furniture. The natural elegance of the material, combined with the dedication of local artisans, planted the first seed of what would later become Zebrano Studio.",
+          "row1": {
+            "title": "A journey through Southeast Asia",
+            "desc": "In 2015, as two brothers backpacking through Southeast Asia, we were struck by the craftsmanship we encountered everywhere. From bustling markets to serene temples, wood was transformed into objects of remarkable beauty — from intricate carvings to refined furniture. The natural elegance of the material, combined with the dedication of local artisans, planted the first seed of what would later become Zebrano Studio.",
           },
-          "row2" : {
-            "title" : "From small pieces to bold creations",
-            "desc" : "Back home, our curiosity quickly turned into action. We started experimenting with wood, creating small objects like bookmarks and tapas boards. Soon, these experiments grew into more ambitious pieces — handcrafted paddles made from distinctive woods such as striped Zebrano, deep red Purpleheart, and exotic Palm. Each material had its own character, and discovering how to highlight it became our craft.",
+          "row2": {
+            "title": "From small pieces to bold creations",
+            "desc": "Back home, our curiosity quickly turned into action. We started experimenting with wood, creating small objects like bookmarks and tapas boards. Soon, these experiments grew into more ambitious pieces — handcrafted paddles made from distinctive woods such as striped Zebrano, deep red Purpleheart, and exotic Palm. Each material had its own character, and discovering how to highlight it became our craft.",
           },
-          "row3" : {
-            "title" : "The first door",
-            "desc" : "Wood became more than a hobby — it turned into a calling. Our annual visits to fine wood trade shows became a source of inspiration and connection. In 2020, the moment arrived: we needed new doors. Instead of buying, we built our own. That first Zebrano door, with its striking grain and timeless presence, marked the beginning of a new chapter.",
+          "row3": {
+            "title": "The first door",
+            "desc": "Wood became more than a hobby — it turned into a calling. Our annual visits to fine wood trade shows became a source of inspiration and connection. In 2020, the moment arrived: we needed new doors. Instead of buying, we built our own. That first Zebrano door, with its striking grain and timeless presence, marked the beginning of a new chapter.",
           },
-          "row4" : {
-            "title" : "The start of Zebrano Studio",
-            "desc" : "That door wasn’t just a practical solution — it was a statement. The response from others confirmed what we felt ourselves: there was something unique here, worth sharing. Out of this moment, Zebrano Studio was born — named after the very wood that had inspired us from the start.",
+          "row4": {
+            "title": "The start of Zebrano Studio",
+            "desc": "That door wasn’t just a practical solution — it was a statement. The response from others confirmed what we felt ourselves: there was something unique here, worth sharing. Out of this moment, Zebrano Studio was born — named after the very wood that had inspired us from the start.",
           },
-          "row5" : {
-            "title" : "Luxury, made accessible",
-            "desc" : "Our mission has been clear ever since: to make the exclusivity of luxury interiors available to everyone. Not just in hotels, restaurants, or villas, but in any home where design and quality matter. We create doors and wall features that combine premium materials, timeless craftsmanship, and design freedom — works of art built to last a lifetime.",
+          "row5": {
+            "title": "Luxury, made accessible",
+            "desc": "Our mission has been clear ever since: to make the exclusivity of luxury interiors available to everyone. Not just in hotels, restaurants, or villas, but in any home where design and quality matter. We create doors and wall features that combine premium materials, timeless craftsmanship, and design freedom — works of art built to last a lifetime.",
           },
-          "buttomText" : {
-            "title" : {
-              "text1" : "At Zebrano Studio, we don’t just build doors ",
-              "text2" : " — we craft experiences that tell a story.",
-              "text3" : "Ready to create yours?",
+          "buttomText": {
+            "title": {
+              "text1": "At Zebrano Studio, we don’t just build doors ",
+              "text2": " — we craft experiences that tell a story.",
+              "text3": "Ready to create yours?",
             },
-            "desc" : "Our dream? Simple: to make that luxury and exclusivity, which you normally only encounter in chic hotels, top restaurants, or those amazing villas designed by top architects, accessible to everyone. We believe your home deserves that same grandeur and uniqueness, without you having to spend a fortune on an architect. At Zebrano Studio, we do things a little differently from the rest, and we bring that unparalleled quality and aesthetic directly to your doorstep.",
+            "desc": "Our dream? Simple: to make that luxury and exclusivity, which you normally only encounter in chic hotels, top restaurants, or those amazing villas designed by top architects, accessible to everyone. We believe your home deserves that same grandeur and uniqueness, without you having to spend a fortune on an architect. At Zebrano Studio, we do things a little differently from the rest, and we bring that unparalleled quality and aesthetic directly to your doorstep.",
 
-            "lastText" : "At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!"
+            "lastText": "At Zebrano Studio, we don't just make standard doors; we create true works of art that tell a story and last a lifetime. Ready to realize your dream door? We'd love to help you!"
           }
         },
       },
       // ====Meet the Makers=====
-      "MeetTheMakers" : {
-        "banner" : {
-          "heading1":"Created by our",
-          "heading2":"perfected in",
-          "heading3":"production.",
-          "desc" : "Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype, and build under one roof – so every millimeter adds up and every door feels effortlessly right.",
-          "typedText" : ["designers","people","makers"],
+      "MeetTheMakers": {
+        "banner": {
+          "heading1": "Created by our",
+          "heading2": "perfected in",
+          "heading3": "production.",
+          "desc": "Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype, and build under one roof – so every millimeter adds up and every door feels effortlessly right.",
+          "typedText": ["designers", "people", "makers"],
         },
-        "AccessibleBeautiful" : {
-          "row1":{
-            "title1" : "ACCESSIBLE .",
-            "title2" : "BEAUTIFUL .",
-            "desc" : `"I've always felt that good design shouldn't hide behind velvet ropes. At Zebrano, I want everyone to enjoy the same beautiful doors and details usually seen only in luxury hotels – right at home." `,
-            "name" : "Mathijs",
-            "designetion" : "– Founder and Designer, Zebrano Studio",
+        "AccessibleBeautiful": {
+          "row1": {
+            "title1": "ACCESSIBLE .",
+            "title2": "BEAUTIFUL .",
+            "desc": `"I've always felt that good design shouldn't hide behind velvet ropes. At Zebrano, I want everyone to enjoy the same beautiful doors and details usually seen only in luxury hotels – right at home." `,
+            "name": "Mathijs",
+            "designetion": "– Founder and Designer, Zebrano Studio",
           },
-          "row2" : {
-            "title" : "We like to keep things close to home.",
-            "desc" : `Our doors are made right here in the Netherlands, shaped by makers who know their wood almost as well as their morning coffee. It's a mix of tradition, precision, and a little Dutch stubbornness that refuses to settle for "good enough." The result? Craft that feels local, but looks like it belongs anywhere in the world.`,
-            "btnText" : "Discover materials",
+          "row2": {
+            "title": "We like to keep things close to home.",
+            "desc": `Our doors are made right here in the Netherlands, shaped by makers who know their wood almost as well as their morning coffee. It's a mix of tradition, precision, and a little Dutch stubbornness that refuses to settle for "good enough." The result? Craft that feels local, but looks like it belongs anywhere in the world.`,
+            "btnText": "Discover materials",
           },
-          "row3" : {
-            "title1" : "Are you a designer? ",
-            "title2" : "Need advice?",
-            "desc1" : "Our team is ready to help you discover all the possibilities.",
-            "desc2" : "Our team is ready to help you discover all the possibilities.",
-            "btnText1" : "Discover materials",
-            "btnText2" : "Get in contact",
+          "row3": {
+            "title1": "Are you a designer? ",
+            "title2": "Need advice?",
+            "desc1": "Our team is ready to help you discover all the possibilities.",
+            "desc2": "Our team is ready to help you discover all the possibilities.",
+            "btnText1": "Discover materials",
+            "btnText2": "Get in contact",
           },
         },
       },
@@ -736,93 +779,93 @@ const resources = {
         "btnText2": "Configure your own",
       },
       // ====services=====
-      "Service" : {
-        "banner" : {
-          "title" : "Service & Terms",
-          "desc" :"Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
+      "Service": {
+        "banner": {
+          "title": "Service & Terms",
+          "desc": "Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
         },
-        "ServiceTab" : {
-          "OrderProcess":{
-            "title" : "Everything About Our Order Process (Netherlands)",
-            "desc" : "Our products are made to order. We follow a fixed sequence so timelines stay reliable.",
-            "faqs":[
+        "ServiceTab": {
+          "OrderProcess": {
+            "title": "Everything About Our Order Process (Netherlands)",
+            "desc": "Our products are made to order. We follow a fixed sequence so timelines stay reliable.",
+            "faqs": [
               {
-                "question":"Consultation & Proposal",
-                "answer" : "We discuss scope, materials, finishes, and installation. You receive a written proposal with pricing and indicative lead time. Quotes are valid 30 days unless material volatility is noted.",
+                "question": "Consultation & Proposal",
+                "answer": "We discuss scope, materials, finishes, and installation. You receive a written proposal with pricing and indicative lead time. Quotes are valid 30 days unless material volatility is noted.",
               },
               {
-                "question":" Measurement",
-                "answer" : "You can provide measurements, or we perform a paid measurement service (recommended). If you supply measurements, you accept responsibility for dimensional accuracy.",
+                "question": " Measurement",
+                "answer": "You can provide measurements, or we perform a paid measurement service (recommended). If you supply measurements, you accept responsibility for dimensional accuracy.",
               },
               {
-                "question":"Technical Drawings & Sign-off",
-                "answer" : "We prepare drawings/specs. Production only proceeds after written approval of all drawings, finishes, and hardware.",
+                "question": "Technical Drawings & Sign-off",
+                "answer": "We prepare drawings/specs. Production only proceeds after written approval of all drawings, finishes, and hardware.",
               },
               {
-                "question":"Payment",
-                "answer" : "We work with 100% upfront payment. See “Payment Process” for accepted methods (iDEAL, cards, Apple Pay, PayPal, SEPA) and invoicing details.",
+                "question": "Payment",
+                "answer": "We work with 100% upfront payment. See “Payment Process” for accepted methods (iDEAL, cards, Apple Pay, PayPal, SEPA) and invoicing details.",
               },
               {
-                "question":"Production & Quality Control",
-                "answer" : "Upon payment + approval, we reserve your production slot. Lead time starts. Each item is checked for finish quality, fit, and function.",
+                "question": "Production & Quality Control",
+                "answer": "Upon payment + approval, we reserve your production slot. Lead time starts. Each item is checked for finish quality, fit, and function.",
               },
               {
-                "question":"Pre-Delivery Scheduling ",
-                "answer" : "Near completion we propose a delivery/installation window. You confirm access, parking, lift/stair details, and site readiness.",
+                "question": "Pre-Delivery Scheduling ",
+                "answer": "Near completion we propose a delivery/installation window. You confirm access, parking, lift/stair details, and site readiness.",
               },
               {
-                "question":"Delivery / Installation & Handover",
-                "answer" : "We deliver or deliver-and-install (NL only). After installation we perform functional checks and share care guidance."
+                "question": "Delivery / Installation & Handover",
+                "answer": "We deliver or deliver-and-install (NL only). After installation we perform functional checks and share care guidance."
               },
               {
-                "question":"Change Requests",
-                "answer" : "Any change after approval (finish/size/hardware) may alter price and timeline. Work resumes after full payment of the change order."
+                "question": "Change Requests",
+                "answer": "Any change after approval (finish/size/hardware) may alter price and timeline. Work resumes after full payment of the change order."
               },
               {
-                "question":"Cancellations",
-                "answer" : "Custom items are excluded from the standard right of withdrawal. Cancellations after payment are not possible unless agreed in writing before production starts (admin/design costs apply)."
+                "question": "Cancellations",
+                "answer": "Custom items are excluded from the standard right of withdrawal. Cancellations after payment are not possible unless agreed in writing before production starts (admin/design costs apply)."
               },
             ]
           },
-          "Delivery":{
-            "title" : "Delivery (Delivery & Installation in the Netherlands)",
-            "desc" : "We deliver to all Dutch provinces using in-house teams or trusted partners.",
-            "faqs" :[
+          "Delivery": {
+            "title": "Delivery (Delivery & Installation in the Netherlands)",
+            "desc": "We deliver to all Dutch provinces using in-house teams or trusted partners.",
+            "faqs": [
               {
-                "question":"Delivery Options",
-                "answers" : [
+                "question": "Delivery Options",
+                "answers": [
                   "Supply-Only: Kerbside/ground-floor delivery to the first accessible point.",
                   " White-Glove: Two-person delivery to room of choice (if access permits). Packaging removal on request.",
                 ],
               },
               {
-                "question":"Scheduling & Access ",
-                "answers" : [
+                "question": "Scheduling & Access ",
+                "answers": [
                   "We agree a date + time window. You ensure safe access (door widths, lifts, staircases), parking permits if needed, and a clear path. If access is not possible, re-delivery and/or additional handling costs apply.",
                 ],
               },
               {
-                "question":"Packaging & Protection ",
-                "answers" : [
+                "question": "Packaging & Protection ",
+                "answers": [
                   "Doors and panels ship with full foam protection and edge guards. Accessories are packed in branded sleeves/boxes.",
                 ],
               },
               {
-                "question":"Damage on Arrival",
-                "answers" : [
+                "question": "Damage on Arrival",
+                "answers": [
                   "Visible damage: note on the delivery form immediately and photograph before unwrapping",
                   " Concealed damage: report in writing within 24 hours of delivery with photos and order number.",
                 ],
               },
               {
-                "question":"Risk Transfer",
-                "answers" : [
+                "question": "Risk Transfer",
+                "answers": [
                   "Risk transfers at delivery. For white-glove/installation, risk transfers after placement in the agreed room/area.",
                 ],
               },
               {
-                "question":"Installation (Optional, NL only)",
-                "answers" : [
+                "question": "Installation (Optional, NL only)",
+                "answers": [
                   "Included scope (unless otherwise stated):",
                   "Fitting frames/leafs/hardware supplied by Zebrano. ",
                   "Alignment, clearances, functional checks (swing/slide/pivot).",
@@ -830,8 +873,8 @@ const resources = {
                 ],
               },
               {
-                "question":"Site Readiness (Required)",
-                "answers" : [
+                "question": "Site Readiness (Required)",
+                "answers": [
                   "Finished openings within tolerance, walls plumb/level",
                   " Interior climate: 15–25 °C and 40–60% RH.",
                   "Substrates dry; area clean and accessible; 230 V power available. Re-visits due to site not ready are chargeable and must be paid before re-scheduling.",
@@ -839,297 +882,297 @@ const resources = {
               },
             ],
           },
-          "Guarantee" : {
-            "title" : "Guarantee (Netherlands)",
-            "desc" : "We stand behind our craftsmanship.",
-            "faqs" : [
+          "Guarantee": {
+            "title": "Guarantee (Netherlands)",
+            "desc": "We stand behind our craftsmanship.",
+            "faqs": [
               {
-                "question" : "Duration",
-                "answers" : [
+                "question": "Duration",
+                "answers": [
                   "2 years from delivery date.",
                 ],
               },
               {
-                "question" : "What We Cover",
-                "answers" : [
+                "question": "What We Cover",
+                "answers": [
                   "Manufacturing defects, structural integrity, hardware function, veneer bonding/lamination, and factory finishes per spec.",
                 ],
               },
               {
-                "question" : "What’s Not Covered",
-                "answers" : [
+                "question": "What’s Not Covered",
+                "answers": [
                   " Industry-standard tolerances (typ. ±1–2 mm; handcrafted panels up to ±4 mm).",
                 ],
               },
               {
-                "question" : "Tolerances",
-                "answers" : [
+                "question": "Tolerances",
+                "answers": [
                   "2 years from delivery date.",
                 ],
               },
               {
-                "question" : "Claims Process",
-                "answers" : [
+                "question": "Claims Process",
+                "answers": [
                   " Email photos, description, order/invoice number. On-site inspection may occur. Remedy at our discretion: repair, replacement, or refund of the defective item. Consequential costs excluded.",
                 ],
               }
             ],
           },
           "CareAndMaintenance": {
-            "title" : "Care & Maintenance",
-            "desc" : "Regular care protects the finish and function. Use soft cloths and pH-neutral cleaners unless noted.",
-            "faqs" : [
+            "title": "Care & Maintenance",
+            "desc": "Regular care protects the finish and function. Use soft cloths and pH-neutral cleaners unless noted.",
+            "faqs": [
               {
-                "question" : "Glass",
-                "answers" : ["Clean with glass cleaner/mild soap; dry lint-free. Avoid abrasives/blades on textured glass. Check film/adhesive compatibility."],
-              },{
-                "question" : "Solid Wood",
-                "answers" : ["Dust weekly; slightly damp wipe; maintain 40–60% RH; re-oil/wax yearly if specified; protect from sun/heat."],
-              },{
-                "question" : "Wood Veneer",
-                "answers" : ["Soft dry/lightly damp cloth; do not sand; oiled: light oil yearly; lacquered: mild cleaners only. Natural variation expected."],
-              },{
-                "question" : "Stone & Ceramic",
-                "answers" : [" pH-neutral cleaner; avoid acids/alkalis; wipe spills immediately; seal natural stone annually; ceramics usually no seal."],
-              },{
-                "question" : "Hardware & Metal",
-                "answers" : ["Dry/slightly damp wipe; no abrasives/solvents; light lubrication 6–12 mnd; tighten visible screws; don’t adjust concealed mechanisms. Patina is normal."],
-              },{
-                "question" : "Hinged & Pivot Doors — Tips",
-                "answers" : ["Don’t force against stops; don’t hang weight on handles; keep floor/track clean."],
-              },{
-                "question" : "Maintenance Summary",
-                "answers" : ["Weekly: dust/wipe. Quarterly: check hardware, clean tracks/pivots. Annually: oil/wax (if appl.), reseal stone, general inspection."],
+                "question": "Glass",
+                "answers": ["Clean with glass cleaner/mild soap; dry lint-free. Avoid abrasives/blades on textured glass. Check film/adhesive compatibility."],
+              }, {
+                "question": "Solid Wood",
+                "answers": ["Dust weekly; slightly damp wipe; maintain 40–60% RH; re-oil/wax yearly if specified; protect from sun/heat."],
+              }, {
+                "question": "Wood Veneer",
+                "answers": ["Soft dry/lightly damp cloth; do not sand; oiled: light oil yearly; lacquered: mild cleaners only. Natural variation expected."],
+              }, {
+                "question": "Stone & Ceramic",
+                "answers": [" pH-neutral cleaner; avoid acids/alkalis; wipe spills immediately; seal natural stone annually; ceramics usually no seal."],
+              }, {
+                "question": "Hardware & Metal",
+                "answers": ["Dry/slightly damp wipe; no abrasives/solvents; light lubrication 6–12 mnd; tighten visible screws; don’t adjust concealed mechanisms. Patina is normal."],
+              }, {
+                "question": "Hinged & Pivot Doors — Tips",
+                "answers": ["Don’t force against stops; don’t hang weight on handles; keep floor/track clean."],
+              }, {
+                "question": "Maintenance Summary",
+                "answers": ["Weekly: dust/wipe. Quarterly: check hardware, clean tracks/pivots. Annually: oil/wax (if appl.), reseal stone, general inspection."],
               },
-              
+
             ],
           },
-          "FAQ":{
-            "ProductsAndMaterials" : {
-              "title" : "Products & Materials",
-              "faqs" : [
+          "FAQ": {
+            "ProductsAndMaterials": {
+              "title": "Products & Materials",
+              "faqs": [
                 {
-                  "question" : "What products do you make?",
-                  "answer" : "Made-to-order doors … and boiserie (decorative wall panelling).",
+                  "question": "What products do you make?",
+                  "answer": "Made-to-order doors … and boiserie (decorative wall panelling).",
                 },
                 {
-                  "question" : "Which materials and finishes are available?",
-                  "answer" : "Solid wood, veneer, lacquer (RAL), glass, natural stone, ceramics/porcelain; hardware in black, stainless, bronze, PVD.",
+                  "question": "Which materials and finishes are available?",
+                  "answer": "Solid wood, veneer, lacquer (RAL), glass, natural stone, ceramics/porcelain; hardware in black, stainless, bronze, PVD.",
                 },
                 {
-                  "question" : "Do you offer flush-to-wall (rasomuro) doors?",
-                  "answer" : "Yes—concealed frames and hardware create a seamless, coplanar look.",
+                  "question": "Do you offer flush-to-wall (rasomuro) doors?",
+                  "answer": "Yes—concealed frames and hardware create a seamless, coplanar look.",
                 },
                 {
-                  "question" : "How customisable are your doors?",
-                  "answer" : "Sizes, finishes, glass, edges, hardware; ultra-custom via quote path.",
+                  "question": "How customisable are your doors?",
+                  "answer": "Sizes, finishes, glass, edges, hardware; ultra-custom via quote path.",
                 },
                 {
-                  "question" : "Are natural variations normal?",
-                  "answer" : "Yes—wood grain/colour and stone veining vary.",
+                  "question": "Are natural variations normal?",
+                  "answer": "Yes—wood grain/colour and stone veining vary.",
                 },
                 {
-                  "question" : "Can you match an existing finish?",
-                  "answer" : "We can get close from a physical sample; exact match not guaranteed.",
+                  "question": "Can you match an existing finish?",
+                  "answer": "We can get close from a physical sample; exact match not guaranteed.",
                 },
                 {
-                  "question" : "Do you supply hardware?",
-                  "answer" : "Yes—hinges, pivots, sliders, handles, seals per spec; third-party by agreement.",
-                },
-              ],
-            },
-            "TechnicalAndSiteRequirement" : {
-              "title" : "Technical & Site Requirement",
-              "faqs" : [
-                {
-                  "question":"General site requirements?",
-                  "answer" : "Openings square/plumb/level; dry substrates; 15–25 °C & 40–60% RH; clear access; 230 V power.",
-                },
-                {
-                  "question":"Pivot requirements & UFH",
-                  "answer" : "Ceiling fixable; plywood backing where needed; drill ≥4 cm; keep 25×25 cm pipe-free zones (pivot & side panels).",
-                },
-                {
-                  "question":"Skirting/floor finishes",
-                  "answer" : "May require cutting; choose flat skirting to avoid; painter finishes cut edges.",
-                },
-                {
-                  "question":"Tolerances",
-                  "answer":"±1–2 mm components; handcrafted panels up to ±4 mm.",
+                  "question": "Do you supply hardware?",
+                  "answer": "Yes—hinges, pivots, sliders, handles, seals per spec; third-party by agreement.",
                 },
               ],
             },
-            "MeasurementDesignApprovals" : {
-              "title" : "Measurement, Design & Approvals",
-              "faqs" : [
+            "TechnicalAndSiteRequirement": {
+              "title": "Technical & Site Requirement",
+              "faqs": [
                 {
-                  "question" : "Who takes measurements?",
-                  "answer" : "You or our paid service (recommended). Your own sizes = your responsibility.",
+                  "question": "General site requirements?",
+                  "answer": "Openings square/plumb/level; dry substrates; 15–25 °C & 40–60% RH; clear access; 230 V power.",
                 },
                 {
-                  "question" : "Documents before production?",
-                  "answer" : "Proposal, technical drawings/specs, install notes if supply-only.",
+                  "question": "Pivot requirements & UFH",
+                  "answer": "Ceiling fixable; plywood backing where needed; drill ≥4 cm; keep 25×25 cm pipe-free zones (pivot & side panels).",
                 },
                 {
-                  "question" : "How to approve?",
-                  "answer" : "Written approval required; production starts after approval + payment.",
+                  "question": "Skirting/floor finishes",
+                  "answer": "May require cutting; choose flat skirting to avoid; painter finishes cut edges.",
                 },
                 {
-                  "question" : "Work from architect drawings?",
-                  "answer" : "Yes—send PDF/DWG; we confirm feasibility/adjustments.",
+                  "question": "Tolerances",
+                  "answer": "±1–2 mm components; handcrafted panels up to ±4 mm.",
+                },
+              ],
+            },
+            "MeasurementDesignApprovals": {
+              "title": "Measurement, Design & Approvals",
+              "faqs": [
+                {
+                  "question": "Who takes measurements?",
+                  "answer": "You or our paid service (recommended). Your own sizes = your responsibility.",
                 },
                 {
-                  "question" : "Change after approval?",
-                  "answer" : "Via change order; price/lead time may change; resumes after full payment.",
+                  "question": "Documents before production?",
+                  "answer": "Proposal, technical drawings/specs, install notes if supply-only.",
                 },
                 {
-                  "question" : "3D/visual previews?",
-                  "answer" : "Possible for selected lines; scope-dependent; design fee may apply.",
+                  "question": "How to approve?",
+                  "answer": "Written approval required; production starts after approval + payment.",
+                },
+                {
+                  "question": "Work from architect drawings?",
+                  "answer": "Yes—send PDF/DWG; we confirm feasibility/adjustments.",
+                },
+                {
+                  "question": "Change after approval?",
+                  "answer": "Via change order; price/lead time may change; resumes after full payment.",
+                },
+                {
+                  "question": "3D/visual previews?",
+                  "answer": "Possible for selected lines; scope-dependent; design fee may apply.",
                 },
               ]
             },
-            "PaymentAndInvoicing" : {
-              "title" : "Payment & Invoicing",
-              "faqs" : [
+            "PaymentAndInvoicing": {
+              "title": "Payment & Invoicing",
+              "faqs": [
                 {
-                  "question" : "When do I pay?",
-                  "answer" : " 100% upfront after final approvals.",
+                  "question": "When do I pay?",
+                  "answer": " 100% upfront after final approvals.",
                 },
                 {
-                  "question" : "Methods?",
-                  "answer" : "iDEAL, cards, Apple Pay, PayPal, SEPA (via Mollie).",
+                  "question": "Methods?",
+                  "answer": "iDEAL, cards, Apple Pay, PayPal, SEPA (via Mollie).",
                 },
                 {
-                  "question" : " Prices & VAT? ",
-                  "answer" : "EUR; excl. 21% BTW unless stated; VAT at checkout/invoice.",
+                  "question": " Prices & VAT? ",
+                  "answer": "EUR; excl. 21% BTW unless stated; VAT at checkout/invoice.",
                 },
                 {
-                  "question" : "Arrears/split invoices? ",
-                  "answer" : "No arrears; no split across entities.",
+                  "question": "Arrears/split invoices? ",
+                  "answer": "No arrears; no split across entities.",
                 },
                 {
-                  "question" : "Business invoice details? ",
-                  "answer" : " Legal name, address, KvK, BTW-nummer; check accuracy before payment.",
+                  "question": "Business invoice details? ",
+                  "answer": " Legal name, address, KvK, BTW-nummer; check accuracy before payment.",
                 },
                 {
-                  "question" : "Payments secure?",
-                  "answer" : "Yes—SCA/3-D Secure; ID checks on high-value orders possible.",
+                  "question": "Payments secure?",
+                  "answer": "Yes—SCA/3-D Secure; ID checks on high-value orders possible.",
                 },
               ],
             },
-            "LeadTimesAndScheduling" : {
-              "title" : "Lead Times & Scheduling",
-              "faqs" : [
+            "LeadTimesAndScheduling": {
+              "title": "Lead Times & Scheduling",
+              "faqs": [
                 {
-                  "question" : "Standard lead times?",
-                  "answer" : "Doors 6–8 w; Flush-to-Wall 8–10 w; Partitions 6–8 w; Boiserie 8–10 w.",
+                  "question": "Standard lead times?",
+                  "answer": "Doors 6–8 w; Flush-to-Wall 8–10 w; Partitions 6–8 w; Boiserie 8–10 w.",
                 },
                 {
-                  "question" : "When does lead time start?",
-                  "answer" : "After full payment and written approval.",
+                  "question": "When does lead time start?",
+                  "answer": "After full payment and written approval.",
                 },
                 {
-                  "question" : " Expedited?",
-                  "answer" : "~2 weeks faster at extra cost, capacity/material dependent.",
+                  "question": " Expedited?",
+                  "answer": "~2 weeks faster at extra cost, capacity/material dependent.",
                 },
                 {
-                  "question" : " Updates?",
-                  "answer" : "Yes—status updates and delivery/installation window near completion.",
+                  "question": " Updates?",
+                  "answer": "Yes—status updates and delivery/installation window near completion.",
                 },
                 {
-                  "question" : "Hold a slot?",
-                  "answer" : "No—slots aren’t reserved without payment/approval.",
+                  "question": "Hold a slot?",
+                  "answer": "No—slots aren’t reserved without payment/approval.",
                 },
                 {
-                  "question" : "Postpone delivery?",
-                  "answer" : "Yes—inform early; storage/re-visit fees may apply.",
+                  "question": "Postpone delivery?",
+                  "answer": "Yes—inform early; storage/re-visit fees may apply.",
                 },
               ]
             },
-            "DeliveryAndInstallation" : {
-              "title" : "Delivery & Installation",
-              "faqs" : [
+            "DeliveryAndInstallation": {
+              "title": "Delivery & Installation",
+              "faqs": [
                 {
-                  "question" : "Where do you deliver? ",
-                  "answer" : "All Dutch provinces.",
+                  "question": "Where do you deliver? ",
+                  "answer": "All Dutch provinces.",
                 },
                 {
-                  "question" : "Delivery options? ",
-                  "answer" : "Supply-Only or White-Glove.",
+                  "question": "Delivery options? ",
+                  "answer": "Supply-Only or White-Glove.",
                 },
                 {
-                  "question" : "Do you install?",
-                  "answer" : "Yes in NL; scope included/excluded as specified.",
+                  "question": "Do you install?",
+                  "answer": "Yes in NL; scope included/excluded as specified.",
                 },
                 {
-                  "question" : "Site readiness?",
-                  "answer" : "Tolerances, climate, access, power; re-visits chargeable.",
+                  "question": "Site readiness?",
+                  "answer": "Tolerances, climate, access, power; re-visits chargeable.",
                 },
                 {
-                  "question" : "Report transport damage? ",
-                  "answer" : " Visible: note + photo; concealed: 24 h with photos/order no.",
+                  "question": "Report transport damage? ",
+                  "answer": " Visible: note + photo; concealed: 24 h with photos/order no.",
                 },
                 {
-                  "question" : "Difficult access?",
-                  "answer" : "Tell us in advance; extra manpower/lift can be arranged (quoted).",
-                },
-              ],
-            },
-            "WarrantyAftercare" : {
-              "title" : "Warranty & Aftercare",
-              "faqs" : [
-                {
-                  "question" : "Warranty?",
-                  "answer" : "2-year product; 6-month installation (if by Zebrano).",
-                },
-                {
-                  "question" : "Covered/not covered?",
-                  "answer" : "Mechanisms, bonding, factory/install defects vs. wear, misuse, climate, variations, third-party install, improper cleaning.",
-                },
-                {
-                  "question" : "Make a claim? ",
-                  "answer" : "Email photos, description, order/invoice no.; remedy at our discretion.",
-                },
-                {
-                  "question" : "Care for glass? ",
-                  "answer" : " Glass cleaner/mild soap; avoid abrasives/blades; confirm films.",
-                },
-                {
-                  "question" : "Maintain wood/veneer/stone/ceramic?",
-                  "answer" : "See detailed care above.",
-                },
-                {
-                  "question" : "Hardware & mechanisms?",
-                  "answer" : "Hardware & mechanisms?",
+                  "question": "Difficult access?",
+                  "answer": "Tell us in advance; extra manpower/lift can be arranged (quoted).",
                 },
               ],
             },
-            "OrderReturnsSupports" : {
-              "title" : "Orders, Returns & Support",
-              "faqs" : [
+            "WarrantyAftercare": {
+              "title": "Warranty & Aftercare",
+              "faqs": [
                 {
-                  "question" : " Cancel/return?",
-                  "answer" : "Custom items excluded from withdrawal; exceptions only pre-production and in writing (costs apply).",
+                  "question": "Warranty?",
+                  "answer": "2-year product; 6-month installation (if by Zebrano).",
                 },
                 {
-                  "question" : "Showroom?",
-                  "answer" : "By appointment; digital consults and samples available (deposit/fee).",
+                  "question": "Covered/not covered?",
+                  "answer": "Mechanisms, bonding, factory/install defects vs. wear, misuse, climate, variations, third-party install, improper cleaning.",
                 },
                 {
-                  "question" : "Work with architects/designers?",
-                  "answer" : " Yes—trade/projects welcome; request specs/samples/terms.",
+                  "question": "Make a claim? ",
+                  "answer": "Email photos, description, order/invoice no.; remedy at our discretion.",
                 },
                 {
-                  "question" : "Configure online & upload? ",
-                  "answer" : "Yes; ultra-custom switches to Quote. After purchase upload drawings/photos.",
+                  "question": "Care for glass? ",
+                  "answer": " Glass cleaner/mild soap; avoid abrasives/blades; confirm films.",
                 },
                 {
-                  "question" : "Payment/data secure?",
-                  "answer" : "Mail info@zebranostudio.com; doorgaans 1–3 werkdagen.",
+                  "question": "Maintain wood/veneer/stone/ceramic?",
+                  "answer": "See detailed care above.",
                 },
                 {
-                  "question" : "Payment/data secure?",
-                  "answer" : "Email info@zebranostudio.com; typical reply 1–3 business days.",
+                  "question": "Hardware & mechanisms?",
+                  "answer": "Hardware & mechanisms?",
+                },
+              ],
+            },
+            "OrderReturnsSupports": {
+              "title": "Orders, Returns & Support",
+              "faqs": [
+                {
+                  "question": " Cancel/return?",
+                  "answer": "Custom items excluded from withdrawal; exceptions only pre-production and in writing (costs apply).",
+                },
+                {
+                  "question": "Showroom?",
+                  "answer": "By appointment; digital consults and samples available (deposit/fee).",
+                },
+                {
+                  "question": "Work with architects/designers?",
+                  "answer": " Yes—trade/projects welcome; request specs/samples/terms.",
+                },
+                {
+                  "question": "Configure online & upload? ",
+                  "answer": "Yes; ultra-custom switches to Quote. After purchase upload drawings/photos.",
+                },
+                {
+                  "question": "Payment/data secure?",
+                  "answer": "Mail info@zebranostudio.com; doorgaans 1–3 werkdagen.",
+                },
+                {
+                  "question": "Payment/data secure?",
+                  "answer": "Email info@zebranostudio.com; typical reply 1–3 business days.",
                 },
               ],
             },
@@ -1353,136 +1396,136 @@ const resources = {
           "text2": "2. If there is ambiguity about the interpretation of one or more provisions of these terms or a situation is not covered, the provision or situation shall be assessed “in the spirit” of these terms.",
           "text3": "3. If Zebrano Studio does not always demand strict compliance with these terms, this does not mean that the provisions do not apply, nor that Zebrano Studio waives the right to demand strict compliance in other cases.",
         },
-        "OfferQuotation" : {
-          "title" : "Offer / Quotation",
-          "text1" : "1. Offers and quotations from Zebrano Studio are without obligation unless expressly stated otherwise.",
-          "text2" : "2. Any errors—such as incorrect price indications and calculation or clerical mistakes—on Zebrano Studio’s website, in advertisements, offers and quotations, publications, order confirmations, or other documents are not binding.",
+        "OfferQuotation": {
+          "title": "Offer / Quotation",
+          "text1": "1. Offers and quotations from Zebrano Studio are without obligation unless expressly stated otherwise.",
+          "text2": "2. Any errors—such as incorrect price indications and calculation or clerical mistakes—on Zebrano Studio’s website, in advertisements, offers and quotations, publications, order confirmations, or other documents are not binding.",
         },
-        "TheAgreement" : {
-          "title" : "The Agreement",
+        "TheAgreement": {
+          "title": "The Agreement",
 
-          "text1" : "1. The agreement is concluded when the customer accepts Zebrano Studio’s offer. The purchase is established upon signing the order confirmation.",
+          "text1": "1. The agreement is concluded when the customer accepts Zebrano Studio’s offer. The purchase is established upon signing the order confirmation.",
 
-          "text2" : "2. The order confirmation is leading in principle. The customer must carefully check it for omissions and inaccuracies and report these to Zebrano Studio in time, at least within 3 days of receipt of the order confirmation.",
+          "text2": "2. The order confirmation is leading in principle. The customer must carefully check it for omissions and inaccuracies and report these to Zebrano Studio in time, at least within 3 days of receipt of the order confirmation.",
 
-          "text3" : "3. Offers and promotions are temporary. After the closing date of an offer or promotional period, the customer can no longer make use of it. Price reductions after the agreement is concluded—for example due to offers, promotions, or discounts on showroom models—do not entitle the customer to a price reduction.",
+          "text3": "3. Offers and promotions are temporary. After the closing date of an offer or promotional period, the customer can no longer make use of it. Price reductions after the agreement is concluded—for example due to offers, promotions, or discounts on showroom models—do not entitle the customer to a price reduction.",
 
-          "text4" : "4. Special promotional terms may apply to offers and promotions.",
+          "text4": "4. Special promotional terms may apply to offers and promotions.",
 
-          "text5" : "5. Amendments to the agreement and deviations from these general terms are only valid if agreed in writing between the customer and Zebrano Studio.",
+          "text5": "5. Amendments to the agreement and deviations from these general terms are only valid if agreed in writing between the customer and Zebrano Studio.",
 
-          "text6" : "6. If changes to the agreement lead to an increase or decrease in costs, the resulting change in the purchase price must be agreed in writing.",
+          "text6": "6. If changes to the agreement lead to an increase or decrease in costs, the resulting change in the purchase price must be agreed in writing.",
 
-          "text7" : "7. If it appears that (further) performance of the agreement by Zebrano Studio is not possible due to force majeure, Zebrano Studio may suspend or dissolve the agreement without being liable for damages. This does not prevent the parties from making mutual proposals to amend the agreement in such a way that proper and complete performance is possible.",
+          "text7": "7. If it appears that (further) performance of the agreement by Zebrano Studio is not possible due to force majeure, Zebrano Studio may suspend or dissolve the agreement without being liable for damages. This does not prevent the parties from making mutual proposals to amend the agreement in such a way that proper and complete performance is possible.",
 
-          "text8" : "8. In the event of the customer’s bankruptcy, suspension of payments, or attachment of assets, Zebrano Studio may dissolve the agreement in whole or in part without notice of default.",
+          "text8": "8. In the event of the customer’s bankruptcy, suspension of payments, or attachment of assets, Zebrano Studio may dissolve the agreement in whole or in part without notice of default.",
         },
-        "RightOfWithdrawal":{
-          "title":"Right of Withdrawal / Termination of the Agreement",
-          "text1":"1. Most products manufactured and/or supplied by Zebrano Studio are custom-made and not prefabricated, including at least products made in Zebrano Studio’s factory, such as tables, coffee tables, side tables, bar tables, garden tables, cabinets, TV units, upholstered furniture, and made-to-measure wall shelves. The right of withdrawal does not apply to these products. They cannot be returned.",
-          "text2":"2. If the customer wishes to terminate the agreement without a breach having occurred and Zebrano Studio agrees, the agreement may be terminated by mutual consent. In that case, Zebrano Studio is entitled to compensation for damage, including loss suffered and lost profit. Unless agreed otherwise, the compensation amounts to 30% of the purchase price, or 50% if at the time of termination by mutual consent the customer has already been informed that (partial) delivery can take place.",
-          "text3":"3. If Zebrano Studio collects the product from the consumer at the consumer’s request, the consumer bears the costs. These are €95.00 including VAT for addresses within the Benelux. At the time of collection, the product must be properly packaged and ready behind the first threshold. If not, the product will not be taken.",
-          "text4":"4. The purchase amount will be refunded after Zebrano Studio has inspected the product and found it to be complete, unused, and undamaged.",
+        "RightOfWithdrawal": {
+          "title": "Right of Withdrawal / Termination of the Agreement",
+          "text1": "1. Most products manufactured and/or supplied by Zebrano Studio are custom-made and not prefabricated, including at least products made in Zebrano Studio’s factory, such as tables, coffee tables, side tables, bar tables, garden tables, cabinets, TV units, upholstered furniture, and made-to-measure wall shelves. The right of withdrawal does not apply to these products. They cannot be returned.",
+          "text2": "2. If the customer wishes to terminate the agreement without a breach having occurred and Zebrano Studio agrees, the agreement may be terminated by mutual consent. In that case, Zebrano Studio is entitled to compensation for damage, including loss suffered and lost profit. Unless agreed otherwise, the compensation amounts to 30% of the purchase price, or 50% if at the time of termination by mutual consent the customer has already been informed that (partial) delivery can take place.",
+          "text3": "3. If Zebrano Studio collects the product from the consumer at the consumer’s request, the consumer bears the costs. These are €95.00 including VAT for addresses within the Benelux. At the time of collection, the product must be properly packaged and ready behind the first threshold. If not, the product will not be taken.",
+          "text4": "4. The purchase amount will be refunded after Zebrano Studio has inspected the product and found it to be complete, unused, and undamaged.",
         },
-        "IntellectualProperty" : {
-          "title" : "Intellectual Property",
-          "text1" : "1. Unless agreed otherwise in writing, Zebrano Studio retains the copyrights and all intellectual property rights to offers made, and to designs, images, drawings, (prototype) models, and the like provided by it. The customer may not reproduce, publish, exploit, or exhibit material belonging to Zebrano Studio on which intellectual property rights rest without Zebrano Studio’s permission.",
+        "IntellectualProperty": {
+          "title": "Intellectual Property",
+          "text1": "1. Unless agreed otherwise in writing, Zebrano Studio retains the copyrights and all intellectual property rights to offers made, and to designs, images, drawings, (prototype) models, and the like provided by it. The customer may not reproduce, publish, exploit, or exhibit material belonging to Zebrano Studio on which intellectual property rights rest without Zebrano Studio’s permission.",
         },
-        "DeliveryTime" : {
-          "title" : "Delivery Time",
-          "text1" : "1. The delivery time and/or execution period is determined by Zebrano Studio approximately.",
+        "DeliveryTime": {
+          "title": "Delivery Time",
+          "text1": "1. The delivery time and/or execution period is determined by Zebrano Studio approximately.",
 
-          "text2" : "2. In determining the delivery time and/or execution period, Zebrano Studio assumes it can perform the assignment under the circumstances known to it at that time.",
+          "text2": "2. In determining the delivery time and/or execution period, Zebrano Studio assumes it can perform the assignment under the circumstances known to it at that time.",
 
-          "text3" : "3. The delivery time and/or execution period commences when agreement has been reached on all commercial and technical details, all necessary information is in Zebrano Studio’s possession and, insofar as agreed, the down payment has been received.",
+          "text3": "3. The delivery time and/or execution period commences when agreement has been reached on all commercial and technical details, all necessary information is in Zebrano Studio’s possession and, insofar as agreed, the down payment has been received.",
 
-          "text4" : "4. If the anticipated delivery time and/or execution period is exceeded, Zebrano Studio will be granted an additional reasonable period to still deliver.",
+          "text4": "4. If the anticipated delivery time and/or execution period is exceeded, Zebrano Studio will be granted an additional reasonable period to still deliver.",
 
-          "text5" : "5. Exceeding the delivery time and/or execution period never entitles the customer to damages from Zebrano Studio.",
+          "text5": "5. Exceeding the delivery time and/or execution period never entitles the customer to damages from Zebrano Studio.",
         },
-        "TransportAndDamage" : {
-          "title" : "Transport and Damage upon Delivery",
-          "text1" : "1. Unless agreed otherwise, the agreement includes transport of the products by Zebrano Studio, which bears the risk of damage and loss during transport. If the products are delivered by a professional carrier, Zebrano Studio will ensure adequate insurance.",
-          "text2" : "2. Zebrano Studio is not liable for damage occurring from the first door/threshold of the delivery address onwards. We are, however, happy to help place the product inside.",
-          "text3" : "3. If damage is found upon delivery, the customer must report this to Zebrano Studio within two working days of delivery; otherwise, the customer is deemed to have received the delivered products without damage.",
+        "TransportAndDamage": {
+          "title": "Transport and Damage upon Delivery",
+          "text1": "1. Unless agreed otherwise, the agreement includes transport of the products by Zebrano Studio, which bears the risk of damage and loss during transport. If the products are delivered by a professional carrier, Zebrano Studio will ensure adequate insurance.",
+          "text2": "2. Zebrano Studio is not liable for damage occurring from the first door/threshold of the delivery address onwards. We are, however, happy to help place the product inside.",
+          "text3": "3. If damage is found upon delivery, the customer must report this to Zebrano Studio within two working days of delivery; otherwise, the customer is deemed to have received the delivered products without damage.",
         },
-        "Delivery" : {
-          "title" : "Delivery",
-          "text1":"1. The customer must ensure that the place of delivery is easily accessible and that everything within their power is done to enable a smooth delivery. The customer must also ensure that the place of delivery can be properly secured.",
+        "Delivery": {
+          "title": "Delivery",
+          "text1": "1. The customer must ensure that the place of delivery is easily accessible and that everything within their power is done to enable a smooth delivery. The customer must also ensure that the place of delivery can be properly secured.",
 
-          "text2":"2. The customer shall inform Zebrano Studio, prior to entering into the agreement, of special circumstances at the delivery location that make the use of aids—such as a (removal) lift or crane—necessary. The customer must also ensure that required approvals (permits, etc.) and information essential to the work (e.g., accessibility of the delivery location) are provided to Zebrano Studio in time.",
+          "text2": "2. The customer shall inform Zebrano Studio, prior to entering into the agreement, of special circumstances at the delivery location that make the use of aids—such as a (removal) lift or crane—necessary. The customer must also ensure that required approvals (permits, etc.) and information essential to the work (e.g., accessibility of the delivery location) are provided to Zebrano Studio in time.",
 
-          "text3":"3. In the event of incorrect or incomplete information from the customer, the (additional) costs for using special aids are borne by the customer.",
+          "text3": "3. In the event of incorrect or incomplete information from the customer, the (additional) costs for using special aids are borne by the customer.",
 
-          "text4":"4. If a (removal) lift or crane is needed, Zebrano Studio will arrange for its availability at the time of delivery. The costs are for the customer and must be paid to Zebrano Studio prior to delivery.",
+          "text4": "4. If a (removal) lift or crane is needed, Zebrano Studio will arrange for its availability at the time of delivery. The costs are for the customer and must be paid to Zebrano Studio prior to delivery.",
 
-          "text5":"5. If the customer wishes to arrange a (removal) lift or crane themselves, Zebrano Studio will deliver the products free of charge on the ground floor without assembly. The customer remains responsible for moving and/or transporting products via the lift or crane, loading and unloading the products, and assembling them, as well as for any damage resulting therefrom.",
+          "text5": "5. If the customer wishes to arrange a (removal) lift or crane themselves, Zebrano Studio will deliver the products free of charge on the ground floor without assembly. The customer remains responsible for moving and/or transporting products via the lift or crane, loading and unloading the products, and assembling them, as well as for any damage resulting therefrom.",
 
-          "text6":"6. If the delivery location is not accessible at the time of delivery—for example because the product dimensions are too large to reach that place—this is at the customer’s expense and risk. In that case Zebrano Studio will deliver the products unassembled on the ground floor.",
+          "text6": "6. If the delivery location is not accessible at the time of delivery—for example because the product dimensions are too large to reach that place—this is at the customer’s expense and risk. In that case Zebrano Studio will deliver the products unassembled on the ground floor.",
 
-          "text7":"7. If the products offered for delivery are not accepted, other than due to defective delivery, Zebrano Studio will make a second delivery within a reasonable period.",
+          "text7": "7. If the products offered for delivery are not accepted, other than due to defective delivery, Zebrano Studio will make a second delivery within a reasonable period.",
 
-          "text8":"8. If it appears upon delivery by Zebrano Studio that immediate delivery cannot take place due to circumstances for the customer’s account and risk as described in this article, and the customer requests a second delivery, Zebrano Studio may charge additional freight, delivery, and storage costs to the customer.",
+          "text8": "8. If it appears upon delivery by Zebrano Studio that immediate delivery cannot take place due to circumstances for the customer’s account and risk as described in this article, and the customer requests a second delivery, Zebrano Studio may charge additional freight, delivery, and storage costs to the customer.",
 
-          "text9":"9. If the customer wishes to postpone the delivery date, this must be communicated to Zebrano Studio no later than 20 working days prior to the scheduled delivery date. A later request will be assessed for feasibility and storage costs will be charged to the customer. Storage costs are €25 per week from the original delivery date. For changes within 3 working days prior to the scheduled delivery date, we charge €75 change fees to the customer, separate from the storage costs mentioned.",
+          "text9": "9. If the customer wishes to postpone the delivery date, this must be communicated to Zebrano Studio no later than 20 working days prior to the scheduled delivery date. A later request will be assessed for feasibility and storage costs will be charged to the customer. Storage costs are €25 per week from the original delivery date. For changes within 3 working days prior to the scheduled delivery date, we charge €75 change fees to the customer, separate from the storage costs mentioned.",
         },
-        "StorageOfProducts":{
-          "title" : "Storage of Products",
-          "text1" : "1. After refusal or after a second delivery, Zebrano Studio may charge storage costs and any further damages and costs to the customer.",
-          "text2" : "2. If a second delivery is also not accepted, Zebrano Studio will demand performance of the agreement, granting the customer a period of up to 30 days to still take delivery of the products. If the products are not taken within this period, Zebrano Studio may dissolve the agreement, with the customer owing compensation for the damage suffered by Zebrano Studio.",
+        "StorageOfProducts": {
+          "title": "Storage of Products",
+          "text1": "1. After refusal or after a second delivery, Zebrano Studio may charge storage costs and any further damages and costs to the customer.",
+          "text2": "2. If a second delivery is also not accepted, Zebrano Studio will demand performance of the agreement, granting the customer a period of up to 30 days to still take delivery of the products. If the products are not taken within this period, Zebrano Studio may dissolve the agreement, with the customer owing compensation for the damage suffered by Zebrano Studio.",
         },
-        "Payment" : {
-          "title" : "Payment",
-          "text1" : "1. Payment is made in euros. Zebrano Studio’s prices state whether they are inclusive or exclusive of VAT.",
-          "text2" : "2. When entering into an agreement with a consumer, Zebrano Studio may request a down payment of up to 30% of the purchase price. For agreements with a business customer, Zebrano Studio may, before delivering or continuing performance, require payment of the full purchase price or security for the customer’s payment obligations.",
-          "text3" : "3. Unless agreed otherwise, the net (remaining) purchase price must be paid before delivery.",
-          "text4" : "4. If Zebrano Studio performs a delivery under an agreement in parts, it is entitled to demand payment for each partial delivery. The customer will receive a partial invoice for each delivery.",
-          "text5" : "5. The consumer owes statutory interest pursuant to Article 6:119 of the Dutch Civil Code over the period in which they are in default of paying the purchase price. The business customer owes statutory commercial interest (Article 6:119a DCC) over the period of default.",
-          "text6" : "6. Without prejudice to paragraph 5, after default occurs Zebrano Studio will send the consumer a payment reminder, demanding payment within 14 days from the day after the reminder. The consumer will be informed that extrajudicial collection costs will be due if payment remains outstanding, stating the amount of such costs.",
-          "text7" : "7. Zebrano Studio is entitled to proceed to collection of the amount due without further notice of default and may engage third parties for collection. In that case, the customer also owes extrajudicial collection costs, determined in accordance with the Dutch Act on Standardisation of Extrajudicial Collection Costs and the related decree.",
-          "text8" : "8. In the event of complaints, the customer is only entitled to suspend payment of that part of the amount due which is reasonably proportionate to the nature and seriousness of the complaint. This does not release the customer from the obligation to pay the remainder within the agreed term.",
-          "text9" : "9. Zebrano Studio remains the owner of the products until the customer has paid the total amount due under the agreement. The customer must handle the products with care and may not transfer them to third parties, pledge them, loan them, or remove them (or have them removed) from the location where they were delivered until the purchase price and any interest and costs have been paid in full.",
+        "Payment": {
+          "title": "Payment",
+          "text1": "1. Payment is made in euros. Zebrano Studio’s prices state whether they are inclusive or exclusive of VAT.",
+          "text2": "2. When entering into an agreement with a consumer, Zebrano Studio may request a down payment of up to 30% of the purchase price. For agreements with a business customer, Zebrano Studio may, before delivering or continuing performance, require payment of the full purchase price or security for the customer’s payment obligations.",
+          "text3": "3. Unless agreed otherwise, the net (remaining) purchase price must be paid before delivery.",
+          "text4": "4. If Zebrano Studio performs a delivery under an agreement in parts, it is entitled to demand payment for each partial delivery. The customer will receive a partial invoice for each delivery.",
+          "text5": "5. The consumer owes statutory interest pursuant to Article 6:119 of the Dutch Civil Code over the period in which they are in default of paying the purchase price. The business customer owes statutory commercial interest (Article 6:119a DCC) over the period of default.",
+          "text6": "6. Without prejudice to paragraph 5, after default occurs Zebrano Studio will send the consumer a payment reminder, demanding payment within 14 days from the day after the reminder. The consumer will be informed that extrajudicial collection costs will be due if payment remains outstanding, stating the amount of such costs.",
+          "text7": "7. Zebrano Studio is entitled to proceed to collection of the amount due without further notice of default and may engage third parties for collection. In that case, the customer also owes extrajudicial collection costs, determined in accordance with the Dutch Act on Standardisation of Extrajudicial Collection Costs and the related decree.",
+          "text8": "8. In the event of complaints, the customer is only entitled to suspend payment of that part of the amount due which is reasonably proportionate to the nature and seriousness of the complaint. This does not release the customer from the obligation to pay the remainder within the agreed term.",
+          "text9": "9. Zebrano Studio remains the owner of the products until the customer has paid the total amount due under the agreement. The customer must handle the products with care and may not transfer them to third parties, pledge them, loan them, or remove them (or have them removed) from the location where they were delivered until the purchase price and any interest and costs have been paid in full.",
         },
-        "Warranty" : {
-          "title" : "Warranty",
-          "text1" : "1. Unless agreed otherwise in writing, Zebrano Studio warrants the soundness of the delivered products for a period of 2 years after delivery.",
+        "Warranty": {
+          "title": "Warranty",
+          "text1": "1. Unless agreed otherwise in writing, Zebrano Studio warrants the soundness of the delivered products for a period of 2 years after delivery.",
 
-          "text2" : "2. For custom-made products, minor deviations in dimensions are permitted. Zebrano Studio may deviate by 2% from the agreed dimensions, unless expressly agreed otherwise.",
+          "text2": "2. For custom-made products, minor deviations in dimensions are permitted. Zebrano Studio may deviate by 2% from the agreed dimensions, unless expressly agreed otherwise.",
 
-          "text3" : "3. The customer must in all cases give Zebrano Studio the opportunity to remedy any defect. Zebrano Studio’s liability is limited to repair free of charge of a defective product or replacement of that product or a part thereof, at Zebrano Studio’s discretion.",
+          "text3": "3. The customer must in all cases give Zebrano Studio the opportunity to remedy any defect. Zebrano Studio’s liability is limited to repair free of charge of a defective product or replacement of that product or a part thereof, at Zebrano Studio’s discretion.",
 
-          "text4" : "4. No warranty is given if defects are the result of normal wear and tear, improper use, lack of or incorrect maintenance or installation, (dis)assembly, modification, or repair by the customer or third parties. No warranty is given on products that were not new at the time of delivery, showroom models, products or parts covered by a manufacturer’s warranty, or product-specific characteristics including the natural behaviour of wood (see also below).",
+          "text4": "4. No warranty is given if defects are the result of normal wear and tear, improper use, lack of or incorrect maintenance or installation, (dis)assembly, modification, or repair by the customer or third parties. No warranty is given on products that were not new at the time of delivery, showroom models, products or parts covered by a manufacturer’s warranty, or product-specific characteristics including the natural behaviour of wood (see also below).",
 
-          "text5" : "5. All wooden parts are subject to a limited warranty covering manufacturing defects only. The natural behaviour of wood is excluded as it is not a defect in the product or production but a characteristic of the material. “Behaviour of wood” includes expansion, shrinkage, cracking, and/or warping. The wood used by Zebrano Studio is sawn and dried to a moisture content of approximately 8%–12%, making the product suitable for use in a heated room. Wood remains a natural product and absorbs/releases moisture. The extent to which this occurs depends, among other things, on temperature differences and humidity. Wood will work less if the humidity remains at a near-constant level; we recommend 50%–60% humidity, typically 10% lower in winter and 10% higher in summer.",
+          "text5": "5. All wooden parts are subject to a limited warranty covering manufacturing defects only. The natural behaviour of wood is excluded as it is not a defect in the product or production but a characteristic of the material. “Behaviour of wood” includes expansion, shrinkage, cracking, and/or warping. The wood used by Zebrano Studio is sawn and dried to a moisture content of approximately 8%–12%, making the product suitable for use in a heated room. Wood remains a natural product and absorbs/releases moisture. The extent to which this occurs depends, among other things, on temperature differences and humidity. Wood will work less if the humidity remains at a near-constant level; we recommend 50%–60% humidity, typically 10% lower in winter and 10% higher in summer.",
 
-          "text6" : "6. The file “Wood Variations and Tips” forms part of these general terms and will be provided to the customer by email.",
+          "text6": "6. The file “Wood Variations and Tips” forms part of these general terms and will be provided to the customer by email.",
 
-          "text7" : "7. If All-in-house has been purchased at the time of purchase, the customer applies the associated care products to the product themselves. This is not performed by Zebrano Studio.",
+          "text7": "7. If All-in-house has been purchased at the time of purchase, the customer applies the associated care products to the product themselves. This is not performed by Zebrano Studio.",
 
-          "text8" : "8. Zebrano Studio is not responsible for differing expectations of the customer regarding the upholstery of seating furniture in materials other than those present in our showrooms.",
+          "text8": "8. Zebrano Studio is not responsible for differing expectations of the customer regarding the upholstery of seating furniture in materials other than those present in our showrooms.",
 
-          "text9" : "9. Zebrano Studio’s repair voucher covers the repair of (dry) cracks in wooden furniture manufactured by Zebrano Studio. Other (repair) services are subject to different rates to be determined by Zebrano Studio.",
+          "text9": "9. Zebrano Studio’s repair voucher covers the repair of (dry) cracks in wooden furniture manufactured by Zebrano Studio. Other (repair) services are subject to different rates to be determined by Zebrano Studio.",
         },
-        "Liability" : {
-          "title" : "Liability",
-          "text1" : "1. The risk of damage rests with Zebrano Studio until delivery to the customer at the first door/threshold of the delivery address, unless expressly agreed otherwise.",
-          "text2" : "2. Zebrano Studio is not liable for damage to walls, frames, floors, or other goods caused by delivery and/or assembly of our products.",
-          "text3" : "3. The risk of damage rests with Zebrano Studio until delivery to the customer at the first door/threshold of the delivery address, unless expressly agreed otherwise.",
-          "text4" : "4. Zebrano Studio is not liable for damage to walls, frames, floors, or other goods caused by delivery and/or assembly of our products.",
-          "text5" : "5. Zebrano Studio is not liable for direct or indirect damage resulting from defects in the delivered products or otherwise, nor for delays in delivery, except in cases of intent or gross negligence on Zebrano Studio’s part.",
-          "text6" : "6. If the customer installs, assembles, etc., products themselves or has this done by a third party, the customer and/or third party is responsible for correct installation, assembly, etc., and everything that goes with it. In such cases, if something goes wrong during installation/assembly or if there are imperfections in the result, Zebrano Studio is not responsible or liable.",
-          "text7" : "If Zebrano Studio is liable, it shall never be obliged to compensate any damage of whatever nature and by whatever cause exceeding the total amount of the transaction between the customer and Zebrano Studio.",
-          "text8" : "If Zebrano Studio cannot rely on any exclusion of liability, its liability is limited to the amount covered by its liability insurance."
+        "Liability": {
+          "title": "Liability",
+          "text1": "1. The risk of damage rests with Zebrano Studio until delivery to the customer at the first door/threshold of the delivery address, unless expressly agreed otherwise.",
+          "text2": "2. Zebrano Studio is not liable for damage to walls, frames, floors, or other goods caused by delivery and/or assembly of our products.",
+          "text3": "3. The risk of damage rests with Zebrano Studio until delivery to the customer at the first door/threshold of the delivery address, unless expressly agreed otherwise.",
+          "text4": "4. Zebrano Studio is not liable for damage to walls, frames, floors, or other goods caused by delivery and/or assembly of our products.",
+          "text5": "5. Zebrano Studio is not liable for direct or indirect damage resulting from defects in the delivered products or otherwise, nor for delays in delivery, except in cases of intent or gross negligence on Zebrano Studio’s part.",
+          "text6": "6. If the customer installs, assembles, etc., products themselves or has this done by a third party, the customer and/or third party is responsible for correct installation, assembly, etc., and everything that goes with it. In such cases, if something goes wrong during installation/assembly or if there are imperfections in the result, Zebrano Studio is not responsible or liable.",
+          "text7": "If Zebrano Studio is liable, it shall never be obliged to compensate any damage of whatever nature and by whatever cause exceeding the total amount of the transaction between the customer and Zebrano Studio.",
+          "text8": "If Zebrano Studio cannot rely on any exclusion of liability, its liability is limited to the amount covered by its liability insurance."
         },
-        "Complaints" : {
-          "title" : "Complaints",
-          "text1" : "Complaints regarding the quality of delivered products or materials or the performance of the work can only be asserted by the customer by submitting them to Zebrano Studio within 2 working days after delivery of the products. If submission within this period is reasonably not possible, the period of 2 working days applies from the moment the defect was discovered or reasonably could have been discovered. The complaint must contain a clear and complete description of the grievances and observed defects.",
-          "text2" : "The previous paragraph does not affect the shorter period provided in Article 9.",
-          "text3" : "When the customer wishes to carry out or prevent certain work against the advice of Zebrano Studio, every complaint in this respect is excluded, unless otherwise agreed in writing.",
+        "Complaints": {
+          "title": "Complaints",
+          "text1": "Complaints regarding the quality of delivered products or materials or the performance of the work can only be asserted by the customer by submitting them to Zebrano Studio within 2 working days after delivery of the products. If submission within this period is reasonably not possible, the period of 2 working days applies from the moment the defect was discovered or reasonably could have been discovered. The complaint must contain a clear and complete description of the grievances and observed defects.",
+          "text2": "The previous paragraph does not affect the shorter period provided in Article 9.",
+          "text3": "When the customer wishes to carry out or prevent certain work against the advice of Zebrano Studio, every complaint in this respect is excluded, unless otherwise agreed in writing.",
         },
-        "ApplicableLaw" : {
-          "title" : "Applicable law",
-          "text" : "“All agreements to which these terms and conditions apply are subject to Dutch law.”"
+        "ApplicableLaw": {
+          "title": "Applicable law",
+          "text": "“All agreements to which these terms and conditions apply are subject to Dutch law.”"
         },
       },
 
@@ -1687,7 +1730,6 @@ const resources = {
             "btnText": "Bekijk collectie"
           },
         },
-        // &&&&&&& pivot doors &&&&&&
         "Pivot": {
           "pageName": "Taatsdeuren",
           "banner": {
@@ -1954,6 +1996,49 @@ const resources = {
             "subHeading": "Bij Zebrano Studio begint elk detail met het juiste materiaal. Van tijdloze houtsoorten en luxe fineer tot glas, steen en metaal — wij combineren vakmanschap met innovatie. Elke keuze bepaalt het karakter, de duurzaamheid en de schoonheid van je interieur.",
             "btnText": "Bekijk collectie"
           },
+          "MaterialAndDesignContent": {
+            "row1": {
+              "title": "Hout.",
+              "desc": "Natuurlijke hardhoutsoorten zoals eik, noten en zebrano vormen de basis van onze collecties. Elke houtsoort wordt zorgvuldig geselecteerd op sterkte, nerf en afwerking.",
+            },
+            "row2": {
+              "title": "Fineer.",
+              "desc": "Een verfijnde laag echt hout, waarmee unieke structuren en zeldzame houtsoorten tot leven komen met consistentie en elegantie.",
+            },
+            "row3": {
+              "title": "Glas.",
+              "desc": "Helder, getint of gestructureerd glas om ruimtes te openen met licht en transparantie — van privacyglas tot statement glazen deuren.",
+            },
+            "row4": {
+              "title": "Metaal.",
+              "desc": "Aluminium, brons of stalen accenten creëren contrast en precisie, toegepast in kozijnen, scharnieren en details.",
+            },
+            "row5": {
+              "title": "Steen & keramiek.",
+              "desc": "Marmer, travertin of keramische steenpanelen voegen een gevoel van duurzaamheid en luxe toe aan onze ontwerpen.",
+            },
+            "row6": {
+              "title": "Grepen & beslag.",
+              "desc": "Minimalistische verzonken grepen, opvallende handgrepen en maatwerkbeslag — zowel functioneel als sculpturaal.",
+            },
+            "row7": {
+              "title": "Afwerkingen & oliën.",
+              "desc": "Van matte oliën tot diepe beitsen, elke afwerking is gekozen om het natuurlijke karakter te beschermen en te versterken.",
+            },
+            "row8" : {
+              "col1":{
+                "title" : "Duurzaamheid & levensduur",
+                "subTitle" : "Duurzame keuzes",
+                "text" : "Wij kopen verantwoord in — FSC-gecertificeerd hout, duurzame afwerkingen en recyclebaar glas & metaal."
+              },
+              "col2":{
+                "title" : "Gebouwd om lang mee te gaan",
+                "desc" : "Elk materiaal wordt gekozen, niet alleen om de uitstraling, maar ook om de levensduur. Een Zebrano-product is gemaakt om decennialang met je mee te leven.",
+                "btnText" : "Configure Now",
+              },
+            },
+
+          },
         },
       },
       // ====contactPage====
@@ -2140,67 +2225,67 @@ const resources = {
           "btnText": "",
         },
         "AboutUsTimeline": {
-          "row1" : {
-            "title" : "Een reis door Zuidoost-Azië",
-            "desc" : "In 2015, toen wij als broers aan het backpacken waren door Zuidoost-Azië, werden we geraakt door het vakmanschap dat we overal tegenkwamen. Van drukke markten tot serene tempels: hout werd overal omgevormd tot objecten van bijzondere schoonheid — van verfijnde houtsnijwerken tot elegant meubilair. De natuurlijke uitstraling van het materiaal, gecombineerd met de toewijding van lokale ambachtslieden, plantte het eerste zaadje voor wat later Zebrano Studio zou worden.",
+          "row1": {
+            "title": "Een reis door Zuidoost-Azië",
+            "desc": "In 2015, toen wij als broers aan het backpacken waren door Zuidoost-Azië, werden we geraakt door het vakmanschap dat we overal tegenkwamen. Van drukke markten tot serene tempels: hout werd overal omgevormd tot objecten van bijzondere schoonheid — van verfijnde houtsnijwerken tot elegant meubilair. De natuurlijke uitstraling van het materiaal, gecombineerd met de toewijding van lokale ambachtslieden, plantte het eerste zaadje voor wat later Zebrano Studio zou worden.",
           },
-          "row2" : {
-            "title" : " Van kleine werken tot gedurfde creaties",
-            "desc" : "Terug thuis veranderde onze nieuwsgierigheid al snel in actie. We begonnen te experimenteren met hout en maakten kleine objecten zoals boekenleggers en tapasplanken. Al snel groeiden die experimenten uit tot ambitieuzere projecten — handgemaakte paddels van bijzondere houtsoorten zoals gestreept Zebrano, dieprood Purpleheart en exotisch palmhout. Elk materiaal had zijn eigen karakter en het ontdekken hoe we dat konden benadrukken werd onze kunst.",
+          "row2": {
+            "title": " Van kleine werken tot gedurfde creaties",
+            "desc": "Terug thuis veranderde onze nieuwsgierigheid al snel in actie. We begonnen te experimenteren met hout en maakten kleine objecten zoals boekenleggers en tapasplanken. Al snel groeiden die experimenten uit tot ambitieuzere projecten — handgemaakte paddels van bijzondere houtsoorten zoals gestreept Zebrano, dieprood Purpleheart en exotisch palmhout. Elk materiaal had zijn eigen karakter en het ontdekken hoe we dat konden benadrukken werd onze kunst.",
           },
-          "row3" : {
-            "title" : "De eerste deur",
-            "desc" : "Hout werd meer dan een hobby — het werd een roeping. Onze jaarlijkse bezoeken aan fineer- en houtbeurzen werden een bron van inspiratie en verbinding. In 2020 kwam het moment: we hadden nieuwe deuren nodig. In plaats van te kopen, besloten we ze zelf te maken. Die eerste Zebrano-deur, met zijn opvallende nerf en tijdloze uitstraling, markeerde het begin van een nieuw hoofdstuk.",
+          "row3": {
+            "title": "De eerste deur",
+            "desc": "Hout werd meer dan een hobby — het werd een roeping. Onze jaarlijkse bezoeken aan fineer- en houtbeurzen werden een bron van inspiratie en verbinding. In 2020 kwam het moment: we hadden nieuwe deuren nodig. In plaats van te kopen, besloten we ze zelf te maken. Die eerste Zebrano-deur, met zijn opvallende nerf en tijdloze uitstraling, markeerde het begin van een nieuw hoofdstuk.",
           },
-          "row4" : {
-            "title" : "Het begin van Zebrano Studio",
-            "desc" : "Die deur was niet zomaar een praktische oplossing — het was een statement. De reacties van anderen bevestigden wat wij zelf al voelden: dit was iets unieks, de moeite waard om te delen. Uit dat moment werd Zebrano Studio geboren — vernoemd naar het hout dat ons vanaf het begin inspireerde.",
+          "row4": {
+            "title": "Het begin van Zebrano Studio",
+            "desc": "Die deur was niet zomaar een praktische oplossing — het was een statement. De reacties van anderen bevestigden wat wij zelf al voelden: dit was iets unieks, de moeite waard om te delen. Uit dat moment werd Zebrano Studio geboren — vernoemd naar het hout dat ons vanaf het begin inspireerde.",
           },
-          "row5" : {
-            "title" : "Luxe, bereikbaar gemaakt",
-            "desc" : "Sindsdien is onze missie helder: de exclusiviteit van luxe interieurs toegankelijk maken voor iedereen. Niet alleen in hotels, restaurants of villa’s, maar in elk huis waar design en kwaliteit ertoe doen. Wij creëren deuren en wandoplossingen die premium materialen, tijdloos vakmanschap en ontwerpvrijheid combineren — kunstwerken die een leven lang meegaan.",
+          "row5": {
+            "title": "Luxe, bereikbaar gemaakt",
+            "desc": "Sindsdien is onze missie helder: de exclusiviteit van luxe interieurs toegankelijk maken voor iedereen. Niet alleen in hotels, restaurants of villa’s, maar in elk huis waar design en kwaliteit ertoe doen. Wij creëren deuren en wandoplossingen die premium materialen, tijdloos vakmanschap en ontwerpvrijheid combineren — kunstwerken die een leven lang meegaan.",
           },
-          "buttomText" : {
-            "title" : {
-              "text1" : "Bij Zebrano Studio maken we niet zomaar deuren  ",
-              "text2" : "— we creëren ervaringen die een verhaal vertellen.",
-              "text3" : "Klaar om die van jou te maken?",
+          "buttomText": {
+            "title": {
+              "text1": "Bij Zebrano Studio maken we niet zomaar deuren  ",
+              "text2": "— we creëren ervaringen die een verhaal vertellen.",
+              "text3": "Klaar om die van jou te maken?",
             },
-            "desc" : "Onze droom? Simpel: die luxe en exclusiviteit, die je normaal alleen ziet in chique hotels, toprestaurants of indrukwekkende villa’s van toparchitecten, toegankelijk maken voor iedereen. Wij geloven dat jouw huis diezelfde grandeur en eigenheid verdient, zonder dat je daarvoor een fortuin hoeft uit te geven aan een architect. Bij Zebrano Studio doen we het net even anders dan de rest, en brengen we die ongeëvenaarde kwaliteit en uitstraling direct tot bij jou thuis.",
-            
-            "lastText" : "Bij Zebrano Studio maken we niet zomaar standaarddeuren; we creëren echte kunstwerken die een verhaal vertellen en een leven lang meegaan. Klaar om jouw droomdeur te realiseren? Wij helpen je graag!"
+            "desc": "Onze droom? Simpel: die luxe en exclusiviteit, die je normaal alleen ziet in chique hotels, toprestaurants of indrukwekkende villa’s van toparchitecten, toegankelijk maken voor iedereen. Wij geloven dat jouw huis diezelfde grandeur en eigenheid verdient, zonder dat je daarvoor een fortuin hoeft uit te geven aan een architect. Bij Zebrano Studio doen we het net even anders dan de rest, en brengen we die ongeëvenaarde kwaliteit en uitstraling direct tot bij jou thuis.",
+
+            "lastText": "Bij Zebrano Studio maken we niet zomaar standaarddeuren; we creëren echte kunstwerken die een verhaal vertellen en een leven lang meegaan. Klaar om jouw droomdeur te realiseren? Wij helpen je graag!"
           }
         },
       },
       // ====Meet the Makers=====
-      "MeetTheMakers" : {
-        "banner" : {
-          "heading1":"Gemaakt door onze",
-          "heading2":"geperfectioneerd in",
-          "heading3":" de productie.",
-          "desc" : "Echte handen. Echt zaagsel. Onwerkelijke resultaten. Van eerste schets tot perfecte pasvorm: wij ontwerpen, prototypen en bouwen onder één dak – zodat elke millimeter klopt en elke deur moeiteloos goed voelt.",
-          "typedText" : ["ontwerpers","mensen","makers"],
+      "MeetTheMakers": {
+        "banner": {
+          "heading1": "Gemaakt door onze",
+          "heading2": "geperfectioneerd in",
+          "heading3": " de productie.",
+          "desc": "Echte handen. Echt zaagsel. Onwerkelijke resultaten. Van eerste schets tot perfecte pasvorm: wij ontwerpen, prototypen en bouwen onder één dak – zodat elke millimeter klopt en elke deur moeiteloos goed voelt.",
+          "typedText": ["ontwerpers", "mensen", "makers"],
         },
-        "AccessibleBeautiful" : {
-          "row1":{
-            "title1" : "TOEGANKELIJK .",
-            "title2" : "MOOI .",
-            "desc" : `"Ik heb altijd gevonden dat goed design niet verstopt hoeft te worden achter fluwelen touwen. Bij Zebrano wil ik dat iedereen kan genieten van dezelfde prachtige deuren en details die je normaal alleen in luxe hotels ziet – gewoon thuis."`,
-            "name" : "Mathijs",
-            "designetion" : "– oprichter en ontwerper, Zebrano Studio",
+        "AccessibleBeautiful": {
+          "row1": {
+            "title1": "TOEGANKELIJK .",
+            "title2": "MOOI .",
+            "desc": `"Ik heb altijd gevonden dat goed design niet verstopt hoeft te worden achter fluwelen touwen. Bij Zebrano wil ik dat iedereen kan genieten van dezelfde prachtige deuren en details die je normaal alleen in luxe hotels ziet – gewoon thuis."`,
+            "name": "Mathijs",
+            "designetion": "– oprichter en ontwerper, Zebrano Studio",
           },
-          "row2" : {
-            "title" : "Wij houden dingen graag dichtbij huis.",
-            "desc" : `Onze deuren worden hier in Nederland gemaakt, door makers die hun hout bijna net zo goed kennen als hun ochtendkoffie. Het is een mix van traditie, precisie en een beetje Nederlandse koppigheid die weigert genoegen te nemen met ‘goed genoeg’. Het resultaat? Vakmanschap dat lokaal voelt, maar overal ter wereld thuishoort.`,
-            "btnText" : "Ontdek materialen",
+          "row2": {
+            "title": "Wij houden dingen graag dichtbij huis.",
+            "desc": `Onze deuren worden hier in Nederland gemaakt, door makers die hun hout bijna net zo goed kennen als hun ochtendkoffie. Het is een mix van traditie, precisie en een beetje Nederlandse koppigheid die weigert genoegen te nemen met ‘goed genoeg’. Het resultaat? Vakmanschap dat lokaal voelt, maar overal ter wereld thuishoort.`,
+            "btnText": "Ontdek materialen",
           },
-          "row3" : {
-            "title1" : "Ben jij ontwerper?",
-            "title2" : "Advies nodig?",
-            "desc1" : "Ons team staat klaar om je alle mogelijkheden te laten ontdekken.",
-            "desc2" : "Ons team staat klaar om je alle mogelijkheden te laten ontdekken.",
-            "btnText1" : "Ontdek materialen",
-            "btnText2" : "Neem contact op",
+          "row3": {
+            "title1": "Ben jij ontwerper?",
+            "title2": "Advies nodig?",
+            "desc1": "Ons team staat klaar om je alle mogelijkheden te laten ontdekken.",
+            "desc2": "Ons team staat klaar om je alle mogelijkheden te laten ontdekken.",
+            "btnText1": "Ontdek materialen",
+            "btnText2": "Neem contact op",
           },
         },
       },
@@ -2243,95 +2328,95 @@ const resources = {
         "btnText1": "Collectie",
         "btnText2": "Configureer je eigen deur",
       },
-       // ====services=====
-      "Service" : {
-        "banner" : {
-          "title" : "Service & Terms",
-          "desc" :"Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
+      // ====services=====
+      "Service": {
+        "banner": {
+          "title": "Service & Terms",
+          "desc": "Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
         },
-        "ServiceTab" : {
-          "OrderProcess" : {
-            "title" : "Alles over ons bestelproces (Nederland)",
-            "desc" : "Onze producten worden op bestelling gemaakt. We volgen een vaste volgorde zodat de doorlooptijden betrouwbaar blijven.",
-            "faqs":[
+        "ServiceTab": {
+          "OrderProcess": {
+            "title": "Alles over ons bestelproces (Nederland)",
+            "desc": "Onze producten worden op bestelling gemaakt. We volgen een vaste volgorde zodat de doorlooptijden betrouwbaar blijven.",
+            "faqs": [
               {
-                "question":"Consult & voorstel",
-                "answer" : "We bespreken scope, materialen, afwerkingen en installatie. Je ontvangt een schriftelijk voorstel met prijs en indicatieve levertijd. Offertes zijn 30 dagen geldig, tenzij materiaalschommelingen zijn vermeld.",
+                "question": "Consult & voorstel",
+                "answer": "We bespreken scope, materialen, afwerkingen en installatie. Je ontvangt een schriftelijk voorstel met prijs en indicatieve levertijd. Offertes zijn 30 dagen geldig, tenzij materiaalschommelingen zijn vermeld.",
               },
               {
-                "question":" Inmeten",
-                "answer" : "Je kunt maten aanleveren of gebruikmaken van onze betaalde inmeetservice (aanbevolen). Lever je zelf maten aan, dan ben je verantwoordelijk voor de maatnauwkeurigheid.",
+                "question": " Inmeten",
+                "answer": "Je kunt maten aanleveren of gebruikmaken van onze betaalde inmeetservice (aanbevolen). Lever je zelf maten aan, dan ben je verantwoordelijk voor de maatnauwkeurigheid.",
               },
               {
-                "question":"Technische tekeningen & akkoord",
-                "answer" : "Wij maken tekeningen/specificaties. Productie start pas na schriftelijke goedkeuring van alle tekeningen, afwerkingen en beslag."
+                "question": "Technische tekeningen & akkoord",
+                "answer": "Wij maken tekeningen/specificaties. Productie start pas na schriftelijke goedkeuring van alle tekeningen, afwerkingen en beslag."
               },
               {
-                "question":"Betaling ",
-                "answer" : "We werken met 100% vooruitbetaling. Zie “Betaalproces” voor betaalmethoden (iDEAL, kaarten, Apple Pay, PayPal, SEPA) en factuurdetails.",
+                "question": "Betaling ",
+                "answer": "We werken met 100% vooruitbetaling. Zie “Betaalproces” voor betaalmethoden (iDEAL, kaarten, Apple Pay, PayPal, SEPA) en factuurdetails.",
               },
               {
-                "question":"Productie & kwaliteitscontrole",
-                "answer" : "Na betaling + akkoord reserveren we je productieslot. De levertijd start. Elk item wordt gecontroleerd op afwerking, passing en functionaliteit.",
+                "question": "Productie & kwaliteitscontrole",
+                "answer": "Na betaling + akkoord reserveren we je productieslot. De levertijd start. Elk item wordt gecontroleerd op afwerking, passing en functionaliteit.",
               },
               {
-                "question":"Vooraf plannen levering ",
-                "answer" : "Richting afronding stellen we een lever-/installatievenster voor. Jij bevestigt toegang, parkeren, lift/trap-details en bouwplaatsgereedheid.",
+                "question": "Vooraf plannen levering ",
+                "answer": "Richting afronding stellen we een lever-/installatievenster voor. Jij bevestigt toegang, parkeren, lift/trap-details en bouwplaatsgereedheid.",
               },
               {
-                "question":"Levering / installatie & overdracht",
-                "answer" : "We leveren of leveren-en-installeren (alleen NL). Na installatie voeren we functietests uit en delen onderhoudsadvies.",
+                "question": "Levering / installatie & overdracht",
+                "answer": "We leveren of leveren-en-installeren (alleen NL). Na installatie voeren we functietests uit en delen onderhoudsadvies.",
               },
               {
-                "question":"Wijzigingsverzoeken",
-                "answer" : "Elke wijziging na akkoord (afwerking/maat/beslag) kan prijs en planning beïnvloeden. Werk wordt hervat na volledige betaling van de wijzigingsopdracht.",
+                "question": "Wijzigingsverzoeken",
+                "answer": "Elke wijziging na akkoord (afwerking/maat/beslag) kan prijs en planning beïnvloeden. Werk wordt hervat na volledige betaling van de wijzigingsopdracht.",
               },
               {
-                "question":"Annuleringen",
-                "answer" : "Maatwerk is uitgesloten van het herroepingsrecht. Annuleren na betaling is niet mogelijk, tenzij schriftelijk overeengekomen vóór start productie (administratie-/ontwerpkosten van toepassing).",
+                "question": "Annuleringen",
+                "answer": "Maatwerk is uitgesloten van het herroepingsrecht. Annuleren na betaling is niet mogelijk, tenzij schriftelijk overeengekomen vóór start productie (administratie-/ontwerpkosten van toepassing).",
               },
 
             ]
           },
-          "Delivery":{
-            "title" : "Levering (Levering & installatie in Nederland)",
-            "desc" : "Wij leveren in alle Nederlandse provincies met eigen teams of betrouwbare partners.",
-            "faqs" :[
+          "Delivery": {
+            "title": "Levering (Levering & installatie in Nederland)",
+            "desc": "Wij leveren in alle Nederlandse provincies met eigen teams of betrouwbare partners.",
+            "faqs": [
               {
-                "question":"Leveropties",
-                "answers" : [
+                "question": "Leveropties",
+                "answers": [
                   "Alleen levering: Trottoir/begane grond tot eerste toegankelijke punt.",
                   "White-glove: Tweemanslevering tot kamer naar keuze (indien toegang mogelijk). Verpakking verwijderen op verzoek.",
                 ],
               },
               {
-                "question":"Planning & toegang",
-                "answers" : [
+                "question": "Planning & toegang",
+                "answers": [
                   "We spreken een datum + tijdvenster af. Jij zorgt voor veilige toegang (deurbreedtes, lift/trap), evt. parkeervergunningen en een vrije route. Bij geen toegang gelden herleverings- en/of extra handlingskosten.",
                 ],
               },
               {
-                "question":"Verpakking & bescherming",
-                "answers" : [
+                "question": "Verpakking & bescherming",
+                "answers": [
                   "Deuren en panelen worden verzonden met volledige foam-bescherming en kantbeschermers. Accessoires in branded hoezen/dozen.",
                 ],
               },
               {
-                "question":"Schade bij aankomst",
-                "answers" : [
+                "question": "Schade bij aankomst",
+                "answers": [
                   "Zichtbare schade: direct noteren op leverbon en vóór uitpakken fotograferen.",
                   "Verborgen schade: binnen 24 uur na levering schriftelijk melden met foto’s en ordernummer.",
                 ],
               },
               {
-                "question":"Risico-overgang",
-                "answers" : [
+                "question": "Risico-overgang",
+                "answers": [
                   "Risico gaat over bij levering. Bij white-glove/installatie gaat het risico over na plaatsing in de afgesproken ruimte.",
                 ],
               },
               {
-                "question":"Installatie (optioneel, alleen NL)",
-                "answers" : [
+                "question": "Installatie (optioneel, alleen NL)",
+                "answers": [
                   "Inbegrepen (tenzij anders aangegeven):",
                   "Plaatsen van door Zebrano geleverd kozijn/blad/beslag.",
                   "Uitlijning, speling, functionaliteit (draaien/schuiven/pivot).",
@@ -2339,8 +2424,8 @@ const resources = {
                 ],
               },
               {
-                "question":"Werkplek gereed (vereist)",
-                "answers" : [
+                "question": "Werkplek gereed (vereist)",
+                "answers": [
                   "Afgewerkte sparingen binnen tolerantie, wanden haaks/vlak.",
                   "Binnenklimaat: 15–25 °C en 40–60% RV.",
                   "Ondergronden droog; ruimte schoon en toegankelijk; 230 V aanwezig. Herbezoeken door niet-gereed zijn worden doorbelast en vooraf betaald.",
@@ -2348,297 +2433,297 @@ const resources = {
               },
             ],
           },
-          "Guarantee" : {
-            "title" : "Garantie (Nederland) ",
-            "desc" : "Wij staan achter ons vakmanschap.",
-            "faqs" : [
+          "Guarantee": {
+            "title": "Garantie (Nederland) ",
+            "desc": "Wij staan achter ons vakmanschap.",
+            "faqs": [
               {
-                "question" : "Duur",
-                "answers" : [
+                "question": "Duur",
+                "answers": [
                   "2 jaar vanaf leverdatum.",
                 ],
               },
               {
-                "question" : "Wat we dekken",
-                "answers" : [
+                "question": "Wat we dekken",
+                "answers": [
                   "Fabricagefouten, constructieve integriteit, werking van beslag, verlijming/laminering van fineer en fabrieksafwerkingen volgens specificatie.",
                 ],
               },
               {
-                "question" : "Niet gedekt",
-                "answers" : [
+                "question": "Niet gedekt",
+                "answers": [
                   " Slijtage, onjuist gebruik/impact, waterschade, abnormaal klimaat, natuurlijke variaties, werking/trek door klimaat, installatie/wijzigingen door derden, niet-Zebrano beslag.",
                 ],
               },
               {
-                "question" : "Toleranties",
-                "answers" : [
+                "question": "Toleranties",
+                "answers": [
                   "Branche-standaard toleranties (typ. ±1–2 mm; handgemaakte panelen tot ±4 mm).",
                 ],
               },
               {
-                "question" : "Claimprocedure",
-                "answers" : [
+                "question": "Claimprocedure",
+                "answers": [
                   "Mail foto’s, omschrijving en order-/factuurnummer. Mogelijk volgt inspectie op locatie. Oplossing naar ons inzicht: reparatie, vervanging of terugbetaling van het defecte item. Gevolgschade uitgesloten.",
                 ],
               }
             ],
           },
           "CareAndMaintenance": {
-            "title" : "Onderhoud & verzorging",
-            "desc" : "Regelmatig onderhoud beschermt afwerking en functie. Gebruik zachte doeken en pH-neutrale reinigers, tenzij anders aangegeven.",
-            "faqs" : [
+            "title": "Onderhoud & verzorging",
+            "desc": "Regelmatig onderhoud beschermt afwerking en functie. Gebruik zachte doeken en pH-neutrale reinigers, tenzij anders aangegeven.",
+            "faqs": [
               {
-                "question" : "Glas",
-                "answers" : ["Reinig met glasreiniger/milde zeep; droog pluisvrij. Vermijd schuurmiddelen/mesjes op gestructureerd glas. Controleer folie/adhesief-compatibiliteit."],
-              },{
-                "question" : "Massief hout",
-                "answers" : [" Wekelijks afstoffen; licht vochtig afnemen; 40–60% RV aanhouden; jaarlijks oliën/waxen indien gespecificeerd; beschermen tegen zon/hitte."],
-              },{
-                "question" : "Houtfineer",
-                "answers" : ["Zachte droge/licht vochtige doek; niet schuren; geolied: jaarlijks licht oliën; gelakt: alleen milde reinigers. Natuurlijke variatie verwacht."],
-              },{
-                "question" : "Steen & keramiek",
-                "answers" : ["pH-neutrale reiniger; vermijd zuren/basen; morsen direct wissen; natuursteen jaarlijks sealen; keramiek meestal niet nodig."],
-              },{
-                "question" : "Beslag & metaal",
-                "answers" : ["Droog/licht vochtig afnemen; geen schuurmiddelen/oplosmiddelen; licht smeren 6–12 mnd; zichtbare schroeven aandraaien; geen verborgen mechanismen afstellen. Patina is normaal."],
-              },{
-                "question" : "Draaideuren & pivot — tips",
-                "answers" : ["Niet tegen aanslagen forceren; geen gewicht aan grepen hangen; vloer/rails schoon houden."],
-              },{
-                "question" : "Onderhoudssamenvatting   ",
-                "answers" : ["Wekelijks: stof/afnemen. Per kwartaal: beslag checken, rails/pivots reinigen. Jaarlijks: olie/wax (indien van toepassing), steen resealen, algemene inspectie."],
+                "question": "Glas",
+                "answers": ["Reinig met glasreiniger/milde zeep; droog pluisvrij. Vermijd schuurmiddelen/mesjes op gestructureerd glas. Controleer folie/adhesief-compatibiliteit."],
+              }, {
+                "question": "Massief hout",
+                "answers": [" Wekelijks afstoffen; licht vochtig afnemen; 40–60% RV aanhouden; jaarlijks oliën/waxen indien gespecificeerd; beschermen tegen zon/hitte."],
+              }, {
+                "question": "Houtfineer",
+                "answers": ["Zachte droge/licht vochtige doek; niet schuren; geolied: jaarlijks licht oliën; gelakt: alleen milde reinigers. Natuurlijke variatie verwacht."],
+              }, {
+                "question": "Steen & keramiek",
+                "answers": ["pH-neutrale reiniger; vermijd zuren/basen; morsen direct wissen; natuursteen jaarlijks sealen; keramiek meestal niet nodig."],
+              }, {
+                "question": "Beslag & metaal",
+                "answers": ["Droog/licht vochtig afnemen; geen schuurmiddelen/oplosmiddelen; licht smeren 6–12 mnd; zichtbare schroeven aandraaien; geen verborgen mechanismen afstellen. Patina is normaal."],
+              }, {
+                "question": "Draaideuren & pivot — tips",
+                "answers": ["Niet tegen aanslagen forceren; geen gewicht aan grepen hangen; vloer/rails schoon houden."],
+              }, {
+                "question": "Onderhoudssamenvatting   ",
+                "answers": ["Wekelijks: stof/afnemen. Per kwartaal: beslag checken, rails/pivots reinigen. Jaarlijks: olie/wax (indien van toepassing), steen resealen, algemene inspectie."],
               },
-              
+
             ],
           },
-          "FAQ":{
-            "ProductsAndMaterials" : {
-              "title" : "Products & Materials",
-              "faqs" : [
+          "FAQ": {
+            "ProductsAndMaterials": {
+              "title": "Products & Materials",
+              "faqs": [
                 {
-                  "question" : "Welke producten maken jullie?",
-                  "answer" : "Deuren op maat … en boiserie (decoratieve wandbekleding).",
+                  "question": "Welke producten maken jullie?",
+                  "answer": "Deuren op maat … en boiserie (decoratieve wandbekleding).",
                 },
                 {
-                  "question" : "Welke materialen/afwerkingen zijn er?",
-                  "answer" : "Massief hout, fineer, lak (RAL), glas, natuursteen, keramiek/porselein; beslag in zwart, rvs, brons, PVD.",
+                  "question": "Welke materialen/afwerkingen zijn er?",
+                  "answer": "Massief hout, fineer, lak (RAL), glas, natuursteen, keramiek/porselein; beslag in zwart, rvs, brons, PVD.",
                 },
                 {
-                  "question" : "Bieden jullie wandvlakke (rasomuro) deuren?",
-                  "answer" : "Ja — verdekte kozijnen en beslag voor een naadloos, coplanar effect.",
+                  "question": "Bieden jullie wandvlakke (rasomuro) deuren?",
+                  "answer": "Ja — verdekte kozijnen en beslag voor een naadloos, coplanar effect.",
                 },
                 {
-                  "question" : "Hoe ver te personaliseren?",
-                  "answer" : "Maten, afwerkingen, glas, kanten, beslag; ultra-maatwerk via offertepad.",
+                  "question": "Hoe ver te personaliseren?",
+                  "answer": "Maten, afwerkingen, glas, kanten, beslag; ultra-maatwerk via offertepad.",
                 },
                 {
-                  "question" : "Zijn natuurlijke variaties normaal?",
-                  "answer" : "Ja — houtnerf/kleur en steenadering variëren.",
+                  "question": "Zijn natuurlijke variaties normaal?",
+                  "answer": "Ja — houtnerf/kleur en steenadering variëren.",
                 },
                 {
-                  "question" : "Kunnen jullie een bestaande afwerking benaderen?",
-                  "answer" : "We kunnen dicht benaderen met een fysiek monster; exacte match niet gegarandeerd.",
+                  "question": "Kunnen jullie een bestaande afwerking benaderen?",
+                  "answer": "We kunnen dicht benaderen met een fysiek monster; exacte match niet gegarandeerd.",
                 },
                 {
-                  "question" : "Leveren jullie ook beslag?",
-                  "answer" : "Ja — scharnieren, pivots, schuiven, grepen, profielen volgens specificatie; derden in overleg.",
-                },
-              ],
-            },
-            "TechnicalAndSiteRequirement" : {
-              "title" : "Technical & Site Requirement",
-              "faqs" : [
-                {
-                  "question":"Algemene werkeisen?",
-                  "answer" : "Sparingen haaks/vlak/waterpas; ondergronden droog; 15–25 °C & 40–60% RV; vrije toegang; 230 V aanwezig.",
-                },
-                {
-                  "question":"Pivot-eisen & vloerverwarming",
-                  "answer" : "Plafond schroefbaar; waar nodig multiplex achterhout; boren ≥4 cm; 25×25 cm leidingvrije zones (pivot & zijpanelen).",
-                },
-                {
-                  "question":"Plinten/vloerafwerking",
-                  "answer" : "Mogelijk inzagen; kies vlakke plakplint om te vermijden; schilder werkt zaagsnede af.",
-                },
-                {
-                  "question":"Toleranties",
-                  "answer":"±1–2 mm componenten; handgemaakte panelen tot ±4 mm.",
+                  "question": "Leveren jullie ook beslag?",
+                  "answer": "Ja — scharnieren, pivots, schuiven, grepen, profielen volgens specificatie; derden in overleg.",
                 },
               ],
             },
-            "MeasurementDesignApprovals" : {
-              "title" : "Measurement, Design & Approvals",
-              "faqs" : [
+            "TechnicalAndSiteRequirement": {
+              "title": "Technical & Site Requirement",
+              "faqs": [
                 {
-                  "question" : "Wie meet er in?",
-                  "answer" : "Jij of onze betaalde service (aanbevolen). Eigen maten = eigen verantwoordelijkheid.",
+                  "question": "Algemene werkeisen?",
+                  "answer": "Sparingen haaks/vlak/waterpas; ondergronden droog; 15–25 °C & 40–60% RV; vrije toegang; 230 V aanwezig.",
                 },
                 {
-                  "question" : "Documenten vóór productie?",
-                  "answer" : "Voorstel, technische tekeningen/specificaties, installatienotities bij alleen levering.",
+                  "question": "Pivot-eisen & vloerverwarming",
+                  "answer": "Plafond schroefbaar; waar nodig multiplex achterhout; boren ≥4 cm; 25×25 cm leidingvrije zones (pivot & zijpanelen).",
                 },
                 {
-                  "question" : "Hoe keuren?",
-                  "answer" : "Schriftelijk akkoord vereist; productie start na akkoord + betaling.",
+                  "question": "Plinten/vloerafwerking",
+                  "answer": "Mogelijk inzagen; kies vlakke plakplint om te vermijden; schilder werkt zaagsnede af.",
                 },
                 {
-                  "question" : "Werken met architecttekeningen?",
-                  "answer" : "Ja — stuur PDF/DWG; wij toetsen haalbaarheid/aanpassingen.",
+                  "question": "Toleranties",
+                  "answer": "±1–2 mm componenten; handgemaakte panelen tot ±4 mm.",
+                },
+              ],
+            },
+            "MeasurementDesignApprovals": {
+              "title": "Measurement, Design & Approvals",
+              "faqs": [
+                {
+                  "question": "Wie meet er in?",
+                  "answer": "Jij of onze betaalde service (aanbevolen). Eigen maten = eigen verantwoordelijkheid.",
                 },
                 {
-                  "question" : "Wijziging na akkoord?",
-                  "answer" : "Via wijzigingsopdracht; prijs/doorlooptijd kan wijzigen; hervat na volledige betaling.",
+                  "question": "Documenten vóór productie?",
+                  "answer": "Voorstel, technische tekeningen/specificaties, installatienotities bij alleen levering.",
                 },
                 {
-                  "question" : "3D/visual previews?",
-                  "answer" : "Mogelijk voor geselecteerde lijnen; afhankelijk van scope; ontwerpfee mogelijk.",
+                  "question": "Hoe keuren?",
+                  "answer": "Schriftelijk akkoord vereist; productie start na akkoord + betaling.",
+                },
+                {
+                  "question": "Werken met architecttekeningen?",
+                  "answer": "Ja — stuur PDF/DWG; wij toetsen haalbaarheid/aanpassingen.",
+                },
+                {
+                  "question": "Wijziging na akkoord?",
+                  "answer": "Via wijzigingsopdracht; prijs/doorlooptijd kan wijzigen; hervat na volledige betaling.",
+                },
+                {
+                  "question": "3D/visual previews?",
+                  "answer": "Mogelijk voor geselecteerde lijnen; afhankelijk van scope; ontwerpfee mogelijk.",
                 },
               ]
             },
-            "PaymentAndInvoicing" : {
-              "title" : "Payment & Invoicing",
-              "faqs" : [
+            "PaymentAndInvoicing": {
+              "title": "Payment & Invoicing",
+              "faqs": [
                 {
-                  "question" : " Wanneer betalen? ",
-                  "answer" : "100% vooruit na definitieve goedkeuring.",
+                  "question": " Wanneer betalen? ",
+                  "answer": "100% vooruit na definitieve goedkeuring.",
                 },
                 {
-                  "question" : "Methoden?",
-                  "answer" : "iDEAL, kaarten, Apple Pay, PayPal, SEPA (via Mollie).",
+                  "question": "Methoden?",
+                  "answer": "iDEAL, kaarten, Apple Pay, PayPal, SEPA (via Mollie).",
                 },
                 {
-                  "question" : "Prijzen & BTW?",
-                  "answer" : "EUR; excl. 21% BTW tenzij vermeld; BTW op checkout/factuur.",
+                  "question": "Prijzen & BTW?",
+                  "answer": "EUR; excl. 21% BTW tenzij vermeld; BTW op checkout/factuur.",
                 },
                 {
-                  "question" : "Achteraf/splitsen? ",
-                  "answer" : "Geen achteraf; geen splitsing per entiteit.",
+                  "question": "Achteraf/splitsen? ",
+                  "answer": "Geen achteraf; geen splitsing per entiteit.",
                 },
                 {
-                  "question" : "Zakelijke gegevens?",
-                  "answer" : "Juridische naam, adres, KvK, BTW-nummer; controleer vóór betaling.",
+                  "question": "Zakelijke gegevens?",
+                  "answer": "Juridische naam, adres, KvK, BTW-nummer; controleer vóór betaling.",
                 },
                 {
-                  "question" : "Betalingen veilig?",
-                  "answer" : " Ja — SCA/3-D Secure; ID-checks mogelijk bij hoge bedragen.",
+                  "question": "Betalingen veilig?",
+                  "answer": " Ja — SCA/3-D Secure; ID-checks mogelijk bij hoge bedragen.",
                 },
               ],
             },
-            "LeadTimesAndScheduling" : {
-              "title" : "Lead Times & Scheduling",
-              "faqs" : [
+            "LeadTimesAndScheduling": {
+              "title": "Lead Times & Scheduling",
+              "faqs": [
                 {
-                  "question" : "Standaard levertijden?",
-                  "answer" : "Deuren 6–8 w; Wandvlak 8–10 w; Wandscheidingen 6–8 w; Boiserie 8–10 w.",
+                  "question": "Standaard levertijden?",
+                  "answer": "Deuren 6–8 w; Wandvlak 8–10 w; Wandscheidingen 6–8 w; Boiserie 8–10 w.",
                 },
                 {
-                  "question" : "Start levertijd?",
-                  "answer" : "Na volledige betaling en schriftelijk akkoord.",
+                  "question": "Start levertijd?",
+                  "answer": "Na volledige betaling en schriftelijk akkoord.",
                 },
                 {
-                  "question" : "Versnellen?",
-                  "answer" : " ~2 weken sneller tegen meerprijs, afhankelijk van capaciteit/materialen.",
+                  "question": "Versnellen?",
+                  "answer": " ~2 weken sneller tegen meerprijs, afhankelijk van capaciteit/materialen.",
                 },
                 {
-                  "question" : " Updates?",
-                  "answer" : " Ja — statusupdates en lever-/installatievenster tegen einde.",
+                  "question": " Updates?",
+                  "answer": " Ja — statusupdates en lever-/installatievenster tegen einde.",
                 },
                 {
-                  "question" : " Slot vasthouden?",
-                  "answer" : "Nee — geen reservering zonder betaling/akkoord.",
+                  "question": " Slot vasthouden?",
+                  "answer": "Nee — geen reservering zonder betaling/akkoord.",
                 },
                 {
-                  "question" : " Levering uitstellen?",
-                  "answer" : "Ja — tijdig melden; opslag-/herbezoekkosten mogelijk.",
+                  "question": " Levering uitstellen?",
+                  "answer": "Ja — tijdig melden; opslag-/herbezoekkosten mogelijk.",
                 },
               ]
             },
-            "DeliveryAndInstallation" : {
-              "title" : "Delivery & Installation",
-              "faqs" : [
+            "DeliveryAndInstallation": {
+              "title": "Delivery & Installation",
+              "faqs": [
                 {
-                  "question" : "Waar leveren jullie?",
-                  "answer" : " Alle Nederlandse provincies.",
+                  "question": "Waar leveren jullie?",
+                  "answer": " Alle Nederlandse provincies.",
                 },
                 {
-                  "question" : "Leveropties?",
-                  "answer" : "Alleen levering of White-glove.",
+                  "question": "Leveropties?",
+                  "answer": "Alleen levering of White-glove.",
                 },
                 {
-                  "question" : "Installeren jullie? ",
-                  "answer" : "Ja in NL; scope inbegrepen/uitgesloten zoals gespecificeerd.",
+                  "question": "Installeren jullie? ",
+                  "answer": "Ja in NL; scope inbegrepen/uitgesloten zoals gespecificeerd.",
                 },
                 {
-                  "question" : "Werkplek gereed? ",
-                  "answer" : "Toleranties, klimaat, toegang, stroom; herbezoek tegen kosten.",
+                  "question": "Werkplek gereed? ",
+                  "answer": "Toleranties, klimaat, toegang, stroom; herbezoek tegen kosten.",
                 },
                 {
-                  "question" : "Transportschade melden?",
-                  "answer" : "Zichtbaar: noteren + foto; verborgen: binnen 24 u met foto’s/order nr.",
+                  "question": "Transportschade melden?",
+                  "answer": "Zichtbaar: noteren + foto; verborgen: binnen 24 u met foto’s/order nr.",
                 },
                 {
-                  "question" : "Moeilijke toegang?",
-                  "answer" : "Meld vooraf; extra mankracht/verhuislift mogelijk (offerte).",
-                },
-              ],
-            },
-            "WarrantyAftercare" : {
-              "title" : "Warranty & Aftercare",
-              "faqs" : [
-                {
-                  "question" : "Garantie?",
-                  "answer" : "2 jaar product; 6 maanden installatie (door Zebrano).",
-                },
-                {
-                  "question" : "Gedekt/niet? ",
-                  "answer" : "Mechanismen, verlijming, fabrieks/installatiefouten vs. slijtage, misbruik, klimaat, variaties, derdeninstallatie, onjuist reinigen.",
-                },
-                {
-                  "question" : "Claim indienen?  ",
-                  "answer" : " Mail foto’s, omschrijving, order-/factuurnr.; oplossing naar ons inzicht.",
-                },
-                {
-                  "question" : "Glas verzorgen?",
-                  "answer" : " Glasreiniger/milde zeep; geen schuurmiddelen/mesjes; folie vooraf checken.",
-                },
-                {
-                  "question" : "Onderhoud hout/fineer/steen/keramiek?",
-                  "answer" : "Zie onderhoud hierboven.",
-                },
-                {
-                  "question" : "Beslag & mechaniek?",
-                  "answer" : "Droog/licht vochtig afnemen; licht smeren 6–12 m; schroeven aandraaien; geen verborgen delen afstellen.",
+                  "question": "Moeilijke toegang?",
+                  "answer": "Meld vooraf; extra mankracht/verhuislift mogelijk (offerte).",
                 },
               ],
             },
-            "OrderReturnsSupports" : {
-              "title" : "Orders, Returns & Support",
-              "faqs" : [
+            "WarrantyAftercare": {
+              "title": "Warranty & Aftercare",
+              "faqs": [
                 {
-                  "question" : " Annuleren/retour?",
-                  "answer" : "Maatwerk uitgesloten van herroeping; uitzonderingen alleen vóór productie en schriftelijk (kosten).",
+                  "question": "Garantie?",
+                  "answer": "2 jaar product; 6 maanden installatie (door Zebrano).",
                 },
                 {
-                  "question" : "Showroom?",
-                  "answer" : "Op afspraak; digitale consults en stalen beschikbaar (borg/fee).",
+                  "question": "Gedekt/niet? ",
+                  "answer": "Mechanismen, verlijming, fabrieks/installatiefouten vs. slijtage, misbruik, klimaat, variaties, derdeninstallatie, onjuist reinigen.",
                 },
                 {
-                  "question" : " Samenwerking architect/interieur?",
-                  "answer" : "Ja — trade/projecten welkom; vraag specs/stalen/voorwaarden.",
+                  "question": "Claim indienen?  ",
+                  "answer": " Mail foto’s, omschrijving, order-/factuurnr.; oplossing naar ons inzicht.",
                 },
                 {
-                  "question" : "Online configureren & uploaden?",
-                  "answer" : "Ja; ultra-maatwerk via Offerte. Na aankoop tekeningen/foto’s uploaden.",
+                  "question": "Glas verzorgen?",
+                  "answer": " Glasreiniger/milde zeep; geen schuurmiddelen/mesjes; folie vooraf checken.",
                 },
                 {
-                  "question" : "Betaling/data veilig?",
-                  "answer" : " Ja — Mollie, SCA/3-D Secure; dataminimalisatie volgens privacybeleid.",
+                  "question": "Onderhoud hout/fineer/steen/keramiek?",
+                  "answer": "Zie onderhoud hierboven.",
                 },
                 {
-                  "question" : " Support & reactietijd? ",
-                  "answer" : " Mail info@zebranostudio.com; doorgaans 1–3 werkdagen.",
+                  "question": "Beslag & mechaniek?",
+                  "answer": "Droog/licht vochtig afnemen; licht smeren 6–12 m; schroeven aandraaien; geen verborgen delen afstellen.",
+                },
+              ],
+            },
+            "OrderReturnsSupports": {
+              "title": "Orders, Returns & Support",
+              "faqs": [
+                {
+                  "question": " Annuleren/retour?",
+                  "answer": "Maatwerk uitgesloten van herroeping; uitzonderingen alleen vóór productie en schriftelijk (kosten).",
+                },
+                {
+                  "question": "Showroom?",
+                  "answer": "Op afspraak; digitale consults en stalen beschikbaar (borg/fee).",
+                },
+                {
+                  "question": " Samenwerking architect/interieur?",
+                  "answer": "Ja — trade/projecten welkom; vraag specs/stalen/voorwaarden.",
+                },
+                {
+                  "question": "Online configureren & uploaden?",
+                  "answer": "Ja; ultra-maatwerk via Offerte. Na aankoop tekeningen/foto’s uploaden.",
+                },
+                {
+                  "question": "Betaling/data veilig?",
+                  "answer": " Ja — Mollie, SCA/3-D Secure; dataminimalisatie volgens privacybeleid.",
+                },
+                {
+                  "question": " Support & reactietijd? ",
+                  "answer": " Mail info@zebranostudio.com; doorgaans 1–3 werkdagen.",
                 },
               ],
             },
@@ -2860,147 +2945,147 @@ const resources = {
           "text2": "2. Indien er onduidelijkheid bestaat over de uitleg van één of meer bepalingen van deze voorwaarden of indien een situatie niet is geregeld, wordt de bepaling of situatie beoordeeld “in de geest” van deze voorwaarden.",
           "text3": "3. Indien Zebrano Studio niet steeds strikte naleving van deze voorwaarden verlangt, betekent dit niet dat de bepalingen niet van toepassing zijn, noch dat Zebrano Studio het recht verliest om in andere gevallen wel strikte naleving te eisen.",
         },
-        "OfferQuotation" : {
-          "title" : "Aanbod / Offerte",
-          "text1" : "1. Aanbiedingen en offertes van Zebrano Studio zijn vrijblijvend, tenzij uitdrukkelijk anders vermeld.",
-          "text2" : "2. Eventuele fouten – zoals onjuiste prijsvermeldingen en reken- of schrijffouten – op de website van Zebrano Studio, in advertenties, offertes, publicaties, orderbevestigingen of andere documenten zijn niet bindend.",
+        "OfferQuotation": {
+          "title": "Aanbod / Offerte",
+          "text1": "1. Aanbiedingen en offertes van Zebrano Studio zijn vrijblijvend, tenzij uitdrukkelijk anders vermeld.",
+          "text2": "2. Eventuele fouten – zoals onjuiste prijsvermeldingen en reken- of schrijffouten – op de website van Zebrano Studio, in advertenties, offertes, publicaties, orderbevestigingen of andere documenten zijn niet bindend.",
         },
-        "TheAgreement" : {
-          "title" : "De overeenkomst",
+        "TheAgreement": {
+          "title": "De overeenkomst",
 
-          "text1" : "1. De overeenkomst komt tot stand wanneer de klant het aanbod van Zebrano Studio accepteert. De koop is definitief bij ondertekening van de orderbevestiging.",
+          "text1": "1. De overeenkomst komt tot stand wanneer de klant het aanbod van Zebrano Studio accepteert. De koop is definitief bij ondertekening van de orderbevestiging.",
 
-          "text2" : "2. De orderbevestiging is in principe leidend. De klant dient deze zorgvuldig te controleren op omissies en onjuistheden en deze tijdig, uiterlijk binnen 3 dagen na ontvangst, aan Zebrano Studio te melden.",
+          "text2": "2. De orderbevestiging is in principe leidend. De klant dient deze zorgvuldig te controleren op omissies en onjuistheden en deze tijdig, uiterlijk binnen 3 dagen na ontvangst, aan Zebrano Studio te melden.",
 
-          "text3" : "3. Aanbiedingen en acties zijn tijdelijk. Na afloop van de looptijd kan de klant er geen gebruik meer van maken. Prijsverlagingen na het sluiten van de overeenkomst – bijvoorbeeld door acties of kortingen op showroommodellen – geven de klant geen recht op een lagere prijs.",
+          "text3": "3. Aanbiedingen en acties zijn tijdelijk. Na afloop van de looptijd kan de klant er geen gebruik meer van maken. Prijsverlagingen na het sluiten van de overeenkomst – bijvoorbeeld door acties of kortingen op showroommodellen – geven de klant geen recht op een lagere prijs.",
 
-          "text4" : "4. Voor aanbiedingen en acties kunnen bijzondere voorwaarden gelden.",
+          "text4": "4. Voor aanbiedingen en acties kunnen bijzondere voorwaarden gelden.",
 
-          "text5" : "5. Wijzigingen van de overeenkomst en afwijkingen van deze algemene voorwaarden zijn alleen geldig indien schriftelijk overeengekomen tussen de klant en Zebrano Studio.",
+          "text5": "5. Wijzigingen van de overeenkomst en afwijkingen van deze algemene voorwaarden zijn alleen geldig indien schriftelijk overeengekomen tussen de klant en Zebrano Studio.",
 
-          "text6" : "6. Indien wijzigingen in de overeenkomst leiden tot een verhoging of verlaging van de kosten, dient de aanpassing van de koopprijs schriftelijk te worden overeengekomen.",
+          "text6": "6. Indien wijzigingen in de overeenkomst leiden tot een verhoging of verlaging van de kosten, dient de aanpassing van de koopprijs schriftelijk te worden overeengekomen.",
 
-          "text7" : "7. Indien blijkt dat (verdere) uitvoering van de overeenkomst door Zebrano Studio niet mogelijk is wegens overmacht, kan Zebrano Studio de overeenkomst opschorten of ontbinden zonder aansprakelijk te zijn voor schade. Dit laat onverlet dat partijen elkaar voorstellen kunnen doen om de overeenkomst zodanig te wijzigen dat juiste en volledige uitvoering alsnog mogelijk is.",
-          
-          "text8" : "8. In geval van faillissement, surseance van betaling of beslaglegging van de klant, kan Zebrano Studio de overeenkomst geheel of gedeeltelijk ontbinden zonder ingebrekestelling.",
+          "text7": "7. Indien blijkt dat (verdere) uitvoering van de overeenkomst door Zebrano Studio niet mogelijk is wegens overmacht, kan Zebrano Studio de overeenkomst opschorten of ontbinden zonder aansprakelijk te zijn voor schade. Dit laat onverlet dat partijen elkaar voorstellen kunnen doen om de overeenkomst zodanig te wijzigen dat juiste en volledige uitvoering alsnog mogelijk is.",
+
+          "text8": "8. In geval van faillissement, surseance van betaling of beslaglegging van de klant, kan Zebrano Studio de overeenkomst geheel of gedeeltelijk ontbinden zonder ingebrekestelling.",
         },
-        "RightOfWithdrawal":{
-          "title":"Herroepingsrecht / Beëindiging van de overeenkomst",
-          "text1":"1. De meeste producten die door Zebrano Studio worden vervaardigd en/of geleverd zijn maatwerk en niet prefab. Dit omvat in ieder geval producten die in de fabriek van Zebrano Studio worden gemaakt, zoals tafels, salontafels, bijzettafels, bartafels, tuintafels, kasten, tv-meubels, gestoffeerde meubels en op maat gemaakte wandplanken. Het herroepingsrecht is op deze producten niet van toepassing. Ze kunnen niet worden geretourneerd.",
+        "RightOfWithdrawal": {
+          "title": "Herroepingsrecht / Beëindiging van de overeenkomst",
+          "text1": "1. De meeste producten die door Zebrano Studio worden vervaardigd en/of geleverd zijn maatwerk en niet prefab. Dit omvat in ieder geval producten die in de fabriek van Zebrano Studio worden gemaakt, zoals tafels, salontafels, bijzettafels, bartafels, tuintafels, kasten, tv-meubels, gestoffeerde meubels en op maat gemaakte wandplanken. Het herroepingsrecht is op deze producten niet van toepassing. Ze kunnen niet worden geretourneerd.",
 
-          "text2":"2. Indien de klant de overeenkomst wenst te beëindigen zonder dat er sprake is van een tekortkoming en Zebrano Studio hiermee instemt, kan de overeenkomst met wederzijds goedvinden worden beëindigd. In dat geval heeft Zebrano Studio recht op schadevergoeding, waaronder geleden verlies en gederfde winst. Tenzij anders overeengekomen bedraagt de vergoeding 30% van de koopprijs, of 50% indien de klant op het moment van beëindiging reeds op de hoogte was gesteld dat (gedeeltelijke) levering kan plaatsvinden.",
+          "text2": "2. Indien de klant de overeenkomst wenst te beëindigen zonder dat er sprake is van een tekortkoming en Zebrano Studio hiermee instemt, kan de overeenkomst met wederzijds goedvinden worden beëindigd. In dat geval heeft Zebrano Studio recht op schadevergoeding, waaronder geleden verlies en gederfde winst. Tenzij anders overeengekomen bedraagt de vergoeding 30% van de koopprijs, of 50% indien de klant op het moment van beëindiging reeds op de hoogte was gesteld dat (gedeeltelijke) levering kan plaatsvinden.",
 
-          "text3":"3. Indien Zebrano Studio op verzoek van de consument het product ophaalt, zijn de kosten voor de consument. Deze bedragen €95,00 inclusief btw voor adressen binnen de Benelux. Het product moet bij ophaling deugdelijk verpakt en gereed staan achter de eerste drempel. Indien dit niet het geval is, wordt het product niet meegenomen.",
+          "text3": "3. Indien Zebrano Studio op verzoek van de consument het product ophaalt, zijn de kosten voor de consument. Deze bedragen €95,00 inclusief btw voor adressen binnen de Benelux. Het product moet bij ophaling deugdelijk verpakt en gereed staan achter de eerste drempel. Indien dit niet het geval is, wordt het product niet meegenomen.",
 
-          "text4":"4. Het aankoopbedrag wordt terugbetaald nadat Zebrano Studio het product heeft geïnspecteerd en heeft vastgesteld dat het volledig, ongebruikt en onbeschadigd is.",
+          "text4": "4. Het aankoopbedrag wordt terugbetaald nadat Zebrano Studio het product heeft geïnspecteerd en heeft vastgesteld dat het volledig, ongebruikt en onbeschadigd is.",
         },
-         "IntellectualProperty" : {
-          "title" : "Intellectueel eigendom",
-          "text1" : "1. Tenzij schriftelijk anders overeengekomen, behoudt Zebrano Studio de auteursrechten en alle intellectuele eigendomsrechten op door haar gedane aanbiedingen en op door haar verstrekte ontwerpen, afbeeldingen, tekeningen, (prototype) modellen en dergelijke. De klant mag zonder toestemming van Zebrano Studio geen materiaal waarop intellectuele eigendomsrechten rusten verveelvoudigen, openbaar maken, exploiteren of tentoonstellen.",
+        "IntellectualProperty": {
+          "title": "Intellectueel eigendom",
+          "text1": "1. Tenzij schriftelijk anders overeengekomen, behoudt Zebrano Studio de auteursrechten en alle intellectuele eigendomsrechten op door haar gedane aanbiedingen en op door haar verstrekte ontwerpen, afbeeldingen, tekeningen, (prototype) modellen en dergelijke. De klant mag zonder toestemming van Zebrano Studio geen materiaal waarop intellectuele eigendomsrechten rusten verveelvoudigen, openbaar maken, exploiteren of tentoonstellen.",
         },
-        "DeliveryTime" : {
-          "title" : "Levertijd",
-          "text1" : "1. De levertijd en/of uitvoeringstermijn wordt door Zebrano Studio bij benadering vastgesteld.",
+        "DeliveryTime": {
+          "title": "Levertijd",
+          "text1": "1. De levertijd en/of uitvoeringstermijn wordt door Zebrano Studio bij benadering vastgesteld.",
 
-          "text2" : "2. Bij het vaststellen van de levertijd en/of uitvoeringstermijn gaat Zebrano Studio uit van de omstandigheden die haar op dat moment bekend zijn.",
+          "text2": "2. Bij het vaststellen van de levertijd en/of uitvoeringstermijn gaat Zebrano Studio uit van de omstandigheden die haar op dat moment bekend zijn.",
 
-          "text3" : "3. De levertijd en/of uitvoeringstermijn gaat in zodra overeenstemming is bereikt over alle commerciële en technische details, alle noodzakelijke informatie in het bezit is van Zebrano Studio en, voor zover overeengekomen, de aanbetaling is ontvangen.",
+          "text3": "3. De levertijd en/of uitvoeringstermijn gaat in zodra overeenstemming is bereikt over alle commerciële en technische details, alle noodzakelijke informatie in het bezit is van Zebrano Studio en, voor zover overeengekomen, de aanbetaling is ontvangen.",
 
-          "text4" : "4. Indien de verwachte levertijd en/of uitvoeringstermijn wordt overschreden, krijgt Zebrano Studio een aanvullende redelijke termijn om alsnog te leveren.",
+          "text4": "4. Indien de verwachte levertijd en/of uitvoeringstermijn wordt overschreden, krijgt Zebrano Studio een aanvullende redelijke termijn om alsnog te leveren.",
 
-          "text5" : "5. Het overschrijden van de levertijd en/of uitvoeringstermijn geeft de klant nooit recht op schadevergoeding door Zebrano Studio.",
+          "text5": "5. Het overschrijden van de levertijd en/of uitvoeringstermijn geeft de klant nooit recht op schadevergoeding door Zebrano Studio.",
         },
-        "TransportAndDamage" : {
-          "title" : "Transport en schade bij levering",
-          "text1" : "1. Tenzij anders overeengekomen omvat de overeenkomst het transport van de producten door Zebrano Studio, die het risico van schade en verlies tijdens transport draagt. Indien de producten door een professionele vervoerder worden geleverd, zorgt Zebrano Studio voor een passende verzekering.",
-          "text2" : "2. Zebrano Studio is niet aansprakelijk voor schade die ontstaat vanaf de eerste deur/drempel van het afleveradres. Wij helpen echter graag met het plaatsen van het product binnen.",
-          "text3" : "3. Indien bij levering schade wordt geconstateerd, dient de klant dit binnen twee werkdagen na levering aan Zebrano Studio te melden; anders wordt de klant geacht de geleverde producten zonder schade te hebben ontvangen.",
+        "TransportAndDamage": {
+          "title": "Transport en schade bij levering",
+          "text1": "1. Tenzij anders overeengekomen omvat de overeenkomst het transport van de producten door Zebrano Studio, die het risico van schade en verlies tijdens transport draagt. Indien de producten door een professionele vervoerder worden geleverd, zorgt Zebrano Studio voor een passende verzekering.",
+          "text2": "2. Zebrano Studio is niet aansprakelijk voor schade die ontstaat vanaf de eerste deur/drempel van het afleveradres. Wij helpen echter graag met het plaatsen van het product binnen.",
+          "text3": "3. Indien bij levering schade wordt geconstateerd, dient de klant dit binnen twee werkdagen na levering aan Zebrano Studio te melden; anders wordt de klant geacht de geleverde producten zonder schade te hebben ontvangen.",
         },
-        "Delivery" : {
-          "title" : "Levering",
-          "text1":"1. De klant moet ervoor zorgen dat de plaats van levering goed bereikbaar is en dat alles binnen zijn macht wordt gedaan om een vlotte levering mogelijk te maken. De klant moet er tevens voor zorgen dat de plaats van levering deugdelijk kan worden beveiligd.",
+        "Delivery": {
+          "title": "Levering",
+          "text1": "1. De klant moet ervoor zorgen dat de plaats van levering goed bereikbaar is en dat alles binnen zijn macht wordt gedaan om een vlotte levering mogelijk te maken. De klant moet er tevens voor zorgen dat de plaats van levering deugdelijk kan worden beveiligd.",
 
-          "text2":"2. De klant dient Zebrano Studio vóór het aangaan van de overeenkomst te informeren over bijzondere omstandigheden op de plaats van levering die het gebruik van hulpmiddelen – zoals een (verhuis)lift of kraan – noodzakelijk maken. Ook moet de klant ervoor zorgen dat vereiste toestemmingen (vergunningen e.d.) en essentiële informatie (bijv. bereikbaarheid van de locatie) tijdig aan Zebrano Studio worden verstrekt.",
+          "text2": "2. De klant dient Zebrano Studio vóór het aangaan van de overeenkomst te informeren over bijzondere omstandigheden op de plaats van levering die het gebruik van hulpmiddelen – zoals een (verhuis)lift of kraan – noodzakelijk maken. Ook moet de klant ervoor zorgen dat vereiste toestemmingen (vergunningen e.d.) en essentiële informatie (bijv. bereikbaarheid van de locatie) tijdig aan Zebrano Studio worden verstrekt.",
 
-          "text3":"3. Bij onjuiste of onvolledige informatie van de klant zijn de (extra) kosten voor het gebruik van speciale hulpmiddelen voor rekening van de klant.",
+          "text3": "3. Bij onjuiste of onvolledige informatie van de klant zijn de (extra) kosten voor het gebruik van speciale hulpmiddelen voor rekening van de klant.",
 
-          "text4":"4. Indien een (verhuis)lift of kraan nodig is, zorgt Zebrano Studio voor de beschikbaarheid hiervan op het moment van levering. De kosten zijn voor de klant en moeten vóór levering aan Zebrano Studio worden voldaan.",
+          "text4": "4. Indien een (verhuis)lift of kraan nodig is, zorgt Zebrano Studio voor de beschikbaarheid hiervan op het moment van levering. De kosten zijn voor de klant en moeten vóór levering aan Zebrano Studio worden voldaan.",
 
-          "text5":"5. Indien de klant zelf een (verhuis)lift of kraan wenst te regelen, levert Zebrano Studio de producten kosteloos op de begane grond, zonder montage. De klant blijft verantwoordelijk voor het verplaatsen en/of vervoeren van de producten via lift of kraan, het laden en lossen, en de montage, evenals voor eventuele daaruit voortvloeiende schade.",
+          "text5": "5. Indien de klant zelf een (verhuis)lift of kraan wenst te regelen, levert Zebrano Studio de producten kosteloos op de begane grond, zonder montage. De klant blijft verantwoordelijk voor het verplaatsen en/of vervoeren van de producten via lift of kraan, het laden en lossen, en de montage, evenals voor eventuele daaruit voortvloeiende schade.",
 
-          "text6":"6. Indien de plaats van levering op het moment van levering niet toegankelijk is – bijvoorbeeld omdat de productafmetingen te groot zijn om die plaats te bereiken – is dit voor rekening en risico van de klant. In dat geval levert Zebrano Studio de producten ongemonteerd op de begane grond.",
+          "text6": "6. Indien de plaats van levering op het moment van levering niet toegankelijk is – bijvoorbeeld omdat de productafmetingen te groot zijn om die plaats te bereiken – is dit voor rekening en risico van de klant. In dat geval levert Zebrano Studio de producten ongemonteerd op de begane grond.",
 
-          "text7":"7. Indien de aangeboden producten niet worden geaccepteerd, anders dan wegens een gebrekkige levering, zal Zebrano Studio binnen een redelijke termijn een tweede levering doen.",
+          "text7": "7. Indien de aangeboden producten niet worden geaccepteerd, anders dan wegens een gebrekkige levering, zal Zebrano Studio binnen een redelijke termijn een tweede levering doen.",
 
-          "text8":"8. Indien bij levering door Zebrano Studio blijkt dat onmiddellijke levering niet kan plaatsvinden door omstandigheden die voor rekening en risico van de klant komen zoals beschreven in dit artikel, en de klant een tweede levering verzoekt, kan Zebrano Studio extra vracht-, leverings- en opslagkosten aan de klant in rekening brengen.",
+          "text8": "8. Indien bij levering door Zebrano Studio blijkt dat onmiddellijke levering niet kan plaatsvinden door omstandigheden die voor rekening en risico van de klant komen zoals beschreven in dit artikel, en de klant een tweede levering verzoekt, kan Zebrano Studio extra vracht-, leverings- en opslagkosten aan de klant in rekening brengen.",
 
-          "text9":"9. Indien de klant de leverdatum wil uitstellen, moet dit uiterlijk 20 werkdagen vóór de geplande leverdatum aan Zebrano Studio worden doorgegeven. Een later verzoek wordt beoordeeld op haalbaarheid en er worden opslagkosten aan de klant in rekening gebracht. De opslagkosten bedragen €25 per week vanaf de oorspronkelijke leverdatum. Voor wijzigingen binnen 3 werkdagen vóór de geplande leverdatum rekenen wij €75 wijzigingskosten aan de klant, naast de genoemde opslagkosten.",
+          "text9": "9. Indien de klant de leverdatum wil uitstellen, moet dit uiterlijk 20 werkdagen vóór de geplande leverdatum aan Zebrano Studio worden doorgegeven. Een later verzoek wordt beoordeeld op haalbaarheid en er worden opslagkosten aan de klant in rekening gebracht. De opslagkosten bedragen €25 per week vanaf de oorspronkelijke leverdatum. Voor wijzigingen binnen 3 werkdagen vóór de geplande leverdatum rekenen wij €75 wijzigingskosten aan de klant, naast de genoemde opslagkosten.",
         },
-        "StorageOfProducts":{
-          "title" : "Opslag van producten",
-          "text1" : "1. Na weigering of na een tweede levering kan Zebrano Studio opslagkosten en eventuele verdere schade en kosten aan de klant in rekening brengen.",
-          "text2" : "2. Indien een tweede levering eveneens niet wordt geaccepteerd, zal Zebrano Studio nakoming van de overeenkomst eisen en de klant een termijn van maximaal 30 dagen geven om de producten alsnog af te nemen. Indien de producten binnen deze termijn niet worden afgenomen, kan Zebrano Studio de overeenkomst ontbinden, waarbij de klant schadevergoeding verschuldigd is voor de geleden schade.",
+        "StorageOfProducts": {
+          "title": "Opslag van producten",
+          "text1": "1. Na weigering of na een tweede levering kan Zebrano Studio opslagkosten en eventuele verdere schade en kosten aan de klant in rekening brengen.",
+          "text2": "2. Indien een tweede levering eveneens niet wordt geaccepteerd, zal Zebrano Studio nakoming van de overeenkomst eisen en de klant een termijn van maximaal 30 dagen geven om de producten alsnog af te nemen. Indien de producten binnen deze termijn niet worden afgenomen, kan Zebrano Studio de overeenkomst ontbinden, waarbij de klant schadevergoeding verschuldigd is voor de geleden schade.",
         },
-        "Payment" : {
-          "title" : "Betaling",
-          "text1" : "1. Betaling geschiedt in euro’s. Bij de prijzen van Zebrano Studio wordt aangegeven of deze inclusief of exclusief btw zijn.",
+        "Payment": {
+          "title": "Betaling",
+          "text1": "1. Betaling geschiedt in euro’s. Bij de prijzen van Zebrano Studio wordt aangegeven of deze inclusief of exclusief btw zijn.",
 
-          "text2" : "2. Bij een overeenkomst met een consument kan Zebrano Studio een aanbetaling van maximaal 30% van de koopprijs vragen. Bij overeenkomsten met zakelijke klanten kan Zebrano Studio, vóór levering of voortzetting van de uitvoering, betaling van de volledige koopprijs of zekerheid voor de betalingsverplichtingen verlangen.",
+          "text2": "2. Bij een overeenkomst met een consument kan Zebrano Studio een aanbetaling van maximaal 30% van de koopprijs vragen. Bij overeenkomsten met zakelijke klanten kan Zebrano Studio, vóór levering of voortzetting van de uitvoering, betaling van de volledige koopprijs of zekerheid voor de betalingsverplichtingen verlangen.",
 
-          "text3" : "3. Tenzij anders overeengekomen, dient de netto (resterende) koopprijs vóór levering te worden betaald.",
+          "text3": "3. Tenzij anders overeengekomen, dient de netto (resterende) koopprijs vóór levering te worden betaald.",
 
-          "text4" : "4. Indien Zebrano Studio een levering in gedeelten uitvoert, heeft zij het recht betaling te vragen voor iedere deellevering. De klant ontvangt voor elke levering een deelfactuur.",
+          "text4": "4. Indien Zebrano Studio een levering in gedeelten uitvoert, heeft zij het recht betaling te vragen voor iedere deellevering. De klant ontvangt voor elke levering een deelfactuur.",
 
-          "text5" : "5. De consument is wettelijke rente verschuldigd conform artikel 6:119 BW over de periode waarin hij in verzuim is met betaling van de koopprijs. De zakelijke klant is wettelijke handelsrente verschuldigd (artikel 6:119a BW) over de periode van verzuim.",
+          "text5": "5. De consument is wettelijke rente verschuldigd conform artikel 6:119 BW over de periode waarin hij in verzuim is met betaling van de koopprijs. De zakelijke klant is wettelijke handelsrente verschuldigd (artikel 6:119a BW) over de periode van verzuim.",
 
-          "text6" : "6. Onverminderd het bepaalde in lid 5 stuurt Zebrano Studio de consument na intreden van verzuim een betalingsherinnering, waarbij betaling binnen 14 dagen na de dag van de herinnering wordt gevorderd. De consument wordt erop gewezen dat buitengerechtelijke incassokosten verschuldigd zijn indien betaling uitblijft, met vermelding van de hoogte van die kosten.",
+          "text6": "6. Onverminderd het bepaalde in lid 5 stuurt Zebrano Studio de consument na intreden van verzuim een betalingsherinnering, waarbij betaling binnen 14 dagen na de dag van de herinnering wordt gevorderd. De consument wordt erop gewezen dat buitengerechtelijke incassokosten verschuldigd zijn indien betaling uitblijft, met vermelding van de hoogte van die kosten.",
 
-          "text7" : "7. Zebrano Studio is gerechtigd tot invordering van het verschuldigde bedrag over te gaan zonder verdere ingebrekestelling en kan hiervoor derden inschakelen. In dat geval is de klant tevens buitengerechtelijke incassokosten verschuldigd, vastgesteld conform de Wet normering buitengerechtelijke incassokosten en het daarbij behorende besluit.",
+          "text7": "7. Zebrano Studio is gerechtigd tot invordering van het verschuldigde bedrag over te gaan zonder verdere ingebrekestelling en kan hiervoor derden inschakelen. In dat geval is de klant tevens buitengerechtelijke incassokosten verschuldigd, vastgesteld conform de Wet normering buitengerechtelijke incassokosten en het daarbij behorende besluit.",
 
-          "text8" : "8. Bij klachten is de klant slechts gerechtigd betaling van dat deel van het verschuldigde bedrag op te schorten dat redelijkerwijs in verhouding staat tot de aard en ernst van de klacht. Dit ontslaat de klant niet van de verplichting het overige binnen de overeengekomen termijn te betalen.",
+          "text8": "8. Bij klachten is de klant slechts gerechtigd betaling van dat deel van het verschuldigde bedrag op te schorten dat redelijkerwijs in verhouding staat tot de aard en ernst van de klacht. Dit ontslaat de klant niet van de verplichting het overige binnen de overeengekomen termijn te betalen.",
 
-          "text9" : "9. Zebrano Studio blijft eigenaar van de producten totdat de klant het volledige verschuldigde bedrag uit de overeenkomst heeft betaald. De klant moet de producten zorgvuldig behandelen en mag deze niet aan derden overdragen, verpanden, uitlenen of (laten) verwijderen van de plaats van levering totdat de koopprijs en eventuele rente en kosten volledig zijn voldaan.",
+          "text9": "9. Zebrano Studio blijft eigenaar van de producten totdat de klant het volledige verschuldigde bedrag uit de overeenkomst heeft betaald. De klant moet de producten zorgvuldig behandelen en mag deze niet aan derden overdragen, verpanden, uitlenen of (laten) verwijderen van de plaats van levering totdat de koopprijs en eventuele rente en kosten volledig zijn voldaan.",
         },
-        "Warranty" : {
-          "title" : "Garantie",
-          "text1" : "1. Tenzij schriftelijk anders overeengekomen, garandeert Zebrano Studio de deugdelijkheid van de geleverde producten gedurende een periode van 2 jaar na levering.",
+        "Warranty": {
+          "title": "Garantie",
+          "text1": "1. Tenzij schriftelijk anders overeengekomen, garandeert Zebrano Studio de deugdelijkheid van de geleverde producten gedurende een periode van 2 jaar na levering.",
 
-          "text2" : "2. Bij maatwerkproducten zijn kleine afwijkingen in afmetingen toegestaan. Zebrano Studio mag tot 2% afwijken van de overeengekomen afmetingen, tenzij uitdrukkelijk anders overeengekomen.",
+          "text2": "2. Bij maatwerkproducten zijn kleine afwijkingen in afmetingen toegestaan. Zebrano Studio mag tot 2% afwijken van de overeengekomen afmetingen, tenzij uitdrukkelijk anders overeengekomen.",
 
-          "text3" : "3. De klant moet Zebrano Studio in alle gevallen de gelegenheid geven een gebrek te herstellen. De aansprakelijkheid van Zebrano Studio is beperkt tot kosteloos herstel van een gebrekkig product of vervanging daarvan of van een onderdeel, naar keuze van Zebrano Studio.",
+          "text3": "3. De klant moet Zebrano Studio in alle gevallen de gelegenheid geven een gebrek te herstellen. De aansprakelijkheid van Zebrano Studio is beperkt tot kosteloos herstel van een gebrekkig product of vervanging daarvan of van een onderdeel, naar keuze van Zebrano Studio.",
 
-          "text4" : "4. Geen garantie wordt verleend indien gebreken het gevolg zijn van normale slijtage, onoordeelkundig gebruik, gebrek aan of onjuist onderhoud of installatie, (de)montage, wijziging of reparatie door de klant of derden. Geen garantie wordt verleend op producten die bij levering niet nieuw waren, showroommodellen, producten of onderdelen die onder een fabrieksgarantie vallen, of productspecifieke eigenschappen waaronder het natuurlijke gedrag van hout (zie hieronder).",
+          "text4": "4. Geen garantie wordt verleend indien gebreken het gevolg zijn van normale slijtage, onoordeelkundig gebruik, gebrek aan of onjuist onderhoud of installatie, (de)montage, wijziging of reparatie door de klant of derden. Geen garantie wordt verleend op producten die bij levering niet nieuw waren, showroommodellen, producten of onderdelen die onder een fabrieksgarantie vallen, of productspecifieke eigenschappen waaronder het natuurlijke gedrag van hout (zie hieronder).",
 
-          "text5" : "5. Op alle houten onderdelen geldt een beperkte garantie die uitsluitend fabricagefouten dekt. Het natuurlijke gedrag van hout is uitgesloten, aangezien dit geen gebrek is in het product of de productie, maar een eigenschap van het materiaal. “Gedrag van hout” omvat uitzetting, krimp, scheuren en/of kromtrekken. Het door Zebrano Studio gebruikte hout is gezaagd en gedroogd tot een vochtgehalte van circa 8%–12%, waardoor het geschikt is voor gebruik in een verwarmde ruimte. Hout blijft een natuurproduct en neemt vocht op of geeft het af. De mate waarin dit gebeurt, hangt onder meer af van temperatuurverschillen en luchtvochtigheid. Hout werkt minder als de luchtvochtigheid nagenoeg constant blijft; wij adviseren een luchtvochtigheid van 50%–60%, doorgaans 10% lager in de winter en 10% hoger in de zomer.",
+          "text5": "5. Op alle houten onderdelen geldt een beperkte garantie die uitsluitend fabricagefouten dekt. Het natuurlijke gedrag van hout is uitgesloten, aangezien dit geen gebrek is in het product of de productie, maar een eigenschap van het materiaal. “Gedrag van hout” omvat uitzetting, krimp, scheuren en/of kromtrekken. Het door Zebrano Studio gebruikte hout is gezaagd en gedroogd tot een vochtgehalte van circa 8%–12%, waardoor het geschikt is voor gebruik in een verwarmde ruimte. Hout blijft een natuurproduct en neemt vocht op of geeft het af. De mate waarin dit gebeurt, hangt onder meer af van temperatuurverschillen en luchtvochtigheid. Hout werkt minder als de luchtvochtigheid nagenoeg constant blijft; wij adviseren een luchtvochtigheid van 50%–60%, doorgaans 10% lager in de winter en 10% hoger in de zomer.",
 
-          "text6" : "6. Het document “Houtvariaties en tips” maakt deel uit van deze algemene voorwaarden en wordt per e-mail aan de klant verstrekt.",
+          "text6": "6. Het document “Houtvariaties en tips” maakt deel uit van deze algemene voorwaarden en wordt per e-mail aan de klant verstrekt.",
 
-          "text7" : "7. Indien bij aankoop het All-in-house pakket is afgenomen, dient de klant zelf de bijbehorende onderhoudsproducten op het product toe te passen. Dit wordt niet uitgevoerd door Zebrano Studio.",
+          "text7": "7. Indien bij aankoop het All-in-house pakket is afgenomen, dient de klant zelf de bijbehorende onderhoudsproducten op het product toe te passen. Dit wordt niet uitgevoerd door Zebrano Studio.",
 
-          "text8" : "8. Zebrano Studio is niet verantwoordelijk voor afwijkende verwachtingen van de klant over de bekleding van zitmeubelen in andere materialen dan die welke aanwezig zijn in onze showrooms.",
+          "text8": "8. Zebrano Studio is niet verantwoordelijk voor afwijkende verwachtingen van de klant over de bekleding van zitmeubelen in andere materialen dan die welke aanwezig zijn in onze showrooms.",
 
-          "text9" : "9. De reparatiebon van Zebrano Studio dekt de reparatie van (droge) scheuren in houten meubels die door Zebrano Studio zijn vervaardigd. Andere (reparatie)diensten vallen onder verschillende tarieven die door Zebrano Studio worden vastgesteld.",
+          "text9": "9. De reparatiebon van Zebrano Studio dekt de reparatie van (droge) scheuren in houten meubels die door Zebrano Studio zijn vervaardigd. Andere (reparatie)diensten vallen onder verschillende tarieven die door Zebrano Studio worden vastgesteld.",
         },
-        "Liability" : {
-          "title" : "Aansprakelijkheid",
-          "text1" : "1. Het risico van schade berust bij Zebrano Studio tot aan levering aan de klant bij de eerste deur/drempel van het afleveradres, tenzij uitdrukkelijk anders overeengekomen.",
-          "text2" : "2. Zebrano Studio is niet aansprakelijk voor schade aan muren, kozijnen, vloeren of andere goederen veroorzaakt door levering en/of montage van onze producten.",
-          "text3" : "3. Het risico van schade berust bij Zebrano Studio tot aan de levering aan de klant bij de eerste deur/drempel van het afleveradres, tenzij uitdrukkelijk anders is overeengekomen.",
-          "text4" : "4. Zebrano Studio is niet aansprakelijk voor schade aan muren, kozijnen, vloeren of andere goederen die is veroorzaakt door de levering en/of montage van onze producten.",
-          "text5" : "5. Zebrano Studio is niet aansprakelijk voor directe of indirecte schade als gevolg van gebreken in de geleverde producten of anderszins, noch voor vertragingen in de levering, behalve in gevallen van opzet of grove nalatigheid aan de zijde van Zebrano Studio.",
-          "text6" : "6. Indien de klant zelf producten installeert, monteert, enz., of dit laat doen door een derde partij, is de klant en/of derde partij verantwoordelijk voor de juiste installatie, montage, enz. en alles wat daarbij hoort. In dergelijke gevallen is Zebrano Studio niet verantwoordelijk of aansprakelijk indien er iets misgaat tijdens de installatie/montage of indien er onvolkomenheden in het resultaat optreden.",
-          "text7" : "Indien Zebrano Studio aansprakelijk is, is zij nooit verplicht enige schade, van welke aard en door welke oorzaak dan ook, te vergoeden die het totale bedrag van de transactie tussen de klant en Zebrano Studio te boven gaat.",
-          "text8" : "Indien Zebrano Studio zich niet kan beroepen op enige uitsluiting van aansprakelijkheid, is haar aansprakelijkheid beperkt tot het bedrag dat door haar aansprakelijkheidsverzekering wordt gedekt."
+        "Liability": {
+          "title": "Aansprakelijkheid",
+          "text1": "1. Het risico van schade berust bij Zebrano Studio tot aan levering aan de klant bij de eerste deur/drempel van het afleveradres, tenzij uitdrukkelijk anders overeengekomen.",
+          "text2": "2. Zebrano Studio is niet aansprakelijk voor schade aan muren, kozijnen, vloeren of andere goederen veroorzaakt door levering en/of montage van onze producten.",
+          "text3": "3. Het risico van schade berust bij Zebrano Studio tot aan de levering aan de klant bij de eerste deur/drempel van het afleveradres, tenzij uitdrukkelijk anders is overeengekomen.",
+          "text4": "4. Zebrano Studio is niet aansprakelijk voor schade aan muren, kozijnen, vloeren of andere goederen die is veroorzaakt door de levering en/of montage van onze producten.",
+          "text5": "5. Zebrano Studio is niet aansprakelijk voor directe of indirecte schade als gevolg van gebreken in de geleverde producten of anderszins, noch voor vertragingen in de levering, behalve in gevallen van opzet of grove nalatigheid aan de zijde van Zebrano Studio.",
+          "text6": "6. Indien de klant zelf producten installeert, monteert, enz., of dit laat doen door een derde partij, is de klant en/of derde partij verantwoordelijk voor de juiste installatie, montage, enz. en alles wat daarbij hoort. In dergelijke gevallen is Zebrano Studio niet verantwoordelijk of aansprakelijk indien er iets misgaat tijdens de installatie/montage of indien er onvolkomenheden in het resultaat optreden.",
+          "text7": "Indien Zebrano Studio aansprakelijk is, is zij nooit verplicht enige schade, van welke aard en door welke oorzaak dan ook, te vergoeden die het totale bedrag van de transactie tussen de klant en Zebrano Studio te boven gaat.",
+          "text8": "Indien Zebrano Studio zich niet kan beroepen op enige uitsluiting van aansprakelijkheid, is haar aansprakelijkheid beperkt tot het bedrag dat door haar aansprakelijkheidsverzekering wordt gedekt."
         },
-        "Complaints" : {
-          "title" : "Complaints",
-          "text1" : "Klachten over de kwaliteit van de geleverde producten of materialen of de uitvoering van het werk kunnen door de klant slechts worden ingediend bij Zebrano Studio binnen 2 werkdagen na levering van de producten. Indien indiening binnen deze termijn redelijkerwijs niet mogelijk is, geldt de termijn van 2 werkdagen vanaf het moment dat het gebrek werd ontdekt of redelijkerwijs kon worden ontdekt. De klacht dient een duidelijke en volledige omschrijving van de bezwaren en geconstateerde gebreken te bevatten.",
-          "text2" : "Het vorige lid laat de kortere termijn genoemd in artikel 9 onverlet.",
-          "text3" : "Wanneer de afnemer tegen het advies van Zebrano Studio in bepaalde werkzaamheden wil (doen) verrichten of beletten, is, tenzij schriftelijk vastgelegd, elke klacht hierop uitgesloten.",
+        "Complaints": {
+          "title": "Complaints",
+          "text1": "Klachten over de kwaliteit van de geleverde producten of materialen of de uitvoering van het werk kunnen door de klant slechts worden ingediend bij Zebrano Studio binnen 2 werkdagen na levering van de producten. Indien indiening binnen deze termijn redelijkerwijs niet mogelijk is, geldt de termijn van 2 werkdagen vanaf het moment dat het gebrek werd ontdekt of redelijkerwijs kon worden ontdekt. De klacht dient een duidelijke en volledige omschrijving van de bezwaren en geconstateerde gebreken te bevatten.",
+          "text2": "Het vorige lid laat de kortere termijn genoemd in artikel 9 onverlet.",
+          "text3": "Wanneer de afnemer tegen het advies van Zebrano Studio in bepaalde werkzaamheden wil (doen) verrichten of beletten, is, tenzij schriftelijk vastgelegd, elke klacht hierop uitgesloten.",
         },
-        "ApplicableLaw" : {
-          "title" : "Applicable law",
-          "text" : " “Op alle overeenkomsten waarop deze voorwaarden van toepassing zijn, is Nederlands recht van toepassing.” "
+        "ApplicableLaw": {
+          "title": "Applicable law",
+          "text": " “Op alle overeenkomsten waarop deze voorwaarden van toepassing zijn, is Nederlands recht van toepassing.” "
         },
       },
 
@@ -3472,6 +3557,49 @@ const resources = {
             "subHeading": "Bei Zebrano Studio beginnt jedes Detail mit dem richtigen Material. Von zeitlosen Hölzern und edlen Furnieren bis hin zu Glas, Stein und Metall – wir verbinden Handwerkskunst mit Innovation. Jede Wahl definiert den Charakter, die Langlebigkeit und die Schönheit Ihres Interieurs.",
             "btnText": "Kollektion ansehen"
           },
+          "MaterialAndDesignContent": {
+            "row1": {
+              "title": "Holz.",
+              "desc": "Natürliche Harthölzer wie Eiche, Nussbaum und Zebrano bilden die Basis unserer Kollektionen. Jede Holzart wird sorgfältig nach Stärke, Maserung und Oberfläche ausgewählt.",
+            },
+            "row2": {
+              "title": "Furnier.",
+              "desc": "Eine edle Schicht aus echtem Holz, die einzigartige Strukturen und seltene Arten mit Konsistenz und Eleganz zum Leben erweckt.",
+            },
+            "row3": {
+              "title": "Glas.",
+              "desc": "Klares, getöntes oder strukturiertes Glas, das Räume mit Licht und Transparenz öffnet – von Sichtschutzglas bis hin zu markanten Glastüren.",
+            },
+            "row4": {
+              "title": "Metall.",
+              "desc": "Aluminium-, Bronze- oder Stahlakzente schaffen Kontrast und Präzision, verwendet in Rahmen, Scharnieren und Details.",
+            },
+            "row5": {
+              "title": "Stein & Keramik.",
+              "desc": "Marmor, Travertin oder keramische Steinpaneele verleihen unseren Designs Beständigkeit und Luxus.",
+            },
+            "row6": {
+              "title": "Griffe & Beschläge.",
+              "desc": "Minimalistische eingelassene Griffe, markante Griffe und maßgefertigte Beschläge – funktional und skulptural zugleich.",
+            },
+            "row7": {
+              "title": "Oberflächen & Öle.",
+              "desc": "Von matten Ölen bis zu tiefen Beizen – jede Oberfläche ist darauf ausgelegt, den natürlichen Charakter zu schützen und zu betonen.",
+            },
+            "row8" : {
+              "col1":{
+                "title" : "Nachhaltigkeit & Langlebigkeit",
+                "subTitle" : "Nachhaltige Entscheidungen",
+                "text" : "Wir beschaffen verantwortungsvoll – FSC-zertifiziertes Holz, langlebige Oberflächen und recycelbares Glas & Metall."
+              },
+              "col2":{
+                "title" : "Für die Ewigkeit gebaut",
+                "desc" : "Jedes Material wird nicht nur wegen seines Aussehens gewählt, sondern auch wegen seiner Langlebigkeit. Ein Zebrano-Produkt ist darauf ausgelegt, jahrzehntelang mit Ihnen zu leben.",
+                "btnText" : "Configure Now",
+              },
+            },
+
+          },
         },
       },
       // ====contactPage====
@@ -3661,67 +3789,67 @@ const resources = {
           "btnText": "",
         },
         "AboutUsTimeline": {
-          "row1" : {
-            "title" : "Eine Reise durch Südostasien",
-            "desc" : "2015, als Brüder mit dem Rucksack durch Südostasien unterwegs, waren wir beeindruckt von dem Handwerk, das uns überall begegnete. Von geschäftigen Märkten bis zu stillen Tempeln wurde Holz in Objekte von außergewöhnlicher Schönheit verwandelt – von filigranen Schnitzereien bis zu edlen Möbeln. Die natürliche Eleganz des Materials, kombiniert mit der Hingabe der lokalen Handwerker, legte den ersten Grundstein für das, was später Zebrano Studio werden sollte.",
+          "row1": {
+            "title": "Eine Reise durch Südostasien",
+            "desc": "2015, als Brüder mit dem Rucksack durch Südostasien unterwegs, waren wir beeindruckt von dem Handwerk, das uns überall begegnete. Von geschäftigen Märkten bis zu stillen Tempeln wurde Holz in Objekte von außergewöhnlicher Schönheit verwandelt – von filigranen Schnitzereien bis zu edlen Möbeln. Die natürliche Eleganz des Materials, kombiniert mit der Hingabe der lokalen Handwerker, legte den ersten Grundstein für das, was später Zebrano Studio werden sollte.",
           },
-          "row2" : {
-            "title" : "Von kleinen Stücken zu mutigen Kreationen",
-            "desc" : "Wieder zu Hause wurde unsere Neugier schnell zu Tatendrang. Wir begannen, mit Holz zu experimentieren, und fertigten kleine Objekte wie Lesezeichen und Tapasbretter. Bald entwickelten sich daraus größere Projekte – handgefertigte Paddel aus besonderen Hölzern wie gestreiftem Zebrano, tiefrotem Purpleheart und exotischem Palmenholz. Jedes Material hatte seinen eigenen Charakter, und herauszufinden, wie man diesen betont, wurde zu unserem Handwerk.",
+          "row2": {
+            "title": "Von kleinen Stücken zu mutigen Kreationen",
+            "desc": "Wieder zu Hause wurde unsere Neugier schnell zu Tatendrang. Wir begannen, mit Holz zu experimentieren, und fertigten kleine Objekte wie Lesezeichen und Tapasbretter. Bald entwickelten sich daraus größere Projekte – handgefertigte Paddel aus besonderen Hölzern wie gestreiftem Zebrano, tiefrotem Purpleheart und exotischem Palmenholz. Jedes Material hatte seinen eigenen Charakter, und herauszufinden, wie man diesen betont, wurde zu unserem Handwerk.",
           },
-          "row3" : {
-            "title" : "Die erste Tür",
-            "desc" : "Holz wurde mehr als nur ein Hobby – es wurde zu einer Berufung. Unsere jährlichen Besuche auf Edelhölzer-Messen wurden zu einer Quelle der Inspiration und Begegnung. 2020 war es soweit: Wir brauchten neue Türen. Anstatt sie zu kaufen, bauten wir sie selbst. Diese erste Zebrano-Tür, mit ihrer markanten Maserung und zeitlosen Präsenz, markierte den Beginn eines neuen Kapitels.",
+          "row3": {
+            "title": "Die erste Tür",
+            "desc": "Holz wurde mehr als nur ein Hobby – es wurde zu einer Berufung. Unsere jährlichen Besuche auf Edelhölzer-Messen wurden zu einer Quelle der Inspiration und Begegnung. 2020 war es soweit: Wir brauchten neue Türen. Anstatt sie zu kaufen, bauten wir sie selbst. Diese erste Zebrano-Tür, mit ihrer markanten Maserung und zeitlosen Präsenz, markierte den Beginn eines neuen Kapitels.",
           },
-          "row4" : {
-            "title" : "Der Beginn von Zebrano Studio",
-            "desc" : "Diese Tür war nicht nur eine praktische Lösung – sie war ein Statement. Die Reaktionen anderer bestätigten, was wir selbst gespürt hatten: Hier war etwas Einzigartiges, das geteilt werden musste. Aus diesem Moment entstand Zebrano Studio – benannt nach dem Holz, das uns von Anfang an inspiriert hatte.",
+          "row4": {
+            "title": "Der Beginn von Zebrano Studio",
+            "desc": "Diese Tür war nicht nur eine praktische Lösung – sie war ein Statement. Die Reaktionen anderer bestätigten, was wir selbst gespürt hatten: Hier war etwas Einzigartiges, das geteilt werden musste. Aus diesem Moment entstand Zebrano Studio – benannt nach dem Holz, das uns von Anfang an inspiriert hatte.",
           },
-          "row5" : {
-            "title" : "Luxus, zugänglich gemacht",
-            "desc" : "Seitdem ist unsere Mission klar: die Exklusivität luxuriöser Interieurs für alle zugänglich zu machen. Nicht nur in Hotels, Restaurants oder Villen, sondern in jedem Zuhause, in dem Design und Qualität zählen. Wir schaffen Türen und Wandlösungen, die edle Materialien, zeitloses Handwerk und Gestaltungsfreiheit vereinen – wahre Kunstwerke, die ein Leben lang halten.",
+          "row5": {
+            "title": "Luxus, zugänglich gemacht",
+            "desc": "Seitdem ist unsere Mission klar: die Exklusivität luxuriöser Interieurs für alle zugänglich zu machen. Nicht nur in Hotels, Restaurants oder Villen, sondern in jedem Zuhause, in dem Design und Qualität zählen. Wir schaffen Türen und Wandlösungen, die edle Materialien, zeitloses Handwerk und Gestaltungsfreiheit vereinen – wahre Kunstwerke, die ein Leben lang halten.",
           },
-          "buttomText" : {
-            "title" : {
-              "text1" : "Bei Zebrano Studio bauen wir nicht einfach Türen ",
-              "text2" : "– wir schaffen Erlebnisse, die eine Geschichte erzählen. ",
-              "text3" : "Bereit, Ihre zu erschaffen?",
+          "buttomText": {
+            "title": {
+              "text1": "Bei Zebrano Studio bauen wir nicht einfach Türen ",
+              "text2": "– wir schaffen Erlebnisse, die eine Geschichte erzählen. ",
+              "text3": "Bereit, Ihre zu erschaffen?",
             },
-            "desc" : "Unser Traum? Ganz einfach: Diesen Luxus und diese Exklusivität, die man normalerweise nur in schicken Hotels, Spitzenrestaurants oder beeindruckenden Villen bekannter Architekten findet, für alle zugänglich zu machen. Wir glauben, dass auch Ihr Zuhause dieselbe Großzügigkeit und Einzigartigkeit verdient – ohne ein Vermögen für einen Architekten auszugeben. Bei Zebrano Studio machen wir die Dinge ein wenig anders als die anderen – und bringen diese unvergleichliche Qualität und Ästhetik direkt zu Ihnen nach Hause.",
-            
-            "lastText" : "Bei Zebrano Studio fertigen wir nicht einfach Standardtüren; wir schaffen wahre Kunstwerke, die eine Geschichte erzählen und ein Leben lang halten. Bereit für Ihre Traumtür? Wir helfen Ihnen gerne!"
+            "desc": "Unser Traum? Ganz einfach: Diesen Luxus und diese Exklusivität, die man normalerweise nur in schicken Hotels, Spitzenrestaurants oder beeindruckenden Villen bekannter Architekten findet, für alle zugänglich zu machen. Wir glauben, dass auch Ihr Zuhause dieselbe Großzügigkeit und Einzigartigkeit verdient – ohne ein Vermögen für einen Architekten auszugeben. Bei Zebrano Studio machen wir die Dinge ein wenig anders als die anderen – und bringen diese unvergleichliche Qualität und Ästhetik direkt zu Ihnen nach Hause.",
+
+            "lastText": "Bei Zebrano Studio fertigen wir nicht einfach Standardtüren; wir schaffen wahre Kunstwerke, die eine Geschichte erzählen und ein Leben lang halten. Bereit für Ihre Traumtür? Wir helfen Ihnen gerne!"
           }
         },
       },
       // ====Meet the Makers=====
-      "MeetTheMakers" : {
-        "banner" : {
-          "heading1":"Gemacht von unseren",
-          "heading2":"perfektioniert in",
-          "heading3":"der Produktion.",
-          "desc" : "Echte Hände. Echter Holzstaub. Unglaubliche Ergebnisse. Vom ersten Entwurf bis zur finalen Passform – wir entwerfen, entwickeln Prototypen und fertigen unter einem Dach, damit jeder Millimeter stimmt und jede Tür mühelos perfekt wirkt.",
-          "typedText" : ["Designern","Menschen","Machern"],
+      "MeetTheMakers": {
+        "banner": {
+          "heading1": "Gemacht von unseren",
+          "heading2": "perfektioniert in",
+          "heading3": "der Produktion.",
+          "desc": "Echte Hände. Echter Holzstaub. Unglaubliche Ergebnisse. Vom ersten Entwurf bis zur finalen Passform – wir entwerfen, entwickeln Prototypen und fertigen unter einem Dach, damit jeder Millimeter stimmt und jede Tür mühelos perfekt wirkt.",
+          "typedText": ["Designern", "Menschen", "Machern"],
         },
-        "AccessibleBeautiful" : {
-          "row1":{
-            "title1" : "ZUGÄNGLICH .",
-            "title2" : "SCHÖN .",
-            "desc" : `“Ich war schon immer der Meinung, dass gutes Design sich nicht hinter Samtseilen verstecken sollte. Bei Zebrano möchte ich, dass jeder dieselben wunderschönen Türen und Details genießen kann, die man sonst nur in Luxushotels sieht – direkt zu Hause.„`,
-            "name" : "Mathijs",
-            "designetion" : "–  Gründer und Designer, Zebrano Studio",
+        "AccessibleBeautiful": {
+          "row1": {
+            "title1": "ZUGÄNGLICH .",
+            "title2": "SCHÖN .",
+            "desc": `“Ich war schon immer der Meinung, dass gutes Design sich nicht hinter Samtseilen verstecken sollte. Bei Zebrano möchte ich, dass jeder dieselben wunderschönen Türen und Details genießen kann, die man sonst nur in Luxushotels sieht – direkt zu Hause.„`,
+            "name": "Mathijs",
+            "designetion": "–  Gründer und Designer, Zebrano Studio",
           },
-          "row2" : {
-            "title" : "Wir halten die Dinge gerne nah am Zuhause.",
-            "desc" : `Unsere Türen werden hier in den Niederlanden gefertigt, von Machern, die ihr Holz fast so gut kennen wie ihren Morgenkaffee. Es ist eine Mischung aus Tradition, Präzision und ein wenig niederländischer Sturheit, die sich nicht mit „gut genug“ zufriedengibt. Das Ergebnis? Handwerk, das lokal verwurzelt ist, aber überall auf der Welt passt.`,
-            "btnText" : "Materialien entdecken",
+          "row2": {
+            "title": "Wir halten die Dinge gerne nah am Zuhause.",
+            "desc": `Unsere Türen werden hier in den Niederlanden gefertigt, von Machern, die ihr Holz fast so gut kennen wie ihren Morgenkaffee. Es ist eine Mischung aus Tradition, Präzision und ein wenig niederländischer Sturheit, die sich nicht mit „gut genug“ zufriedengibt. Das Ergebnis? Handwerk, das lokal verwurzelt ist, aber überall auf der Welt passt.`,
+            "btnText": "Materialien entdecken",
           },
-          "row3" : {
-            "title1" : "Sind Sie Designer? ",
-            "title2" : "Brauchen Sie Beratung?",
-            "desc1" : "Unser Team hilft Ihnen gerne, alle Möglichkeiten zu entdecken.",
-            "desc2" : "Unser Team ist bereit, Ihnen alle Möglichkeiten zu zeigen.",
-            "btnText1" : "Materialien entdecken",
-            "btnText2" : "Kontakt aufnehmen",
+          "row3": {
+            "title1": "Sind Sie Designer? ",
+            "title2": "Brauchen Sie Beratung?",
+            "desc1": "Unser Team hilft Ihnen gerne, alle Möglichkeiten zu entdecken.",
+            "desc2": "Unser Team ist bereit, Ihnen alle Möglichkeiten zu zeigen.",
+            "btnText1": "Materialien entdecken",
+            "btnText2": "Kontakt aufnehmen",
           },
         },
       },
@@ -3765,93 +3893,93 @@ const resources = {
         "btnText2": "Gestalten Sie Ihre eigene",
       },
       // ====services=====
-      "Service" : {
-        "banner" : {
-          "title" : "Service & Terms",
-          "desc" :"Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
+      "Service": {
+        "banner": {
+          "title": "Service & Terms",
+          "desc": "Real hands. Real sawdust. Unreal results. From first sketch to final fit, we design, prototype,and build under one roof — so every millimetre lines up and every door feels effortlessly right."
         },
-        "ServiceTab" : {
-          "OrderProcess" : {
-            "title" : "Alles über unseren Bestellprozess (Niederlande) ",
-            "desc" : " Unsere Produkte werden auf Bestellung gefertigt. Wir folgen einer festen Abfolge, damit Zeitpläne verlässlich bleiben.",
-            "faqs":[
+        "ServiceTab": {
+          "OrderProcess": {
+            "title": "Alles über unseren Bestellprozess (Niederlande) ",
+            "desc": " Unsere Produkte werden auf Bestellung gefertigt. Wir folgen einer festen Abfolge, damit Zeitpläne verlässlich bleiben.",
+            "faqs": [
               {
-                "question":"Beratung & Angebot",
-                "answer" : " Wir besprechen Umfang, Materialien, Oberflächen und Montage. Sie erhalten ein schriftliches Angebot mit Preis und voraussichtlicher Lieferzeit. Angebote sind 30 Tage gültig, außer bei ausgewiesener Materialvolatilität.",
+                "question": "Beratung & Angebot",
+                "answer": " Wir besprechen Umfang, Materialien, Oberflächen und Montage. Sie erhalten ein schriftliches Angebot mit Preis und voraussichtlicher Lieferzeit. Angebote sind 30 Tage gültig, außer bei ausgewiesener Materialvolatilität.",
               },
               {
-                "question":" Aufmaß",
-                "answer" : "Sie können Maße bereitstellen oder unseren kostenpflichtigen Aufmaßservice nutzen (empfohlen). Bei Eigenmaßen übernehmen Sie die Verantwortung für die Maßgenauigkeit.",
+                "question": " Aufmaß",
+                "answer": "Sie können Maße bereitstellen oder unseren kostenpflichtigen Aufmaßservice nutzen (empfohlen). Bei Eigenmaßen übernehmen Sie die Verantwortung für die Maßgenauigkeit.",
               },
               {
-                "question":"Technische Zeichnungen & Freigabe",
-                "answer" : "Wir erstellen Zeichnungen/Spezifikationen. Die Produktion beginnt erst nach schriftlicher Freigabe aller Zeichnungen, Oberflächen und Beschläge.",
+                "question": "Technische Zeichnungen & Freigabe",
+                "answer": "Wir erstellen Zeichnungen/Spezifikationen. Die Produktion beginnt erst nach schriftlicher Freigabe aller Zeichnungen, Oberflächen und Beschläge.",
               },
               {
-                "question":"Zahlung",
-                "answer" : "Wir arbeiten mit 100 % Vorkasse. Siehe „Zahlungsprozess“ für akzeptierte Methoden (iDEAL, Karten, Apple Pay, PayPal, SEPA) und Rechnungsdetails.",
+                "question": "Zahlung",
+                "answer": "Wir arbeiten mit 100 % Vorkasse. Siehe „Zahlungsprozess“ für akzeptierte Methoden (iDEAL, Karten, Apple Pay, PayPal, SEPA) und Rechnungsdetails.",
               },
               {
-                "question":"Produktion & Qualitätskontrolle",
-                "answer" : "Nach Zahlung + Freigabe reservieren wir Ihren Produktionsslot. Die Lieferzeit startet. Jedes Teil wird auf Oberfläche, Passung und Funktion geprüft.",
+                "question": "Produktion & Qualitätskontrolle",
+                "answer": "Nach Zahlung + Freigabe reservieren wir Ihren Produktionsslot. Die Lieferzeit startet. Jedes Teil wird auf Oberfläche, Passung und Funktion geprüft.",
               },
               {
-                "question":"Vorab-Terminierung der Lieferung",
-                "answer" : "Nahe Fertigstellung schlagen wir ein Liefer-/Montagefenster vor. Sie bestätigen Zugang, Parken, Aufzug-/Treppendetails und Baustellenbereitschaft.",
+                "question": "Vorab-Terminierung der Lieferung",
+                "answer": "Nahe Fertigstellung schlagen wir ein Liefer-/Montagefenster vor. Sie bestätigen Zugang, Parken, Aufzug-/Treppendetails und Baustellenbereitschaft.",
               },
               {
-                "question":"Lieferung / Montage & Übergabe",
-                "answer" : "Wir liefern oder liefern-und-montieren (nur NL). Nach der Montage führen wir Funktionsprüfungen durch und geben Pflegehinweise.",
+                "question": "Lieferung / Montage & Übergabe",
+                "answer": "Wir liefern oder liefern-und-montieren (nur NL). Nach der Montage führen wir Funktionsprüfungen durch und geben Pflegehinweise.",
               },
               {
-                "question":"Änderungswünsche",
-                "answer" : "Jede Änderung nach Freigabe (Oberfläche/Maß/Beschlag) kann Preis und Zeitplan beeinflussen. Arbeiten werden nach vollständiger Zahlung der Änderungsbestellung fortgesetzt."
+                "question": "Änderungswünsche",
+                "answer": "Jede Änderung nach Freigabe (Oberfläche/Maß/Beschlag) kann Preis und Zeitplan beeinflussen. Arbeiten werden nach vollständiger Zahlung der Änderungsbestellung fortgesetzt."
               },
               {
-                "question":"Stornierungen",
-                "answer" : "Maßanfertigungen sind vom Widerrufsrecht ausgenommen. Stornierungen nach Zahlung sind nicht möglich, außer schriftlich vor Produktionsstart vereinbart (Verwaltungs-/Designkosten fallen an).",
+                "question": "Stornierungen",
+                "answer": "Maßanfertigungen sind vom Widerrufsrecht ausgenommen. Stornierungen nach Zahlung sind nicht möglich, außer schriftlich vor Produktionsstart vereinbart (Verwaltungs-/Designkosten fallen an).",
               },
             ]
           },
-          "Delivery":{
-            "title" : "Lieferung (Lieferung & Montage in den Niederlanden) ",
-            "desc" : "Wir liefern in alle niederländischen Provinzen mit eigenen Teams oder verlässlichen Partnern.",
-            "faqs" :[
+          "Delivery": {
+            "title": "Lieferung (Lieferung & Montage in den Niederlanden) ",
+            "desc": "Wir liefern in alle niederländischen Provinzen mit eigenen Teams oder verlässlichen Partnern.",
+            "faqs": [
               {
-                "question":"Lieferoptionen",
-                "answers" : [
+                "question": "Lieferoptionen",
+                "answers": [
                   "Nur Anlieferung: Bordstein/Erdgeschoss bis zum ersten zugänglichen Punkt.",
                   " White-Glove: Zwei-Personen-Lieferung bis zum Wunschraum (sofern Zugang möglich). Verpackungsentsorgung auf Wunsch.",
                 ],
               },
               {
-                "question":"Terminierung & Zugang ",
-                "answers" : [
+                "question": "Terminierung & Zugang ",
+                "answers": [
                   "Wir vereinbaren ein Datum + Zeitfenster. Sie sorgen für sicheren Zugang (Türbreiten, Aufzüge, Treppen), ggf. Parkgenehmigungen und freie Wege. Bei fehlendem Zugang fallen erneute Liefer- und/oder Zusatzhandlingkosten an.",
                 ],
               },
               {
-                "question":"Verpackung & Schutz",
-                "answers" : [
+                "question": "Verpackung & Schutz",
+                "answers": [
                   "Türen und Paneele werden mit vollständigem Schaumschutz und Kantenschonern versendet. Zubehör in Markenhüllen/-boxen.",
                 ],
               },
               {
-                "question":"Transportschäden",
-                "answers" : [
+                "question": "Transportschäden",
+                "answers": [
                   "Sichtbare Schäden: sofort auf dem Lieferschein vermerken und vor dem Auspacken fotografieren.",
                   " Verdeckte Schäden: innerhalb von 24 Stunden schriftlich melden mit Fotos und Auftragsnummer.",
                 ],
               },
               {
-                "question":"Gefahrübergang ",
-                "answers" : [
+                "question": "Gefahrübergang ",
+                "answers": [
                   "Die Gefahr geht bei Lieferung über. Bei White-Glove/Montage nach Platzierung im vereinbarten Raum/Bereich.",
                 ],
               },
               {
-                "question":"Montage (optional, nur NL)",
-                "answers" : [
+                "question": "Montage (optional, nur NL)",
+                "answers": [
                   "  Inklusive (sofern nicht anders angegeben): ",
                   " Einbau von durch Zebrano gelieferten Rahmen/Blatt/Beschlägen.",
                   "Ausrichtung, Fugen, Funktionsprüfungen (Dreh/Schiebe/Pivot).",
@@ -3859,8 +3987,8 @@ const resources = {
                 ],
               },
               {
-                "question":"Montageort bereit (erforderlich)",
-                "answers" : [
+                "question": "Montageort bereit (erforderlich)",
+                "answers": [
                   "Fertige Öffnungen innerhalb Toleranz, Wände lot/eben.",
                   " Innenklima: 15–25 °C und 40–60 % rF.",
                   "Untergründe trocken; Bereich sauber & zugänglich; 230 V vorhanden. Zusatztermine wegen Nicht-Bereitschaft sind kostenpflichtig und vor Neuplanung zu zahlen.",
@@ -3868,305 +3996,305 @@ const resources = {
               },
             ],
           },
-          "Guarantee" : {
-            "title" : "Garantie (Niederlande)",
-            "desc" : "Wir stehen hinter unserer Handwerkskunst.",
-            "faqs" : [
+          "Guarantee": {
+            "title": "Garantie (Niederlande)",
+            "desc": "Wir stehen hinter unserer Handwerkskunst.",
+            "faqs": [
               {
-                "question" : "Dauer  ",
-                "answers" : [
+                "question": "Dauer  ",
+                "answers": [
                   "2 Jahre ab Lieferdatum.",
                 ],
               },
               {
-                "question" : "Abdeckung",
-                "answers" : [
+                "question": "Abdeckung",
+                "answers": [
                   "Herstellungsfehler, strukturelle Integrität, Beschlagfunktion, Furnierverklebung/-laminierung und Werksoberflächen gemäß Spezifikation.",
                 ],
               },
               {
-                "question" : "Nicht abgedeckt",
-                "answers" : [
+                "question": "Nicht abgedeckt",
+                "answers": [
                   "Verschleiß, Fehlgebrauch/Schlag, Wassereintritt, abnormales Klima, natürliche Variationen, Verzug/Verformung durch Klima, Fremdmontage/-änderungen, Fremdbeschläge.",
                 ],
               },
               {
-                "question" : "Toleranzen",
-                "answers" : [
+                "question": "Toleranzen",
+                "answers": [
                   "Branchenübliche Toleranzen (typ. ±1–2 mm; handgefertigte Paneele bis ±4 mm).",
                 ],
               },
               {
-                "question" : "Reklamationsablauf",
-                "answers" : [
+                "question": "Reklamationsablauf",
+                "answers": [
                   "Mailen Sie Fotos, Beschreibung, Auftrags-/Rechnungsnummer. Eine Vor-Ort-Prüfung kann erfolgen. Abhilfe nach unserem Ermessen: Reparatur, Ersatz oder Erstattung des fehlerhaften Teils. Folgekosten ausgeschlossen.",
                 ],
               }
             ],
           },
           "CareAndMaintenance": {
-            "title" : "Pflege & Wartung",
-            "desc" : "Regelmäßige Pflege schützt Oberfläche und Funktion. Verwenden Sie weiche Tücher und pH-neutrale Reiniger, sofern nicht anders angegeben.",
-            "faqs" : [
+            "title": "Pflege & Wartung",
+            "desc": "Regelmäßige Pflege schützt Oberfläche und Funktion. Verwenden Sie weiche Tücher und pH-neutrale Reiniger, sofern nicht anders angegeben.",
+            "faqs": [
               {
-                "question" : "Glas  ",
-                "answers" : ["Mit Glasreiniger/milder Seife reinigen; fusselfrei trocknen. Keine Schleifmittel/Klingen auf strukturiertem Glas. Folien/Haftung vorher prüfen."],
-              },{
-                "question" : "Massivholz",
-                "answers" : ["Wöchentlich entstauben; leicht feucht wischen; 40–60 % rF halten; jährlich ölen/wachsen falls vorgesehen; vor Sonne/Hitze schützen."],
-              },{
-                "question" : "Holzfurnier",
-                "answers" : ["Weiches trocken/leicht feuchtes Tuch; nicht schleifen; geölt: jährlich leicht ölen; lackiert: nur milde Reiniger. Natürliche Variation normal."],
-              },{
-                "question" : "Stein & Keramik",
-                "answers" : [" pH-neutraler Reiniger; keine Säuren/Basen; Verschüttetes sofort wischen; Naturstein jährlich versiegeln; Keramik meist ohne Versiegelung."],
-              },{
-                "question" : "Beschläge & Metall",
-                "answers" : [" Trocken/leicht feucht wischen; keine Schleifmittel/Lösungsmittel; leicht schmieren 6–12 Mon.; sichtbare Schrauben nachziehen; verdeckte Mechanik nicht verstellen. Patina ist normal."],
-              },{
-                "question" : "Dreh- & Pivot-Türen — Tipps",
-                "answers" : ["Nicht gegen Anschläge drücken; keine Last an Griffen aufhängen; Boden/Schienen sauber halten."],
-              },{
-                "question" : "Wartungsübersicht",
-                "answers" : ["Wöchentlich: stauben/wischen. Vierteljährlich: Beschläge prüfen, Schienen/Pivots reinigen. Jährlich: ölen/wachsen (falls zutreffend), Stein nachversiegeln, Gesamtcheck."],
+                "question": "Glas  ",
+                "answers": ["Mit Glasreiniger/milder Seife reinigen; fusselfrei trocknen. Keine Schleifmittel/Klingen auf strukturiertem Glas. Folien/Haftung vorher prüfen."],
+              }, {
+                "question": "Massivholz",
+                "answers": ["Wöchentlich entstauben; leicht feucht wischen; 40–60 % rF halten; jährlich ölen/wachsen falls vorgesehen; vor Sonne/Hitze schützen."],
+              }, {
+                "question": "Holzfurnier",
+                "answers": ["Weiches trocken/leicht feuchtes Tuch; nicht schleifen; geölt: jährlich leicht ölen; lackiert: nur milde Reiniger. Natürliche Variation normal."],
+              }, {
+                "question": "Stein & Keramik",
+                "answers": [" pH-neutraler Reiniger; keine Säuren/Basen; Verschüttetes sofort wischen; Naturstein jährlich versiegeln; Keramik meist ohne Versiegelung."],
+              }, {
+                "question": "Beschläge & Metall",
+                "answers": [" Trocken/leicht feucht wischen; keine Schleifmittel/Lösungsmittel; leicht schmieren 6–12 Mon.; sichtbare Schrauben nachziehen; verdeckte Mechanik nicht verstellen. Patina ist normal."],
+              }, {
+                "question": "Dreh- & Pivot-Türen — Tipps",
+                "answers": ["Nicht gegen Anschläge drücken; keine Last an Griffen aufhängen; Boden/Schienen sauber halten."],
+              }, {
+                "question": "Wartungsübersicht",
+                "answers": ["Wöchentlich: stauben/wischen. Vierteljährlich: Beschläge prüfen, Schienen/Pivots reinigen. Jährlich: ölen/wachsen (falls zutreffend), Stein nachversiegeln, Gesamtcheck."],
               },
-              
+
             ],
           },
-          "FAQ":{
-            "ProductsAndMaterials" : {
-              "title" : "Products & Materials",
-              "faqs" : [
+          "FAQ": {
+            "ProductsAndMaterials": {
+              "title": "Products & Materials",
+              "faqs": [
                 {
-                  "question" : "Welche Produkte stellen Sie her?",
-                  "answer" : "Maßgefertigte Türen … und Boiserie (dekorative Wandverkleidung).",
+                  "question": "Welche Produkte stellen Sie her?",
+                  "answer": "Maßgefertigte Türen … und Boiserie (dekorative Wandverkleidung).",
                 },
                 {
-                  "question" : "Welche Materialien/Oberflächen gibt es?",
-                  "answer" : "Massivholz, Furnier, Lack (RAL), Glas, Naturstein, Keramik/Porzellan; Beschläge in Schwarz, Edelstahl, Bronze, PVD.",
+                  "question": "Welche Materialien/Oberflächen gibt es?",
+                  "answer": "Massivholz, Furnier, Lack (RAL), Glas, Naturstein, Keramik/Porzellan; Beschläge in Schwarz, Edelstahl, Bronze, PVD.",
                 },
                 {
-                  "question" : "Bieten Sie wandbündige (Rasomuro) Türen an?",
-                  "answer" : "Ja — verdeckte Rahmen und Beschläge für einen nahtlosen, coplanaren Look.",
+                  "question": "Bieten Sie wandbündige (Rasomuro) Türen an?",
+                  "answer": "Ja — verdeckte Rahmen und Beschläge für einen nahtlosen, coplanaren Look.",
                 },
                 {
-                  "question" : "Wie individuell sind Ihre Türen?",
-                  "answer" : "Maße, Oberflächen, Glas, Kanten, Beschläge; Ultra-Custom über Angebotsprozess.",
+                  "question": "Wie individuell sind Ihre Türen?",
+                  "answer": "Maße, Oberflächen, Glas, Kanten, Beschläge; Ultra-Custom über Angebotsprozess.",
                 },
                 {
-                  "question" : "Sind natürliche Variationen normal?",
-                  "answer" : "Ja — Holzmaserung/Farbe und Steinäderung variieren.",
+                  "question": "Sind natürliche Variationen normal?",
+                  "answer": "Ja — Holzmaserung/Farbe und Steinäderung variieren.",
                 },
                 {
-                  "question" : "Können Sie eine bestehende Oberfläche anpassen?",
-                  "answer" : "Wir können anhand eines Musters nahekommen; exakte Übereinstimmung nicht garantiert.",
+                  "question": "Können Sie eine bestehende Oberfläche anpassen?",
+                  "answer": "Wir können anhand eines Musters nahekommen; exakte Übereinstimmung nicht garantiert.",
                 },
                 {
-                  "question" : "Liefern Sie Beschläge?",
-                  "answer" : "Ja — Scharniere, Pivots, Schiebeläufe, Griffe, Dichtungen gem. Spez.; Drittanbieter nach Vereinbarung.",
-                },
-              ],
-            },
-            "TechnicalAndSiteRequirement" : {
-              "title" : "Technical & Site Requirement",
-              "faqs" : [
-                {
-                  "question":"Allgemeine Baustellenanforderungen?",
-                  "answer" : "Öffnungen recht/lot/eben; Untergründe trocken; 15–25 °C & 40–60 % rF; freier Zugang; 230 V vorhanden.",
-                },
-                {
-                  "question":"Pivot-Anforderungen & FBH",
-                  "answer" : "Decke verschraubbar; ggf. Sperrholz hinterlegt; bohren ≥4 cm; 25×25 cm leitungsfreie Zonen (Pivot & Seitenteile).",
-                },
-                {
-                  "question":"Sockel/Bodenbeläge",
-                  "answer" : "Evtl. Ausschnitt nötig; flache Leisten wählen; Maler schließt Schnittkanten.",
-                },
-                {
-                  "question":"Toleranzen",
-                  "answer":"±1–2 mm Bauteile; handgefertigte Paneele bis ±4 mm.",
+                  "question": "Liefern Sie Beschläge?",
+                  "answer": "Ja — Scharniere, Pivots, Schiebeläufe, Griffe, Dichtungen gem. Spez.; Drittanbieter nach Vereinbarung.",
                 },
               ],
             },
-            "MeasurementDesignApprovals" : {
-              "title" : "Measurement, Design & Approvals",
-              "faqs" : [
+            "TechnicalAndSiteRequirement": {
+              "title": "Technical & Site Requirement",
+              "faqs": [
                 {
-                  "question" : " Wer nimmt das Aufmaß?",
-                  "answer" : "Sie oder unser kostenpflichtiger Service (empfohlen). Eigene Maße = Ihre Verantwortung.",
+                  "question": "Allgemeine Baustellenanforderungen?",
+                  "answer": "Öffnungen recht/lot/eben; Untergründe trocken; 15–25 °C & 40–60 % rF; freier Zugang; 230 V vorhanden.",
                 },
                 {
-                  "question" : "Unterlagen vor Produktion?",
-                  "answer" : "Angebot, technische Zeichnungen/Spez., Montagehinweise bei Nur-Lieferung.",
+                  "question": "Pivot-Anforderungen & FBH",
+                  "answer": "Decke verschraubbar; ggf. Sperrholz hinterlegt; bohren ≥4 cm; 25×25 cm leitungsfreie Zonen (Pivot & Seitenteile).",
                 },
                 {
-                  "question" : "Wie freigeben?",
-                  "answer" : "Schriftliche Freigabe nötig; Produktion startet nach Freigabe + Zahlung.",
+                  "question": "Sockel/Bodenbeläge",
+                  "answer": "Evtl. Ausschnitt nötig; flache Leisten wählen; Maler schließt Schnittkanten.",
                 },
                 {
-                  "question" : "Arbeit nach Architektenplänen?",
-                  "answer" : "Ja — PDF/DWG senden; wir prüfen Machbarkeit/Anpassungen.",
+                  "question": "Toleranzen",
+                  "answer": "±1–2 mm Bauteile; handgefertigte Paneele bis ±4 mm.",
+                },
+              ],
+            },
+            "MeasurementDesignApprovals": {
+              "title": "Measurement, Design & Approvals",
+              "faqs": [
+                {
+                  "question": " Wer nimmt das Aufmaß?",
+                  "answer": "Sie oder unser kostenpflichtiger Service (empfohlen). Eigene Maße = Ihre Verantwortung.",
                 },
                 {
-                  "question" : "Änderung nach Freigabe?",
-                  "answer" : "Per Change Order; Preis/Lieferzeit können ändern; Fortsetzung nach Vollzahlung.",
+                  "question": "Unterlagen vor Produktion?",
+                  "answer": "Angebot, technische Zeichnungen/Spez., Montagehinweise bei Nur-Lieferung.",
                 },
                 {
-                  "question" : "3D-/Visual-Previews?",
-                  "answer" : "Für ausgewählte Linien möglich; abhängig vom Umfang; ggf. Designgebühr.",
+                  "question": "Wie freigeben?",
+                  "answer": "Schriftliche Freigabe nötig; Produktion startet nach Freigabe + Zahlung.",
+                },
+                {
+                  "question": "Arbeit nach Architektenplänen?",
+                  "answer": "Ja — PDF/DWG senden; wir prüfen Machbarkeit/Anpassungen.",
+                },
+                {
+                  "question": "Änderung nach Freigabe?",
+                  "answer": "Per Change Order; Preis/Lieferzeit können ändern; Fortsetzung nach Vollzahlung.",
+                },
+                {
+                  "question": "3D-/Visual-Previews?",
+                  "answer": "Für ausgewählte Linien möglich; abhängig vom Umfang; ggf. Designgebühr.",
                 },
               ]
             },
-            "PaymentAndInvoicing" : {
-              "title" : "Payment & Invoicing",
-              "faqs" : [
+            "PaymentAndInvoicing": {
+              "title": "Payment & Invoicing",
+              "faqs": [
                 {
-                  "question" : "Wann zahlen?",
-                  "answer" : "100 % Vorkasse nach finaler Freigabe.",
+                  "question": "Wann zahlen?",
+                  "answer": "100 % Vorkasse nach finaler Freigabe.",
                 },
                 {
-                  "question" : "Methoden?",
-                  "answer" : "iDEAL, Karten, Apple Pay, PayPal, SEPA (über Mollie).",
+                  "question": "Methoden?",
+                  "answer": "iDEAL, Karten, Apple Pay, PayPal, SEPA (über Mollie).",
                 },
                 {
-                  "question" : " Preise & USt?",
-                  "answer" : " EUR; zzgl. 21 % MwSt., sofern nicht anders; USt. bei Checkout/Rechnung.",
+                  "question": " Preise & USt?",
+                  "answer": " EUR; zzgl. 21 % MwSt., sofern nicht anders; USt. bei Checkout/Rechnung.",
                 },
                 {
-                  "question" : "Später/splitten? ",
-                  "answer" : "Keine Nachzahlung; keine Aufteilung auf mehrere Einheiten.",
+                  "question": "Später/splitten? ",
+                  "answer": "Keine Nachzahlung; keine Aufteilung auf mehrere Einheiten.",
                 },
                 {
-                  "question" : "Firmendaten?  ",
-                  "answer" : "Rechtsträger, Adresse, Handelsregister-/USt-Nr.; vor Zahlung prüfen.",
+                  "question": "Firmendaten?  ",
+                  "answer": "Rechtsträger, Adresse, Handelsregister-/USt-Nr.; vor Zahlung prüfen.",
                 },
                 {
-                  "question" : "Zahlungen sicher?",
-                  "answer" : "Ja — SCA/3-D Secure; Ident-Prüfung bei hohen Beträgen möglich.",
+                  "question": "Zahlungen sicher?",
+                  "answer": "Ja — SCA/3-D Secure; Ident-Prüfung bei hohen Beträgen möglich.",
                 },
               ],
             },
-            "LeadTimesAndScheduling" : {
-              "title" : "Lead Times & Scheduling",
-              "faqs" : [
+            "LeadTimesAndScheduling": {
+              "title": "Lead Times & Scheduling",
+              "faqs": [
                 {
-                  "question" : "Standard-Lieferzeiten?",
-                  "answer" : "Türen 6–8 W; Wandbündig 8–10 W; Trennwände 6–8 W; Boiserie 8–10 W.",
+                  "question": "Standard-Lieferzeiten?",
+                  "answer": "Türen 6–8 W; Wandbündig 8–10 W; Trennwände 6–8 W; Boiserie 8–10 W.",
                 },
                 {
-                  "question" : " Start der Lieferzeit?",
-                  "answer" : "Nach vollständiger Zahlung und schriftlicher Freigabe.",
+                  "question": " Start der Lieferzeit?",
+                  "answer": "Nach vollständiger Zahlung und schriftlicher Freigabe.",
                 },
                 {
-                  "question" : " Beschleunigt?",
-                  "answer" : " ~2 Wochen schneller gegen Aufpreis, abhängig von Kapazität/Material.",
+                  "question": " Beschleunigt?",
+                  "answer": " ~2 Wochen schneller gegen Aufpreis, abhängig von Kapazität/Material.",
                 },
                 {
-                  "question" : " Updates?",
-                  "answer" : " Ja — Statusupdates und Liefer-/Montagefenster zum Schluss.",
+                  "question": " Updates?",
+                  "answer": " Ja — Statusupdates und Liefer-/Montagefenster zum Schluss.",
                 },
                 {
-                  "question" : "Slot halten?",
-                  "answer" : "Nein — keine Reservierung ohne Zahlung/Freigabe.",
+                  "question": "Slot halten?",
+                  "answer": "Nein — keine Reservierung ohne Zahlung/Freigabe.",
                 },
                 {
-                  "question" : "Lieferung verschieben? ",
-                  "answer" : "Ja — frühzeitig melden; Lager-/Zusatzterminkosten möglich.",
+                  "question": "Lieferung verschieben? ",
+                  "answer": "Ja — frühzeitig melden; Lager-/Zusatzterminkosten möglich.",
                 },
               ]
             },
-            "DeliveryAndInstallation" : {
-              "title" : "Delivery & Installation",
-              "faqs" : [
+            "DeliveryAndInstallation": {
+              "title": "Delivery & Installation",
+              "faqs": [
                 {
-                  "question" : "Wohin liefern Sie?",
-                  "answer" : "Alle niederländischen Provinzen.",
+                  "question": "Wohin liefern Sie?",
+                  "answer": "Alle niederländischen Provinzen.",
                 },
                 {
-                  "question" : "Lieferoptionen? ",
-                  "answer" : "Nur Lieferung oder White-Glove.",
+                  "question": "Lieferoptionen? ",
+                  "answer": "Nur Lieferung oder White-Glove.",
                 },
                 {
-                  "question" : " Montieren Sie?",
-                  "answer" : "Ja in NL; Umfang inkl./exkl. wie angegeben.",
+                  "question": " Montieren Sie?",
+                  "answer": "Ja in NL; Umfang inkl./exkl. wie angegeben.",
                 },
                 {
-                  "question" : "Baustelle bereit?",
-                  "answer" : "Toleranzen, Klima, Zugang, Strom; Zusatztermine kostenpflichtig.",
+                  "question": "Baustelle bereit?",
+                  "answer": "Toleranzen, Klima, Zugang, Strom; Zusatztermine kostenpflichtig.",
                 },
                 {
-                  "question" : "Transportschäden melden?",
-                  "answer" : " Visible: note + photo; concealed: 24 h with photos/order no.",
+                  "question": "Transportschäden melden?",
+                  "answer": " Visible: note + photo; concealed: 24 h with photos/order no.",
                 },
                 {
-                  "question" : " Schwieriger Zugang? ",
-                  "answer" : "Vorab melden; Zusatzpersonal/Umzugslift möglich (Angebot).",
-                },
-              ],
-            },
-            "WarrantyAftercare" : {
-              "title" : "Warranty & Aftercare",
-              "faqs" : [
-                {
-                  "question" : "Warranty?",
-                  "answer" : "2-year product; 6-month installation (if by Zebrano).",
-                },
-                {
-                  "question" : "Covered/not covered?",
-                  "answer" : "Mechanisms, bonding, factory/install defects vs. wear, misuse, climate, variations, third-party install, improper cleaning.",
-                },
-                {
-                  "question" : "Make a claim? ",
-                  "answer" : "Email photos, description, order/invoice no.; remedy at our discretion.",
-                },
-                {
-                  "question" : "Care for glass? ",
-                  "answer" : " Glass cleaner/mild soap; avoid abrasives/blades; confirm films.",
-                },
-                {
-                  "question" : "Maintain wood/veneer/stone/ceramic?",
-                  "answer" : "See detailed care above.",
-                },
-                {
-                  "question" : "Hardware & mechanisms?",
-                  "answer" : "Hardware & mechanisms?",
+                  "question": " Schwieriger Zugang? ",
+                  "answer": "Vorab melden; Zusatzpersonal/Umzugslift möglich (Angebot).",
                 },
               ],
             },
-            "OrderReturnsSupports" : {
-              "title" : "Orders, Returns & Support",
-              "faqs" : [
+            "WarrantyAftercare": {
+              "title": "Warranty & Aftercare",
+              "faqs": [
                 {
-                  "question" : "Stornieren/retournieren? ",
-                  "answer" : "Maßanfertigung vom Widerruf ausgenommen; Ausnahmen nur vor Produktion und schriftlich (Kosten).",
+                  "question": "Warranty?",
+                  "answer": "2-year product; 6-month installation (if by Zebrano).",
                 },
                 {
-                  "question" : "Showroom?",
-                  "answer" : "Nach Termin; digitale Beratung und Muster (Kaution/Gebühr).",
+                  "question": "Covered/not covered?",
+                  "answer": "Mechanisms, bonding, factory/install defects vs. wear, misuse, climate, variations, third-party install, improper cleaning.",
                 },
                 {
-                  "question" : " Zusammenarbeit mit Architekten/Designern?",
-                  "answer" : "Ja — Handel/Projekte willkommen; Specs/Muster/Konditionen anfragen.",
+                  "question": "Make a claim? ",
+                  "answer": "Email photos, description, order/invoice no.; remedy at our discretion.",
                 },
                 {
-                  "question" : "Online konfigurieren & hochladen?",
-                  "answer" : " Ja; Ultra-Custom via Angebot. Nach Kauf Pläne/Fotos hochladen.",
+                  "question": "Care for glass? ",
+                  "answer": " Glass cleaner/mild soap; avoid abrasives/blades; confirm films.",
                 },
                 {
-                  "question" : " Zahlung/Daten sicher? ",
-                  "answer" : "Ja — Mollie, SCA/3-D Secure; Datenminimierung gem. Datenschutzerklärung.",
+                  "question": "Maintain wood/veneer/stone/ceramic?",
+                  "answer": "See detailed care above.",
                 },
                 {
-                  "question" : "Support & Reaktionszeit?",
-                  "answer" : "Mail an info@zebranostudio.com; i. d. R. 1–3 Werktage.",
+                  "question": "Hardware & mechanisms?",
+                  "answer": "Hardware & mechanisms?",
+                },
+              ],
+            },
+            "OrderReturnsSupports": {
+              "title": "Orders, Returns & Support",
+              "faqs": [
+                {
+                  "question": "Stornieren/retournieren? ",
+                  "answer": "Maßanfertigung vom Widerruf ausgenommen; Ausnahmen nur vor Produktion und schriftlich (Kosten).",
+                },
+                {
+                  "question": "Showroom?",
+                  "answer": "Nach Termin; digitale Beratung und Muster (Kaution/Gebühr).",
+                },
+                {
+                  "question": " Zusammenarbeit mit Architekten/Designern?",
+                  "answer": "Ja — Handel/Projekte willkommen; Specs/Muster/Konditionen anfragen.",
+                },
+                {
+                  "question": "Online konfigurieren & hochladen?",
+                  "answer": " Ja; Ultra-Custom via Angebot. Nach Kauf Pläne/Fotos hochladen.",
+                },
+                {
+                  "question": " Zahlung/Daten sicher? ",
+                  "answer": "Ja — Mollie, SCA/3-D Secure; Datenminimierung gem. Datenschutzerklärung.",
+                },
+                {
+                  "question": "Support & Reaktionszeit?",
+                  "answer": "Mail an info@zebranostudio.com; i. d. R. 1–3 Werktage.",
                 },
               ],
             },
           },
-          
+
         },
       },
-      
+
       // ======privecyPolicy=========
       "privecyPolicy": {
         "header": {
@@ -4382,145 +4510,145 @@ const resources = {
           "text2": "2. Wenn Unklarheiten über die Auslegung einer oder mehrerer Bestimmungen dieser Bedingungen bestehen oder eine Situation nicht geregelt ist, wird die Bestimmung oder Situation „im Geiste“ dieser Bedingungen beurteilt.",
           "text3": "3. Wenn Zebrano Studio nicht immer auf die strikte Einhaltung dieser Bedingungen besteht, bedeutet dies nicht, dass die Bestimmungen nicht gelten oder dass Zebrano Studio auf das Recht verzichtet, in anderen Fällen die strikte Einhaltung zu verlangen.",
         },
-        "OfferQuotation" : {
-          "title" : "Angebot / Kostenvoranschlag",
-          "text1" : "1. Angebote und Kostenvoranschläge von Zebrano Studio sind unverbindlich, sofern nicht ausdrücklich anders angegeben.",
-          "text2" : "2. Etwaige Fehler – wie falsche Preisangaben sowie Rechen- oder Schreibfehler – auf der Website von Zebrano Studio, in Anzeigen, Angeboten, Veröffentlichungen, Auftragsbestätigungen oder anderen Dokumenten sind nicht verbindlich.",
+        "OfferQuotation": {
+          "title": "Angebot / Kostenvoranschlag",
+          "text1": "1. Angebote und Kostenvoranschläge von Zebrano Studio sind unverbindlich, sofern nicht ausdrücklich anders angegeben.",
+          "text2": "2. Etwaige Fehler – wie falsche Preisangaben sowie Rechen- oder Schreibfehler – auf der Website von Zebrano Studio, in Anzeigen, Angeboten, Veröffentlichungen, Auftragsbestätigungen oder anderen Dokumenten sind nicht verbindlich.",
         },
-        "TheAgreement" : {
-          "title" : "Die Vereinbarung",
+        "TheAgreement": {
+          "title": "Die Vereinbarung",
 
-          "text1" : "1. Die Vereinbarung kommt zustande, wenn der Kunde das Angebot von Zebrano Studio annimmt. Der Kaufvertrag wird mit der Unterzeichnung der Auftragsbestätigung geschlossen.",
+          "text1": "1. Die Vereinbarung kommt zustande, wenn der Kunde das Angebot von Zebrano Studio annimmt. Der Kaufvertrag wird mit der Unterzeichnung der Auftragsbestätigung geschlossen.",
 
-          "text2" : "2. Die Auftragsbestätigung ist grundsätzlich maßgeblich. Der Kunde muss diese sorgfältig auf Auslassungen und Unrichtigkeiten prüfen und Zebrano Studio rechtzeitig, spätestens innerhalb von 3 Tagen nach Erhalt, informieren.",
+          "text2": "2. Die Auftragsbestätigung ist grundsätzlich maßgeblich. Der Kunde muss diese sorgfältig auf Auslassungen und Unrichtigkeiten prüfen und Zebrano Studio rechtzeitig, spätestens innerhalb von 3 Tagen nach Erhalt, informieren.",
 
-          "text3" : "3. Angebote und Aktionen sind zeitlich begrenzt. Nach Ablauf der Frist kann der Kunde sie nicht mehr in Anspruch nehmen. Preissenkungen nach Vertragsschluss – etwa durch Aktionen oder Rabatte auf Ausstellungsstücke – berechtigen den Kunden nicht zu einer Preisreduzierung.",
+          "text3": "3. Angebote und Aktionen sind zeitlich begrenzt. Nach Ablauf der Frist kann der Kunde sie nicht mehr in Anspruch nehmen. Preissenkungen nach Vertragsschluss – etwa durch Aktionen oder Rabatte auf Ausstellungsstücke – berechtigen den Kunden nicht zu einer Preisreduzierung.",
 
-          "text4" : "4. Für Angebote und Aktionen können besondere Bedingungen gelten.",
+          "text4": "4. Für Angebote und Aktionen können besondere Bedingungen gelten.",
 
-          "text5" : "5. Änderungen der Vereinbarung und Abweichungen von diesen allgemeinen Bedingungen sind nur gültig, wenn sie schriftlich zwischen dem Kunden und Zebrano Studio vereinbart wurden.",
+          "text5": "5. Änderungen der Vereinbarung und Abweichungen von diesen allgemeinen Bedingungen sind nur gültig, wenn sie schriftlich zwischen dem Kunden und Zebrano Studio vereinbart wurden.",
 
-          "text6" : "6. Wenn Änderungen der Vereinbarung zu einer Erhöhung oder Senkung der Kosten führen, muss die entsprechende Änderung des Kaufpreises schriftlich vereinbart werden.",
+          "text6": "6. Wenn Änderungen der Vereinbarung zu einer Erhöhung oder Senkung der Kosten führen, muss die entsprechende Änderung des Kaufpreises schriftlich vereinbart werden.",
 
-          "text7" : "7. Wenn sich herausstellt, dass eine (weitere) Erfüllung der Vereinbarung durch Zebrano Studio aufgrund höherer Gewalt nicht möglich ist, kann Zebrano Studio die Vereinbarung aussetzen oder auflösen, ohne für Schäden haftbar zu sein. Dies hindert die Parteien nicht daran, Vorschläge zur Anpassung der Vereinbarung zu machen, sodass eine ordnungsgemäße und vollständige Erfüllung möglich wird.",
-          
-          "text8" : "8. Im Falle der Insolvenz, Zahlungsaussetzung oder Pfändung von Vermögenswerten des Kunden kann Zebrano Studio die Vereinbarung ganz oder teilweise ohne Mahnung auflösen.",
+          "text7": "7. Wenn sich herausstellt, dass eine (weitere) Erfüllung der Vereinbarung durch Zebrano Studio aufgrund höherer Gewalt nicht möglich ist, kann Zebrano Studio die Vereinbarung aussetzen oder auflösen, ohne für Schäden haftbar zu sein. Dies hindert die Parteien nicht daran, Vorschläge zur Anpassung der Vereinbarung zu machen, sodass eine ordnungsgemäße und vollständige Erfüllung möglich wird.",
+
+          "text8": "8. Im Falle der Insolvenz, Zahlungsaussetzung oder Pfändung von Vermögenswerten des Kunden kann Zebrano Studio die Vereinbarung ganz oder teilweise ohne Mahnung auflösen.",
         },
-        "RightOfWithdrawal":{
-          "title":"Widerrufsrecht / Beendigung der Vereinbarung",
-          "text1":"1. Die meisten von Zebrano Studio hergestellten und/oder gelieferten Produkte sind maßgefertigt und nicht vorgefertigt. Dazu gehören mindestens Produkte, die in der Fabrik von Zebrano Studio hergestellt werden, wie Tische, Couchtische, Beistelltische, Bartische, Gartentische, Schränke, TV-Möbel, Polstermöbel und maßgefertigte Wandregale. Für diese Produkte gilt kein Widerrufsrecht. Sie können nicht zurückgegeben werden.",
+        "RightOfWithdrawal": {
+          "title": "Widerrufsrecht / Beendigung der Vereinbarung",
+          "text1": "1. Die meisten von Zebrano Studio hergestellten und/oder gelieferten Produkte sind maßgefertigt und nicht vorgefertigt. Dazu gehören mindestens Produkte, die in der Fabrik von Zebrano Studio hergestellt werden, wie Tische, Couchtische, Beistelltische, Bartische, Gartentische, Schränke, TV-Möbel, Polstermöbel und maßgefertigte Wandregale. Für diese Produkte gilt kein Widerrufsrecht. Sie können nicht zurückgegeben werden.",
 
-          "text2":"2. Möchte der Kunde die Vereinbarung ohne Vertragsverletzung beenden und stimmt Zebrano Studio dem zu, kann die Vereinbarung einvernehmlich aufgehoben werden. In diesem Fall hat Zebrano Studio Anspruch auf Schadenersatz, einschließlich erlittenem Verlust und entgangenem Gewinn. Sofern nicht anders vereinbart, beträgt die Entschädigung 30 % des Kaufpreises oder 50 %, wenn der Kunde zum Zeitpunkt der Beendigung bereits darüber informiert war, dass (teilweise) geliefert werden kann.",
+          "text2": "2. Möchte der Kunde die Vereinbarung ohne Vertragsverletzung beenden und stimmt Zebrano Studio dem zu, kann die Vereinbarung einvernehmlich aufgehoben werden. In diesem Fall hat Zebrano Studio Anspruch auf Schadenersatz, einschließlich erlittenem Verlust und entgangenem Gewinn. Sofern nicht anders vereinbart, beträgt die Entschädigung 30 % des Kaufpreises oder 50 %, wenn der Kunde zum Zeitpunkt der Beendigung bereits darüber informiert war, dass (teilweise) geliefert werden kann.",
 
-          "text3":"3. Holt Zebrano Studio das Produkt auf Wunsch des Verbrauchers ab, trägt der Verbraucher die Kosten. Diese betragen 95,00 € einschließlich MwSt. für Adressen innerhalb der Benelux. Zum Zeitpunkt der Abholung muss das Produkt ordnungsgemäß verpackt und hinter der ersten Schwelle bereitstehen. Andernfalls wird das Produkt nicht mitgenommen.",
+          "text3": "3. Holt Zebrano Studio das Produkt auf Wunsch des Verbrauchers ab, trägt der Verbraucher die Kosten. Diese betragen 95,00 € einschließlich MwSt. für Adressen innerhalb der Benelux. Zum Zeitpunkt der Abholung muss das Produkt ordnungsgemäß verpackt und hinter der ersten Schwelle bereitstehen. Andernfalls wird das Produkt nicht mitgenommen.",
 
-          "text4":"4. Der Kaufbetrag wird zurückerstattet, nachdem Zebrano Studio das Produkt geprüft und festgestellt hat, dass es vollständig, unbenutzt und unbeschädigt ist.",
+          "text4": "4. Der Kaufbetrag wird zurückerstattet, nachdem Zebrano Studio das Produkt geprüft und festgestellt hat, dass es vollständig, unbenutzt und unbeschädigt ist.",
         },
-         "IntellectualProperty" : {
-          "title" : "Geistiges Eigentum",
-          "text1" : "1. Sofern nicht schriftlich anders vereinbart, behält Zebrano Studio die Urheberrechte und alle geistigen Eigentumsrechte an Angeboten sowie an bereitgestellten Entwürfen, Abbildungen, Zeichnungen, (Prototyp-)Modellen und Ähnlichem. Der Kunde darf ohne Zustimmung von Zebrano Studio kein Material, das dem geistigen Eigentum unterliegt, vervielfältigen, veröffentlichen, verwerten oder ausstellen.",
+        "IntellectualProperty": {
+          "title": "Geistiges Eigentum",
+          "text1": "1. Sofern nicht schriftlich anders vereinbart, behält Zebrano Studio die Urheberrechte und alle geistigen Eigentumsrechte an Angeboten sowie an bereitgestellten Entwürfen, Abbildungen, Zeichnungen, (Prototyp-)Modellen und Ähnlichem. Der Kunde darf ohne Zustimmung von Zebrano Studio kein Material, das dem geistigen Eigentum unterliegt, vervielfältigen, veröffentlichen, verwerten oder ausstellen.",
         },
-        "DeliveryTime" : {
-          "title" : "Lieferzeit",
-          "text1" : "1. Die Lieferzeit und/oder Ausführungsfrist wird von Zebrano Studio ungefähr bestimmt.",
+        "DeliveryTime": {
+          "title": "Lieferzeit",
+          "text1": "1. Die Lieferzeit und/oder Ausführungsfrist wird von Zebrano Studio ungefähr bestimmt.",
 
-          "text2" : "2. Bei der Festlegung der Lieferzeit und/oder Ausführungsfrist geht Zebrano Studio von den zu diesem Zeitpunkt bekannten Umständen aus.",
+          "text2": "2. Bei der Festlegung der Lieferzeit und/oder Ausführungsfrist geht Zebrano Studio von den zu diesem Zeitpunkt bekannten Umständen aus.",
 
-          "text3" : "3. Die Lieferzeit und/oder Ausführungsfrist beginnt, sobald eine Einigung über alle kaufmännischen und technischen Details erzielt wurde, alle erforderlichen Informationen Zebrano Studio vorliegen und, soweit vereinbart, die Anzahlung eingegangen ist.",
+          "text3": "3. Die Lieferzeit und/oder Ausführungsfrist beginnt, sobald eine Einigung über alle kaufmännischen und technischen Details erzielt wurde, alle erforderlichen Informationen Zebrano Studio vorliegen und, soweit vereinbart, die Anzahlung eingegangen ist.",
 
-          "text4" : "4. Wird die voraussichtliche Lieferzeit und/oder Ausführungsfrist überschritten, erhält Zebrano Studio eine zusätzliche angemessene Frist zur Lieferung.",
+          "text4": "4. Wird die voraussichtliche Lieferzeit und/oder Ausführungsfrist überschritten, erhält Zebrano Studio eine zusätzliche angemessene Frist zur Lieferung.",
 
-          "text5" : "5. Eine Überschreitung der Lieferzeit und/oder Ausführungsfrist berechtigt den Kunden niemals zu Schadensersatz von Zebrano Studio.",
+          "text5": "5. Eine Überschreitung der Lieferzeit und/oder Ausführungsfrist berechtigt den Kunden niemals zu Schadensersatz von Zebrano Studio.",
         },
-        "TransportAndDamage" : {
-          "title" : "Transport und Schäden bei Lieferung",
-          "text1" : "1. Sofern nicht anders vereinbart, umfasst die Vereinbarung den Transport der Produkte durch Zebrano Studio, das das Risiko von Schäden und Verlusten während des Transports trägt. Werden die Produkte durch einen professionellen Spediteur geliefert, sorgt Zebrano Studio für eine angemessene Versicherung.",
-          "text2" : "2. Zebrano Studio haftet nicht für Schäden, die ab der ersten Tür/Schwelle der Lieferadresse entstehen. Wir helfen jedoch gerne beim Platzieren des Produkts im Inneren.",
-          "text3" : "3. Wird bei der Lieferung ein Schaden festgestellt, muss der Kunde dies Zebrano Studio innerhalb von zwei Werktagen nach der Lieferung melden; andernfalls gilt die Ware als ohne Schaden erhalten.",
+        "TransportAndDamage": {
+          "title": "Transport und Schäden bei Lieferung",
+          "text1": "1. Sofern nicht anders vereinbart, umfasst die Vereinbarung den Transport der Produkte durch Zebrano Studio, das das Risiko von Schäden und Verlusten während des Transports trägt. Werden die Produkte durch einen professionellen Spediteur geliefert, sorgt Zebrano Studio für eine angemessene Versicherung.",
+          "text2": "2. Zebrano Studio haftet nicht für Schäden, die ab der ersten Tür/Schwelle der Lieferadresse entstehen. Wir helfen jedoch gerne beim Platzieren des Produkts im Inneren.",
+          "text3": "3. Wird bei der Lieferung ein Schaden festgestellt, muss der Kunde dies Zebrano Studio innerhalb von zwei Werktagen nach der Lieferung melden; andernfalls gilt die Ware als ohne Schaden erhalten.",
         },
-        "Delivery" : {
-          "title" : "Lieferung",
-          "text1":"1. Der Kunde muss sicherstellen, dass der Lieferort leicht zugänglich ist und alles in seiner Macht Stehende tun, um eine reibungslose Lieferung zu ermöglichen. Der Kunde muss außerdem sicherstellen, dass der Lieferort ordnungsgemäß gesichert werden kann.",
+        "Delivery": {
+          "title": "Lieferung",
+          "text1": "1. Der Kunde muss sicherstellen, dass der Lieferort leicht zugänglich ist und alles in seiner Macht Stehende tun, um eine reibungslose Lieferung zu ermöglichen. Der Kunde muss außerdem sicherstellen, dass der Lieferort ordnungsgemäß gesichert werden kann.",
 
-          "text2":"2. Der Kunde hat Zebrano Studio vor Abschluss der Vereinbarung über besondere Umstände am Lieferort zu informieren, die den Einsatz von Hilfsmitteln – wie z. B. eines (Umzugs-)Lifts oder Krans – erforderlich machen. Der Kunde muss außerdem sicherstellen, dass erforderliche Genehmigungen (z. B. Bewilligungen) und wesentliche Informationen (z. B. Erreichbarkeit des Lieferorts) rechtzeitig an Zebrano Studio übermittelt werden.",
+          "text2": "2. Der Kunde hat Zebrano Studio vor Abschluss der Vereinbarung über besondere Umstände am Lieferort zu informieren, die den Einsatz von Hilfsmitteln – wie z. B. eines (Umzugs-)Lifts oder Krans – erforderlich machen. Der Kunde muss außerdem sicherstellen, dass erforderliche Genehmigungen (z. B. Bewilligungen) und wesentliche Informationen (z. B. Erreichbarkeit des Lieferorts) rechtzeitig an Zebrano Studio übermittelt werden.",
 
-          "text3":"3. Bei falschen oder unvollständigen Angaben des Kunden trägt der Kunde die (zusätzlichen) Kosten für den Einsatz spezieller Hilfsmittel.",
+          "text3": "3. Bei falschen oder unvollständigen Angaben des Kunden trägt der Kunde die (zusätzlichen) Kosten für den Einsatz spezieller Hilfsmittel.",
 
-          "text4":"4. Ist ein (Umzugs-)Lift oder Kran erforderlich, sorgt Zebrano Studio zum Zeitpunkt der Lieferung für dessen Verfügbarkeit. Die Kosten trägt der Kunde und müssen vor der Lieferung an Zebrano Studio gezahlt werden.",
+          "text4": "4. Ist ein (Umzugs-)Lift oder Kran erforderlich, sorgt Zebrano Studio zum Zeitpunkt der Lieferung für dessen Verfügbarkeit. Die Kosten trägt der Kunde und müssen vor der Lieferung an Zebrano Studio gezahlt werden.",
 
-          "text5":"5. Möchte der Kunde selbst einen (Umzugs-)Lift oder Kran organisieren, liefert Zebrano Studio die Produkte kostenlos im Erdgeschoss ohne Montage. Der Kunde bleibt verantwortlich für den Transport der Produkte per Lift oder Kran, für Be- und Entladen sowie für die Montage und alle daraus entstehenden Schäden.",
+          "text5": "5. Möchte der Kunde selbst einen (Umzugs-)Lift oder Kran organisieren, liefert Zebrano Studio die Produkte kostenlos im Erdgeschoss ohne Montage. Der Kunde bleibt verantwortlich für den Transport der Produkte per Lift oder Kran, für Be- und Entladen sowie für die Montage und alle daraus entstehenden Schäden.",
 
-          "text6":"6. Ist der Lieferort zum Zeitpunkt der Lieferung nicht zugänglich – etwa weil die Produktabmessungen zu groß sind, um diesen Ort zu erreichen – geht dies zu Lasten und auf Risiko des Kunden. In diesem Fall liefert Zebrano Studio die Produkte unmontiert im Erdgeschoss.",
+          "text6": "6. Ist der Lieferort zum Zeitpunkt der Lieferung nicht zugänglich – etwa weil die Produktabmessungen zu groß sind, um diesen Ort zu erreichen – geht dies zu Lasten und auf Risiko des Kunden. In diesem Fall liefert Zebrano Studio die Produkte unmontiert im Erdgeschoss.",
 
-          "text7":"7. Werden die angebotenen Produkte nicht angenommen, außer aufgrund einer mangelhaften Lieferung, führt Zebrano Studio innerhalb einer angemessenen Frist eine zweite Lieferung durch.",
+          "text7": "7. Werden die angebotenen Produkte nicht angenommen, außer aufgrund einer mangelhaften Lieferung, führt Zebrano Studio innerhalb einer angemessenen Frist eine zweite Lieferung durch.",
 
-          "text8":"8. Stellt sich bei der Lieferung durch Zebrano Studio heraus, dass eine sofortige Lieferung aufgrund von Umständen, die zu Lasten und auf Risiko des Kunden gehen, nicht möglich ist, und verlangt der Kunde eine zweite Lieferung, kann Zebrano Studio zusätzliche Fracht-, Liefer- und Lagerkosten berechnen.",
+          "text8": "8. Stellt sich bei der Lieferung durch Zebrano Studio heraus, dass eine sofortige Lieferung aufgrund von Umständen, die zu Lasten und auf Risiko des Kunden gehen, nicht möglich ist, und verlangt der Kunde eine zweite Lieferung, kann Zebrano Studio zusätzliche Fracht-, Liefer- und Lagerkosten berechnen.",
 
-          "text9":"9. Möchte der Kunde den Liefertermin verschieben, muss dies Zebrano Studio spätestens 20 Arbeitstage vor dem geplanten Liefertermin mitgeteilt werden. Ein späterer Antrag wird auf Durchführbarkeit geprüft, und dem Kunden werden Lagerkosten berechnet. Die Lagerkosten betragen 25 € pro Woche ab dem ursprünglichen Liefertermin. Für Änderungen innerhalb von 3 Arbeitstagen vor dem geplanten Liefertermin berechnen wir dem Kunden 75 € Änderungsgebühren zusätzlich zu den genannten Lagerkosten.",
+          "text9": "9. Möchte der Kunde den Liefertermin verschieben, muss dies Zebrano Studio spätestens 20 Arbeitstage vor dem geplanten Liefertermin mitgeteilt werden. Ein späterer Antrag wird auf Durchführbarkeit geprüft, und dem Kunden werden Lagerkosten berechnet. Die Lagerkosten betragen 25 € pro Woche ab dem ursprünglichen Liefertermin. Für Änderungen innerhalb von 3 Arbeitstagen vor dem geplanten Liefertermin berechnen wir dem Kunden 75 € Änderungsgebühren zusätzlich zu den genannten Lagerkosten.",
         },
-        "StorageOfProducts":{
-          "title" : "Lagerung von Produkten",
-          "text1" : "1. Nach einer Verweigerung oder nach einer zweiten Lieferung kann Zebrano Studio dem Kunden Lagerkosten sowie weitere Schäden und Kosten in Rechnung stellen.",
-          "text2" : "2. Wird auch eine zweite Lieferung nicht angenommen, verlangt Zebrano Studio die Erfüllung des Vertrags und gewährt dem Kunden eine Frist von bis zu 30 Tagen, um die Produkte dennoch abzunehmen. Erfolgt die Abnahme innerhalb dieser Frist nicht, kann Zebrano Studio die Vereinbarung auflösen, wobei der Kunde zum Ersatz des entstandenen Schadens verpflichtet ist.",
+        "StorageOfProducts": {
+          "title": "Lagerung von Produkten",
+          "text1": "1. Nach einer Verweigerung oder nach einer zweiten Lieferung kann Zebrano Studio dem Kunden Lagerkosten sowie weitere Schäden und Kosten in Rechnung stellen.",
+          "text2": "2. Wird auch eine zweite Lieferung nicht angenommen, verlangt Zebrano Studio die Erfüllung des Vertrags und gewährt dem Kunden eine Frist von bis zu 30 Tagen, um die Produkte dennoch abzunehmen. Erfolgt die Abnahme innerhalb dieser Frist nicht, kann Zebrano Studio die Vereinbarung auflösen, wobei der Kunde zum Ersatz des entstandenen Schadens verpflichtet ist.",
         },
-        "Payment" : {
-          "title" : "Zahlung",
-          "text1" : "1. Die Zahlung erfolgt in Euro. Die Preise von Zebrano Studio geben an, ob sie inklusive oder exklusive Mehrwertsteuer sind.",
-          "text2" : "2. Bei Verträgen mit Verbrauchern kann Zebrano Studio eine Anzahlung von bis zu 30 % des Kaufpreises verlangen. Bei Verträgen mit Geschäftskunden kann Zebrano Studio vor Lieferung oder Fortsetzung der Leistung die Zahlung des gesamten Kaufpreises oder eine Sicherheit für die Zahlungsverpflichtungen verlangen.",
+        "Payment": {
+          "title": "Zahlung",
+          "text1": "1. Die Zahlung erfolgt in Euro. Die Preise von Zebrano Studio geben an, ob sie inklusive oder exklusive Mehrwertsteuer sind.",
+          "text2": "2. Bei Verträgen mit Verbrauchern kann Zebrano Studio eine Anzahlung von bis zu 30 % des Kaufpreises verlangen. Bei Verträgen mit Geschäftskunden kann Zebrano Studio vor Lieferung oder Fortsetzung der Leistung die Zahlung des gesamten Kaufpreises oder eine Sicherheit für die Zahlungsverpflichtungen verlangen.",
 
-          "text3" : "3. Sofern nicht anders vereinbart, ist der Nettokaufpreis (Restbetrag) vor Lieferung zu zahlen.",
+          "text3": "3. Sofern nicht anders vereinbart, ist der Nettokaufpreis (Restbetrag) vor Lieferung zu zahlen.",
 
-          "text4" : "4. Führt Zebrano Studio eine Lieferung in Teilen aus, ist sie berechtigt, für jede Teillieferung eine Zahlung zu verlangen. Der Kunde erhält für jede Lieferung eine Teilrechnung.",
-          "text5" : "5. Der Verbraucher schuldet gemäß Artikel 6:119 BW gesetzliche Zinsen für den Zeitraum, in dem er mit der Zahlung des Kaufpreises in Verzug ist. Der Geschäftskunde schuldet gemäß Artikel 6:119a BW gesetzliche Handelszinsen für den Verzugszeitraum.",
+          "text4": "4. Führt Zebrano Studio eine Lieferung in Teilen aus, ist sie berechtigt, für jede Teillieferung eine Zahlung zu verlangen. Der Kunde erhält für jede Lieferung eine Teilrechnung.",
+          "text5": "5. Der Verbraucher schuldet gemäß Artikel 6:119 BW gesetzliche Zinsen für den Zeitraum, in dem er mit der Zahlung des Kaufpreises in Verzug ist. Der Geschäftskunde schuldet gemäß Artikel 6:119a BW gesetzliche Handelszinsen für den Verzugszeitraum.",
 
-          "text6" : "6. Unbeschadet Absatz 5 sendet Zebrano Studio dem Verbraucher nach Eintritt des Verzugs eine Zahlungsaufforderung und fordert die Zahlung innerhalb von 14 Tagen ab dem Tag nach der Mahnung. Der Verbraucher wird darüber informiert, dass im Falle der Nichtzahlung außergerichtliche Inkassokosten anfallen, unter Angabe der Höhe dieser Kosten.",
+          "text6": "6. Unbeschadet Absatz 5 sendet Zebrano Studio dem Verbraucher nach Eintritt des Verzugs eine Zahlungsaufforderung und fordert die Zahlung innerhalb von 14 Tagen ab dem Tag nach der Mahnung. Der Verbraucher wird darüber informiert, dass im Falle der Nichtzahlung außergerichtliche Inkassokosten anfallen, unter Angabe der Höhe dieser Kosten.",
 
-          "text7" : "7. Zebrano Studio ist berechtigt, den geschuldeten Betrag ohne weitere Mahnung einzutreiben und hierfür Dritte einzuschalten. In diesem Fall schuldet der Kunde auch außergerichtliche Inkassokosten, die gemäß dem niederländischen Gesetz zur Normierung außergerichtlicher Inkassokosten und der dazugehörigen Verordnung festgelegt werden.",
+          "text7": "7. Zebrano Studio ist berechtigt, den geschuldeten Betrag ohne weitere Mahnung einzutreiben und hierfür Dritte einzuschalten. In diesem Fall schuldet der Kunde auch außergerichtliche Inkassokosten, die gemäß dem niederländischen Gesetz zur Normierung außergerichtlicher Inkassokosten und der dazugehörigen Verordnung festgelegt werden.",
 
-          "text8" : "8. Im Falle von Reklamationen ist der Kunde nur berechtigt, die Zahlung desjenigen Teils des geschuldeten Betrags auszusetzen, der in einem angemessenen Verhältnis zur Art und Schwere der Beschwerde steht. Dies entbindet den Kunden nicht von der Verpflichtung, den Restbetrag innerhalb der vereinbarten Frist zu zahlen.",
+          "text8": "8. Im Falle von Reklamationen ist der Kunde nur berechtigt, die Zahlung desjenigen Teils des geschuldeten Betrags auszusetzen, der in einem angemessenen Verhältnis zur Art und Schwere der Beschwerde steht. Dies entbindet den Kunden nicht von der Verpflichtung, den Restbetrag innerhalb der vereinbarten Frist zu zahlen.",
 
-          "text9" : "9. Zebrano Studio bleibt Eigentümer der Produkte, bis der Kunde den gesamten aufgrund der Vereinbarung geschuldeten Betrag bezahlt hat. Der Kunde muss die Produkte sorgfältig behandeln und darf sie nicht an Dritte übertragen, verpfänden, verleihen oder vom Lieferort entfernen (lassen), bis der Kaufpreis sowie etwaige Zinsen und Kosten vollständig beglichen sind.",
+          "text9": "9. Zebrano Studio bleibt Eigentümer der Produkte, bis der Kunde den gesamten aufgrund der Vereinbarung geschuldeten Betrag bezahlt hat. Der Kunde muss die Produkte sorgfältig behandeln und darf sie nicht an Dritte übertragen, verpfänden, verleihen oder vom Lieferort entfernen (lassen), bis der Kaufpreis sowie etwaige Zinsen und Kosten vollständig beglichen sind.",
         },
-        "Warranty" : {
-          "title" : "Garantie",
-          "text1" : "1. Sofern nicht schriftlich anders vereinbart, gewährleistet Zebrano Studio die ordnungsgemäße Beschaffenheit der gelieferten Produkte für einen Zeitraum von 2 Jahren nach Lieferung.",
+        "Warranty": {
+          "title": "Garantie",
+          "text1": "1. Sofern nicht schriftlich anders vereinbart, gewährleistet Zebrano Studio die ordnungsgemäße Beschaffenheit der gelieferten Produkte für einen Zeitraum von 2 Jahren nach Lieferung.",
 
-          "text2" : "2. Bei maßgefertigten Produkten sind geringfügige Abweichungen in den Maßen zulässig. Zebrano Studio darf bis zu 2 % von den vereinbarten Abmessungen abweichen, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
+          "text2": "2. Bei maßgefertigten Produkten sind geringfügige Abweichungen in den Maßen zulässig. Zebrano Studio darf bis zu 2 % von den vereinbarten Abmessungen abweichen, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
 
-          "text3" : "3. Der Kunde muss Zebrano Studio in jedem Fall die Möglichkeit geben, einen Mangel zu beheben. Die Haftung von Zebrano Studio ist auf die kostenlose Reparatur eines mangelhaften Produkts oder den Ersatz dieses Produkts oder eines Teils davon nach Wahl von Zebrano Studio beschränkt.",
+          "text3": "3. Der Kunde muss Zebrano Studio in jedem Fall die Möglichkeit geben, einen Mangel zu beheben. Die Haftung von Zebrano Studio ist auf die kostenlose Reparatur eines mangelhaften Produkts oder den Ersatz dieses Produkts oder eines Teils davon nach Wahl von Zebrano Studio beschränkt.",
 
-          "text4" : "4. Es wird keine Garantie gewährt, wenn Mängel auf normale Abnutzung, unsachgemäßen Gebrauch, mangelnde oder fehlerhafte Wartung oder Installation, (De-)Montage, Änderung oder Reparatur durch den Kunden oder Dritte zurückzuführen sind. Es wird keine Garantie auf Produkte gewährt, die bei Lieferung nicht neu waren, Ausstellungsmodelle, Produkte oder Teile, die unter eine Herstellergarantie fallen, oder produktspezifische Eigenschaften, einschließlich des natürlichen Verhaltens von Holz (siehe unten).",
+          "text4": "4. Es wird keine Garantie gewährt, wenn Mängel auf normale Abnutzung, unsachgemäßen Gebrauch, mangelnde oder fehlerhafte Wartung oder Installation, (De-)Montage, Änderung oder Reparatur durch den Kunden oder Dritte zurückzuführen sind. Es wird keine Garantie auf Produkte gewährt, die bei Lieferung nicht neu waren, Ausstellungsmodelle, Produkte oder Teile, die unter eine Herstellergarantie fallen, oder produktspezifische Eigenschaften, einschließlich des natürlichen Verhaltens von Holz (siehe unten).",
 
-          "text5" : "5. Für alle Holzteile gilt eine eingeschränkte Garantie, die nur Herstellungsfehler abdeckt. Das natürliche Verhalten von Holz ist ausgeschlossen, da es sich hierbei nicht um einen Mangel des Produkts oder der Produktion handelt, sondern um eine Eigenschaft des Materials. „Holzverhalten“ umfasst Ausdehnung, Schrumpfung, Risse und/oder Verformungen. Das von Zebrano Studio verwendete Holz ist auf einen Feuchtigkeitsgehalt von ca. 8 %–12 % gesägt und getrocknet, wodurch es für den Einsatz in beheizten Räumen geeignet ist. Holz bleibt ein Naturprodukt und nimmt Feuchtigkeit auf oder gibt sie ab. Das Ausmaß hängt unter anderem von Temperaturunterschieden und Luftfeuchtigkeit ab. Holz arbeitet weniger, wenn die Luftfeuchtigkeit nahezu konstant bleibt; wir empfehlen 50 %–60 % Luftfeuchtigkeit, typischerweise 10 % niedriger im Winter und 10 % höher im Sommer.",
+          "text5": "5. Für alle Holzteile gilt eine eingeschränkte Garantie, die nur Herstellungsfehler abdeckt. Das natürliche Verhalten von Holz ist ausgeschlossen, da es sich hierbei nicht um einen Mangel des Produkts oder der Produktion handelt, sondern um eine Eigenschaft des Materials. „Holzverhalten“ umfasst Ausdehnung, Schrumpfung, Risse und/oder Verformungen. Das von Zebrano Studio verwendete Holz ist auf einen Feuchtigkeitsgehalt von ca. 8 %–12 % gesägt und getrocknet, wodurch es für den Einsatz in beheizten Räumen geeignet ist. Holz bleibt ein Naturprodukt und nimmt Feuchtigkeit auf oder gibt sie ab. Das Ausmaß hängt unter anderem von Temperaturunterschieden und Luftfeuchtigkeit ab. Holz arbeitet weniger, wenn die Luftfeuchtigkeit nahezu konstant bleibt; wir empfehlen 50 %–60 % Luftfeuchtigkeit, typischerweise 10 % niedriger im Winter und 10 % höher im Sommer.",
 
-          "text6" : "6. Die Datei „Holzvariationen und Tipps“ ist Bestandteil dieser Allgemeinen Geschäftsbedingungen und wird dem Kunden per E-Mail zur Verfügung gestellt.",
+          "text6": "6. Die Datei „Holzvariationen und Tipps“ ist Bestandteil dieser Allgemeinen Geschäftsbedingungen und wird dem Kunden per E-Mail zur Verfügung gestellt.",
 
-          "text7" : "7. Wurde beim Kauf das All-in-house-Paket erworben, muss der Kunde die entsprechenden Pflegeprodukte selbst auf das Produkt anwenden. Dies wird nicht von Zebrano Studio durchgeführt.",
+          "text7": "7. Wurde beim Kauf das All-in-house-Paket erworben, muss der Kunde die entsprechenden Pflegeprodukte selbst auf das Produkt anwenden. Dies wird nicht von Zebrano Studio durchgeführt.",
 
-          "text8" : "8. Zebrano Studio ist nicht verantwortlich für abweichende Erwartungen des Kunden hinsichtlich der Polsterung von Sitzmöbeln in anderen Materialien als denjenigen, die in unseren Ausstellungsräumen vorhanden sind.",
+          "text8": "8. Zebrano Studio ist nicht verantwortlich für abweichende Erwartungen des Kunden hinsichtlich der Polsterung von Sitzmöbeln in anderen Materialien als denjenigen, die in unseren Ausstellungsräumen vorhanden sind.",
 
-          "text9" : "9. Der Reparaturgutschein von Zebrano Studio deckt die Reparatur von (trockenen) Rissen in von Zebrano Studio hergestellten Holzmöbeln ab. Andere (Reparatur-)Leistungen unterliegen unterschiedlichen von Zebrano Studio festzulegenden Tarifen.",
+          "text9": "9. Der Reparaturgutschein von Zebrano Studio deckt die Reparatur von (trockenen) Rissen in von Zebrano Studio hergestellten Holzmöbeln ab. Andere (Reparatur-)Leistungen unterliegen unterschiedlichen von Zebrano Studio festzulegenden Tarifen.",
         },
-        "Liability" : {
-          "title" : "Haftung",
-          "text1" : "1. Das Risiko von Schäden liegt bei Zebrano Studio bis zur Lieferung an den Kunden an der ersten Tür/Schwelle der Lieferadresse, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
-          "text2" : "2. Zebrano Studio haftet nicht für Schäden an Wänden, Rahmen, Bö",
-          "text3" : "3.Das Risiko von Schäden liegt bei Zebrano Studio bis zur Lieferung an den Kunden an der ersten Tür/Schwelle der Lieferadresse, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
-          "text4" : "4. Zebrano Studio haftet nicht für Schäden an Wänden, Rahmen, Böden oder anderen Gegenständen, die durch die Lieferung und/oder Montage unserer Produkte verursacht werden.",
-          "text5" : "5. Zebrano Studio haftet nicht für direkte oder indirekte Schäden, die durch Mängel an den gelieferten Produkten oder anderweitig entstehen, noch für Lieferverzögerungen, außer in Fällen von Vorsatz oder grober Fahrlässigkeit seitens Zebrano Studio.",
-          "text6" : "6. Wenn der Kunde Produkte selbst installiert, montiert usw. oder dies durch einen Dritten durchführen lässt, ist der Kunde und/oder der Dritte für die ordnungsgemäße Installation, Montage usw. sowie alles, was damit zusammenhängt, verantwortlich. In solchen Fällen ist Zebrano Studio nicht verantwortlich oder haftbar, wenn während der Installation/Montage etwas schiefgeht oder wenn es Unvollkommenheiten im Ergebnis gibt.",
-          "text7" : "Sollte Zebrano Studio haftbar sein, ist sie niemals verpflichtet, Schäden jeglicher Art und aus jeglichem Grund zu ersetzen, die den Gesamtbetrag der Transaktion zwischen dem Kunden und Zebrano Studio übersteigen.",
-          "text8" : "Wenn Zebrano Studio sich nicht auf einen Haftungsausschluss berufen kann, ist ihre Haftung auf den Betrag beschränkt, der durch ihre Haftpflichtversicherung gedeckt ist."
+        "Liability": {
+          "title": "Haftung",
+          "text1": "1. Das Risiko von Schäden liegt bei Zebrano Studio bis zur Lieferung an den Kunden an der ersten Tür/Schwelle der Lieferadresse, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
+          "text2": "2. Zebrano Studio haftet nicht für Schäden an Wänden, Rahmen, Bö",
+          "text3": "3.Das Risiko von Schäden liegt bei Zebrano Studio bis zur Lieferung an den Kunden an der ersten Tür/Schwelle der Lieferadresse, sofern nicht ausdrücklich etwas anderes vereinbart wurde.",
+          "text4": "4. Zebrano Studio haftet nicht für Schäden an Wänden, Rahmen, Böden oder anderen Gegenständen, die durch die Lieferung und/oder Montage unserer Produkte verursacht werden.",
+          "text5": "5. Zebrano Studio haftet nicht für direkte oder indirekte Schäden, die durch Mängel an den gelieferten Produkten oder anderweitig entstehen, noch für Lieferverzögerungen, außer in Fällen von Vorsatz oder grober Fahrlässigkeit seitens Zebrano Studio.",
+          "text6": "6. Wenn der Kunde Produkte selbst installiert, montiert usw. oder dies durch einen Dritten durchführen lässt, ist der Kunde und/oder der Dritte für die ordnungsgemäße Installation, Montage usw. sowie alles, was damit zusammenhängt, verantwortlich. In solchen Fällen ist Zebrano Studio nicht verantwortlich oder haftbar, wenn während der Installation/Montage etwas schiefgeht oder wenn es Unvollkommenheiten im Ergebnis gibt.",
+          "text7": "Sollte Zebrano Studio haftbar sein, ist sie niemals verpflichtet, Schäden jeglicher Art und aus jeglichem Grund zu ersetzen, die den Gesamtbetrag der Transaktion zwischen dem Kunden und Zebrano Studio übersteigen.",
+          "text8": "Wenn Zebrano Studio sich nicht auf einen Haftungsausschluss berufen kann, ist ihre Haftung auf den Betrag beschränkt, der durch ihre Haftpflichtversicherung gedeckt ist."
         },
-        "Complaints" : {
-          "title" : "Complaints",
-          "text1" : "Beschwerden über die Qualität der gelieferten Produkte oder Materialien oder die Ausführung der Arbeiten können vom Kunden nur innerhalb von 2 Werktagen nach Lieferung der Produkte bei Zebrano Studio eingereicht werden. Ist eine Einreichung innerhalb dieser Frist vernünftigerweise nicht möglich, gilt die Frist von 2 Werktagen ab dem Zeitpunkt, an dem der Mangel entdeckt wurde oder vernünftigerweise hätte entdeckt werden können. Die Beschwerde muss eine klare und vollständige Beschreibung der Beanstandungen und festgestellten Mängel enthalten.",
-          "text2" : "Der vorherige Absatz lässt die in Artikel 9 genannte kürzere Frist unberührt.",
-          "text3" : "Wenn der Kunde entgegen dem Rat von Zebrano Studio bestimmte Arbeiten durchführen oder verhindern möchte, ist jede diesbezügliche Beschwerde ausgeschlossen, sofern nicht schriftlich etwas anderes vereinbart wurde.",
+        "Complaints": {
+          "title": "Complaints",
+          "text1": "Beschwerden über die Qualität der gelieferten Produkte oder Materialien oder die Ausführung der Arbeiten können vom Kunden nur innerhalb von 2 Werktagen nach Lieferung der Produkte bei Zebrano Studio eingereicht werden. Ist eine Einreichung innerhalb dieser Frist vernünftigerweise nicht möglich, gilt die Frist von 2 Werktagen ab dem Zeitpunkt, an dem der Mangel entdeckt wurde oder vernünftigerweise hätte entdeckt werden können. Die Beschwerde muss eine klare und vollständige Beschreibung der Beanstandungen und festgestellten Mängel enthalten.",
+          "text2": "Der vorherige Absatz lässt die in Artikel 9 genannte kürzere Frist unberührt.",
+          "text3": "Wenn der Kunde entgegen dem Rat von Zebrano Studio bestimmte Arbeiten durchführen oder verhindern möchte, ist jede diesbezügliche Beschwerde ausgeschlossen, sofern nicht schriftlich etwas anderes vereinbart wurde.",
         },
-        "ApplicableLaw" : {
-          "title" : "Applicable law",
-          "text" : `“Auf alle Vereinbarungen, auf die diese Bedingungen Anwendung finden, ist niederländisches Recht anwendbar.”`
+        "ApplicableLaw": {
+          "title": "Applicable law",
+          "text": `“Auf alle Vereinbarungen, auf die diese Bedingungen Anwendung finden, ist niederländisches Recht anwendbar.”`
         },
       },
 

@@ -3,9 +3,11 @@ import BtnComponent from '../homeComponents/utils/BtnComponent'
 import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { useTranslation } from 'react-i18next';
 gsap.registerPlugin(ScrollTrigger , SplitText);
 
 const MaterialAndDesignContent = () => {
+    const { t, i18n } = useTranslation();
     const materialContentRef = useRef();
     const imageRef1 = useRef();
     const imageRef2 = useRef();
@@ -32,7 +34,7 @@ const MaterialAndDesignContent = () => {
     }, materialContentRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [i18n.language]);
   // ======animate title====
     useEffect(() => {
     const ctx = gsap.context(() => {
@@ -60,7 +62,8 @@ const MaterialAndDesignContent = () => {
     }, materialContentRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [i18n.language]);
+
   // ======animate description====
     useEffect(() => {
     const ctx = gsap.context(() => {
@@ -77,7 +80,7 @@ const MaterialAndDesignContent = () => {
           stagger:1,
           scrollTrigger: {
             trigger: title,
-            start: "top 70%",
+            start: "top 85%",
             end: "+=300",
             scrub: true,
             toggleActions: "play none none reverse",
@@ -87,21 +90,23 @@ const MaterialAndDesignContent = () => {
     }, materialContentRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [i18n.language]);
 
 
 
 
     return (
         <>
-            <section ref={materialContentRef} id='materialContent' className='w-full h-auto bg-myColorOne text-white'>
+            <section key={i18n.language} ref={materialContentRef} id='materialContent' className='w-full h-auto bg-myColorOne text-white'>
                 <div className="wrapper">
                     {/* ===wood=== */}
                     <div className="wood w-full h-full md:h-[500px] flex flex-col md:flex-row">
                         <div className="w-full md:w-1/2 flex items-center justify-center p-5 py-12">
                             <div className="w-full max-w-sm">
-                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>Wood.</h1>
-                                <p className='mb-8'>Natural hardwoods like oak, walnut, and zebrano form the base of our collections. Each wood type is carefully selected for strength, grain, and finish.</p>
+                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row1.title")}
+                                </h1>
+                                <p className='mb-8'>{t("ProductsPage.Materials.MaterialAndDesignContent.row1.desc")}</p>
                                 <BtnComponent text='View meterial' />
                             </div>
                         </div>
@@ -122,8 +127,12 @@ const MaterialAndDesignContent = () => {
                         {/* --content-- */}
                         <div className="w-full md:w-1/2 h-full md:h-[500px] flex justify-center items-center order-1 md:order-2">
                             <div className="w-full max-w-sm p-5 py-14">
-                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>Veneer.</h1>
-                                <p className='mb-8'>A refined layer of real wood, allowing unique textures and rare species to come to life with consistency and elegance.</p>
+                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row2.title")}
+                                </h1>
+                                <p className='mb-8'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row2.desc")}
+                                </p>
                                 <BtnComponent text='View meterial' />
                             </div>
                         </div>
@@ -132,8 +141,12 @@ const MaterialAndDesignContent = () => {
                     <div className="Glass w-full h-full md:h-[500px] flex flex-col md:flex-row">
                         <div className="w-full md:w-1/2 p-5 py-14 flex items-center justify-center">
                             <div className="w-full max-w-sm">
-                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>Glass.</h1>
-                                <p className='mb-8'>Clear, tinted, or structured glass to open spaces with light and transparency — from privacy glass to statement glass doors.</p>
+                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row3.title")}
+                                </h1>
+                                <p className='mb-8'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row3.desc")}
+                                </p>
                                 <BtnComponent text='View meterial' />
                             </div>
                         </div>
@@ -152,8 +165,10 @@ const MaterialAndDesignContent = () => {
                         </div>
                         <div className="w-full md:w-1/2 p-5 py-14 flex items-center justify-center order-1 md:order-2">
                             <div className="w-full max-w-sm">
-                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>Metal.</h1>
-                                <p className='mb-8'>Aluminium, bronze, or steel accents create contrast and precision, used in frames, hinges, and detailing.</p>
+                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>{t("ProductsPage.Materials.MaterialAndDesignContent.row4.title")}</h1>
+                                <p className='mb-8'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row4.desc")}
+                                </p>
                                 <BtnComponent text='View meterial' />
                             </div>
                         </div>
@@ -162,8 +177,12 @@ const MaterialAndDesignContent = () => {
                     <div className="Stone w-full h-full md:h-[500px] flex flex-col md:flex-row">
                         <div className="w-full md:w-1/2 p-5 py-14 flex items-center justify-center">
                             <div className="w-full max-w-sm">
-                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>Stone & Ceramics.</h1>
-                                <p className='mb-8'>Marble, travertine, or ceramic stone panels add a sense of permanence and luxury to our designs.</p>
+                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row5.title")}
+                                </h1>
+                                <p className='mb-8'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row5.desc")}
+                                </p>
                                 <BtnComponent text='View meterial' />
                             </div>
                         </div>
@@ -182,8 +201,10 @@ const MaterialAndDesignContent = () => {
                         </div>
                         <div className="w-full md:w-1/2 p-5 py-14 flex items-center justify-center order-1 md:order-2">
                             <div className="w-full max-w-sm">
-                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>Handles & Hardware.</h1>
-                                <p className='mb-8'>Minimal recessed grips, bold handles, and custom hardware — both functional and sculptural.</p>
+                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row6.title")}
+                                </h1>
+                                <p className='mb-8'>{t("ProductsPage.Materials.MaterialAndDesignContent.row6.desc")}</p>
                                 <BtnComponent text='View meterial' />
                             </div>
                         </div>
@@ -192,8 +213,10 @@ const MaterialAndDesignContent = () => {
                     <div className="Finishes w-full h-full md:h-[500px] flex flex-col md:flex-row">
                         <div className="w-full md:w-1/2 p-5 py-14 flex items-center justify-center">
                             <div className="w-full max-w-sm">
-                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>Finishes & Oils.</h1>
-                                <p className='mb-8'>From matte oils to deep stains, each finish is chosen to protect and enhance natural character.</p>
+                                <h1 className='title text-5xl font-Montserrat font-semibold mb-5'>{t("ProductsPage.Materials.MaterialAndDesignContent.row7.title")}</h1>
+                                <p className='mb-8'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row7.desc")}
+                                </p>
                                 <BtnComponent text='View meterial' />
                             </div>
                         </div>
@@ -207,15 +230,19 @@ const MaterialAndDesignContent = () => {
                     <div className="w-full h-full flex p-5 py-12">
                         <div className="w-full md:w-1/2 flex items-center justify-center">
                             <div className='w-full max-w-96'>
-                                <h3 className='title text-5xl font-Montserrat font-semibold mb-12'>Sustainability & Durability</h3>
-                                <h5 className='text-2xl mb-2'>Sustainable Choices</h5>
-                                <p>We source responsibly — FSC-certified wood, durable finishes, and recyclable glass & metal.</p>
+                                <h3 className='title text-5xl font-Montserrat font-semibold mb-12'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row8.col1.title")}
+                                </h3>
+                                <h5 className='text-3xl mb-2'>
+                                    {t("ProductsPage.Materials.MaterialAndDesignContent.row8.col1.subTitle")}
+                                </h5>
+                                <p>{t("ProductsPage.Materials.MaterialAndDesignContent.row8.col1.text")}</p>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 flex items-center justify-center">
                         <div className='w-full max-w-96'>
-                            <h3 className='title text-5xl mb-10'>Built to Last</h3>
-                            <p className='mb-8'>Every material is chosen not just for its look, but for its longevity. A Zebrano product is made to live with you for decades.</p>
+                            <h3 className='title text-5xl mb-10'>{t("ProductsPage.Materials.MaterialAndDesignContent.row8.col2.title")}</h3>
+                            <p className='mb-8'>{t("ProductsPage.Materials.MaterialAndDesignContent.row8.col2.desc")}</p>
                             <BtnComponent text='Configure Now'/>
                         </div>
                         </div>
