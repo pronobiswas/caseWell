@@ -315,7 +315,7 @@ const HeaderNew = () => {
 
                         {/* =======menu======= */}
                         <div className="menu w-fit flex gap-5 items-center ">
-                            <ul ref={menuRef} className='flex gap-3 lg:gap-5 [&>li]:cursor-pointer text-base font-medium relative'>
+                            <ul ref={menuRef} className='flex gap-2 xl:gap-5 [&>li]:cursor-pointer text-base font-medium relative'>
 
                                 {/* -------products------ */}
                                 <li className="menuItem relative group transition-all duration-300 ">
@@ -330,8 +330,8 @@ const HeaderNew = () => {
                                     >
                                         <div className='w-fit flex items-center '>
                                             <div className="navLink w-full h-6   relative flex flex-col overflow-hidden z-20 ">
-                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.products")}</span>
-                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.products")}</span>
+                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.products")}</span>
+                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.products")}</span>
                                             </div>
                                             <MdOutlineKeyboardArrowDown />
                                         </div>
@@ -399,8 +399,8 @@ const HeaderNew = () => {
                                     >
                                         <div className="w-fit flex items-center">
                                             <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Collection")}</span>
-                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Collection")}</span>
+                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Collection")}</span>
+                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Collection")}</span>
                                             </div>
                                             <MdOutlineKeyboardArrowDown />
                                         </div>
@@ -458,8 +458,8 @@ const HeaderNew = () => {
                                         }
                                     >
                                         <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                            <span className='group-hover:translate-y-[-28px] transition-all duration-300 uppercase'>{t("header.menu.Inspiration")} </span>
-                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Inspiration")} </span>
+                                            <span className='group-hover:translate-y-[-28px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Inspiration")} </span>
+                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Inspiration")} </span>
                                         </div>
                                     </NavLink>
                                 </li>
@@ -475,8 +475,8 @@ const HeaderNew = () => {
                                         }
                                     >
                                         <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Architects")}</span>
-                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Architects")}</span>
+                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Architects")}</span>
+                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Architects")}</span>
                                         </div>
                                     </NavLink>
                                 </li>
@@ -493,8 +493,8 @@ const HeaderNew = () => {
                                     >
                                         <div className="w-fit flex items-center">
                                             <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Zebrano")}</span>
-                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Zebrano")}</span>
+                                                <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Zebrano")}</span>
+                                                <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Zebrano")}</span>
                                             </div>
                                             <MdOutlineKeyboardArrowDown />
                                         </div>
@@ -546,8 +546,8 @@ const HeaderNew = () => {
                                         }
                                     >
                                         <div className="navLink w-full h-6  relative flex flex-col overflow-hidden z-20 ">
-                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase'>{t("header.menu.Contact")}</span>
-                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase'>{t("header.menu.Contact")}</span>
+                                            <span className='group-hover:translate-y-[-22px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Contact")}</span>
+                                            <span className='group-hover:translate-y-[-24px] transition-all duration-300 uppercase text-[14px] xl:text-base'>{t("header.menu.Contact")}</span>
                                         </div>
                                     </NavLink>
                                 </li>
@@ -576,8 +576,8 @@ const HeaderNew = () => {
                                 <div className="configaretor w-fit h-fit py-2 px-3 flex items-center gap-2 border bg-white text-colorOne hover:bg-colorOne hover:text-white group  cursor-pointer rounded-full z-30">
                                     <span>{t("header.menu.ConfigureNow")}</span>
                                     <div className='w-5 h-5  relative overflow-hidden'>
-                                        <span className='text-xl  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward /> </span>
-                                        <span className='text-xl absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward /> </span>
+                                        <span className='text-[14px] xl:text-base  group-hover:absolute group-hover:-top-4 group-hover:-right-4 transition-all duration-300'> <MdArrowOutward /> </span>
+                                        <span className='text-[14px] xl:text-base absolute top-4 -left-4 group-hover:top-0 group-hover:left-0 transition-all duration-300'> <MdArrowOutward /> </span>
                                     </div>
                                 </div>
                             </Link>

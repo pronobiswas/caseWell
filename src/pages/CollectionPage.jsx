@@ -107,7 +107,7 @@ const CollectionPage = () => {
           <button onClick={() => filterByTag("glass")}>Glass</button>
           <button onClick={() => filterByTag("pivot")}>Pivot</button>
           <button onClick={() => filterByTag("slide")}>Slide</button>
-          <button><Link to="/admin">admin </Link></button>
+          {/* <button><Link to="/admin">admin </Link></button> */}
         </div>
 
         <div className="w-full h-full flex flex-wrap gap-5">

@@ -94,18 +94,9 @@ const AdminDashBoard = () => {
             alert('Error submitting data: ' + error.message);
         }
     };
-
-
-
-
-
-
-
-
-
     // Asynchronous function to fetch data from Firestore
     const fetchData = async () => {
-        setLoading(true); // Set loading to true before fetching
+        setLoading(true); 
         try {
             const querySnapshot = await getDocs(collection(db, 'adminDashboardData'));
             const fetchedData = querySnapshot.docs.map(doc => ({
@@ -113,7 +104,7 @@ const AdminDashBoard = () => {
                 ...doc.data()
             }));
             setData(fetchedData);
-            dispatch(showCaseProduct(fetchedData));
+            dispatch(showCaseProduct(data));
 
         } catch (error) {
             console.error('Error fetching documents: ', error);
@@ -129,18 +120,12 @@ const AdminDashBoard = () => {
     const handleDelete = async (id, deleteUrl) => {
         if (window.confirm("Are you sure you want to delete this item?")) {
             try {
-
                 await deleteDoc(doc(db, 'adminDashboardData', id));
-
                 if (deleteUrl) {
-
                     const deleteKey = deleteUrl.split('/').pop();
-
                     // Construct the correct ImageBB delete API endpoint
                     const imgbbDeleteEndpoint = `https://api.imgbb.com/1/delete?key=${import.meta.env.VITE_IMAGE_BB_API}&delete=${deleteKey}`;
-
                     const response = await fetch(imgbbDeleteEndpoint, {
-                        // This is the crucial change
                         method: 'POST',
                     });
                     const result = await response.json();
@@ -161,9 +146,6 @@ const AdminDashBoard = () => {
         }
     };
 
-
-
-    // Use a useEffect hook to call the fetchData function when the component mounts
     useEffect(() => {
         fetchData();
     }, []);
