@@ -148,7 +148,7 @@ const MaterialAndDesign = () => {
       </div>
 
       <div className="wrapper w-full h-fit md:h-[560px] bg-colorOne text-LightText flex flex-col md:flex-row gap-10 p-5">
-        <div className="w-full md:w-1/2 h-full order-1 md:order-2">
+        <div className="w-full md:w-1/2 h-full order-2 md:order-1">
           <div className="w-full lg:max-w-xl xl:max-w-2xl h-full pl-5 flex flex-col gap-5 justify-center">
             <span className="title font-Poppins">{t("ProductsPage.Pivot.MaterialAndDesign.row3.title")}</span>
             <h3 className="pivotDescHeading text-4xl font-Montserrat">

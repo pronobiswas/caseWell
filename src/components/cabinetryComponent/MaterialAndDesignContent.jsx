@@ -4,6 +4,7 @@ import {gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger , SplitText);
 
 const MaterialAndDesignContent = () => {
@@ -227,7 +228,7 @@ const MaterialAndDesignContent = () => {
                         </div>
                     </div>
                     {/* ====Sustainability & Durability====== */}
-                    <div className="w-full h-full flex p-5 py-12">
+                    <div className="w-full h-full flex flex-col gap-14 md:flex-row md:gap-0 p-5 py-12">
                         <div className="w-full md:w-1/2 flex items-center justify-center">
                             <div className='w-full max-w-96'>
                                 <h3 className='title text-5xl font-Montserrat font-semibold mb-12'>
@@ -241,9 +242,9 @@ const MaterialAndDesignContent = () => {
                         </div>
                         <div className="w-full md:w-1/2 flex items-center justify-center">
                         <div className='w-full max-w-96'>
-                            <h3 className='title text-5xl mb-10'>{t("ProductsPage.Materials.MaterialAndDesignContent.row8.col2.title")}</h3>
+                            <h3 className='title text-5xl font-Montserrat font-semibold mb-10'>{t("ProductsPage.Materials.MaterialAndDesignContent.row8.col2.title")}</h3>
                             <p className='mb-8'>{t("ProductsPage.Materials.MaterialAndDesignContent.row8.col2.desc")}</p>
-                            <BtnComponent text='Configure Now'/>
+                            <Link to="/configurator"><BtnComponent text='Configure Now'/></Link>
                         </div>
                         </div>
                     </div>

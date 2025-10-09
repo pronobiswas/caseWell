@@ -21,7 +21,7 @@ const HingedDoors = () => {
     <>
       <section ref={HingedBanner}>
         <div className="wrapper w-full h-screen flex items-end bg-myColorOne text-LightText p-5 md:p-12 ">
-          <div className="w-1/2 flex flex-col gap-5 ">
+          <div className="w-full md:w-1/2 flex flex-col gap-5 ">
             <ButtomHeading
               heading={t("ProductsPage.HingedDoors.banner.heading")}
               paragraph1={t("ProductsPage.HingedDoors.banner.subHeading")}
@@ -31,7 +31,7 @@ const HingedDoors = () => {
               <BtnComponent text={t("ProductsPage.HingedDoors.banner.btnText")} />
             </Link>
           </div>
-          <div className="w-1/2 ">
+          <div className="w-full hidden md:w-1/2 md:block">
             <span>
               <svg
                 width="100%"

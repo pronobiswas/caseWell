@@ -235,8 +235,8 @@ const AccessibleBeautiful = () => {
                         </div>
                     </div>
                     {/* ===row three=== */}
-                    <div ref={rowThreeRef} className='row3 bg-myColorTwo pt-12 px-5 pb-10 text-myColorOne'>
-                        <div className="wrapper w-full flex gap-5">
+                    <div ref={rowThreeRef} className='row3 bg-myColorTwo pt-12 px-1 md:px-5 pb-10 text-myColorOne'>
+                        <div className="wrapper w-full flex gap-1 md:gap-5">
                             {/* ====col one=== */}
                             <div className="w-1/2">
                                 <div>
@@ -244,10 +244,10 @@ const AccessibleBeautiful = () => {
                                         <img src="/images/img4.png" alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full flex flex-col items-center text-center p-5'>
-                                        <h3 ref={subheadingOneRef} className='text-3xl'>
+                                        <h3 ref={subheadingOneRef} className='text-2xl md:text-3xl'>
                                             {t("MeetTheMakers.AccessibleBeautiful.row3.title1")}
                                         </h3>
-                                        <p className='mb-8'>
+                                        <p className='mb-8 mt-2 text-sm md:text-base'>
                                             {t("MeetTheMakers.AccessibleBeautiful.row3.desc1")}
                                         </p>
                                         <Link to="/products/material">
@@ -263,10 +263,10 @@ const AccessibleBeautiful = () => {
                                         <img src="/images/img4.png" alt="" className='w-full h-full object-cover' />
                                     </div>
                                     <div className='w-full flex flex-col items-center text-center p-5'>
-                                        <h3 ref={subheadingtwoRef} className='text-3xl'>
+                                        <h3 ref={subheadingtwoRef} className='text-2xl md:text-3xl'>
                                             {t("MeetTheMakers.AccessibleBeautiful.row3.title2")}
                                         </h3>
-                                        <p className='mb-8'>
+                                        <p className='mb-8 mt-2 text-sm md:text-base'>
                                             {t("MeetTheMakers.AccessibleBeautiful.row3.desc2")}
                                         </p>
                                         <Link to="/contact">
