@@ -82,7 +82,7 @@ const SlideingBanner = () => {
 
                     {/* ===Text Overlay====  */}
                     <div
-                        className="w-1/2 lg:w-1/3 flex flex-col items-end absolute bottom-0 right-0 text-LightText"
+                        className="w-full md:w-1/2 lg:w-1/3 flex flex-col items-end absolute bottom-0 right-0 text-LightText"
                     >
                         <div className="w-fit p-5 bg-myColorTwo rounded-tl-xl">
                             <h2 ref={headingRef} className="text-3xl md:text-4xl lg:text-5xl text-right text-myColorOne font-semibold  ">{slides[index].title}</h2>
