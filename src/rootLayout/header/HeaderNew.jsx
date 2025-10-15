@@ -773,7 +773,7 @@ const HeaderNew = () => {
                                                 <span className='group-hover:rotate-90'><TfiAngleRight /></span>
                                             </div>
                                             <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-50">
-                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:font-Poppins [&>li]:text-myColorOne  [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:font-semibold [&>li:hover]:z-50 '>
+                                                <ul className='flex flex-col [&>li]:text-base [&>li]:font-Poppins [&>li]:text-myColorOne  [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:font-semibold [&>li:hover]:z-50 '>
                                                     <li><NavLink to="/products/PivotDoor">{t("header.menu.PivotDoors")}</NavLink></li>
                                                     <li><NavLink to="/products/SlideDoor">{t("header.menu.SlidingDoors")}</NavLink></li>
                                                     <li><NavLink to="/products/HingedDoors">{t("header.menu.HingedDoors")}</NavLink></li>
@@ -791,7 +791,7 @@ const HeaderNew = () => {
                                                 <span className='group-hover:rotate-90'><TfiAngleRight /></span>
                                             </div>
                                             <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-40">
-                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
+                                                <ul className='flex flex-col [&>li]:text-base [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
                                                     <li><NavLink to="/collections/GlassCollection">{t("header.menu.GlassCollection")}</NavLink></li>
                                                     <li><NavLink to="/collections/FineerCollection">{t("header.menu.VeneerCollection")}</NavLink></li>
                                                     <li><NavLink to="/collections/ThreeDCollection">{t("header.menu.3DCollection")}</NavLink></li>
@@ -810,13 +810,14 @@ const HeaderNew = () => {
                                                 <NavLink to="/architects"><span>{t("header.menu.Architects")}</span></NavLink>
                                             </div>
                                         </li>
+                                        {/* ===zebrano=== */}
                                         <li className='group relative'>
                                             <div className='w-full flex justify-between items-center'>
                                                 <NavLink to="/aboutus"><span>{t("header.menu.Zebrano")}</span></NavLink>
                                                 <span className='group-hover:rotate-90'><TfiAngleRight /></span>
                                             </div>
-                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block">
-                                                <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
+                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 bottom-[60px] hidden group-hover:block z-50">
+                                                <ul className='flex flex-col [&>li]:text-base [&>li]:text-myColorOne [&>li]:font-Poppins [&>li:hover]:font-semibold [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:bg-myColorTwo z-50'>
                                                     <li><NavLink to="/aboutus/ourStory">{t("header.menu.OurStory")}</NavLink></li>
                                                     <li><NavLink to="/aboutus/theMakers">{t("header.menu.MeetTheMakers")}</NavLink></li>
                                                     <li><NavLink to="/aboutus/ConsciousNcrafts">{t("header.menu.ConsciousCraft")}</NavLink></li>

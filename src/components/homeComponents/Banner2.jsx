@@ -96,7 +96,7 @@ const Banner2 = () => {
             ></div>
           </div>
           {/* ==bannerRow== */}
-          <div className="proRow w-full h-1/4 border-b border-b-myColorThree py-5 px-20 relative">
+          <div className="proRow w-full h-1/4 border-b border-b-myColorThree py-5 px-5 md:px-20 relative">
             <div
               className="rowOverlay w-5 h-full bg-colorOne absolute top-0 right-0"
               style={{ width: "100%" }}
@@ -113,7 +113,7 @@ const Banner2 = () => {
             </div>
           </div>
           {/* ==bannerRow== */}
-          <div className="proRow w-full h-1/4 border-b border-b-gray-400 py-5 px-20 relative">
+          <div className="proRow w-full h-1/4 border-b border-b-gray-400 py-5 px-5 md:px-20 relative">
             <div
               className="rowOverlay w-5 h-full bg-colorOne absolute top-0 left-0"
               style={{ width: "100%" }}
@@ -132,7 +132,7 @@ const Banner2 = () => {
             </div>
           </div>
           {/* ==bannerRow== */}
-          <div className="proRow w-full h-1/4 border-b border-b-gray-700 py-5 px-20 relative">
+          <div className="proRow w-full h-1/4 border-b border-b-gray-700 py-5 px-5 md:px-20 relative">
             <div
               className="rowOverlay w-5 h-full bg-colorOne absolute top-0 right-0"
               style={{ width: "100%" }}

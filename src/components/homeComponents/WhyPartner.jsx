@@ -108,7 +108,7 @@ const WhyPartner = () => {
         className="w-full h-full bg-myColorTwo text-colorOne"
       >
         <div className="partnerWrapper w-full h-full p-5 md:p-16 pt-20 flex flex-col justify-between">
-          <div className="partnerHeading flex justify-between">
+          <div className="partnerHeading flex flex-col md:flex-row justify-between gap-5">
             <h3
               ref={partnerHeading}
               className="text-3xl font-Montserrat text-myColorOne"
@@ -124,7 +124,7 @@ const WhyPartner = () => {
           </div>
           <div
             ref={partnerCard}
-            className="partnerContentWrapper flex flex-wrap gap-6"
+            className="partnerContentWrapper flex flex-wrap gap-0 md:gap-6"
           >
             <div className="box w-80 py-5  flex flex-col gap-6 ">
               <div className="iconbox text-6xl text-myColorOne">

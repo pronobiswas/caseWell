@@ -60,7 +60,7 @@ const InspirationInsight = () => {
   return (
     <>
       <section id="inspiration">
-        <div className="inspirationWrapper p-12">
+        <div className="inspirationWrapper p-5 md:p-12">
           <div className="inspirationHeader">
             <h2 className="text-4xl text-myColorOne font-Montserrat">
               {t("homePage.InspirationInsight.heading")}
