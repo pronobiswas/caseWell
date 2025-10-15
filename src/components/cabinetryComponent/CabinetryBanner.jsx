@@ -9,9 +9,9 @@ const CabinetryBanner = () => {
     <>
       <section
         id="cabineteryBanner"
-        className='w-full h-[100vh-50px]  md:h-screen bg-[url("/images/cabinetryBanner.jpg")]'
+        className='w-full h-fit min-h-screen  md:h-screen bg-[url("/images/cabinetryBanner.jpg")]'
       >
-        <div className="cabinetryBannerWarper w-full h-full flex items-end p-5 md:p-12 z-0">
+        <div className="cabinetryBannerWarper w-full h-full min-h-screen flex items-end p-5 md:p-12 z-0">
           <div className="cabinetryBannerContent text-white ">
             <h1 className="text-5xl font-Montserrat text-LightText">
               {t("ProductsPage.banner.title")}
