@@ -13,6 +13,7 @@ import { TfiAngleRight } from 'react-icons/tfi';
 import { useSelector, useDispatch } from 'react-redux'
 import { language } from '../../features/LanguagaeSlice';
 import { useTranslation } from "react-i18next";
+import SmallDevicePreloader from '../SmallDevicePreloader';
 
 
 const HeaderNew = () => {
@@ -47,6 +48,7 @@ const HeaderNew = () => {
     const [isClicked, setIsClicked] = useState(false);
     const [loading, setLoading] = useState(false);
     const [languse, setLanguse] = useState('EN');
+    const [smallDevice , setSmallDevice] = useState(true);
 
     const productsImgArr = [
         "/images/pivotDoor1.jpg",
@@ -75,7 +77,6 @@ const HeaderNew = () => {
     }, [location.pathname]);
 
     // ======loader header======
-
     useEffect(() => {
 
         const hasVisited = localStorage.getItem("hasVisited");
@@ -220,8 +221,6 @@ const HeaderNew = () => {
         dispatch(language("NL"))
         i18n.changeLanguage("nl");
     };
-
-    console.log();
     
     return (
         <>
@@ -680,87 +679,7 @@ const HeaderNew = () => {
 
 
                         <div ref={dropdownRef} className="absolute top-[70px] right-0 w-60 h-[calc(100vh-60px)]  overflow-hidden opacity-0 ">
-                            {/* ====menu hiddenn===== */}
-                            {/* <div className='hidden'>
-                                <div className='w-full h-full bg-[#00000083] backdrop-blur-sm flex justify-center items-center '>
-                                    <ul className='w-fit flex flex-col  gap-6 [&>li]:text-2xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-white'>
-
-                                        <li className='navLinkItem w-fit px-5 relative'>
-                                            <Link to="/products" >
-                                                <div className="gggg">
-                                                    <div className='red w-fit '>
-                                                        Products
-                                                    </div>
-                                                    <div className='blue w-fit '>
-                                                        Products
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </li>
-                                        <li className='navLinkItem w-fit px-5 relative'>
-                                            <Link to="/collection" >
-                                                <div className="gggg">
-                                                    <div className='red w-fit '>
-                                                        Collection
-                                                    </div>
-                                                    <div className='blue w-fit '>
-                                                        Collection
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </li>
-                                        <li className='navLinkItem w-fit px-5 relative'>
-                                            <Link to="/inspiration" >
-                                                <div className="gggg">
-                                                    <div className='red w-fit '>
-                                                        Inspiration
-                                                    </div>
-                                                    <div className='blue w-fit '>
-                                                        Inspiration
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </li>
-                                        <li className='navLinkItem w-fit px-5 relative'>
-                                            <Link to="/architects" >
-                                                <div className="gggg">
-                                                    <div className='red w-fit '>
-                                                        Architects
-                                                    </div>
-                                                    <div className='blue w-fit '>
-                                                        Architects
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </li>
-                                        <li className='navLinkItem w-fit px-5 relative'>
-                                            <Link to="/aboutus" >
-                                                <div className="gggg">
-                                                    <div className='red w-fit '>
-                                                        About Us
-                                                    </div>
-                                                    <div className='blue w-fit '>
-                                                        About Us
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </li>
-                                        <li className='navLinkItem w-fit px-5 relative'>
-                                            <Link to="/contact" >
-                                                <div className="gggg">
-                                                    <div className='red w-fit '>
-                                                        Contact
-                                                    </div>
-                                                    <div className='blue w-fit '>
-                                                        Contact
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div> */}
+                            
                             {/* ===menu new=== */}
                             <div className='w-full h-fit min-h-screen bg-[#f2f0eaa4] backdrop-blur-sm'>
                                 <div className='w-full h-fit'>
@@ -864,7 +783,7 @@ const HeaderNew = () => {
                         ""
                         :
                         <section id="loader">
-                            <ZebranoPreLoader />
+                            <SmallDevicePreloader />
                         </section>
 
                 }

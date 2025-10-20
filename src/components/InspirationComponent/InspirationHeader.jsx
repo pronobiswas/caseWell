@@ -63,7 +63,7 @@ const InspirationHeader = () => {
           <div className="subheading w-full md:w-2/3 lg:order-2">
             <h2
               ref={subheadingRef}
-              className="text-LightText text-3xl md:text-4xl font-Poppins font-normal w-full relative overflow-hidden "
+              className="text-LightText text-2xl md:text-3xl lg:text-4xl font-Poppins font-normal w-full relative overflow-hidden "
             >
               {t("Inspiration.banner.description")}
             </h2>

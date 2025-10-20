@@ -38,6 +38,8 @@ import ServicesPage from "./pages/zebrano/ServicesPage";
 import FallbackPage from "./pages/FallbackPage";
 import AdminDashBoard from "./pages/auth/AdminDashBoard";
 import SingleShowCaseProduct from "./pages/SingleShowCaseProduct";
+import ZebranoPreLoader from "./rootLayout/ZebranoPreLoader";
+import SmallDevicePreloader from "./rootLayout/SmallDevicePreloader";
 
 function App() {
   const router = createBrowserRouter(
@@ -92,6 +94,7 @@ function App() {
           <Route path="/admin" element={<AdminDashBoard />} />
           <Route path="/allProduct" element={<SingleShowCaseProduct />} />
           <Route path="/*" element={<FallbackPage />} />
+          <Route path="/loader" element={<SmallDevicePreloader />} />
 
         </Route>
       </>

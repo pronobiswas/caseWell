@@ -124,14 +124,14 @@ const WhyPartner = () => {
           </div>
           <div
             ref={partnerCard}
-            className="partnerContentWrapper flex flex-wrap gap-0 md:gap-6"
+            className="partnerContentWrapper flex flex-wrap gap-0 md:gap-6 lg:flex-nowrap "
           >
             <div className="box w-80 py-5  flex flex-col gap-6 ">
               <div className="iconbox text-6xl text-myColorOne">
                 <FaRegMessage />
               </div>
               <div className="text flex flex-col gap-3">
-                <h6 className="text-myColorOne ">{t("homePage.WhyPartner.cards1.title")}</h6>
+                <h6 className="text-myColorOne  ">{t("homePage.WhyPartner.cards1.title")}</h6>
                 <p className="text-myColorOne ">
                   {t("homePage.WhyPartner.cards1.description")}
                 </p>

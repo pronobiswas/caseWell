@@ -74,7 +74,7 @@ const Footer = () => {
           {/* ======footer row one===== */}
           <div className="footerRow w-full flex flex-col md:flex-row justify-between gap-8">
             {/* ----w-1/2----- */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 xl:w-2/3">
               <h2 className="w-full max-w-[520PX] text-6xl font-Montserrat font-bold mb-8 text-myColorOne">
                 {t("footer.title")}
               </h2>
@@ -85,13 +85,13 @@ const Footer = () => {
               </div>
             </div>
             {/* -----w-1/2-------- */}
-            <div className="w-full md:w-1/2 flex flex-wrap md:flex-nowrap gap-6 justify-between">
+            <div className="w-full md:w-1/2 xl:w-1/3 flex flex-wrap md:flex-nowrap gap-6 justify-between">
               {/* ---products--- */}
               <div className="">
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">
                   {t("footer.Products")}
                 </h5>
-                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
+                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base  [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
                   <li className="navLinkItem w-fit relative">
                     <Link to="/products">
                       <div className="gggg">
@@ -139,7 +139,7 @@ const Footer = () => {
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">
                   {t("footer.Zebrano")}
                 </h5>
-                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
+                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base  [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
                   <li className="navLinkItem w-fit relative">
                     <Link to="/inspiration">
                       <div className="gggg">
@@ -187,7 +187,7 @@ const Footer = () => {
                 <h5 className="text-xl font-poppins font-semibold mb-5 text-myColorOne uppercase">
                   {t("footer.Service")}
                 </h5>
-                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base xl:[&>li]:text-xl [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
+                <ul className="w-fit flex flex-col  gap-2 [&>li]:text-base  [&>li]:font-Poppins [&>li]:cursor-pointer [&>li]:text-colorOne ">
                   <li className="navLinkItem w-fit relative">
                     <Link to="/contact">
                       <div className="gggg">

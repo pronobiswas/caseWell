@@ -25,10 +25,11 @@ const AboutUsTimeline = () => {
           scrollTrigger: {
             trigger: card,
             start: 'top 80',
-            end: '+=220',
+            end: '+=200',
             scrub: true,
             pin: true,
             pinSpacing: 0,
+            markers:true
           },
         }
         );

@@ -4667,7 +4667,7 @@ const resources = {
         "Inspiration": "Inspiration",
         "About": "Über uns",
         "Story": "Unsere Geschichte",
-        "OurTeam": "Unsere Geschichte",
+        "OurTeam": "Unser Team",
         "ConsciousCraft": "Bewusstes Handwerk",
         "Service": "Service",
         "Contact": "Kontakt",
