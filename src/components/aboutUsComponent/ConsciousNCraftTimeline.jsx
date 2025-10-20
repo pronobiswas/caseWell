@@ -4,13 +4,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import BtnComponent from '../homeComponents/utils/BtnComponent';
 import { useTranslation } from "react-i18next";
-gsap.registerPlugin(ScrollTrigger , SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const ConsciousNCraftTimeline = () => {
   const { t, i18n } = useTranslation();
-    const timelineRef = useRef(null);
-      const bottomText = useRef(null);
-        useEffect(() => {
+  const timelineRef = useRef(null);
+  const bottomText = useRef(null);
+  useEffect(() => {
     if (!timelineRef.current) return;
 
     const ctx = gsap.context(() => {
@@ -23,7 +23,7 @@ const ConsciousNCraftTimeline = () => {
           scrollTrigger: {
             trigger: card,
             start: 'top 80',
-            end: '+=220',
+            end: '+=200',
             scrub: true,
             pin: true,
             pinSpacing: 0,
@@ -42,31 +42,31 @@ const ConsciousNCraftTimeline = () => {
     const ctx = gsap.context(() => {
       const paragraph = bottomText.current.querySelector('p');
       const splitParagraph = new SplitText(paragraph, {
-                type: 'lines , words , chars',
-                linesClass: 'line block overflow-hidden'
-            })
+        type: 'lines , words , chars',
+        linesClass: 'line block overflow-hidden'
+      })
 
-      
-        gsap.from(splitParagraph.words, {
-          y:50,
-          duration:1,
-          stagger:1,
 
-          scrollTrigger: {
-            trigger: paragraph,
-            start: 'top 95%',
-            end: '+=200',
-            scrub: true,
-          },
-        })
-        
+      gsap.from(splitParagraph.words, {
+        y: 50,
+        duration: 1,
+        stagger: 1,
+
+        scrollTrigger: {
+          trigger: paragraph,
+          start: 'top 95%',
+          end: '+=200',
+          scrub: true,
+        },
+      })
+
     }, timelineRef);
 
     return () => ctx.revert();
   }, [i18n.language]);
   return (
     <>
-    <section ref={timelineRef} id="aboutTimeline" className='bg-bgOne'>
+      <section ref={timelineRef} id="aboutTimeline" className='bg-bgOne'>
         <div className="timelineWrapper relative w-full h-full p-5 flex flex-col gap-5 lg:gap-20 2xl:gap-5">
           {/* ====timeline progress====== */}
           <div className="timelineProgress w-[1px] h-full min-h-screen bg-violet-200 absolute top-0 left-8"></div>
@@ -87,7 +87,7 @@ const ConsciousNCraftTimeline = () => {
             </div>
             <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
-                <img src="/images/timelineImg1.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
+                <img src="/images/timelineImg1.png" alt="images" className='w-full h-full object-cover aspect-[3/2] ' />
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ const ConsciousNCraftTimeline = () => {
             </div>
             <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
-                <img src="/images/timelineImg2.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
+                <img src="/images/timelineImg2.png" alt="images" className='w-full h-full object-cover aspect-[3/2] ' />
               </div>
             </div>
 
@@ -132,7 +132,7 @@ const ConsciousNCraftTimeline = () => {
             </div>
             <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
-                <img src="/images/timelineImg3.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
+                <img src="/images/timelineImg3.png" alt="images" className='w-full h-full object-cover aspect-[3/2] ' />
               </div>
             </div>
 
@@ -155,7 +155,7 @@ const ConsciousNCraftTimeline = () => {
             </div>
             <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
-                <img src="/images/timelineImg4.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
+                <img src="/images/timelineImg4.png" alt="images" className='w-full h-full object-cover aspect-[3/2] ' />
               </div>
             </div>
 
@@ -178,21 +178,21 @@ const ConsciousNCraftTimeline = () => {
             </div>
             <div className="timeleineImgCol w-full lg:w-1/2 2xl:w-1/3 pl-10 lg:p-0">
               <div className="imageWrapper">
-                <img src="/images/timelineImg5.png" alt="images" className='w-full h-full object-cover aspect-[3/2] '/>
+                <img src="/images/timelineImg5.png" alt="images" className='w-full h-full object-cover aspect-[3/2] ' />
               </div>
             </div>
 
           </div>
-          
-          
+
+
 
         </div>
         <div key={i18n.language} ref={bottomText} className='w-full h-full  p-5 md:p-12 lg:p-20'>
           <p className='text-center text-xl text-stone-600 font-Poppins md:text-3xl lg:text-4xl xl:text-5xl'>{t("ConsciousNcrafts.additionalText")}</p>
         </div>
         <div className='w-full flex justify-center gap-10 py-8'>
-          <BtnComponent text={t("ConsciousNcrafts.btnText1")} bg="bgTwo"/>
-          <BtnComponent text={t("ConsciousNcrafts.btnText2")} bg="bgTwo"/>
+          <BtnComponent text={t("ConsciousNcrafts.btnText1")} bg="bgTwo" />
+          <BtnComponent text={t("ConsciousNcrafts.btnText2")} bg="bgTwo" />
         </div>
       </section>
     </>

@@ -29,7 +29,6 @@ const AboutUsTimeline = () => {
             scrub: true,
             pin: true,
             pinSpacing: 0,
-            markers:true
           },
         }
         );

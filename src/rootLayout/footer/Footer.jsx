@@ -75,7 +75,7 @@ const Footer = () => {
           <div className="footerRow w-full flex flex-col md:flex-row justify-between gap-8">
             {/* ----w-1/2----- */}
             <div className="w-full md:w-1/2 xl:w-2/3">
-              <h2 className="w-full max-w-[520PX] text-6xl font-Montserrat font-bold mb-8 text-myColorOne">
+              <h2 className="w-full max-w-[520PX] text-4xl md:text-6xl font-Montserrat font-bold mb-8 text-myColorOne">
                 {t("footer.title")}
               </h2>
               <div className="w-full">

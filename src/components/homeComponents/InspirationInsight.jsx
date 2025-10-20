@@ -5,10 +5,17 @@ import { useTranslation } from "react-i18next";
 
 const InspirationInsight = () => {
   const { t } = useTranslation();
+  const slidesData = [
+    {image:"/images/slideImage1.jpg",text1: "Top Performing Cabinet",text2:"Finishes of 2025"},
+    {image:"/images/slideImage2.jpg",text1: "Top Performing Cabinet",text2:"Finishes of 2025"},
+    {image:"/images/slideImage3.jpg",text1: "Top Performing Cabinet",text2:"Finishes of 2025"},
+    {image:"/images/slideImage4.jpg",text1: "Top Performing Cabinet",text2:"Finishes of 2025"},
+    {image:"/images/slideImage5.jpg",text1: "Top Performing Cabinet",text2:"Finishes of 2025"},
+  ]
   const [clickedValue, setClickedValue] = useState(0);
   const progressRef = useRef(null);
   const slideRef = useRef(null);
-  const slidesCount = 5; // total number of slides
+  const slidesCount = slidesData.length;
 
   const handleIncrement = () => {
     setClickedValue((prev) => (prev < slidesCount - 1 ? prev + 1 : slidesCount - 1));
@@ -20,7 +27,7 @@ const InspirationInsight = () => {
 
   useEffect(() => {
     const slideItems = slideRef.current.querySelectorAll(".slideItem");
-    const slideWidth = slideItems[0].offsetWidth + 40; // 40 = gap-10 (10 * 4px)
+    const slideWidth = slideItems[0].offsetWidth + 40; 
     const totalWidth = slideWidth * slidesCount;
     const progressPercent = ((clickedValue + 1) / slidesCount) * 100;
 
@@ -67,28 +74,22 @@ const InspirationInsight = () => {
         {/* ===== SLIDER ===== */}
         <div className="overflow-hidden w-full">
           <div ref={slideRef} className="flex gap-10 transition-all duration-500">
-            {[
-              "/images/slideImage1.jpg",
-              "/images/slideImage2.jpg",
-              "/images/slideImage3.jpg",
-              "/images/slideImage4.jpg",
-              "/images/slideImage5.jpg",
-            ].map((src, index) => (
+            {slidesData.map((data, index) => (
               <div
                 key={index}
                 className="slideItem w-fit flex-shrink-0 flex flex-col items-start"
               >
                 <img
-                  src={src}
+                  src={data.image}
                   alt={`Slide ${index + 1}`}
-                  className="w-full max-w-[400px] md:max-w-[450px] h-auto object-cover rounded-lg"
+                  className="w-full max-w-[400px] md:max-w-[450px] h-auto max-h-[500px] object-cover rounded-lg"
                 />
                 <div className="mt-3">
                   <p className="font-Poppins text-myColorOne">
-                    Top Performing Cabinet
+                    {data.text1}
                   </p>
                   <p className="font-Poppins text-myColorOne">
-                    Finishes of 2025
+                    {data.text2}
                   </p>
                 </div>
               </div>
