@@ -1,4 +1,4 @@
-import React, {  useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
@@ -48,7 +48,7 @@ const HeaderNew = () => {
     const [isClicked, setIsClicked] = useState(false);
     const [loading, setLoading] = useState(false);
     const [languse, setLanguse] = useState('EN');
-    const [smallDevice , setSmallDevice] = useState(true);
+    const [smallDevice, setSmallDevice] = useState(true);
 
     const productsImgArr = [
         "/images/pivotDoor1.jpg",
@@ -221,12 +221,12 @@ const HeaderNew = () => {
         dispatch(language("NL"))
         i18n.changeLanguage("nl");
     };
-    
+
     return (
         <>
             <header className="w-full  fixed top-0 left-0 z-50 bg-bgOne">
                 <nav className=" hidden lg:block px-5 py-3">
-                    <div className= {`navWrapper w-full flex justify-between items-center text-colorOne `} >
+                    <div className={`navWrapper w-full flex justify-between items-center text-colorOne `} >
 
                         {/* ======logo====== */}
                         <div className="logo w-60 2xl:w-80 shrink-0">
@@ -584,8 +584,8 @@ const HeaderNew = () => {
                     </div>
                 </nav>
                 {/* ===mobile menu=== */}
-                <nav ref={nav2Ref} className='block lg:hidden'>
-                    <div className="navWrapper w-full px-5 py-2  bg-[#00000002] flex items-center justify-between relative z-50">
+                <nav ref={nav2Ref} className='block lg:hidden w-full'>
+                    <div className="navWrapper w-full px-2 py-2  bg-[#00000002] flex items-center justify-between relative z-50">
                         <div className="logo">
                             <Link to="/">
                                 <span>
@@ -662,24 +662,41 @@ const HeaderNew = () => {
                                 </span>
                             </Link>
                         </div>
-                        <div className="menuBar cursor-pointer">
+
+                        <div className='flex items-center gap-1'>
+                            <div className="w-fit relative group cursor-pointer ">
+                                <div className='flex items-center gap-1 text-base'>
+                                    <CiGlobe />
+                                    <span className='text-sm'>
+                                        {languse}
+                                    </span>
+                                    <MdOutlineKeyboardArrowDown />
+                                </div>
+                                <div className="w-fit h-fit hidden group-hover:block  absolute top-5 right-0 bg-white rounded">
+                                    <span onClick={handleEn} className='block px-2 text-sm cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>EN</span>
+                                    <span onClick={handleNl} className='block px-2 text-sm cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>NL</span>
+                                    <span onClick={handleDu} className='block px-2 text-sm cursor-pointer text-colorOne hover:bg-colorOne hover:text-bgOne'>DE</span>
+                                </div>
+                            </div>
+                            <div className="menuBar cursor-pointer">
 
 
-                            <span onClick={expandDropdown}>
-                                <svg id='menuIcon' ref={iconRef} width="50" height="35" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="50" height="45" fill="transparent" />
-                                    <line className='horizontalLine' x1="2.5" y1="12.5" x2="47.5" y2="12.5" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
-                                    <line className='horizontalLine' x1="2.53092" y1="31.5316" x2="47.5316" y2="32.4691" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
-                                    <line className='crosLine' x1="1.9144" y1="2.12114" x2="47.8731" y2="42.8825" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
-                                    <line className='crosLine' x1="2.11638" y1="42.8819" x2="47.8819" y2="1.88362" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
-                                </svg>
-                            </span>
+                                <span onClick={expandDropdown}>
+                                    <svg id='menuIcon' ref={iconRef} width="50" height="35" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="50" height="45" fill="transparent" />
+                                        <line className='horizontalLine' x1="2.5" y1="12.5" x2="47.5" y2="12.5" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
+                                        <line className='horizontalLine' x1="2.53092" y1="31.5316" x2="47.5316" y2="32.4691" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
+                                        <line className='crosLine' x1="1.9144" y1="2.12114" x2="47.8731" y2="42.8825" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
+                                        <line className='crosLine' x1="2.11638" y1="42.8819" x2="47.8819" y2="1.88362" stroke="#2f3a2a" stroke-width="3" stroke-linecap="round" />
+                                    </svg>
+                                </span>
 
+                            </div>
                         </div>
 
 
                         <div ref={dropdownRef} className="absolute top-[70px] right-0 w-60 h-[calc(100vh-60px)]  overflow-hidden opacity-0 ">
-                            
+
                             {/* ===menu new=== */}
                             <div className='w-full h-fit min-h-screen bg-[#f2f0eaa4] backdrop-blur-sm'>
                                 <div className='w-full h-fit'>
@@ -718,7 +735,7 @@ const HeaderNew = () => {
                                                 </ul>
                                             </div>
                                         </li>
-                                        
+
                                         <li>
                                             <div className='w-full flex justify-between items-center'>
                                                 <NavLink to="/inspiration"><span>{t("header.menu.Inspiration")}</span></NavLink>

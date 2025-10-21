@@ -121,6 +121,34 @@ header#header {
   top: -28px;
   transform: rotateX(0deg);
 }
+@media screen and (max-width:922px){
+.gggg {
+  width: fit-content;
+  height: 20px;
+  transform-style: preserve-3d;
+  /* overflow: hidden; */
+}
+.red {
+  position: relative;
+  top: 0;
+  transform: rotateX(0);
+  transition: 0.2s all linear;
+}
+.blue {
+  position: relative;
+  top: -15px;
+  transform: rotateX(90deg);
+  transition: 0.2s all linear;
+}
+.gggg:hover .red {
+  top: -11px;
+  transform: rotateX(90deg);
+}
+.gggg:hover .blue {
+  top: -21px;
+  transform: rotateX(0deg);
+}
+}
 
 /* .menu ul .menuItem .dropdownMenu{
   @apply border-2 border-[#5454ff23] shadow-inner  shadow-[white] rounded-[10px] overflow-hidden text-black
@@ -199,7 +227,6 @@ html {
 } */
 .amimateDoorThree {
   animation: doorAnimThree 2s ease-in-out forwards;
-  color: red !important;
 }
 @keyframes doorAnimThree {
   0% {

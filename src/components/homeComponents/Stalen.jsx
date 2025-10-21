@@ -112,7 +112,7 @@ const Stalen = () => {
   return (
     <>
       <section id="stalen" className="w-full h-full py-12 ">
-        <div className="stalenWrapper w-full h-full  bg-myColorOne p-5 md:p-12  text-myColorTwo flex flex-col lg:flex-row items-end gap-12 ">
+        <div className="stalenWrapper w-full h-full  bg-myColorOne p-5  md:p-12  text-myColorTwo flex flex-col lg:flex-row items-end gap-12 ">
           <div className="w-full lg:w-1/4 h-full  shrink-0 min-h-[342px] p-8 flex justify-end items-end bg-[#0c290136] shadow-inner shadow-[#01500163] border border-[#003800]">
             <div className="w-full h-fit flex flex-col  gap-6 ">
               <h2 className=" md:max-w-56 text-2xl text-textLight font-Montserrat">
