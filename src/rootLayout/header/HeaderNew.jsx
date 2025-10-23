@@ -44,6 +44,9 @@ const HeaderNew = () => {
     const zebranoDropdownRef = useRef(null);
     const zebranoImgRef = useRef(null);
 
+    const productMenuDropdownRef = useRef(null);
+    const mobileProductArrowRef = useRef(null);
+
 
     const [isClicked, setIsClicked] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -153,6 +156,7 @@ const HeaderNew = () => {
     useEffect(() => {
         if (!dropdownRef.current) return;
         const navlinkList = dropdownRef.current.querySelectorAll('li');
+        return
         navlinkList.forEach((item) => {
             item.addEventListener('click', () => {
                 setIsClicked(false);
@@ -220,6 +224,18 @@ const HeaderNew = () => {
         setLanguse('NL')
         dispatch(language("NL"))
         i18n.changeLanguage("nl");
+    };
+
+    // ====handle mobile subMenu=====
+    const handleMobileSubMenu = (e,ref)=>{
+        const executableMenu = ref.current;
+        console.log(executableMenu);
+        executableMenu.classList.toggle('hidden');
+        if( executableMenu.classList.contains("hidden")){
+            e.target.style.transform = "rotate(0deg)"
+        }else{e.target.style.transform = "rotate(90deg)"}
+        e.target.style.transition = "transform 0.3s ease";
+        
     };
 
     return (
@@ -703,12 +719,12 @@ const HeaderNew = () => {
 
                                     <ul className='flex flex-col [&>li]:text-2xl [&>li]:text-myColorOne [&>li]:font-Poppins [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorTwo [&>li:hover]:bg-myColorTwo'>
                                         {/* ===products=== */}
-                                        <li className='group relative z-40'>
+                                        <li className=' relative z-40'>
                                             <div className='w-full flex justify-between items-center'>
                                                 <NavLink to="/products"><span>{t("header.menu.products")}</span></NavLink>
-                                                <span className='group-hover:rotate-90'><TfiAngleRight /></span>
+                                                <span ref={mobileProductArrowRef} onClick={(e)=>handleMobileSubMenu(e,productMenuDropdownRef)} className='group-hover:rotate-90 cursor-pointer hover:scale-110'><TfiAngleRight /></span>
                                             </div>
-                                            <div className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-50">
+                                            <div ref={productMenuDropdownRef} className="w-2/3 h-fit bg-myColorTwo absolute right-0 top-[60px] hidden group-hover:block z-50 transition-all duration-150">
                                                 <ul className='flex flex-col [&>li]:text-base [&>li]:font-Poppins [&>li]:text-myColorOne  [&>li]:cursor-pointer [&>li]:py-4 [&>li]:px-5 [&>li]:border-b [&>li]:border-b-myColorOne [&>li:hover]:font-semibold [&>li:hover]:z-50 '>
                                                     <li><NavLink to="/products/PivotDoor">{t("header.menu.PivotDoors")}</NavLink></li>
                                                     <li><NavLink to="/products/SlideDoor">{t("header.menu.SlidingDoors")}</NavLink></li>

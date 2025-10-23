@@ -149,42 +149,42 @@ const ContructorComponent2 = () => {
   return (
     <div
       id="constructor"
-      className="w-full h-full lg:h-[calc(100vh-100px)] p-5 md:p-12 bg-myColorTwo font-poppins"
+      className="w-full h-full lg:h-scree  p-5 2xl:p-12 bg-myColorTwo font-poppins"
     >
-      <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-5">
+      <div className="constructorWrapper w-full h-full flex flex-col lg:flex-row gap-5 ">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 order-2 lg:order-1 p-8 lg:p-12 bg-myColorThree rounded-3xl">
-          <div className="w-full h-full flex flex-col ">
+        <div className="w-full lg:w-1/2 order-2 f-full lg:h-[calc(100vh-100px)] lg:min-h-[500px] lg:order-1 py-8 xl:py-10 px-5 xl:p-8 bg-myColorThree rounded-3xl">
+          <div className="w-full h-full flex flex-col">
             <p className="text-myColorOne ">
               {t("homePage.ContructorComponent2.title")}
             </p>
             <div className="box1" ref={boxRef}>
               <h2
                 ref={headingRef}
-                className="constructHeading text-2xl md:text-4xl 2xl:text-5xl my-3 md:my-6 text-gray-900 leading-tight font-Montserrat"
+                className="constructHeading text-2xl md:text-4xl lg:text-2xl xl:text-4xl 2xl:text-5xl  mb-5 py-5 text-gray-900 leading-tight font-Montserrat"
               />
               <p
                 ref={descRef}
-                className="constructDescription mb-4 2xl:md:mb-8 max-w-md text-gray-700 text-sm md:text-lg leading-relaxed"
+                className="constructDescription mb-4 md:mb-8 max-w-md text-gray-700 text-sm xl:text-lg leading-relaxed"
               />
 
               <Link to={"/collection"}>
-                <div className="w-fit border border-gray-800 px-6 py-3 bg-myColorOne text-myColorTwo cursor-pointer rounded-full flex items-center gap-3 hover:bg-myColorTwo hover:text-myColorOne transition-all duration-300">
-                  <span className="font-medium">{t("homePage.ContructorComponent2.btnTex")}</span>
-                  <BsArrowUpRight className="w-5 h-5" />
+                <div className="w-fit border border-gray-800 px-4 py-2 xl:px-6 xl:py-3 bg-myColorOne text-myColorTwo cursor-pointer rounded-full flex items-center gap-3 hover:bg-myColorTwo hover:text-myColorOne transition-all duration-300">
+                  <span className="text-xs">{t("homePage.ContructorComponent2.btnTex")}</span>
+                  <BsArrowUpRight className="w-3 h-3" />
                 </div>
               </Link>
             </div>
-            {/* Progress Section */}
+            {/* ---Progress Section---- */}
             <div className="w-full mt-3 2xl:mt-10">
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="progressBox py-1 2xl:py-4 cursor-pointer rounded-lg px-2 transition-colors duration-300"
+                  className="progressBox py-0 2xl:py-4 cursor-pointer rounded-lg px-2 transition-colors duration-300"
                   onClick={() => handleClick(index)}
                 >
-                  <div className="w-full flex justify-between items-center mb-2 2xl:mb-3">
-                    <h3 className="text-base md:text-2xl 2xl:text-3xl text-neutral-700 font-medium">
+                  <div className="w-full flex justify-between items-center mb-1 2xl:mb-3">
+                    <h3 className="text-base md:text-base 2xl:text-3xl text-neutral-700 font-medium">
                       {item.title}
                     </h3>
                     <span className="text-3xl text-neutral-600 font-light">+</span>
@@ -202,13 +202,13 @@ const ContructorComponent2 = () => {
           </div>
         </div>
 
-        {/* Right Image */}
-        <div className="w-full lg:w-1/2 order-1 lg:order-2 h-60 md:h-[500px] lg:h-full rounded-3xl lg:rounded-[80px] overflow-hidden">
+        {/* ======Right Image======== */}
+        <div className="w-full lg:w-1/2 order-1 lg:order-2 h-60 md:h-full  lg:h-[calc(100vh-100px)]  rounded-3xl lg:rounded-[80px] overflow-hidden ">
           <img
             ref={imgRef}
             src={data[0].image}
             alt="preview"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           />
         </div>
       </div>
